@@ -1,0 +1,20 @@
+[
+  {
+    "directory": false,
+    "key": "index",
+    "name": "Index",
+    "url": "/index"
+  },
+  {
+    "directory": false,
+    "key": "setupaccount",
+    "name": "Setupaccount",
+    "url": "/setupaccount"
+  },
+  {
+    "directory": false,
+    "key": "signup",
+    "name": "Signup",
+    "url": "/signup"
+  }
+]
