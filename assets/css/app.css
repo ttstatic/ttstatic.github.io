@@ -332,6 +332,9 @@ footer {
         body > .container-fluid {
             overflow-x: hidden;
         }
+        input[type="text"], input[type="password"], textarea {
+            font-size: 16px;
+        }
         .lnk-notifications .counter {
             left: auto;
             right: 15px;
@@ -362,6 +365,8 @@ footer {
             display: none;
         }
     }
+
+
 
 
 
