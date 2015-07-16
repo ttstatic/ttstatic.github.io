@@ -1,0 +1,367 @@
+/*
+ * TEMPORARY CSS
+ */
+    .tmpbtn {
+        position: fixed;
+        z-index: 1040;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        text-align: center;
+        height: 24px;
+    }
+    .tmpbtn a {
+        background: coral;
+        color: white;
+        padding: 5px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        font-size: 10px;
+    }
+    .tmpbtn a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+
+/*
+ * Forms Express CSS
+ */
+a {
+    color: inherit;
+}
+a:hover {
+    color: #333;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-brand.menu {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.council {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+    background-color: #2c343f;
+    height: 70px;
+    position: relative;
+}
+.council > img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 10px;
+}
+.council .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 10px;
+}
+/* temporary carousel */
+    .carousel-inner {
+        height: 70px;
+    }
+    .carousel-inner > .item {
+        height: 100%;
+    }
+.council.mobile {
+    margin: 0;
+    float: left;
+}
+.council.mobile img {
+    position: inherit;
+}
+.search {
+    padding: 5px;
+    background: white;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.search .form-control {
+    width: 100%;
+    height: 34px;
+    border: 0;
+}
+.search .form-control:focus {
+    border-bottom-color: inherit;
+}
+.inputButton {
+    position: relative;
+}
+.inputButton .btnIcon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+.box-overview {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.box-overview + .box-overview  {
+    border-left: 1px solid #ddd;
+}
+.box-overview .fa-usd._2 {
+    top: 12px;
+}
+.row-offcanvas {
+    background: white;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.26);
+    background: #e9edf2;
+}
+
+footer {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
+    color: rgba(44, 52, 63, 0.54);
+}
+
+.btndot {
+    z-index: 20;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26); 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    padding: 16px 17px;
+    color: white;
+    background: #36BFA1;
+}
+.btndot:hover, .btndot:focus {
+    background: #23B292;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+.submitbtn {
+    position: fixed;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    z-index: 2;
+}
+.dropzone {
+    border-style: dashed;
+}
+.jstatus {
+    border-left: 5px solid;
+}
+.jstatus._1 {
+    border-color: coral;
+}
+.jstatus._2 {
+    border-color: lightcoral;
+}
+.jstatus._3 {
+    border-color: steelblue;
+}
+
+.lnk-notifications .counter {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    border-radius: 4px;
+    padding: 3px 4px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 9px;
+    line-height: 9px;
+}
+
+/*
+ * Signup
+ */
+    .signup-wrap {
+        background: #e9edf2;
+    }
+    .signup-wrap .left {
+        background: #2c343f;
+    }
+    .signup-wrap .left .content, .signup-wrap .right .content {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+    .signup-wrap .left .content {
+        color: white;
+        text-align: right;
+    }
+    .img-notice {
+        height: 100%;
+        max-width: 100%;
+        padding: 10px;
+        border: 1px dashed lightgray;
+    }
+    .signup-nav {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    .signup-nav .btndot {
+        padding: 13px 23px;
+    }
+
+/*
+ * Wizard
+ */
+    .wizard h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        background-color: #2c343f;
+        padding: 10px 0 10px 45px;
+        position: relative;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .wizard h4 span {
+        display: inline-block;
+        position: absolute;
+        height: 100%;
+        width: 35px;
+        background-color: #36BFA1;
+        top: 0;
+        left: 0;
+        padding: 11px;
+        text-align: center;
+        color: white;
+    }
+    .wizard h4 small {
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+/*
+ * Interactive Form
+ */
+    .form-interactive {
+        position: relative;
+    }
+    .form-interactive .casing {
+        margin-top: 20px;
+    }
+    .form-interactive .casing .placeholder {
+        position: absolute;
+        z-index: 3;
+        top: 8px;
+        left: 10px;
+        vertical-align: middle;
+        font-style: normal;
+        color: gray;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    .form-interactive .casing .placeholder.move {
+        top: -8px;
+        color: inherit;
+        font-size: 10px;
+        background-color: white;
+        padding: 0 3px;
+        color: silver;
+    }
+
+
+/*
+ * Mobile First
+ */
+    @media screen and (min-width: 767px) {
+        .signup-wrap .left .content, .signup-wrap .right .content {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1170px) {
+        .signup-wrap .left .content, .signup-wrap .right .content {
+            width: 80%;
+        }
+    }
+/*
+ * WEB
+ */
+    @media screen and (max-width: 990px) {
+        .box-overview:nth-child(odd) {
+            border-left: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        body > .container-fluid {
+            overflow-x: hidden;
+        }
+        input[type="text"], input[type="password"], textarea {
+            font-size: 16px;
+        }
+        .lnk-notifications .counter {
+            left: auto;
+            right: 15px;
+            top: 24px;
+        }
+        .container-fluid > .navbar-collapse,
+        .container-fluid > .navbar-header,
+        .container > .navbar-collapse,
+        .container > .navbar-header {
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+        }
+        .sidebar {
+            background: #454F5C;
+            color: white;
+        }
+        footer {
+            color: silver;
+        }
+        .box-overview + .box-overview {
+            border-left: 0;
+            border-top: 1px solid #ddd;
+        }
+        .icon-bpay {
+            background: white;
+        }
+        .signup-nav {
+            display: none;
+        }
+    }
