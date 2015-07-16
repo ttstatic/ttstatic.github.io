@@ -294,8 +294,13 @@ footer {
         vertical-align: middle;
         font-style: normal;
         color: gray;
+<<<<<<< HEAD
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
+=======
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+>>>>>>> origin/master
     }
     .form-interactive .casing .placeholder.move {
         top: -8px;
@@ -364,4 +369,46 @@ footer {
         .signup-nav {
             display: none;
         }
+<<<<<<< HEAD
     }
+=======
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master
