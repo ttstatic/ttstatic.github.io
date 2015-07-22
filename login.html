@@ -25,7 +25,10 @@
     <div id="fb-root"></div>
     <div class="container-fluid">
       <!-- content goes here...-->
-      <nav class="signup-nav"><a href="/" data-toggle="tooltip" data-placement="auto" title="Back to dashboard" class="btndot fa fa-angle-left fa-2x"></a></nav>
+      <!--
+      nav.signup-nav
+        a.btndot.fa.fa-angle-left.fa-2x(href="/", data-toggle="tooltip", data-placement="auto", title="Back to dashboard")
+      -->
       <div class="row signup-wrap">
         <div class="col-sm-6 col-md-6 left">
           <div class="content">
@@ -39,22 +42,11 @@
         <div class="col-sm-6 col-md-6 right">
           <div class="content">
             <div>
-              <h2>Sign up now</h2>
-              <p><small>Login using you Facebook credentials or fill in the form below.</small></p>
+              <h2>Login</h2>
+              <p><small>Secure client login.</small></p>
               <div class="card">
-                <div class="form-group text-center"><br/>
-                  <div>
-                    <div data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false" class="fb-login-button"></div>
-                  </div><br/>
-                  <h5>OR</h5>
-                </div>
                 <div class="form-group form-interactive">
-                  <div class="casing"><em class="placeholder">Name</em>
-                    <input type="text" class="form-control"/>
-                  </div>
-                </div>
-                <div class="form-group form-interactive">
-                  <div class="casing"><em class="placeholder">Email address</em>
+                  <div class="casing"><em class="placeholder">Username</em>
                     <input type="text" class="form-control"/>
                   </div>
                 </div>
@@ -63,14 +55,13 @@
                     <input type="password" class="form-control"/>
                   </div>
                 </div>
-                <div class="form-group form-interactive">
-                  <div class="casing"><em class="placeholder">Re-type password</em>
-                    <input type="password" class="form-control"/>
-                  </div>
-                </div>
-                <div><a href="setup" class="btn btn-success btn-block">Sign me up!</a></div><br/>
-                <p><small class="text-muted">
-                    <Your>privacy is important to us. We will not rent or sell your personal information.</Your></small></p>
+                <div><a href="index" class="btn btn-success btn-block">Log me in!</a></div><br/>
+                <div class="pull-left login-col-lnk"><a href="forgotpassword">Forgot your password?</a></div>
+                <div class="pull-right login-col-lnk">
+                  New User?
+                  &nbsp;<a href="signup"><strong class="text-success">Register now!</strong></a>
+                </div><br/>
+                <div class="clearfix"></div>
               </div><small><a href="#" class="text-muted">Terms &amp; Conditions</a></small><br/>
             </div>
           </div>

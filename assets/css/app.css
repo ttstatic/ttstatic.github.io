@@ -345,6 +345,17 @@ footer {
   padding: 0 3px;
   color: silver;
 }
+
+
+/*/
+ * Helper Classes
+/*/
+  .vspacer {
+    display: block;
+    height: 5px;
+    clear: both;
+  }
+
 /*
  * Mobile First
  */
@@ -409,5 +420,10 @@ footer {
   }
   .signup-nav {
     display: none;
+  }
+  .login-col-lnk {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
   }
 }
