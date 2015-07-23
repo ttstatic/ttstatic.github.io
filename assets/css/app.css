@@ -125,6 +125,7 @@ a:hover {
 
 .inputButton {
   position: relative;
+  padding: 5px;
 }
 
 .inputButton .btnIcon {
@@ -284,68 +285,87 @@ footer {
 /*
  * Wizard
  */
-
-.wizard h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  background-color: #2c343f;
-  padding: 10px 0 10px 45px;
-  position: relative;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.wizard h4 span {
-  display: inline-block;
-  position: absolute;
-  height: 100%;
-  width: 35px;
-  background-color: #36BFA1;
-  top: 0;
-  left: 0;
-  padding: 11px;
-  text-align: center;
-  color: white;
-}
-
-.wizard h4 small {
-  white-space: nowrap;
-  display: inline-block;
-}
+  .wizard h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #2c343f;
+    padding: 10px 0 10px 45px;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .wizard h4 span {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    background-color: #36BFA1;
+    top: 0;
+    left: 0;
+    padding: 11px;
+    text-align: center;
+    color: white;
+  }
+  .wizard h4 small {
+    white-space: nowrap;
+    display: inline-block;
+  }
 /*
  * Interactive Form
  */
+  .form-interactive {
+    position: relative;
+  }
 
-.form-interactive {
-  position: relative;
-}
+  .form-interactive .casing {
+    margin-top: 20px;
+  }
 
-.form-interactive .casing {
-  margin-top: 20px;
-}
+  .form-interactive .casing .placeholder {
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    left: 10px;
+    vertical-align: middle;
+    font-style: normal;
+    color: gray;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
 
-.form-interactive .casing .placeholder {
-  position: absolute;
-  z-index: 3;
-  top: 8px;
-  left: 10px;
-  vertical-align: middle;
-  font-style: normal;
-  color: gray;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
+  .form-interactive .casing .placeholder.move {
+    top: -8px;
+    color: inherit;
+    font-size: 10px;
+    background-color: white;
+    padding: 0 3px;
+    color: silver;
+  }
 
-.form-interactive .casing .placeholder.move {
-  top: -8px;
-  color: inherit;
-  font-size: 10px;
-  background-color: white;
-  padding: 0 3px;
-  color: silver;
-}
-
+/*/
+ * Pagination
+/*/
+  .pagination>.active>a, 
+  .pagination>.active>a:focus, 
+  .pagination>.active>a:hover, 
+  .pagination>.active>span, 
+  .pagination>.active>span:focus, 
+  .pagination>.active>span:hover {
+    color: gray;
+    background: #eee;
+    border-color: #ddd;
+  }
+  .pagination>li>a, 
+  .pagination>li>span {
+    color: inherit;
+  }
+/*/
+ * Tables
+/*/
+  .users-row {
+    cursor: pointer;
+  }
 
 /*/
  * Helper Classes
@@ -355,33 +375,33 @@ footer {
     height: 5px;
     clear: both;
   }
+  .nomargin {
+    margin: 0;
+  }
 
 /*
  * Mobile First
  */
-
-@media screen and (min-width: 767px) {
-  .signup-wrap .left .content,
-  .signup-wrap .right .content {
-    width: 100%;
+  @media screen and (min-width: 767px) {
+    .signup-wrap .left .content,
+    .signup-wrap .right .content {
+      width: 100%;
+    }
   }
-}
-
-@media screen and (min-width: 1170px) {
-  .signup-wrap .left .content,
-  .signup-wrap .right .content {
-    width: 80%;
+  @media screen and (min-width: 1170px) {
+    .signup-wrap .left .content,
+    .signup-wrap .right .content {
+      width: 80%;
+    }
   }
-}
 /*
  * WEB
  */
-
-@media screen and (max-width: 990px) {
-  .box-overview:nth-child(odd) {
-    border-left: 0;
+  @media screen and (max-width: 990px) {
+    .box-overview:nth-child(odd) {
+      border-left: 0;
+    }
   }
-}
 
 @media screen and (max-width: 767px) {
   body > .container-fluid {

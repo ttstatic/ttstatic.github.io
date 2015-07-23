@@ -192,61 +192,88 @@
           </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">Overview</h1>
+            <h1 class="page-header">User Manager</h1>
             <div class="card">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-users fa-stack-2x"></i></span>
-                  <h3>39,652</h3><span class="text-muted labels"><span class="title">Total number of rate payers</span><br/><small class="subtitle">(Electronic and Print)</small></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-credit-card fa-stack-2x"></i></span>
-                  <h3>5<sup>%</sup></h3><span class="text-muted labels"><span class="title">Using electronic payment methods</span></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-calendar-o fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x _2"></i></span>
-                  <h3><sup>$</sup>10,905</h3><span class="text-muted labels"><span class="title">Savings this month on AUSPOST</span></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-usd fa-stack-2x"></i></span>
-                  <h3><sup>$</sup>289,000</h3><span class="text-muted labels"><span class="title">Payments due this month</span></span>
+              <div class="form-group form-interactive">
+                <div class="casing"><em class="placeholder">Enter Username, First Name or Email...</em>
+                  <div class="inputButton">
+                    <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
+                  </div>
                 </div>
               </div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Account&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Username&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>First Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Email&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Phone&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Print&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="users-row">
+                    <td> </td>
+                    <td>formsexpress.admin</td>
+                    <td>Administrator</td>
+                    <td>datateam@formsexpress.com.au</td>
+                    <td> </td>
+                    <td>AD</td>
+                    <td>Active</td>
+                    <td>N</td>
+                  </tr>
+                  <tr class="users-row">
+                    <td> </td>
+                    <td>formsexpress.cs</td>
+                    <td>CustomerService</td>
+                    <td>datateam@formsexpress.com.au</td>
+                    <td> </td>
+                    <td>CS</td>
+                    <td>Active</td>
+                    <td>N</td>
+                  </tr>
+                  <tr class="users-row">
+                    <td> </td>
+                    <td>formsexpress.ur</td>
+                    <td>StandardUser</td>
+                    <td>datateam@formsexpress.com.au</td>
+                    <td> </td>
+                    <td>UR</td>
+                    <td>Active</td>
+                    <td>N</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="clearfix"></div>
+              <div class="pull-right">
+                <ul class="pagination pagination-sm nomargin pull-left">
+                  <li id="prevPage" class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li class="page-number active"><a href="#">1</a></li>
+                  <li class="page-number"><a href="#">2</a></li>
+                  <li class="page-number"><a href="#">3</a></li>
+                  <li class="page-number"><a href="#">4</a></li>
+                  <li class="page-number"><a href="#">5</a></li>
+                  <li id="ellipsisEnd"><a href="#">...</a></li>
+                  <li id="nextPage"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+                <div class="dropdown pull-left"><a id="paginateUsersList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm dropdown-toggle">
+                    <label id="limitOption">20&nbsp;</label><span class="caret"></span></a>
+                  <ul aria-labelledby="paginateUsersList" class="dropdown-menu">
+                    <li><small>&nbsp;&nbsp;&nbsp;&nbsp;Per page</small></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="limit-option">20</a></li>
+                    <li><a href="#" class="limit-option">50</a></li>
+                    <li><a href="#" class="limit-option">100</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
-            <h2 class="sub-header">Job Status<a href="#" class="btn btn-warning pull-right">Job Manager</a></h2>
-            <div class="row">
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _1">
-                  <h3>4th Notice</h3>
-                  <h5>text-muted Notice type</h5>
-                </div>
-              </div>
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _2">
-                  <h3>01/05/15</h3>
-                  <h5 class="text-muted">Date submitted</h5>
-                </div>
-              </div>
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _3">
-                  <h3>In Print</h3>
-                  <h5 class="text-muted">Status</h5>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <div id="noOfRegistrations">
-                    <!-- Highcharts goes here...-->
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div id="totalNotices">
-                    <!-- Highcharts goes here...-->
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -258,6 +285,6 @@
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/dashboard.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
-    <script>Dashboard.charts();</script>
+    <!--script Dashboard.charts();-->
   </body>
 </html>
