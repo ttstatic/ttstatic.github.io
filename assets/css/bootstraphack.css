@@ -10,7 +10,7 @@
     
     border-radius: 0;
 }
-.well {
+.well, .alert {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;

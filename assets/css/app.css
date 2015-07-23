@@ -486,3 +486,7 @@ footer {
     width: 100%;
   }
 }
+
+tr.addnew {
+  background: aliceblue;
+}
