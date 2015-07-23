@@ -172,7 +172,7 @@
             <!-- carousel logo END-->
           </div><strong>Welcome back, Rodan</strong><br/><small>Last logged in on 31.01.15</small><br/><br/>
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="/" class="fa fa-home">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="/" class="fa fa-home">Dashboard </a></li>
             <li><a href="usermanager" class="fa fa-users">User Manager</a></li>
             <li><a href="jobmanager" class="fa fa-briefcase">Job Manager</a></li>
             <li><a href="bpay" class="fa"><img src="assets/images/icons/Bpay_logo_16.png" class="icon-bpay"/>&nbsp;&nbsp;BPay Manager</a></li>
@@ -192,7 +192,7 @@
           </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">Overview</h1>
+            <h1 class="page-header">Dashboard</h1>
             <div class="card">
               <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-users fa-stack-2x"></i></span>
@@ -210,7 +210,7 @@
               </div>
             </div>
             <div class="clearfix"></div>
-            <h2 class="sub-header">Job Status<a href="#" class="btn btn-warning pull-right">Job Manager</a></h2>
+            <h2 class="sub-header">Job Status<a href="jobmanager" class="btn btn-warning pull-right">Job Manager</a></h2>
             <div class="row">
               <div class="col-md-4 text-center">
                 <div class="card jstatus _1">
@@ -251,7 +251,111 @@
         </div>
       </div>
     </div>
+    <div id="adduser" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Add New User</h4>
+          </div>
+          <div class="modal-body">
+            <div class="wizard">
+              <section>
+                <h4><span>1</span>User Details</h4>
+                <div class="form-group form-interactive">
+                  <div class="casing required"><em class="placeholder">Full Name</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing required"><em class="placeholder">Email</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing required">
+                    <select class="form-control">
+                      <option>Select Status</option>
+                      <option>Active</option>
+                      <option>New</option>
+                      <option>Inactive</option>
+                      <option>Unenrolled</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing required">
+                    <select class="form-control">
+                      <option>Select User Type</option>
+                      <option>UR-Standard User</option>
+                      <option>CS-Customer Service</option>
+                      <option>AD-Administrator</option>
+                    </select>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <h4><span>2</span>Account Information</h4>
+                <div class="form-group form-interactive">
+                  <div class="casing required"><em class="placeholder">Username</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing"><em class="placeholder">Password</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing"><em class="placeholder">Confirm Password</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-group form-interactive">
+                  <div class="casing"><em class="placeholder">Account Expires</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
+    <div id="deactivate" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Deactivate Payer(s)</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to deactivate the selected payer(s)? This action will be final.</p>
+            <div class="form-group form-interactive">
+              <div class="casing"><em class="placeholder">Reason for deactivation</em>
+                <textarea rows="2" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <button type="button" class="btn btn-success">Confirm</button>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="bower_components/dropzone/dist/dropzone.js" type="text/javascript"></script>
     <script src="bower_components/highcharts/highcharts.js" type="text/javascript"></script>

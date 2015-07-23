@@ -174,7 +174,7 @@
           <ul class="nav nav-sidebar">
             <li><a href="/" class="fa fa-home">Dashboard </a></li>
             <li><a href="usermanager" class="fa fa-users">User Manager</a></li>
-            <li><a href="jobmanager" class="fa fa-briefcase">Job Manager</a></li>
+            <li><a href="#jobmanager" class="fa fa-briefcase">Job Manager</a></li>
             <li><a href="bpay" class="fa"><img src="assets/images/icons/Bpay_logo_16.png" class="icon-bpay"/>&nbsp;&nbsp;BPay Manager</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -192,10 +192,10 @@
           </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">User Manager<a href="#" data-toggle="modal" data-target="#adduser" class="btn btn-warning pull-right">Add User</a></h1>
+            <h1 class="page-header">Job Manager<a href="#" data-toggle="modal" data-target="#adduser" class="btn btn-warning pull-right">Add User</a></h1>
             <div class="card">
               <div class="form-group form-interactive">
-                <div class="casing"><em class="placeholder">Search&nbsp;<small>Account, Username, First Name or Email, Phone Type or Status</small></em>
+                <div class="casing"><em class="placeholder">Search&nbsp;<small><i>Account, Username, First Name or Email, Phone Type or Status</i></small></em>
                   <div class="inputButton">
                     <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
                   </div>
@@ -204,46 +204,42 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Account&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Username&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>First Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Email&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Phone&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Submission Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>File Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Receive Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Docs&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                    <th>Pages&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
                     <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Print&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.admin</td>
-                    <td>Administrator</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>AD</td>
-                    <td>Active</td>
-                    <td>N</td>
+                  <tr>
+                    <td>Statement</td>
+                    <td>SampleData.txt</td>
+                    <td>1608</td>
+                    <td>12/04/2013</td>
+                    <td>58939</td>
+                    <td>260531</td>
+                    <td>Print Complete</td>
                   </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.cs</td>
-                    <td>CustomerService</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>CS</td>
-                    <td>Active</td>
-                    <td>N</td>
+                  <tr>
+                    <td>Rates</td>
+                    <td>FieldaleRatesData2.txt</td>
+                    <td>1607</td>
+                    <td>12/04/2013</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>Awaiting Approval</td>
                   </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.ur</td>
-                    <td>StandardUser</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>UR</td>
-                    <td>Active</td>
-                    <td>N</td>
+                  <tr>
+                    <td>Statement</td>
+                    <td>SampleData3.txt</td>
+                    <td>1608</td>
+                    <td>12/04/2013</td>
+                    <td>58939</td>
+                    <td>260531</td>
+                    <td>Ready to Print</td>
                   </tr>
                 </tbody>
               </table>
@@ -350,31 +346,6 @@
           <div class="modal-footer">
             <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
             <button type="button" class="btn btn-success">Save</button>
-          </div>
-        </div>
-        <!-- .modal-content-->
-      </div>
-      <!-- .modal-dialog-->
-    </div>
-    <!-- .modal-->
-    <div id="deactivate" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Deactivate Payer(s)</h4>
-          </div>
-          <div class="modal-body">
-            <p>Are you sure you want to deactivate the selected payer(s)? This action will be final.</p>
-            <div class="form-group form-interactive">
-              <div class="casing"><em class="placeholder">Reason for deactivation</em>
-                <textarea rows="2" class="form-control"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
-            <button type="button" class="btn btn-success">Confirm</button>
           </div>
         </div>
         <!-- .modal-content-->

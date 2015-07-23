@@ -192,61 +192,63 @@
           </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">User Manager<a href="#" data-toggle="modal" data-target="#adduser" class="btn btn-warning pull-right">Add User</a></h1>
+            <h1 class="page-header">Job Manager</h1>
             <div class="card">
               <div class="form-group form-interactive">
-                <div class="casing"><em class="placeholder">Search&nbsp;<small>Account, Username, First Name or Email, Phone Type or Status</small></em>
+                <div class="casing"><em class="placeholder">Search&nbsp;<small>Submission Type or File Name</small></em>
                   <div class="inputButton">
                     <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
                   </div>
                 </div>
               </div>
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th>Account&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Username&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>First Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Email&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Phone&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Print&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.admin</td>
-                    <td>Administrator</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>AD</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.cs</td>
-                    <td>CustomerService</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>CS</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.ur</td>
-                    <td>StandardUser</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>UR</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Submission Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>File Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Receive Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Docs&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Pages&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Statement</td>
+                      <td>SampleData.txt</td>
+                      <td>1608</td>
+                      <td>12/04/2013</td>
+                      <td>58939</td>
+                      <td>260531</td>
+                      <td>Print Complete</td>
+                      <td><a href="filedetails" class="fa fa-folder-open"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Rates</td>
+                      <td>FieldaleRatesData2.txt</td>
+                      <td>1607</td>
+                      <td>12/04/2013</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>Awaiting Approval</td>
+                      <td><a href="filedetails" class="fa fa-folder-open"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Statement</td>
+                      <td>SampleData3.txt</td>
+                      <td>1608</td>
+                      <td>12/04/2013</td>
+                      <td>58939</td>
+                      <td>260531</td>
+                      <td>Ready to Print</td>
+                      <td><a href="filedetails" class="fa fa-folder-open"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="clearfix"></div>
               <div class="pull-left"><small class="text-muted">Showing 3 out of 3 results</small></div>
               <div class="pull-right">

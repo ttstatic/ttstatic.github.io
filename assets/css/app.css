@@ -134,6 +134,18 @@ a:hover {
   top: 12px;
 }
 
+.casing.required:after {
+  font-family: FontAwesome;
+  content: "\f071";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  color: rgb(255, 118, 118);
+}
+.casing.required select {
+  width: 95%;
+}
+
 .card {
   padding: 15px;
   margin-bottom: 15px;
@@ -232,6 +244,14 @@ footer {
   color: #fff;
   font-size: 9px;
   line-height: 9px;
+}
+
+.account-list {
+/*
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+*/
 }
 /*
  * Signup
@@ -332,6 +352,12 @@ footer {
     color: gray;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
+    font-style: italic;
+    
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .form-interactive .casing .placeholder.move {
@@ -341,6 +367,7 @@ footer {
     background-color: white;
     padding: 0 3px;
     color: silver;
+    font-style: normal;
   }
 
 /*/
@@ -377,6 +404,18 @@ footer {
   }
   .nomargin {
     margin: 0;
+  }
+  .block {
+    display: block;
+  }
+  .inline {
+    display: inline;
+  }
+  .wauto {
+    width: auto;
+  }
+  .valignm {
+    vertical-align: middle;
   }
 
 /*

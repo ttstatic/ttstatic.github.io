@@ -11,7 +11,25 @@ var Dashboard = (function () {
       Dashboard.forms();
 
       Dashboard.fitSignupPage();
+      //Dashboard.sidebarNavHighlight();
+      
+      Dashboard.scrollDirection();
 
+    },
+    
+    sidebarNavHighlight: function () {
+      $(".nav-sidebar > li > a").on("click", function() {
+        //$(this).parents(".nav-sidebar:eq(0) li").removeClass("active");
+        var cval = $.trim($(this).text().toLowerCase());
+        $.cookie("snavh", cval, {path: "/"});
+      });
+      $(".nav-sidebar li").each(function(){
+        var navtext = $.trim($(this).find("a").text().toLowerCase());
+        //console.log($.cookie("snavh") + " : " + navtext)
+        if ($.cookie("snav") == navtext) {
+          $(this).addClass("active");
+        }
+      });
     },
 
     fitSignupPage: function () {
@@ -27,7 +45,8 @@ var Dashboard = (function () {
             padding: "20px 0",
             textAlign: "left"
           });
-          jQuery("body").css("background", "#e9edf2");
+          if (jQuery(".signup-wrap").is(":visible"))
+            jQuery("body").css("background", "#e9edf2");
         } else {
           jQuery(".signup-wrap .left, .signup-wrap .right").removeAttr("style");
           jQuery(".signup-wrap .left .content, .signup-wrap .right .content").removeAttr("style");
@@ -53,7 +72,9 @@ var Dashboard = (function () {
     },
 
     forms: function () {
-
+      
+      Dashboard.triggerFormLabel();
+      
       jQuery("body, .modal").on("click", ".form-interactive .casing .placeholder", function () {
         jQuery(this).parents(".casing:eq(0)").find(".form-control").trigger("focus");
       });
@@ -65,6 +86,18 @@ var Dashboard = (function () {
         }
       });
 
+    },
+    
+    triggerFormLabel: function () {
+      // moves the form placeholder if the form has value
+      //setTimeout(function () {
+        jQuery(".form-interactive .casing .placeholder").each(function () {
+          var inputVal = jQuery.trim(jQuery(this).parents(".casing:eq(0)").find(":text, textarea").val());
+          if (inputVal !== "" || inputVal === undefined) {
+            jQuery(this).addClass('move');
+          }
+        });
+      //}, 150);
     },
     
     charts : function () {
@@ -231,6 +264,23 @@ var Dashboard = (function () {
         h[index] = jQuery(this).height();
       });
       return Math.max.apply(Math, h);
+    },
+    
+    scrollDirection: function() {
+
+      var lastScrollTop = 0;
+      jQuery(window).scroll(function(event) {
+        var st = jQuery(this).scrollTop();
+        if (st > lastScrollTop) {
+          $(".submitbtn").fadeOut();
+          //console.log("down");
+        } else {
+          $(".submitbtn").fadeIn();
+          //console.log("up");
+        }
+        lastScrollTop = st;
+      });
+
     },
 
     //--------

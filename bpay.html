@@ -192,84 +192,107 @@
           </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">User Manager<a href="#" data-toggle="modal" data-target="#adduser" class="btn btn-warning pull-right">Add User</a></h1>
+            <h1 class="page-header">BPay Manager</h1>
             <div class="card">
               <div class="form-group form-interactive">
-                <div class="casing"><em class="placeholder">Search&nbsp;<small>Account, Username, First Name or Email, Phone Type or Status</small></em>
+                <div class="casing"><em class="placeholder">Search&nbsp;<small>Account Name, Bvrn or Payer ID</small></em>
                   <div class="inputButton">
                     <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
                   </div>
                 </div>
               </div>
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th>Account&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Username&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>First Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Email&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Phone&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    <th>Print&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.admin</td>
-                    <td>Administrator</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>AD</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.cs</td>
-                    <td>CustomerService</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>CS</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                  <tr onclick="location.href='manageprofile'" class="users-row">
-                    <td> </td>
-                    <td>formsexpress.ur</td>
-                    <td>StandardUser</td>
-                    <td>datateam@formsexpress.com.au</td>
-                    <td> </td>
-                    <td>UR</td>
-                    <td>Active</td>
-                    <td>N</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="clearfix"></div>
-              <div class="pull-left"><small class="text-muted">Showing 3 out of 3 results</small></div>
-              <div class="pull-right">
-                <ul class="pagination pagination-sm nomargin pull-left">
-                  <li id="prevPage" class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                  <li class="page-number active"><a href="#">1</a></li>
-                  <li class="page-number"><a href="#">2</a></li>
-                  <li class="page-number"><a href="#">3</a></li>
-                  <li class="page-number"><a href="#">4</a></li>
-                  <li class="page-number"><a href="#">5</a></li>
-                  <li id="ellipsisEnd"><a href="#">...</a></li>
-                  <li id="nextPage"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                </ul>
-                <div class="dropdown pull-left"><a id="paginateUsersList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm dropdown-toggle">
-                    <label id="limitOption">20&nbsp;</label><span class="caret"></span></a>
-                  <ul aria-labelledby="paginateUsersList" class="dropdown-menu">
-                    <li><small>&nbsp;&nbsp;&nbsp;&nbsp;Per page</small></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="limit-option">20</a></li>
-                    <li><a href="#" class="limit-option">50</a></li>
-                    <li><a href="#" class="limit-option">100</a></li>
+              <h3>Active</h3>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Bvrn&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Payer ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Account Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Registration Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1355817</td>
+                      <td>062931395725</td>
+                      <td> </td>
+                      <td>02/26/2014<small>02:31:40 PM</small></td>
+                      <td><a href="#deactivate" data-toggle="modal" class="fa fa-power-off"></a></td>
+                    </tr>
+                    <tr>
+                      <td>1355817</td>
+                      <td>062931395725</td>
+                      <td> </td>
+                      <td>02/26/2014<small>02:31:40 PM</small></td>
+                      <td><a href="#deactivate" data-toggle="modal" class="fa fa-power-off"></a></td>
+                    </tr>
+                    <tr>
+                      <td>1355817</td>
+                      <td>062931395725</td>
+                      <td> </td>
+                      <td>02/26/2014<small>02:31:40 PM</small></td>
+                      <td><a href="#deactivate" data-toggle="modal" class="fa fa-power-off"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="clearfix"></div>
+                <div class="pull-left"><small class="text-muted">Showing 3 out of 3 results</small></div>
+                <div class="pull-right">
+                  <ul class="pagination pagination-sm nomargin pull-left">
+                    <li id="prevPage" class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                    <li class="page-number active"><a href="#">1</a></li>
+                    <li class="page-number"><a href="#">2</a></li>
+                    <li class="page-number"><a href="#">3</a></li>
+                    <li class="page-number"><a href="#">4</a></li>
+                    <li class="page-number"><a href="#">5</a></li>
+                    <li id="ellipsisEnd"><a href="#">...</a></li>
+                    <li id="nextPage"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
                   </ul>
+                  <div class="dropdown pull-left"><a id="paginateUsersList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm dropdown-toggle">
+                      <label id="limitOption">20&nbsp;</label><span class="caret"></span></a>
+                    <ul aria-labelledby="paginateUsersList" class="dropdown-menu">
+                      <li><small>&nbsp;&nbsp;&nbsp;&nbsp;Per page</small></li>
+                      <li class="divider"></li>
+                      <li><a href="#" class="limit-option">20</a></li>
+                      <li><a href="#" class="limit-option">50</a></li>
+                      <li><a href="#" class="limit-option">100</a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <h3>Inactive</h3>
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table text-muted">
+                  <thead>
+                    <tr>
+                      <th>Bvrn&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Payer ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Account Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Registration Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1355817</td>
+                      <td>062931395725</td>
+                      <td> </td>
+                      <td>02/26/2014<small>02:31:40 PM</small></td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>1355817</td>
+                      <td>062931395725</td>
+                      <td> </td>
+                      <td>02/26/2014<small>02:31:40 PM</small></td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
                 <div class="clearfix"></div>
               </div>
               <div class="clearfix"></div>
