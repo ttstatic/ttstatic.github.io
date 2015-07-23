@@ -11,7 +11,7 @@ var Dashboard = (function () {
       Dashboard.forms();
 
       Dashboard.fitSignupPage();
-      //Dashboard.sidebarNavHighlight();
+      Dashboard.sidebarNavHighlight();
       
       Dashboard.scrollDirection();
 
@@ -26,7 +26,7 @@ var Dashboard = (function () {
       $(".nav-sidebar li").each(function(){
         var navtext = $.trim($(this).find("a").text().toLowerCase());
         //console.log($.cookie("snavh") + " : " + navtext)
-        if ($.cookie("snav") == navtext) {
+        if ($.cookie("snavh") == navtext) {
           $(this).addClass("active");
         }
       });
