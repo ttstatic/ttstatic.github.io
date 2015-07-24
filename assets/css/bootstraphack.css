@@ -15,6 +15,9 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
+.table > thead > tr > th {
+  white-space: nowrap;
+}
 /* modal animation */
 
 .modal.fade .modal-dialog {
@@ -80,6 +83,9 @@ a {
 }
 .btn-success:hover, .btn-success:focus {
     background: #23B292;
+}
+.btn-success:active {
+    background: #36BFA1 !important;
 }
 
 .btn-group .btn,

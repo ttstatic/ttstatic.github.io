@@ -189,18 +189,7 @@
           <div class="main">
             <!-- content goes here...-->
             <h1 class="page-header pull-left">File Details</h1><span class="pull-right">
-              <div class="vspacer hidden-xs"></div><small>Reports</small>&nbsp;
-              <select class="form-control wauto inline valignm">
-                <option>Choose from report list</option>
-                <option>Active BPay User Report</option>
-                <option>Active User Report</option>
-                <option>BPAY Delivery Report</option>
-                <option>Email Report</option>
-                <option>Failed BPay User Report</option>
-                <option>Non-Active User Report</option>
-                <option>Reconciliation</option>
-                <option>Sold BPay User Report</option>
-              </select>&nbsp;<a href="#" data-target="#" class="btn btn-warning">Generate</a></span>
+              <div class="vspacer hidden-xs"></div><a href="#" data-toggle="modal" data-target="#webapprove" class="btn btn-warning">Approve</a><a href="#" data-toggle="modal" data-target="#webreject" class="btn btn-danger">Reject</a><a href="#" class="btn btn-info">Reset All</a></span>
             <div class="visible-xs">
               <div class="vspacer"></div>
               <div class="vspacer"></div>
@@ -247,10 +236,6 @@
                 </div>
               </div>
             </div>
-            <div class="clearfix"></div><a href="pay" class="btn btn-warning pull-right">Pay Now</a>
-            <div class="vspacer"></div>
-            <div class="vspacer"></div>
-            <div class="vspacer"></div>
             <div class="clearfix"></div>
             <div class="card">
               <div class="form-group form-interactive">
@@ -270,7 +255,7 @@
                       <th>Document Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
                       <th>Balance&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
                       <th>Amount Due&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Pay&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
+                      <th>Mail Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
                       <th></th>
                     </tr>
                   </thead>
@@ -283,7 +268,10 @@
                       <td>$45.00</td>
                       <td>$45.00</td>
                       <td>
-                        <input type="checkbox"/>
+                        <select class="form-control">
+                          <option>&nbsp;</option>
+                          <option>.pdf</option>
+                        </select>
                       </td>
                       <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
                     </tr>
@@ -295,7 +283,10 @@
                       <td>$39.00</td>
                       <td>$39.00</td>
                       <td>
-                        <input type="checkbox"/>
+                        <select class="form-control">
+                          <option>&nbsp;</option>
+                          <option>.pdf</option>
+                        </select>
                       </td>
                       <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
                     </tr>
@@ -307,7 +298,10 @@
                       <td>$29.00</td>
                       <td>$29.00</td>
                       <td>
-                        <input type="checkbox"/>
+                        <select class="form-control">
+                          <option>&nbsp;</option>
+                          <option>.pdf</option>
+                        </select>
                       </td>
                       <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
                     </tr>

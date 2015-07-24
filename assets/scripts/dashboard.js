@@ -21,7 +21,8 @@ var Dashboard = (function () {
       $(".nav-sidebar > li > a").on("click", function() {
         //$(this).parents(".nav-sidebar:eq(0) li").removeClass("active");
         var cval = $.trim($(this).text().toLowerCase());
-        $.cookie("snavh", cval, {path: "/"});
+        if (!$(this).attr("data-toggle"))
+          $.cookie("snavh", cval, {path: "/"});
       });
       $(".nav-sidebar li").each(function(){
         var navtext = $.trim($(this).find("a").text().toLowerCase());

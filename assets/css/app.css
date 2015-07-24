@@ -353,6 +353,7 @@ footer {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     font-style: italic;
+    cursor: text;
     
     width: 90%;
     overflow: hidden;
@@ -488,5 +489,11 @@ footer {
 }
 
 tr.addnew {
-  background: aliceblue;
+  background: whitesmoke;
+}
+.table tr td input[type="text"] {
+  border: 1px solid;
+}
+.row-offcanvas {
+  height: 100%;
 }
