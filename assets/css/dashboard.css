@@ -83,6 +83,9 @@ body {
 /*    padding: 20px;*/
     padding: 20px 0 0;
 }
+.dashboard-main {
+  margin-top: -20px;
+}
 
 @media (min-width: 768px) {
     .main {

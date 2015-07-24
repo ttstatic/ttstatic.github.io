@@ -14,7 +14,6 @@ var Dashboard = (function () {
       Dashboard.sidebarNavHighlight();
       
       Dashboard.scrollDirection();
-
     },
     
     sidebarNavHighlight: function () {

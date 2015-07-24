@@ -183,62 +183,65 @@
         </div>
         <div class="col-sm-8 col-sm-offset-4 col-md-10 col-md-offset-2 row-offcanvas row-offcanvas-left">
           <div class="offcanvas-cover"></div>
-          <div class="search row inputButton">
-            <input type="text" placeholder="Search..." class="form-control"/><span class="btnIcon"><i class="fa fa-search"></i></span>
-          </div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header">Dashboard</h1>
-            <div class="card">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-users fa-stack-2x"></i></span>
-                  <h3>39,652</h3><span class="text-muted labels"><span class="title">Total number of rate payers</span><br/><small class="subtitle">(Electronic and Print)</small></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-credit-card fa-stack-2x"></i></span>
-                  <h3>5<sup>%</sup></h3><span class="text-muted labels"><span class="title">Using electronic payment methods</span></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-calendar-o fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x _2"></i></span>
-                  <h3><sup>$</sup>10,905</h3><span class="text-muted labels"><span class="title">Savings this month on AUSPOST</span></span>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-usd fa-stack-2x"></i></span>
-                  <h3><sup>$</sup>289,000</h3><span class="text-muted labels"><span class="title">Payments due this month</span></span>
-                </div>
+            <div class="dashboard-main">
+              <div class="search row inputButton">
+                <input type="text" placeholder="Search..." class="form-control"/><span class="btnIcon"><i class="fa fa-search"></i></span>
               </div>
-            </div>
-            <div class="clearfix"></div>
-            <h2 class="sub-header">Job Status<a href="jobmanager" onclick="$.cookie('snavh','job manager')" class="btn btn-warning pull-right">Job Manager</a></h2>
-            <div class="row">
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _1">
-                  <h3>4th Notice</h3>
-                  <h5>text-muted Notice type</h5>
-                </div>
-              </div>
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _2">
-                  <h3>01/05/15</h3>
-                  <h5 class="text-muted">Date submitted</h5>
-                </div>
-              </div>
-              <div class="col-md-4 text-center">
-                <div class="card jstatus _3">
-                  <h3>In Print</h3>
-                  <h5 class="text-muted">Status</h5>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <div id="noOfRegistrations">
-                    <!-- Highcharts goes here...-->
+              <!--search--><br/>
+              <h1 class="page-header">Dashboard</h1>
+              <div class="card">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-users fa-stack-2x"></i></span>
+                    <h3>39,652</h3><span class="text-muted labels"><span class="title">Total number of rate payers</span><br/><small class="subtitle">(Electronic and Print)</small></span>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-credit-card fa-stack-2x"></i></span>
+                    <h3>5<sup>%</sup></h3><span class="text-muted labels"><span class="title">Using electronic payment methods</span></span>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-calendar-o fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x _2"></i></span>
+                    <h3><sup>$</sup>10,905</h3><span class="text-muted labels"><span class="title">Savings this month on AUSPOST</span></span>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-usd fa-stack-2x"></i></span>
+                    <h3><sup>$</sup>289,000</h3><span class="text-muted labels"><span class="title">Payments due this month</span></span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div id="totalNotices">
-                    <!-- Highcharts goes here...-->
+              <div class="clearfix"></div>
+              <h2 class="sub-header">Job Status<a href="jobmanager" onclick="$.cookie('snavh','job manager')" class="btn btn-warning pull-right">Job Manager</a></h2>
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <div class="card jstatus _1">
+                    <h3>4th Notice</h3>
+                    <h5>text-muted Notice type</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="card jstatus _2">
+                    <h3>01/05/15</h3>
+                    <h5 class="text-muted">Date submitted</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="card jstatus _3">
+                    <h3>In Print</h3>
+                    <h5 class="text-muted">Status</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div id="noOfRegistrations">
+                      <!-- Highcharts goes here...-->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div id="totalNotices">
+                      <!-- Highcharts goes here...-->
+                    </div>
                   </div>
                 </div>
               </div>
