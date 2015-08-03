@@ -83,15 +83,26 @@ a {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
-.btn-success {
-    background: #36BFA1;
-}
-.btn-success:hover, .btn-success:focus {
-    background: #23B292;
-}
-.btn-success:active {
-    background: #36BFA1 !important;
-}
+/* btn-success */
+  .btn-success {
+      background: #36BFA1;
+  }
+  .btn-success:hover, .btn-success:focus {
+      background: #23B292;
+  }
+  .btn-success:active {
+      background: #36BFA1 !important;
+  }
+/* btn-warning */
+  .btn-warning {
+      background: coral;
+  }
+  .btn-warning:hover, .btn-warning:focus {
+      background: #F3602A;
+  }
+  .btn-warning:active {
+      background: #F3602A !important;
+  }
 
 .btn-group .btn,
 .input-group .btn {

@@ -264,6 +264,21 @@ footer {
 .signup-wrap .left {
   background: #2c343f;
 }
+.signup-wrap.banner-staff .left {
+  background: white;
+}
+.signup-wrap.banner-staff .left .content {
+  color: inherit;
+}
+.signup-wrap.banner-staff {
+  background: #093852;
+}
+.signup-wrap.banner-staff .right .card {
+  color: initial;
+}
+.signup-wrap.banner-staff .right, .signup-wrap.banner-staff small a {
+  color: white;
+}
 
 .signup-wrap .left .content,
 .signup-wrap .right .content {
