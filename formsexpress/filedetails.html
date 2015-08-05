@@ -162,15 +162,37 @@
           </div><strong>Welcome back, Rodan</strong><br/><small>Last logged in on 31.01.15</small><br/><br/>
           <ul class="nav nav-sidebar">
             <li><a href="/" class="fa fa-home">Dashboard </a></li>
-            <li><a href="usermanager" class="fa fa-users">User Manager</a></li>
+            <!--
+            li
+              a.fa.fa-users(href="usermanager")
+                | User Manager
+            -->
             <li><a href="jobmanager" class="fa fa-briefcase">Job Manager</a></li>
-            <li><a href="webproofing" class="fa fa-eye">Web Proofing</a></li>
-            <li><a href="bpay" class="fa"><img src="assets/images/icons/Bpay_logo_16.png" class="icon-bpay"/>&nbsp;&nbsp;BPay Manager</a></li>
+            <!--
+            li
+              a.fa.fa-eye(href="webproofing")
+                | Web Proofing
+            li
+              a.fa(href="bpay")
+                img.icon-bpay(src="assets/images/icons/Bpay_logo_16.png")
+                | &nbsp;&nbsp;BPay Manager
+            
+            -->
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="#uc" data-toggle="modal" class="fa fa-bar-chart">Reports</a></li>
-            <li><a href="settings" class="fa fa-cogs">Settings</a></li>
+            <li><a href="//www.billarchive.com.au/Login.asp" target="_blank" class="fa fa-external-link">Bill Archive</a></li>
+            <li><a href="//www.billarchive.com.au/datasubmissionportal/" target="_blank" class="fa fa-external-link">Data Submission</a></li>
+            <li><a href="//www.billarchive.com.au/billprint2/" target="_blank" class="fa fa-external-link">Bill Print</a></li>
           </ul>
+          <!--  
+          ul.nav.nav-sidebar
+            li
+              a.fa.fa-bar-chart(href="#uc", data-toggle="modal")
+                | Reports
+            li
+              a.fa.fa-cogs(href="settings")
+                | Settings
+          -->
           <ul class="nav nav-sidebar">
             <li><a href="login" class="fa fa-sign-out">Log out</a></li>
           </ul>
