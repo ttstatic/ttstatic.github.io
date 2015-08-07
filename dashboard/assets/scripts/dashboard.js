@@ -6,7 +6,7 @@ var Dashboard = (function () {
 	return {
 		init: function () {
 			Dashboard.offcanvas();
-			//Dashboard.box('.box-overview');
+			Dashboard.box('.chart-elem');
 			Dashboard.forms();
 			Dashboard.sidebarNavHighlight();
 
@@ -19,8 +19,8 @@ var Dashboard = (function () {
             $(".chart-elem").click(function() {
                 var _this = $(this);
                 _this.find("canvas").removeAttr("style");
-                _this.parent().find(".chart-elem").addClass("stack").removeClass("selected animated flipInX");
-                _this.addClass("selected animated flipInX");
+                _this.parent().find(".chart-elem").addClass("stack").removeClass("selected animated fadeIn");
+                _this.addClass("selected animated fadeIn");
                 
                 $(".chart").addClass("stack-wrap").find(".stack").each(function(index) {
                     var _this = $(this);
@@ -38,6 +38,7 @@ var Dashboard = (function () {
                     });
                     return removeClass.join(" ");
                 });
+                Dashboard.initChart();
             });
         },
       
@@ -236,7 +237,7 @@ var Dashboard = (function () {
 
 			$(window).on("load resize click", function () {
 
-				Dashboard.boxReset(".box-overview");
+				Dashboard.boxReset(".chart-elem");
 				$(selector).height(Dashboard.getMaxH($(selector)));
 
 			});
