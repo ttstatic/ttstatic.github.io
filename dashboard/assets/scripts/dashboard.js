@@ -1,21 +1,21 @@
 var Dashboard = (function () {
 	// variables
 	var abc = 123;
-
+    var newBarChart, newRadChart, newLinChart, newPolChart;
 	// object
 	return {
 		init: function () {
 			Dashboard.offcanvas();
-			Dashboard.box('.chart-elem');
+			//Dashboard.box('.chart-elem');
 			Dashboard.forms();
 			Dashboard.sidebarNavHighlight();
 
 			//Dashboard.scrollDirection();
-            Dashboard.flipChart();
+            Dashboard.focusChart();
             Dashboard.initChart();
 		},
       
-        flipChart : function () {
+        focusChart : function () {
             $(".chart-elem").click(function() {
                 var _this = $(this);
                 _this.find("canvas").removeAttr("style");
@@ -49,11 +49,6 @@ var Dashboard = (function () {
             var linCtx = $("#linChart").get(0).getContext("2d");
             var polCtx = $("#polChart").get(0).getContext("2d");
             
-            var newBarChart = new Chart(barCtx);
-            var newRadChart = new Chart(radCtx);
-            var newLinChart = new Chart(linCtx);
-            var newPolChart = new Chart(polCtx);
-            
             Chart.defaults.global.responsive = true;
             
             // Bar
@@ -78,7 +73,10 @@ var Dashboard = (function () {
                       }
                   ]
               };
-              new Chart(barCtx).Bar(data);
+              try {
+                  Dashboard.newBarChart.destroy();
+              } catch(e) {}
+              Dashboard.newBarChart = new Chart(barCtx).Bar(data);
             
             // Radar
               var data = {
@@ -106,7 +104,10 @@ var Dashboard = (function () {
                       }
                   ]
               };
-              new Chart(radCtx).Radar(data);
+              try {
+                  Dashboard.newRadChart.destroy();
+              } catch(e) {}
+              Dashboard.newRadChart = new Chart(radCtx).Radar(data);
             
             // Line
               var data = {
@@ -134,7 +135,10 @@ var Dashboard = (function () {
                       }
                   ]
               };
-              new Chart(linCtx).Line(data);
+              try {
+                  Dashboard.newLinChart.destroy();
+              } catch(e) {}
+              Dashboard.newLinChart = new Chart(linCtx).Line(data);
             
             // Polar
               var data = [
@@ -170,7 +174,10 @@ var Dashboard = (function () {
                   }
 
               ];
-              new Chart(polCtx).PolarArea(data);
+              try {
+                  Dashboard.newPolChart.destroy();
+              } catch(e) {}
+              Dashboard.newPolChart = new Chart(polCtx).PolarArea(data);
         },
 
 		sidebarNavHighlight: function () {
