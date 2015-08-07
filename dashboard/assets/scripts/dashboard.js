@@ -15,30 +15,42 @@ var Dashboard = (function () {
             Dashboard.initChart();
 		},
       
+        minChart : function (elem, chart) {
+            chart.removeClass("stack-wrap");
+            elem.removeClass("selected");
+            Dashboard.initChart();
+        },
+        
         focusChart : function () {
-            $(".chart-elem").click(function() {
-                var _this = $(this);
-                _this.find("canvas").removeAttr("style");
-                _this.parent().find(".chart-elem").addClass("stack").removeClass("selected animated fadeIn");
-                _this.addClass("selected animated fadeIn");
+            $(".chart").on("click", ".chart-elem .chart-head a", function() {
+                var _elem = $(this).parents(".chart-elem:eq(0)");
+                var _chart = $(this).parents(".chart:eq(0)");
                 
-                $(".chart").addClass("stack-wrap").find(".stack").each(function(index) {
-                    var _this = $(this);
-                    if(!_this.hasClass("selected")) {
-                        _this.addClass("o_" + (index+1));
-                    }
-                });
-                _this.removeClass(function(index, classNames) {
-                    var thisClass =  classNames.split(" ");
-                    var removeClass = [];
-                    $.each(thisClass, function(index, class_name) {
-                        if (/o_.*/.test(class_name)) {
-                            removeClass.push(class_name);
+                if (!_elem.hasClass("selected")) {
+                    _elem.find("canvas").removeAttr("style");
+                    _chart.find(".chart-elem").addClass("stack").removeClass("selected animated fadeIn");
+                    _elem.addClass("selected animated fadeIn");
+
+                    _chart.addClass("stack-wrap").find(".stack").each(function(index) {
+                        var _this = $(this);
+                        if(!_this.hasClass("selected")) {
+                            _this.addClass("o_" + (index+1));
                         }
                     });
-                    return removeClass.join(" ");
-                });
-                Dashboard.initChart();
+                    _elem.removeClass(function(index, classNames) {
+                        var thisClass =  classNames.split(" ");
+                        var removeClass = [];
+                        $.each(thisClass, function(index, class_name) {
+                            if (/o_.*/.test(class_name)) {
+                                removeClass.push(class_name);
+                            }
+                        });
+                        return removeClass.join(" ");
+                    });
+                    Dashboard.initChart();
+                } else {
+                    Dashboard.minChart(_elem, _chart);
+                }
             });
         },
       

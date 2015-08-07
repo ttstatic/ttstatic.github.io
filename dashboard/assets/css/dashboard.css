@@ -419,6 +419,19 @@ footer {
     .chart canvas {
         width: 100% !important;
     }
+    .chart-head {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+    .chart-head a {
+        text-decoration: none;
+    }
+    .chart-elem.selected .chart-head a:before {
+        content: "\f00d";
+    }
+    .chart-head a:not(.selected):before {
+        content: "\f065";
+    }
 
 /*=============================================*
  * Media Queries
