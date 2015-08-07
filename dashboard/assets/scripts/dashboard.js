@@ -17,8 +17,8 @@ var Dashboard = (function () {
       
         flipChart : function () {
             $(".chart-elem").click(function() {
-                
                 var _this = $(this);
+                _this.find("canvas").removeAttr("style");
                 _this.parent().find(".chart-elem").addClass("stack").removeClass("selected animated flipInX");
                 _this.addClass("selected animated flipInX");
                 
