@@ -27,7 +27,7 @@ var Dashboard = (function () {
                 var _chart = $(this).parents(".chart:eq(0)");
                 
                 if (!_elem.hasClass("selected")) {
-                    _elem.find("canvas").removeAttr("style");
+                    //_elem.find("canvas").removeAttr("style");
                     _chart.find(".chart-elem").addClass("stack").removeClass("selected animated fadeIn");
                     _elem.addClass("selected animated fadeIn");
 

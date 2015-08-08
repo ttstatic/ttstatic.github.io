@@ -386,7 +386,7 @@ footer {
         align-items: flex-start
     }
     .chart.stack-wrap .stack.selected {
-        width: 100%;
+        flex: 1 100%;
     }
     .chart.stack-wrap .stack:not(.selected) {
         /*width: 100%;*/
@@ -426,6 +426,7 @@ footer {
 */
     .chart canvas {
         width: 100% !important;
+        height: auto !important;
     }
     .chart-head {
         margin-bottom: 20px;
