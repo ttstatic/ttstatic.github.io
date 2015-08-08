@@ -366,6 +366,7 @@ footer {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        
         -webkit-box-orient: vertical;
         -moz-box-orient: vertical;
         
@@ -377,6 +378,8 @@ footer {
         -moz-box-align: start;
         -ms-flex-align: start;
         
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
         flex-wrap: wrap;
         
         -webkit-align-items: flex-start;
@@ -391,6 +394,7 @@ footer {
         -ms-flex: 1; /* IE 10 */ 
         flex: 1;
     }
+/* Flex order has been moved to the script so that we the number of panels can be configured dynamically /
     .chart.stack-wrap .stack.o_1 {
         -webkit-box-ordinal-group:1;
         -moz-box-ordinal-group:1;
@@ -419,6 +423,7 @@ footer {
         -webkit-order:4;
         order:4;
     }
+*/
     .chart canvas {
         width: 100% !important;
     }

@@ -33,8 +33,16 @@ var Dashboard = (function () {
 
                     _chart.addClass("stack-wrap").find(".stack").each(function(index) {
                         var _this = $(this);
-                        if(!_this.hasClass("selected")) {
-                            _this.addClass("o_" + (index+1));
+                        if(_this.hasClass("selected")) {
+                            _this.removeAttr("style");
+                        } else {
+                            _this.addClass("o_" + (index+1)).removeAttr("style").css({
+                                "-webkit-box-ordinal-group" : index+1,
+                                "-moz-box-ordinal-group"    : index+1,
+                                "-ms-flex-order"            : index+1,
+                                "-webkit-order"             : index+1,
+                                "order"                     : index+1
+                            });
                         }
                     });
                     _elem.removeClass(function(index, classNames) {
