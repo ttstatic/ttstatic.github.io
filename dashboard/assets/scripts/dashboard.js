@@ -18,6 +18,8 @@ var Dashboard = (function () {
         minChart : function (elem, chart) {
             chart.removeClass("stack-wrap");
             elem.removeClass("selected");
+            elem.find("canvas").height("auto")
+            //elem.find("canvas").addClass("rodan")
             Dashboard.initChart();
         },
         
@@ -27,7 +29,7 @@ var Dashboard = (function () {
                 var _chart = $(this).parents(".chart:eq(0)");
                 
                 if (!_elem.hasClass("selected")) {
-                    //_elem.find("canvas").removeAttr("style");
+                    _elem.find("canvas").removeAttr("style");
                     _chart.find(".chart-elem").addClass("stack").removeClass("selected animated fadeIn");
                     _elem.addClass("selected animated fadeIn");
 
@@ -65,7 +67,7 @@ var Dashboard = (function () {
         initChart : function () {
             
             var barCtx = $("#barChart").get(0).getContext("2d");
-            var radCtx = $("#radChart").get(0).getContext("2d");
+            var douCtx = $("#douChart").get(0).getContext("2d");
             var linCtx = $("#linChart").get(0).getContext("2d");
             var polCtx = $("#polChart").get(0).getContext("2d");
             
@@ -99,35 +101,30 @@ var Dashboard = (function () {
               Dashboard.newBarChart = new Chart(barCtx).Bar(data);
             
             // Radar
-              var data = {
-                  labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-                  datasets: [
-                      {
-                          label: "My First dataset",
-                          fillColor: "rgba(220,220,220,0.2)",
-                          strokeColor: "rgba(220,220,220,1)",
-                          pointColor: "rgba(220,220,220,1)",
-                          pointStrokeColor: "#fff",
-                          pointHighlightFill: "#fff",
-                          pointHighlightStroke: "rgba(220,220,220,1)",
-                          data: [65, 59, 90, 81, 56, 55, 40]
-                      },
-                      {
-                          label: "My Second dataset",
-                          fillColor: "rgba(151,187,205,0.2)",
-                          strokeColor: "rgba(151,187,205,1)",
-                          pointColor: "rgba(151,187,205,1)",
-                          pointStrokeColor: "#fff",
-                          pointHighlightFill: "#fff",
-                          pointHighlightStroke: "rgba(151,187,205,1)",
-                          data: [28, 48, 40, 19, 96, 27, 100]
-                      }
-                  ]
-              };
+              var data = [
+                  {
+                      value: 300,
+                      color:"#F7464A",
+                      highlight: "#FF5A5E",
+                      label: "Red"
+                  },
+                  {
+                      value: 50,
+                      color: "#46BFBD",
+                      highlight: "#5AD3D1",
+                      label: "Green"
+                  },
+                  {
+                      value: 100,
+                      color: "#FDB45C",
+                      highlight: "#FFC870",
+                      label: "Yellow"
+                  }
+              ]
               try {
-                  Dashboard.newRadChart.destroy();
+                  Dashboard.newDouChart.destroy();
               } catch(e) {}
-              Dashboard.newRadChart = new Chart(radCtx).Radar(data);
+              Dashboard.newDouChart = new Chart(douCtx).Doughnut(data);
             
             // Line
               var data = {

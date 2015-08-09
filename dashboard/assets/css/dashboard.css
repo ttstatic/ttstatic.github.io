@@ -424,9 +424,8 @@ footer {
         order:4;
     }
 */
-    .chart canvas {
+    .chart section canvas {
         width: 100% !important;
-        height: auto !important;
     }
     .chart-head {
         margin-bottom: 20px;
