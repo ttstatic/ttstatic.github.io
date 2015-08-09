@@ -13,6 +13,8 @@ var Dashboard = (function () {
 			//Dashboard.scrollDirection();
             Dashboard.focusChart();
             Dashboard.initChart();
+            
+            Dashboard.animateElem();
 		},
       
         minChart : function (elem, chart) {
@@ -195,6 +197,11 @@ var Dashboard = (function () {
                   Dashboard.newPolChart.destroy();
               } catch(e) {}
               Dashboard.newPolChart = new Chart(polCtx).PolarArea(data);
+        },
+        
+        animateElem : function () {
+            $(".logo img").addClass("animated flipInX");
+            $(".nav-sidebar").addClass("animated fadeIn");
         },
 
 		sidebarNavHighlight: function () {
