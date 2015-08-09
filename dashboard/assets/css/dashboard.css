@@ -386,6 +386,8 @@ footer {
         align-items: flex-start
     }
     .chart.stack-wrap .stack.selected {
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
         flex: 1 100%;
     }
     .chart.stack-wrap .stack:not(.selected) {
