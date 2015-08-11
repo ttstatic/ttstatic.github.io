@@ -111,18 +111,21 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" data-toggle="offcanvas" class="navbar-brand visible-xs menu"><i class="fa fa-ellipsis-v"></i></a>
-          <div class="council mobile visible-xs">
-            <!-- carousel logo-->
-            <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
-              <!-- Wrapper for slides-->
-              <div role="listbox" class="carousel-inner">
-                <div class="item active"><img src="assets/images/council/logo-moonee.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-eurobodalla.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-auburn.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-frankston.png"/></div>
-              </div>
-            </div>
-            <!-- carousel logo END-->
+          <div class="council mobile visible-xs"><img src="assets/images/council/logo-moonee.png"/>
+            <!-- carousel logo
+            #carousel-example-generic.carousel.slide(data-ride="carousel")
+              // Wrapper for slides
+              .carousel-inner(role="listbox")
+                .item.active
+                  img(src="assets/images/council/logo-moonee.png")
+                .item
+                  img(src="assets/images/council/logo-eurobodalla.png")
+                .item
+                  img(src="assets/images/council/logo-auburn.png")
+                .item
+                  img(src="assets/images/council/logo-frankston.png")
+            // carousel logo END
+            -->
           </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -147,18 +150,22 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 col-md-2 sidebar sidebar-offcanvas">
-          <div class="council">
-            <!-- carousel logo-->
-            <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
-              <!-- Wrapper for slides-->
-              <div role="listbox" class="carousel-inner">
-                <div class="item active"><img src="assets/images/council/logo-moonee.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-eurobodalla.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-auburn.png"/></div>
-                <div class="item"><img src="assets/images/council/logo-frankston.png"/></div>
-              </div>
-            </div>
-            <!-- carousel logo END-->
+          <div class="council"><img src="assets/images/council/logo-moonee.png"/>
+            <!-- carousel logo
+            #carousel-example-generic.carousel.slide(data-ride="carousel")
+              // Wrapper for slides
+              .carousel-inner(role="listbox")
+                .item.active
+                  img(src="assets/images/council/logo-moonee.png")
+                .item
+                  img(src="assets/images/council/logo-eurobodalla.png")
+                .item
+                  img(src="assets/images/council/logo-auburn.png")
+                .item
+                  img(src="assets/images/council/logo-frankston.png")
+            // carousel logo END
+            
+            -->
           </div><strong>Welcome back, Rodan</strong><br/><small>Last logged in on 31.01.15</small><br/><br/>
           <ul class="nav nav-sidebar">
             <li><a href="/formsexpress/" class="fa fa-home">Dashboard </a></li>
