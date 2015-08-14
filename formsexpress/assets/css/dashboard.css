@@ -8,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #50454D;
     position: relative;
+    background: #e9edf2;
 }
 /*
  * Global add-ons
@@ -100,6 +101,9 @@ body {
     margin-top: 0;
     margin-bottom: 5px;
     border-bottom: 0;
+}
+.main .page-header a.fa {
+    text-decoration: none;
 }
 /*
  * Placeholder dashboard ideas

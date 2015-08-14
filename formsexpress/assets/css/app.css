@@ -170,10 +170,11 @@ a:hover {
 }
 
 .row-offcanvas {
-  background: white;
+/*
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
   background: #e9edf2;
+*/
 }
 
 footer {
@@ -661,3 +662,138 @@ tr.addnew {
     display: inline-block;
     color: #2c343f;
 }
+
+
+/*/
+ * Job List
+/*/
+.job-list .card:hover .cover {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.job-list .card .blur {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.job-list .card .blur h3 i {
+    vertical-align: middle;
+    display: block;
+}
+.job-list .card .cover {
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+}
+.job-list .card:hover .blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+.jl {
+    padding: 15px;
+    text-align: center;
+}
+.job-list .jl-color {
+    border-left: 5px solid #2C343F ;
+}
+.jl .cover {
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .6);
+    z-index: 1;
+    display: none;
+}
+.jl .cover a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: inherit;
+    color: #2C343F;
+    border: 1px solid #D4D4D4;
+}
+.jl.empty {
+    border-color: #CACACA;
+    color: #CACACA;
+}
+.jl.empty sup {
+	color: #CACACA;
+}
+.jl.empty .cover {
+    display: none !important;
+}
+.jl.actv:before {
+	font-family: FontAwesome;
+    content: "\f058";
+    position: absolute;
+    right: 20px;
+    font-size: 36px;
+    color: #77CA00;
+}
+
+/*/ FLEX VENDOR GUIDE
+    
+    DISPLAY
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    ORIENT
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+    FLEX DIRECTION
+        -webkit-flex-direction: inherit;
+        -ms-flex-direction: inherit;
+        flex-direction: inherit;
+    BOX ALIGN
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+    FLEX WRAP
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+    ALIGN ITEMS
+        -webkit-align-items: flex-start;
+        align-items: flex-start
+    FLEX
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+    BOX ORDINAL GROUP
+        -webkit-box-ordinal-group:1;
+        -moz-box-ordinal-group:1;
+    ORDER
+        -ms-flex-order:1;
+        -webkit-order:1;
+        order:1;
+
+/*/
