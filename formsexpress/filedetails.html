@@ -15,6 +15,7 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
     <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
     <link href="bower_components/Strength.js/src/strength.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
     <!-- Web Assets-->
     <link href="assets/css/bootstraphack.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css"/>
@@ -169,13 +170,13 @@
           </div>
           <div class="animated fadeIn"><strong>Welcome back, Rodan</strong><br/><small>Last logged in on 31.01.15</small></div><br/><br/>
           <ul class="nav nav-sidebar animated fadeIn">
-            <li><a href="/formsexpress/" class="fa fa-home">Dashboard </a></li>
+            <li><a href="/formsexpress/"><i class="fa fa-home"></i>Dashboard</a></li>
             <!--
             li
               a.fa.fa-users(href="usermanager")
                 | User Manager
             -->
-            <li><a href="jobmanager" class="fa fa-briefcase">Job Manager</a></li>
+            <li><a href="joblist"><i class="fa fa-briefcase"></i>Job List</a></li>
             <!--
             li
               a.fa.fa-eye(href="webproofing")
@@ -189,9 +190,9 @@
           <hr/>
           <h4>Related Websites</h4>
           <ul class="nav nav-sidebar animated fadeIn">
-            <li><a href="//www.billarchive.com.au/Login.asp" target="_blank" class="fa fa-external-link">Bill Archive</a></li>
-            <li><a href="//www.billarchive.com.au/datasubmissionportal/" target="_blank" class="fa fa-external-link">Data Submission</a></li>
-            <li><a href="//www.billarchive.com.au/billprint2/" target="_blank" class="fa fa-external-link">Bill Print</a></li>
+            <li><a href="//www.billarchive.com.au/Login.asp" target="_blank"><i class="fa fa-external-link"></i>Bill Archive</a></li>
+            <li><a href="//www.billarchive.com.au/datasubmissionportal/" target="_blank"><i class="fa fa-external-link"></i>Data Submission</a></li>
+            <li><a href="//www.billarchive.com.au/billprint2/" target="_blank"><i class="fa fa-external-link"></i>Bill Print</a></li>
           </ul>
           <!--  
           ul.nav.nav-sidebar
@@ -215,160 +216,260 @@
           <div class="offcanvas-cover"></div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header pull-left">File Details</h1><span class="pull-right">
-              <div class="vspacer hidden-xs"></div><small>Reports</small>&nbsp;
-              <select class="form-control wauto inline valignm">
-                <option>Choose from report list</option>
-                <option>Active BPay User Report</option>
-                <option>Active User Report</option>
-                <option>BPAY Delivery Report</option>
-                <option>Email Report</option>
-                <option>Failed BPay User Report</option>
-                <option>Non-Active User Report</option>
-                <option>Reconciliation</option>
-                <option>Sold BPay User Report</option>
-              </select>&nbsp;<a href="#" data-target="#" class="btn btn-warning">Generate</a></span>
-            <div class="visible-xs">
-              <div class="vspacer"></div>
-              <div class="vspacer"></div>
-              <div class="vspacer"></div>
-            </div>
+            <h1 class="page-header pull-left">File Details</h1>
             <div class="clearfix"></div>
-            <div class="card">
+            <div class="card card-group priority">
               <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="form-group">
-                    <label>Submission Type</label>
-                    <div><small class="text-muted">Statement</small></div>
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Debtor</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label>File Name</label>
-                    <div><small class="text-muted">SampleData.txt</small></div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Invoice</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="form-group">
-                    <label>ID</label>
-                    <div><small class="text-muted">1608</small></div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Envelope Quantity</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label>Receive Date</label>
-                    <div></div><small class="text-muted">01/14/2013</small>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="form-group">
-                    <label># Docs</label>
-                    <div><small class="text-muted">58939</small></div>
-                  </div>
-                  <div class="form-group">
-                    <label># Pages</label>
-                    <div><small class="text-muted">260531</small></div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">State</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="form-group">
-                    <label>Status</label>
-                    <div><small class="text-muted">Print Complete</small></div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Account</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Job Number</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Expect Data Arrival</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Number of Inserts</em>
+                      <input type="text" value="" class="form-control"/>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Document Type</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Account Statement</option>
+                        <option>Annual Reminder</option>
+                        <option>Credit Card Statement</option>
+                        <option>Debtor</option>
+                        <option>Final</option>
+                        <option>Final Reminder</option>
+                        <option>Infringements</option>
+                        <option>Mail Out</option>
+                        <option>Reminder</option>
+                        <option>Statement</option>
+                        <option>Supplementary</option>
+                        <option>Water Final</option>
+                        <option>Water Notice</option>
+                        <option>Water Reminder</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">All Inserts Ready</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">All Base Stock Ready</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Base Stock Size</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+            </div>
+            <!--card-->
+            <div class="clearfix"></div>
+            <div class="card card-group">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Bank Approval Required</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Stock Bank Approval Received</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Data Bank Approval Received</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+            </div>
+            <!--card-->
+            <div class="clearfix"></div>
+            <div class="card card-group">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Data Received</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">1st Proof Sent</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Proof Approval</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Initial Lodge Date</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Bulk Mail Lodge</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">SLA</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>Daily</option>
+                        <option>24/24</option>
+                        <option>24/48</option>
+                        <option>24/72</option>
+                        <option>24/5 days</option>
+                        <option>24/10 days</option>
+                        <option>48 hours</option>
+                        <option>48/48</option>
+                        <option>48/72</option>
+                        <option>48/10 days</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Email Delivery Date</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">CD</em>
+                      <select class="form-control">
+                        <option selected="selected"></option>
+                        <option>(d)ata in - work in progress</option>
+                        <option>(b)ank approval pending</option>
+                        <option>(w)aiting insert</option>
+                        <option>(p)rint (sent to)</option>
+                        <option>(i)nserter / hand insertion</option>
+                        <option>(c)ompleted jobs</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder"></em>
+                      <select class="form-control">
+                        <option selected="selected">Status</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Required Post Date</em>
+                      <input type="text" value="" data-picker="date" class="form-control"/>
+                    </div>
+                  </div>
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+            </div>
+            <!--card-->
+            <div class="clearfix"></div>
+            <div class="card card-group">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group form-interactive">
+                    <div class="casing"><em class="placeholder">Notes</em>
+                      <textarea rows="5" class="form-control"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="clearfix"></div><a href="pay" class="btn btn-warning pull-right">Pay Now</a>
-            <div class="vspacer"></div>
-            <div class="vspacer"></div>
-            <div class="vspacer"></div>
-            <div class="clearfix"></div>
-            <div class="card">
-              <div class="form-group form-interactive">
-                <div class="casing"><em class="placeholder">Search Account Number or Account Name</em>
-                  <div class="inputButton">
-                    <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>Account Number&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Account Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Doc ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Document Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Balance&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Amount Due&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Pay&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Forms Express 1</td>
-                      <td>1</td>
-                      <td>12/04/2013</td>
-                      <td>$45.00</td>
-                      <td>$45.00</td>
-                      <td>
-                        <input type="checkbox"/>
-                      </td>
-                      <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Forms Express 2</td>
-                      <td>2</td>
-                      <td>12/04/2013</td>
-                      <td>$39.00</td>
-                      <td>$39.00</td>
-                      <td>
-                        <input type="checkbox"/>
-                      </td>
-                      <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Forms Express 3</td>
-                      <td>3</td>
-                      <td>12/04/2013</td>
-                      <td>$29.00</td>
-                      <td>$29.00</td>
-                      <td>
-                        <input type="checkbox"/>
-                      </td>
-                      <td class="text-right"><a href="#" class="fa fa-folder-open"></a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="clearfix"></div>
-              <div class="pull-left"><small class="text-muted">Showing 3 out of 3 results</small></div>
-              <div class="pull-right">
-                <ul class="pagination pagination-sm nomargin pull-left">
-                  <li id="prevPage" class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                  <li class="page-number active"><a href="#">1</a></li>
-                  <li class="page-number"><a href="#">2</a></li>
-                  <li class="page-number"><a href="#">3</a></li>
-                  <li class="page-number"><a href="#">4</a></li>
-                  <li class="page-number"><a href="#">5</a></li>
-                  <li id="ellipsisEnd"><a href="#">...</a></li>
-                  <li id="nextPage"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                </ul>
-                <div class="dropdown pull-right"><a id="paginateUsersList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm dropdown-toggle">
-                    <label id="limitOption">20&nbsp;</label><span class="caret"></span></a>
-                  <ul aria-labelledby="paginateUsersList" class="dropdown-menu">
-                    <li><small>&nbsp;&nbsp;&nbsp;&nbsp;Per page</small></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="limit-option">20</a></li>
-                    <li><a href="#" class="limit-option">50</a></li>
-                    <li><a href="#" class="limit-option">100</a></li>
-                  </ul>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
+            <div class="clearfix"></div><a href="pay" class="btn btn-warning pull-right">Save</a><br/><br/>
           </div>
         </div>
       </div>
@@ -880,6 +981,7 @@
     <script src="bower_components/dropzone/dist/dropzone.js" type="text/javascript"></script>
     <script src="bower_components/highcharts/highcharts.js" type="text/javascript"></script>
     <script src="bower_components/Strength.js/src/strength.js" type="text/javascript"></script>
+    <script src="bower_components/datetimepicker/jquery.datetimepicker.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/dashboard.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->

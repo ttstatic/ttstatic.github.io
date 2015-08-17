@@ -12,6 +12,7 @@ var Dashboard = (function () {
 
       Dashboard.fitSignupPage();
       Dashboard.sidebarNavHighlight();
+      Dashboard.datePicker();
       
       Dashboard.scrollDirection();
       
@@ -21,6 +22,15 @@ var Dashboard = (function () {
           strengthButtonTextToggle: ''
         });
       });
+    },
+    
+    datePicker : function () {
+    
+      $("[data-picker='date']").datetimepicker({
+        //timepicker: false, //uncomment if you want to hide the time picker
+        mask: true // '9999/19/39 29:59' - digit is the maximum possible for a cell
+      });
+
     },
     
     sidebarNavHighlight: function () {
@@ -97,14 +107,14 @@ var Dashboard = (function () {
     
     triggerFormLabel: function () {
       // moves the form placeholder if the form has value
-      //setTimeout(function () {
+      setTimeout(function () {
         jQuery(".form-interactive .casing .placeholder").each(function () {
-          var inputVal = jQuery.trim(jQuery(this).parents(".casing:eq(0)").find(":text, textarea").val());
+          var inputVal = jQuery.trim(jQuery(this).parents(".casing:eq(0)").find(":text, textarea, select").val());
           if (inputVal !== "" || inputVal === undefined) {
             jQuery(this).addClass('move');
           }
         });
-      //}, 150);
+      }, 150);
     },
     
     charts : function () {

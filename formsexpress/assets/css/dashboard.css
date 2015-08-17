@@ -69,6 +69,9 @@ body {
 .nav-sidebar > li > a:before {
     padding-right: 10px;
 }
+.nav-sidebar > li > a .fa {
+  margin-right: 10px;
+}
 
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,

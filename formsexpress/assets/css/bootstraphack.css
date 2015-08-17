@@ -211,3 +211,8 @@ textarea.form-control,
 .xdsoft_datetimepicker {
     border: 0;
 }
+
+.form-group label {
+  color: gray;
+  font-style: italic;
+}

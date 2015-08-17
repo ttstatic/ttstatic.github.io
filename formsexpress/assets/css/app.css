@@ -154,6 +154,12 @@ a:hover {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 }
+.card-group {
+  border-left: 4px solid gray;
+}
+.card-group.priority {
+  border-left: 4px solid indianred;
+}
 
 .box-overview {
   text-align: center;
@@ -361,7 +367,7 @@ footer {
 
   .form-interactive .casing .placeholder {
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     top: 8px;
     left: 10px;
     vertical-align: middle;
@@ -369,10 +375,11 @@ footer {
     color: gray;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    font-style: italic;
+    
     cursor: text;
     
-    width: 90%;
+/*    width: 90%;*/
+    width: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -386,6 +393,21 @@ footer {
     padding: 0 3px;
     color: silver;
     font-style: normal;
+  }
+  .form-interactive .casing select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    border-bottom-color: #eee;
+    box-shadow: none;
+  }
+  .form-interactive input[type="text"],
+  .form-interactive input[type="password"],
+  .form-interactive textarea,
+  .form-interactive select {
+    background: transparent;
+    position: relative;
   }
 
 /*/
@@ -755,7 +777,7 @@ tr.addnew {
     position: absolute;
     right: 20px;
     font-size: 36px;
-    color: #77CA00;
+    color: coral;
 }
 
 /*/ FLEX VENDOR GUIDE

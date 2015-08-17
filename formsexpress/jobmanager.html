@@ -15,6 +15,7 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
     <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
     <link href="bower_components/Strength.js/src/strength.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
     <!-- Web Assets-->
     <link href="assets/css/bootstraphack.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css"/>
@@ -169,13 +170,13 @@
           </div>
           <div class="animated fadeIn"><strong>Welcome back, Rodan</strong><br/><small>Last logged in on 31.01.15</small></div><br/><br/>
           <ul class="nav nav-sidebar animated fadeIn">
-            <li><a href="/formsexpress/" class="fa fa-home">Dashboard </a></li>
+            <li><a href="/formsexpress/"><i class="fa fa-home"></i>Dashboard</a></li>
             <!--
             li
               a.fa.fa-users(href="usermanager")
                 | User Manager
             -->
-            <li><a href="jobmanager" class="fa fa-briefcase">Job Manager</a></li>
+            <li><a href="joblist"><i class="fa fa-briefcase"></i>Job List</a></li>
             <!--
             li
               a.fa.fa-eye(href="webproofing")
@@ -189,9 +190,9 @@
           <hr/>
           <h4>Related Websites</h4>
           <ul class="nav nav-sidebar animated fadeIn">
-            <li><a href="//www.billarchive.com.au/Login.asp" target="_blank" class="fa fa-external-link">Bill Archive</a></li>
-            <li><a href="//www.billarchive.com.au/datasubmissionportal/" target="_blank" class="fa fa-external-link">Data Submission</a></li>
-            <li><a href="//www.billarchive.com.au/billprint2/" target="_blank" class="fa fa-external-link">Bill Print</a></li>
+            <li><a href="//www.billarchive.com.au/Login.asp" target="_blank"><i class="fa fa-external-link"></i>Bill Archive</a></li>
+            <li><a href="//www.billarchive.com.au/datasubmissionportal/" target="_blank"><i class="fa fa-external-link"></i>Data Submission</a></li>
+            <li><a href="//www.billarchive.com.au/billprint2/" target="_blank"><i class="fa fa-external-link"></i>Bill Print</a></li>
           </ul>
           <!--  
           ul.nav.nav-sidebar
@@ -215,96 +216,52 @@
           <div class="offcanvas-cover"></div>
           <div class="main">
             <!-- content goes here...-->
-            <h1 class="page-header text-center"><small><a href="#" class="fa fa-chevron-left"></a></small>&nbsp;&nbsp;&nbsp; Job Manager &nbsp;&nbsp;&nbsp;<small><a href="#" class="fa fa-chevron-right"></a></small><br/><small>(Quarter 1)</small></h1>
-            <!--page-header-->
-            <div class="card">
-              <div class="form-group form-interactive">
-                <div class="casing"><em class="placeholder">Search Submission Type or File Name</em>
-                  <div class="inputButton">
-                    <input type="text" class="form-control"/><span class="btnIcon"><i class="fa fa-binoculars"></i></span>
+            <h1 class="page-header text-center"><small><a href="#" class="fa fa-chevron-left"></a></small>&nbsp;&nbsp;&nbsp; Job Manager &nbsp;&nbsp;&nbsp;<small><a href="#" class="fa fa-chevron-right"></a></small><br/><small>(2015)</small></h1>
+            <div class="cleafix"></div>
+            <div class="job-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card jl empty jl-color animated fadeIn">
+                    <div class="cover"><a href="jobmanager" title="Edit List" class="fa fa-pencil fa-2x"></a>&nbsp;&nbsp;&nbsp;<a href="jobmanager" title="Clone List" class="fa fa-clipboard fa-2x"></a></div>
+                    <div class="blur">
+                      <h3><i class="fa fa-print fa-5x"></i>&nbsp;Quarter&nbsp;<sup class="text-muted">1</sup></h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Submission Type&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>File Name&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>ID&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Receive Date&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Docs&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Pages&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                      <th>Status&nbsp;<a href="#" class="fa fa-caret-down"></a></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-right"><a href="filedetails" class="fa fa-folder-open"></a></td>
-                      <td>Statement</td>
-                      <td>SampleData.txt</td>
-                      <td>1608</td>
-                      <td>12/04/2013</td>
-                      <td>58939</td>
-                      <td>260531</td>
-                      <td>Print Complete</td>
-                    </tr>
-                    <tr>
-                      <td class="text-right"><a href="filedetails" class="fa fa-folder-open"></a></td>
-                      <td>Rates</td>
-                      <td>FieldaleRatesData2.txt</td>
-                      <td>1607</td>
-                      <td>12/04/2013</td>
-                      <td>5</td>
-                      <td>5</td>
-                      <td>Awaiting Approval</td>
-                    </tr>
-                    <tr>
-                      <td class="text-right"><a href="filedetails" class="fa fa-folder-open"></a></td>
-                      <td>Statement</td>
-                      <td>SampleData3.txt</td>
-                      <td>1608</td>
-                      <td>12/04/2013</td>
-                      <td>58939</td>
-                      <td>260531</td>
-                      <td>Ready to Print</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--card-->
-              <div class="clearfix"></div>
-              <div class="pull-left"><small class="text-muted">Showing 3 out of 3 results</small></div>
-              <div class="pull-right">
-                <ul class="pagination pagination-sm nomargin pull-left">
-                  <li id="prevPage" class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                  <li class="page-number active"><a href="#">1</a></li>
-                  <li class="page-number"><a href="#">2</a></li>
-                  <li class="page-number"><a href="#">3</a></li>
-                  <li class="page-number"><a href="#">4</a></li>
-                  <li class="page-number"><a href="#">5</a></li>
-                  <li id="ellipsisEnd"><a href="#">...</a></li>
-                  <li id="nextPage"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                </ul>
-                <div class="dropdown pull-right"><a id="paginateUsersList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-sm dropdown-toggle">
-                    <label id="limitOption">20&nbsp;</label><span class="caret"></span></a>
-                  <ul aria-labelledby="paginateUsersList" class="dropdown-menu">
-                    <li><small>&nbsp;&nbsp;&nbsp;&nbsp;Per page</small></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="limit-option">20</a></li>
-                    <li><a href="#" class="limit-option">50</a></li>
-                    <li><a href="#" class="limit-option">100</a></li>
-                  </ul>
+                <!--col-md-6-->
+                <div class="col-md-6">
+                  <div class="card jl actv jl-color animated fadeIn">
+                    <div class="cover"><a href="jobmanager" title="Edit List" class="fa fa-pencil fa-2x"></a>&nbsp;&nbsp;&nbsp;<a href="jobmanager" title="Clone List" class="fa fa-clipboard fa-2x"></a></div>
+                    <div class="blur">
+                      <h3><i class="fa fa-print fa-5x"></i>&nbsp;Quarter&nbsp;<sup class="text-muted">2</sup></h3>
+                    </div>
+                  </div>
                 </div>
-                <!--dropdown-->
-                <div class="clearfix"></div>
+                <!--col-md-6-->
+                <div class="col-md-6">
+                  <div class="card jl jl-color animated fadeIn">
+                    <div class="cover"><a href="jobmanager" title="Edit List" class="fa fa-pencil fa-2x"></a>&nbsp;&nbsp;&nbsp;<a href="jobmanager" title="Clone List" class="fa fa-clipboard fa-2x"></a></div>
+                    <div class="blur">
+                      <h3><i class="fa fa-print fa-5x"></i>&nbsp;Quarter&nbsp;<sup class="text-muted">3</sup></h3>
+                    </div>
+                  </div>
+                </div>
+                <!--col-md-6-->
+                <div class="col-md-6">
+                  <div class="card jl jl-color animated fadeIn">
+                    <div class="cover"><a href="jobmanager" title="Edit List" class="fa fa-pencil fa-2x"></a>&nbsp;&nbsp;&nbsp;<a href="jobmanager" title="Clone List" class="fa fa-clipboard fa-2x"></a></div>
+                    <div class="blur">
+                      <h3><i class="fa fa-print fa-5x"></i>&nbsp;Quarter&nbsp;<sup class="text-muted">4</sup></h3>
+                    </div>
+                  </div>
+                </div>
+                <!--col-md-6-->
               </div>
-              <div class="clearfix"></div>
+              <!--row-->
             </div>
-            <div class="clearfix"></div><a href="#" data-toggle="modal" data-target="#uploadfiles" class="btn btn-warning pull-right"><i class="fa fa-upload"></i>&nbsp;
-              Upload Files</a><a href="joblist" class="btn btn-warning"><i class="fa fa-th-large"></i>&nbsp;
-              Job List</a>
+            <!--job-list-->
+            
+            
           </div>
         </div>
       </div>
@@ -816,6 +773,7 @@
     <script src="bower_components/dropzone/dist/dropzone.js" type="text/javascript"></script>
     <script src="bower_components/highcharts/highcharts.js" type="text/javascript"></script>
     <script src="bower_components/Strength.js/src/strength.js" type="text/javascript"></script>
+    <script src="bower_components/datetimepicker/jquery.datetimepicker.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/dashboard.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
