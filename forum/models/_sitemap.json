@@ -1,0 +1,14 @@
+[
+  {
+    "directory": false,
+    "key": "index",
+    "name": "Index",
+    "url": "/index"
+  },
+  {
+    "directory": false,
+    "key": "files",
+    "name": "Files",
+    "url": "/files"
+  }
+]

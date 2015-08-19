@@ -1,0 +1,212 @@
+/*
+ * Color Theme Picker
+ */
+    
+    /* Default */
+    .color-theme-picker #default {
+        color: #696969;
+    }
+    /* BC */
+    .color-theme-picker #admin {
+        color: #00a3e4;
+    }
+    .color-theme-picker #teacher {
+        color: mediumslateblue;
+    }
+    .color-theme-picker #parent {
+        color: teal;
+    }
+    .color-theme-picker #student {
+        color: coral;
+    }
+    .color-theme-picker #young {
+        color: #4caf50;
+    }
+    /* Whitecliffe */
+    .color-theme-picker #whitecliffe {
+        color: #D94F20;
+    }
+
+    .color-theme-picker {
+        position: fixed;
+        z-index: 10;
+        right: 20px;
+        bottom: 20px;
+        border-bottom: 2px solid #eee;
+        background-color: white;
+        width: 60px;
+        height: 60px; /* 4/10 */ /* 4/10 */
+        border-radius:          50%; /* 4/10 */
+    }
+    .color-theme-picker > i {
+        display: inherit;
+        font-size: 41px;
+        cursor: pointer;
+        
+        position: absolute;
+        width: 100%;
+        height: 100%; /* 4/10 */ /* 4/10 */
+        border-radius: 50%; /* 4/10 */
+        
+        padding: 10px;
+    }
+    .color-theme-picker > a {
+        padding: 10px 0;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    .color-theme-picker * {
+        display: none;
+    }
+    .color-theme-picker.active {
+        
+        height: auto;
+            
+        -webkit-animation: center .4s ease-in-out forwards;
+        animation: center .4s ease-in-out forwards;
+        
+    }
+    .color-theme-picker.active * {
+        display: inherit;
+    }
+    .color-theme-picker.active > i {
+        display: none;
+    }
+    .color-theme-picker ul {
+        list-style: none;
+        padding: 8px 0 0 0;
+        margin: 0;
+        text-align: center;
+        
+        border-top: 1px dashed #ccc;
+    }
+    .color-theme-picker ul li a {
+        text-decoration: none;
+        padding: 2px 0;
+    }
+    .color-theme-picker ul li a.default {
+        color: inherit;
+    }
+    .color-theme-picker ul li.active a {
+        font-size: 1.5em; /* 18/12 */
+    }
+
+
+/*
+ * Keyframes for Animation
+ */
+    /*  Center  */
+    @-webkit-keyframes center {
+        from {
+            right: 50px;
+            bottom: 100px;
+        }
+        to {
+            right: 50%;
+            bottom: 50%; /* 4/10 */ /* 4/10 */
+            border-radius: 0.4em; /* 4/10 */
+
+            padding: 5px;
+        }
+    }
+    @keyframes center {
+        from {
+            right: 50px;
+            bottom: 100px;
+        }
+        to {
+            right: 50%;
+            bottom: 50%; /* 4/10 */ /* 4/10 */
+            border-radius: 0.4em; /* 4/10 */
+
+            padding: 5px;
+        }
+    }
+    
+    /*  Default  */
+    @-webkit-keyframes default {
+        from {
+            right: 50%;
+            bottom: 50%;
+            
+            width: 40px;
+        }
+        to {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @keyframes default {
+        from {
+            right: 50%;
+            bottom: 50%;
+            
+            width: 40px;
+        }
+        to {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
