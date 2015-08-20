@@ -34,7 +34,6 @@
   }
   /* /HEADER/ */
     header.flexitem.prime {
-/*      flex-grow: 1;*/
       text-align: center;
     }
     header.flexitem img {
@@ -42,12 +41,13 @@
     }
   /* /BANNER/ */
     section.flexitem.prime.banner.image {
+      -webkit-flex-grow: 40;
+      -ms-flex-grow: 40;
       flex-grow: 40;
       background: white url("../images/banner-1.png") scroll center center no-repeat;
       background-size: cover;
     }
     section.flexitem.prime.banner.text {
-      flex-grow: ;
       background: #FAAF12;
       padding: 4vmin;
       color: white;
@@ -71,10 +71,10 @@
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      
-      
     }
     section.flexitem.prime.info .flexitem {
+      -webkit-flex-grow: 1;
+      -ms-flex-grow: 1;
       flex-grow: 1;
       padding: 5vmin 2vmin;
       width: 50%;
