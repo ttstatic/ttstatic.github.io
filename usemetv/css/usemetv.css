@@ -38,6 +38,7 @@
     }
     header.flexitem img {
       max-width: 100%;
+      height: 9vmin;
     }
   /* /BANNER/ */
     section.flexitem.prime.banner.image {
@@ -83,7 +84,7 @@
       max-width: 100%;
     }
     section.flexitem.prime.info .flexitem.left img {
-      
+      height: 9vmin;
     }
     section.flexitem.prime.info .flexitem.right {
       text-align: right;
