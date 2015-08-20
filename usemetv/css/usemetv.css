@@ -1,0 +1,144 @@
+/*/
+ * Global
+/*/
+  html {
+    font-size: 16px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  header {
+    padding: 4vmin;
+  }
+
+/*/
+ * Flexbox
+/*/
+  .flexbox {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* /HEADER/ */
+    header.flexitem.prime {
+/*      flex-grow: 1;*/
+      text-align: center;
+    }
+    header.flexitem img {
+      max-width: 100%;
+    }
+  /* /BANNER/ */
+    section.flexitem.prime.banner.image {
+      flex-grow: 40;
+      background: white url("../images/banner-1.png") scroll center center no-repeat;
+      background-size: cover;
+    }
+    section.flexitem.prime.banner.text {
+      flex-grow: ;
+      background: #FAAF12;
+      padding: 4vmin;
+      color: white;
+      text-align: center;
+      font-weight: lighter;
+    }
+    section.flexitem.prime.banner.text h1 {
+      font-size: 4.2vmin;
+      font-weight: lighter;
+    }
+    section.flexitem.prime.banner.text h1 div {
+      font-size: 0.75em;
+    }
+    section.flexitem.prime.banner.text p {
+      font-size: 3.2vmin;
+    }
+  /* /INFO/ */
+    section.flexitem.prime.info {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      
+      
+    }
+    section.flexitem.prime.info .flexitem {
+      flex-grow: 1;
+      padding: 5vmin 2vmin;
+      width: 50%;
+    }
+    section.flexitem.prime.info .flexitem img {
+      max-width: 100%;
+    }
+    section.flexitem.prime.info .flexitem.left img {
+      
+    }
+    section.flexitem.prime.info .flexitem.right {
+      text-align: right;
+    }
+  /* /FOOTER/ */
+    footer.flexitem.prime {
+      text-align: center;
+      padding: 4vmin;
+      background: gainsboro;
+    }
+    footer.flexitem.prime img {
+      width: 200px;
+      max-width: 100%;
+    }
+
+
+
+
+
+/*/ FLEX VENDOR GUIDE
+    
+    DISPLAY
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    ORIENT
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+    FLEX DIRECTION
+        -webkit-flex-direction: inherit;
+        -ms-flex-direction: inherit;
+        flex-direction: inherit;
+    BOX ALIGN
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+    FLEX WRAP
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+    ALIGN ITEMS
+        -webkit-align-items: flex-start;
+        align-items: flex-start
+    FLEX
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+    BOX ORDINAL GROUP
+        -webkit-box-ordinal-group:1;
+        -moz-box-ordinal-group:1;
+    ORDER
+        -ms-flex-order:1;
+        -webkit-order:1;
+        order:1;
+
+/*/
