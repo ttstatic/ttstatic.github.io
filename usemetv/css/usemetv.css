@@ -96,7 +96,7 @@
       background: gainsboro;
     }
     footer.flexitem.prime img {
-      width: 200px;
+      height: 6vmin;
       max-width: 100%;
     }
 
