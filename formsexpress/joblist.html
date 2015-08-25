@@ -112,43 +112,52 @@
     <nav class="navbar navbar-inverse navbar-fixed-top col-sm-offset-4 col-md-offset-2">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" data-toggle="offcanvas" class="navbar-brand visible-xs menu"><i class="fa fa-ellipsis-v"></i></a>
-          <div class="council mobile visible-xs"><img src="assets/images/council/logo-moonee.png" class="animated flipInX"/>
-            <!-- carousel logo
-            #carousel-example-generic.carousel.slide(data-ride="carousel")
-              // Wrapper for slides
-              .carousel-inner(role="listbox")
-                .item.active
-                  img(src="assets/images/council/logo-moonee.png")
-                .item
-                  img(src="assets/images/council/logo-eurobodalla.png")
-                .item
-                  img(src="assets/images/council/logo-auburn.png")
-                .item
-                  img(src="assets/images/council/logo-frankston.png")
-            // carousel logo END
-            -->
-          </div>
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <!--button--><a href="#" data-toggle="offcanvas" class="navbar-brand visible-xs menu"><i class="fa fa-ellipsis-v"></i></a>
+          <!--a-->
+          <div class="council mobile visible-xs"><img src="assets/images/council/logo-moonee.png" class="animated flipInX"/></div>
+          <!--council-->
         </div>
+        <!--navbar-header-->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle lnk-notifications"><i class="fa fa-bell hidden-xs"></i><i class="fa fa-bell visible-xs">&nbsp;Notifications</i>
                 <div class="counter">1</div></a>
+              <!--a-->
               <ul role="menu" class="dropdown-menu">
-                <li><a href="#uc" data-toggle="modal"><i class="fa fa-envelope">&nbsp;New Mail</i></a></li>
+                <li><a href="#uc" data-toggle="modal"><i class="fa fa-envelope">&nbsp;New Mail</i></a>
+                  <!--a-->
+                </li>
+                <!--li-->
               </ul>
+              <!--ul-->
             </li>
+            <!--dropdown-->
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user hidden-xs"></i><i class="fa fa-user visible-xs">&nbsp;Profile</i></a>
+              <!--a-->
               <ul role="menu" class="dropdown-menu">
-                <li><a href="#uc" data-toggle="modal">&nbsp;My Account</a></li>
+                <li class="text-muted"><a href="#"><small>&nbsp;View Formsexpress as&nbsp;<strong>Client</strong></small>
+                    <!--small--></a>
+                  <!--a-->
+                </li>
+                <!--li-->
+                <li><a href="myaccount">&nbsp;My Account</a></li>
+                <!--li-->
                 <li class="divider"></li>
                 <li><a href="login" class="fa fa-sign-out">&nbsp;Log out</a></li>
+                <!--li-->
               </ul>
+              <!--ul-->
             </li>
+            <!--dropdown-->
           </ul>
+          <!--ul-->
         </div>
+        <!--navbar-->
       </div>
+      <!--container-fluid-->
     </nav>
+    <!--nav-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 col-md-2 sidebar sidebar-offcanvas">
@@ -218,6 +227,109 @@
             <!-- content goes here...-->
             <h1 class="page-header text-center"><small><a href="#" class="fa fa-chevron-left"></a></small>&nbsp;&nbsp;&nbsp; Job List &nbsp;&nbsp;&nbsp;<small><a href="#" class="fa fa-chevron-right"></a></small><br/><small>(Quarter 1)</small></h1>
             <!--page-header-->
+            <h4><i class="fa fa-filter"></i>&nbsp;<a data-toggle="collapse" href="#jdFilter" aria-expanded="false" aria-controls="collapseExample">Filter by</a>&nbsp;<i class="fa fa-check-circle hasfilter"></i></h4>
+            <div id="jdFilter" class="collapse">
+              <div class="card card-group">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 1</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 2</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 3</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 4</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                  </div>
+                  <!-- col-->
+                  <div class="col-md-4">
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 5</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 6</em>
+                        <select class="form-control">
+                          <option selected="selected"></option>
+                          <option>Daily</option>
+                          <option>24/24</option>
+                        </select>
+                        <!--select-->
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 7</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 8</em>
+                        <select class="form-control">
+                          <option selected="selected"></option>
+                          <option>Yes</option>
+                          <option>N/A</option>
+                        </select>
+                        <!--select-->
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                  </div>
+                  <!-- col-->
+                  <div class="col-md-4">
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 9</em>
+                        <select class="form-control">
+                          <option selected="selected"></option>
+                          <option>(d)ata in - work in progress</option>
+                        </select>
+                        <!--select-->
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group form-interactive">
+                      <div class="casing"><em class="placeholder">Item 10</em>
+                        <input type="text" value="" class="form-control"/>
+                      </div>
+                      <!--casing-->
+                    </div>
+                    <!--form-group-->
+                  </div>
+                  <!-- col-->
+                </div>
+                <!-- row-->
+              </div>
+              <!--card-->
+            </div>
+            <!--jdFilter-->
             <div class="card">
               <div class="form-group form-interactive">
                 <div class="casing"><em class="placeholder">Search Submission Type or File Name</em>

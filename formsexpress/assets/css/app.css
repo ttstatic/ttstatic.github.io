@@ -261,6 +261,11 @@ footer {
   overflow-x: hidden;
 */
 }
+
+.hasfilter {
+  color: coral;
+}
+
 /*
  * Signup
  */
