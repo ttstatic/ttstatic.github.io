@@ -179,7 +179,7 @@ a:hover {
   color: silver;
 }
 .box-overview + .box-overview {
-  border-left: 1px solid #ddd;
+  /*border-left: 1px solid #ddd;*/
 }
 
 .box-overview .fa-usd._2 {
