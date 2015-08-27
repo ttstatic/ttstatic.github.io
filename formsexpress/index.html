@@ -232,26 +232,92 @@
               <!--search--><br/>
               <h1 class="page-header">Dashboard</h1>
               <div class="card animated fadeIn">
-                <div class="uc-overlay">
-                  <div class="message">
-                    <div class="text">Coming soon...</div>
-                  </div>
-                </div>
+                <!--
+                .uc-overlay
+                  .message
+                    .text Coming soon...
+                -->
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-users fa-stack-2x"></i></span>
-                    <h3>39,652</h3><span class="text-muted labels"><span class="title">Total number of rate payers</span><br/><small class="subtitle">(Electronic and Print)</small></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-line-chart fa-stack-2x"></i></span>
+                    <h3>Data in</h3>
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Data in
+                      br
+                      small.subtitle (Electronic and Print)
+                    -->
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-credit-card fa-stack-2x"></i></span>
-                    <h3>5<sup>%</sup></h3><span class="text-muted labels"><span class="title">Using electronic payment methods</span></span>
+                  <!--col-->
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview active"><span class="fa-stack fa-3x"><i class="fa fa-bank fa-stack-2x"></i></span>
+                    <h3>Bank approval pending</h3>
+                    <!--sup %
+                    -->
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Using electronic payment methods
+                    -->
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-calendar-o fa-stack-2x"></i><i class="fa fa-usd fa-stack-1x _2"></i></span>
-                    <h3><sup>$</sup>10,905</h3><span class="text-muted labels"><span class="title">Savings this month on AUSPOST</span></span>
+                  <!--col-->
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-hourglass-start fa-stack-2x"></i></span>
+                    <!--i.fa.fa-usd.fa-stack-1x._2
+                    -->
+                    <h3>Waiting insert</h3>
+                    <!--
+                    sup $
+                    | 10,905
+                    -->
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Savings this month on AUSPOST
+                    -->
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-usd fa-stack-2x"></i></span>
-                    <h3><sup>$</sup>289,000</h3><span class="text-muted labels"><span class="title">Payments due this month</span></span>
+                  <!--col-->
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-print fa-stack-2x"></i></span>
+                    <h3>Print</h3>
+                    <!--
+                    sup $
+                    | 289,000
+                    -->
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Payments due this month
+                    -->
                   </div>
+                  <!--col-->
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-plus fa-stack-2x"></i></span>
+                    <h3>Inserter</h3>
+                    <!--
+                    sup $
+                    | 289,000
+                    -->
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Payments due this month
+                    -->
+                  </div>
+                  <!--col-->
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-check-square fa-stack-2x"></i></span>
+                    <h3>Completed</h3>
+                    <!--
+                    sup $
+                    | 289,000
+                    -->
+                    <!--
+                    span.text-muted.labels
+                      span.title
+                        | Payments due this month
+                    -->
+                  </div>
+                  <!--col-->
                 </div>
+                <!--row-->
               </div>
+              <!--card-->
               <div class="clearfix"></div>
               <h2 class="sub-header">Job Status<a href="jobmanager" onclick="$.cookie('snavh','job manager')" class="btn btn-warning pull-right">Job Manager</a></h2>
               <div class="row">
