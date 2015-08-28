@@ -230,104 +230,149 @@
             <h4><i class="fa fa-filter"></i>&nbsp;<a data-toggle="collapse" href="#jdFilter" aria-expanded="false" aria-controls="collapseExample">Filter by</a>&nbsp;<i class="fa fa-check-circle hasfilter"></i></h4>
             <div id="jdFilter" class="collapse">
               <div class="card card-group">
+                <div class="text-right">
+                  <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-info btn-sm dropdown-toggle">Add Filter <span class="caret"></span></button>
+                    <!--button-->
+                    <ul class="dropdown-menu pull-right">
+                      <li><a href="#">Filter 1</a></li>
+                      <li><a href="#">Filter 2</a></li>
+                      <li><a href="#">Filter 3</a></li>
+                    </ul>
+                    <!--ul-->
+                  </div>
+                  <!--btn-group-->
+                </div>
+                <!--text-right-->
+                <div class="hspacer"></div>
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 1</em>
-                        <input type="text" value="" class="form-control"/>
+                    <form>
+                      <div class="form-group">
+                        <label class="sr-only">Date</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/> Date
+                          </label>
+                          <!--label-->
+                        </div>
+                        <!--checkbox-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 2</em>
-                        <input type="text" value="" class="form-control"/>
+                      <!--form-group-->
+                      <div class="form-group">
+                        <label class="sr-only">Range</label>
+                        <select class="form-control">
+                          <option value="=">is</option>
+                          <option value="&gt;=">>=</option>
+                          <option value="&lt;="><=</option>
+                          <option value="&gt;&lt;">between</option>
+                          <option value="&gt;t-">less than days ago</option>
+                          <option value="&lt;t-">more than days ago</option>
+                          <option value="&gt;&lt;t-">in the past</option>
+                          <option value="t-">days ago</option>
+                          <option value="t">today</option>
+                          <option value="ld">yesterday</option>
+                          <option value="w">this week</option>
+                          <option value="lw">last week</option>
+                          <option value="l2w">last 2 weeks</option>
+                          <option value="m">this month</option>
+                          <option value="lm">last month</option>
+                          <option value="y">this year</option>
+                          <option value="!*">none</option>
+                          <option value="*" selected="selected">all</option>
+                        </select>
+                        <!--select-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 3</em>
-                        <input type="text" value="" class="form-control"/>
+                      <!--form-group-->
+                      <div class="form-group form-interactive">
+                        <div class="casing"><em class="placeholder">From</em>
+                          <input type="text" data-picker="date" class="form-control"/>
+                        </div>
+                        <!--casing-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 4</em>
-                        <input type="text" value="" class="form-control"/>
+                      <!--form-group-->
+                      <div class="form-group form-interactive">
+                        <div class="casing"><em class="placeholder">To</em>
+                          <input type="text" data-picker="date" class="form-control"/>
+                        </div>
+                        <!--casing-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
+                      <!--form-group-->
+                    </form>
+                    <!--form-->
                   </div>
-                  <!-- col-->
+                  <!--col-->
                   <div class="col-md-4">
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 5</em>
-                        <input type="text" value="" class="form-control"/>
+                    <form>
+                      <div class="form-group">
+                        <label class="sr-only">Filter 1</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/> Filter 1
+                          </label>
+                          <!--label-->
+                        </div>
+                        <!--checkbox-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 6</em>
+                      <!--form-group-->
+                      <div class="form-group">
+                        <label class="sr-only">Option 1</label>
                         <select class="form-control">
-                          <option selected="selected"></option>
-                          <option>Daily</option>
-                          <option>24/24</option>
+                          <option value="=">Option 1</option>
                         </select>
                         <!--select-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 7</em>
-                        <input type="text" value="" class="form-control"/>
-                      </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 8</em>
+                      <!--form-group-->
+                      <div class="form-group">
+                        <label class="sr-only">Option 1</label>
                         <select class="form-control">
-                          <option selected="selected"></option>
-                          <option>Yes</option>
-                          <option>N/A</option>
+                          <option value="=">Option 1</option>
                         </select>
                         <!--select-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
+                      <!--form-group-->
+                    </form>
+                    <!--form-->
                   </div>
-                  <!-- col-->
+                  <!--col-->
                   <div class="col-md-4">
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 9</em>
+                    <form>
+                      <div class="form-group">
+                        <label class="sr-only">Filter 2</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/> Filter 2
+                          </label>
+                          <!--label-->
+                        </div>
+                        <!--checkbox-->
+                      </div>
+                      <!--form-group-->
+                      <div class="form-group">
+                        <label class="sr-only">Option 2</label>
                         <select class="form-control">
-                          <option selected="selected"></option>
-                          <option>(d)ata in - work in progress</option>
+                          <option value="=">Option 2</option>
                         </select>
                         <!--select-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
-                    <div class="form-group form-interactive">
-                      <div class="casing"><em class="placeholder">Item 10</em>
-                        <input type="text" value="" class="form-control"/>
+                      <!--form-group-->
+                      <div class="form-group">
+                        <label class="sr-only">Option 2</label>
+                        <select class="form-control">
+                          <option value="=">Option 2</option>
+                        </select>
+                        <!--select-->
                       </div>
-                      <!--casing-->
-                    </div>
-                    <!--form-group-->
+                      <!--form-group-->
+                    </form>
+                    <!--form-->
                   </div>
-                  <!-- col-->
+                  <!--col-->
                 </div>
                 <!-- row-->
               </div>
               <!--card-->
+              <div class="text-right"><a href="#" data-toggle="modal" data-target="#uploadfiles" class="btn btn-warning">Apply</a><a href="#" data-toggle="modal" data-target="#uploadfiles" class="btn btn-warning">Reset</a><a href="#" data-toggle="modal" data-target="#uploadfiles" class="btn btn-success">Save</a></div><br/>
             </div>
             <!--jdFilter-->
             <div class="card">
@@ -552,6 +597,7 @@
             <div class="clearfix"></div><a href="#" data-toggle="modal" data-target="#uploadfiles" class="btn btn-warning pull-right"><i class="fa fa-upload"></i>&nbsp;
               Upload Files</a><a href="jobmanager" class="btn btn-warning"><i class="fa fa-th-large"></i>&nbsp;
               Job Manager</a>
+            <div class="clearfix"></div><br/>
           </div>
         </div>
       </div>
