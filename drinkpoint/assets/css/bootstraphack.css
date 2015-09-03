@@ -271,4 +271,13 @@ body {
   .carousel-caption h1 {
     font-size: 32px
   }
+  #myBanner.carousel .item .carousel-caption h1 {
+    font-size: 21px !important;
+  }
+  #myBanner.carousel .item .carousel-caption p strong {
+    font-size: 15px !important;
+  }
+  #myBanner.carousel .item .carousel-caption p i {
+    font-size: 12px !important;
+  }
 }

@@ -1,4 +1,4 @@
-var Dashboard = (function () {
+var Drinkpoint = (function () {
 	// variables
 	var abc = 123;
     
@@ -64,4 +64,4 @@ var Dashboard = (function () {
 }());
 
 // Init after the page has loaded
-jQuery(Dashboard.init);
+jQuery(Drinkpoint.init);
