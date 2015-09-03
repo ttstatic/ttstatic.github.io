@@ -63,14 +63,14 @@ var Dashboard = (function () {
 
 			$(window).on("load resize click", function () {
 
-				Dashboard.boxReset(".chart-elem");
+				Dashboard.boxReset(".box");
 				$(selector).height(Dashboard.getMaxH($(selector)));
 
 			});
 
 		},
 
-		boxReset: function (selector) {
+		boxReset: function (selector) { 
 
 			$(selector).height("");
 
