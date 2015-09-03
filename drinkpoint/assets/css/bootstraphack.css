@@ -8,6 +8,11 @@ body {
 }
 
 
+/*color
+  orange: #ff7200
+*/
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -49,6 +54,9 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
+.navbar-static-top {
+  border-width: 0;
+}
 
 /* MOBILE NAVBAR ICON ANIMATION
 -------------------------------------------------- */
@@ -88,7 +96,7 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  padding-bottom: 17%;
+  padding-bottom: 20%;
   
   display: -webkit-box;
   display: -moz-box;
@@ -100,6 +108,9 @@ body {
   align-items: center;
 }
 .carousel-caption h1 {
+  font-size: 60px;
+  font-weight: 200;
+  
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -165,17 +176,24 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .box {
   margin-bottom: 20px;
-  text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
+.marketing h3 {
+  font-weight: 600;
+  color: #ff7200;
 }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+.marketing h3 span.icon {
+  display: inline-block;
+  margin-left: 20px;
 }
+.marketing .read-more {
+  text-transform: uppercase;
+  color: #9A9898;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 
 /* RESPONSIVE CSS
