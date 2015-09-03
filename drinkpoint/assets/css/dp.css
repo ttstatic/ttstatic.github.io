@@ -1,0 +1,29 @@
+/*
+ * Base structure
+ */
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+/*/
+ * TT Hack
+/*/
+	.widgetDiv * div {
+		float: none !important;
+	}
+	.wbdDesignerBody {
+		padding: 0;
+	}
+	.designer-draggable-layout * div {
+		position: static !important;
+	}
+	.widgetDiv .css_zone:before {
+		content: "CSS_ZONE";
+		text-align: center;
+	}
+	.widgetDiv .js_zone:before {
+		content: "JS_ZONE";
+		text-align: center;
+	}

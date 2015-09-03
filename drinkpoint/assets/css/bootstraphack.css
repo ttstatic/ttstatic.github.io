@@ -1,0 +1,198 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-toggle .icon-bar {
+  background: #ff7200;
+}
+.navbar-nav > li > a {
+  color: #ff7200;
+  text-transform: uppercase;
+  font-weight: 600;
+  
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background: rgba(119, 119, 119, 0.07);
+}
+.navbar-brand {
+  height: 0;
+  padding: 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+/*  height: 580px;*/
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  padding-bottom: 17%;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-align-items: center;
+  align-items: center;
+}
+.carousel-caption h1 {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+/*  height: 580px;*/
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+/*
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 580px;
+*/
+  width: 100%;
+}
+
+/* Indicator */
+.carousel-indicators li {
+  background-color: white;
+  
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #ff7200;
+  border: 0;
+  
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  
+  width: 15px;
+  height: 15px;
+  
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* Controls */
+.carousel-control {
+  display: none;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-nav > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .navbar-brand {
+    padding: 24px 15px;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
