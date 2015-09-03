@@ -7,6 +7,41 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
 }
+
+
+
+.dp-apps {
+  margin-top: 50px;
+}
+.dp-apps img {
+  width: 100%;
+}
+
+
+#myBanner.carousel .item {
+  height: 250px;
+  background: #ff7200;
+}
+#myBanner.carousel .carousel-indicators .active {
+  background: #EEFF25;
+}
+#myBanner.carousel .item .carousel-caption h1 {
+  font-size: 38px;
+}
+#myBanner.carousel .item .carousel-caption {
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  text-shadow: none;
+}
+ 
+
+
+@media (min-width: 768px) {
+  .dp-apps {
+    
+  }
+}
+
 /*/
  * TT Hack
 /*/
