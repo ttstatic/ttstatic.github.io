@@ -46,6 +46,13 @@ body {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
 }
+.navbar-nav > li.search i {
+  font-size: 32px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: -9px;
+  vertical-align: middle;
+}
 .nav > li > a:hover, .nav > li > a:focus {
   background: rgba(119, 119, 119, 0.07);
 }

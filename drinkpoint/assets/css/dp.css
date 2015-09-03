@@ -1,25 +1,26 @@
-/*
- * Base structure
- */
-/* Move down content because we have a fixed navbar that is 50px tall */
-
+/* GLOBAL
+-------------------------------------------------- */
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #333;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+footer {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+footer h4 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+footer a {
+  color: inherit;
 }
 
-
-
-.dp-apps {
-  margin-top: 50px;
-}
-.dp-apps img {
-  width: 100%;
-}
-
-
+/* CAROUSEL
+-------------------------------------------------- */
 #myBanner.carousel .item {
-  height: 250px;
+  height: 300px;
   background: #ff7200;
 }
 #myBanner.carousel .carousel-indicators .active {
@@ -28,17 +29,118 @@ body {
 #myBanner.carousel .item .carousel-caption h1 {
   font-size: 38px;
 }
+#myBanner.carousel .item .carousel-caption p strong {
+  font-size: 21px;
+  font-weight: 500;
+}
+#myBanner.carousel .item .carousel-caption p i {
+  font-size: 15px;
+}
 #myBanner.carousel .item .carousel-caption {
   -webkit-text-shadow: none;
   -moz-text-shadow: none;
   text-shadow: none;
 }
- 
 
 
-@media (min-width: 768px) {
-  .dp-apps {
-    
+/* MARKETING SECTION - APPS
+-------------------------------------------------- */
+.dp-apps {
+  margin-top: 50px;
+}
+.dp-apps img {
+  width: 100%;
+}
+
+/* TRENDING
+-------------------------------------------------- */
+h1.section-title {
+  text-align: center;
+  color: #FF7200;
+  font-size: 28px;
+}
+h1.section-title hr {
+  border-color: lightgray;
+}
+
+/* CARD
+-------------------------------------------------- */
+.card {
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+.card .top-wrap {
+  padding: 15px;
+}
+.card .preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card .user {
+  position: relative;
+  top: -65px;
+  left: 15px;
+}
+.card .user img {
+  border: 2px solid white;
+  display: inline-block;
+}
+.card .user h4 {
+  display: inline-block;
+  margin-left: 15px;
+  position: absolute;
+  top: 65px;
+  color: #1EA1E2;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card .bottom-wrap {
+  padding: 10px;
+}
+.card .bottom-wrap .pull-left img {
+  margin-right: 15px;
+}
+.card .bottom-wrap .pull-right {
+  font-size: 25px;
+  color: #1EA1E2;
+}
+.card .bottom-wrap .pull-right .fa {
+  margin-left: 5px;
+}
+.card .content {
+  margin-top: -50px;
+}
+.card .content .title-message {
+  color: #1EA1E2;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+
+/* COPYRIGHT
+-------------------------------------------------- */
+.copy {
+  font-weight: 600;
+  text-align: center;
+  color: #989898;
+}
+
+/* MEDIA QUERIES
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  footer {
+    width: 80%;
+  }
+  .sitelinks {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
   }
 }
 
