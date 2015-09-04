@@ -6,7 +6,7 @@ var Drinkpoint = (function () {
 	return {
 		init: function () {
             
-            Dashboard.box(".box > p:nth(1)");
+            Drinkpoint.box(".box > p:first-of-type");
             
 		},
         
@@ -19,8 +19,8 @@ var Drinkpoint = (function () {
 
 			$(window).on("load resize", function () {
 
-				Dashboard.boxReset(".box > p:nth(1)");
-				$(selector).height(Dashboard.getMaxH($(selector)));
+				Drinkpoint.boxReset(".box > p:first-of-type");
+				$(selector).height(Drinkpoint.getMaxH($(selector)));
 
 			});
 

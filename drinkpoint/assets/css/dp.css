@@ -17,6 +17,26 @@ footer a {
   color: inherit;
 }
 
+/* COPYRIGHT
+-------------------------------------------------- */
+.util-search {
+  position: absolute;
+  z-index: 1;
+  top: 103px;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,.9);
+}
+.util-search input[type="text"] {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  padding: 17px;
+}
+.util-search input[type="text"]:focus {
+  outline: none;
+}
+
 /* CAROUSEL
 -------------------------------------------------- */
 #myBanner.carousel .item {
@@ -136,6 +156,11 @@ h1.section-title hr {
   .sitelinks {
     margin-bottom: 20px;
     text-align: center;
+  }
+  .util-search {
+    display: block;
+    position: static;
+    border-top: 1px solid #ddd;
   }
 }
 @media (max-width: 500px) {

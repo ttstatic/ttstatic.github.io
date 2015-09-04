@@ -18,7 +18,7 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  
+  position: relative;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
