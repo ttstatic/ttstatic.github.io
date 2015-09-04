@@ -168,6 +168,9 @@ h1.section-title hr {
   footer {
     width: 100%;
   }
+  .carousel-indicators {
+    display: none;
+  }
 }
 
 /*/
