@@ -158,6 +158,7 @@ h1.section-title hr {
     text-align: center;
   }
   .util-search {
+    height: auto !important;
     display: block;
     position: static;
     border-top: 1px solid #ddd;
