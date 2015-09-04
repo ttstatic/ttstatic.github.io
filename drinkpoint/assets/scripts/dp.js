@@ -7,15 +7,36 @@ var Drinkpoint = (function () {
 		init: function () {
             
             Drinkpoint.box(".box > p:first-of-type");
+          
+            Drinkpoint.fitPageHeight()
             
 		},
-        
-        animateElem : function () {
-            $(".logo img").addClass("animated flipInX");
-            $(".nav-sidebar").addClass("animated fadeIn");
+      
+        fitPageHeight : function () {
+            jQuery(window).on("load resize", function() {
+                if (jQuery(this).width() > 990) {
+                    var top = Drinkpoint.isVisible( jQuery(".navbar-wrapper") );
+                    var win = jQuery(window.top).height();
+
+                    var h = win - top;
+
+                    jQuery("#myCarousel .carousel-inner > .item").css("height", h + "px");
+                } else {
+                    jQuery("#myCarousel .carousel-inner > .item").css("height", "auto");
+                }
+            });
         },
 
-		box: function (selector) {
+        isVisible : function (obj) {
+
+            if ( obj && obj.is(":visible") )
+                return obj.outerHeight(true);
+            else 
+                return 0;
+
+        },
+        
+        box: function (selector) {
 
 			$(window).on("load resize", function () {
 
