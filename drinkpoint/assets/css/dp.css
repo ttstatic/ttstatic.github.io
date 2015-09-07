@@ -161,7 +161,13 @@ h1.section-title hr {
     height: auto !important;
     display: block;
     position: static;
-    border-top: 1px solid #ddd;
+  }
+  .util-search input[type="text"] {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 17px;
+    border-radius: 27px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 500px) {
