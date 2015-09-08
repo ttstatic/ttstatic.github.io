@@ -109,13 +109,13 @@
       <!-- .modal-dialog-->
     </div>
     <!-- .modal-->
-    <nav class="navbar navbar-inverse navbar-fixed-top col-sm-offset-4 col-md-offset-2">
+    <nav class="navbar navbar-default navbar-fixed-top col-sm-offset-4 col-md-offset-2">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           <!--button--><a href="#" data-toggle="offcanvas" class="navbar-brand visible-xs menu"><i class="fa fa-ellipsis-v"></i></a>
           <!--a-->
-          <div class="council mobile visible-xs"><img src="assets/images/council/logo-moonee.png" class="animated flipInX"/></div>
+          <div class="council mobile visible-xs"><img src="assets/images/council/logo-frankston.png" class="animated flipInX"/></div>
           <!--council-->
         </div>
         <!--navbar-header-->
@@ -161,7 +161,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 col-md-2 sidebar sidebar-offcanvas">
-          <div class="council"><img src="assets/images/council/logo-moonee.png" class="animated flipInX"/>
+          <div class="council"><img src="assets/images/council/logo-frankston.png" class="animated flipInX"/>
             <!-- carousel logo
             #carousel-example-generic.carousel.slide(data-ride="carousel")
               // Wrapper for slides
@@ -226,10 +226,13 @@
           <div class="main">
             <!-- content goes here...-->
             <div class="dashboard-main">
-              <div class="search row inputButton">
-                <input type="text" placeholder="Search..." class="form-control"/><span class="btnIcon"><i class="fa fa-search"></i></span>
-              </div>
-              <!--search--><br/>
+              <!--
+              .search.row.inputButton
+                input.form-control(type="text", placeholder="Search...")
+                span.btnIcon
+                  i.fa.fa-search
+              //search
+              --><br/>
               <h1 class="page-header">Dashboard</h1>
               <div class="card animated fadeIn">
                 <!--
@@ -238,7 +241,7 @@
                     .text Coming soon...
                 -->
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview"><span class="fa-stack fa-3x"><i class="fa fa-line-chart fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _1"><span class="fa-stack fa-3x"><i class="fa fa-line-chart fa-stack-2x"></i></span>
                     <h3>Data in</h3>
                     <!--
                     span.text-muted.labels
@@ -249,7 +252,7 @@
                     -->
                   </div>
                   <!--col-->
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview active"><span class="fa-stack fa-3x"><i class="fa fa-bank fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _2 active"><span class="fa-stack fa-3x"><i class="fa fa-bank fa-stack-2x"></i></span>
                     <h3>Bank approval pending</h3>
                     <!--sup %
                     -->
@@ -260,7 +263,7 @@
                     -->
                   </div>
                   <!--col-->
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-hourglass-start fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _3 pending"><span class="fa-stack fa-3x"><i class="fa fa-hourglass-start fa-stack-2x"></i></span>
                     <!--i.fa.fa-usd.fa-stack-1x._2
                     -->
                     <h3>Waiting insert</h3>
@@ -275,7 +278,7 @@
                     -->
                   </div>
                   <!--col-->
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-print fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _4 pending"><span class="fa-stack fa-3x"><i class="fa fa-print fa-stack-2x"></i></span>
                     <h3>Print</h3>
                     <!--
                     sup $
@@ -288,7 +291,7 @@
                     -->
                   </div>
                   <!--col-->
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-plus fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _5 pending"><span class="fa-stack fa-3x"><i class="fa fa-plus fa-stack-2x"></i></span>
                     <h3>Inserter</h3>
                     <!--
                     sup $
@@ -301,7 +304,7 @@
                     -->
                   </div>
                   <!--col-->
-                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview pending"><span class="fa-stack fa-3x"><i class="fa fa-check-square fa-stack-2x"></i></span>
+                  <div class="col-xs-12 col-sm-6 col-md-4 box-overview _6 pending"><span class="fa-stack fa-3x"><i class="fa fa-check-square fa-stack-2x"></i></span>
                     <h3>Completed</h3>
                     <!--
                     sup $
@@ -320,20 +323,17 @@
               <!--card-->
               <div class="clearfix"></div>
               <h2 class="sub-header">Job Status<a href="jobmanager" onclick="$.cookie('snavh','job manager')" class="btn btn-warning pull-right">Job Manager</a></h2>
-              <div class="row">
-                <div class="col-md-6 text-center">
-                  <div class="card jstatus _1 animated fadeIn">
-                    <h3>4th Notice</h3>
-                    <h5 class="text-muted">Notice type</h5>
-                  </div>
-                </div>
-                <div class="col-md-6 text-center">
-                  <div class="card jstatus _2 animated fadeIn">
-                    <h3>01/05/15</h3>
-                    <h5 class="text-muted">Date submitted</h5>
-                  </div>
-                </div>
-              </div>
+              <!--
+              .row
+                .col-md-6.text-center
+                  .card.jstatus._1.animated.fadeIn
+                    h3 4th Notice
+                    h5.text-muted Notice type
+                .col-md-6.text-center
+                  .card.jstatus._2.animated.fadeIn
+                    h3 01/05/15
+                    h5.text-muted Date submitted
+              -->
               <!--
               .col-md-4.text-center
                 .card.jstatus._3
