@@ -109,7 +109,7 @@ var Dashboard = (function () {
       // moves the form placeholder if the form has value
       setTimeout(function () {
         jQuery(".form-interactive .casing .placeholder").each(function () {
-          var inputVal = jQuery.trim(jQuery(this).parents(".casing:eq(0)").find(":text, textarea, select").val());
+          var inputVal = jQuery.trim(jQuery(this).parents(".casing:eq(0)").find(":text, :password, textarea, select").val());
           if (inputVal !== "" || inputVal === undefined) {
             jQuery(this).addClass('move');
           }
