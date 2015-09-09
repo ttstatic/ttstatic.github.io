@@ -572,6 +572,7 @@ footer {
   }
   .council {
     width: 60%;
+    display: none;
   }
 }
 
