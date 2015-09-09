@@ -575,8 +575,8 @@ footer {
     display: none;
   }
   .sidebar-offcanvas {
-    top: 70px;
     padding-top: 20px;
+    border-top: 70px solid #E9EDF2;
   }
 }
 
