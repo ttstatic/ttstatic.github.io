@@ -572,7 +572,11 @@ footer {
   }
   .council {
     width: 60%;
-    visibility: hidden;
+    display: none;
+  }
+  .sidebar-offcanvas {
+    top: 70px;
+    padding-top: 20px;
   }
 }
 
