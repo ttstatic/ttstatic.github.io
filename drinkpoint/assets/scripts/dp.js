@@ -8,21 +8,21 @@ var Drinkpoint = (function () {
             
             Drinkpoint.box(".box > p:first-of-type");
           
-            Drinkpoint.fitPageHeight()
+            //Drinkpoint.fitPageHeight()
             
 		},
       
         fitPageHeight : function () {
             jQuery(window).on("load resize", function() {
                 if (jQuery(this).width() > 990) {
-                    var top = Drinkpoint.isVisible( jQuery(".navbar-wrapper") );
+                    //var top = Drinkpoint.isVisible( jQuery(".navbar-wrapper") );
                     var win = jQuery(window.top).height();
 
-                    var h = win - top;
+                    //var h = win - top;
 
-                    jQuery("#myCarousel .carousel-inner > .item").css("height", h + "px");
+                    jQuery("#headerBanner").css("height", win + "px");
                 } else {
-                    jQuery("#myCarousel .carousel-inner > .item").css("height", "auto");
+                    jQuery("#headerBanner").css("height", "auto");
                 }
             });
         },

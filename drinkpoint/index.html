@@ -19,6 +19,26 @@
     <link href="assets/css/offcanvas.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+    <!-- Modal-->
+    <div id="utilSearch" tabindex="-1" role="dialog" aria-labelledby="utilSearchLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="utilSearchLabel" class="modal-title"> </h4>
+          </div>
+          <div class="modal-body">
+            <div class="util-search">
+              <input type="text" placeholder="Search..."/>
+            </div>
+            <!--utilSearch-->
+          </div>
+        </div>
+        <!--modal-content-->
+      </div>
+      <!--modal-dialog-->
+    </div>
+    <!--modal-->
     <div class="navbar-wrapper">
       <div class="container">
         <nav class="navbar navbar-static-top">
@@ -32,16 +52,12 @@
               <ul class="nav navbar-nav navbar-right"> 
                 <li class="active"><a href="#">Join</a></li>
                 <!--li-->
-                <li><a href="#">Sign-In</a></li>
+                <li><a href="#">Sign In</a></li>
                 <!--li-->
-                <li class="search hidden-xs"><a role="button" data-toggle="collapse" href="#utilSearch" aria-expanded="false" aria-controls="collapseExample">Search&nbsp;<i class="fa fa-search"></i></a></li>
+                <li class="search hidden-xs"><a role="button" data-toggle="modal" href="#utilSearch">Search&nbsp;<i class="fa fa-search"></i></a></li>
                 <!--li-->
               </ul>
               <!--ul-->
-              <div id="utilSearch" class="collapse util-search">
-                <input type="text" placeholder="Search..."/>
-              </div>
-              <!--utilSearch-->
             </div>
             <!--#navbar-->
           </div>
@@ -53,57 +69,8 @@
     </div>
     <!--navbar-wrapper-->
     <!-- content goes here...-->
-    <div id="myCarousel" data-ride="carousel" class="carousel slide">
-      <!-- Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <!--ol-->
-      <div role="listbox" class="carousel-inner">
-        <div class="item active"><img src="assets/images/banner/banner_1.jpg" alt="First slide" class="first-slide"/>
-          <div class="container">
-            <div class="carousel-caption">
-              <div>
-                <h1>Discover        Share        Enjoy</h1>
-              </div>
-            </div>
-            <!--carousel-caption-->
-          </div>
-          <!--container-->
-        </div>
-        <!--item-->
-        <div class="item"><img src="assets/images/banner/banner_2.jpg" alt="Second slide" class="second-slide"/>
-          <div class="container">
-            <div class="carousel-caption">
-              <div>
-                <h1>Wine events and convention</h1>
-                <p>Stumble upon the drink events and convention and meet enthusiast from starters to experts!</p>
-              </div>
-            </div>
-            <!--carousel-caption-->
-          </div>
-          <!--container-->
-        </div>
-        <!--item-->
-        <div class="item"><img src="assets/images/banner/banner_3.jpg" alt="Third slide" class="third-slide"/>
-          <div class="container">
-            <div class="carousel-caption">
-              <div>
-                <h1>Community and Forums</h1>
-                <p>Start a discussion and learn the craft from other members as well</p>
-              </div>
-            </div>
-            <!--carousel-caption-->
-          </div>
-          <!--container-->
-        </div>
-        <!--item-->
-      </div>
-      <!--carousel-inner-->
-    </div>
-    <!--#myCarousel-->
+    <div id="headerBanner"><img src="assets/images/banner/banner_0.jpg" class="img-responsive"/></div>
+    <!--#headerBanner-->
     
     <div class="container marketing">
       <!-- Three columns of text below the carousel-->
@@ -136,23 +103,15 @@
       <!--row-->
     </div>
     <!--container-->
-    <div class="container-fluid dp-apps">
+    <div class="container dp-apps">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="row"><img src="assets/images/img-mypoint.jpg"/></div>
-        </div>
+        <div class="col-md-3 col-sm-6"><img src="assets/images/img-mypoint.jpg"/></div>
         <!--col-->
-        <div class="col-md-3 col-sm-6">
-          <div class="row"><img src="assets/images/img-thebackdoor.jpg"/></div>
-        </div>
+        <div class="col-md-3 col-sm-6"><img src="assets/images/img-thebackdoor.jpg"/></div>
         <!--col-->
-        <div class="col-md-3 col-sm-6">
-          <div class="row"><img src="assets/images/img-drinkadvisor.jpg"/></div>
-        </div>
+        <div class="col-md-3 col-sm-6"><img src="assets/images/img-drinkadvisor.jpg"/></div>
         <!--col-->
-        <div class="col-md-3 col-sm-6">
-          <div class="row"><img src="assets/images/img-drinkfinder.jpg"/></div>
-        </div>
+        <div class="col-md-3 col-sm-6"><img src="assets/images/img-drinkfinder.jpg"/></div>
         <!--col-->
       </div>
       <!--row-->
@@ -172,7 +131,12 @@
             <div class="carousel-caption">
               <div>
                 <h1>"Awesome! No other drink site like this!"</h1>
-                <p class="text-right"><strong>Joe Smith</strong><br/><i>Wineries Europa LTD</i></p>
+                <p class="text-right"><strong>Joe Smith</strong>
+                  <!--
+                  br
+                  i Wineries Europa LTD
+                  -->
+                </p>
                 <!--p-->
               </div>
               <!--div-->
@@ -187,7 +151,12 @@
             <div class="carousel-caption">
               <div>
                 <h1>"Discovered competitive drinks which are out of the market. Drinkpoint gave them a voice!"</h1>
-                <p class="text-right"><strong>Emilia Worschbach</strong><br/><i>Worchbach Winery Heritage</i></p>
+                <p class="text-right"><strong>Emilia Worschbach</strong>
+                  <!--
+                  br
+                  i Worchbach Winery Heritage
+                  -->
+                </p>
                 <!--p-->
               </div>
               <!--div-->
@@ -203,7 +172,12 @@
               <div>
                 <div></div>
                 <h1>"Drinkpoint is visionary and a break-through in liquor industry. Unravelling the drink micro businesses in the country"</h1>
-                <p class="text-right"><strong>Donatelo Moran-Favina</strong><br/><i>CEO Grape Bottlers Inc.</i></p>
+                <p class="text-right"><strong>Donatelo Moran-Favina</strong>
+                  <!--
+                  br
+                  i CEO Grape Bottlers Inc.
+                  -->
+                </p>
                 <!--p-->
               </div>
               <!--div-->
@@ -218,22 +192,22 @@
     </div>
     <!--#myBanner-->
     <div class="container">
-      <h1 class="section-title">now trending<br/>
-        <hr/><br/>
+      <h1 class="section-title trending">now trending<br/>
+        <hr/>
       </h1>
       <!--h1-->
       <div class="col-md-4">
         <div class="card">
           <div class="top-wrap">
-            <div class="preview"><img src="http://placehold.it/350x260"/></div>
+            <div class="preview"><img src="assets/images/img-trending-1.jpg"/></div>
             <!--preview-->
-            <div class="user"><img src="http://placehold.it/125x125" class="img-circle"/>
+            <div class="user"><img src="assets/images/img-trending-av-1.jpg" class="img-circle"/>
               <h4>Susan Keller</h4>
             </div>
             <!--user-->
             <div class="content">
               <div class="title-message">Perfect drink and perfect times with friends!</div>
-              <p>Another great day out with the guys and we've had a superb drink recommendation from..</p>
+              <p>Another great day out with the guys and we've had a superb drink recommendation from...</p>
               <!--p-->
             </div>
             <!--content-->
@@ -254,15 +228,15 @@
       <div class="col-md-4">
         <div class="card">
           <div class="top-wrap">
-            <div class="preview"><img src="http://placehold.it/350x260"/></div>
+            <div class="preview"><img src="assets/images/img-trending-2.jpg"/></div>
             <!--preview-->
-            <div class="user"><img src="http://placehold.it/125x125" class="img-circle"/>
+            <div class="user"><img src="assets/images/img-trending-av-2.jpg" class="img-circle"/>
               <h4>John Smith</h4>
             </div>
             <!--user-->
             <div class="content">
               <div class="title-message">We found the best wine,<br/>&nbsp;Again!</div>
-              <p>Another great day out with the guys and we've had a superb drink recommendation from..</p>
+              <p>Another great day out with the guys and we've had a superb drink recommendation from...</p>
               <!--p-->
             </div>
             <!--content-->
@@ -283,15 +257,15 @@
       <div class="col-md-4">
         <div class="card">
           <div class="top-wrap">
-            <div class="preview"><img src="http://placehold.it/350x260"/></div>
+            <div class="preview"><img src="assets/images/img-trending-3.jpg"/></div>
             <!--preview-->
-            <div class="user"><img src="http://placehold.it/125x125" class="img-circle"/>
+            <div class="user"><img src="assets/images/img-trending-av-3.jpg" class="img-circle"/>
               <h4>Kate Jones</h4>
             </div>
             <!--user-->
             <div class="content">
               <div class="title-message">Thanks to the community for another great get together!</div>
-              <p>Was great to see everyone at our super great get together over at the with sundays</p>
+              <p>Was great to see everyone at our super great get together over at the with sundays...</p>
               <!--p-->
             </div>
             <!--content-->
@@ -315,39 +289,45 @@
       <footer>
         <div class="sitelinks">
           <div class="col-md-4 col-sm-4">
-            <h4>Company</h4>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Careers</a></p>
-            <p><a href="#">Press</a></p>
-            <p><a href="#">Blog</a></p>
-            <p><a href="#">Help</a></p>
-            <p><a href="#">Policies</a></p>
-            <p><a href="#">Terms &amp; Privacy</a></p>
-            <p><a href="#">Discover</a></p>
+            <div class="center-block">
+              <h4>Company</h4>
+              <p><a href="#">About</a></p>
+              <p><a href="#">Careers</a></p>
+              <p><a href="#">Press</a></p>
+              <p><a href="#">Blog</a></p>
+              <p><a href="#">Help</a></p>
+              <p><a href="#">Policies</a></p>
+              <p><a href="#">Terms &amp; Privacy</a></p>
+              <p><a href="#">Discover</a></p>
+            </div>
           </div>
           <!--col-->
           <div class="col-md-4 col-sm-4">
-            <h4>Trust &amp; Safety</h4>
-            <p><a href="#">Invite Friends</a></p>
-            <p><a href="#">Drinkpoint Picks</a></p>
-            <p><a href="#">Mobile</a></p>
-            <p><a href="#">Support Wine Culture</a></p>
-            <p><a href="#">Our Partners</a></p>
-            <p><a href="#">Site Map</a></p>
-            <p><a href="#">Wine Clubs</a></p>
-            <p><a href="#">Join the Club</a></p>
+            <div class="center-block">
+              <h4>Trust &amp; Safety</h4>
+              <p><a href="#">Invite Friends</a></p>
+              <p><a href="#">Drinkpoint Picks</a></p>
+              <p><a href="#">Mobile</a></p>
+              <p><a href="#">Support Wine Culture</a></p>
+              <p><a href="#">Our Partners</a></p>
+              <p><a href="#">Site Map</a></p>
+              <p><a href="#">Wine Clubs</a></p>
+              <p><a href="#">Join the Club</a></p>
+            </div>
           </div>
           <!--col-->
           <div class="col-md-4 col-sm-4">
-            <h4>Company</h4>
-            <p><a href="#">Facebook</a></p>
-            <p><a href="#">Twitter</a></p>
-            <p><a href="#">Goolge+</a></p>
-            <p><a href="#">LinkedIn</a></p>
-            <p><a href="#">Pinterest</a></p>
-            <p><a href="#">YouTube</a></p>
-            <p><a href="#">Instagram</a></p>
-            <p><a href="#">Sign up</a></p>
+            <div class="center-block">
+              <h4>Company</h4>
+              <p><a href="#">Facebook</a></p>
+              <p><a href="#">Twitter</a></p>
+              <p><a href="#">Goolge+</a></p>
+              <p><a href="#">LinkedIn</a></p>
+              <p><a href="#">Pinterest</a></p>
+              <p><a href="#">YouTube</a></p>
+              <p><a href="#">Instagram</a></p>
+              <p><a href="#">Sign up</a></p>
+            </div>
           </div>
           <!--col-->
           <div class="clearfix"></div>
@@ -356,7 +336,7 @@
       </footer>
       <!--footer-->
       <hr/><strong>
-        <h4 class="copy">&copy;DrinkPoint</h4></strong>
+        <h4 class="copy">&#169;DrinkPoint</h4></strong>
     </div>
     <!--container-->
     

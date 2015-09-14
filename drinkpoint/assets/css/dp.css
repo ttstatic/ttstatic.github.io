@@ -7,7 +7,7 @@ body {
 footer {
   width: 60%;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 footer h4 {
   font-weight: 600;
@@ -17,56 +17,83 @@ footer a {
   color: inherit;
 }
 
-/* COPYRIGHT
+/* SEARCH MODAL
 -------------------------------------------------- */
-.util-search {
-  position: absolute;
+#utilSearch .modal-header .close {
+  margin-top: -2px;
+  position: relative;
   z-index: 1;
-  top: 103px;
-  left: 0;
-  width: 100%;
-  background: rgba(255,255,255,.9);
+  top: 12px;
+}
+#utilSearch .modal-header .close span {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #333;
 }
 .util-search input[type="text"] {
-  background: transparent;
+  background: rgba(255,255,255,.9);
   border: 0;
   width: 100%;
   padding: 17px;
 }
-.util-search input[type="text"]:focus {
-  outline: none;
+#utilSearch .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  background: transparent;
 }
 
-/* CAROUSEL
+/* BANNER
 -------------------------------------------------- */
+#headerBanner {
+  margin-top: -100px;
+  margin-bottom: 30px;
+}
+#headerBanner img {
+  margin-top: 50px;
+  margin: 50px auto 0 auto;
+}
 #myBanner.carousel .item {
   height: 300px;
-  background: #ff7200;
+  background: transparent;
 }
 #myBanner.carousel .carousel-indicators .active {
-  background: #EEFF25;
+  background: #C2C2C2;
+}
+#myBanner.carousel .carousel-indicators li {
+  background: #E0E0E0;
 }
 #myBanner.carousel .item .carousel-caption h1 {
   font-size: 38px;
+  text-transform: lowercase;
 }
 #myBanner.carousel .item .carousel-caption p strong {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
+  color: #030303;
+  text-transform: lowercase;
 }
 #myBanner.carousel .item .carousel-caption p i {
   font-size: 15px;
+  color: #030303;
 }
 #myBanner.carousel .item .carousel-caption {
   -webkit-text-shadow: none;
   -moz-text-shadow: none;
   text-shadow: none;
+  color: #FE7100;
 }
 
 
 /* MARKETING SECTION - APPS
 -------------------------------------------------- */
 .dp-apps {
-  margin-top: 50px;
+  
 }
 .dp-apps img {
   width: 100%;
@@ -79,14 +106,17 @@ h1.section-title {
   color: #FF7200;
   font-size: 28px;
 }
+h1.section-title.trending {
+  margin-bottom: 35px;
+}
 h1.section-title hr {
-  border-color: lightgray;
+  border-color: #DBDBDC;
 }
 
 /* CARD
 -------------------------------------------------- */
 .card {
-  border: 1px solid lightgray;
+  border: 1px solid #DDDDDD;
   margin-bottom: 20px;
 }
 .card .top-wrap {
@@ -99,24 +129,26 @@ h1.section-title hr {
 }
 .card .user {
   position: relative;
-  top: -65px;
+  top: -78px;
   left: 15px;
 }
 .card .user img {
-  border: 2px solid white;
+  border: 3px solid white;
   display: inline-block;
+  width: 110px;
 }
 .card .user h4 {
   display: inline-block;
-  margin-left: 15px;
   position: absolute;
-  top: 65px;
-  color: #1EA1E2;
-  font-size: 20px;
+  bottom: -5px;
+  color: #03A9EC;
+  font-size: 16px;
   font-weight: 600;
+  padding-right: 15px;
 }
 .card .bottom-wrap {
-  padding: 10px;
+  padding: 0 5px;
+  border-top: 1px solid #DDDDDD;
 }
 .card .bottom-wrap .pull-left img {
   margin-right: 15px;
@@ -129,10 +161,14 @@ h1.section-title hr {
   margin-left: 5px;
 }
 .card .content {
-  margin-top: -50px;
+  margin-top: -60px;
+}
+.card .content p {
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 .card .content .title-message {
-  color: #1EA1E2;
+  color: #03A9EC;
   font-size: 19px;
   font-weight: 600;
   line-height: 1.3em;
@@ -144,7 +180,17 @@ h1.section-title hr {
 .copy {
   font-weight: 600;
   text-align: center;
-  color: #989898;
+  color: #B7B7B6;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+.sitelinks > div {
+  text-align: center;
+}
+.center-block {
+  display: inline-block;
+  text-align: left;
 }
 
 /* MEDIA QUERIES
@@ -157,17 +203,16 @@ h1.section-title hr {
     margin-bottom: 20px;
     text-align: center;
   }
-  .util-search {
-    height: auto !important;
-    display: block;
-    position: static;
+  .navbar {
+      background: white;
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   }
-  .util-search input[type="text"] {
-    border: 1px solid #ddd;
-    width: 100%;
-    padding: 10px 17px;
-    border-radius: 27px;
-    margin-bottom: 15px;
+  #headerBanner {
+    margin-top: -50px;
+  }
+  .center-block {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -179,9 +224,8 @@ h1.section-title hr {
   }
 }
 
-/*/
- * TT Hack
-/*/
+/* TT Hack
+-------------------------------------------------- */
 	.widgetDiv * div {
 		float: none !important;
 	}

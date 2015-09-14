@@ -6,7 +6,9 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
-
+hr {
+  border-top-color: #DAD9DE;
+}
 
 /*color
   orange: #ff7200
@@ -36,33 +38,37 @@ body {
   margin-right: 0;
 }
 .navbar-toggle .icon-bar {
-  background: #ff7200;
+  background: #313d38;
 }
 .navbar-nav > li > a {
   color: #ff7200;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 600;
   
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
 }
 .navbar-nav > li.search i {
-  font-size: 32px;
+  font-size: 15px;
   margin-left: 10px;
   margin-bottom: 0;
-  margin-top: -9px;
+  margin-top: -6px;
   vertical-align: middle;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-  background: rgba(119, 119, 119, 0.07);
+  background: none;
 }
 .navbar-brand {
-  height: 0;
+  height: auto;
   padding-top: 0;
   padding-bottom: 0;
+  background: white;
 }
 .navbar-static-top {
   border-width: 0;
+}
+.navbar-right {
+  background: white;
 }
 
 /* MOBILE NAVBAR ICON ANIMATION
@@ -98,7 +104,7 @@ body {
 /* Carousel base class */
 .carousel {
 /*  height: 580px;*/
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -159,8 +165,11 @@ body {
 .carousel-indicators li {
   background-color: white;
   
-  margin-left: 12.5px;
-  margin-right: 12.5px;
+  margin-left: 6.25px;
+  margin-right: 6.25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
   
   width: 15px;
   height: 15px;
@@ -173,8 +182,8 @@ body {
   background-color: #ff7200;
   border: 0;
   
-  margin-left: 12.5px;
-  margin-right: 12.5px;
+  margin-left: 6.25px;
+  margin-right: 6.25px;
   
   width: 15px;
   height: 15px;
@@ -203,13 +212,18 @@ body {
 }
 .marketing h3 span.icon {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.marketing h3 span.icon img {
+  height: 22px;
+  vertical-align: bottom;
 }
 .marketing .read-more {
   text-transform: uppercase;
-  color: #9A9898;
+  color: #C3C3C3;
   font-size: 14px;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 
@@ -231,8 +245,8 @@ body {
     padding-left: 0;
   }
   .navbar-nav > li > a {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .navbar-brand {
     padding: 24px 15px;
@@ -291,4 +305,75 @@ body {
   #myBanner.carousel .item .carousel-caption p i {
     font-size: 12px !important;
   }
+}
+
+
+
+/* BOOTSTRAP HACKS
+-------------------------------------------------- */
+
+.modal.fade .modal-dialog {
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  top: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0, -300px, 0);
+  transform: translate3d(0, -300px, 0);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-footer {
+  border: 0;
+}
+
+.navbar-form .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+input[type=text].form-control,
+textarea.form-control {
+  border-radius: 0;
+}
+
+.btn {
+  margin-left: 2px;
+  margin-right: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.btn-success,
+.btn-danger,
+.btn-info,
+.btn-warning {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.btn-group .btn,
+.input-group .btn {
+  margin: 0;
+}
+
+textarea,
+input.form-control {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  resize: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
