@@ -25,7 +25,7 @@ footer a {
   color: inherit;
 }
 a {
-  color: #0072BC;
+  color: #ff7200;
 }
 
 /* SEARCH MODAL
@@ -459,7 +459,7 @@ h1.section-title hr {
     border-bottom: 2px solid #ff7200;
   }
   .navbar-wrapper.mypoint .navbar-nav > li > a {
-    color: #0072BC;
+    color: #ff7200;
   }
   .summary table {
     width: 100%;
@@ -499,7 +499,7 @@ h1.section-title hr {
 
   /* Photo / Avatar
   --------------------------------*/
-  .photo-frame-sm, .photo-frame-md, .photo-frame-lg, .button-drop-lg {
+  .photo-frame-sm, .photo-frame-md, .photo-frame-lg, .button-drop-lg, .photo-block .photo-frame {
     position: relative;
     display: inline-block;
   }
@@ -512,7 +512,7 @@ h1.section-title hr {
     bottom: 1px;
     margin: 0 auto;
   }
-  .photo-frame-lg .avatar, .photo-frame-md .avatar {
+  .photo-frame-lg .avatar, .photo-frame-md .avatar, .photo-block .photo-frame .avatar {
     position: absolute;
     left: 0;
     right: 0;
@@ -520,6 +520,19 @@ h1.section-title hr {
     bottom: 1px;
     margin: 0 auto;
   }
+  .photo-block {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .photo-block > img:first-child {
+    width: 100%;
+  }
+  .photo-block .photo-frame {
+    position: absolute;
+    bottom: -28px;
+    left: 15px;
+  }
+  
 
   /* Buttons
   --------------------------------*/
@@ -730,6 +743,9 @@ h1.section-title hr {
     top: 4px;
     right: 0;
   }
+  .feed .composer .textarea input {
+    width: 80%;
+  }
 
   /* Post
   --------------------------------*/
@@ -770,6 +786,12 @@ h1.section-title hr {
     line-height: 1.42857143;
     vertical-align: middle;
   }
+  .feed .post .comments {
+    margin-top: 0;
+  }
+  .feed .post .comments table.comment tr td {
+    padding-top: 0;
+  }
   .post .comments table.comment .write {
     position: relative;
   }
@@ -781,6 +803,12 @@ h1.section-title hr {
     position: absolute;
     top: 4px;
     right: 7px;
+  }
+  table.center .control a {
+    padding: 0;
+  }
+  table.center .control a + a {
+    margin-left: 20px;
   }
   
 /* Custom END
