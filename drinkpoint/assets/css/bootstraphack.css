@@ -1,0 +1,382 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+hr {
+  border-top-color: #DAD9DE;
+}
+
+/*color
+  orange: #ff7200
+*/
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  margin-bottom: 0;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-toggle {
+  margin-right: 0;
+}
+.navbar-toggle .icon-bar {
+  background: #313d38;
+}
+.navbar-nav > li > a {
+  color: #ff7200;
+  text-transform: lowercase;
+  font-weight: 600;
+  
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+.navbar-nav > li.search i {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: -6px;
+  vertical-align: middle;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background: none;
+}
+.navbar-brand {
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: white;
+}
+.navbar-static-top {
+  border-width: 0;
+}
+.navbar-right {
+  background: white;
+}
+
+/* MOBILE NAVBAR ICON ANIMATION
+-------------------------------------------------- */
+.navbar-toggle > span.icon-bar {
+    -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(2) {
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(3) {
+    display: none;
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(4) {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+/*  height: 580px;*/
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-align-items: center;
+  align-items: center;
+  
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+  height: 100%;
+  bottom: 0;
+  
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.carousel-caption h1 {
+  font-size: 60px;
+  font-weight: 200;
+  
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  
+  -webkit-align-content: center;
+  align-content: center;
+  
+  width: 100%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+/*  height: 580px;*/
+  background-color: #240817;
+}
+.carousel-inner > .item > img {
+/*
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 580px;
+*/
+  width: 100%;
+}
+
+/* Indicator */
+.carousel-indicators li {
+  background-color: white;
+  
+  margin-left: 6.25px;
+  margin-right: 6.25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #ff7200;
+  border: 0;
+  
+  margin-left: 6.25px;
+  margin-right: 6.25px;
+  
+  width: 15px;
+  height: 15px;
+  
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* Controls */
+.carousel-control {
+  display: none;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .box {
+  margin-bottom: 20px;
+}
+.marketing h3 {
+  font-weight: 600;
+  color: #ff7200;
+}
+.marketing h3 span.icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+.marketing h3 span.icon img {
+  height: 22px;
+  vertical-align: bottom;
+}
+.marketing .read-more {
+  text-transform: uppercase;
+  color: #C3C3C3;
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-nav > li > a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .navbar-brand {
+    padding: 32px 15px;
+  }
+  .navbar-brand:not(.home) > img {
+    height: 30px;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    width: 100%;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .carousel-inner > .item > img {
+    height: 100%;
+    max-width: initial;
+    width: auto;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .carousel-caption h1 {
+    font-size: 48px
+  }
+}
+@media (max-width: 650px) {
+  .carousel-caption h1 {
+    font-size: 32px
+  }
+  #myBanner.carousel .item .carousel-caption h1 {
+    font-size: 21px !important;
+  }
+  #myBanner.carousel .item .carousel-caption p strong {
+    font-size: 15px !important;
+  }
+  #myBanner.carousel .item .carousel-caption p i {
+    font-size: 12px !important;
+  }
+}
+
+
+
+/* BOOTSTRAP HACKS
+-------------------------------------------------- */
+
+.modal.fade .modal-dialog {
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  top: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0, -300px, 0);
+  transform: translate3d(0, -300px, 0);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-footer {
+  border: 0;
+}
+
+.navbar-form .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+input[type=text].form-control,
+textarea.form-control {
+  border-radius: 0;
+}
+
+.btn {
+  margin-left: 2px;
+  margin-right: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.btn-success,
+.btn-danger,
+.btn-info,
+.btn-warning {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.btn-group .btn,
+.input-group .btn {
+  margin: 0;
+}
+
+textarea,
+input.form-control {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  resize: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
