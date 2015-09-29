@@ -241,6 +241,17 @@ h1.section-title hr {
   .banner .profile {
     bottom: 10px !important;
   }
+  .banner.personal .profile {
+    bottom: -5px !important;
+  }
+  .banner.personal .cont.actions .buttons a {
+    color: white;
+    display: block;
+  }
+  .banner.personal .cont.actions .buttons {
+    bottom: 5px !important;
+    float: right;
+  }
   .banner .photo img:first-child {
     width: 80px;
   }
@@ -336,6 +347,9 @@ h1.section-title hr {
     font-size: 12px;
     margin-right: 18px;
   }
+
+  /* Banner
+  --------------------------------*/
   .banner {
   /*  background: #0B0205;*/
     text-align: center;
@@ -348,20 +362,8 @@ h1.section-title hr {
     position: absolute;
     bottom: 40px;
   }
-  .banner.business .photo, .banner.business .name {
-    display: inline-block;
-  }
-  .banner.personal .photo, .banner.personal .name {
-
-  }
-  .banner.business .name {
-    vertical-align: bottom;
+  .banner .name {
     color: white;
-    text-align: left;
-    line-height: 3px;
-  }
-  .banner .name h4 {
-
   }
   .banner .name p {
     font-weight: 300;
@@ -387,8 +389,21 @@ h1.section-title hr {
     left: 0;
     text-align: right;
   }
-  .banner.business .cont.actions {
+  .banner .cont.actions {
     bottom: 0;
+  }
+  .banner .cont.actions .buttons a {
+    color: white;
+  }
+  /* .business
+  ---------------*/
+  .banner.business .photo, .banner.business .name {
+    display: inline-block;
+  }
+  .banner.business .name {
+    vertical-align: bottom;
+    text-align: left;
+    line-height: 3px;
   }
   .banner.business .cont.actions .buttons {
     position: relative;
@@ -402,11 +417,32 @@ h1.section-title hr {
     height: 49px;
     background: transparent url(../images/img-drop-thumb-md.png) center center no-repeat;
     text-align: center;
-    color: white;
     padding-top: 21px;
     font-size: 12px;
     margin: 0 3px;
   }
+  /* .personal
+  ---------------*/
+  .banner.personal .photo {
+    display: inline-block;
+  }
+  .banner.personal .name {
+    display: block;
+  }
+  .banner.personal .profile {
+    bottom: 22px;
+  }
+  .banner.personal .cont.actions .buttons {
+    position: relative;
+    right: 0;
+    bottom: 30px;
+  }
+  .banner.personal .cont.actions .buttons a + a {
+    margin-left: 35px;
+  }
+
+  /* Sites (mypoint/the backdoor/drinkadvisor/drinkfinder)
+  --------------------------------*/
   .cont.sites {
     text-align: center;
     margin: 20px auto;
@@ -436,6 +472,9 @@ h1.section-title hr {
   .about table tr td {
     vertical-align: top;
   }
+
+  /* Summary (likes/visits)
+  --------------------------------*/
   .summary .bb td {
     border-bottom: 1px solid #ddd;
   }
@@ -501,12 +540,15 @@ h1.section-title hr {
   /* Buttons END
   --------------------------------*/
   
-  /* Photos
+  /* Photos/Videos/Events/Friends/Likes
   --------------------------------*/
-  .photos .thumb, .videos .thumb, .events .event {
+  .photos .thumb, .videos .thumb, .events .event, .friends .thumb, .likes .thumb {
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   }
+
+  /* Photos
+  --------------------------------*/
   .photos .thumb img {
     width: 33.3333333%;
 /*    height: 107px;*/
@@ -541,6 +583,42 @@ h1.section-title hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   }
+  
+  /* Friends
+  --------------------------------*/
+  .friends .thumb img {
+    width: 33.3333333%;
+    padding: 2px;
+    
+    display: inline-block;
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  /* Likes
+  --------------------------------*/
+  .likes .thumb img {
+    width: 33.3333333%;
+    padding: 2px;
+    
+    display: inline-block;
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  /* Groups
+  --------------------------------*/
+  .groups table tr td {
+    vertical-align: top;
+    padding-bottom: 8px;
+  }
+  .groups table tr td:first-child + td {
+    padding-left: 8px;
+  }
 
   /* Events
   --------------------------------*/
@@ -559,7 +637,6 @@ h1.section-title hr {
     
     overflow: hidden;
   }
-  
   .events .event table tr td:last-child strong, .events .event table tr td:last-child span  {
     display: -webkit-box;
     display: -moz-box;
@@ -570,11 +647,10 @@ h1.section-title hr {
     position: relative;
     height: 1.3em;
     overflow: hidden;
-    
-/*
+    /*
     -webkit-align-items: center;
     align-items: center;
-*/
+    */
   }
   .events .event table tr td:last-child strong:after, .events .event table tr td:last-child span:after {
     content: "...";
@@ -606,7 +682,6 @@ h1.section-title hr {
       display: none;
     }
   }
-
   .events .btn-subscribe {
     background-color: #0072BC;
     color: white;
@@ -630,6 +705,7 @@ h1.section-title hr {
     text-align: center;
   }
   .composer .textarea {
+    position: relative;
     text-align: center;
   }
   .composer .textarea input {
@@ -646,13 +722,13 @@ h1.section-title hr {
   }
   .composer .textarea .photo-frame-lg {
     position: absolute;
-    top: 24px;
-    left: 10px;
+    top: 4px;
+    left: 0;
   }
   .composer .textarea .button-drop-lg {
     position: absolute;
-    top: 24px;
-    right: 10px;
+    top: 4px;
+    right: 0;
   }
 
   /* Post
