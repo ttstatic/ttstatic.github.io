@@ -609,6 +609,9 @@ h1.section-title hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   }
+  .friends .title small {
+    color: #ff7200;
+  }
 
   /* Likes
   --------------------------------*/
@@ -634,6 +637,22 @@ h1.section-title hr {
   }
 
   /* Events
+  --------------------------------*/
+  .evnts table tr td {
+    vertical-align: top;
+    padding-bottom: 8px;
+  }
+  .evnts table tr td:first-child {
+    padding-top: 4px;
+  }
+  .evnts table tr td .text-muted {
+    font-size: 12px;
+  }
+  .evnts table tr td:first-child + td {
+    padding-left: 8px;
+  }
+
+  /* Upcoming Events
   --------------------------------*/
   .events .event table tr td {
     padding: 10px;
@@ -696,7 +715,7 @@ h1.section-title hr {
     }
   }
   .events .btn-subscribe {
-    background-color: #0072BC;
+    background-color: #ff7200;
     color: white;
     text-decoration: none;
     padding: 2px 8px;
@@ -743,7 +762,7 @@ h1.section-title hr {
     top: 4px;
     right: 0;
   }
-  .feed .composer .textarea input {
+  .news .composer .textarea input {
     width: 80%;
   }
 
