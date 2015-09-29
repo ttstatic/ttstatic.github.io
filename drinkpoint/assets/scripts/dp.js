@@ -9,7 +9,13 @@ var Drinkpoint = (function () {
             Drinkpoint.box(".box > p:first-of-type");
           
             //Drinkpoint.fitPageHeight()
-            
+          /*
+            $(".events .event").each(function() {
+				if ( !$(this).find("p").length ) {
+					$(this).addClass("no-after");
+				}
+			});
+          */
 		},
       
         fitPageHeight : function () {

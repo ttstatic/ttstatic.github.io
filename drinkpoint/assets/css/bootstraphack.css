@@ -249,7 +249,10 @@ hr {
     padding-bottom: 32px;
   }
   .navbar-brand {
-    padding: 24px 15px;
+    padding: 32px 15px;
+  }
+  .navbar-brand:not(.home) > img {
+    height: 30px;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */

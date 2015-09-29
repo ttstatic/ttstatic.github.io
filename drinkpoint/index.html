@@ -17,6 +17,7 @@
     <link href="assets/css/bootstraphack.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/dp.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/offcanvas.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/dynamicbanner.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <!-- Modal-->
@@ -45,7 +46,7 @@
           <div class="container">
             <div class="navbar-header">
               <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              <!--button--><a href="#" class="navbar-brand"><img src="assets/images/logo/logo-dp.png" alt="Drink Point"/></a>
+              <!--button--><a href="#" class="navbar-brand home"><img src="assets/images/logo/logo-dp.png" alt="Drink Point"/></a>
             </div>
             <!--navbar-header-->
             <div id="navbar" class="navbar-collapse collapse">
@@ -69,31 +70,130 @@
     </div>
     <!--navbar-wrapper-->
     <!-- content goes here...-->
-    <div id="headerBanner"><img src="assets/images/banner/banner_0.jpg" class="img-responsive"/></div>
+    <div id="headerBanner">
+      <div class="dynamic-banner">
+        <div class="a grow"><img src="assets/images/dynamicbanner/a.png" alt="Responsive image" class="img-responsive animated"/></div>
+        <div class="c grow"><img src="assets/images/dynamicbanner/c.png" alt="Responsive image" class="img-responsive animated"/></div>
+        <div class="b grow"><img src="assets/images/dynamicbanner/b.png" alt="Responsive image" class="img-responsive animated"/></div>
+        <div class="d grow"><img src="assets/images/dynamicbanner/e.png" alt="Responsive image" class="img-responsive animated"/></div>
+        <div class="j grow"><img src="assets/images/dynamicbanner/j.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="e grow"><img src="assets/images/dynamicbanner/f.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="f grow"><img src="assets/images/dynamicbanner/g.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="h grow"><img src="assets/images/dynamicbanner/d.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="g grow"><img src="assets/images/dynamicbanner/3.jpg" alt="Responsive image" class="img-responsive"/></div>
+        <div class="p grow"><img src="assets/images/dynamicbanner/14.jpg" alt="Responsive image" class="img-responsive"/></div>
+        <div class="i grow"><img src="assets/images/dynamicbanner/i.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="k grow"><img src="assets/images/dynamicbanner/o.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="l grow"><img src="assets/images/dynamicbanner/p.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="m grow"><img src="assets/images/dynamicbanner/11.jpg" alt="Responsive image" class="img-responsive"/></div>
+        <div class="n grow"><img src="assets/images/dynamicbanner/k.png" alt="Responsive image" class="img-responsive"/></div>
+        <div class="o grow"><img src="assets/images/dynamicbanner/2.jpg" alt="Responsive image" class="img-responsive"/></div>
+        <div class="links-style link-discover animated slideInUp"><a href="" class="links-style"> discover </a></div>
+        <div class="links-style link-share animated slideInDown"><a href="" class="links-style"> share </a></div>
+        <div class="links-style link-enjoy animated slideInRight"><a href="" class="links-style"> enjoy </a></div>
+      </div>
+      <!--dynamic-banner-->
+    </div>
     <!--#headerBanner-->
     
+    <div id="carousel-hide-first">
+      <div id="myBanner" data-ride="carousel" class="carousel slide">
+        <!-- Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#myBanner" data-slide-to="0"></li>
+          <li data-target="#myBanner" data-slide-to="1" class="active"></li>
+          <li data-target="#myBanner" data-slide-to="2"></li>
+        </ol>
+        <!-- ol-->
+        <div role="listbox" class="carousel-inner">
+          <div class="item"><img src="assets/images/dynamicbanner/b.png" style="width:100%" class="img-responsive"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="carousel-white-text">
+                  <h1>discover</h1>
+                  <p class="text-right"><strong> </strong>
+                    <!--
+                    br
+                    i Wineries Europa LTD
+                    -->
+                  </p>
+                  <!-- p-->
+                </div>
+                <!-- div-->
+              </div>
+              <!-- carousel-caption-->
+            </div>
+            <!-- container-->
+          </div>
+          <!-- item-->
+          <div class="item active"><img src="assets/images/dynamicbanner/c.png" style="width:100%" class="img-responsive"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="carousel-white-text">
+                  <h1>share</h1>
+                  <p class="text-right"><strong> </strong>
+                    <!--
+                    br
+                    i Worchbach Winery Heritage
+                    -->
+                  </p>
+                  <!-- p-->
+                </div>
+                <!-- div-->
+              </div>
+              <!-- carousel-caption-->
+            </div>
+            <!-- container-->
+          </div>
+          <!-- item-->
+          <div class="item"><img src="assets/images/dynamicbanner/d.png" style="width:100%" class="img-responsive"/>
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="carousel-white-text">
+                  <h1>enjoy</h1>
+                  <p class="text-right"><strong> </strong>
+                    <!--
+                    br
+                    i CEO Grape Bottlers Inc.
+                    -->
+                  </p>
+                  <!-- p-->
+                </div>
+                <!-- div-->
+              </div>
+              <!-- carousel-caption-->
+            </div>
+            <!-- container-->
+          </div>
+          <!-- item-->
+        </div>
+        <!-- carousel-inner-->
+      </div>
+      <!--myBanner-->
+    </div>
+    <!--carousel-hide-first-->
     <div class="container marketing">
       <!-- Three columns of text below the carousel-->
       <div class="row">
         <div class="col-lg-4 box">
-          <h3>our community<span class="icon"><img src="assets/images/icon/icon-community.png" alt="our community"/></span></h3>
-          <p>Welcome to myPoint the drinkpoint cummunity! Build a network of friends, talk directly to the makers your favourite drinks, get unique special offers, book your favourite restaurants, find out what's happening at your favourite bars and clubs, organise social events and so much more...</p>
+          <h3>our community<span class="icon"><img src="assets/images/icon/icon-people.jpg" alt="our community"/></span></h3>
+          <p>Join myPoint to build your network of friends, chat with the makers your favourite drinks, grab unique special offers, book your favourite restaurants, check out what's happening at your favourite bars and clubs, organise social events and so much more.</p>
           <!--p-->
           <p><a href="#" class="read-more">read more</a></p>
           <!--p-->
         </div>
         <!--col-->
         <div class="col-lg-4 box">
-          <h3>authentic ratings<span class="icon"><img src="assets/images/icon/icon-ratings.png" alt="authentic ratings"/></span></h3>
-          <p>Who better to rate and review wines, beers and spirits than the people who drink them. Like tripadvisor, drinkadvisor allows everyone to provide authentic consumer ratings and reviews across thousands of products then compare them to discover the best value.</p>
+          <h3>authentic ratings<span class="icon"><img src="assets/images/icon/icon-notepad.jpg" alt="authentic ratings"/></span></h3>
+          <p>Who better to rate and review wines, beers and spirits than the people who drink them. Like tripadvisor, drinkadvisor lets you compare ratings and reviews from thousands of products to help make the best value for money choices.</p>
           <!--p-->
           <p><a href="#" class="read-more">read more</a></p>
           <!--p-->
         </div>
         <!--col-->
         <div class="col-lg-4 box">
-          <h3>direct to you<span class="icon"><img src="assets/images/icon/icon-direct.png" alt="direct to you"/></span></h3>
-          <p>Drinkfinder is a market place that connects drinkers directly to producers. No middle man means drinkers and producers both win and allows the producers to offer 'direct to you' prices all day everyday. Check the backdoor for special clearance pricing on selected items offered daily.</p>
+          <h3>direct to you<span class="icon"><img src="assets/images/icon/icon-truck.jpg" alt="direct to you"/></span></h3>
+          <p>Drinkfinder is a marketplace that connects drinkers directly to producers. ‘No middle man' means buyers and sellers can both save with direct to you prices all day, everyday. Check the backdoor for daily updates of special clearance pricing.</p>
           <!--p-->
           <p><a href="#" class="read-more">read more</a></p>
           <!--p-->
@@ -117,12 +217,12 @@
       <!--row-->
     </div>
     <!--container-fluid-->
-    <div id="myBanner" data-ride="carousel" class="carousel slide">
+    <div id="quoteBanner" data-ride="carousel" class="carousel slide">
       <!-- Indicators-->
       <ol class="carousel-indicators">
-        <li data-target="#myBanner" data-slide-to="0" class="active"></li>
-        <li data-target="#myBanner" data-slide-to="1"></li>
-        <li data-target="#myBanner" data-slide-to="2"></li>
+        <li data-target="#quoteBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#quoteBanner" data-slide-to="1"></li>
+        <li data-target="#quoteBanner" data-slide-to="2"></li>
       </ol>
       <!--ol-->
       <div role="listbox" class="carousel-inner">
@@ -150,7 +250,7 @@
           <div class="container">
             <div class="carousel-caption">
               <div>
-                <h1>"Discovered competitive drinks which are out of the market. Drinkpoint gave them a voice!"</h1>
+                <h1>"Discovered some fantastic new wines and beers on myPoint. Let your friends know about it they will love it."</h1>
                 <p class="text-right"><strong>Emilia Worschbach</strong>
                   <!--
                   br
@@ -171,7 +271,7 @@
             <div class="carousel-caption">
               <div>
                 <div></div>
-                <h1>"Drinkpoint is visionary and a break-through in liquor industry. Unravelling the drink micro businesses in the country"</h1>
+                <h1>"drinkadvisor is fantastic to help find the 'best value for money' drinks ! I use it all the time."</h1>
                 <p class="text-right"><strong>Donatelo Moran-Favina</strong>
                   <!--
                   br
