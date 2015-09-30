@@ -47,6 +47,8 @@ hr {
   
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
+  
+  outline: none;
 }
 .navbar-nav > li.search i {
   font-size: 15px;

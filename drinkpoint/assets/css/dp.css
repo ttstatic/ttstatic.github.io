@@ -104,7 +104,12 @@ a {
 /* MARKETING SECTION - APPS
 -------------------------------------------------- */
 .dp-apps {
-  
+  padding: 10px 5px;
+  background: black;
+  margin-top: 30px;
+}
+.dp-apps > div {
+  padding: 0 5px;
 }
 .dp-apps img {
   width: 100%;
@@ -263,6 +268,10 @@ h1.section-title hr {
     right: 0;
     margin: 0 auto;
   }
+  .nav-search input {
+    width: 100%;
+    margin: 0 0 15px 0 !important;
+  }
 }
 @media (max-width: 500px) {
   footer {
@@ -301,6 +310,13 @@ h1.section-title hr {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .cont:before, .cont:after {
+    display: table;
+    content: " ";
+  }
+  .cont:after {
+    clear: both;
   }
   .navbar-wrapper > .cont {
     padding-right: 0;
@@ -443,19 +459,20 @@ h1.section-title hr {
 
   /* Sites (mypoint/the backdoor/drinkadvisor/drinkfinder)
   --------------------------------*/
-  .cont.sites {
+  .cont .sites {
     text-align: center;
     margin: 20px auto;
+    width: 90%;
   }
-  .cont.sites a {
+  .cont .sites a {
     display: inline-block;
     height: 33px;
     margin: 2px 0;
   }
-  .cont.sites a img {
+  .cont .sites a img {
     vertical-align: bottom;
   }
-  .cont.sites a.active, .cont.sites a:hover {
+  .cont .sites a.active, .cont .sites a:hover {
     border-bottom: 2px solid #ff7200;
   }
   .navbar-wrapper.mypoint .navbar-nav > li > a {
@@ -499,7 +516,7 @@ h1.section-title hr {
 
   /* Photo / Avatar
   --------------------------------*/
-  .photo-frame-sm, .photo-frame-md, .photo-frame-lg, .button-drop-lg, .photo-block .photo-frame {
+  .photo-frame-sm, .photo-frame-md, .photo-frame-lg, .button-drop-lg, .photo-block .photo-frame, .photo-drop {
     position: relative;
     display: inline-block;
   }
@@ -512,7 +529,7 @@ h1.section-title hr {
     bottom: 1px;
     margin: 0 auto;
   }
-  .photo-frame-lg .avatar, .photo-frame-md .avatar, .photo-block .photo-frame .avatar {
+  .photo-frame-lg .avatar, .photo-frame-md .avatar, .photo-block .photo-frame .avatar, .photo-drop .avatar {
     position: absolute;
     left: 0;
     right: 0;
@@ -800,6 +817,9 @@ h1.section-title hr {
   .post .comments {
     margin-top: 5px;
   }
+  .post .comments table.comment tr:not(:last-child) td {
+    vertical-align: top;
+  }
   .post .comments table.comment tr td {
     padding: 5px 8px 5px 0;
     line-height: 1.42857143;
@@ -829,6 +849,95 @@ h1.section-title hr {
   table.center .control a + a {
     margin-left: 20px;
   }
+  
+  /* Top 5
+  --------------------------------*/
+  .top_5 table {
+    width: 100%;
+    text-align: center;
+  }
+  .top_5 table tr td {
+    padding: 0 5px;
+    vertical-align: top;
+  }
+  .photo-drop.__top_5 > img:first-child {
+    width: 100%;
+  }
+  .photo-drop.__top_5 span.num {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13%;
+  }
+
+  /* Drinkadvisor Ads
+  --------------------------------*/
+  .da_ad {
+    text-align: center;
+  }
+  .da_ad * {
+    margin: 5px 0;
+  }
+  .da_ad img {
+    max-width: 100%;
+  }
+  .da_ad h3 {
+    font-weight: 800;
+  }
+
+  /* Drinkadvisor Search
+  --------------------------------*/
+  .da_search {
+    text-align: center;
+    margin: 40px 0;
+  }
+  .da_search input.text {
+    width: 100%;
+    padding: 4px;
+  }
+  .da_search table tr td {
+    padding: 6px 8px;
+  }
+  a.rad {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+  a.rad input {
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+  }
+  a.rad i.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    
+    border: 1px solid coral;
+  }
+  a.rad:focus i.cover {
+    background: coral;
+  }
+
+  /* Drinkadvisor Trending
+  --------------------------------*/
+  .col-trending .thumb {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .col-trending img {
+    width:100%;
+  }
+
+  
   
 /* Custom END
 -------------------------------------------------- */

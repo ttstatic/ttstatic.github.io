@@ -1,0 +1,348 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Drink Point</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="assets/images/icon/favicon.png"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css"/>
+    <!-- Bower Components-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Web Assets-->
+    <link href="assets/css/bootstraphack.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/dp.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/offcanvas.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!-- Modal-->
+    <div id="utilSearch" tabindex="-1" role="dialog" aria-labelledby="utilSearchLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="utilSearchLabel" class="modal-title"> </h4>
+          </div>
+          <div class="modal-body">
+            <div class="util-search">
+              <input type="text" placeholder="Search..."/>
+            </div>
+            <!--utilSearch-->
+          </div>
+        </div>
+        <!--modal-content-->
+      </div>
+      <!--modal-dialog-->
+    </div>
+    <!--modal-->
+    <div class="navbar-wrapper">
+      <div class="cont">
+        <nav class="navbar navbar-static-top">
+          <div class="cont">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <!--button--><a href="index" class="navbar-brand"><img src="assets/images/logo/logo-dp.png" alt="Drink Point"/></a>
+            </div>
+            <!--navbar-header-->
+            <ul class="nav navbar-nav hidden-sm hidden-xs">
+              <li><a href="drinkadvisor"> <img src="assets/images/emblem/eb-cl-drinkadvisor.png" alt=""/></a></li>
+              <!--li-->
+            </ul>
+            <!--ul-->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right"> 
+                <li class="active"><a href="#">Join</a></li>
+                <!--li-->
+                <li><a href="#">Sign In</a></li>
+                <!--li-->
+                <li><a data-toggle="modal" href="#utilSearch">Search</a></li>
+                <!--li-->
+              </ul>
+              <!--ul-->
+            </div>
+            <!--#navbar-->
+          </div>
+          <!--container-->
+        </nav>
+        <!--nav-->
+      </div>
+      <!--.container-->
+    </div>
+    <!--navbar-wrapper-->
+    <!-- content goes here...-->
+    <div class="cont">
+      <div class="sites">
+        <div class="row">
+          <div class="col-md-3 col-sm-6"><a href="mypoint_business" class="active"><img src="assets/images/img-site-mypoint.png" alt=""/></a>
+            <!--a-->
+          </div>
+          <!--col-->
+          <div class="col-md-3 col-sm-6"><a href="#"><img src="assets/images/img-site-thebackdoor.png" alt=""/></a>
+            <!--a-->
+          </div>
+          <!--col-->
+          <div class="col-md-3 col-sm-6"><a href="drinkadvisor"><img src="assets/images/img-site-drinkadvisor.png" alt=""/></a>
+            <!--a-->
+          </div>
+          <!--col-->
+          <div class="col-md-3 col-sm-6"><a href="#"><img src="assets/images/img-site-drinkfinder.png" alt=""/></a>
+            <!--a-->
+          </div>
+          <!--col-->
+        </div>
+        <!--row-->
+      </div>
+      <!--sites-->
+    </div>
+    <!--cont-->
+    <div class="cont top_5">
+      <div class="col-md-9">
+        <table>
+          <tr>
+            <td>
+              <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-1.png" alt="" class="avatar"/><span class="num">1</span></div>
+              <!--photo-frame-->
+              <div class="clearfix"></div><a href="#">andrew</a><br/><a href="#">88 reviews</a><br/>+ 30% disc.
+            </td>
+            <!--td-->
+            <td>
+              <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-3.png" alt="" class="avatar"/><span class="num">2</span></div>
+              <!--photo-frame-->
+              <div class="clearfix"></div><a href="#">claudia</a><br/><a href="#">75 reviews</a><br/>+ 25% disc.
+            </td>
+            <!--td-->
+            <td>
+              <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-md-4-lg.png" alt="" class="avatar"/><span class="num">3</span></div>
+              <!--photo-frame-->
+              <div class="clearfix"></div><a href="#">rosie</a><br/><a href="#">66 reviews</a><br/>+ 20% disc.
+            </td>
+            <!--td-->
+            <td>
+              <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-4.png" alt="" class="avatar"/><span class="num">4</span></div>
+              <!--photo-frame-->
+              <div class="clearfix"></div><a href="#">chris</a><br/><a href="#">64 reviews</a><br/>+ 15% disc.
+            </td>
+            <!--td-->
+            <td>
+              <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-md-4.png" alt="" class="avatar"/><span class="num">5</span></div>
+              <!--photo-frame-->
+              <div class="clearfix"></div><a href="#">susie</a><br/><a href="#">57 reviews</a><br/>+ 10% disc.
+            </td>
+            <!--td-->
+          </tr>
+          <!--tr-->
+        </table>
+        <!--table-->
+      </div>
+      <!--col-->
+      <div class="col-md-3">
+        <div class="da_ad">
+          <h4>become a</h4><img src="assets/images/emblem/eb-cl-drinkadvisor.png" alt="Drink Point"/>
+          <h3>
+             
+            top 5<br/>reviewer
+          </h3>
+          <h4>and receive</h4>
+          <h3>extra discounts</h3>
+        </div>
+      </div>
+      <!--col-->
+    </div>
+    <!--cont-->
+    <div class="cont">
+      <div class="da_search">
+        <table align="center">
+          <tr>
+            <td colspan="3">
+              <input type="text" placeholder="search drinkadvisor" class="text"/>
+            </td>
+            <!--td-->
+          </tr>
+          <!--tr-->
+          <tr>
+            <td><a href="#" class="rad"><i class="cover"></i>
+                <input type="radio" name="searchType" checked="checked"/></a>&nbsp;
+              find ratings &amp; reviews
+            </td>
+            <!--td-->
+            <td><a href="#" class="rad"><i class="cover"></i>
+                <input type="radio" name="searchType" checked=""/></a>&nbsp;
+              rate a drink
+            </td>
+            <!--td-->
+            <td><a href="#" class="rad"><i class="cover"></i>
+                <input type="radio" name="searchType" checked=""/></a>&nbsp;
+              review a drink
+            </td>
+            <!--td-->
+          </tr>
+          <!--tr-->
+        </table>
+        <!--table-->
+      </div>
+      <!--da_search-->
+    </div>
+    <!--cont-->
+    <div class="cont">
+      <div class="col-md-3 col-sm-6">
+        <h4 class="text-center">trending</h4>
+        <div class="col-trending">
+          <div class="thumb"><img src="assets/images/da_trending_1.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_5.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+        </div>
+        <!--col-trending-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-6">
+        <h4 class="text-center">new</h4>
+        <div class="col-trending __new">
+          <div class="thumb"><img src="assets/images/da_trending_2.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_6.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+        </div>
+        <!--col-trending-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-6">
+        <h4 class="text-center">trending</h4>
+        <div class="col-trending">
+          <div class="thumb"><img src="assets/images/da_trending_3.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_7.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+        </div>
+        <!--col-trending-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-6">
+        <h4 class="text-center">new</h4>
+        <div class="col-trending __new">
+          <div class="thumb"><img src="assets/images/da_trending_4.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_8.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+        </div>
+        <!--col-trending-->
+      </div>
+      <!--col-->
+    </div>
+    <!--cont-->
+    <div id="uc" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="clearfix"></div><span class="fa-stack fa-lg fa-3x"><i class="fa fa-cog fa-stack-2x fa-spin"></i><i style="color: #049900" class="fa fa-wrench fa-stack-2x"></i></span>
+            <div class="clearfix"></div>
+            <h4 class="modal-title">Page Under Construction</h4><br/>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
+    <div id="modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Sample Modal</h4>
+          </div>
+          <div class="modal-body">
+            <div class="wizard">
+              <section>
+                <div class="form-group form-interactive">
+                  <div class="casing"><em class="placeholder">Type in here...</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/dp.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!--script Dashboard.charts();External Script goes here...
+    -->
+  </body>
+</html>

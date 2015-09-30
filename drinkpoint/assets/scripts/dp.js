@@ -7,6 +7,7 @@ var Drinkpoint = (function () {
 		init: function () {
             
             Drinkpoint.box(".box > p:first-of-type");
+            Drinkpoint.box(".post .content > p:first-child");
           
             //Drinkpoint.fitPageHeight()
           /*
