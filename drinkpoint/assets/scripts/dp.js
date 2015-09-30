@@ -48,6 +48,7 @@ var Drinkpoint = (function () {
 			$(window).on("load resize", function () {
 
 				Drinkpoint.boxReset(".box > p:first-of-type");
+                Drinkpoint.boxReset(".post .content > p:first-child");
 				$(selector).height(Drinkpoint.getMaxH($(selector)));
 
 			});
