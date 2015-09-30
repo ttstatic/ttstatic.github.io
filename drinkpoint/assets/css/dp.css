@@ -937,7 +937,7 @@ h1.section-title hr {
     
     border: 1px solid coral;
   }
-  a.rad:focus i.cover {
+  a.rad.active i.cover {
     background: coral;
   }
 

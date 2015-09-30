@@ -18,6 +18,8 @@ var Drinkpoint = (function () {
 			});
           */
           
+          
+          // Site nav Highlight cookie
           try {
             $(".cont .sites a").each(function() {
               $(this).removeClass("active");
@@ -27,11 +29,25 @@ var Drinkpoint = (function () {
               }
             });
           } catch(e) {}
-          
           $(".cont .sites a").click(function() {
             var siteName = $(this).attr("name");
             
             $.cookie("site", siteName, {path: "/"});
+          });
+          
+          
+          // Drinkadvisor Search Type Radio buttons
+          $(".da_search a.rad").each(function() {
+            $(this).removeClass("active");
+            if ( $(this).find(":radio").is(":checked") ) {
+              $(this).addClass("active");
+            }
+          });
+          
+          $(".da_search td").on("click", "a.rad", function() {
+            $(this).parents(".da_search:eq(0)").find("a.rad").removeClass("active").find(":radio").removeAttr("checked");
+            $(this).find(":radio").attr("checked", "");
+            $(this).addClass("active");
           });
           
 		},
