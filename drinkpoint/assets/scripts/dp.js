@@ -17,6 +17,23 @@ var Drinkpoint = (function () {
 				}
 			});
           */
+          
+          try {
+            $(".cont .sites a").each(function() {
+              $(this).removeClass("active");
+              var siteNameCookie = $.cookie("site");
+              if( $(this).attr("name") == siteNameCookie ) {
+                $(this).addClass("active");
+              }
+            });
+          } catch(e) {}
+          
+          $(".cont .sites a").click(function() {
+            var siteName = $(this).attr("name");
+            
+            $.cookie("site", siteName, {path: "/"});
+          });
+          
 		},
       
         fitPageHeight : function () {
