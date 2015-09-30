@@ -80,8 +80,9 @@ a {
   background: #E0E0E0;
 }
 #myBanner.carousel .item .carousel-caption h1, #quoteBanner.carousel .item .carousel-caption h1 {
-  font-size: 38px;
+  font-size: 40px;
   text-transform: lowercase;
+  font-weight: 400;
 }
 #myBanner.carousel .item .carousel-caption p strong, #quoteBanner.carousel .item .carousel-caption p strong {
   font-size: 18px;
@@ -576,6 +577,11 @@ h1.section-title hr {
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   }
+  .photos .thumb:after, .videos .thumb:after, .events .event:after, .friends .thumb:after, .likes .thumb:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
 
   /* Photos
   --------------------------------*/
@@ -847,6 +853,9 @@ h1.section-title hr {
     position: absolute;
     top: 4px;
     right: 7px;
+  }
+  .post .comments table.comment {
+    margin-top: 10px;
   }
   table.center .control a {
     padding: 0;

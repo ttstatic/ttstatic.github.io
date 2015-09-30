@@ -21,6 +21,7 @@ hr {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -64,13 +65,13 @@ hr {
   height: auto;
   padding-top: 0;
   padding-bottom: 0;
-  background: white;
+/*  background: white;*/
 }
 .navbar-static-top {
   border-width: 0;
 }
 .navbar-right {
-  background: white;
+/*  background: white;*/
 }
 
 /* MOBILE NAVBAR ICON ANIMATION
@@ -273,6 +274,10 @@ hr {
   .featurette-heading {
     font-size: 50px;
   }
+  
+  .navbar-brand.home {
+    padding-top: 17px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -294,12 +299,12 @@ hr {
 
 @media (max-width: 990px) {
   .carousel-caption h1 {
-    font-size: 48px
+    font-size: 48px !important;
   }
 }
 @media (max-width: 650px) {
   .carousel-caption h1 {
-    font-size: 32px
+    font-size: 32px !important;
   }
   #myBanner.carousel .item .carousel-caption h1 {
     font-size: 21px !important;
