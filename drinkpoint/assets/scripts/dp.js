@@ -43,8 +43,8 @@ var Drinkpoint = (function () {
               $(this).addClass("active");
             }
           });
-          
-          $(".da_search td").on("click", "a.rad", function() {
+          $(".da_search td").on("click", "a.rad", function(e) {
+            e.preventDefault();
             $(this).parents(".da_search:eq(0)").find("a.rad").removeClass("active").find(":radio").removeAttr("checked");
             $(this).find(":radio").attr("checked", "");
             $(this).addClass("active");
