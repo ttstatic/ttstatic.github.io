@@ -632,7 +632,7 @@ h1.section-title hr {
 
   /* Likes
   --------------------------------*/
-  .likes .thumb img {
+  .likes .thumb a {
     width: 33.3333333%;
     padding: 2px;
     
@@ -641,6 +641,11 @@ h1.section-title hr {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    
+    float: left;
+  }
+  .likes .thumb a img {
+    width: 100%;
   }
 
   /* Groups
