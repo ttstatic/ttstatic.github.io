@@ -26,6 +26,9 @@
 .dynamic-banner img {
   max-width: 100%;
 }
+.dynamic-banner > img {
+  display: inline;
+}
 
 .dynamic-banner-holder {
   position: relative;
