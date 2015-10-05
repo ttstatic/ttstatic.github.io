@@ -973,6 +973,67 @@ h1.section-title hr {
     width:100%;
   }
 
+  /* Mapanghusgang SOCIAL media na hindi nagbabasa ng diyaryo at hindi nanonood ng Aksyon!
+  --------------------------------*/
+  #social {
+    box-shadow: -2px 1px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: -2px;
+    top: 50%;
+    margin-top: -160px;
+    width: 49px;
+    border-bottom: 1px solid #f4f4f4;
+    border-left: 1px solid #f4f4f4;
+    height: auto;
+    border-radius: 2px 0 0 2px;
+    z-index: 501;
+  }
+  #social ul {
+    margin: 0;
+    padding: 0;
+  }
+  #social ul li {
+    list-style: none;
+  }
+  #social ul li a {
+    background: #fff;
+    display: block;
+    color: #757775;
+    text-align: center;
+    overflow: hidden;
+    border-top: 1px solid #e8e8e8;
+    padding: 5px;
+  }
+  #social ul li a img {
+    width: 30px;
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 0px) {
+    #social {
+        background: transparent;
+        position: static;
+        width: auto;
+        top: 0;
+        padding: 1em 0;
+        border: none;
+        box-shadow: none;
+        text-align: center;
+        margin: 0;
+    }
+    #social ul {
+      display: inline-block;
+    }
+    #social ul li {
+      float: left;
+      border-bottom: 1px solid #e8e7dc;
+    }
+    #social ul li a {
+      border: none;
+    }
+    #social ul li a img {
+      width: auto;
+    }
+  }
+
   
   
 /* Custom END
