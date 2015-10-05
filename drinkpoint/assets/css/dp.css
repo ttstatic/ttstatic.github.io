@@ -928,6 +928,11 @@ h1.section-title hr {
     text-align: center;
     margin: 40px 0;
   }
+  @media screen and (min-width: 767px) {
+    .da_search > table {
+      width: 40%;
+    }
+  }
   .da_search input.text {
     width: 100%;
     padding: 4px;
@@ -971,6 +976,73 @@ h1.section-title hr {
   }
   .col-trending img {
     width:100%;
+  }
+
+  /* Products
+  --------------------------------*/
+  .col-trending .details {
+    text-align: left;
+  }
+  .col-trending .details img.icon {
+    width: auto;
+  }
+
+  /* Drinkafinder Search
+  --------------------------------*/
+  .df_search {
+    text-align: center;
+    margin: 15px 0 0;
+  }
+  @media screen and (min-width: 767px) {
+    .df_search > table {
+      width: 50%;
+    }
+  }
+  .df_search input.text {
+    width: 100%;
+    padding: 4px 30px 4px 10px;
+  }
+  .df_search table tr td {
+    padding: 1px 8px;
+  }
+  .df_search .wrap {
+    position: relative;
+  }
+  .df_search .wrap a.icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 21px;
+    color: gray;
+  }
+
+  /* The Backdoor Search
+  --------------------------------*/
+  .tb_search {
+    text-align: center;
+    margin: 20px 0 0;
+  }
+  @media screen and (min-width: 767px) {
+    .tb_search > table {
+      width: 50%;
+    }
+  }
+  .tb_search input.text {
+    width: 100%;
+    padding: 4px 30px 4px 10px;
+  }
+  .tb_search table tr td {
+    padding: 1px 8px;
+  }
+  .tb_search .wrap {
+    position: relative;
+  }
+  .tb_search .wrap a.icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 21px;
+    color: gray;
   }
 
   /* Mapanghusgang SOCIAL media na hindi nagbabasa ng diyaryo at hindi nanonood ng Aksyon!
@@ -1034,7 +1106,26 @@ h1.section-title hr {
     }
   }
 
+  /* Emblem
+  --------------------------------*/
+  .emblem.thebackdoor {
+    margin-top: 5px;
+  }
+  .emblem.drinkfinder {
+    margin-top: 5px;
+  }
+
   
   
 /* Custom END
 -------------------------------------------------- */
+
+
+/* Helper Classes
+--------------------------------*/
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
