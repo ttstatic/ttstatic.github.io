@@ -106,31 +106,31 @@
             <td>
               <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-1.png" alt="" class="avatar"/><span class="num">1</span></div>
               <!--photo-frame-->
-              <div class="clearfix"></div><a href="#">andrew</a><br/><a href="#">88 reviews</a><br/>+ 30% disc.
+              <div class="clearfix"></div><a href="#">andrew</a>&nbsp;<a href="#">88 reviews</a><br/><strong>+ 30% disc.</strong>
             </td>
             <!--td-->
             <td>
               <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-3.png" alt="" class="avatar"/><span class="num">2</span></div>
               <!--photo-frame-->
-              <div class="clearfix"></div><a href="#">claudia</a><br/><a href="#">75 reviews</a><br/>+ 25% disc.
+              <div class="clearfix"></div><a href="#">claudia</a>&nbsp;<a href="#">75 reviews</a><br/><strong>+ 25% disc.</strong>
             </td>
             <!--td-->
             <td>
               <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-md-4-lg.png" alt="" class="avatar"/><span class="num">3</span></div>
               <!--photo-frame-->
-              <div class="clearfix"></div><a href="#">rosie</a><br/><a href="#">66 reviews</a><br/>+ 20% disc.
+              <div class="clearfix"></div><a href="#">rosie</a>&nbsp;<a href="#">66 reviews</a><br/><strong>+ 20% disc.</strong>
             </td>
             <!--td-->
             <td>
               <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-lg-4.png" alt="" class="avatar"/><span class="num">4</span></div>
               <!--photo-frame-->
-              <div class="clearfix"></div><a href="#">chris</a><br/><a href="#">64 reviews</a><br/>+ 15% disc.
+              <div class="clearfix"></div><a href="#">chris</a>&nbsp;<a href="#">64 reviews</a><br/><strong>+ 15% disc.</strong>
             </td>
             <!--td-->
             <td>
               <div class="photo-drop __top_5"><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><img src="assets/images/img-thumb-md-4.png" alt="" class="avatar"/><span class="num">5</span></div>
               <!--photo-frame-->
-              <div class="clearfix"></div><a href="#">susie</a><br/><a href="#">57 reviews</a><br/>+ 10% disc.
+              <div class="clearfix"></div><a href="#">susie</a>&nbsp;<a href="#">57 reviews</a><br/><strong>+ 10% disc.</strong>
             </td>
             <!--td-->
           </tr>
@@ -155,7 +155,25 @@
     <!--cont-->
     <div class="cont">
       <div class="da_search">
-        <table align="center">
+        <table align="center" width="40%">
+          <tr>
+            <td width="33.33%"><strong><a href="#">rate</a>
+                <!--a--></strong>
+              <!--strong-->
+            </td>
+            <!--td-->
+            <td width="33.33%"><strong><a href="#">review</a>
+                <!--a--></strong>
+              <!--strong-->
+            </td>
+            <!--td-->
+            <td width="33.33%"><strong><a href="#">compare</a>
+                <!--a--></strong>
+              <!--strong-->
+            </td>
+            <!--td-->
+          </tr>
+          <!--tr-->
           <tr>
             <td colspan="3">
               <input type="text" placeholder="search drinkadvisor" class="text"/>
@@ -163,24 +181,31 @@
             <!--td-->
           </tr>
           <!--tr-->
-          <tr>
-            <td><a href="#" class="rad"><i class="cover"></i>
-                <input type="radio" name="searchType" checked="checked"/></a>&nbsp;
-              find ratings &amp; reviews
-            </td>
-            <!--td-->
-            <td><a href="#" class="rad"><i class="cover"></i>
-                <input type="radio" name="searchType"/></a>&nbsp;
-              rate a drink
-            </td>
-            <!--td-->
-            <td><a href="#" class="rad"><i class="cover"></i>
-                <input type="radio" name="searchType"/></a>&nbsp;
-              review a drink
-            </td>
-            <!--td-->
-          </tr>
-          <!--tr-->
+          <!--
+          tr
+            td
+              a(href="#").rad
+                i.cover
+                input(type="radio", name="searchType", checked)
+              &nbsp;
+              |find ratings &amp; reviews
+            //td
+            td
+              a(href="#").rad
+                i.cover
+                input(type="radio", name="searchType")
+              &nbsp;
+              |rate a drink
+            //td
+            td
+              a(href="#").rad
+                i.cover
+                input(type="radio", name="searchType")
+              &nbsp;
+              |review a drink
+            //td
+          //tr
+          -->
         </table>
         <!--table-->
       </div>
@@ -188,8 +213,8 @@
     </div>
     <!--cont-->
     <div class="cont">
-      <div class="col-md-3 col-sm-6">
-        <h4 class="text-center">trending</h4>
+      <div class="col-md-4">
+        <h4 class="text-center">highest rated</h4>
         <div class="col-trending">
           <div class="thumb"><img src="assets/images/da_trending_1.png" alt="Drink Point"/>
             <!--
@@ -209,13 +234,6 @@
             -->
           </div>
           <!--thumb-->
-        </div>
-        <!--col-trending-->
-      </div>
-      <!--col-->
-      <div class="col-md-3 col-sm-6">
-        <h4 class="text-center">new</h4>
-        <div class="col-trending __new">
           <div class="thumb"><img src="assets/images/da_trending_2.png" alt="Drink Point"/>
             <!--
             .photo-drop
@@ -238,9 +256,27 @@
         <!--col-trending-->
       </div>
       <!--col-->
-      <div class="col-md-3 col-sm-6">
-        <h4 class="text-center">trending</h4>
+      <div class="col-md-4">
+        <h4 class="text-center">highest selling</h4>
         <div class="col-trending">
+          <div class="thumb"><img src="assets/images/da_trending_2.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_6.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
           <div class="thumb"><img src="assets/images/da_trending_3.png" alt="Drink Point"/>
             <!--
             .photo-drop
@@ -263,9 +299,27 @@
         <!--col-trending-->
       </div>
       <!--col-->
-      <div class="col-md-3 col-sm-6">
-        <h4 class="text-center">new</h4>
-        <div class="col-trending __new">
+      <div class="col-md-4">
+        <h4 class="text-center">most reviews</h4>
+        <div class="col-trending">
+          <div class="thumb"><img src="assets/images/da_trending_1.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
+          <div class="thumb"><img src="assets/images/da_trending_5.png" alt="Drink Point"/>
+            <!--
+            .photo-drop
+              img(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+              img.avatar(src="assets/images/img-drop-thumb-lg.png", alt="Drink Point")
+            //photo-drop
+            -->
+          </div>
+          <!--thumb-->
           <div class="thumb"><img src="assets/images/da_trending_4.png" alt="Drink Point"/>
             <!--
             .photo-drop

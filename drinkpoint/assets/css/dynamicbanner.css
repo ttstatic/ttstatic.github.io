@@ -64,8 +64,8 @@
 /* ---------------------------------- */
 
 .orange-text-protect {
-  background-color: #ff7200;
-  padding: 10px 0;
+  background-color: #f26522;
+  padding: 5px 0;
 }
 
 .orange-text-protect a {
@@ -73,37 +73,37 @@
 }
 
 .links-style {
-  text-align: center;
-  font-size: 25px;
-  color: #fff;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .links-style:hover {
   transition: all .2s ease-in;
-  color: #ffa;
   font-size: 30px;
+  color: #fff;
   text-decoration: none;
 }
 
 .link-discover {
-  position: absolute;
-  top: 27%;
-  right: 72%;
-  left: 18%;
+    position: absolute;
+    top: 32.3%;
+    right: 70%;
+    left: 16%;
 }
 
 .link-discover .orange-text-protect {
-  /*
-    padding-left: 30px;
-    padding-right: 30px;
-*/
+
 }
 
 .link-share {
-  position: absolute;
-  top: 22%;
-  left: 34%;
-  right: 48%;
+    position: absolute;
+    top: 22.6%;
+    bottom: 68.9%;
+    left: 35.6%;
+    right: 46.5%;
 }
 
 .link-share .orange-text-protect {
@@ -114,24 +114,22 @@
 }
 
 .link-enjoy {
-  position: absolute;
-  top: 60%;
-  left: 69%;
-  right: 24%;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    right: 22%;
 }
 
 .link-enjoy .orange-text-protect {
-  /*
-    padding-top: 30px;
-    padding-bottom: 30px;
-*/
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .link-drink {
-  position: absolute;
-  bottom: 0;
-  left: 41%;
-  right: 36%;
+    position: absolute;
+    bottom: 0;
+    left: 34.15%;
+    right: 34%;
 }
 
 .link-drink .orange-text-protect {
@@ -142,97 +140,102 @@
 }
 
 .a {
-  position: absolute;
-  top: 4%;
-  right: 81%;
-  left: 2%;
-  max-width: 170px;
+    position: absolute;
+    top: 5%;
+    right: 85%;
+    left: 2%;
+    max-width: 150px;
 }
 
 .b {
-  position: absolute;
-  top: 3%;
-  right: 57%;
-  left: 18%;
-  max-width: 200px;
+    position: absolute;
+    top: 5%;
+    right: 63.3%;
+    left: 16%;
+    max-width: 230px;
 }
 
 .c {
-  position: absolute;
-  top: -5%;
-  left: 32%;
-  right: 49%;
+    position: absolute;
+    top: -5.8%;
+    left: 31%;
+    right: 48%;
+    max-width: 240px;
 }
 
 .d {
-  position: absolute;
-  top: 0%;
-  left: 52%;
-  right: 30%;
-  max-width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 53.5%;
+    right: 26.5%;
+    max-width: 220px;
 }
 
 .e {
-  position: absolute;
-  top: 4%;
-  left: 69%;
-  right: 13%;
-  max-width: 210px;
+    position: absolute;
+    top: 5%;
+    left: 67.5%;
+    right: 14.3%;
+    max-width: 210px;
 }
 
 .f {
-  position: absolute;
-  top: 2%;
-  left: 88%;
-  right: 0%;
+    position: absolute;
+    top: 3%;
+    left: 87.2%;
+    right: 0%;
+    max-width: 150px;
 }
 
 .g {
-  position: absolute;
-  top: 46%;
-  bottom: 25%;
-  right: 91%;
-  left: 0%;
+    position: absolute;
+    top: 51%;
+    bottom: 27%;
+    right: 84.1%;
+    left: 0%;
+    max-width: 120px;
 }
 
 .h {
-  position: absolute;
-  top: 36%;
-  left: 8%;
-  right: 70%;
+    position: absolute;
+    top: 41%;
+    left: 9%;
+    right: 70.5%;
+    max-width: 237px;
 }
 
 .i {
-  position: absolute;
-  bottom: 10%;
-  left: 30%;
-  right: 22%;
-  max-width: 450px;
+    position: absolute;
+    bottom: 8.7%;
+    left: 30%;
+    right: 27.4%;
+    max-width: 467px;
 }
 
 .j {
-  position: absolute;
-  top: 28%;
-  left: 71%;
-  right: 7%;
+    position: absolute;
+    top: 30%;
+    left: 71.5%;
+    right: 5%;
+    max-width: 274px;
 }
 
 .k {
-  position: absolute;
-  top: 64%;
-  bottom: 7%;
-  right: 81%;
-  left: 0%;
-  max-width: 250px;
+    position: absolute;
+    top: 70%;
+    bottom: 7%;
+    right: 85.3%;
+    left: 0%;
+    max-width: 172px;
 }
 
 .l {
-  position: absolute;
-  top: 72%;
-  bottom: 0;
-  left: 20%;
-  right: 50%;
-  max-width: 250px;
+    position: absolute;
+    top: 74%;
+    bottom: 0;
+    left: 16.3%;
+    right: 64.7%;
+    max-width: 250px;
 }
 
 .l img {
@@ -240,33 +243,35 @@
 }
 
 .m {
-  position: absolute;
-  top: 21%;
-  left: 93%;
-  right: 0%;
+    position: absolute;
+    top: 29%;
+    left: 93.5%;
+    right: 0%;
+    max-width: 77px;
 }
 
 .n {
-  position: absolute;
-  top: 65%;
-  left: 76%;
-  right: 3%;
-  max-width: 250px;
+    position: absolute;
+    top: 65%;
+    left: 78%;
+    right: 2.5%;
+    max-width: 220px;
 }
 
 .o {
-  position: absolute;
-  top: 41%;
-  left: 93%;
-  right: 0%;
+    position: absolute;
+    top: 50%;
+    left: 94.28%;
+    right: 0%;
+    max-width: 67px;
 }
 
 .p {
-  position: absolute;
-  bottom: 0;
-  left: 64%;
-  right: 4%;
-  max-width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 66%;
+    right: 24%;
+    max-width: 115px;
 }
 /* ---------------------------------- */
 /* MEDIA QUERIES--------------------- */
@@ -280,7 +285,6 @@
   }
   .links-style:hover {
     transition: all .2s ease-in;
-    color: #ffa;
     font-size: 25px;
     text-decoration: none;
   }
@@ -300,7 +304,6 @@
   }
   .links-style:hover {
     transition: all .2s ease-in;
-    color: #ffa;
     font-size: 20px;
     text-decoration: none;
   }
@@ -325,5 +328,6 @@
   }
   #carousel-hide-first {
     display: block;
+    margin-top: -30px;
   }
 }
