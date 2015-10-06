@@ -278,6 +278,7 @@ hr {
   .navbar-brand.home {
     padding-top: 17px;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -299,12 +300,15 @@ hr {
 
 @media (max-width: 990px) {
   .carousel-caption h1 {
-    font-size: 48px !important;
+    font-size: 28px !important;
   }
 }
 @media (max-width: 650px) {
   .carousel-caption h1 {
-    font-size: 32px !important;
+    font-size: 26px !important;
+  }
+  #quoteBanner {
+    background: whitesmoke;
   }
   #myBanner.carousel .item .carousel-caption h1 {
     font-size: 21px !important;

@@ -273,6 +273,9 @@ h1.section-title hr {
     width: 100%;
     margin: 0 0 15px 0 !important;
   }
+  #social ul li {
+    width: 25%;
+  }
 }
 @media (max-width: 500px) {
   footer {
