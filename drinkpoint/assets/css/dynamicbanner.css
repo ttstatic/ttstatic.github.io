@@ -316,18 +316,10 @@
 }
 
 @media (max-width: 480px) {
-  /*.dynamic-banner { 
-        height: 200px; 
-        margin-bottom: 200px;
-    }  */
-  
-  .dynamic-banner {
-    height: 0;
-    margin-bottom: 0;
-    visibility: hidden;
+  #headerBanner-dynamic {
+    display: none;
   }
   #carousel-hide-first {
     display: block;
-    margin-top: -30px;
   }
 }
