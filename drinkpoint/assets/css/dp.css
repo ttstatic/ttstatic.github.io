@@ -491,6 +491,46 @@ h1.section-title hr {
     line-height: 1.42857143;
     vertical-align: middle;
   }
+  .summary.product-details table tr td {
+    padding: 0;
+    font-size: 12px;
+  }
+  .summary.product-details table tr td h4.section-title {
+    margin: 8px 0;
+  }
+  .summary.product-details table tr td h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .summary.product-details table tr td.rating {
+    line-height: 24px;
+  }
+  .summary.product-details table tr td.rating img, .summary.product-details table tr td.rating a {
+    vertical-align: middle;
+  }
+  .summary.product-details .pagination {
+    margin-right: 20px;
+  }
+  .summary.product-details .pagination > li > a,
+  .pagination > li > span {
+    background: #EBEBEB;
+    color: #797979;
+    padding: 1px 12px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .summary.product-details .pagination > .disabled > span,
+  .summary.product-details .pagination > .disabled > span:hover,
+  .summary.product-details .pagination > .disabled > span:focus,
+  .summary.product-details .pagination > .disabled > a,
+  .summary.product-details .pagination > .disabled > a:hover,
+  .summary.product-details .pagination > .disabled > a:focus {
+    color: #ff7200;
+  }
+  .summary.product-details .pagination > li > a,
+  .summary.product-details .pagination > li > span {
+    border-color: white;
+  }
   .about table tr td {
     vertical-align: top;
   }
@@ -1122,8 +1162,110 @@ h1.section-title hr {
   .emblem.drinkfinder {
     margin-top: 5px;
   }
-
   
+  /* Product Thumbnail
+  --------------------------------*/
+  .product .thumb {
+    text-align: center;
+    position: relative;
+  }
+  .product .wrap {
+    margin-bottom: 20px;
+  }
+  .product .wrap .thumb .details {
+    text-align: left;
+  }
+  .product .thumb > img {
+    width: 100%;
+  }
+  .product .thumb label {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    color: white;
+  }
+  .product .thumb label img {
+    width: 75px;
+  }
+  .product.main .thumb label img {
+    width: auto;
+  }
+  .product .thumb label span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .product .thumb label span table {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  .product .thumb label span table td {
+    padding: 25px 5px 0 5px;
+  }
+  .product .thumb label span table td big {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .product .thumb label span h4 {
+    margin: 0;
+    font-size: 35px;
+  }
+  .product.main .thumb label span h4 {
+    font-size: 55px;
+  }
+  .product .thumb label span p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .product.main .thumb label span p {
+    font-size: 12px;
+  }
+  .product .thumb label p.links {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+  }
+  .product .thumb .btn-zoom {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  .product .thumb .pricetag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    line-height: 22px;
+  }
+  .product .thumb .pricetag .not, .strikeout {
+    font-size: 16px;
+    position: relative;
+  }
+  .product .thumb .pricetag .not .strikeout, .strikeout .strikeout {
+    position: absolute;
+    width: 70%;
+    top: 10px;
+    height: 1px;
+    background: #333;
+    
+    -webkit-transform: rotate(164deg);
+    -moz-transform: rotate(164deg);
+    -o-transform: rotate(164deg);
+    writing-mode: lr-tb;
+  }
+  .product .thumb .pricetag .now {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff7200;
+  }
   
 /* Custom END
 -------------------------------------------------- */
