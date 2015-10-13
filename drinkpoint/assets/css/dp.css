@@ -342,6 +342,9 @@ h1.section-title hr {
     left: -15px;
     top: 27px;
   }
+  .nav-messages {
+    padding-right: 14px !important;
+  }
   .nav-messages > span {
     position: absolute;
     right: -2px;
@@ -360,14 +363,53 @@ h1.section-title hr {
     padding-top: 3px;
   }
   .nav-search {
-    padding-left: 5px !important;
+    padding-top: 30px !important;
+    padding-right: 0 !important;
+  }
+  .nav-search span {
+    position: relative;
   }
   .nav-search input {
-    padding: 2px 5px;
+    padding: 2px 27px 2px 5px;
     font-weight: normal;
     font-size: 12px;
-    margin-right: 18px;
+    margin-left: 0;
+    width: 155px;
   }
+  .nav-search i {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 20px;
+    color: #909090;
+  }
+  .nav.mypoint .nav-search {
+    padding-left: 0 !important;
+  }
+  .nav-profile {
+    padding-left: 10px !important;
+  }
+  .nav-cart {
+    padding-right: 15px !important;
+  }
+  .nav-cart span.drop {
+    position: absolute;
+    right: 0;
+    top: 26px;
+  }
+  .nav-cart span.drop span.count {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 3px;
+  }
+  
 
   /* Banner
   --------------------------------*/
@@ -974,20 +1016,34 @@ h1.section-title hr {
   --------------------------------*/
   .da_search {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0 20px;
   }
   @media screen and (min-width: 767px) {
     .da_search > table {
-      width: 40%;
+      width: 50%;
     }
   }
   .da_search input.text {
     width: 100%;
-    padding: 4px;
+    padding: 4px 30px 4px 10px;
   }
   .da_search table tr td {
     padding: 1px 8px;
   }
+  .da_search .wrap {
+    position: relative;
+  }
+  .da_search .wrap a.icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 21px;
+    color: gray;
+  }
+  .da_search ._3links {
+    font-size: 18px;
+  }
+  /* radio buttons(removed)  */
   a.rad {
     position: relative;
     display: inline-block;
@@ -1156,11 +1212,17 @@ h1.section-title hr {
 
   /* Emblem
   --------------------------------*/
-  .emblem.thebackdoor {
-    margin-top: 5px;
+  .emblem.thebackdoor img {
+    margin-top: -3px;
   }
-  .emblem.drinkfinder {
-    margin-top: 5px;
+  .emblem.drinkfinder img {
+    margin-top: -5px;
+  }
+  .emblem.mypoint img {
+    margin-top: -7px;
+  }
+  .emblem.drinkadvisor img {
+    margin-top: -10px;
   }
   
   /* Product Thumbnail
@@ -1265,6 +1327,31 @@ h1.section-title hr {
     font-size: 22px;
     font-weight: 600;
     color: #ff7200;
+  }
+  .product_name {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* Drop Counter
+  --------------------------------*/
+  .drop-count {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .drop-count img {
+    width: 17px;
+  }
+  .drop-count .count {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 11px;
+    padding-top: 5px;
   }
   
 /* Custom END
