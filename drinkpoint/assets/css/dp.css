@@ -1120,6 +1120,36 @@ h1.section-title hr {
     color: gray;
   }
 
+  /* Search Results Search
+  --------------------------------*/
+  .sr_search {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 767px) {
+    .sr_search > table {
+      width: 50%;
+    }
+  }
+  .sr_search input.text {
+    width: 100%;
+    padding: 4px 30px 4px 10px;
+  }
+  .sr_search table tr td {
+    padding: 1px 8px;
+  }
+  .sr_search .wrap {
+    position: relative;
+  }
+  .sr_search .wrap a.icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 21px;
+    color: gray;
+  }
+
   /* The Backdoor Search
   --------------------------------*/
   .tb_search {
@@ -1332,6 +1362,10 @@ h1.section-title hr {
     text-align: center;
     font-size: 12px;
   }
+  .product .wrap .details {
+    border-bottom: 1px solid gray;
+    padding: 10px 0 0;
+  }
 
   /* Drop Counter
   --------------------------------*/
@@ -1352,6 +1386,18 @@ h1.section-title hr {
     color: white;
     font-size: 11px;
     padding-top: 5px;
+  }
+  
+  /* Search Results Page
+  --------------------------------*/
+  .sr_col_site {
+    text-align: center;
+    min-height: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+  .sr_col_site a {
+    vertical-align: middle;
   }
   
 /* Custom END

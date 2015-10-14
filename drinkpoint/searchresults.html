@@ -1,0 +1,687 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Drink Point</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="assets/images/icon/favicon.png"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css"/>
+    <!-- Bower Components-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Web Assets-->
+    <link href="assets/css/bootstraphack.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/dp.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/offcanvas.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!-- Modal-->
+    <div id="utilSearch" tabindex="-1" role="dialog" aria-labelledby="utilSearchLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="utilSearchLabel" class="modal-title"> </h4>
+          </div>
+          <div class="modal-body">
+            <div class="util-search">
+              <input type="text" placeholder="Search..."/>
+            </div>
+            <!--utilSearch-->
+          </div>
+        </div>
+        <!--modal-content-->
+      </div>
+      <!--modal-dialog-->
+    </div>
+    <!--modal-->
+    <!--[Header-Drinkfinder]-->
+    <div class="navbar-wrapper">
+      <div class="cont">
+        <nav class="navbar navbar-static-top">
+          <div class="cont">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <!--button--><a href="index" class="navbar-brand"><img src="assets/images/logo/logo-dp.png" alt="Drink Point"/></a>
+              <!--a-->
+            </div>
+            <!--navbar-header-->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right"> 
+                <li><a href="#">Join</a></li>
+                <!--li-->
+                <li><a href="#">Sign in</a></li>
+                <!--li-->
+                <li><a href="#" class="nav-messages"> <span><img src="assets/images/img-drop-counter.png" alt=""/><span>1</span></span>Messages</a></li>
+                <!--li-->
+                <li><a href="#" class="nav-cart"><img src="assets/images/icon/ic_cart.png" alt=""/><span class="drop"><img src="assets/images/img-drop-counter.png" alt=""/><span class="count">1</span></span>
+                    <!--span--></a></li>
+                <!--li-->
+                <li><a href="#" class="nav-profile"><img src="assets/images/img-menu-profile.png" alt=""/></a></li>
+                <!--li-->
+              </ul>
+              <!--ul-->
+            </div>
+            <!--#navbar-->
+          </div>
+          <!--.cont-->
+        </nav>
+        <!--nav-->
+      </div>
+      <!--.cont-->
+    </div>
+    <!--navbar-wrapper-->
+    <!-- content goes here...-->
+    <div id="social">
+      <ul>
+        <li><a href="#" target="_blank" title="Follow us on Facebook"><img src="assets/images/icon/i-ic-fl-facebook.png" alt="Follow us on Facebook"/></a></li>
+        <li><a href="#" target="_blank" title="Follow us on Twitter"><img src="assets/images/icon/i-ic-fl-twitter.png" alt="Follow us on Twitter"/></a></li>
+        <li><a href="#" target="_blank" title="Follow us on Instagram"><img src="assets/images/icon/i-ic-fl-instagram.png" alt="Follow us on Instagram"/></a></li>
+        <li><a href="#" target="_blank" title="Follow us on YouTube"><img src="assets/images/icon/i-ic-fl-youtube.png" alt="Follow us on YouTube"/></a></li>
+        <li><a href="#" target="_blank" title="Follow us on Pinterest"><img src="assets/images/icon/i-ic-fl-pinterest.png" alt="Follow us on Pinterest"/></a></li>
+        <li><a href="#" target="_blank" title="Find us on TripAdvisor"><img src="assets/images/icon/i-ic-fl-tripadvisor.png" alt="Find us on TripAdvisor"/></a></li>
+        <li class="static clear"><a href="#" target="_blank" title="Join our mailing list"><img src="assets/images/icon/i-ic-fl-email.png" alt="Join our mailing list"/></a></li>
+        <li class="static"><a href="#" title="See our social feed"><img src="assets/images/icon/i-ic-fl-feed.png" alt="See our social feed"/></a></li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="sr_search">
+        <table align="center">
+          <tr>
+            <td>
+              <div class="wrap">
+                <input type="text" placeholder="search drinkpoint" class="text"/><a href="#" class="icon"><i class="fa fa-search"></i></a>
+                <!--a-->
+              </div>
+              <!--wrap-->
+            </td>
+            <!--td-->
+            <td width="58"><a href="#">refine</a></td>
+            <!--td-->
+          </tr>
+          <!--tr-->
+        </table>
+        <!--table-->
+      </div>
+      <!--sr_search-->
+    </div>
+    <!--cont-->
+    <div class="cont">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="sr_col_site"><a href="mypoint_newsfeed" name="mypoint" class="active"><img src="assets/images/img-site-mypoint.png" alt="" class="img-responsive center-block"/></a>
+          <!--a-->
+        </div>
+        <!--.sr_col_site-->
+        <h4 class="text-center"><a href="#">trending</a></h4>
+        <!--h4-->
+        <div class="product">
+          <div class="wrap">
+            <div class="thumb"><img src="assets/images/i_tmp_trending_1.png" alt=""/></div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <div class="thumb"><img src="assets/images/i_tmp_trending_2.png" alt=""/></div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <div class="thumb"><img src="assets/images/i_tmp_trending_3.png" alt=""/></div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <div class="thumb"><img src="assets/images/i_tmp_trending_4.png" alt=""/></div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+        </div>
+        <!--product-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="sr_col_site"><a href="thebackdoor" name="thebackdoor"><img src="assets/images/img-site-thebackdoor.png" alt="" class="img-responsive center-block"/></a>
+          <!--a-->
+        </div>
+        <!--.sr_col_site-->
+        <h4 class="text-center"><a href="#">highest selling</a></h4>
+        <!--h4-->
+        <div class="product">
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood rosato 2015</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_2.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>98</h4>
+                        <p>1753 cases</p>
+                        <p>sold</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$19.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$12.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+            <div class="details"><img src="assets/images/img-backdoor-deal.png" alt="backdoor deal" class="icon"/>&nbsp;
+              <div class="inline text-nowrap"><sup><img src="assets/images/icon/icon-asterisk.png" alt="asterisk" class="icon"/></sup>
+                <!--sup-->
+                <h4 class="inline"><strong><a href="#">$8.99</a>
+                    <!--a--></strong>
+                  <!--strong-->
+                </h4>
+                <!--h4-->
+              </div>
+              <!--inline-->
+              <p><small class="text-muted">500 cases avail / 11 cases left</small></p>
+              <!--p-->
+            </div>
+            <!--details-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood cricket pitch 2014</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_4.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>98</h4>
+                        <p>1693 cases</p>
+                        <p>sold</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$24.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$15.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+            <div class="details"><img src="assets/images/img-backdoor-deal.png" alt="backdoor deal" class="icon"/>&nbsp;
+              <div class="inline text-nowrap"><sup><img src="assets/images/icon/icon-asterisk.png" alt="asterisk" class="icon"/></sup>
+                <!--sup-->
+                <h4 class="inline"><strong><a href="#">$9.99</a>
+                    <!--a--></strong>
+                  <!--strong-->
+                </h4>
+                <!--h4-->
+              </div>
+              <!--inline-->
+              <p><small class="text-muted">500 cases avail / 49 cases left</small></p>
+              <!--p-->
+            </div>
+            <!--details-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood sangiovese 2013</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_1.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>99</h4>
+                        <p>1640 cases</p>
+                        <p>sold</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$20.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$13.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+            <div class="details"><img src="assets/images/img-backdoor-deal.png" alt="backdoor deal" class="icon"/>&nbsp;
+              <div class="inline text-nowrap"><sup><img src="assets/images/icon/icon-asterisk.png" alt="asterisk" class="icon"/></sup>
+                <!--sup-->
+                <h4 class="inline"><strong><a href="#">$9.99</a>
+                    <!--a--></strong>
+                  <!--strong-->
+                </h4>
+                <!--h4-->
+              </div>
+              <!--inline-->
+              <p><small class="text-muted">400 cases avail / 68 cases left</small></p>
+              <!--p-->
+            </div>
+            <!--details-->
+          </div>
+          <!--wrap-->
+        </div>
+        <!--product-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="sr_col_site"><a href="drinkadvisor" name="drinkadvisor"><img src="assets/images/img-site-drinkadvisor.png" alt="" class="img-responsive center-block"/></a>
+          <!--a-->
+        </div>
+        <!--.sr_col_site-->
+        <h4 class="text-center"><a href="#">most reviews</a></h4>
+        <!--h4-->
+        <div class="product">
+          <div class="wrap">
+            <p class="product_name"><strong>margan semillion 2015</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_3.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>39</h4>
+                        <big>reviews</big>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$22.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$14.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood sangiovese 2013</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_1.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>37</h4>
+                        <big>reviews</big>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$20.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$13.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood cricket pitch white 2014</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_4.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>32</h4>
+                        <big>reviews</big>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$24.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$15.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood rosato 2015</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_2.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>28</h4>
+                        <big>reviews</big>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$19.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$12.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+        </div>
+        <!--product-->
+      </div>
+      <!--col-->
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="sr_col_site"><a href="drinkfinder" name="drinkfinder"><img src="assets/images/img-site-drinkfinder.png" alt="" class="img-responsive center-block"/></a>
+          <!--a-->
+        </div>
+        <!--.sr_col_site-->
+        <h4 class="text-center"><a href="#">highest rating</a></h4>
+        <!--h4-->
+        <div class="product">
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood sangiovese 2013</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_1.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>99</h4>
+                        <p>1204</p>
+                        <p>ratings</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$20.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$13.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>margan semillion 2015</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_3.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>99</h4>
+                        <p>888</p>
+                        <p>ratings</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$22.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$14.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood rosato 2015</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_2.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>98</h4>
+                        <p>942</p>
+                        <p>ratings</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$19.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$12.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+          <div class="wrap">
+            <p class="product_name"><strong>brokenwood cricket pitch white 2014</strong></p>
+            <!--p-->
+            <div class="thumb"><img src="assets/images/product_thumb_4.png" alt=""/>
+              <label><img src="assets/images/img-drop-thumb-lg-2x.png" alt=""/><span>
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>98</h4>
+                        <p>484</p>
+                        <p>ratings</p>
+                      </td>
+                      <!--td-->
+                    </tr>
+                    <!--tr-->
+                  </table>
+                  <!--table--></span>
+                <!--span-->
+              </label>
+              <!--label-->
+              <div class="pricetag">
+                <div class="not">$24.99
+                  <div class="strikeout"></div>
+                </div>
+                <!--not-->
+                <div class="now">$15.99</div>
+              </div>
+              <!--pricetag-->
+            </div>
+            <!--thumb-->
+          </div>
+          <!--wrap-->
+        </div>
+        <!--product-->
+      </div>
+      <!--col-->
+    </div>
+    <!--cont-->
+    <div class="text-center">
+      <h4><a href="#">show more results</a></h4>
+    </div>
+    <div class="cont">
+      <footer>
+        <div class="sitelinks">
+          <div class="col-md-4 col-sm-4">
+            <div class="center-block">
+              <h4>Company</h4>
+              <p><a href="#">About</a></p>
+              <p><a href="#">Careers</a></p>
+              <p><a href="#">Press</a></p>
+              <p><a href="#">Blog</a></p>
+              <p><a href="#">Help</a></p>
+              <p><a href="#">Policies</a></p>
+              <p><a href="#">Terms &amp; Privacy</a></p>
+              <p><a href="#">Discover</a></p>
+            </div>
+          </div>
+          <!--col-->
+          <div class="col-md-4 col-sm-4">
+            <div class="center-block">
+              <h4>Trust &amp; Safety</h4>
+              <p><a href="#">Invite Friends</a></p>
+              <p><a href="#">Drinkpoint Picks</a></p>
+              <p><a href="#">Mobile</a></p>
+              <p><a href="#">Support Wine Culture</a></p>
+              <p><a href="#">Our Partners</a></p>
+              <p><a href="#">Site Map</a></p>
+              <p><a href="#">Wine Clubs</a></p>
+              <p><a href="#">Join the Club</a></p>
+            </div>
+          </div>
+          <!--col-->
+          <div class="col-md-4 col-sm-4">
+            <div class="center-block">
+              <h4>Company</h4>
+              <p><a href="#">Facebook</a></p>
+              <p><a href="#">Twitter</a></p>
+              <p><a href="#">Goolge+</a></p>
+              <p><a href="#">LinkedIn</a></p>
+              <p><a href="#">Pinterest</a></p>
+              <p><a href="#">YouTube</a></p>
+              <p><a href="#">Instagram</a></p>
+              <p><a href="#">Sign up</a></p>
+            </div>
+          </div>
+          <!--col-->
+          <div class="clearfix"></div>
+        </div>
+        <!--sitelinks-->
+      </footer>
+      <!--footer-->
+      <hr/><strong>
+        <h4 class="copy">&#169;DrinkPoint</h4></strong>
+      <!--strong-->
+    </div>
+    <!--cont-->
+    <div id="uc" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="clearfix"></div><span class="fa-stack fa-lg fa-3x"><i class="fa fa-cog fa-stack-2x fa-spin"></i><i style="color: #049900" class="fa fa-wrench fa-stack-2x"></i></span>
+            <div class="clearfix"></div>
+            <h4 class="modal-title">Page Under Construction</h4><br/>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
+    <div id="modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Sample Modal</h4>
+          </div>
+          <div class="modal-body">
+            <div class="wizard">
+              <section>
+                <div class="form-group form-interactive">
+                  <div class="casing"><em class="placeholder">Type in here...</em>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+          </div>
+        </div>
+        <!-- .modal-content-->
+      </div>
+      <!-- .modal-dialog-->
+    </div>
+    <!-- .modal-->
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/dp.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!--script Dashboard.charts();External Script goes here...
+    -->
+  </body>
+</html>
