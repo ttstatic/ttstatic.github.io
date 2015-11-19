@@ -1,0 +1,56 @@
+.ttmdform {
+	position: relative;
+}
+.ttmdform--casing {
+	margin-top: 20px;
+}
+.ttmdform--placeholder {
+	position: absolute;
+	z-index: 0;
+	top: 8px;
+	left: 10px;
+	vertical-align: middle;
+	font-style: normal;
+	color: gray;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	cursor: text;
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ttmdform--placeholder.move {
+    top: -8px;
+    color: inherit;
+    font-size: 10px;
+    background-color: white;
+    padding: 0 3px;
+    color: silver;
+    font-style: normal;
+}
+
+.ttmdform input[type="text"],
+.ttmdform input[type="password"],
+.ttmdform textarea,
+.ttmdform select {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: #eee;
+    outline: 0;
+    background: white;
+    
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.ttmdform input[type="text"],
+.ttmdform input[type="password"],
+.ttmdform select {
+    height: 34px;
+}
