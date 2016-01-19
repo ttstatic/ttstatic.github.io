@@ -366,6 +366,7 @@ p {
     border: none;
 	display: block;
 	margin: auto;
+	text-decoration: none;
 }
 
 #Newsletter button:hover{
@@ -505,8 +506,8 @@ footer {
     padding-bottom: 10px;
     color: #fff;
     border: none;
-	display: block;
 	margin-left: 100px;
+	text-decoration: none;
 }
 
 
