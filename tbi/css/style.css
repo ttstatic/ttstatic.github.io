@@ -1,0 +1,614 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200 !important;
+}
+
+p {
+	font-weight: 100;
+    font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.content-width {
+	max-width:1117px;
+	display: block;
+	margin: auto;
+}
+
+.line-price {
+	background-color: #c3c3c3;
+	padding: 1px 0px 0px 0px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+
+/** Logo **/
+#Logo {
+	padding: 40px;
+}
+#Logo img {
+	max-height: 150px;
+}
+
+
+/** WELCOME **/
+
+#Welcome {
+	background-color: #00a19b;
+	padding: 50px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+#Welcome h1 {
+	font-weight: 100 !important;
+}
+
+#Welcome p a {
+	color: #fdce40;
+	font-weight: 300;
+}
+
+#Welcome p a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/** FIRST PRICE **/
+
+
+		.wrapper {
+			width: 60%;
+			display: block;
+			margin: auto;
+		}
+		
+		[data-carousel-3d] {
+			background-color: transparent;
+			background-image: url(../img/img-caro.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 100%;
+			border: none;
+		}
+		[data-carousel-3d] [data-children-wrapper] {
+			top: 33%;
+			right: 37%;
+			left: 37%;
+		}
+		[data-carousel-3d] [data-children-wrapper] [data-child]:before {
+			    content: " ";
+				background: transparent url(../img/img-post.png) no-repeat center center scroll;
+				width: 15%;
+				height: 80%;
+				position: absolute;
+				left: 43%;
+				top: 7%;
+				background-size: 100% 100%;
+		}
+		[data-children-wrapper] img {
+			border-radius: 50%;
+			border: 20px solid #f2dca6;
+		}
+		[data-children-wrapper] img[data-toggle="modal"] {
+			cursor: pointer;
+		}
+		[data-child-frame] {
+			border: 0;
+		}
+		[data-carousel-3d]:before {
+			padding-top: 45%;
+			padding-bottom: 10%;
+		}
+
+/*MODAL*/
+
+.modal-content {
+	border-radius: 0px !important;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+.modal.modal-wide .modal-dialog {
+/*  width: 70%;*/
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+.brand-name {
+	color: #00a19b;
+}
+
+.prize-description {
+	font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+	line-height: 2;
+    padding: 0px;
+}
+
+.prize-list-modal {
+	font-size: 18px;
+    padding-left: 20px;
+}
+
+#First-Prize {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.prize-sign-holder {
+	position: absolute;
+}
+
+.prize-sign {
+	width: 300px;
+	position: relative;
+}
+.prize-label{
+	font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+	color: #4e4946;
+}
+
+.prize-list {
+	font-weight: 300;
+	font-size: 18px;
+	color: #4e4946;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+
+
+
+
+
+
+/** SECOND PRICE **/
+
+#Second-Prize {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+/** CONTEST Form **/
+#Contest-Form {
+	background-color: #ffd13e;
+	padding: 40px;
+}
+
+#Contest-Form p{
+	letter-spacing: 2px;
+	font-weight: 200;
+	color: #494542;
+}
+
+#Contest-Form p b {
+	font-weight: 500;
+}
+
+#Contest-Form .round {
+	margin-left: 100px;
+	color: #fff;
+	line-height: 1.7;
+	font-size: 20px;
+	font-weight: 200;
+	float: right;
+	background: #494641;
+	width: 35px;
+	height: 35px;
+	
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius: 70px;
+}
+
+.form-num {
+	margin-top: 20px;
+}
+
+#Contest-Form input{
+	font-weight: 200;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+
+::-webkit-input-placeholder {
+ 	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+	color: #7a7a7a;
+}
+:-moz-placeholder { /* older Firefox*/
+ 	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+	color: #7a7a7a;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+	color: #7a7a7a;
+} 
+:-ms-input-placeholder { 
+ 	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+	color: #7a7a7a;
+}
+
+
+
+
+.Contest-Form-question {
+	font-size: 18px;
+	padding: 10px 50px 10px 0px;
+}
+
+
+
+#Contest-Form textarea{
+	width: 433px;
+	font-weight: 200;
+	font-size: 15px;
+	margin: 7px 5px 9px 0px;
+	border-radius: 0px;
+}
+
+#Contest-Form-btn{
+	width: 150px;
+    background-color: #00a19b;
+    font-weight: 200;
+    font-size: 15px;
+	letter-spacing: 2px;
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: none;
+	display: block;
+	margin-left: 100px;
+	text-decoration: none;
+}
+
+#Contest-Form-btn:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #00a19b;
+}
+#Contest-Form a:hover{
+	text-decoration: none;
+}
+
+
+.red-text {
+	color: #f94f64;
+	font-size: 17px;
+}
+
+.input-wrapper {
+  	margin: 5px;
+	display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+.input-length {
+	height: 40px;
+	width: 100%;
+}
+
+.ast {
+	color: #ef404d;
+	font-size: 40px;
+	line-height: 1;
+}
+
+.input-checkbox-label {
+	font-size: 17px;
+}
+
+
+#Newsletter {
+	padding: 50px;
+}
+#Newsletter a{
+	color: #f94f64;
+	font-weight: 400;
+}
+
+#Newsletter input{
+	font-weight: 200;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+#Newsletter #hidden-form {
+	display: none;
+}
+
+#Newsletter button{
+	width: 150px;
+    background-color: #00a19b;
+    font-weight: 200;
+    font-size: 15px;
+	letter-spacing: 2px;
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: none;
+	display: block;
+	margin: auto;
+}
+
+#Newsletter button:hover{
+	text-decoration: none;
+	background-color: #fbd13f;
+	color: #00a19b;
+}
+#Newsletter a:hover{
+	text-decoration: none;
+}
+
+
+/**FOOTER**/
+
+
+#Important-Links {
+	padding: 50px;
+	background-color: #00a19b;
+	color: #fff;
+	font-weight: 100;
+}
+
+
+.logo-tbi{
+	width: 500px;
+}
+
+#Important-Links .links a{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+
+#Important-Links a:hover{
+	color: #dca900;
+	text-decoration: none;
+}
+
+#Important-Links address, email {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+#Important-Links email a{
+	color: #fff;
+}
+
+#Important-Links .sns-label {
+	letter-spacing: 2px;
+    font-weight: 100 !important;
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.sns {
+	width: 30px;
+	margin-top: 4px;
+}
+
+#Important-Links .sns a{
+	width: 30px;
+	margin-top: 4px;
+}
+
+.sns-icon-space {
+	margin-right: 5px;
+}
+
+footer {
+	padding: 50px;
+	color: #4e4946;
+}
+
+.dropdown {
+	font-style: italic;
+	color: #6e6e6e;
+	background-color: #fff !important;
+	border: solid 1px #cdcdcd;
+}
+
+.dropdown ul {
+	padding-left: 0;
+	font-style: normal;
+}
+
+/**CONTACT US**/
+
+#Contact-Us {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Contact-Us h1 {
+	letter-spacing: 1px;
+}
+
+#Contact-Us email{
+	color: #202020;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: 0px;
+	font-size: 17px;
+}
+#Contact-Us address{
+	color: #202020;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+#Contact-Us input{
+	font-weight: 200;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+#Contact-Us textarea{
+	font-weight: 200;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	border-radius: 0px;
+}
+#Contact-Us button{
+	width: 150px;
+    background-color: #00a19b;
+    font-weight: 200;
+    font-size: 15px;
+	letter-spacing: 2px;
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: none;
+	display: block;
+	margin-left: 100px;
+}
+
+
+#maintenance {
+	padding-top: 100px;
+	padding-bottom: 350px;
+	letter-spacing: 1px;
+}
+
+#Thankyou {
+	padding-top: 100px;
+	padding-bottom: 350px;
+	letter-spacing: 1px;
+}
+
+/**--------------**/
+
+@media screen and (max-width: 991px) {
+	#Contest-Form .round {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) { 
+	
+	.wrapper {
+		width: 100%;
+	}
+	#Contest-Form .round {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		
+	}
+	
+	#Important-Links {
+		padding: 50px 20px 50px 20px;
+	}
+	
+	#Important-Links a{
+		font-size: 99%;
+	}
+	
+	[data-carousel-3d] {
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (max-width: 468px) {
+	
+	#Contest-Form-btn{
+		margin: auto;
+	}
+	
+	.wrapper {
+		width: 100%;
+	}
+	
+	[data-carousel-3d] {
+		margin-top: 100px;
+	}
+ 
+}
+
+
+
+/*
+ * Layout Fix
+ */
+[data-required] {
+	position: relative;
+}
+[data-required]:before {
+	content: attr(data-content);
+    color: #ef404d;
+    font-size: 40px;
+    line-height: 1;
+    position: absolute;
+    left: -22px;
+    top: 9px;
+}
+.pro-det-logo {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+
+/*
+ * Media Queries
+ */
+@media screen and  (max-width: 990px) {
+	.prize-sign {
+		width: 150px;
+	}
+}
+@media screen and  (max-width: 1117px) {
+	.prize-sign {
+		width: 200px;
+	}
+}
