@@ -297,7 +297,9 @@ While we create this exciting product directory, please feel free to like us on
 
 							</div>
 							<br><br>
-							<input style="height: 40px; width: 100%;" placeholder="Brand Name">
+							<div data-required data-content="*">
+								<input style="height: 40px; width: 100%;" placeholder="Brand Name">
+							</div>
 							<div class="Contest-Form-question">
 								(In 25 words or less please explain why)
 							</div>
@@ -366,38 +368,45 @@ While we create this exciting product directory, please feel free to like us on
 					<br>
 					<br>
 					<div class="col-md-offset-3 col-md-6 ">
-						<input style="height: 40px; width: 100%;" placeholder="First Name" class="input-label">
-
-						<input style="height: 40px; width: 100%;" placeholder="Last Name">
-
-						<input style="height: 40px; width: 100%;" placeholder="Email">
-
-						<select class="dropdown" style="height: 40px; width: 100% !important;">
-							<option class="label">Select Age Range</option>
-							<option>18 - 25</option>
-							<option>26 - 30</option>
-							<option>31 - 35</option>
-							<option>36 - 40</option>
-						</select>
-
-
-						<select class="dropdown" style="height: 40px; width: 100% !important;">
-							<option class="label">State</option>
-							<option> a</option>
-							<option> b</option>
-							<option> c</option>
-							<option> d</option>
-						</select>
-
-						<input style="height: 40px; width: 100%;" placeholder="Postal Code">
-						
-						<form action="?" method="POST">
-						  <div class="g-recaptcha" data-sitekey="6LdvnhUTAAAAAKp7pEjJsG1vmagwHFO_ES6yjrxe"></div>
-						  <br/>
-						  
-						</form>
-						
-						<a href="thankyou-page.html"><button type="submit"> Signup now</button></a>
+						<div data-required data-content="*">
+							<input style="height: 40px; width: 100%;" placeholder="First Name" class="input-label">
+						</div>
+						<div data-required data-content="*">
+							<input style="height: 40px; width: 100%;" placeholder="Last Name">
+						</div>
+						<div data-required data-content="*">
+							<input style="height: 40px; width: 100%;" placeholder="Email">
+						</div>
+						<div data-required data-content="*">
+							<select class="dropdown" style="height: 40px; width: 100% !important;">
+								<option>Select Age Range</option>
+								<option>18 - 25</option>
+								<option>26 - 30</option>
+								<option>31 - 35</option>
+								<option>36 - 40</option>
+							</select>
+						</div>
+						<div data-required data-content="*">
+							<select class="dropdown" style="height: 40px; width: 100% !important;">
+								<option>State</option>
+								<option> a</option>
+								<option> b</option>
+								<option> c</option>
+								<option> d</option>
+							</select>
+						</div>
+						<div data-required data-content="*">
+							<input style="height: 40px; width: 100%;" placeholder="Postal Code">
+						</div>
+						<center>
+							<form action="?" method="POST">
+								<div class="g-recaptcha" data-sitekey="6LdvnhUTAAAAAKp7pEjJsG1vmagwHFO_ES6yjrxe"></div>
+							  <br/>
+							</form>
+						</center>
+						<a href="thankyou-page.html">
+							<button type="submit"> Signup now</button>
+						</a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
