@@ -69,8 +69,11 @@ While we create this exciting product directory, please feel free to like us on
 				</div>
 			
 			<div class="wrapper">
-				<div data-carousel-3d>
-					<img data-toggle="modal" data-target="#prize-a" src="./img/1.jpg"/>
+				<div class="text-center">
+					<span class="loader text-muted">Loading...</span>
+				</div>
+				<div data-carousel-3d style="display: none;">
+					<img data-toggle="modal" data-target="#prize-a" src="./img/1.jpg" />
 					<img data-toggle="modal" data-target="#prize-a" src="./img/3.jpg" />
 					<img data-toggle="modal" data-target="#prize-a" src="./img/4.jpg" />
 					<img data-toggle="modal" data-target="#prize-a" src="./img/5.jpg" />
@@ -175,7 +178,10 @@ While we create this exciting product directory, please feel free to like us on
 			<br>
 			
 			<div class="wrapper">
-				<div data-carousel-3d>
+				<div class="text-center">
+					<span class="loader text-muted">Loading...</span>
+				</div>
+				<div data-carousel-3d style="display: none;">
 					<img data-toggle="modal" data-target="#prize-a" src="./img/5.jpg" />
 					<img data-toggle="modal" data-target="#prize-a" src="./img/1.jpg"/>
 					<img data-toggle="modal" data-target="#prize-a" src="./img/3.jpg" />
@@ -505,6 +511,9 @@ While we create this exciting product directory, please feel free to like us on
 		<!--TEXT CHARACTER COUNTER-->
 		<script>
 			$(document).ready(function() {
+				$("[data-carousel-3d]").fadeIn();
+				$("span.loader").hide();
+				
 				$("#textareaForm").on('keyup', function() {
 					var words = this.value.match(/\S+/g).length;
 					if (words > 25) {
