@@ -219,47 +219,44 @@ While we create this exciting product directory, please feel free to like us on
 		<!-- end of -- 3RD Section - Second Prize -->
 		
 		<!-- 4TH Section - Contest Form -->
-		<section id="Contest-Form">
-			<div class="text-center content-width">
-				<p>
-					To find what more details about when The Baby Industry will be launched and 
-					to go into the running to <b>WIN 1 of 2 amazing prizes</b>, please complete the form below
-				</p>
-			</div>
-			<br><br>
-			<div class="content-width">
-				<div class="container-fluid">
-					<form>
+		<form>
+			<section id="Contest-Form">
+				<div class="text-center content-width">
+					<p>
+						To find what more details about when The Baby Industry will be launched and 
+						to go into the running to <b>WIN 1 of 2 amazing prizes</b>, please complete the form below
+					</p>
+				</div>
+				<br><br>
+				<div class="content-width">
+					<div class="container-fluid">
 						<div class="col-md-3">
-							
-								<div class="round text-center"> 1 </div>
-
+							<div class="round text-center"> 1 </div>
 						</div>
-						
-						
+
+
 						<div class="col-md-6">
-							
 							<div data-required data-content="*">
-								<input placeholder="First Name" class="input-label input-length">
+								<input placeholder="First Name" class="input-label input-length" required>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Last Name" class="input-length">
+								<input placeholder="Last Name" class="input-length" required>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Email" class="input-length">
+								<input placeholder="Email" class="input-length" required>
 							</div>
 							<div data-required  data-content="*">
-								<select class="dropdown" style="height: 40px;">
-									<option>Select Age Range</option>
+								<select class="dropdown" style="height: 40px;" required>
+									<option data-label>Select Age Range</option>
 									<option>18 - 25</option>
 									<option>26 - 30</option>
 									<option>31 - 35</option>
 									<option>36 - 40</option>
 								</select>
 							</div>
-							
+
 							<div data-required  data-content="*">
-								<select class="dropdown" style="height: 40px;">
+								<select class="dropdown" style="height: 40px;" required>
 									<option>State</option>
 									<option> a</option>
 									<option> b</option>
@@ -268,27 +265,25 @@ While we create this exciting product directory, please feel free to like us on
 								</select>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Postal Code" class="input-length">
+								<input placeholder="Postal Code" class="input-length" required>
 							</div>
 						</div>
-					</form>
+					</div>
 				</div>
-			</div>
-			
-			<br>
-			
-			<div class="content-width">
-				<div class="container-fluid">
-					<form>
+
+				<br>
+
+				<div class="content-width">
+					<div class="container-fluid">
 						<div class="col-md-3">
 							<div class="form-num">
 								<div class="round text-center"> 2 </div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							
+
 							<h2> Tell us in 25 words or less </h2>
-							
+
 							<div class="Contest-Form-question">
 								<br>
 								If you can choose ONE BRAND of baby products that you love the most, 
@@ -299,23 +294,21 @@ While we create this exciting product directory, please feel free to like us on
 							</div>
 							<br><br>
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="Brand Name">
+								<input style="height: 40px; width: 100%;" placeholder="Brand Name" required>
 							</div>
 							<div class="Contest-Form-question">
 								(In 25 words or less please explain why)
 							</div>
-							
-							
+
+
 							<textarea id="textareaForm" rows="8" cols="30" 
 									  style="width: 100%;" class="form-control"></textarea>
 							<span id="textareaFeedback" class="red-text">25</span> <span class="red-text">Words remaining</span>
- 
 						</div>
-					</form>
+					</div>
 				</div>
-			</div>
-			<br>
-			<form>
+				<br>
+				
 				<div class="content-width">
 					<div class="container-fluid">
 						<div class="col-md-3">
@@ -343,76 +336,74 @@ While we create this exciting product directory, please feel free to like us on
 
 							<div class="input-checkbox-label">
 								<input type="checkbox"> I have read and agree to the Competition
-								<span class="red-text"> Terms and Conditions.</span>
+								<a href="maintenance-page.html" class="red-text"> Terms and Conditions.</a>
 							</div>
 							<br>
 						</div>
 					</div>
 					<div class="text-center">
-						<a href="#" id="Contest-Form-btn" class="text-center"> Signup now</a>
+						<input type="submit" id="Contest-Form-btn" value="Signup now">
 					</div>
 				</div>
-			</form>
-			
-			
-		</section>
-		<!-- end of -- 4TH Section - Contest Form -->
+			</section>
+			<!-- end of -- 4TH Section - Contest Form -->
+		</form>
 		
-		<section id="Newsletter">
-			<div class="container-fluid content-width">
-				<h3 class="text-center">
-					If you prefer just to sign up to our newsletter and not enter the competition, <br>
-					please <a href="#hidden-form" class="show-form" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="hidden-form"> click here</a>
-				</h3>
-				
-				<div id="hidden-form" class="collapse">
-					<br>
-					<br>
-					<div class="col-md-offset-3 col-md-6 ">
-						<div data-required data-content="*">
-							<input style="height: 40px; width: 100%;" placeholder="First Name" class="input-label">
+		<form action="thankyou-page.html">
+			<section id="Newsletter">
+				<div class="container-fluid content-width">
+					<h3 class="text-center">
+						If you prefer just to sign up to our newsletter and not enter the competition, <br>
+						please <a href="#hidden-form" class="show-form" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="hidden-form"> click here</a>
+					</h3>
+
+					<div id="hidden-form" class="collapse">
+						<br>
+						<br>
+						<div class="col-md-offset-3 col-md-6 ">
+							<div data-required data-content="*">
+								<input style="height: 40px; width: 100%;" placeholder="First Name" class="input-label" required>
+							</div>
+							<div data-required data-content="*">
+								<input style="height: 40px; width: 100%;" placeholder="Last Name" required>
+							</div>
+							<div data-required data-content="*">
+								<input style="height: 40px; width: 100%;" placeholder="Email" required>
+							</div>
+							<div data-required data-content="*">
+								<select class="dropdown" style="height: 40px; width: 100% !important;" required>
+									<option>Select Age Range</option>
+									<option>18 - 25</option>
+									<option>26 - 30</option>
+									<option>31 - 35</option>
+									<option>36 - 40</option>
+								</select>
+							</div>
+							<div data-required data-content="*">
+								<select class="dropdown" style="height: 40px; width: 100% !important;" required>
+									<option>State</option>
+									<option> a</option>
+									<option> b</option>
+									<option> c</option>
+									<option> d</option>
+								</select>
+							</div>
+							<div data-required data-content="*">
+								<input style="height: 40px; width: 100%;" placeholder="Postal Code" required>
+							</div>
+							<center>
+								<form action="?" method="POST">
+									<div class="g-recaptcha" data-sitekey="6LdvnhUTAAAAAKp7pEjJsG1vmagwHFO_ES6yjrxe"></div>
+								  <br/>
+								</form>
+							</center>
+							<input type="submit" value="Signup now">
 						</div>
-						<div data-required data-content="*">
-							<input style="height: 40px; width: 100%;" placeholder="Last Name">
-						</div>
-						<div data-required data-content="*">
-							<input style="height: 40px; width: 100%;" placeholder="Email">
-						</div>
-						<div data-required data-content="*">
-							<select class="dropdown" style="height: 40px; width: 100% !important;">
-								<option>Select Age Range</option>
-								<option>18 - 25</option>
-								<option>26 - 30</option>
-								<option>31 - 35</option>
-								<option>36 - 40</option>
-							</select>
-						</div>
-						<div data-required data-content="*">
-							<select class="dropdown" style="height: 40px; width: 100% !important;">
-								<option>State</option>
-								<option> a</option>
-								<option> b</option>
-								<option> c</option>
-								<option> d</option>
-							</select>
-						</div>
-						<div data-required data-content="*">
-							<input style="height: 40px; width: 100%;" placeholder="Postal Code">
-						</div>
-						<center>
-							<form action="?" method="POST">
-								<div class="g-recaptcha" data-sitekey="6LdvnhUTAAAAAKp7pEjJsG1vmagwHFO_ES6yjrxe"></div>
-							  <br/>
-							</form>
-						</center>
-						<a href="thankyou-page.html">
-							<button type="submit"> Signup now</button>
-						</a>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</form>
 		
 		<section id="Important-Links">
 			<div class="container-fluid">

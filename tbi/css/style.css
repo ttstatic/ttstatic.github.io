@@ -14,9 +14,15 @@ p {
 }
 
 .content-width {
-	max-width:1117px;
+	max-width: 100%;
 	display: block;
 	margin: auto;
+}
+
+@media screen and (min-width: 1117px) {
+	.content-width {
+		max-width:1117px;
+	}
 }
 
 .line-price {
@@ -41,7 +47,7 @@ p {
 
 #Welcome {
 	background-color: #00a19b;
-	padding: 50px;
+	padding: 50px 0;
 	color: #fff;
 	letter-spacing: 2px;
 }
@@ -197,7 +203,7 @@ p {
 /** CONTEST Form **/
 #Contest-Form {
 	background-color: #ffd13e;
-	padding: 40px;
+	padding: 40px 0;
 }
 
 #Contest-Form p{
@@ -335,7 +341,7 @@ p {
 
 
 #Newsletter {
-	padding: 50px;
+	padding: 50px 0;
 }
 #Newsletter a{
 	color: #f94f64;
@@ -353,7 +359,7 @@ p {
 	
 }
 
-#Newsletter button{
+#Newsletter input[type="submit"] {
 	width: 150px;
     background-color: #00a19b;
     font-weight: 200;
@@ -369,7 +375,7 @@ p {
 	text-decoration: none;
 }
 
-#Newsletter button:hover{
+#Newsletter input[type="submit"]:hover{
 	text-decoration: none;
 	background-color: #fbd13f;
 	color: #00a19b;
@@ -495,7 +501,7 @@ footer {
 	padding-left: 10px;
 	border-radius: 0px;
 }
-#Contact-Us button{
+#Contact-Us input[type="submit"] {
 	width: 150px;
     background-color: #00a19b;
     font-weight: 200;
