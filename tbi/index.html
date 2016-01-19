@@ -306,19 +306,19 @@ While we create this exciting product directory, please feel free to like us on
 				</div>
 			</div>
 			<br>
-			<div class="content-width">
-				<div class="container-fluid">
-					<form>
+			<form>
+				<div class="content-width">
+					<div class="container-fluid">
 						<div class="col-md-3">
 							<div class="form-num">
 								<div class="round text-center"> 3 </div>
 							</div>
-							
+
 						</div>
 						<div class="col-md-9">
 							<h2>Subscribe to our Newsletter</h2>
 							<div class="Contest-Form-question"> 
-								
+
 								<br><br>
 								To sign up to the competition we require you to subscribe to our newsletter. 
 								We hate spam too, rest assured your email is in safe hands. 
@@ -326,23 +326,25 @@ While we create this exciting product directory, please feel free to like us on
 
 							</div>
 							<br><br>
-							 
-								 
-						  	<div class="input-checkbox-label">
+
+
+							<div class="input-checkbox-label">
 								<input type="checkbox" checked> Subscribe me to newsletter and prompt me when the site is up.
 							</div>
-							 	 
-						  	<div class="input-checkbox-label">
+
+							<div class="input-checkbox-label">
 								<input type="checkbox"> I have read and agree to the Competition
 								<span class="red-text"> Terms and Conditions.</span>
 							</div>
 							<br>
-							<a href="#" id="Contest-Form-btn" class="text-center"> Signup now</a>
-							 
 						</div>
-					</form>
+					</div>
+					<div class="text-center">
+						<a href="#" id="Contest-Form-btn" class="text-center"> Signup now</a>
+					</div>
 				</div>
-			</div>
+			</form>
+			
 			
 		</section>
 		<!-- end of -- 4TH Section - Contest Form -->
@@ -351,10 +353,10 @@ While we create this exciting product directory, please feel free to like us on
 			<div class="container-fluid content-width">
 				<h3 class="text-center">
 					If you prefer just to sign up to our newsletter and not enter the competition, <br>
-					please <a href="#hidden-form" class="show-form"> click here</a>
+					please <a href="#hidden-form" class="show-form" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="hidden-form"> click here</a>
 				</h3>
 				
-				<div id="hidden-form">
+				<div id="hidden-form" class="collapse">
 					<br>
 					<br>
 					<div class="col-md-offset-3 col-md-6 ">
@@ -391,6 +393,7 @@ While we create this exciting product directory, please feel free to like us on
 						
 						<a href="thankyou-page.html"><button type="submit"> Signup now</button></a>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</section>
@@ -499,16 +502,6 @@ While we create this exciting product directory, please feel free to like us on
 		</script>
 		
 		
-		
-		<!--SHOW HIDE FORM-->
-		<script>
-			$(document).ready(function(){
-				$(".show-form").click(function(){
-					$("#hidden-form").toggle();
-				});
-			});
-		</script>
-		
 		<!--TEXT CHARACTER COUNTER-->
 		<script>
 			$(document).ready(function() {
@@ -526,6 +519,14 @@ While we create this exciting product directory, please feel free to like us on
 					if (this.value == "") {
 						$('#textareaFeedback').text("25");
 					}
+				});
+				
+				
+				$("a[href='#']").click(function() {
+					_this = $(this);
+					$("html,body").animate({
+						scrollTop: 0,
+					},500)
 				});
 			 }); 
 		</script>
