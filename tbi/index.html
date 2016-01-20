@@ -9,12 +9,9 @@
 		
 		<!--  CAROUSEL  -->
 		<link rel="stylesheet" href="bower_components/carousel-3d/dist/styles/jquery.carousel-3d.default.css">
-		<link href="css/style.css" rel="stylesheet">
 		<link href="css/easydropdown.metro.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		
-		
-		
-
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -237,17 +234,17 @@ While we create this exciting product directory, please feel free to like us on
 
 						<div class="col-md-6">
 							<div data-required data-content="*">
-								<input placeholder="First Name" class="input-label input-length" required>
+								<input type="text" name="fname" placeholder="First Name" class="input-label input-length" req>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Last Name" class="input-length" required>
+								<input type="text" name="lname" placeholder="Last Name" class="input-length" req>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Email" class="input-length" required>
+								<input type="email" name="email" placeholder="Email" class="input-length" req>
 							</div>
 							<div data-required  data-content="*">
-								<select class="dropdown" style="height: 40px;" required>
-									<option data-label>Select Age Range</option>
+								<select name="agerange">
+									<option label="label" value="">Select Age Range</option>
 									<option>18 - 25</option>
 									<option>26 - 30</option>
 									<option>31 - 35</option>
@@ -256,8 +253,8 @@ While we create this exciting product directory, please feel free to like us on
 							</div>
 
 							<div data-required  data-content="*">
-								<select class="dropdown" style="height: 40px;" required>
-									<option>State</option>
+								<select name="state">
+									<option label="label" value="">State</option>
 									<option> a</option>
 									<option> b</option>
 									<option> c</option>
@@ -265,7 +262,7 @@ While we create this exciting product directory, please feel free to like us on
 								</select>
 							</div>
 							<div data-required data-content="*">
-								<input placeholder="Postal Code" class="input-length" required>
+								<input type="text" name="postalcode" placeholder="Postal Code" class="input-length" req>
 							</div>
 						</div>
 					</div>
@@ -294,7 +291,7 @@ While we create this exciting product directory, please feel free to like us on
 							</div>
 							<br><br>
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="Brand Name" required>
+								<input class="input-length" name="brandname" placeholder="Brand Name" req>
 							</div>
 							<div class="Contest-Form-question">
 								(In 25 words or less please explain why)
@@ -362,17 +359,17 @@ While we create this exciting product directory, please feel free to like us on
 						<br>
 						<div class="col-md-offset-3 col-md-6 ">
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="First Name" class="input-label" required>
+								<input name="fname" placeholder="First Name" class="input-label input-length" req>
 							</div>
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="Last Name" required>
+								<input name="lname" placeholder="Last Name" class="input-length" req>
 							</div>
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="Email" required>
+								<input name="email" placeholder="Email" class="input-length" req>
 							</div>
 							<div data-required data-content="*">
-								<select class="dropdown" style="height: 40px; width: 100% !important;" required>
-									<option>Select Age Range</option>
+								<select name="agerange">
+									<option label="label" value="">Select Age Range</option>
 									<option>18 - 25</option>
 									<option>26 - 30</option>
 									<option>31 - 35</option>
@@ -380,8 +377,8 @@ While we create this exciting product directory, please feel free to like us on
 								</select>
 							</div>
 							<div data-required data-content="*">
-								<select class="dropdown" style="height: 40px; width: 100% !important;" required>
-									<option>State</option>
+								<select name="state">
+									<option label="label" value="">State</option>
 									<option> a</option>
 									<option> b</option>
 									<option> c</option>
@@ -389,7 +386,7 @@ While we create this exciting product directory, please feel free to like us on
 								</select>
 							</div>
 							<div data-required data-content="*">
-								<input style="height: 40px; width: 100%;" placeholder="Postal Code" required>
+								<input name="postalcode" placeholder="Postal Code" class="input-length" req>
 							</div>
 							<center>
 								<form action="?" method="POST">
@@ -482,17 +479,13 @@ While we create this exciting product directory, please feel free to like us on
 		<footer class="text-center">
 			© ALL RIGHTS RESERVED 2016. THE BABY INDUSTRY
 		</footer>
-
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easydropdown.min.js"></script>
-		
 		
 		<!--<script src="http://localhost:35729/livereload.js"></script>-->
 		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+		
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easydropdown.min.js"></script>
 		<script src="./bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
 		<script src="./bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
 		<script src="./bower_components/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -500,47 +493,8 @@ While we create this exciting product directory, please feel free to like us on
 		
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		
-		<!--MODAL-->
-		<script>
-			$(".modal-wide").on("show.bs.modal", function() {
-			  var height = $(window).height() - 200;
-			  $(this).find(".modal-body").css("max-height", height);
-			});
-		</script>
-		
-		
-		<!--TEXT CHARACTER COUNTER-->
-		<script>
-			$(document).ready(function() {
-				$("[data-carousel-3d]").fadeIn();
-				$("span.loader").hide();
-				
-				$("#textareaForm").on('keyup', function() {
-					var words = this.value.match(/\S+/g).length;
-					if (words > 25) {
-						// Split the string on first 200 words and rejoin on spaces
-						var trimmed = $(this).val().split(/\s+/, 25).join(" ");
-						// Add a space at the end to keep new typing making new words
-						$(this).val(trimmed + " ");
-					} else {
-						$('#textareaFeedback').text(25-words);
-					}
-				}).on("blur", function(){
-					if (this.value == "") {
-						$('#textareaFeedback').text("25");
-					}
-				});
-				
-				
-				$("a[href='#']").click(function() {
-					_this = $(this);
-					$("html,body").animate({
-						scrollTop: 0,
-					},500)
-				});
-			 }); 
-		</script>
-
+		<!--/ Custom JS /-->
+		<script src="js/main.js"></script>
 		
 	</body>
 </html>

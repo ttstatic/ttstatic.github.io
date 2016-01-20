@@ -51,28 +51,28 @@
 					Send us an enquiry - we would love to hear from you!
 				</h1>
 				
-				<form action="contact-confirmation.html">
+				<form>
 					<br>
 					<br>
 					<div class="col-md-6" style="padding: 0px;">
 						<div data-required data-content="*">
-							<input type="text" style="height: 40px; width: 100%;" placeholder="Subject" required>
+							<input name="subject" type="text" class="input-length" placeholder="Subject" req>
 						</div>
 						<div data-required data-content="*">
-							<textarea class="form-control" rows="5" id="comment" style="width: 100%;" placeholder="Enquiry" required></textarea>
+							<textarea name="enquiry" class="form-control" rows="5" id="comment" style="width: 100%;" placeholder="Enquiry" req></textarea>
 						</div>
 						<div data-required data-content="*">
-							<input type="text" style="height: 40px; width: 100%;" placeholder="First Name" class="input-label" required>
+							<input name="fname" type="text" class="input-length" placeholder="First Name" class="input-label" req>
 						</div>
 						<div data-required data-content="*">
-							<input type="text" style="height: 40px; width: 100%;" placeholder="Last Name" required>
+							<input name="lname" type="text" class="input-length" placeholder="Last Name" req>
 						</div>
 						<div data-required data-content="*">
-							<input type="text" style="height: 40px; width: 100%;" placeholder="Phone Number" required>
+							<input name="phone" type="tel" class="input-length" placeholder="Phone Number" req>
 						</div>
 						<div data-required data-content="*">
-							<select class="dropdown" style="height: 40px; width: 100% !important;" required>
-								<option>Postal Code</option>
+							<select name="postalcode" class="dropdown" req>
+								<option label="label" value="">Postal Code</option>
 								<option> 1000</option>
 								<option> 1001</option>
 								<option> 1002</option>
@@ -80,11 +80,13 @@
 							</select>
 						</div>
 						<div data-required data-content="*">
-							<input type="email" style="height: 40px; width: 100%;" placeholder="Email" required>
+							<input name="email" type="email" class="input-length" placeholder="Email" req>
 						</div>
 						<br>
 						<br>
-						<input type="submit" value="Submit">
+						<center>
+							<input type="submit" value="Submit">
+						</center>
 					</div>
 				</form>
 			</div>
@@ -164,30 +166,21 @@
 			© ALL RIGHTS RESERVED 2016. THE BABY INDUSTRY
 		</footer>
 
-
-		<script>
-			document.querySelector(".show-form").addEventListener("click", function(){
-				document.querySelector("#hidden-form").style.display = "block";
-			});
-		</script>
-
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easydropdown.min.js"></script>
-		
-		
 		<!--<script src="http://localhost:35729/livereload.js"></script>-->
 		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+		
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easydropdown.min.js"></script>
 		<script src="./bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
 		<script src="./bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
 		<script src="./bower_components/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 		<script src="./bower_components/carousel-3d/dist/jquery.carousel-3d.js"></script>
 		
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+		
+		<!--/ Custom JS /-->
+		<script src="js/main.js"></script>
 		
 	</body>
 </html>
