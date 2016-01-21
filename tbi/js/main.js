@@ -100,6 +100,14 @@ $(document).ready(function () {
 			_this.find("[type='submit']").after("<div class='required-note-text'>Please fill out all required field.</div>");
 		} else {
 			_this.find("[type='submit']").next().remove();
+			
+			$.ajax({
+				method: "POST",
+				url: "http://twistresources.us12.list-manage.com/subscribe/post?u=b48ddbcafd914c44e6ed1bfd4&amp;id=b7df58fb49",
+				success: function(data) {
+					console.log(data)
+				}
+			})
 		}
 	});
 
