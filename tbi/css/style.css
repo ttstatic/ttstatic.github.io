@@ -280,14 +280,13 @@ p {
 
 
 #Contest-Form textarea{
-	width: 433px;
 	font-weight: 200;
 	font-size: 15px;
 	margin: 7px 5px 9px 0px;
 	border-radius: 0px;
 }
 
-#Contest-Form-btn{
+#mc-embedded-subscribe {
 	width: 150px;
     background-color: #00a19b;
     font-weight: 200;
@@ -302,7 +301,7 @@ p {
 	text-decoration: none;
 }
 
-#Contest-Form-btn:hover{
+#mc-embedded-subscribe:hover{
 	text-decoration: none;
 	background-color: #fff;
 	color: #00a19b;
@@ -574,7 +573,7 @@ footer {
 
 @media screen and (max-width: 468px) {
 	
-	#Contest-Form-btn{
+	#mc-embedded-subscribe {
 		margin: auto;
 	}
 	
@@ -613,7 +612,7 @@ footer {
 	-moz-border-radius: 50%;
 	width: 25%;
 }
-.required {
+[data-required] span.required {
 	position: absolute;
     top: -16px;
     color: red;

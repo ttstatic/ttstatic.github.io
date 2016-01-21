@@ -10,7 +10,7 @@ $(document).ready(function () {
 	$("span.loader").hide();
 
 	// Word Counter
-	$("#textareaForm").on('keyup', function () {
+	$("#mce-NOTE").on('keyup', function () {
 		var words = this.value.match(/\S+/g).length;
 		if (words > 25) {
 			// Split the string on first 200 words and rejoin on spaces
@@ -57,14 +57,14 @@ $(document).ready(function () {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
-		var txt = $(this).serialize();
+		var txt = $('input[name!=hdn], select', this).serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
 		
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
-			
+			console.log(formVal)
 			if (formVal[1] == "") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span");
