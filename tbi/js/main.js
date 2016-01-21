@@ -68,7 +68,7 @@ $(document).ready(function () {
 			if (formVal[1] == "") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span");
-					input.parent().before("<span class='required'>Please fill out this field.</span>");
+					input.parent().before("<span class='required'>This field is required.</span>");
 					input.parent().parent().css({
 						backgroundColor: "#F4A460",
 						color: "#ffffff",
@@ -76,7 +76,7 @@ $(document).ready(function () {
 					});
 				} else {
 					input.parent().find("span").remove();
-					input.before("<span class='required'>Please fill out this field.</span>");
+					input.before("<span class='required'>This field is required.</span>");
 					input.css({
 						backgroundColor: "#F4A460",
 						color: "#ffffff",
