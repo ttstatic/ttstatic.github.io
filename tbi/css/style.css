@@ -133,7 +133,7 @@ p {
 }
 
 .modal.modal-wide .modal-dialog {
-/*  width: 70%;*/
+	width: 50%;
 }
 .modal-wide .modal-body {
   overflow-y: auto;
@@ -179,7 +179,7 @@ p {
 
 .prize-list {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	color: #4e4946;
 	letter-spacing: 1px;
 	line-height: 1.5;
@@ -515,6 +515,15 @@ footer {
 	text-decoration: none;
 }
 
+#Contact-Us input[type="submit"]:hover{
+	text-decoration: none;
+	background-color: #fbd13f;
+	color: #00a19b;
+}
+#Contact-Us a:hover{
+	text-decoration: none;
+}
+
 
 #maintenance {
 	padding-top: 100px;
@@ -631,13 +640,29 @@ footer {
 /*
  * Media Queries
  */
+
+@media screen and  (max-width: 1117px) {
+	.prize-sign {
+		width: 200px;
+	}
+}
+
 @media screen and  (max-width: 990px) {
 	.prize-sign {
 		width: 150px;
 	}
+	.modal.modal-wide .modal-dialog {
+		width: 60%;
+	}
 }
-@media screen and  (max-width: 1117px) {
-	.prize-sign {
-		width: 200px;
+@media screen and (max-width: 767px) {
+	.modal.modal-wide .modal-dialog {
+		display: block;
+		margin: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	.modal.modal-wide .modal-dialog {
+		width: auto;
 	}
 }
