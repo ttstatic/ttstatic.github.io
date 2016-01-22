@@ -109,10 +109,10 @@ $(document).ready(function () {
 				success: function(data) {
 					if (data.result == "success") {
 						$('#tbi-modal-raffle').modal();
-						$("#tbi-modal-raffle").find(".modal-body p").text(data.msg)
+						$("#tbi-modal-raffle").find(".modal-body p").html(data.msg)
 					} else {
 						$("#tbi-modal-error-request").modal();
-						$("#tbi-modal-error-request").find(".modal-body p").text(data.msg)
+						$("#tbi-modal-error-request").find(".modal-body p").html(data.msg)
 					}
 				}
 			})
@@ -121,22 +121,19 @@ $(document).ready(function () {
 	
 	
 	// karen -- jan_22 
-	
-	
 	// prepare the form when the DOM is ready 
-	$(document).ready(function() {
-		var galleryClass = '.gallery';
-		$(galleryClass+' li img').click(function(){
-			var $gallery = $(this).parents(galleryClass);
-			$('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
-		});
-		var imgSwap = [];
-		 $(galleryClass+' li img').each(function(){
-			imgUrl = this.src.replace('thumb/', '');
-			imgSwap.push(imgUrl);
-		});
-		$(imgSwap).preload();
+	var galleryClass = '.gallery';
+	$(galleryClass+' li img').click(function(){
+		var $gallery = $(this).parents(galleryClass);
+		$('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
 	});
+	var imgSwap = [];
+	 $(galleryClass+' li img').each(function(){
+		imgUrl = this.src.replace('thumb/', '');
+		imgSwap.push(imgUrl);
+	});
+	$(imgSwap).preload();
+	
 	$.fn.preload = function() {
 		this.each(function(){
 			$('<img/>')[0].src = this;
