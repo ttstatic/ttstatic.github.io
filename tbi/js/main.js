@@ -45,7 +45,7 @@ $(document).ready(function () {
 				//console.log($(this).find("option").attr("label"))
 				//console.log(this.required)
 				if ($(this).find("option:selected").attr("label") == "label") {
-					console.log("required")
+					//console.log("required")
 				}
 			}
 		});
@@ -57,15 +57,15 @@ $(document).ready(function () {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
-		var txt = $('input[name!=hdn], input[name!=NOTE], select', this).serialize();
+		var txt = $($(this)[0].elements).not("[name='hdn'], [name='g-recaptcha-response']").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
-		console.log(txt)
+		//console.log(txt)
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
 			//console.log(formVal)
-			if (formVal[1] == "") {
+			if (formVal[1] == "" && formVal[0] != "NOTE" && formVal[0] != "g-recaptcha-response") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span");
 					input.parent().before("<span class='required'>This field is required.</span>");
@@ -107,8 +107,13 @@ $(document).ready(function () {
 				data: txt,
 				dataType: 'jsonp',
 				success: function(data) {
-					console.log(data)
-					console.log(data.result)
+					if (data.result == "success") {
+						$('#tbi-modal-raffle').modal();
+						$("#tbi-modal-raffle").find(".modal-body p").text(data.msg)
+					} else {
+						$("#tbi-modal-error-request").modal();
+						$("#tbi-modal-error-request").find(".modal-body p").text(data.msg)
+					}
 				}
 			})
 		}
