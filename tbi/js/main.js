@@ -118,5 +118,35 @@ $(document).ready(function () {
 			})
 		}
 	});
+	
+	
+	// karen -- jan_22 
+	
+	
+	// prepare the form when the DOM is ready 
+	$(document).ready(function() {
+		var galleryClass = '.gallery';
+		$(galleryClass+' li img').click(function(){
+			var $gallery = $(this).parents(galleryClass);
+			$('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+		});
+		var imgSwap = [];
+		 $(galleryClass+' li img').each(function(){
+			imgUrl = this.src.replace('thumb/', '');
+			imgSwap.push(imgUrl);
+		});
+		$(imgSwap).preload();
+	});
+	$.fn.preload = function() {
+		this.each(function(){
+			$('<img/>')[0].src = this;
+		});
+	}
+
+	$(".gallery ul div:first-child li img").addClass("selected");
+	$('.gallery ul img').click(function(){
+		$(this).closest("ul").find("img").removeClass('selected');
+		$(this).addClass('selected');
+	});
 
 });

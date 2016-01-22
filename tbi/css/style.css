@@ -139,6 +139,12 @@ p {
   overflow-y: auto;
 }
 
+	.gallery {width: auto; margin: 0 auto 20px auto;}
+	.gallery ul {padding-left: 5px; padding-bottom: 50px;}
+	.gallery li {display: inline; margin-right: 2px;}
+	.gallery li .selected {outline: solid 1px #cfd4d7;}
+	.main-img {background: url(..img/bg_img.png) no-repeat center center; padding: 26px; width: 500px;}
+
 .brand-name {
 	color: #00a19b;
 }
@@ -147,7 +153,7 @@ p {
 	font-size: 16px;
     font-weight: normal;
     letter-spacing: 1px;
-	line-height: 2;
+	line-height: 1.5;
     padding: 0px;
 }
 
@@ -617,8 +623,6 @@ footer {
 	position: absolute;
 	left: 15px;
 	top: 15px;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
 	width: 25%;
 }
 [data-required] span.required {
