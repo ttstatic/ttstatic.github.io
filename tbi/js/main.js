@@ -57,7 +57,7 @@ $(document).ready(function () {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
-		var url = _this.attr("method");
+		var url = _this.attr("data-url");
 		var txt = $($(this)[0].elements).not("[name='hdn'], [name='g-recaptcha-response']").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
