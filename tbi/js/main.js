@@ -57,14 +57,14 @@ $(document).ready(function () {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
-		var txt = $('input[name!=hdn], select', this).serialize();
+		var txt = $('input[name!=hdn], input[name!=NOTE], select', this).serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
-		
+		console.log(txt)
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
-			console.log(formVal)
+			//console.log(formVal)
 			if (formVal[1] == "") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span");
@@ -102,10 +102,13 @@ $(document).ready(function () {
 			_this.find("[type='submit']").next().remove();
 			
 			$.ajax({
-				method: "POST",
-				url: "http://twistresources.us12.list-manage.com/subscribe/post?u=b48ddbcafd914c44e6ed1bfd4&amp;id=b7df58fb49",
+				url: "http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=b7df58fb49&c=?",
+				type: "POST",
+				data: txt,
+				dataType: 'jsonp',
 				success: function(data) {
 					console.log(data)
+					console.log(data.result)
 				}
 			})
 		}
