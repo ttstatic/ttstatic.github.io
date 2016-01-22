@@ -57,6 +57,7 @@ $(document).ready(function () {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
+		var url = _this.attr("method");
 		var txt = $($(this)[0].elements).not("[name='hdn'], [name='g-recaptcha-response']").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
@@ -102,7 +103,7 @@ $(document).ready(function () {
 			_this.find("[type='submit']").next().remove();
 			
 			$.ajax({
-				url: "http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=b7df58fb49&c=?",
+				url: url,
 				type: "POST",
 				data: txt,
 				dataType: 'jsonp',
@@ -133,12 +134,6 @@ $(document).ready(function () {
 		imgSwap.push(imgUrl);
 	});
 	$(imgSwap).preload();
-	
-	$.fn.preload = function() {
-		this.each(function(){
-			$('<img/>')[0].src = this;
-		});
-	}
 
 	$(".gallery ul div:first-child li img").addClass("selected");
 	$('.gallery ul img').click(function(){
@@ -147,3 +142,9 @@ $(document).ready(function () {
 	});
 
 });
+
+$.fn.preload = function() {
+	this.each(function(){
+		$('<img/>')[0].src = this;
+	});
+}
