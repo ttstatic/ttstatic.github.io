@@ -631,11 +631,12 @@ footer {
 [data-required]:before {
 	content: attr(data-content);
     color: #ef404d;
-    font-size: 40px;
+    font-size: 28px;
+	font-weight: 300;
     line-height: 1;
     position: absolute;
     left: -22px;
-    top: 9px;
+    top: 11px;
 }
 .pro-det-logo {
 	padding-top: 20px;
