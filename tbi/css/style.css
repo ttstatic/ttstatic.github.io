@@ -145,7 +145,7 @@ p {
 }
 
 .modal.modal-wide .modal-dialog {
-	width: 50%;
+	width: 60%;
 }
 .modal-wide .modal-body {
   overflow-y: auto;
@@ -155,7 +155,7 @@ p {
 	.gallery ul {padding-left: 5px; padding-bottom: 50px;}
 	.gallery li {display: inline; margin-right: 2px;}
 	.gallery li .selected {outline: solid 1px #cfd4d7;}
-	.main-img {background: url(..img/bg_img.png) no-repeat center center; padding: 26px; width: 500px; margin-top: 50px;}
+	.main-img {background: url(..img/bg_img.png) no-repeat center center; padding: 26px; width: 500px; margin-top: 10px;}
 
 
 .brand-name {
@@ -171,7 +171,7 @@ p {
 }
 
 .prize-list-modal {
-	font-size: 18px;
+	font-size: 16px;
     padding-left: 20px;
 }
 
