@@ -74,7 +74,7 @@ $(document).ready(function () {
 					input.parent().prev().remove("span");
 					input.parent().before("<span class='required'>This field is required.</span>");
 					input.parent().parent().css({
-						backgroundColor: "#F4A460",
+						backgroundColor: "#FCF8E3",
 						color: "#ffffff",
 						border: "1px solid"
 					});
@@ -82,7 +82,7 @@ $(document).ready(function () {
 					input.parent().find("span").remove();
 					input.before("<span class='required'>This field is required.</span>");
 					input.css({
-						backgroundColor: "#F4A460",
+						backgroundColor: "#FCF8E3",
 						color: "#ffffff",
 						border: "1px solid"
 					});
