@@ -52,13 +52,16 @@ $(document).ready(function () {
 	});
 
 	/*
-	 * Check form elements including SELECT dropdowns if they have values.
-	 */
+	 - Check form elements including SELECT dropdowns if they have values.
+	 Usage:
+	 	Required attributes - 
+	*/
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var _this = $(this);
 		var url = _this.attr("data-url");
-		var txt = $($(this)[0].elements).not("[name='hdn'], [name='g-recaptcha-response']").serialize();
+		// add "data-no-serialize" attribute to any form element that you want to exclude from the serialize method.
+		var txt = $($(this)[0].elements).not("[data-no-serialize], [name='g-recaptcha-response']").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
 		//console.log(txt)
@@ -109,11 +112,15 @@ $(document).ready(function () {
 				dataType: 'jsonp',
 				success: function(data) {
 					if (data.result == "success") {
-						$('#tbi-modal-raffle').modal();
-						$("#tbi-modal-raffle").find(".modal-body p").html(data.msg)
+						if ( _this.is("[data-redirect]") ) {
+							window.location = _this.attr("action");
+						} else {
+							$('#tbi-modal-raffle').modal();
+							$("#tbi-modal-raffle").find(".modal-body p").html(data.msg);
+						}
 					} else {
 						$("#tbi-modal-error-request").modal();
-						$("#tbi-modal-error-request").find(".modal-body p").html(data.msg)
+						$("#tbi-modal-error-request").find(".modal-body p").html(data.msg);
 					}
 				}
 			})

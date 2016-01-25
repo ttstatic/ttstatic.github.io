@@ -7,6 +7,7 @@
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>The Baby Industry</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		
 		<!--  CAROUSEL  -->
 		<link rel="stylesheet" href="bower_components/carousel-3d/dist/styles/jquery.carousel-3d.default.css">
@@ -1344,7 +1345,7 @@ While we create this exciting product directory, please feel free to like us on
 						</div>
 						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 						<div style="position: absolute; left: -5000px;" aria-hidden="true">
-							<input name="hdn" type="text" name="b_b48ddbcafd914c44e6ed1bfd4_b7df58fb49" tabindex="-1" value="">
+							<input data-no-serialize type="text" name="b_b48ddbcafd914c44e6ed1bfd4_b7df58fb49" tabindex="-1" value="">
 						</div>
 						<div class="text-center">
 							<input type="submit" value="Signup now" name="subscribe" id="mc-embedded-subscribe" class="button">
@@ -1355,7 +1356,7 @@ While we create this exciting product directory, please feel free to like us on
 			</form>
 		</div>
 		
-		<form data-url="http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=cd232e3a75&c=?" action="thankyou-page.html">
+		<form data-url="http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=cd232e3a75&c=?" action="thankyou-page.html" data-redirect>
 			<section id="Newsletter">
 				<div class="container-fluid content-width">
 					<h3 class="text-center">
@@ -1367,35 +1368,43 @@ While we create this exciting product directory, please feel free to like us on
 						<br>
 						<br>
 						<div class="col-md-offset-3 col-md-6 ">
-							<div data-required data-content="*">
-								<input name="fname" placeholder="First Name" class="input-label input-length" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input type="text" name="FNAME" placeholder="First Name" class="input-label input-length required" id="mce-FNAME-nl" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="lname" placeholder="Last Name" class="input-length" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input type="text" name="LNAME" placeholder="Last Name" class="input-length required" id="mce-LNAME-nl" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="email" placeholder="Email" class="input-length" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input type="text" name="EMAIL" placeholder="Email" class="input-length required email" id="mce-EMAIL-nl" req>
 							</div>
-							<div data-required data-content="*">
-								<select name="agerange">
+							<div class="mc-field-group" data-required data-content="*">
+								<select name="AGERANGE" class="required" id="mce-AGERANGE-nl">
 									<option label="label" value="">Select Age Range</option>
-									<option>18 - 25</option>
-									<option>26 - 30</option>
-									<option>31 - 35</option>
-									<option>36 - 40</option>
+									<option value="18 - 25">18 - 25</option>
+									<option value="26 - 30">26 - 30</option>
+									<option value="31 - 35">31 - 35</option>
+									<option value="36 - 40">36 - 40</option>
 								</select>
 							</div>
-							<div data-required data-content="*">
-								<select name="state">
+							<div class="mc-field-group" data-required data-content="*">
+								<select name="STATE" class="required" id="mce-STATE-nl">
 									<option label="label" value="">State</option>
-									<option> a</option>
-									<option> b</option>
-									<option> c</option>
-									<option> d</option>
+									<option value="New South Wales">New South Wales</option>
+									<option value="Victoria">Victoria</option>
+									<option value="Queensland">Queensland</option>
+									<option value="Western Australia">Western Australia</option>
 								</select>
 							</div>
-							<div data-required data-content="*">
-								<input name="postalcode" placeholder="Postal Code" class="input-length" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input type="text" name="POSTALCODE" placeholder="Postal Code" class="input-length required" id="mce-POSTALCODE-nl" req>
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input data-no-serialize type="text" name="b_b48ddbcafd914c44e6ed1bfd4_cd232e3a75" tabindex="-1" value="">
 							</div>
 							<center>
 								<form action="?" method="POST">
@@ -1403,7 +1412,7 @@ While we create this exciting product directory, please feel free to like us on
 								  <br/>
 								</form>
 							</center>
-							<input type="submit" value="Signup now">
+							<input type="submit" value="Signup now" name="subscribe" id="mc-embedded-subscribe-nl">
 						</div>
 						<div class="clearfix"></div>
 					</div>
