@@ -39,7 +39,7 @@ p {
 	padding: 40px;
 }
 #Logo img {
-	max-height: 150px;
+	max-height: 140px;
 }
 
 
@@ -56,9 +56,13 @@ p {
 	font-weight: 100 !important;
 }
 
+#Welcome p {
+	font-weight: 200;
+}
+
 #Welcome p a {
 	color: #fdce40;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #Welcome p a:hover{
@@ -399,7 +403,7 @@ p {
 	padding: 50px;
 	background-color: #00a19b;
 	color: #fff;
-	font-weight: 100;
+	font-weight: 200;
 }
 
 
@@ -410,7 +414,7 @@ p {
 #Important-Links .links a{
 	color: #fff;
 	font-size: 15px;
-	font-weight: 100;
+	font-weight: 200;
 	letter-spacing: 1px;
 }
 
@@ -423,7 +427,7 @@ p {
 #Important-Links address, email {
 	color: #fff;
 	font-size: 15px;
-	font-weight: 100;
+	font-weight: 200;
 	letter-spacing: 1px;
 }
 
@@ -433,7 +437,7 @@ p {
 
 #Important-Links .sns-label {
 	letter-spacing: 2px;
-    font-weight: 100 !important;
+    font-weight: 200;
     font-size: 18px;
     margin-top: 7px;
 }
@@ -657,6 +661,10 @@ footer {
 	}
 	.modal.modal-wide .modal-dialog {
 		width: 60%;
+	}
+	
+	.Contest-Form-question {
+		padding: 10px 0px 10px 0px;
 	}
 }
 @media screen and (max-width: 767px) {
