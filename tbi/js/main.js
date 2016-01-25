@@ -117,6 +117,11 @@ $(document).ready(function () {
 						} else {
 							$('#tbi-modal-raffle').modal();
 							$("#tbi-modal-raffle").find(".modal-body p").html(data.msg);
+							try {
+								_this.find("[type='reset']").remove();
+							} catch(e) {}
+							_this.append('<input type="reset" value="Reset" class="hide">');
+							_this.find("[type='reset']").trigger("click");
 						}
 					} else {
 						$("#tbi-modal-error-request").modal();
