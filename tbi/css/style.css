@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -443,7 +443,7 @@ p {
 }
 
 #Important-Links .sns-label {
-	letter-spacing: 2px;
+	letter-spacing: 1px;
     font-weight: 200;
     font-size: 18px;
     margin-top: 7px;
@@ -492,6 +492,11 @@ footer {
 	letter-spacing: 1px;
 }
 
+#Contact-Us p {
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+
 #Contact-Us email{
 	color: #202020;
 	font-weight: 300;
@@ -509,6 +514,7 @@ footer {
 #Contact-Us input{
 	font-weight: 200;
 	font-size: 18px;
+	letter-spacing: 1px;
 	margin-bottom: 20px;
 	padding-left: 10px;
 }
