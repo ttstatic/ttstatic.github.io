@@ -35,7 +35,7 @@
 			<a href="index.html"><img src="img/thebabyindustry-logo.png" class="center-block img-responsive"></a>
 		</div>
 		
-		<form action="thankyou-page.html">
+		<form data-url="http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=7155f5262e&c=?" action="thankyou-page.html" data-redirect>
 			<section id="Contact-Us">
 				<div class="container-fluid content-width">
 
@@ -49,37 +49,37 @@
 						<br>
 						<br>
 						<div class="col-md-6" style="padding: 0px;">
-							<div data-required data-content="*">
-								<input name="brand" type="text" class="input-length" placeholder="Please list your brand/s" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="BRANDS" type="text" class="input-length required" placeholder="Please list your brand/s" id="mce-BRANDS-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<textarea name="enquiry" class="form-control" rows="5" id="comment" placeholder="Enquiry" req></textarea>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="ENQUIRY" type="text" class="form-control required" placeholder="Enquiry" id="mce-ENQUIRY-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="fname" type="text" placeholder="First Name" class="input-label input-length" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="FNAME" type="text" class="input-label input-length required" placeholder="First Name" id="mce-FNAME-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="lname" type="text" class="input-length" placeholder="Last Name" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="LNAME" type="text" class="input-length required" placeholder="Last Name" id="mce-LNAME-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="phone" type="text" class="input-length" placeholder="Phone Number" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="PNUMBER" type="text" class="input-length required" placeholder="Phone Number" id="mce-PNUMBER-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="company" type="text" class="input-length" placeholder="Company" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="COMPANY" type="text" class="input-length required" placeholder="Company" id="mce-COMPANY-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="webaddress" type="text" class="input-length" placeholder="Web address" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="WEBADDRESS" type="text" class="input-length required" placeholder="Web address" id="mce-WEBADDRESS-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="email" type="email" class="input-length" placeholder="Email" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="EMAIL" type="email" class="input-length required" placeholder="Email" id="mce-EMAIL-ads" req>
 							</div>
-							<div data-required data-content="*">
-								<input name="confirmemail" type="email" class="input-length" placeholder="Confirm email" req>
+							<div class="mc-field-group" data-required data-content="*">
+								<input name="CONFIRMEAD" type="email" class="input-length required" placeholder="Confirm email" id="mce-CONFIRMEAD-ads" req>
 							</div>
 							<br>
 							<br>
 							<center>
-								<input type="submit" value="Submit">
+								<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe-ads">
 							</center>
 						</div>
 					</div>
@@ -160,6 +160,43 @@
 		<footer class="text-center">
 			© ALL RIGHTS RESERVED 2016. THE BABY INDUSTRY
 		</footer>
+		
+		<!--/ MODAL ELEMENTS /-->
+		<div id="tbi-modal-raffle" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Sign up success!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">Continue using our site</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+		<div id="tbi-modal-error-request" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Error sending your request.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 
 		<!--<script src="http://localhost:35729/livereload.js"></script>-->
 		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
