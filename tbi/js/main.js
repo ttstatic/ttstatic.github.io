@@ -75,16 +75,14 @@ $(document).ready(function () {
 					input.parent().before("<span class='required'>This field is required.</span>");
 					input.parent().parent().css({
 						backgroundColor: "#FCF8E3",
-						color: "#ffffff",
-						border: "1px solid"
+						border: "1px solid #ffffff"
 					});
 				} else {
 					input.parent().find("span").remove();
 					input.before("<span class='required'>This field is required.</span>");
 					input.css({
 						backgroundColor: "#FCF8E3",
-						color: "#ffffff",
-						border: "1px solid"
+						border: "1px solid #ffffff"
 					});
 				}
 			} else {
