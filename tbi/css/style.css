@@ -439,6 +439,31 @@ p {
 }
 
 
+#Brands {
+	background-color: #fff;
+}
+
+#Brands .logo-spacing {
+	padding-top: 30px;
+}
+
+#Brands img {
+    vertical-align: middle;
+    max-height: 300px;
+    max-width: 200px;
+	margin-bottom: 50px;
+	filter: opacity(0.5) grayscale(100%);
+	-webkit-filter: opacity(0.5) grayscale(100%);
+}
+
+#Brands img:hover{
+	filter: opacity(1) grayscale(0);
+	transition: -webkit-filter 0.5s;
+	-webkit-filter: opacity(1) grayscale(0);
+	-webkit-transition: -webkit-filter 0.5s;
+}
+
+
 /**FOOTER**/
 
 
@@ -611,6 +636,7 @@ footer {
 	.wrapper {
 		width: 100%;
 	}
+	
 }
 
 @media screen and (max-width: 767px) { 
@@ -654,6 +680,8 @@ footer {
 	[data-carousel-3d] {
 		margin-top: 100px;
 	}
+	
+	
  
 }
 
@@ -668,7 +696,7 @@ footer {
 [data-required]:before {
 	content: attr(data-content);
     color: #ef404d;
-    font-size: 28px;
+    font-size: 22px;
 	font-weight: 300;
     line-height: 1;
     position: absolute;
