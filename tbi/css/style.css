@@ -147,9 +147,6 @@ p {
 .modal.modal-wide .modal-dialog {
 	width: 60%;
 }
-.modal-wide .modal-body {
-  	overflow-y: auto;
-}
 
 	.gallery {width: auto; margin: 0 auto 20px auto;}
 	.gallery ul {padding-left: 5px; padding-bottom: 50px;}
