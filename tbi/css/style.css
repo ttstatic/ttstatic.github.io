@@ -3,11 +3,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 200 !important;
+	font-weight: 300 !important;
 }
 
 p {
-	font-weight: 300;
+	font-weight: normal;
     font-size: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -53,11 +53,11 @@ p {
 }
 
 #Welcome h1 {
-	font-weight: 100 !important;
+	font-weight: 300 !important;
 }
 
 #Welcome p {
-	font-weight: 200;
+	font-weight: 300;
 }
 
 #Welcome p a {
@@ -190,7 +190,7 @@ p {
 }
 .prize-label{
 	font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0px;
     margin-top: 10px;
 	color: #4e4946;
@@ -226,12 +226,12 @@ p {
 
 #Contest-Form p{
 	letter-spacing: 0px;
-	font-weight: 200;
+	font-weight: normal;
 	color: #494542;
 }
 
 #Contest-Form p b {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 #Contest-Form .round {
@@ -255,7 +255,7 @@ p {
 }
 
 #Contest-Form input{
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	margin-bottom: 20px;
 	padding-left: 10px;
@@ -296,25 +296,25 @@ p {
 
 ::-webkit-input-placeholder {
  	font-style: italic;
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	color: #7a7a7a;
 }
 :-moz-placeholder { /* older Firefox*/
  	font-style: italic;
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	color: #7a7a7a;
 }
 ::-moz-placeholder { /* Firefox 19+ */ 
 	font-style: italic;
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	color: #7a7a7a;
 } 
 :-ms-input-placeholder { 
  	font-style: italic;
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	color: #7a7a7a;
 }
@@ -330,7 +330,7 @@ p {
 
 
 #Contest-Form textarea{
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 15px;
 	margin: 7px 5px 9px 0px;
 	border-radius: 0px;
@@ -339,7 +339,7 @@ p {
 #mc-embedded-subscribe {
 	width: 150px;
     background-color: #00a19b;
-    font-weight: 200;
+    font-weight: normal;
     font-size: 16px !important;
 	letter-spacing: 0px;
     padding-top: 10px;
@@ -398,7 +398,7 @@ p {
 }
 
 #Newsletter input{
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	margin-bottom: 15px;
 	padding-left: 10px;
@@ -411,7 +411,7 @@ p {
 #Newsletter input[type="submit"] {
 	width: 150px;
     background-color: #00a19b;
-    font-weight: 200;
+    font-weight: normal;
     font-size: 16px;
 	letter-spacing: 0px;
     padding-top: 10px;
@@ -441,7 +441,7 @@ p {
 	padding: 50px;
 	background-color: #00a19b;
 	color: #fff;
-	font-weight: 200;
+	font-weight: normal;
 }
 
 
@@ -452,7 +452,7 @@ p {
 #Important-Links .links a{
 	color: #fff;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: normal;
 	letter-spacing: 0px;
 }
 
@@ -465,7 +465,7 @@ p {
 #Important-Links address, email {
 	color: #fff;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: normal;
 	letter-spacing: 0px;
 }
 
@@ -475,7 +475,7 @@ p {
 
 #Important-Links .sns-label {
 	letter-spacing: 0px;
-    font-weight: 200;
+    font-weight: normal;
     font-size: 18px;
     margin-top: 7px;
 }
@@ -525,7 +525,7 @@ footer {
 
 #Contact-Us p {
 	letter-spacing: 0px;
-	font-weight: 200;
+	font-weight: normal;
 }
 
 #Contact-Us email{
@@ -543,7 +543,7 @@ footer {
 	margin-bottom: 5px;
 }
 #Contact-Us input{
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	letter-spacing: 0px;
 	margin-bottom: 20px;
@@ -560,7 +560,7 @@ footer {
 #Contact-Us input[type="submit"] {
 	width: 150px;
     background-color: #00a19b;
-    font-weight: 200;
+    font-weight: normal;
     font-size: 15px;
 	letter-spacing: 0px;
     padding-top: 10px;
