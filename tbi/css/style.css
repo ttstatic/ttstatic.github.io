@@ -681,7 +681,12 @@ footer {
 		margin-top: 100px;
 	}
 	
-	
+	h1, h2, h3, h4, h5, h6{
+		font-size: 5.9vw !important;
+	}
+	p {
+		font-size: 3.9vw !important;
+	}
  
 }
 
