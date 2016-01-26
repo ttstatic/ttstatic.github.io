@@ -49,7 +49,7 @@ p {
 	background-color: #00a19b;
 	padding: 50px 0;
 	color: #fff;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 }
 
 #Welcome h1 {
@@ -141,7 +141,7 @@ p {
 	border-radius: 0px !important;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 .modal.modal-wide .modal-dialog {
@@ -165,7 +165,7 @@ p {
 .prize-description {
 	font-size: 16px;
     font-weight: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 	line-height: 1.5;
     padding: 0px;
 }
@@ -191,7 +191,7 @@ p {
 .prize-label{
 	font-size: 20px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-top: 10px;
 	color: #4e4946;
 }
@@ -199,7 +199,7 @@ p {
 .prize-list {
 	font-size: 16px;
 	color: #4e4946;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	line-height: 1.5;
 }
 
@@ -225,7 +225,7 @@ p {
 }
 
 #Contest-Form p{
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 	font-weight: 200;
 	color: #494542;
 }
@@ -340,8 +340,8 @@ p {
 	width: 150px;
     background-color: #00a19b;
     font-weight: 200;
-    font-size: 15px;
-	letter-spacing: 2px;
+    font-size: 16px !important;
+	letter-spacing: 0px;
     padding-top: 10px;
     border-radius: 4px;
     padding-bottom: 10px;
@@ -412,8 +412,8 @@ p {
 	width: 150px;
     background-color: #00a19b;
     font-weight: 200;
-    font-size: 15px;
-	letter-spacing: 2px;
+    font-size: 16px;
+	letter-spacing: 0px;
     padding-top: 10px;
     border-radius: 4px;
     padding-bottom: 10px;
@@ -453,7 +453,7 @@ p {
 	color: #fff;
 	font-size: 15px;
 	font-weight: 200;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 
@@ -466,7 +466,7 @@ p {
 	color: #fff;
 	font-size: 15px;
 	font-weight: 200;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 #Important-Links email a{
@@ -474,7 +474,7 @@ p {
 }
 
 #Important-Links .sns-label {
-	letter-spacing: 1px;
+	letter-spacing: 0px;
     font-weight: 200;
     font-size: 18px;
     margin-top: 7px;
@@ -520,38 +520,38 @@ footer {
 }
 
 #Contact-Us h1 {
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 #Contact-Us p {
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	font-weight: 200;
 }
 
 #Contact-Us email{
 	color: #202020;
-	font-weight: 300;
-	letter-spacing: 1px;
+	font-weight: normal;
+	letter-spacing: 0px;
 	padding: 0px;
 	font-size: 17px;
 }
 #Contact-Us address{
 	color: #202020;
-	font-weight: 300;
-	letter-spacing: 1px;
+	font-weight: normal;
+	letter-spacing: 0px;
 	font-size: 17px;
 	margin-bottom: 5px;
 }
 #Contact-Us input{
 	font-weight: 200;
 	font-size: 18px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	margin-bottom: 20px;
 	padding-left: 10px;
 }
 
 #Contact-Us textarea{
-	font-weight: 200;
+	font-weight: normal;
 	font-size: 18px;
 	margin-bottom: 20px;
 	padding-left: 10px;
@@ -562,7 +562,7 @@ footer {
     background-color: #00a19b;
     font-weight: 200;
     font-size: 15px;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
     padding-top: 10px;
     border-radius: 4px;
     padding-bottom: 10px;
@@ -584,13 +584,13 @@ footer {
 #maintenance {
 	padding-top: 100px;
 	padding-bottom: 350px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 #Thankyou {
 	padding-top: 100px;
 	padding-bottom: 350px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 /**--------------**/
