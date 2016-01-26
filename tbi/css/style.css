@@ -392,6 +392,11 @@ p {
 #Newsletter {
 	padding: 50px 0;
 }
+
+#Newsletter h3 {
+	font-weight: normal !important;
+}
+
 #Newsletter a{
 	color: #f94f64;
 	font-weight: 400;
