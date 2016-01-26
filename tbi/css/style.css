@@ -148,7 +148,7 @@ p {
 	width: 60%;
 }
 .modal-wide .modal-body {
-  /**overflow-y: auto;**/
+  	overflow-y: auto;
 }
 
 	.gallery {width: auto; margin: 0 auto 20px auto;}
