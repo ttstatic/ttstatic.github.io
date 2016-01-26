@@ -261,6 +261,38 @@ p {
 	padding-left: 10px;
 }
 
+#Contest-Form input[type=checkbox], input[type=radio]{
+	margin-bottom: 5px;
+    
+}
+
+#Contest-Form label input[type=checkbox], input[type=radio]{
+	color: #4d4d4d;
+	cursor: pointer;
+	display: block;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+
+#Contest-Form .label-align input[type="checkbox"]{
+	margin-top:6px;
+} 
+
+#Contest-Form .label-align span{
+	margin: 0 0 20px 20px;
+	display: block;
+	font-weight: normal;
+}
+
+#Contest-Form .checkbox-left {
+	float: left;
+}
+
+
+
+
 
 ::-webkit-input-placeholder {
  	font-style: italic;
