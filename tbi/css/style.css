@@ -42,6 +42,18 @@ p {
 	max-height: 140px;
 }
 
+a:link{
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
 
 /** WELCOME **/
 
@@ -60,13 +72,25 @@ p {
 	font-weight: 300;
 }
 
-#Welcome p a {
+#Welcome a{
 	color: #fdce40;
 	font-weight: 400;
 }
 
-#Welcome p a:hover{
+#Welcome a:link{
+	text-decoration: none;
+}
+
+#Welcome a:visited{
+	text-decoration: none;
+}
+
+#Welcome a:hover{
 	color: #fff;
+	text-decoration: none;
+}
+
+#Welcome a:active {
 	text-decoration: none;
 }
 
@@ -287,6 +311,10 @@ p {
 	float: left;
 }
 
+#Contest-Form form a:link {
+	text-decoration: none;
+}
+
 
 
 
@@ -397,6 +425,14 @@ p {
 #Newsletter a{
 	color: #f94f64;
 	font-weight: 400;
+}
+
+#Newsletter a:link {
+	text-decoration: none;
+}
+
+#Newsletter a:hover {
+	color: #00a19b;
 }
 
 #Newsletter input{
