@@ -73,7 +73,7 @@ $(document).ready(function () {
 		var txt = $($(this)[0].elements).not("[data-no-serialize]").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
-		//console.log(txt)
+		console.log(txt)
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
