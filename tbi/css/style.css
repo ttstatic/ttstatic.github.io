@@ -69,12 +69,12 @@ a:active {
 }
 
 #Welcome p {
-	font-weight: 300;
+	font-weight: normal;
 }
 
 #Welcome a{
 	color: #fdce40;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 #Welcome a:link{
@@ -291,7 +291,7 @@ a:active {
 	color: #4d4d4d;
 	cursor: pointer;
 	display: block;
-	font-weight: 300;
+	font-weight: normal;
 	line-height: 1.5;
 	margin-bottom: 0;
 }
