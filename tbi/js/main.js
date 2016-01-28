@@ -70,7 +70,7 @@ $(document).ready(function () {
 		var _this = $(this);
 		var url = _this.attr("data-url");
 		// add "data-no-serialize" attribute to any form element that you want to exclude from the serialize method.
-		var txt = $($(this)[0].elements).not("[data-no-serialize], [name='g-recaptcha-response']").serialize();
+		var txt = $($(this)[0].elements).not("[data-no-serialize]").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
 		//console.log(txt)
