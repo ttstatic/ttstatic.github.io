@@ -1,16 +1,24 @@
+$(".modal-wide").on("shown.bs.modal", function() {
+	resizeModalContent()
+});
+	
+$(window).on("load resize", function() {
+	resizeModalContent()
+});
 
-$(".modal-wide").on("load shown.bs.modal", function() {
-	var height = $(this).find(".price-image-wrap").height();
+function resizeModalContent() {
+	var height = $(".price-image-wrap:visible").height();
 	var prevHeight = height;
 	
-	$(this).find(".price-content-wrap").height(height).css("overflow-y", "scroll");
+	$(".price-content-wrap:visible").height(height).css("overflow-y", "scroll");
 	
 	if ( $(this).width() < 992 ) {
-		$(this).find(".price-content-wrap").height("auto");
+		$(".price-content-wrap:visible").height("auto").css("overflow-y", "");
 	} else {
-		$(this).find(".price-content-wrap").height(prevHeight);
+		$(".price-content-wrap:visible").height(prevHeight);
 	}
-});
+}
+
 
 $(document).ready(function () {
 

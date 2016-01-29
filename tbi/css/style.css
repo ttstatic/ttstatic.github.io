@@ -168,10 +168,6 @@ a:active {
 	letter-spacing: 0px;
 }
 
-.modal.modal-wide .modal-dialog {
-	width: 60%;
-}
-
 	.gallery {width: auto; margin: 0 auto 20px auto;}
 	.gallery ul {padding-left: 5px; padding-bottom: 50px;}
 	.gallery li {display: inline; margin-right: 2px;}
@@ -847,6 +843,12 @@ footer {
  * Media Queries
  */
 
+@media screen and  (min-width: 990px) {
+	.modal.modal-wide .modal-dialog {
+		width: 60%;
+	}
+}
+
 @media screen and  (max-width: 1117px) {
 	.prize-sign {
 		width: 200px;
@@ -856,9 +858,6 @@ footer {
 @media screen and  (max-width: 990px) {
 	.prize-sign {
 		width: 150px;
-	}
-	.modal.modal-wide .modal-dialog {
-		width: 60%;
 	}
 	
 	.Contest-Form-question {
