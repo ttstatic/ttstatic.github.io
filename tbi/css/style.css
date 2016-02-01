@@ -70,6 +70,8 @@ a:active {
 
 #Welcome p {
 	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
 }
 
 #Welcome a{
@@ -478,14 +480,16 @@ a:active {
 
 #Brands img {
     vertical-align: middle;
-    max-height: 300px;
-    max-width: 200px;
+    /**max-height: 300px;**/
+    max-width: 150px;
 	margin-bottom: 50px;
+	opacity: 0.5;
 	filter: opacity(0.5) grayscale(100%);
 	-webkit-filter: opacity(0.5) grayscale(100%);
 }
 
 #Brands img:hover{
+	opacity: 1;
 	filter: opacity(1) grayscale(0);
 	transition: -webkit-filter 0.5s;
 	-webkit-filter: opacity(1) grayscale(0);
