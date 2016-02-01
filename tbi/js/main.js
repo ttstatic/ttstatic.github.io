@@ -78,15 +78,15 @@ $(document).ready(function () {
 		var _this = $(this);
 		var url = _this.attr("data-url");
 		// add "data-no-serialize" attribute to any form element that you want to exclude from the serialize method.
-		var txt = $($(this)[0].elements).not("[data-no-serialize]").serialize();
+		var txt = $(_this[0].elements).not("[data-no-serialize]").serialize();
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
-		console.log(txt)
+		//console.log(txt)
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
 			//console.log(formVal)
-			if (formVal[1] == "" && formVal[0] != "NOTE" && formVal[0] != "g-recaptcha-response") {
+			if (formVal[1] == "" && !$("[name='"+formVal[0]+"']").is("[data-not-required]") && formVal[0] != "g-recaptcha-response") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span");
 					input.parent().before("<span class='required'>This field is required.</span>");
