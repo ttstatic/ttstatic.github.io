@@ -543,6 +543,14 @@ a:active {
     margin-top: 7px;
 }
 
+#SNS .col-md-1{
+	padding-left: 0px;
+}
+
+#SNS .col-md-5{
+	padding-left: 0px;
+}
+
 .sns {
 	width: 30px;
 	margin-top: 4px;
