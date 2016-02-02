@@ -872,6 +872,40 @@ footer {
 
 
 /**--------------**/
+#Competition-tc .content{
+	padding: 20px 50px 50px 50px;
+}
+#Competition-tc p{
+	font-size: 16px;
+} 
+
+#Competition-tc p strong{
+	font-size: 16px;
+}
+
+#Competition-tc a {
+	color: #00a19b;
+	text-decoration: none;
+}
+
+#Competition-tc a:link{
+	text-decoration: none;
+}
+
+#Competition-tc a:hover{
+	color: #fbd13f;
+	text-decoration: none;
+}
+
+#Competition-tc a:visited {
+	text-decoration: none;
+}
+
+#Competition-tc a:active {
+	text-decoration: none;
+}
+
+/**--------------**/
 
 @media screen and (max-width: 991px) {
 	#Contest-Form .round {
