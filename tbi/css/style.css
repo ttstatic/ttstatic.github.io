@@ -778,6 +778,64 @@ footer {
 	font-size: 16px;
 }
 
+#About-Us a:link{
+	color: #00a19b;
+	text-decoration: none;
+}
+
+#About-Us a:hover{
+	color: #fbd13f;
+	text-decoration: none;
+}
+
+#About-Us a:visited {
+	text-decoration: none;
+}
+
+#About-Us a:active {
+	text-decoration: none;
+}
+
+
+/**--------------**/
+#Privacy-Policy .content{
+	padding: 20px 50px 50px 50px;
+}
+#Privacy-Policy p{
+	font-size: 16px;
+}
+
+#Privacy-Policy address {
+	padding-left: 10px;
+}
+
+#Privacy-Policy email{
+	color: #333;
+}
+
+
+#Privacy-Policy p strong{
+	font-size: 16px;
+}
+
+#Privacy-Policy a:link{
+	color: #00a19b;
+	text-decoration: none;
+}
+
+#Privacy-Policy a:hover{
+	color: #fbd13f;
+	text-decoration: none;
+}
+
+#Privacy-Policy a:visited {
+	text-decoration: none;
+}
+
+#Privacy-Policy a:active {
+	text-decoration: none;
+}
+
 /**--------------**/
 
 @media screen and (max-width: 991px) {
@@ -834,7 +892,10 @@ footer {
 	
 	#About-Us .content{
 		padding: 20px 20px 50px 20px;
-	}	
+	}
+	#Privacy-Policy .content{
+		padding: 20px 20px 50px 20px;
+	}
 	
 	
 	.wrapper {
