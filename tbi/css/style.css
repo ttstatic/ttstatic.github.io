@@ -769,6 +769,17 @@ footer {
 
 /**--------------**/
 
+/**--------------**/
+#About-Us .content{
+	padding: 20px 50px 50px 50px;
+}
+
+#About-Us p{
+	font-size: 16px;
+}
+
+/**--------------**/
+
 @media screen and (max-width: 991px) {
 	#Contest-Form .round {
 		float: none;
@@ -820,6 +831,10 @@ footer {
 	#Important-Links {
 		padding: 50px 0px 50px 0px;
 	}
+	
+	#About-Us .content{
+		padding: 20px 20px 50px 20px;
+	}	
 	
 	
 	.wrapper {
