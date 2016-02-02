@@ -837,6 +837,41 @@ footer {
 }
 
 /**--------------**/
+#Terms-of-use .content{
+	padding: 20px 50px 50px 50px;
+}
+#Terms-of-use p{
+	font-size: 16px;
+} 
+
+#Terms-of-use p strong{
+	font-size: 16px;
+}
+
+#Terms-of-use a {
+	color: #00a19b;
+	text-decoration: none;
+}
+
+#Terms-of-use a:link{
+	text-decoration: none;
+}
+
+#Terms-of-use a:hover{
+	color: #fbd13f;
+	text-decoration: none;
+}
+
+#Terms-of-use a:visited {
+	text-decoration: none;
+}
+
+#Terms-of-use a:active {
+	text-decoration: none;
+}
+
+
+/**--------------**/
 
 @media screen and (max-width: 991px) {
 	#Contest-Form .round {
