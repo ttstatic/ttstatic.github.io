@@ -505,7 +505,7 @@ a:active {
 #Brands img {
     vertical-align: middle;
     /**max-height: 300px;**/
-    max-width: 150px;
+    max-width: 130px;
 	margin-bottom: 30px;
 	opacity: 0.5;
 	filter: opacity(0.5) grayscale(100%);
