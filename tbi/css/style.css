@@ -824,6 +824,9 @@ footer {
 	font-size: 16px;
 }
 
+#Privacy-Policy a{
+	color: #00a19b;
+}
 #Privacy-Policy a:link{
 	color: #00a19b;
 	text-decoration: none;
