@@ -689,6 +689,12 @@ footer {
 	padding-bottom: 50px;
 }
 
+
+#mce-ENQUIRY-ads {
+    border-radius: 0;
+    box-shadow: none;
+}
+
 #Advertise h1 {
 	letter-spacing: 0px;
 }
@@ -895,7 +901,6 @@ footer {
 	    color: #fbd13f;
 	    text-decoration: none;
 	}
-
 
 /**--------------**/
 #Competition-tc .content{
