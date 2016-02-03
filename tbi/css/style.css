@@ -74,6 +74,10 @@ a:active {
 	line-height: 1.2;
 }
 
+#Welcome sup small {
+	color: #fff;
+}
+
 #Welcome a{
 	color: #fdce40;
 	font-weight: 600;
