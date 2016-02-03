@@ -880,6 +880,22 @@ footer {
 	text-decoration: none;
 }
 
+/* Back */
+
+.back .content-width {
+	padding: 0 50px 20px;
+}
+
+.back-btn {
+    color: #00a19b;
+    text-decoration: none;
+    font-size: 16px;
+}
+	.back-btn:hover {
+	    color: #fbd13f;
+	    text-decoration: none;
+	}
+
 
 /**--------------**/
 #Competition-tc .content{
