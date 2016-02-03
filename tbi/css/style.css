@@ -779,6 +779,11 @@ footer {
 	font-size: 16px;
 }
 
+
+#About-Us a{
+	color: #00a19b;
+	text-decoration: none;
+}
 #About-Us a:link{
 	color: #00a19b;
 	text-decoration: none;
