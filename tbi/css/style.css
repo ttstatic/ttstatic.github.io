@@ -506,7 +506,7 @@ a:active {
     vertical-align: middle;
     /**max-height: 300px;**/
     max-width: 150px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	opacity: 0.5;
 	filter: opacity(0.5) grayscale(100%);
 	-webkit-filter: opacity(0.5) grayscale(100%);
