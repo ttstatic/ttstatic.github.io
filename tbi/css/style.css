@@ -714,10 +714,11 @@ footer {
 }
 #Advertise input{
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	letter-spacing: 0px;
 	margin-bottom: 20px;
 	padding-left: 10px;
+	height:54px;
 }
 
 #Advertise textarea{
