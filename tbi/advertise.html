@@ -71,7 +71,7 @@
 									<input name="COMPANY" type="text" class="input-length required" placeholder="Company" id="mce-COMPANY-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
-									<input name="WEBADDRESS" type="url" class="input-length required" placeholder="Web address" id="mce-WEBADDRESS-ads" value="http://" req>
+									<input name="WEBADDRESS" type="url" class="input-length required" placeholder="Web address" id="mce-WEBADDRESS-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
 									<input name="EMAIL" type="email" class="input-length required" placeholder="Email" id="mce-EMAIL-ads" req>
@@ -197,7 +197,13 @@
 		<!--<script src="http://localhost:35729/livereload.js"></script>-->
 		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
 		
-		
+		<script>
+		 $(function() {
+	        $('.mce-WEBADDRESS-ads').click(function() {
+				$('.mce-WEBADDRESS-ads').text('http://');
+	        });
+	    });
+		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easydropdown.min.js"></script>
 		<script src="./bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
