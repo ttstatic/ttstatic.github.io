@@ -25,7 +25,7 @@ p {
 	}
 }
 
-.line-price {
+.line-prize {
 	background-color: #c3c3c3;
 	padding: 1px 0px 0px 0px;
     width: 90%;
@@ -506,18 +506,15 @@ a:active {
     vertical-align: middle;
     /**max-height: 300px;**/
     max-width: 130px;
-	margin-bottom: 30px;
-	opacity: 0.5;
-	filter: opacity(0.5) grayscale(100%);
-	-webkit-filter: opacity(0.5) grayscale(100%);
+	margin-bottom: 0px;
 }
 
 #Brands img:hover{
-	opacity: 1;
-	filter: opacity(1) grayscale(0);
-	transition: -webkit-filter 0.5s;
-	-webkit-filter: opacity(1) grayscale(0);
-	-webkit-transition: -webkit-filter 0.5s;
+	opacity: 0.7;
+	filter: opacity(0.7);
+	transition: -webkit-filter 0.7s;
+	-webkit-filter: opacity(0.7);
+	-webkit-transition: -webkit-filter 0.7s;
 }
 
 
