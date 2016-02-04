@@ -190,6 +190,9 @@ $(document).ready(function () {
 	// Expand Signup
 	$(".expandNewsLetter").on("click", function() {
 		$.cookie('expandNewsLetter', true, {path: '/'});
+		if ( $.cookie('expandNewsLetter') == "true" ) {
+			$("a[href='#hidden-form']").trigger("click");
+		}
 	});
 	$(".show-form[aria-expanded='true']").on("click", function() {
 		$.cookie('expandNewsLetter', false, {path: '/'});
