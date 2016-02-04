@@ -197,6 +197,9 @@ $(document).ready(function () {
 	$(".show-form[aria-expanded='true']").on("click", function() {
 		$.cookie('expandNewsLetter', false, {path: '/'});
 	});
+	$(".show-form[aria-expanded='false']").on("click", function() {
+		$.cookie('expandNewsLetter', true, {path: '/'});
+	});
 
 });
 
