@@ -74,6 +74,8 @@ $(document).ready(function () {
 		form.find(":checkbox[data-check][req]").each(function(index) {
 			var key = $(this).prop("name");
 			var val = $(this).is(":checked");
+			if (!val)
+				val='';
 			join[index] = key+'='+val;
 		});
 		return join.join("&");
@@ -88,8 +90,10 @@ $(document).ready(function () {
 		var _this = $(this);
 		var url = _this.attr("data-url");
 		// add "data-no-serialize" attribute to any form element that you want to exclude from the serialize method.
-		//var chkTxt = getChkVal(_this);
-		var txt = $(_this[0].elements).not("[data-no-serialize], [data-check]").serialize();
+		
+		var chkTxt = getChkVal(_this);
+		
+		var txt = $(_this[0].elements).not("[data-no-serialize], [data-check]").serialize() + (chkTxt ? '&'+chkTxt : '');
 		
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
@@ -100,7 +104,7 @@ $(document).ready(function () {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
 			//console.log(formVal)
-			//input.addClass("rodan")
+			
 			if (formVal[1] == "" && !$("[name='"+formVal[0]+"']").is("[data-not-required]") && formVal[0] != "g-recaptcha-response") {
 				if (input.prop("tagName") == "SELECT") {
 					input.parent().prev().remove("span.required");
