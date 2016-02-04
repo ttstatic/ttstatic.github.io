@@ -191,7 +191,7 @@ $(document).ready(function () {
 	$(".expandNewsLetter").on("click", function() {
 		$.cookie('expandNewsLetter', true, {path: '/'});
 		if ( $.cookie('expandNewsLetter') == "true" ) {
-			$("a[href='#hidden-form']").trigger("click");
+			$.cookie('expandNewsLetter', false, {path: '/'});
 		}
 	});
 	$(".show-form[aria-expanded='true']").on("click", function() {
