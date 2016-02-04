@@ -188,7 +188,7 @@ $(document).ready(function () {
 	});
 	
 	// Expand Signup
-	$(".expandNewLetter").on("click", function() {
+	$(".expandNewsLetter").on("click", function() {
 		$.cookie('expandNewsLetter', true, {path: '/'});
 	});
 	$(".show-form[aria-expanded='true']").on("click", function() {
