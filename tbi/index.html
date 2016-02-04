@@ -1643,7 +1643,7 @@
 		<!--/ Custom JS /-->
 		<script src="js/main.js"></script>
 		<script>
-			if ( $.cookie('expandNewsLetter') ) {
+			if ( $.cookie('expandNewsLetter') == "true" ) {
 				$("a[href='#hidden-form']").trigger("click");
 			}
 		</script>
