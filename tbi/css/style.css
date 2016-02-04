@@ -615,6 +615,12 @@ footer {
 	padding-bottom: 50px;
 }
 
+#mce-ENQUIRY-cu {
+    border-radius: 0;
+    box-shadow: none;
+	height: 150px;
+}
+
 #Contact-Us h1 {
 	letter-spacing: 0px;
 }
@@ -652,6 +658,7 @@ footer {
 	margin-bottom: 20px;
 	padding-left: 10px;
 	border-radius: 0px;
+	border-color: #ccc;
 }
 #Contact-Us input[type="submit"] {
 	width: 150px;
