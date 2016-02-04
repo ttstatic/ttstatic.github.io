@@ -1646,6 +1646,11 @@
 			if ( $.cookie('expandNewsLetter') == "true" ) {
 				$("a[href='#hidden-form']").trigger("click");
 			}
+			$(".expandNewsLetter").on("click", function() {
+				if ( !$("#hidden-form").is(":visible") ) {
+					$("a[href='#hidden-form']").trigger("click");
+				}
+			});
 		</script>
 	</body>
 </html>
