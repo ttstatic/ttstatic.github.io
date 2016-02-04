@@ -1643,9 +1643,7 @@
 		<!--/ Custom JS /-->
 		<script src="js/main.js"></script>
 		<script>
-			if ( $.cookie('expandNewsLetter') && $("#hidden-form").is(":hidden") ) {
-				$("a[href='#hidden-form']").trigger("click");
-			} else {
+			if ( $.cookie('expandNewsLetter') ) {
 				$("a[href='#hidden-form']").trigger("click");
 			}
 		</script>

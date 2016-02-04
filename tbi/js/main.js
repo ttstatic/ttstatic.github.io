@@ -191,6 +191,9 @@ $(document).ready(function () {
 	$(".expandNewLetter").on("click", function() {
 		$.cookie('expandNewsLetter', true, {path: '/'});
 	});
+	$(".show-form[aria-expanded='true']").on("click", function() {
+		$.cookie('expandNewsLetter', false, {path: '/'});
+	});
 
 });
 
