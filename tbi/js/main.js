@@ -67,7 +67,17 @@ $(document).ready(function () {
 			}
 		});
 	});
-
+	
+	
+	function getChkVal(form) {
+		var join = [];
+		form.find(":checkbox[data-check][req]").each(function(index) {
+			var key = $(this).prop("name");
+			var val = $(this).is(":checked");
+			join[index] = key+'='+val;
+		});
+		return join.join("&");
+	}
 	/*
 	 - Check form elements including SELECT dropdowns if they have values.
 	 Usage:
@@ -78,24 +88,29 @@ $(document).ready(function () {
 		var _this = $(this);
 		var url = _this.attr("data-url");
 		// add "data-no-serialize" attribute to any form element that you want to exclude from the serialize method.
-		var txt = $(_this[0].elements).not("[data-no-serialize]").serialize();
+		//var chkTxt = getChkVal(_this);
+		var txt = $(_this[0].elements).not("[data-no-serialize], [data-check]").serialize();
+		
 		var pair = txt.split("&");
 		var filledCtr = pair.length;
+		
 		//console.log(txt)
+		
 		$.each(pair, function (index) {
 			var formVal = pair[index].split("=");
 			var input = _this.find("[name=" + formVal[0] + "]");
 			//console.log(formVal)
+			//input.addClass("rodan")
 			if (formVal[1] == "" && !$("[name='"+formVal[0]+"']").is("[data-not-required]") && formVal[0] != "g-recaptcha-response") {
 				if (input.prop("tagName") == "SELECT") {
-					input.parent().prev().remove("span");
+					input.parent().prev().remove("span.required");
 					input.parent().before("<span class='required'>This field is required.</span>");
 					input.parent().parent().css({
 						backgroundColor: "#FCF8E3",
 						border: "1px solid #ffffff"
 					});
 				} else {
-					input.parent().find("span").remove();
+					input.parent().find("span.required").remove();
 					input.before("<span class='required'>This field is required.</span>");
 					input.css({
 						backgroundColor: "#FCF8E3",
@@ -107,7 +122,7 @@ $(document).ready(function () {
 					input.parent().prev().remove("span");
 					input.parent().parent().removeAttr("style");
 				} else {
-					input.parent().find("span").remove();
+					input.parent().find("span.required").remove();
 					input.removeAttr("style");
 				}
 				filledCtr -= 1;
@@ -166,6 +181,11 @@ $(document).ready(function () {
 	$('.gallery ul img').click(function(){
 		$(this).closest("ul").find("img").removeClass('selected');
 		$(this).addClass('selected');
+	});
+	
+	// Expand Signup
+	$(".expandNewLetter").click(function() {
+		$("a[href='#hidden-form']").trigger("click")
 	});
 
 });
