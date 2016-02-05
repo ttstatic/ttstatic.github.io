@@ -158,8 +158,12 @@ $(document).ready(function () {
 							_this.find("[type='reset']").trigger("click");
 						}
 					} else {
+						var dataMsq = data.msg;
+						if(dataMsq.indexOf("Please use another email address")>0){
+							dataMsq = dataMsq.substring(0,dataMsq.indexOf("Please use another email address") + 32)
+						}
 						$("#tbi-modal-error-request").modal();
-						$("#tbi-modal-error-request").find(".modal-body p").html(data.msg);
+						$("#tbi-modal-error-request").find(".modal-body p").html(dataMsq);
 					}
 				}
 			})
