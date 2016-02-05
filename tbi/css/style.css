@@ -1061,7 +1061,9 @@ footer {
 	#Brands img {  
 		max-width: 100px; 
 	}
-	
+	.back .content-width {
+		padding: 0 20px 20px;
+	}
 	
 	.wrapper {
 		width: 100%;
