@@ -306,6 +306,8 @@ a:active {
 	font-size: 18px;
 	margin-bottom: 20px;
 	padding-left: 10px;
+	border: 1px solid #ccc;
+    border-radius: 0px;
 }
 
 #Contest-Form input[type=checkbox], input[type=radio]{
@@ -652,6 +654,8 @@ footer {
 	letter-spacing: 0px;
 	margin-bottom: 20px;
 	padding-left: 10px;
+	border: 1px solid #ccc;
+    border-radius: 0px;
 }
 
 #Contact-Us textarea{
@@ -734,6 +738,8 @@ footer {
 	letter-spacing: 0px;
 	margin-bottom: 20px;
 	padding-left: 10px;
+	border: 1px solid #ccc;
+    border-radius: 0px;
 }
 
 #Advertise textarea{
