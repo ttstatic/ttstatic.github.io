@@ -759,7 +759,7 @@ footer {
 	padding-left: 10px;
 	border-radius: 0px;
 }
-#Advertise input[type="submit"] {
+#Advertise input[type="button"] {
 	width: 150px;
     background-color: #00a19b;
     font-weight: normal;
@@ -773,7 +773,7 @@ footer {
 	text-decoration: none;
 }
 
-#Advertise input[type="submit"]:hover{
+#Advertise input[type="button"]:hover{
 	text-decoration: none;
 	background-color: #fbd13f;
 	color: #00a19b;
