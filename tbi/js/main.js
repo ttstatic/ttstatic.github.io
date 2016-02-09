@@ -160,7 +160,7 @@ $(document).ready(function () {
 					} else {
 						var dataMsq = data.msg;
 						if(dataMsq.indexOf("Please use another email address")>0){
-							dataMsq = dataMsq.substring(0,dataMsq.indexOf("Please use another email address") + 32)
+							dataMsq = dataMsq.substring(0,dataMsq.indexOf("Please use another email address") + 32);
 						}
 						$("#tbi-modal-error-request").modal();
 						$("#tbi-modal-error-request").find(".modal-body p").html(dataMsq);

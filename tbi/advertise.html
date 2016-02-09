@@ -29,6 +29,8 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
+		<script src="js/jquery-2.2.0.min.js"></script>
+		<script src="js/mustache.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,6 +39,98 @@
 
 		  ga('create', 'UA-42302910-14', 'auto');
 		  ga('send', 'pageview');
+
+		  jQuery(document).ready(function() {
+
+			var msg;
+			$( "#test" ).load( "email-advertise.html", function( response, status, xhr ) {
+				msg = response;
+			});
+
+		  	$("#mc-embedded-subscribe-ads").click(function() {
+
+	  		if($(".error").css('display') == 'block'){
+  				$(".error").css("display","none");
+  			} 
+
+		  	var BRANDS = jQuery("#mce-BRANDS-ads").val();
+  			var ENQUIRY = jQuery("#mce-ENQUIRY-ads").val();
+  			var FNAME = jQuery("#mce-FNAME-ads").val();
+  			var LNAME = jQuery("#mce-LNAME-ads").val();
+  			var PNUMBER = jQuery("#mce-PNUMBER-ads").val();
+  			var COMPANY = jQuery("#mce-COMPANY-ads").val();
+			var WEBADDRESS =  jQuery("#mce-WEBADDRESS-ads").val();
+  			var EMAIL = jQuery("#mce-EMAIL-ads").val();
+  			var CONFIRMEAD = jQuery("#mce-CONFIRMEAD-ads").val();
+
+  			if(BRANDS.length<1){
+  				$("#spanBrands").css("display","block");
+  			}
+  			if(ENQUIRY.length<1){
+  				$("#spanEnquiry").css("display","block");
+  			}
+  			if(LNAME.length<1){
+  				$("#spanLastName").css("display","block");
+  			}
+  			if(FNAME.length<1){
+  				$("#spanFirstName").css("display","block");
+  			}
+
+  			if(PNUMBER.length<1){
+  				$("#spanPhoneNumber").css("display","block");
+  			}
+
+  			if(COMPANY.length<1){
+  				$("#spanCompany").css("display","block");
+  			}
+
+  			if(WEBADDRESS.length<1){
+  				$("#spanWebAddress").css("display","block");
+  			}
+
+  			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  			if(EMAIL.length<1){
+  				$("#spanEmail").css("display","block");
+  			} else if(regex.test(EMAIL)==false){
+  				$("#spanEmailCorrect").css("display","block");
+  			}
+
+  			if(CONFIRMEAD.length<1){
+  				$("#spanConfirmEmail").css("display","block");
+  			} else if(regex.test(CONFIRMEAD)==false){
+  				$("#spanConfirmEmailCorrect").css("display","block");
+  			}else if (CONFIRMEAD!=EMAIL){
+  				$("#spanConfirmEmailNotMatch").css("display","block");
+  			}
+
+  			if($(".error").css('display') == 'none'){
+  				var data = {
+		  			BRANDS: jQuery("#mce-BRANDS-ads").val(),
+		  			ENQUIRY: jQuery("#mce-ENQUIRY-ads").val(),
+		  			FNAME: jQuery("#mce-FNAME-ads").val(),
+		  			LNAME: jQuery("#mce-LNAME-ads").val(),
+		  			PNUMBER: jQuery("#mce-PNUMBER-ads").val(),
+		  			COMPANY: jQuery("#mce-COMPANY-ads").val(),
+					WEBADDRESS: jQuery("#mce-WEBADDRESS-ads").val(),
+		  			EMAIL: jQuery("#mce-EMAIL-ads").val(),
+		  			CONFIRMEAD: jQuery("#mce-CONFIRMEAD-ads").val()
+		  		};
+
+		  		$.ajax({
+				  type: "POST",
+				  url: "http://localhost:5000/send",
+				  data: {
+				  	subject: "Advertise with us",
+				  	tpl: Mustache.render(msg, data),
+				  	email: "roel.quiambao@tooltwist.com"
+				  },
+				  success: function() {
+				  	window.location.href = "contact-confirmation.html";
+				  }
+				});
+  			}
+			});
+		  });
 
 		</script>
 	</head>
@@ -58,42 +152,54 @@
 					<p>If you are a baby product supplier and would like to have your products listed on The Baby Industry™ or  get more information about our exciting new directory, please complete the form below. Please note you will need to be a supplier/ distributer of baby products.</p>
 
 					<div>
-						<br>
-						<br>
-						
+						<br/>
+						<br/>
+						<br><br>
 						<div class="advertise-form">
 							<div class="col-md-6" style="padding: 0px;">
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanBrands" style="display:none">This field is required.</span>
 									<input name="BRANDS" type="text" class="input-length required" placeholder="Please list your brand/s" id="mce-BRANDS-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanEnquiry" style="display:none">This field is required.</span>
 									<textarea name="ENQUIRY" type="text" class="form-control required" placeholder="Enquiry" id="mce-ENQUIRY-ads" req></textarea>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanFirstName" style="display:none">This field is required.</span>
 									<input name="FNAME" type="text" class="input-label input-length required" placeholder="First Name" id="mce-FNAME-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanLastName" style="display:none">This field is required.</span>
 									<input name="LNAME" type="text" class="input-length required" placeholder="Last Name" id="mce-LNAME-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanPhoneNumber" style="display:none">This field is required.</span>
 									<input name="PNUMBER" type="text" class="input-length required" placeholder="Phone Number" id="mce-PNUMBER-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanCompany" style="display:none">This field is required.</span>
 									<input name="COMPANY" type="text" class="input-length required" placeholder="Company" id="mce-COMPANY-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanWebAddress" style="display:none">This field is required.</span>
 									<input name="WEBADDRESS" type="url" class="input-length required" placeholder="http://" id="mce-WEBADDRESS-ads" eq>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanEmail" style="display:none">This field is required.</span>
+									<span class="required error" id="spanEmailCorrect" style="display:none">Email address is invalid.</span>
 									<input name="EMAIL" type="email" class="input-length required" placeholder="Email" id="mce-EMAIL-ads" req>
 								</div>
 								<div class="mc-field-group" data-required data-content="*">
+									<span class="required error" id="spanConfirmEmail" style="display:none">This field is required.</span>
+									<span class="required error" id="spanConfirmEmailCorrect" style="display:none">Email address is invalid.</span>
+									<span class="required error" id="spanConfirmEmailNotMatch" style="display:none">Email Address not match.</span>
 									<input name="CONFIRMEAD" type="email" class="input-length required" placeholder="Confirm email" id="mce-CONFIRMEAD-ads" req>
 								</div>
 								<br>
 								<br>
 								<center>
-									<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe-ads">
+									<input type="button" value="Submit" name="subscribe" id="mc-embedded-subscribe-ads">
 								</center>
 								
 								<br>
@@ -102,6 +208,8 @@
 						</div>
 					</div>
 				</div>
+				<div id="test" style="display:none">
+			</div>
 			</section>
 		</form>
 		

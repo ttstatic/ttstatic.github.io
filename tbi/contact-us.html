@@ -29,6 +29,8 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+		<script src="js/jquery-2.2.0.min.js"></script>
+		<script src="js/mustache.js"></script>	
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,10 +40,80 @@
 		  ga('create', 'UA-42302910-14', 'auto');
 		  ga('send', 'pageview');
 
+		   jQuery(document).ready(function() {
+		  	
+			var msg;
+			$( "#test" ).load( "email-contactus.html", function( response, status, xhr ) {
+				msg = response;
+			});
+
+
+		  	$("#mc-embedded-subscribe-cu").click(function() {
+
+  			var SUBJECT = jQuery("#mce-SUBJECT-cu").val();
+  			var ENQUIRY = jQuery("#mce-ENQUIRY-cu").val();
+  			var FNAME = jQuery("#mce-FNAME-cu").val();
+  			var PNUMBER = jQuery("#mce-PNUMBER-cu").val();
+  			var POSTALCODE = jQuery("#mce-POSTALCODE").val();
+  			var EMAIL = jQuery("#mce-EMAIL-cu").val();
+  		
+  			if($(".error").css('display') == 'block'){
+  				$(".error").css("display","none");
+  			} 
+
+  			if(SUBJECT.length<1){
+  				$("#spanSubject").css("display","block");
+  			}
+  			if(ENQUIRY.length<1){
+  				$("#spanEnquiry").css("display","block");
+  			}
+  			if(FNAME.length<1){
+  				$("#spanFirstName").css("display","block");
+  			}
+  			if(POSTALCODE.length<1){
+  				$("#spanPostalCode").css("display","block");
+  			}
+
+  			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  			if(EMAIL.length<1){
+  				$("#spanEmail").css("display","block");
+  			} else if(regex.test(EMAIL)==false){
+  				$("#spanEmailCorrect").css("display","block");
+  			}
+
+			if($(".error").css('display') == 'none'){
+				var data = {
+		  			SUBJECT: jQuery("#mce-SUBJECT-cu").val(),
+		  			ENQUIRY: jQuery("#mce-ENQUIRY-cu").val(),
+		  			FNAME: jQuery("#mce-FNAME-cu").val(),
+		  			PNUMBER: jQuery("#mce-PNUMBER-cu").val(),
+		  			POSTALCODE: jQuery("#mce-POSTALCODE").val(),
+		  			EMAIL: jQuery("#mce-EMAIL-cu").val()
+		  		};
+
+
+		  		$.ajax({
+				  type: "POST",
+				  url: "http://localhost:5000/send",
+				  data: {
+				  	subject: "Contact Us",
+				  	tpl: Mustache.render(msg, data),
+				  	email: "roel.quiambao@tooltwist.com"
+				  },
+				  success: function() {
+				  	window.location.href = "contact-confirmation.html";
+				  }
+				});
+			}
+			
+		  	});
+		  });
+
 		</script>
 	</head>
 	<body>
-		
+		<div id="error">
+			</div>
 		<div id="Logo">
 			<a href="index.html"><img src="img/thebabyindustry-logo.png" class="center-block img-responsive"></a>
 		</div>
@@ -52,44 +124,56 @@
 				<h1>
 					Contact us
 				</h1>
-				<br>
-				<address>
-					<strong>Address: </strong> PO BOX 1160, Double Bay 1360 NSW, Australia	
-				</address>
-				<email>
-					<strong>Email: </strong>info@thebabyindustry.com
-				</email>
 				
 				<h1>
 					Send us an enquiry - we would love to hear from you!
 				</h1>
+				<br>
+				<email>
+					<strong>Email: </strong><a href="mailto:info@thebabyindustry.com">info@thebabyindustry.com</a>
+				</email>
+				
+				<address>
+					<strong>Address: </strong> PO BOX 1160, Double Bay 1360 NSW, Australia	
+				</address>
+				
+				
+				
+				
+				<br/><br/><br/><br/><br/>
 				<div class="contact-us-form">
-					<form data-url="http://twistresources.us12.list-manage.com/subscribe/post-json?u=b48ddbcafd914c44e6ed1bfd4&amp;id=17a87f47d7&c=?" action="contact-confirmation.html" data-redirect>
+					<form id="contactUsForm" method="get" >
 						<br>
 						<br>
 						<div class="col-md-6" style="padding: 0px;">
 							<div class="mc-field-group" data-required data-content="*">
+								<span class="required error" id="spanSubject" style="display:none">This field is required.</span>
 								<input name="SUBJECT" type="text" class="input-length required" placeholder="Subject" id="mce-SUBJECT-cu" req>
 							</div>
 							<div class="mc-field-group" data-required data-content="*">
+								<span class="required error" id="spanEnquiry" style="display:none">This field is required.</span>
 								<textarea name="ENQUIRY" type="text" class="form-control required" placeholder="Enquiry" id="mce-ENQUIRY-cu" req></textarea>
 							</div>
 							<div class="mc-field-group" data-required data-content="*">
+								<span class="required error" id="spanFirstName" style="display:none">This field is required.</span>
 								<input name="FNAME" type="text" class="input-length required" placeholder="First Name" id="mce-FNAME-cu" req>
 							</div>
 							<div class="mc-field-group">
 								<input name="PNUMBER" type="tel" class="input-length" placeholder="Phone Number" id="mce-PNUMBER-cu" data-not-required>
 							</div>
 							<div class="mc-field-group" data-required data-content="*">
+								<span class="required error" id="spanPostalCode" style="display:none">This field is required.</span>
 								<input name="POSTALCODE" type="text" class="input-length required" placeholder="Postal Code" id="mce-POSTALCODE" req>
 							</div>
 							<div class="mc-field-group" data-required data-content="*">
+								<span class="required error" id="spanEmail" style="display:none">This field is required.</span>
+								<span class="required error" id="spanEmailCorrect" style="display:none">Email address is invalid.</span>
 								<input name="EMAIL" type="email" class="input-length required email" placeholder="Email" id="mce-EMAIL-cu" req>
 							</div>
 							<br>
 							<br>
 							<center>
-								<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe-cu">
+								<input type="button" value="Submit" name="subscribe" id="mc-embedded-subscribe-cu">
 							</center>
 							<br>
 							<p><a href="index.html" class="back-btn">Back to Homepage</a></p>
@@ -98,6 +182,7 @@
 				</div>
 			</div>
 		</section>
+
 		
 		
 		<!-- bluegreen background bottom part-->
@@ -159,6 +244,8 @@
 				</div>
 			
 			</div>
+			<div id="test" style="display:none">
+			</div>
 		</section>
 	<!--END of bluegreen background bottom part-->
 		
@@ -205,7 +292,6 @@
 
 		<!--<script src="http://localhost:35729/livereload.js"></script>-->
 		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
-		
 		
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easydropdown.min.js"></script>

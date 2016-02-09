@@ -640,14 +640,20 @@ footer {
 	font-weight: normal;
 	letter-spacing: 0px;
 	padding: 0px;
-	font-size: 17px;
+	font-size: 20px;
 	padding-left: 10px;
+}
+#Contact-Us email a{
+	color: #67BAAF;
+}
+#Contact-Us email a:hover{
+	color: #00a19b;
 }
 #Contact-Us address{
 	color: #202020;
 	font-weight: normal;
 	letter-spacing: 0px;
-	font-size: 17px;
+	font-size: 20px;
 	margin-bottom: 5px;
 	padding-left: 10px;
 }
@@ -669,7 +675,7 @@ footer {
 	border-radius: 0px;
 	border-color: #ccc;
 }
-#Contact-Us input[type="submit"] {
+#Contact-Us input[type="button"] {
 	width: 150px;
     background-color: #00a19b;
     font-weight: normal;
@@ -683,7 +689,7 @@ footer {
 	text-decoration: none;
 }
 
-#Contact-Us input[type="submit"]:hover{
+#Contact-Us input[type="button"]:hover{
 	text-decoration: none;
 	background-color: #fbd13f;
 	color: #00a19b;
