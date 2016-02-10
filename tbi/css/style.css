@@ -1067,6 +1067,14 @@ footer {
 	#Brands img {  
 		max-width: 100px; 
 	}
+	
+	#Contact-Us email{
+		font-size: 17px;
+	}
+ 
+	#Contact-Us address{
+		font-size: 17px;
+	}
 	.back .content-width {
 		padding: 0 20px 20px;
 	}
@@ -1085,6 +1093,8 @@ footer {
 	p {
 		font-size: 4.5vw !important;
 	}
+	
+
  
 }
 
