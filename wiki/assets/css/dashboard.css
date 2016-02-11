@@ -161,7 +161,7 @@ h6 small {
 	.logo {
 		margin-left: -20px;
 		margin-right: -20px;
-		margin-bottom: 20px;
+		/*margin-bottom: 20px;*/
 		background-color: #3f3f3f;
 		height: 70px;
 		position: relative;

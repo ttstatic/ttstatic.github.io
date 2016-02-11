@@ -61,8 +61,8 @@ textarea.form-control {
 }
 
 a {
-    -webkit-transition: color .3s ease;
-    transition: color .3s ease;
+    /*-webkit-transition: color .3s ease;
+    transition: color .3s ease;*/
 }
 
 .btn {
