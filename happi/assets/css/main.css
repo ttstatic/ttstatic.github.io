@@ -208,6 +208,29 @@ h1 {
 h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 }
+.navbar-toggle > span.icon-bar {
+    -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(2) {
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(3) {
+    display: none;
+}
+.navbar-toggle:not(.collapsed) > .icon-bar:nth-child(4) {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
 
 /*
  * Media Queries
