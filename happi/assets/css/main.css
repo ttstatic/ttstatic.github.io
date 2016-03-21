@@ -1,0 +1,238 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+/*
+ * Header
+ */
+li.login {
+	padding: 5px 10px 5px;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.navbar-default {
+	background: #FFBD00;
+	border: 0;
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0 1px 3px rgba(0,0,0,.2);
+  -moz-text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+	color: #333;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background: transparent;
+}
+.navbar-brand {
+	padding: 25px 15px;
+	margin-top: -45px;
+	display: block;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+	color: white;
+	display: inline-block;
+}
+.navbar-nav > li > a {
+	padding: 25px 15px;
+}
+.navbar-default .navbar-toggle {
+	border: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: none;
+}
+
+
+
+/*
+ * Content
+ */
+.card {
+	position: relative;
+	padding: 15px;
+	margin-bottom: 15px;
+	background: white;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+.home-video {
+	max-width: 890px;
+	margin: 0 auto;
+}
+.homeSignUp {
+	width: 690px;
+	max-width: 100%;
+	margin: 0 auto 15px;
+	background: whitesmoke;
+}
+.smile-panel {
+	padding: 20px;
+	background: #333;
+	color: white;
+	margin-bottom: 20px;
+}
+.smile-panel p {
+	font-size: 16px;
+	line-height: 28px;
+}
+.smile-counter {
+	font-size: 72px;
+}
+.smile-counter-text {
+	color: #ffbd00;
+}
+.buy-smile {
+	margin-bottom: 20px;
+}
+.buy-smile .smile-package-box {
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+.buy-smile .smile-package-box h1 {
+	font-size: 60px;
+}
+.buy-smile .smile-package-box h4 {
+	font-size: 24px;
+}
+.buy-smile .smile-package-box h3 {
+	font-size: 34px;
+}
+.buy-smile .smile-package-box._1 {
+	background: #dfae19;
+	background: -webkit-linear-gradient(#dfc379,#dfa900);
+	background: -o-linear-gradient(#dfc379,#dfa900);
+	background: -moz-linear-gradient(#dfc379,#dfa900);
+	background: linear-gradient(#dfc379,#dfa900);
+}
+.buy-smile .smile-package-box._2 {
+	background: #2489ae;
+	background: -webkit-linear-gradient(#2994cb,#1e7b8c);
+	background: -o-linear-gradient(#2994cb,#1e7b8c);
+	background: -moz-linear-gradient(#2994cb,#1e7b8c);
+	background: linear-gradient(#2994cb,#1e7b8c);
+}
+.buy-smile .smile-package-box._3 {
+	background: #ba0a3f;
+	background: -webkit-linear-gradient(#da0c49,#9e0937);
+	background: -o-linear-gradient(#da0c49,#9e0937);
+	background: -moz-linear-gradient(#da0c49,#9e0937);
+	background: linear-gradient(#da0c49,#9e0937);
+}
+.normal {
+	text-transform: none;
+}
+.get-free-smile a:hover {
+	text-decoration: none;
+}
+.link-survey {
+	color: #da0c49;
+}
+.link-refer {
+	color: #338080;
+}
+
+
+/*
+ * Footer
+ */
+footer {
+	background: #4D4D4D;
+}
+footer ul li {
+	list-style: none;
+	padding: 5px;
+	display: inline-block;
+}
+footer ul li a {
+	color: white;
+	font-size: 16px;
+	padding: 25px 10px;
+	display: inline-block;
+	text-shadow: 0 1px 3px rgba(0,0,0,.2);
+  -moz-text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+footer ul li a:hover {
+	text-decoration: none;
+	color: #E4A900;
+}
+footer ul.links, footer ul.social {
+	text-align: center;
+}
+
+
+
+/*
+ * Hacks
+ */
+.btn,
+.alert,
+.well,
+.dropdown-menu {
+	border-radius: 0;
+	-moz-border-radius: 0;
+}
+.btn {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-transform: uppercase;
+}
+.btn-default {
+	border: 0;
+}
+.btn-lg, .btn-group-lg > .btn {
+	font-size: 24px;
+}
+h1 {
+	font-size: 60px;
+}
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+}
+
+/*
+ * Media Queries
+ */
+@media screen and (min-width: 767px) {
+	.form-signin {
+		min-width: 250px;
+	}
+	footer ul.links {
+		text-align: left;
+	}
+	footer ul.social {
+		text-align: right;
+	}
+}
+@media screen and (max-width: 767px) {
+	.navbar-brand > img {
+	    display: block;
+	    width: 72px;
+	}
+	.navbar-brand {
+		padding: 15px;
+	}
+	.navbar-toggle {
+		margin-top: -12px;
+		margin-bottom: 30px;
+	}
+}
