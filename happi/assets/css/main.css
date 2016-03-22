@@ -28,8 +28,8 @@ li.login {
 .navbar-default {
 	background: #fff;
 	border: 0;
+	border-top: 5px solid #333;
 	margin-bottom: 0;
-	border-bottom: 1px solid #FFBD00;
 }
 .navbar-default .navbar-nav > li > a {
 	color: #333;
@@ -72,6 +72,7 @@ li.login {
 }
 .navbar-default .navbar-toggle {
 	border: 0;
+	margin-top: 18px;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background: #333;
@@ -176,19 +177,11 @@ li.login {
 .section--cover a {
 	color: black;
 }
-.topbar {
-	padding: 5px;
-	background: #000;
-	color: white;
-}
-.topbar a {
-	color: white;
-}
 .section--about .combator {
 	font-size: 30px;
 }
 .section--signup {
-	background: #2489ae;
+	background: #333;
 	color: white;
 }
 .section--signup label {
@@ -357,15 +350,18 @@ h1, h2, h3, h4, h5 {
 	}
 }
 @media screen and (max-width: 767px) {
-	.navbar-brand > span {
-		display: none;
+	.navbar-default {
+		background: #FFBD00;
+		border-bottom: 1px solid #C59200;
+		border-top: 0;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-
+		border-color: #C59200;
 		text-align: center;
 	}
 	.navbar-brand > img {
 		height: 39px;
+		margin: auto;
 	}
 	.section--cover, .section--about, .section--signup, .section--contact {
 	    padding: 20px 10px;
