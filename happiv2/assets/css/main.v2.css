@@ -178,9 +178,9 @@ li.login {
 	font-weight: bold;
 }
 .section--cover {
-	background: #FFBD00 url('../../assets/images/banner/8.jpeg') no-repeat center center fixed;
+	background: #FFBD00 url('../../assets/images/banner/12.jpg') no-repeat center center fixed;
 	background-size: cover;
-	color: black;
+	color: #000;
 	margin-top: -90px;
 	padding-top: 190px;
 	padding-bottom: 240px;
@@ -431,6 +431,21 @@ h1, h2, h3, h4, h5 {
 	}
 	.form-control {
 		font-size: 16px;
+	}
+	.navbar-default {
+		background: #FFBD00;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background: #333;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #333;
+	}
+	.navbar-default .navbar-nav > li > a::after {
+		display: none;
+	}
+	.navbar-default .navbar-nav > li > a:hover {
+		color: #C59200;
 	}
 }
 
