@@ -297,6 +297,10 @@ footer .follow {
 footer .follow h4 {
 	color: #FFBD00;
 }
+footer .follow .btn-success {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 
 
@@ -424,6 +428,9 @@ h1, h2, h3, h4, h5 {
 	}
 	.section--cover iframe {
 		height: auto;
+	}
+	.form-control {
+		font-size: 16px;
 	}
 }
 
