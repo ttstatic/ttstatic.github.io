@@ -60,19 +60,19 @@
         <div class="col-sm-4 col-md-2 sidebar sidebar-offcanvas">
           <div class="logo"><img src="assets/images/logo/logo-tt.png"/></div>
           <ul class="nav nav-sidebar">
-            <li><a href="/wiki" class="fa fa-home">Home</a>
+            <li><a href="/wiki"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
               <!--a-->
             </li>
             <!--li-->
-            <li><a href="bootstrap" class="fa fa-code">Bootstrap</a>
+            <li><a href="bootstrap"><i class="fa fa-code"></i>&nbsp;&nbsp;Bootstrap</a>
               <!--a-->
             </li>
             <!--li-->
-            <li><a href="plugins" class="fa fa-code">Plugins</a>
+            <li><a href="plugins"><i class="fa fa-code"></i>&nbsp;&nbsp;Plugins</a>
               <!--a-->
             </li>
             <!--li-->
-            <li><a href="outage" class="fa fa-paper-plane">Email Templates</a>
+            <li><a href="outage"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Email Templates</a>
               <!--a-->
             </li>
             <!--li-->
@@ -83,39 +83,45 @@
           <div class="offcanvas-cover"></div>
           <div class="main">
             <!-- content goes here...-->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h1>Materialize</h1>
-              <p>This plugin transforms a simple form element to have a material design UI.</p>
-              <h3>Usage</h3>
-              <p>
-                Download the 
-                "<strong><a href="assets/scripts/plugin/tt_materialize.js" target="_blank" class="text-success">tt_materialize.js</a></strong>" and place it before your ending <code>&lt;body&gt; </code>tag.
-              </p>
-              <!--p-->
-              <p>Also download the "<strong><a href="assets/css/plugin/tt_materialize.css" target="_blank" class="text-success">tt_materialize.css</a></strong>" and place it inside your <code>&lt;head&gt; </code>tag.</p>
-              <!--p--><br/>
-              <h4>Initialize</h4>
-              <p><code>$(inputSelector).materialize()</code></p>
-              <!--p--><br/>
-              <h4>Adding a custom Placeholder</h4>
-              <p><code>&lt;input type="text"</code><code><strong>data-placeholder="Placeholder text..."</strong></code><code>&gt;</code></p>
-              <!--p-->
-            </div>
-            <div class="col-md-6">
-              <h3>Demo</h3>
-              <div class="card">
-                <input type="text" data-placeholder="Type here..."/>
-                <select>
-                  <option> </option>
-                  <option>Opt 1</option>
-                  <option>Opt 2</option>
-                  <option>Opt 3</option>
-                </select>
-                <textarea rows="3" data-placeholder="Type comments here"></textarea>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <p>This plugin transforms a simple form element to have a material design UI.</p>
+                    <h3>Usage</h3>
+                    <p>
+                      Download the 
+                      "<strong><a href="assets/scripts/plugin/tt_materialize.js" target="_blank" class="text-success">tt_materialize.js</a></strong>" and place it before your ending <code>&lt;body&gt; </code>tag.
+                    </p>
+                    <!--p-->
+                    <p>Also download the "<strong><a href="assets/css/plugin/tt_materialize.css" target="_blank" class="text-success">tt_materialize.css</a></strong>" and place it inside your <code>&lt;head&gt; </code>tag.</p>
+                    <!--p--><br/>
+                    <h4>Initialize</h4>
+                    <p><code>$(inputSelector).materialize()</code></p>
+                    <!--p--><br/>
+                    <h4>Adding a custom Placeholder</h4>
+                    <p><code>&lt;input type="text"</code><code><strong>data-placeholder="Placeholder text..."</strong></code><code>&gt;</code></p>
+                    <!--p-->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <h3>Demo</h3>
+                    <input type="text" data-placeholder="Type here..."/>
+                    <select>
+                      <option> </option>
+                      <option>Opt 1</option>
+                      <option>Opt 2</option>
+                      <option>Opt 3</option>
+                    </select>
+                    <textarea rows="3" data-placeholder="Type comments here"></textarea>
+                  </div>
+                  <!--card-->
+                </div>
+                <!--col-->
               </div>
-              <!--card-->
             </div>
-            <!--col-->
           </div>
           <!--main-->
         </div>
