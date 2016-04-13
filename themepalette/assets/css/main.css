@@ -1,0 +1,193 @@
+body {
+  background-color: #F9F9F9; }
+
+.navbar {
+  margin-bottom: 0; }
+  .navbar li.login {
+    padding: 5px 10px 5px; }
+    .navbar li.login form.form-signin {
+      max-width: 100%;
+      min-width: 250px; }
+
+.navbar-brand {
+  padding: 8px 15px; }
+  .navbar-brand img {
+    display: inline-block;
+    margin-right: 5px; }
+  .navbar-brand i {
+    margin-right: 8px; }
+  .navbar-brand span {
+    position: relative; }
+    .navbar-brand span:before {
+      content: 'by ToolTwist';
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 10px;
+      color: #808080;
+      line-height: normal; }
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.navbar-default {
+  background-color: #333;
+  border-color: #ddd; }
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-brand {
+    color: white; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+      color: white; }
+
+aside {
+  display: none; }
+  aside ul {
+    list-style: none;
+    padding-left: 0; }
+    aside ul > li.nav-heading {
+      padding: 25px 25px 10px;
+      text-transform: uppercase; }
+    aside ul > li a:hover {
+      text-decoration: none;
+      background: whitesmoke;
+      color: gray; }
+    aside ul > li ul li a {
+      padding-left: 48px; }
+    aside ul li i {
+      margin-right: 10px; }
+    aside ul li a {
+      display: block;
+      padding: 10px 25px;
+      color: #333;
+      text-decoration: none; }
+
+.wrap {
+  padding-top: 50px; }
+
+.box-placeholder {
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px dashed #dddddd;
+  background: #fafafa;
+  color: #444444; }
+
+.panel-heading a .fa {
+  display: none; }
+
+.panel-heading a:not(.collapsed) .fa-minus {
+  display: inline-block; }
+
+.panel-heading a.collapsed .fa-plus {
+  display: inline-block; }
+
+.list-icon em {
+  font-size: 14px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: 30px; }
+
+.list-icon div:hover em {
+  -webkit-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  -o-transform: scale(3, 3);
+  transform: scale(3, 3); }
+
+.checkbox label {
+  position: relative;
+  vertical-align: middle;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ddd; }
+  .checkbox label:hover {
+    border-color: #91DC5A; }
+  .checkbox label input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .checkbox label input[type="checkbox"]:checked + span.fa-check {
+      display: block; }
+  .checkbox label .fa-check {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 3px;
+    background: #91DC5A;
+    color: white;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
+
+.switch {
+  position: relative;
+  margin: 0;
+  display: inline-block; }
+  .switch input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .switch input[type="checkbox"]:checked + span {
+      display: block; }
+  .switch span {
+    position: absolute;
+    vertical-align: middle;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ddd; }
+    .switch span:hover {
+      border-color: #91DC5A; }
+
+.panel-wrapper .table {
+  margin-bottom: 0; }
+
+.panel-footer .pagination {
+  margin: 0; }
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-header {
+    width: 250px;
+    text-align: center; }
+  .navbar-default .navbar-brand {
+    width: 100%; }
+  aside {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block; }
+  section.content {
+    margin-left: 250px;
+    padding: 10px 20px; } }
