@@ -38,19 +38,15 @@ body {
     background: none !important; }
   .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(2) {
     -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
     transform-origin: top left;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
   .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(3) {
     display: none; }
   .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(4) {
     -webkit-transform-origin: left bottom;
-    -ms-transform-origin: left bottom;
     transform-origin: left bottom;
     -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    -ms-transform: rotate(-45deg) translateY(6px) translateX(-6px);
     transform: rotate(-45deg) translateY(6px) translateX(-6px); }
 
 .form-signin input[type="email"] {
@@ -74,33 +70,32 @@ body {
     .navbar-default .navbar-brand:focus {
       color: white; }
 
-aside {
-  display: none; }
-  aside ul {
-    list-style: none;
-    padding-left: 0; }
-    aside ul > li.nav-heading {
-      padding: 25px 25px 10px;
-      text-transform: uppercase; }
-    aside ul > li a:hover {
+aside ul {
+  list-style: none;
+  padding-left: 0; }
+  aside ul > li.nav-heading {
+    padding: 25px 25px 10px;
+    text-transform: uppercase; }
+  aside ul > li > a {
+    display: block;
+    padding: 10px 25px;
+    color: #333;
+    text-decoration: none; }
+    aside ul > li > a:focus {
+      text-decoration: none;
+      color: #333; }
+    aside ul > li > a:hover {
       text-decoration: none;
       background: whitesmoke;
       color: gray; }
-    aside ul > li ul li a {
-      padding-left: 48px; }
-    aside ul li i {
-      margin-right: 10px; }
-    aside ul li a {
-      display: block;
-      padding: 10px 25px;
-      color: #333;
-      text-decoration: none; }
-      aside ul li a:focus {
-        text-decoration: none;
-        color: #333; }
+  aside ul > li i {
+    margin-right: 10px; }
+  aside ul > li ul li a {
+    padding-left: 48px; }
 
 .wrap {
-  padding-top: 50px; }
+  padding-top: 50px;
+  background: #F9F9F9; }
 
 .box-placeholder {
   margin-bottom: 15px;
@@ -125,18 +120,13 @@ aside {
   margin: 0;
   display: inline-block;
   text-align: center;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
   line-height: 30px; }
 
-.list-icon div {
-  display: inline-block; }
-  .list-icon div:hover i {
-    -webkit-transform: scale(3, 3);
-    -ms-transform: scale(3, 3);
-    -o-transform: scale(3, 3);
-    transform: scale(3, 3); }
+.list-icon div:hover i {
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3); }
 
 .panel-wrapper .table {
   margin-bottom: 0; }
@@ -149,21 +139,12 @@ aside {
   margin-right: 10px; }
 
 .checkbox.cus span, .radio.cus span {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px; }
 
 .checkbox.cus-rounded span, .radio.cus-rounded span {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%; }
 
 .radio.cus span {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%; }
 
 .checkbox.cus label, .checkbox.cus-rounded label, .radio.cus label, .radio.cus-rounded label {
@@ -184,19 +165,16 @@ aside {
       .checkbox.cus label input:checked + span::before, .checkbox.cus-rounded label input:checked + span::before, .radio.cus label input:checked + span::before, .radio.cus-rounded label input:checked + span::before {
         display: block; }
     .checkbox.cus label input:disabled + span, .checkbox.cus-rounded label input:disabled + span, .radio.cus label input:disabled + span, .radio.cus-rounded label input:disabled + span {
-      background: #ddd;
+      background: #DDDDDD;
       border: 0; }
   .checkbox.cus label span, .checkbox.cus-rounded label span, .radio.cus label span, .radio.cus-rounded label span {
-    border: 1px solid #ddd;
+    border: 1px solid #DDDDDD;
     vertical-align: middle;
     margin-right: 5px;
     width: 22px;
     height: 22px;
-    -webkit-transition: all ease-in-out .2s;
-    -moz-transition: all ease-in-out .2s;
-    -ms-transition: all ease-in-out .2s;
-    -o-transition: all ease-in-out .2s;
-    transition: all ease-in-out .2s; }
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s; }
     .checkbox.cus label span::before, .checkbox.cus-rounded label span::before, .radio.cus label span::before, .radio.cus-rounded label span::before {
       display: none;
       padding: 4px;
@@ -209,19 +187,11 @@ aside {
   display: inline-block;
   width: 44px;
   height: 22px;
-  background: white;
-  -webkit-box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  background: #FFFFFF;
   box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3); }
   .switch.rounded {
-    -webkit-border-radius: 11px;
-    -moz-border-radius: 11px;
-    -ms-border-radius: 11px;
     border-radius: 11px; }
   .switch.rounded span {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%;
     width: 18px;
     height: 18px;
@@ -241,7 +211,7 @@ aside {
       right: 0;
       left: auto;
       background: #91DC5A;
-      outline: 1px solid #84D04D; }
+      outline: 1px solid #83d845; }
   .switch span {
     position: absolute;
     left: 0;
@@ -250,13 +220,84 @@ aside {
     vertical-align: middle;
     width: 22px;
     height: 100%;
-    background: #ddd;
+    background: #DDDDDD;
     cursor: pointer;
-    outline: 1px solid #D4D4D4; }
+    outline: 1px solid #d0d0d0; }
     .switch span::before {
       display: block;
       content: "| |";
       color: white; }
+
+/*=============================================*
+ * Charts
+ *=============================================*/
+.chart.stack-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+  align-items: flex-start; }
+  .chart.stack-wrap .stack.selected {
+    -webkit-flex: 1 100%;
+    -ms-flex: 1 100%;
+    -webkit-box-flex: 1;
+            flex: 1 100%; }
+  .chart.stack-wrap .stack:not(.selected) {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    -webkit-box-flex: 1;
+            flex: 1; }
+
+.chart section canvas {
+  width: 100% !important; }
+
+.chart .chart-elem.selected .chart-head a:before {
+  content: "\f00d"; }
+
+.chart .chart-elem:not(.selected) a:before {
+  content: "\f065"; }
+
+.chart-head {
+  margin-bottom: 20px;
+  text-align: right; }
+
+.chart-head a {
+  text-decoration: none; }
+
+/*=============================================*
+ * Charts END
+ *=============================================*/
+.card {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  height: 100%;
+  width: 250px;
+  background-color: #FFFFFF;
+  border-right: 1px solid #DDDDDD;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block; }
 
 @media screen and (min-width: 768px) {
   .navbar .navbar-header {
@@ -264,17 +305,6 @@ aside {
     text-align: center; }
   .navbar-default .navbar-brand {
     width: 100%; }
-  aside {
-    position: fixed;
-    left: 0;
-    top: 50px;
-    height: 100%;
-    width: 250px;
-    background-color: #ffffff;
-    border-right: 1px solid #ddd;
-    overflow-x: hidden;
-    overflow-y: auto;
-    display: block; }
   section.content {
     margin-left: 250px;
     padding: 10px 20px; } }
