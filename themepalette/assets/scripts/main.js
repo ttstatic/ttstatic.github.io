@@ -6,8 +6,6 @@ var Main = (function () {
 	return {
 		init: function () {
 			Main.offcanvas();
-			Main.focusChart();
-      Main.initChart();
 		},
 
 		offcanvas: function () {
