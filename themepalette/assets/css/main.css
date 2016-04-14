@@ -222,7 +222,13 @@ aside {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    outline: 0 !important; }
+    .switch.rounded span::before {
+      content: ""; }
   .switch input {
     opacity: 0;
     -moz-opacity: 0;
@@ -234,7 +240,8 @@ aside {
     .switch input:checked + span {
       right: 0;
       left: auto;
-      background: #91DC5A; }
+      background: #91DC5A;
+      outline: 1px solid #84D04D; }
   .switch span {
     position: absolute;
     left: 0;
@@ -244,7 +251,12 @@ aside {
     width: 22px;
     height: 100%;
     background: #ddd;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: 1px solid #D4D4D4; }
+    .switch span::before {
+      display: block;
+      content: "| |";
+      color: white; }
 
 @media screen and (min-width: 768px) {
   .navbar .navbar-header {
