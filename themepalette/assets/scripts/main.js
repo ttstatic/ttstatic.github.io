@@ -17,6 +17,7 @@ var Main = (function () {
 			$("body").on("click", ".offcanvas-cover", function () {
 				$(".row-offcanvas").removeClass("active");
 				$(".offcanvas-cover").hide();
+				$(".hamburger input").removeAttr("checked");
 			});
 
 		},
