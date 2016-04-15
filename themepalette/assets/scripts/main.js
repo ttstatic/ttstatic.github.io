@@ -14,10 +14,10 @@ var Main = (function () {
 				$(".row-offcanvas").toggleClass("active");
 				$(".offcanvas-cover").toggle();
 			});
-			$("body").on("click", ".offcanvas-cover", function () {
+			$(".offcanvas-cover").click(function () {
 				$(".row-offcanvas").removeClass("active");
-				$(".hamburger input").removeAttr("checked");
 				$(".offcanvas-cover").hide();
+				$(".hamburger input").removeAttr("checked");
 			});
 
 		},

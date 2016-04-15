@@ -13,10 +13,6 @@
   display: none; }
 
 .row-offcanvas {
-  /*background: white;
-		-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
-        background: #e9edf2;*/
   height: 100%; }
 
 [data-toggle="offcanvas"] {

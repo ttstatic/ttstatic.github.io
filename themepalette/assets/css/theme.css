@@ -45,35 +45,42 @@
   position: relative;
   padding: 0;
   vertical-align: middle; }
-  .checkbox.cus label:hover span, .checkbox.cus-rounded label:hover span, .radio.cus label:hover span, .radio.cus-rounded label:hover span {
-    border-color: #91DC5A; }
-  .checkbox.cus label input, .checkbox.cus-rounded label input, .radio.cus label input, .radio.cus-rounded label input {
-    opacity: 0;
-    -moz-opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    margin: 0; }
-    .checkbox.cus label input:checked + span, .checkbox.cus-rounded label input:checked + span, .radio.cus label input:checked + span, .radio.cus-rounded label input:checked + span {
-      background: #91DC5A;
-      border: 0; }
-      .checkbox.cus label input:checked + span::before, .checkbox.cus-rounded label input:checked + span::before, .radio.cus label input:checked + span::before, .radio.cus-rounded label input:checked + span::before {
-        display: block; }
-    .checkbox.cus label input:disabled + span, .checkbox.cus-rounded label input:disabled + span, .radio.cus label input:disabled + span, .radio.cus-rounded label input:disabled + span {
-      background: #DDDDDD;
-      border: 0; }
-  .checkbox.cus label span, .checkbox.cus-rounded label span, .radio.cus label span, .radio.cus-rounded label span {
-    border: 1px solid #DDDDDD;
-    vertical-align: middle;
-    margin-right: 5px;
-    width: 22px;
-    height: 22px;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s; }
-    .checkbox.cus label span::before, .checkbox.cus-rounded label span::before, .radio.cus label span::before, .radio.cus-rounded label span::before {
-      display: none;
-      padding: 4px;
-      color: white;
-      text-align: center; }
+
+.checkbox.cus label:hover span, .checkbox.cus-rounded label:hover span, .radio.cus label:hover span, .radio.cus-rounded label:hover span {
+  border-color: #91DC5A; }
+
+.checkbox.cus label input, .checkbox.cus-rounded label input, .radio.cus label input, .radio.cus-rounded label input {
+  opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin: 0; }
+
+.checkbox.cus label input:checked + span, .checkbox.cus-rounded label input:checked + span, .radio.cus label input:checked + span, .radio.cus-rounded label input:checked + span {
+  background: #91DC5A;
+  border: 0; }
+
+.checkbox.cus label input:checked + span::before, .checkbox.cus-rounded label input:checked + span::before, .radio.cus label input:checked + span::before, .radio.cus-rounded label input:checked + span::before {
+  display: block; }
+
+.checkbox.cus label input:disabled + span, .checkbox.cus-rounded label input:disabled + span, .radio.cus label input:disabled + span, .radio.cus-rounded label input:disabled + span {
+  background: #DDDDDD;
+  border: 0; }
+
+.checkbox.cus label span, .checkbox.cus-rounded label span, .radio.cus label span, .radio.cus-rounded label span {
+  border: 1px solid #DDDDDD;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s; }
+
+.checkbox.cus label span::before, .checkbox.cus-rounded label span::before, .radio.cus label span::before, .radio.cus-rounded label span::before {
+  display: none;
+  padding: 4px;
+  color: white;
+  text-align: center; }
 
 /*** switch ***/
 .switch {
@@ -84,51 +91,57 @@
   height: 22px;
   background: #FFFFFF;
   box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3); }
-  .switch.rounded {
-    border-radius: 11px; }
-  .switch.rounded span {
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    margin: 2px;
-    outline: 0 !important; }
-    .switch.rounded span::before {
-      content: ""; }
-  .switch input {
-    opacity: 0;
-    -moz-opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    width: 100%;
-    height: 100%;
-    margin: 0; }
-    .switch input:checked + span {
-      right: 0;
-      left: auto;
-      background: #91DC5A;
-      outline: 1px solid #83d845; }
-  .switch span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    vertical-align: middle;
-    width: 22px;
-    height: 100%;
-    background: #DDDDDD;
-    cursor: pointer;
-    outline: 1px solid #d0d0d0; }
-    .switch span::before {
-      display: block;
-      content: "| |";
-      color: white; }
+
+.switch.rounded {
+  border-radius: 11px; }
+
+.switch.rounded span {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  outline: 0 !important; }
+
+.switch.rounded span::before {
+  content: ""; }
+
+.switch input {
+  opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.switch input:checked + span {
+  right: 0;
+  left: auto;
+  background: #91DC5A;
+  outline: 1px solid #83d845; }
+
+.switch span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  vertical-align: middle;
+  width: 22px;
+  height: 100%;
+  background: #DDDDDD;
+  cursor: pointer;
+  outline: 1px solid #d0d0d0; }
+
+.switch span::before {
+  display: block;
+  content: "| |";
+  color: white; }
 
 .hamburger {
   font: inherit;
   display: inline-block;
   overflow: visible;
   margin: 0;
-  cursor: pointer;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
   -webkit-transition-duration: .15s;
@@ -143,7 +156,14 @@
   background-color: transparent;
   position: relative; }
 
-.hamburger input {
+.hamburger .hamburger-box {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 25px 10px;
+  width: 40px; }
+
+.hamburger .hamburger-box input {
   opacity: 0;
   -moz-opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -154,19 +174,18 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  z-index: 3; }
+  z-index: 3;
+  cursor: pointer; }
 
-.hamburger-box {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 25px 10px;
-  width: 40px; }
+.hamburger .hamburger-box input:checked + .hamburger-inner:before {
+  -webkit-transform: translate3d(-4px, 5px, 0) rotate(-45deg) scaleX(0.7);
+  transform: translate3d(-4px, 5px, 0) rotate(-45deg) scaleX(0.7); }
 
-.hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before {
-  background-color: #fff; }
+.hamburger .hamburger-box input:checked + .hamburger-inner:after {
+  -webkit-transform: translate3d(-4px, -5px, 0) rotate(45deg) scaleX(0.7);
+  transform: translate3d(-4px, -5px, 0) rotate(45deg) scaleX(0.7); }
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+.hamburger .hamburger-box .hamburger-inner, .hamburger .hamburger-box .hamburger-inner:before, .hamburger .hamburger-box .hamburger-inner:after {
   position: absolute;
   width: 20px;
   height: 3px;
@@ -180,27 +199,19 @@
   transition-property: transform, -webkit-transform;
   transition-property: transform,-webkit-transform;
   border-radius: 4px;
-  background-color: #000; }
+  background-color: #FFF; }
 
-.hamburger-inner {
+.hamburger .hamburger-box .hamburger-inner {
   top: 50%;
   display: block;
   margin-top: -2px; }
 
-.hamburger-inner:after, .hamburger-inner:before {
+.hamburger .hamburger-box .hamburger-inner:before, .hamburger .hamburger-box .hamburger-inner:after {
   display: block;
   content: ''; }
 
-.hamburger-inner:before {
+.hamburger .hamburger-box .hamburger-inner:before {
   top: -10px; }
 
-.hamburger-inner:after {
+.hamburger .hamburger-box .hamburger-inner:after {
   bottom: -10px; }
-
-.hamburger .hamburger-box input:checked + .hamburger-inner:before {
-  -webkit-transform: translate3d(-4px, 5px, 0) rotate(-45deg) scaleX(0.7);
-  transform: translate3d(-4px, 5px, 0) rotate(-45deg) scaleX(0.7); }
-
-.hamburger .hamburger-box input:checked + .hamburger-inner:after {
-  -webkit-transform: translate3d(-4px, -5px, 0) rotate(45deg) scaleX(0.7);
-  transform: translate3d(-4px, -5px, 0) rotate(45deg) scaleX(0.7); }
