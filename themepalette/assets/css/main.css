@@ -78,17 +78,23 @@ aside ul li a {
   color: #333;
   text-decoration: none; }
 
-aside ul li a:hover, aside ul li a:focus {
+aside ul li a:hover {
   text-decoration: none;
   color: #333;
   background-color: #B2EF85; }
+
+aside ul li a:focus {
+  text-decoration: none;
+  background-color: none; }
 
 .master-wrapper {
   overflow-x: hidden; }
 
 .wrap {
   padding-top: 50px;
-  background: #F9F9F9; }
+  background: #F9F9F9;
+  width: 100%;
+  height: 100%; }
 
 .box-placeholder {
   margin-bottom: 15px;
@@ -185,10 +191,10 @@ aside {
   position: fixed;
   left: 0;
   top: 0;
-  margin-top: 50px;
+  padding-top: 50px;
   height: 100%;
   width: 250px;
-  background-color: #FFFFFF;
+  background-color: #E8EBEC;
   border-right: 1px solid #DDDDDD;
   overflow-x: hidden;
   overflow-y: auto;
