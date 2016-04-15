@@ -182,7 +182,8 @@ aside {
   display: block; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 @media screen and (min-width: 768px) {
   .navbar .navbar-header {
@@ -192,6 +193,4 @@ footer {
     width: 100%; }
   section.content, footer {
     margin-left: 250px;
-    padding: 10px 20px; }
-  footer {
-    padding: 20px; } }
+    padding: 10px 20px; } }
