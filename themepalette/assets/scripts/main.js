@@ -12,7 +12,7 @@ var Main = (function () {
 
 			$("body").on("click", "[data-toggle='offcanvas']", function () {
 				$(".row-offcanvas").toggleClass("active");
-				$(".offcanvas-cover").show();
+				$(".offcanvas-cover").toggle();
 			});
 			$("body").on("click", ".offcanvas-cover", function () {
 				$(".row-offcanvas").removeClass("active");

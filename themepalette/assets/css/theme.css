@@ -1,0 +1,133 @@
+.navbar-default {
+  background-color: #333;
+  border-color: #ddd; }
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-brand {
+    color: white; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+      color: white; }
+
+.navbar-toggle {
+  border: none;
+  margin-right: 5px; }
+  .navbar-toggle > span.icon-bar {
+    -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white !important; }
+  .navbar-toggle:focus, .navbar-toggle:hover, .navbar-toggle:active {
+    background: none !important; }
+  .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(2) {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(3) {
+    display: none; }
+  .navbar-toggle:not(.collapsed) > .icon-bar:nth-child(4) {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    transform: rotate(-45deg) translateY(6px) translateX(-6px); }
+
+.card {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+
+.checkbox.cus-inline, .radio.cus-inline {
+  display: inline-block;
+  margin-right: 10px; }
+
+.checkbox.cus span, .radio.cus span {
+  border-radius: 3px; }
+
+.checkbox.cus-rounded span, .radio.cus-rounded span {
+  border-radius: 50%; }
+
+.radio.cus span {
+  border-radius: 50%; }
+
+.checkbox.cus label, .checkbox.cus-rounded label, .radio.cus label, .radio.cus-rounded label {
+  position: relative;
+  padding: 0;
+  vertical-align: middle; }
+  .checkbox.cus label:hover span, .checkbox.cus-rounded label:hover span, .radio.cus label:hover span, .radio.cus-rounded label:hover span {
+    border-color: #91DC5A; }
+  .checkbox.cus label input, .checkbox.cus-rounded label input, .radio.cus label input, .radio.cus-rounded label input {
+    opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    margin: 0; }
+    .checkbox.cus label input:checked + span, .checkbox.cus-rounded label input:checked + span, .radio.cus label input:checked + span, .radio.cus-rounded label input:checked + span {
+      background: #91DC5A;
+      border: 0; }
+      .checkbox.cus label input:checked + span::before, .checkbox.cus-rounded label input:checked + span::before, .radio.cus label input:checked + span::before, .radio.cus-rounded label input:checked + span::before {
+        display: block; }
+    .checkbox.cus label input:disabled + span, .checkbox.cus-rounded label input:disabled + span, .radio.cus label input:disabled + span, .radio.cus-rounded label input:disabled + span {
+      background: #DDDDDD;
+      border: 0; }
+  .checkbox.cus label span, .checkbox.cus-rounded label span, .radio.cus label span, .radio.cus-rounded label span {
+    border: 1px solid #DDDDDD;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s; }
+    .checkbox.cus label span::before, .checkbox.cus-rounded label span::before, .radio.cus label span::before, .radio.cus-rounded label span::before {
+      display: none;
+      padding: 4px;
+      color: white;
+      text-align: center; }
+
+.switch {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3); }
+  .switch.rounded {
+    border-radius: 11px; }
+  .switch.rounded span {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    outline: 0 !important; }
+    .switch.rounded span::before {
+      content: ""; }
+  .switch input {
+    opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .switch input:checked + span {
+      right: 0;
+      left: auto;
+      background: #91DC5A;
+      outline: 1px solid #83d845; }
+  .switch span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    vertical-align: middle;
+    width: 22px;
+    height: 100%;
+    background: #DDDDDD;
+    cursor: pointer;
+    outline: 1px solid #d0d0d0; }
+    .switch span::before {
+      display: block;
+      content: "| |";
+      color: white; }
