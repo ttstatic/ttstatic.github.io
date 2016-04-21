@@ -13,11 +13,13 @@ var Main = (function () {
 			$("body").on("click", "[data-toggle='offcanvas']", function () {
 				$(".row-offcanvas").toggleClass("active");
 				$(".offcanvas-cover").toggle();
+				$("body").toggleClass("freeze");
 			});
 			$(".offcanvas-cover").click(function () {
 				$(".row-offcanvas").removeClass("active");
 				$(".offcanvas-cover").hide();
 				$(".hamburger input").removeAttr("checked");
+				$("body").removeClass("freeze");
 			});
 
 		},

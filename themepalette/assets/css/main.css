@@ -4,6 +4,9 @@ body {
 a, a:hover, a:focus, a:active {
   color: #A9A9A9; }
 
+body.freeze {
+  overflow: hidden; }
+
 .navbar {
   margin-bottom: 0; }
 

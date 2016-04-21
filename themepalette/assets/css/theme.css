@@ -231,7 +231,8 @@
 .panel-group .panel,
 .alert,
 .modal-content,
-.nav,
+.navbar,
+.img-thumbnail,
 .nav-tabs > li > a,
 .nav-pills > li > a,
 .well,
@@ -249,7 +250,9 @@
 .tooltip-inner,
 .pagination a,
 pre,
-.checkbox.cus span {
+.checkbox.cus span,
+.list-group-item:first-child,
+.list-group-item:last-child {
   border-radius: 0px; }
 
 .well, .well .form-control,
@@ -544,6 +547,9 @@ pre,
 .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > thead > tr > td.danger, .table > thead > tr > th.danger {
   background-color: #F25F5C;
   color: white; }
+
+.progress-bar {
+  background-color: #50514E; }
 
 .progress-bar-success {
   background-color: #70C1B3; }
