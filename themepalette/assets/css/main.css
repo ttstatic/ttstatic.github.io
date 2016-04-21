@@ -103,15 +103,6 @@ aside ul li a:focus {
   background: #fafafa;
   color: #444444; }
 
-.panel-heading a .fa {
-  display: none; }
-
-.panel-heading a:not(.collapsed) .fa-minus {
-  display: inline-block; }
-
-.panel-heading a.collapsed .fa-plus {
-  display: inline-block; }
-
 .list-icon i {
   font-size: 14px;
   width: 40px;
@@ -195,7 +186,7 @@ aside {
   height: 100%;
   width: 250px;
   background-color: #E8EBEC;
-  border-right: 1px solid #DDDDDD;
+  border-right: 1px solid #DDD;
   overflow-x: hidden;
   overflow-y: auto;
   display: block; }
