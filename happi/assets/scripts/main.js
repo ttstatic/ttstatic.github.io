@@ -4,7 +4,31 @@ var Main = (function () {
 	// object
 	return {
 		init: function () {
-			
+
+			$(window).on("scroll", function() {
+				if ( $(this).scrollTop() > 0 ) {
+					$(".navbar-default").addClass("fixed")
+				} else {
+					$(".navbar-default").removeClass("fixed")
+				}
+			});
+
+			Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
+
+		},
+
+		scroll : function (obj) {
+
+			var body = $("html, body");
+
+			$(obj).on("click", function(e) {
+				e.preventDefault();
+				var selector = $(this).attr("href");
+				var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
+
+				body.stop().animate({scrollTop: objOffset}, '200', 'swing');
+			});
+
 		},
 
 		//--------
