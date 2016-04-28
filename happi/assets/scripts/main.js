@@ -1,15 +1,16 @@
 var Main = (function () {
 	// variables
 	var ctr = 0;
+
 	// object
 	return {
 		init: function () {
 
-			$(window).on("scroll", function() {
+			$(window).on("scroll", function(e) {
 				if ( $(this).scrollTop() > 0 ) {
-					$(".navbar-default").addClass("fixed")
+					$(".navbar-default").addClass("fixed");
 				} else {
-					$(".navbar-default").removeClass("fixed")
+					$(".navbar-default").removeClass("fixed");
 				}
 			});
 
