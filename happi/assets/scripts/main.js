@@ -24,10 +24,20 @@ var Main = (function () {
 
 			$(obj).on("click", function(e) {
 				e.preventDefault();
-				var selector = $(this).attr("href");
-				var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
-
-				body.stop().animate({scrollTop: objOffset}, '200', 'swing');
+				if ( $( $(this).attr("href") ).length ) {
+					console.log("meron");
+					var selector = $(this).attr("href");
+					var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
+					body.stop().animate({scrollTop: objOffset}, '200', 'swing');
+				} else {
+					console.log("wala");
+					var url = $(this).attr("data-url");
+					if( url ) {
+						location.href = url;
+					} else {
+						location.href = "index.html" + $(this).attr("href");
+					}
+				}
 			});
 
 		},
