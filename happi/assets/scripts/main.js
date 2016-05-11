@@ -31,6 +31,7 @@ var Main = (function () {
 					var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
 					body.stop().animate({scrollTop: objOffset}, '200', 'swing');
 				} else {
+					body.stop();
 					console.log("wala");
 					var url = $(this).attr("data-url");
 					if( url ) {
