@@ -16,6 +16,7 @@ var Main = (function () {
 
 			Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
 
+			Main.attachments();
 		},
 
 		scroll : function (obj) {
@@ -40,6 +41,17 @@ var Main = (function () {
 				}
 			});
 
+		},
+
+		attachments : function() {
+			var body = $("html, body");
+			$('.action_download a').click(function(e) {
+				e.stopPropagation();
+				$(this).toggleClass('active');
+			});
+			body.on('click', ':not(.action_download)', function() {
+				$('.action_download a').removeClass('active');
+			});
 		},
 
 		//--------
