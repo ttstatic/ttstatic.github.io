@@ -17,6 +17,8 @@ var Main = (function () {
 			Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
 
 			Main.attachments();
+
+			// Main.mobilePlayVideo();
 		},
 
 		scroll : function (obj) {
@@ -26,16 +28,19 @@ var Main = (function () {
 			$(obj).on("click", function(e) {
 				e.preventDefault();
 				if ( $( $(this).attr("href") ).length ) {
-					console.log("meron");
+					// console.log("meron");
 					var selector = $(this).attr("href");
 					var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
 					body.stop().animate({scrollTop: objOffset}, '200', 'swing');
 				} else {
 					body.stop();
-					console.log("wala");
+					// console.log("wala");
 					var url = $(this).attr("data-url");
+					var toggle = $(this).attr("data-toggle");
 					if( url ) {
 						location.href = url;
+					} else if( toggle ) {
+						e.preventDefault();
 					} else {
 						location.href = "index.html" + $(this).attr("href");
 					}
@@ -53,6 +58,18 @@ var Main = (function () {
 			body.on('click', ':not(.action_download)', function() {
 				$('.action_download a').removeClass('active');
 			});
+		},
+
+		mobilePlayVideo: function() {
+			var iframe = document.getElementById('videoAboutHappi');
+
+			// $f == Froogaloop
+			var player = $f(iframe);
+
+			$('.btn-play-vid-mob').on("click", function() {
+			  player.api("play");
+			});
+
 		},
 
 		//--------

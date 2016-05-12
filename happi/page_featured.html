@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,700,700italic" rel="stylesheet" type="text/css">
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -22,8 +22,9 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#menuNavbar" data-offset="95">
-    <div class="action_download"><a href="javascript:void(0)"><i class="fa fa-download"></i></a>
+    <div class="action_download"><a href="javascript:void(0)"><i class="fa fa-graduation-cap"></i></a>
       <div class="doc"><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Student Group</a><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Campus Ambassador</a></div>
+      <div id="warped"><span class="w0">H</span><span class="w1">a</span><span class="w2">p</span><span class="w3">p</span><span class="w4">i</span><span class="w5"> </span><span class="w6">C</span><span class="w7">o</span><span class="w8">l</span><span class="w9">l</span><span class="w10">e</span><span class="w11">g</span><span class="w12">e</span><span class="w13"> </span><span class="w14">J</span><span class="w15">o</span><span class="w16">b</span><span class="w17">s</span></div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -38,15 +39,32 @@
             <li><a href="#" data-url="page_press.html">Press</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Login &nbsp;<i class="fa fa-user"></i></a>
-              <ul class="dropdown-menu">
-                <li class="login">
-                  <form class="form-signin"><a href="//happi.sg/en/#loginPopup" class="btn btn-success">Login</a>&nbsp;
-                    <button type="button" data-toggle="modal" data-target="#formSignup" class="btn btn-success">Sign up</button>
-                  </form>
-                </li>
-              </ul>
-            </li>
+            <li><a href="#" data-url="//happi.sg/en/#loginPopup">Login</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#formSignup">Sign up</a></li>
+            <!--
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Login &nbsp;
+                i.fa.fa-user
+              //-a
+              ul.dropdown-menu
+                li.login
+                  form.form-signin
+                    //- label.sr-only(for='inputEmail') Email address
+                    //- input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                    //- label.sr-only(for='inputPassword') Password
+                    //- input#inputPassword.form-control(type='password', placeholder='Password', required='')
+                    //- .checkbox
+                    //-   label
+                    //-     input(type='checkbox', value='remember-me')
+                    //-     |  Remember me
+                    a.btn.btn-success(href='//happi.sg/en/#loginPopup') Login
+                    |&nbsp;
+                    button.btn.btn-success(type='button', data-toggle="modal", data-target="#formSignup") Sign up
+                //-li
+              //-ul
+            //-li
+            -->
           </ul>
         </div>
       </div>
@@ -126,6 +144,7 @@
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <link href="assets/vendor/owl.carousel.2/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="//f.vimeocdn.com/js/froogaloop2.min.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/vendor/owl.carousel.2/owl.carousel.min.js" type="text/javascript"></script>
     <script src="assets/vendor/dotdotdot/src/jquery.dotdotdot.min.js" type="text/javascript"></script>

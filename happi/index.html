@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,700,700italic" rel="stylesheet" type="text/css">
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -22,8 +22,9 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#menuNavbar" data-offset="95">
-    <div class="action_download"><a href="javascript:void(0)"><i class="fa fa-download"></i></a>
+    <div class="action_download"><a href="javascript:void(0)"><i class="fa fa-graduation-cap"></i></a>
       <div class="doc"><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Student Group</a><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Campus Ambassador</a></div>
+      <div id="warped"><span class="w0">H</span><span class="w1">a</span><span class="w2">p</span><span class="w3">p</span><span class="w4">i</span><span class="w5"> </span><span class="w6">C</span><span class="w7">o</span><span class="w8">l</span><span class="w9">l</span><span class="w10">e</span><span class="w11">g</span><span class="w12">e</span><span class="w13"> </span><span class="w14">J</span><span class="w15">o</span><span class="w16">b</span><span class="w17">s</span></div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -38,15 +39,32 @@
             <li><a href="#" data-url="page_press.html">Press</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Login &nbsp;<i class="fa fa-user"></i></a>
-              <ul class="dropdown-menu">
-                <li class="login">
-                  <form class="form-signin"><a href="//happi.sg/en/#loginPopup" class="btn btn-success">Login</a>&nbsp;
-                    <button type="button" data-toggle="modal" data-target="#formSignup" class="btn btn-success">Sign up</button>
-                  </form>
-                </li>
-              </ul>
-            </li>
+            <li><a href="#" data-url="//happi.sg/en/#loginPopup">Login</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#formSignup">Sign up</a></li>
+            <!--
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Login &nbsp;
+                i.fa.fa-user
+              //-a
+              ul.dropdown-menu
+                li.login
+                  form.form-signin
+                    //- label.sr-only(for='inputEmail') Email address
+                    //- input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                    //- label.sr-only(for='inputPassword') Password
+                    //- input#inputPassword.form-control(type='password', placeholder='Password', required='')
+                    //- .checkbox
+                    //-   label
+                    //-     input(type='checkbox', value='remember-me')
+                    //-     |  Remember me
+                    a.btn.btn-success(href='//happi.sg/en/#loginPopup') Login
+                    |&nbsp;
+                    button.btn.btn-success(type='button', data-toggle="modal", data-target="#formSignup") Sign up
+                //-li
+              //-ul
+            //-li
+            -->
           </ul>
         </div>
       </div>
@@ -55,17 +73,25 @@
       <div class="section _cover">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-sm-6 col-md-5">
               <h1 class="normal">Hi!</h1>
-              <h3 class="normal">Welcome to Happi, where you answer 5 question surveys to get deals, win prizes, and drive donations to your selected charity or group.</h3><br>
+              <h3 class="normal">Welcome to Happi, where you answer 5 question surveys to get deals, win prizes, and drive funding to your selected charity or group.</h3><br>
               <h4 class="normal"><strong><a href="#formSignup" data-toggle="modal">Sign up now!</a></strong>&nbsp;For your chance to <strong>get</strong>, <strong>give</strong>, and <strong>win</strong>.</h4><br>
               <div class="text-center"><a href="//play.google.com/store/apps/details?id=com.happi" target="_blank"><img alt="Get Happi on Google Play!" src="//proj-happi.s3.amazonaws.com/public/assets/media/20160119032713irpzget-it-on-google-play-vector.png" style="width:150px"></a><a href="//itunes.apple.com/sg/app/happi-singapore/id1066117097?mt=8" target="_blank"><img alt="Get Happi on the Apple Store!" src="//proj-happi.s3.amazonaws.com/public/assets/media/201602120826151c51app-store-logo.png" style="width:150px"></a>
               </div>
             </div>
-            <div class="col-md-7">
-              <div class="visible-xs visible-sm text-center"><br><a href="#mobileVideo" data-toggle="modal"><i class="fa fa-video-camera fa-3x"></i><br>Watch Video</a>
-              </div>
-              <iframe src="//player.vimeo.com/video/164960427?byline=0&amp;portrait=0&amp;badge=0&amp;autoplay=0" width="100%" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="hidden-xs hidden-sm"></iframe>
+            <div class="col-sm-6 col-md-7">
+              <div class="visible-xs"><br></div>
+              <!--
+              .visible-xs.visible-sm.text-center
+                br
+                a.btn-play-vid-mob(href="#mobileVideo", data-toggle="modal")
+                  i.fa.fa-video-camera.fa-3x
+                  br
+                  | Watch Video
+                //- a
+              -->
+              <iframe id="videoAboutHappi" src="//player.vimeo.com/video/164960427?byline=0&amp;portrait=0&amp;badge=0&amp;autoplay=0?api=1" width="100%" height="370" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -83,28 +109,40 @@
           </div>
         </div>
       </div>
+      <div id="sectionSteps" class="section _steps">
+        <div class="container">
+          <h2 class="text-center">Just 3 Things</h2><br><br><br>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-check-circle icon icon_step_1"></i><br>
+              <h4>Select a Cause</h4>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-smile-o icon icon_step_2"></i><br>
+              <h4>Smile at a Product</h4>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-list-alt icon icon_step_3"></i><br>
+              <h4>Take a Survey</h4>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="sectionFeatured" class="section _featured">
         <div class="container">
-          <div class="col-md-5 hidden-xs hidden-sm"><img src="assets/images/img_featured.png" alt="" class="img-responsive"></div>
-          <div class="col-md-7">
-            <h2>Featured Story</h2><br><img src="assets/images/img_featured_story.png" alt="" class="col-xs-12 img-responsive visible-xs">
-            <div class="visible-xs">
-              <div class="clearfix"></div><br>
+          <h2>Featured Story</h2><br>
+          <div class="row">
+            <div class="col-sm-4 col-md-5"><img src="assets/images/img_featured_story.png" alt="" class="img-responsive">
+              <div class="visible-xs visible-sm"><br></div>
             </div>
-            <h4>Khairul Asraf Bin Khairudin</h4>
-            <p><strong>Sport:</strong>&nbsp;Wheelchair Racing</p>
-            <p><strong>Medical Diagnosis:</strong>&nbsp;Paraplegic / Charcot-Marie-Tooth</p>
-            <p><strong>IPC Athletics Classification:</strong>&nbsp;T52</p>
-            <p><strong>Organisation:</strong>&nbsp;Wheelchair Racing Association (Singapore) - WRAS</p>
-            <p><strong>Years in disability sports:</strong>&nbsp;8</p>
-            <p><strong>Status:</strong>&nbsp;Active</p><a href="page_featured">View More</a>
+            <div class="col-sm-8 col-md-7">
+              <h4>Khairul Asraf Bin Khairudin</h4>
+              <p>As an athlete in this wheelchair racing sport scene, I am targeting to compete in the local and international meets. Subsequently, my ultimate goal is to qualify for the Paralympic Games.</p>
+              <p>However, I need a new customised racing wheelchair, which cost at least SGD11, 000.00 complete with all customised accessories and includes freight. Thus, I am making an appeal for either full sponsorship or partial donation to offset the cost of this personal equipment.</p>
+              <p>The current equipment that I am using is an old passed-on item donated by former athletes. It is literally not a “one shoe fits all” type of athlete's personal equipment.</p>
+              <p>The Wheelchair Racing Association (Singapore), WRAS, will bear the cost of my participation in all games which include entry fees, lodging, meals, travel and other contingencies. Hence, I am obliged to get my own customised racing wheelchair in order to compete and perform at the highest level.</p><a href="page_featured">View More</a>
+            </div>
           </div>
         </div>
       </div>
       <div id="sectionOfferings" class="section _offerings">
-        <h2><i class="fa fa-tags fa-3x"></i><span>Offerings of the Month</span>
-          <div class="overlay"></div>
-        </h2>
         <div class="carousel-offerings owl-carousel owl-theme">
           <div><a href="//happi.sg/en/product/view/99" target="_blank"><img src="assets/images/featured/f_1.jpg" class="img-responsive"></a>
           </div>
@@ -288,7 +326,7 @@
       <div id="sectionWinners" class="section _winners">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12">
               <h2>Winners</h2>
               <p>LUCKY DRAW WINNERS</p>
               <p>
@@ -338,23 +376,6 @@
                 </div>
               </div><br>
               <div class="text-center"><a href="page_winners" class="btn btn-warning">View All Winners</a></div>
-            </div>
-            <div class="col-md-5 hidden-xs hidden-sm"><img src="assets/images/img_gift.png" alt="" class="img-responsive"></div>
-          </div>
-        </div>
-      </div>
-      <div id="sectionSteps" class="section _steps">
-        <div class="container">
-          <h2 class="text-center">High-level summary of steps</h2><br><br><br>
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-check-circle icon icon_step_1"></i><br>
-              <h4>Select a Cause</h4>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-smile-o icon icon_step_2"></i><br>
-              <h4>Smile at a Product</h4>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 icon_block"><i class="fa fa-list-alt icon icon_step_3"></i><br>
-              <h4>Take a Survey</h4>
             </div>
           </div>
         </div>
@@ -523,6 +544,7 @@
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <link href="assets/vendor/owl.carousel.2/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="//f.vimeocdn.com/js/froogaloop2.min.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/vendor/owl.carousel.2/owl.carousel.min.js" type="text/javascript"></script>
     <script src="assets/vendor/dotdotdot/src/jquery.dotdotdot.min.js" type="text/javascript"></script>
@@ -554,7 +576,7 @@
         });
         $('.carousel-offerings').owlCarousel({
           loop: true,
-          margin: 10,
+          margin: 0,
           autoplay: true,
           responsiveClass: true,
           nav: true,
@@ -563,6 +585,12 @@
           responsive: {
             0: {
               items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 2
             }
           }
         });
@@ -583,7 +611,7 @@
         
         
         //- ellipsis
-        $(".details-wrap .ell").dotdotdot();
+        //- $(".details-wrap .ell").dotdotdot();
       });
     </script>
   </body>
