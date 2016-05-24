@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="//getbootstrap.com/favicon.ico">
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:400,300italic,300,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet" type="text/css">
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
@@ -28,9 +28,16 @@
         <div class="container">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <!--a.navbar-brand(href='#') Drink Circle--><a href="#" class="navbar-brand"><img src="assets/images/dc_logo.png" alt=""></a>
+            <!--a.navbar-brand(href='#') Drink Circle--><a href="#" class="navbar-brand"><img src="assets/images/logo_e-1.png" alt=""></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
+            <form role="search" class="navbar-form navbar-left">
+              <div class="form-group">
+                <div class="search"><i class="fa fa-search"></i>
+                  <input type="text" placeholder="Search" class="form-control">
+                </div>
+              </div>
+            </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">join</a></li>
               <li><a href="#">sign in</a></li>
@@ -42,50 +49,42 @@
     </header>
     <div class="banner-home">
       <div class="gradient"></div>
-      <h1 class="jumbo"><i class="fa fa-map"></i>discover<i class="fa fa-comments"></i>share<i class="fa fa-smile-o"></i>enjoy</h1>
-      <div class="search">
-        <div class="input-group input-group-lg">
-          <input type="text" placeholder="Search for..." class="form-control"><span class="input-group-btn">
-            <button type="button" class="btn btn-success"><i class="fa fa-search visible-xs visible-sm"></i><span class="hidden-xs hidden-sm">Search</span></button></span>
-        </div>
-      </div>
+      <h1 class="jumbo">Welcome to a new world of drinking...</h1>
+      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Signup with Email</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;Continue with Facebook</a></div>
     </div>
     <section class="site">
+      <h2>Features you'll love...</h2>
       <div class="container">
-        <h2>Welcome to a new world of drinking...</h2>
         <div class="row">
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief"><i class="fa fa-users"></i>
-              <h4>the circle</h4>
-              <p>Set up or join a circle to save big with cheaper group buying prices. Get specials, updates and news. Post, share and comment.</p>
-            </div>
-          </div>
-          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief"><i class="fa fa-lightbulb-o"></i>
-              <h4>drinkadvisor</h4>
-              <p>Get the real deal ratings and reviews on thousands of drinks. Get the opinions of actual drinkers just like you.</p>
-            </div>
-          </div>
-          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief"><i class="fa fa-glass"></i>
+            <div class="brief dd"><img src="assets/images/icon_dd.png" alt="">
               <h4>drinksdirect</h4>
-              <p>Never pay retail again. Buy all your favourite drinks direct from the producers.</p>
+              <p>Never pay retail again when you<br class="hidden-xs">&nbsp;buy direct from the producers.</p><a href="#" target="_blank">learn more</a>
             </div>
           </div>
-        </div>
-        <div class="action">
-          <div class="btn btn-success btn-lg">join us</div>
+          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+            <div class="brief c"><img src="assets/images/icon_c.png" alt="">
+              <h4>the circle</h4>
+              <p>Jump in a buying circle<br class="hidden-xs">&nbsp;and save big.</p><a href="#" target="_blank">learn more</a>
+            </div>
+          </div>
+          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+            <div class="brief di"><img src="assets/images/icon_di.png" alt="">
+              <h4>drinkadvisor</h4>
+              <p>Compare thousands of opinions<br class="hidden-xs">&nbsp;from drinkers just like you.</p><a href="#" target="_blank">learn more</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="activity">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-6">
+          <div class="col-sm-6 col-md-3">
             <div class="type post">
-              <div class="photo"><img src="assets/images/activity/img_post_1.jpg" alt=""></div>
+              <div class="photo"><img src="assets/images/activity/img_post_2.jpg" alt=""></div>
               <div class="content"><a href="#"><strong>Darren Crone</strong></a>
-                <p>Another great day out with the guys and we've had a superb drink recomendation from myPoint friends.</p>
+                <p>Another great day out with the guys and we've had a superb drink...</p>
                 <div class="social"><a href="#">like</a>&nbsp;&middot;&nbsp;<a href="#">comment</a>&nbsp;&middot;&nbsp;<a href="#">share</a></div>
               </div>
               <div class="footer">
@@ -95,7 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6">
+          <div class="col-sm-6 col-md-3">
             <div class="type product">
               <div class="photo"><img src="assets/images/activity/img_product_1.jpg" alt=""></div>
               <div class="content"></div>
@@ -107,21 +106,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6">
-            <div class="type product">
-              <div class="photo"><img src="assets/images/activity/img_product_2.jpg" alt=""></div>
-              <div class="content"></div>
-              <div class="footer">
-                <div class="stats">
-                  <h2>$7.00</h2><strong>Hardys Reserve Merlot</strong>
-                  <p>60 ratings</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6">
+          <div class="col-sm-6 col-md-3">
             <div class="type advisor">
               <div class="photo"><img src="assets/images/activity/img_advisor_1.jpg" alt=""></div>
               <div class="content"><a href="#">
@@ -131,6 +116,18 @@
               <div class="footer">
                 <div class="stats"><span class="timelog">18 hours ago</span>
                   <div class="counter"><span class="reviews">88 likes</span><span class="discount">+ 30% disc.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="type product">
+              <div class="photo"><img src="assets/images/activity/img_product_2.jpg" alt=""></div>
+              <div class="content"></div>
+              <div class="footer">
+                <div class="stats">
+                  <h2>$7.00</h2><strong>Hardys Reserve Merlot</strong>
+                  <p>60 ratings</p>
                 </div>
               </div>
             </div>
