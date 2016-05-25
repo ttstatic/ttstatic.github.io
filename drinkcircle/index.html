@@ -8,12 +8,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link href="//fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Balthazar" rel="stylesheet" type="text/css">
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/unitegallery/dist/css/unite-gallery.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,18 +28,19 @@
         <div class="container">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <!--a.navbar-brand(href='#') Drink Circle--><a href="#" class="navbar-brand"><img src="assets/images/logo_e-1.png" alt=""></a>
+            <!--a.navbar-brand(href='#') Drink Circle--><a href="index" class="navbar-brand"><img src="assets/images/logo_white.png" alt=""></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <form role="search" class="navbar-form navbar-left">
-              <div class="form-group">
-                <div class="search"><i class="fa fa-search"></i>
-                  <input type="text" placeholder="Search" class="form-control">
-                </div>
-              </div>
-            </form>
+            <ul class="nav navbar-nav navbar-left minisite">
+              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect</span></a></li>
+              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle</span></a></li>
+              <li><a href="drinkadvisor" data-flag="drinkadvisor" class="da"><span>drinkadvisor</span></a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">join</a></li>
+              <li class="hidden-xs">
+                <p class="navbar-text">|</p>
+              </li>
               <li><a href="#">sign in</a></li>
             </ul>
           </div>
@@ -49,29 +50,32 @@
     </header>
     <div class="banner home">
       <div class="gradient"></div>
-      <h1 class="jumbo">Welcome to a new world of drinking...</h1>
-      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Signup with Email</a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;Continue with Facebook</a></div>
+      <h1 class="jumbo">Welcome to a new world of drinking</h1>
+      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
+        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i>
+        </div>
+      </div>
     </div>
     <section class="site">
       <h2>Features you'll love...</h2>
       <div class="container">
         <div class="row">
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief dd"><img src="assets/images/icon_dd.png" alt="">
-              <h4>drinksdirect</h4>
-              <p>Never pay retail again when you<br class="hidden-xs">&nbsp;buy direct from the producers.</p><a href="#" target="_blank">learn more</a>
+            <div class="brief dd">
+              <h4><span>drinksdirect</span></h4>
+              <p>Why buy retail when you can<br class="hidden-xs">&nbsp;buy direct from the producers.</p><a href="#" target="_blank">learn more</a>
             </div>
           </div>
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief c"><img src="assets/images/icon_c.png" alt="">
-              <h4>the circle</h4>
-              <p>Jump in a buying circle<br class="hidden-xs">&nbsp;and save big.</p><a href="#" target="_blank">learn more</a>
+            <div class="brief c">
+              <h4><span>the circle</span></h4>
+              <p>Group up with friends<br class="hidden-xs">&nbsp;for volume discounts.</p><a href="#" target="_blank">learn more</a>
             </div>
           </div>
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
-            <div class="brief di"><img src="assets/images/icon_di.png" alt="">
-              <h4>drinkadvisor</h4>
-              <p>Compare thousands of opinions<br class="hidden-xs">&nbsp;from drinkers just like you.</p><a href="#" target="_blank">learn more</a>
+            <div class="brief di">
+              <h4><span>drinkadvisor</span></h4>
+              <p>Thousands of opinions<br class="hidden-xs">&nbsp;from drinkers just like you.</p><a href="#" target="_blank">learn more</a>
             </div>
           </div>
         </div>
@@ -100,8 +104,8 @@
               <div class="content"></div>
               <div class="footer">
                 <div class="stats">
-                  <h2>$130.00</h2><strong>2015 Quail Shiraz</strong>
-                  <p>60 cases sold</p>
+                  <h2>$130.00</h2><strong>Brokenwood</strong><br><span>Four winds Shiraz</span>
+                  <p>$25.99 per bottle</p>
                 </div>
               </div>
             </div>
@@ -170,23 +174,17 @@
     </footer>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
-    <script src="bower_components/unitegallery/dist/js/unitegallery.js" type="text/javascript"></script>
-    <script src="bower_components/unitegallery/dist/themes/tiles/ug-theme-tiles.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
     <!-- External Script goes here...-->
     <script>
+      $.cookie('pageactive', '', {path: '/'});
+      
       $(document).ready(function(){
-        //- jQuery("#feed").unitegallery({
-        //-   gallery_theme: "tiles",
-        //-   tiles_type: "nested",
-        //-   tiles_nested_optimal_tile_width: 300,
-        //-   tile_enable_overlay:false,
-        //- 	tile_enable_icons:false,
-        //-   tile_as_link:true
-        //- });
+        
       });
     </script>
   </body>
