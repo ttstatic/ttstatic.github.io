@@ -143,24 +143,24 @@
               <div class="about">
                 <p class="desc">Brokenwood Shiraz is a ripe and generous Shiraz with lifted cherry and mint aromas nicely balanced with sweet chocolate notes on the nose and a soft rich palate with savoury cedary flavours and fine grained tannins on the finish.</p>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p><strong>variety</strong><br>Shiraz</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p><strong>region</strong><br>Hunter Valley</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p><strong>alcohol</strong><br>14.5%</p>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p><strong>vintage</strong><br>2010</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p><strong>free delivery</strong><br>Australia wide</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-xs-4 col-md-4">
                     <p class="share"><strong>share: <a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></strong></p>
                   </div>
                 </div>
@@ -363,7 +363,7 @@
     <script>
       $(document).ready(function(){
         $(window).on("load resize", function() {
-          if ( $(this).width() > 768 ) {
+          if ( $(this).width() > 991 ) {
             $('section.productdetails').outerHeight(function(){
               var top = $('nav.navbar').outerHeight();
               var bottom = $('footer').outerHeight(true);
@@ -375,7 +375,7 @@
               return $('section.productdetails').height() - $('.bread').outerHeight();
             });
           } else {
-            $('section.productdetails, .product-detail-wrap').height("");
+            $('section.productdetails, .product-detail-wrap, .productdetails .stage').height("");
           }
         });
       });
