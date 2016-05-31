@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>drinkcircle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Balthazar" rel="stylesheet" type="text/css">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      section.site .brief i {
+        right: -34px;
+        left: inherit;
+        margin-right: 0;
+      }
+      section.site .brief.dd h4 span,
+      section.site .brief.c h4 span,
+      section.site .brief.di h4 span {
+        color: #999;
+      }
+      section.site .brief.dd h4 span i {
+        color: #1A93D1;
+      }
+      section.site .brief.c h4 span i {
+        color: #41B54B;
+      }
+      section.site .brief.di h4 span i {
+        color: #E93D3D;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a href="index" class="navbar-brand"><img src="assets/images/logo_white.png" alt=""></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left minisite">
+              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect</span></a></li>
+              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle</span></a></li>
+              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-in">
+              <li><a href="profile" class="info"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-out">
+              <li><a href="#">1 <i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#">join</a></li>
+              <li class="hidden-xs">
+                <p class="navbar-text">|</p>
+              </li>
+              <li><a href="profile">sign in</a></li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse-->
+        </div>
+      </nav>
+    </header>
+    <div class="banner home">
+      <div class="gradient"></div>
+      <h1 class="jumbo">Welcome to a new world of drinking</h1>
+      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
+        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i>
+        </div>
+      </div>
+    </div>
+    <section class="site">
+      <h2>Features you'll love...</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+            <div class="brief dd">
+              <h4><span><i class="fa fa-arrow-circle-right"></i>drinksdirect</span></h4>
+              <p>Why pay retail when you can<br class="hidden-xs">&nbsp;buy direct from the producers.</p><a href="drinksdirect">learn more</a>
+            </div>
+          </div>
+          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+            <div class="brief c">
+              <h4><span><i class="fa fa-circle-o"></i>thecircle</span></h4>
+              <p>Buy with friends<br class="hidden-xs">&nbsp;for great group savings.</p><a href="thecircle">learn more</a>
+            </div>
+          </div>
+          <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+            <div class="brief di">
+              <h4><span><i class="fa fa-question-circle"></i>drinkadvisor</span></h4>
+              <p>Thousands of opinions<br class="hidden-xs">&nbsp;from drinkers just like you.</p><a href="drinkadvisor">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="activity">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-1.png" alt="">
+              <div class="caption">
+                <h1>Drinking wine <br>can improve <br>your sex life</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type post">
+              <div class="shared"><img src="assets/images/activity/image-2.png" alt="">
+                <div class="caption">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/likes/likes_10.png" alt=""></div>
+                      </div></span><span class="form-control"><a href="#"><strong>Taylors Wines </strong></a><br>Matt Damon enjoying a Taylors Merlot on his recent trip to Sydney...<a href="#">See more</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-3.png" alt="">
+              <div class="caption">
+                <h1>Hottest 100 Aussie<br>Craft Beers Of 2015</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-4.png" alt="">
+              <div class="caption">
+                <h1>Why Wine Doesn't<br>Make You Fat</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-5.png" alt="">
+              <div class="caption">
+                <h1>Chat with over<br>1,500 producers</h1>
+                <div class="action"><a href="#">Find your favourites</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type post">
+              <div class="shared"><img src="assets/images/activity/image-6.png" alt="">
+                <div class="caption">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/likes/likes_1.png" alt=""></div>
+                      </div></span><span class="form-control"><a href="seller"><strong>Brokenwood Wines </strong></a><br>RRP $65 End of bin clearance exclusive to our circle followers $29 be quick 200 cases only...<a href="seller">See more</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-7.png" alt="">
+              <div class="caption">
+                <h1>Make Champagne<br>and Sparkling Shiraz<br>in a SodaStream</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story guide"><img src="assets/images/activity/image-8.png" alt="">
+              <div class="caption">
+                <h1>The Guide To<br>Cooking With Wine</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="type story"><img src="assets/images/activity/image-9.png" alt="">
+              <div class="caption">
+                <h1>The Worlds Top 50<br>Most Expensive<br>Wines</h1>
+                <div class="action"><a href="#">Full Story</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="loadmore"><a href="#" target="_blank">show more</a></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
+          <p><img src="assets/images/logo_e-1.png" alt=""></p></small>
+      </div>
+    </footer>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $.cookie('pageactive', '', {path: '/'});
+      
+      $(document).ready(function(){
+        
+      });
+    </script>
+  </body>
+</html>
