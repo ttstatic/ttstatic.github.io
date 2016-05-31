@@ -27,18 +27,21 @@
         left: inherit;
         margin-right: 0;
       }
-      section.site .brief.dd h4 span,
-      section.site .brief.c h4 span,
-      section.site .brief.di h4 span {
+      section.site .brief.dd h4 span a,
+      section.site .brief.c h4 span a,
+      section.site .brief.di h4 span a {
         color: #5a5a5a;
       }
-      section.site .brief.dd h4 span i {
+      section.site .brief.dd h4 span i,
+      section.site .brief.dd h4 span a:hover {
         color: #1A93D1;
       }
-      section.site .brief.c h4 span i {
+      section.site .brief.c h4 span i,
+      section.site .brief.c h4 span a:hover {
         color: #41B54B;
       }
-      section.site .brief.di h4 span i {
+      section.site .brief.di h4 span i,
+      section.site .brief.di h4 span a:hover {
         color: #E93D3D;
       }
     </style>
@@ -53,9 +56,9 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left minisite">
-              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect</span></a></li>
-              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle</span></a></li>
-              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor</span></a></li>
+              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect </span><i class="fa fa-arrow-circle-right"></i></a></li>
+              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle </span><i class="fa fa-circle-o"></i></a></li>
+              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor </span><i class="fa fa-question-circle"></i></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-in">
               <li><a href="profile" class="info"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
@@ -87,19 +90,19 @@
         <div class="row">
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
             <div class="brief dd">
-              <h4><span><i class="fa fa-arrow-circle-right"></i>drinksdirect</span></h4>
+              <h4><span><i class="fa fa-arrow-circle-right"></i><a href="#">drinksdirect</a></span></h4>
               <p>Why pay retail when you can<br class="hidden-xs">&nbsp;buy direct from the producers.</p><a href="drinksdirect">learn more</a>
             </div>
           </div>
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
             <div class="brief c">
-              <h4><span><i class="fa fa-circle-o"></i>thecircle</span></h4>
+              <h4><span><i class="fa fa-circle-o"></i><a href="#">thecircle</a></span></h4>
               <p>Buy with friends<br class="hidden-xs">&nbsp;for great group savings.</p><a href="thecircle">learn more</a>
             </div>
           </div>
           <div class="col-xs-10 col-sm-4 col-md-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
             <div class="brief di">
-              <h4><span><i class="fa fa-question-circle"></i>drinkadvisor</span></h4>
+              <h4><span><i class="fa fa-question-circle"></i><a href="#">drinkadvisor</a></span></h4>
               <p>Thousands of opinions<br class="hidden-xs">&nbsp;from drinkers just like you.</p><a href="drinkadvisor">learn more</a>
             </div>
           </div>
