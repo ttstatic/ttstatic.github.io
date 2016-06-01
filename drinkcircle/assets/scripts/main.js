@@ -16,6 +16,13 @@ var Main = (function () {
 				$.cookie('pageactive', $(this).find('a').attr('data-flag'), {path: '/'});
 			});
 
+			$('a').click(function() {
+				var linksTo = $(this).attr('href');
+				if (linksTo == 'profile' || linksTo == 'seller') {
+					$.cookie("pageactive", "thecircle", {path: "/"});
+				}
+			})
+
 		},
 
 		//--------
