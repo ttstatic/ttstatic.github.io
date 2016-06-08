@@ -9,7 +9,7 @@ var Main = (function () {
 			//Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
 
 			$(window).on('load resize', function() {
-				$('section.marvin').outerHeight(function(){
+				$('section.banner').outerHeight(function(){
 					var win = $(window.top).height();
 					var nav = $('nav.navbar').outerHeight(true);
 					return win - nav;
