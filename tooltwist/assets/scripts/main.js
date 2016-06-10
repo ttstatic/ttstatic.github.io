@@ -16,6 +16,8 @@ var Main = (function () {
 				});
 			});
 
+			$('body').css('opacity', '1');
+
 		},
 
 		scroll : function (obj) {
