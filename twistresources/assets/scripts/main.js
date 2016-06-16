@@ -6,7 +6,7 @@ var Main = (function () {
 	return {
 		init: function () {
 
-			//Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
+			Main.scroll(".navbar-default .navbar-nav > li:not(.dropdown) > a");
 
 			$(window).on('load resize', function() {
 				$('section.banner').outerHeight(function(){
@@ -27,7 +27,7 @@ var Main = (function () {
 				if ( $( $(this).attr("href") ).length ) {
 					// console.log("meron");
 					var selector = $(this).attr("href");
-					var objOffset = $(selector).offset().top - ($(window).width() > 767 ? 95 : 50);
+					var objOffset = $(selector).offset().top;
 					body.stop().animate({scrollTop: objOffset}, '200', 'swing');
 				} else {
 					body.stop();
