@@ -16,42 +16,39 @@
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
     <style></style>
-    
   </head>
   <body>
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <!--a.navbar-brand(href='#') Drink Circle--><a href="index" class="navbar-brand"><img src="assets/images/logo_white.png" alt=""></a>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png" alt=""></a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left minisite">
-              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
-              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
-              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
+              <li><a class="dd" href="drinksdirect.html" data-flag="drinksdirect"><span>drinksdirect</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
+              <li><a class="tc" href="thecircle.html" data-flag="thecircle"><span>the circle</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
+              <li><a class="da" href="drinkadvisor2.html" data-flag="drinkadvisor"><span>drinkadvisor</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-in">
-              <li><a href="profile" class="info"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
-              </li>
-              <li><a href="#" class="notification"><i class="fa fa-globe"></i>
-                  <div class="counter">2</div></a>
-              </li>
+              <li><a class="info" href="profile.html"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
+              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+                  <div class="counter">2</div></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-out">
-              <li><a href="#">1 <i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#">1<i class="fa fa-shopping-cart"></i></a></li>
               <li><a href="#">join</a></li>
               <li class="hidden-xs">
                 <p class="navbar-text">|</p>
               </li>
-              <li><a href="profile">sign in</a></li>
+              <li><a href="profile.html">sign in</a></li>
             </ul>
           </div>
           <!-- /.nav-collapse-->
@@ -62,8 +59,7 @@
       <div class="gradient"></div>
       <h1 class="jumbo">Welcome to a new world of drinking<br><small>rate, review and compare</small></h1>
       <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Signup with Email</a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;Continue with Facebook</a>
-        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i>
-        </div>
+        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i></div>
       </div>
     </div>
     <section class="profile">
@@ -76,14 +72,14 @@
                 <div class="text-center">What drinks have you tried lately?</div>
                 <label>&nbsp;&nbsp;rate a drink&nbsp;&middot;&nbsp;write a review</label>
                 <div class="icon_search">
-                  <input type="text" placeholder="Search products..." class="form-control input-lg"><i class="fa fa-search"></i>
+                  <input class="form-control input-lg" type="text" placeholder="Search products..."><i class="fa fa-search"></i>
                 </div>
               </div>
               <div class="form-group">
                 <div class="text-center">What would you like a rating on?</div>
                 <label>&nbsp;&nbsp;get a rating</label>
                 <div class="icon_search">
-                  <input type="text" placeholder="Search products..." class="form-control input-lg"><i class="fa fa-search"></i>
+                  <input class="form-control input-lg" type="text" placeholder="Search products..."><i class="fa fa-search"></i>
                 </div>
               </div>
             </form>
@@ -100,7 +96,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">93</div>
-                  </div><img src="assets/images/products/bottle8.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle8.png" alt="">
                   <div class="details">
                     <div class="name">Corona Extra<br><small>Beer</small></div>
                     <div class="price">$49.95<small class="text-muted">&nbsp;per case</small></div>
@@ -114,7 +110,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">84</div>
-                  </div><img src="assets/images/products/bottle1.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle1.png" alt="">
                   <div class="details">
                     <div class="name">Gentleman's Agreement<br><small>Margaret River Cabernet Suvignon</small></div>
                     <div class="price">$10.00<small class="text-muted">&nbsp;per bottle</small></div>
@@ -128,7 +124,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">91</div>
-                  </div><img src="assets/images/products/bottle7.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle7.png" alt="">
                   <div class="details">
                     <div class="name">Chivas Regal<br><small>12 Year Old Scotch Whiskey 700ml</small></div>
                     <div class="price">$38.90<small class="text-muted">&nbsp;per case</small></div>
@@ -142,7 +138,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">89</div>
-                  </div><img src="assets/images/products/bottle6.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle6.png" alt="">
                   <div class="details">
                     <div class="name">Sieur d'Arques<br><small>Grande Cuv&eacute;e 1531 de Aimery</small></div>
                     <div class="price">$16.20<small class="text-muted">&nbsp;per bottle</small></div>
@@ -156,7 +152,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">95</div>
-                  </div><img src="assets/images/products/bottle5.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle5.png" alt="">
                   <div class="details">
                     <div class="name">Absolut<br><small>Vodka</small></div>
                     <div class="price">$49.90<small class="text-muted">&nbsp;per bottle</small></div>
@@ -170,7 +166,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">90</div>
-                  </div><img src="assets/images/products/bottle4.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle4.png" alt="">
                   <div class="details">
                     <div class="name">Kim Crawford<br><small>Suvignon Blac</small></div>
                     <div class="price">$14.90<small class="text-muted">&nbsp;per bottle</small></div>
@@ -184,7 +180,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">95</div>
-                  </div><img src="assets/images/products/bottle3.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle3.png" alt="">
                   <div class="details">
                     <div class="name">Heineken<br><small>Lager Stubbies</small></div>
                     <div class="price">$42.95<small class="text-muted">&nbsp;per case</small></div>
@@ -198,7 +194,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">97</div>
-                  </div><img src="assets/images/products/bottle2.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle2.png" alt="">
                   <div class="details">
                     <div class="name">Sticks<br><small>Pinot Noir</small></div>
                     <div class="price">$16.20<small class="text-muted">&nbsp;per bottle</small></div>
@@ -212,7 +208,7 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">92</div>
-                  </div><img src="assets/images/products/bottle9.png" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/bottle9.png" alt="">
                   <div class="details">
                     <div class="name">Tempus Two<br><small>Botrytis Semillon 250ml</small></div>
                     <div class="price">$49.95<small class="text-muted">&nbsp;per bottle</small></div>
@@ -227,8 +223,7 @@
     </section>
     <footer>
       <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
-          <p><img src="assets/images/logo_black.png" alt=""></p></small>
-      </div>
+          <p><img src="assets/images/logo_black.png" alt=""></p></small></div>
     </footer>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -240,7 +235,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
-        
+      
       });
     </script>
   </body>

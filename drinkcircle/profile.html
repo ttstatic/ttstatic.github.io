@@ -16,11 +16,11 @@
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
     <style>
       .logged-in {
         display: block !important;
@@ -29,36 +29,33 @@
         display: none;
       }
     </style>
-    
   </head>
   <body>
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <!--a.navbar-brand(href='#') Drink Circle--><a href="index" class="navbar-brand"><img src="assets/images/logo_white.png" alt=""></a>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png" alt=""></a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left minisite">
-              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
-              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
-              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
+              <li><a class="dd" href="drinksdirect.html" data-flag="drinksdirect"><span>drinksdirect</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
+              <li><a class="tc" href="thecircle.html" data-flag="thecircle"><span>the circle</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
+              <li><a class="da" href="drinkadvisor2.html" data-flag="drinkadvisor"><span>drinkadvisor</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-in">
-              <li><a href="profile" class="info"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
-              </li>
-              <li><a href="#" class="notification"><i class="fa fa-globe"></i>
-                  <div class="counter">2</div></a>
-              </li>
+              <li><a class="info" href="profile.html"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
+              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+                  <div class="counter">2</div></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-out">
-              <li><a href="#">1 <i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#">1<i class="fa fa-shopping-cart"></i></a></li>
               <li><a href="#">join</a></li>
               <li class="hidden-xs">
                 <p class="navbar-text">|</p>
               </li>
-              <li><a href="profile">sign in</a></li>
+              <li><a href="profile.html">sign in</a></li>
             </ul>
           </div>
           <!-- /.nav-collapse-->
@@ -72,10 +69,8 @@
           <div class="row">
             <div class="col-sm-3 col-md-3">
               <div class="photo">
-                <div class="img"><a href="#"><i class="fa fa-camera"></i></a><img src="assets/images/img_advisor_1.jpg" alt="">
-                </div>
-                <div class="name"><span>Andrew Steer&nbsp;</span><sup><a href="#"><i class="fa fa-pencil"></i><span>edit profile</span></a></sup>
-                </div>
+                <div class="img"><a href="#"><i class="fa fa-camera"></i></a><img src="assets/images/img_advisor_1.jpg" alt=""></div>
+                <div class="name"><span>Andrew Steer&nbsp;</span><sup><a href="#"><i class="fa fa-pencil"></i><span>edit profile</span></a></sup></div>
               </div>
             </div>
           </div>
@@ -84,7 +79,7 @@
               <div class="userprofilemenu">
                 <nav class="menu">
                   <ul>
-                    <li><a href="#" class="active">Timeline</a></li>
+                    <li><a class="active" href="#">Timeline</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Friends</a></li>
                     <li><a href="#">Circles</a></li>
@@ -103,17 +98,17 @@
         <div class="row">
           <div class="col-md-3">
             <div class="search circle"><a href="#" target="_blank"><i class="fa fa-search"></i></a>
-              <input type="text" placeholder="search the circle..." class="form-control">
+              <input class="form-control" type="text" placeholder="search the circle...">
             </div>
             <div class="intro">
               <h4>Interests</h4>
               <p><a href="#">Craft Beers</a><br><a href="#">Shiraz</a><br><a href="#">Chadonnay</a><br><a href="#">Cooking Italian food</a><br><a href="#">Golf</a><br><a href="#">Surfing</a></p>
               <hr>
               <div class="info">
-                <p><i class="fa fa-briefcase"></i><span>Works at </span><span class="text-muted">drinkcircle</span></p>
-                <p><i class="fa fa-graduation-cap"></i><span>Studied at </span><span class="text-muted">Pittwater High School</span></p>
-                <p><i class="fa fa-home"></i><span>Lives in </span><span class="text-muted">Palm Beach, New South Wales, Australia</span></p>
-                <p><i class="fa fa-map-marker"></i><span>From </span><span class="text-muted">Sydney, Australia</span></p>
+                <p><i class="fa fa-briefcase"></i><span>Works at</span><span class="text-muted">drinkcircle</span></p>
+                <p><i class="fa fa-graduation-cap"></i><span>Studied at</span><span class="text-muted">Pittwater High School</span></p>
+                <p><i class="fa fa-home"></i><span>Lives in</span><span class="text-muted">Palm Beach, New South Wales, Australia</span></p>
+                <p><i class="fa fa-map-marker"></i><span>From</span><span class="text-muted">Sydney, Australia</span></p>
               </div>
             </div>
             <div class="list_groups groups">
@@ -126,22 +121,19 @@
                       <div class="img">
                         <div class="ring"></div><img src="assets/images/circles/circles_8.png" alt="">
                       </div>
-                    </div></span><span class="form-control"><a href="#"><strong>Adrian Southern</strong></a><br>Brokenwood Shiraz 2010<br>10 case buy<br><strong>3 cases left</strong><a href="#" class="share"><i class="fa fa-share"></i>&nbsp;share</a></span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Adrian Southern</strong></a><br>Brokenwood Shiraz 2010<br>10 case buy<br><strong>3 cases left</strong><a class="share" href="#"><i class="fa fa-share"></i>&nbsp;share</a></span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img">
                         <div class="ring"></div><img src="assets/images/circles/circles_1.png" alt="">
                       </div>
-                    </div></span><span class="form-control"><a href="#"><strong>Sharmaine Stevens </strong></a><br>Corona Extra<br>10 case buy<br><strong>2 cases left</strong><a href="#" class="share"><i class="fa fa-share"></i>&nbsp;share</a></span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Sharmaine Stevens</strong></a><br>Corona Extra<br>10 case buy<br><strong>2 cases left</strong><a class="share" href="#"><i class="fa fa-share"></i>&nbsp;share</a></span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img">
                         <div class="ring"></div><img src="assets/images/circles/circles_7.png" alt="">
                       </div>
-                    </div></span><span class="form-control"><a href="#"><strong>Bayview Golf club </strong></a><br>Chivas Regal<br>1 case buy<br><strong>4 bottles left</strong><a href="#" class="share"><i class="fa fa-share"></i>&nbsp;share</a></span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Bayview Golf club</strong></a><br>Chivas Regal<br>1 case buy<br><strong>4 bottles left</strong><a class="share" href="#"><i class="fa fa-share"></i>&nbsp;share</a></span></div>
               </div>
               <div class="more"><a href="#">See all</a></div>
             </div>
@@ -237,18 +229,15 @@
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/circles/circles_1.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>northern beaches shiraz lovers </strong></a><br>897 members</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>northern beaches shiraz lovers</strong></a><br>897 members</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/circles/circles_2.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>sydney pinot drinkers </strong></a><br>168 members</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>sydney pinot drinkers</strong></a><br>168 members</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/circles/circles_3.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>hunter valley red fans </strong></a><br>753 members</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>hunter valley red fans</strong></a><br>753 members</span></div>
               </div>
             </div>
             <div class="grid_groups friends">
@@ -275,40 +264,31 @@
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="seller"><img src="assets/images/likes/likes_1.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="seller.html"><img src="assets/images/likes/likes_1.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_2.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_2.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_3.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_3.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_4.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_4.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_5.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_5.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_6.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_6.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_7.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_7.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_8.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_8.png" alt=""></a></div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 thumb">
-                      <div class="img"><a href="#"><img src="assets/images/likes/likes_9.png" alt=""></a>
-                      </div>
+                      <div class="img"><a href="#"><img src="assets/images/likes/likes_9.png" alt=""></a></div>
                     </div>
                   </div>
                 </div>
@@ -319,10 +299,9 @@
             <div class="composer">
               <div class="head"><a href="#"><i class="fa fa-pencil"></i>Status</a><a href="#"><i class="fa fa-picture-o"></i>Photo/Video</a><a href="#"><i class="fa fa-calendar-o"></i>Event</a></div>
               <div class="content">
-                <textarea rows="2" class="form-control"></textarea>
+                <textarea class="form-control" rows="2"></textarea>
               </div>
-              <div class="controls"><a href="#"><i class="fa fa-camera"></i></a><a href="#"><i class="fa fa-user-plus"></i></a><a href="#"><i class="fa fa-smile-o"></i></a><a href="#"><i class="fa fa-map-marker"></i></a><a href="#"><i class="fa fa-clock-o"></i></a><a href="#" class="post"><i class="fa fa-send-o"></i>Post</a>
-              </div>
+              <div class="controls"><a href="#"><i class="fa fa-camera"></i></a><a href="#"><i class="fa fa-user-plus"></i></a><a href="#"><i class="fa fa-smile-o"></i></a><a href="#"><i class="fa fa-map-marker"></i></a><a href="#"><i class="fa fa-clock-o"></i></a><a class="post" href="#"><i class="fa fa-send-o"></i>Post</a></div>
             </div>
             <div class="timeline">
               <div class="content">
@@ -330,8 +309,7 @@
                   <div class="user">
                     <div class="img"><img src="assets/images/users/user_3.jpg" alt=""></div><a href="#" target="_blank">Darren Crone</a>
                   </div>
-                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a>
-                  </div>
+                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a></div>
                 </div>
                 <div class="inner">
                   <div class="caption">
@@ -343,36 +321,32 @@
                         <div class="input-group"><span class="input-group-addon">
                             <div class="thumb">
                               <div class="img"><img src="assets/images/likes/likes_1.png" alt=""></div>
-                            </div></span><span class="form-control"><a href="seller"><strong>Brokenwood Wines </strong></a><br>RRP $65 End of bin clearance exclusive to our circle followers $29 be quick 200 cases only...<a href="seller">See more</a></span>
-                        </div>
+                            </div></span><span class="form-control"><a href="seller.html"><strong>Brokenwood Wines</strong></a><br>RRP $65 End of bin clearance exclusive to our circle followers $29 be quick 200 cases only...<a href="seller.html">See more</a></span></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a>
-              </div>
+              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a></div>
               <div class="footer">
                 <div class="comments">
                   <div class="input-group"><span class="input-group-addon">
                       <div class="thumb">
                         <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
-                      </div></span><span class="form-control"><strong><a href="profile">Andrew Steer </a></strong>thanks for the heads up mate I just ordered 3 cases too. Passed it on Phil and Arv as well! Hope they're not too late it's nearly all gone!
-                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;May 15 at 10:55am</small></p></span>
-                  </div>
+                      </div></span><span class="form-control"><strong><a href="profile.html">Andrew Steer</a></strong>thanks for the heads up mate I just ordered 3 cases too. Passed it on Phil and Arv as well! Hope they're not too late it's nearly all gone!
+                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;May 15 at 10:55am</small></p></span></div>
                   <div class="input-group"><span class="input-group-addon">
                       <div class="thumb">
                         <div class="img"><img src="assets/images/users/user_4.jpg" alt=""></div>
-                      </div></span><span class="form-control"><strong><a href="#" target="_blank">Phil Callender </a></strong>thanks Darren just managed to get 2 cases but Arv missed out! Let me know if any other buys like that come up and I'll do the same.
-                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;May 15 at 11:23am</small></p></span>
-                  </div>
+                      </div></span><span class="form-control"><strong><a href="#" target="_blank">Phil Callender</a></strong>thanks Darren just managed to get 2 cases but Arv missed out! Let me know if any other buys like that come up and I'll do the same.
+                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;May 15 at 11:23am</small></p></span></div>
                 </div>
                 <div class="comment">
                   <div class="input-group"><span class="input-group-addon">
                       <div class="thumb">
                         <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
                       </div></span>
-                    <input type="text" placeholder="Write a comment..." class="form-control"><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
+                    <input class="form-control" type="text" placeholder="Write a comment..."><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -383,34 +357,30 @@
                   <div class="user">
                     <div class="img"><img src="assets/images/producers/4pines/logo.jpg" alt=""></div><a href="#" target="_blank">4 Pines Brewing Company</a>
                   </div>
-                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a>
-                  </div>
+                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a></div>
                 </div>
                 <div class="inner">
-                  <div class="caption">
-                  </div>
+                  <div class="caption"></div>
                   <div class="post">
                     <div class="shared"><img src="assets/images/producers/4pines/post1.jpg" alt="">
                       <div class="caption">
                         <div class="input-group"><span class="input-group-addon">
                             <div class="thumb">
                               <div class="img"><img src="assets/images/producers/4pines/logo.jpg" alt=""></div>
-                            </div></span><span class="form-control"><a href="seller"><strong>4 Pines Brewing Company </strong></a><br>Guess what Beer Lovers? American Amber Ale in a bottle! Ready to be filled tomorrow, ready to be...<a href="seller">See more</a></span>
-                        </div>
+                            </div></span><span class="form-control"><a href="seller.html"><strong>4 Pines Brewing Company</strong></a><br>Guess what Beer Lovers? American Amber Ale in a bottle! Ready to be filled tomorrow, ready to be...<a href="seller.html">See more</a></span></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a>
-              </div>
+              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a></div>
               <div class="footer">
                 <div class="comment">
                   <div class="input-group"><span class="input-group-addon">
                       <div class="thumb">
                         <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
                       </div></span>
-                    <input type="text" placeholder="Write a comment..." class="form-control"><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
+                    <input class="form-control" type="text" placeholder="Write a comment..."><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -425,21 +395,18 @@
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/products/bottle8.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>Corona Extra </strong></a><br>Imported Beer</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Corona Extra</strong></a><br>Imported Beer</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/products/bottle1.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="productdetails"><strong>Brokenwood </strong></a><br>Graveyard Vineyard Shiraz</span>
-                </div>
+                    </div></span><span class="form-control"><a href="productdetails.html"><strong>Brokenwood</strong></a><br>Graveyard Vineyard Shiraz</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/products/bottle7.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>Chivas Regal </strong></a><br>12 Year Old Scotch Whisky 700ml</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Chivas Regal</strong></a><br>12 Year Old Scotch Whisky 700ml</span></div>
               </div>
               <div class="search">
-                <input type="text" placeholder="search reviews..." class="form-control">
+                <input class="form-control" type="text" placeholder="search reviews...">
               </div>
               <div class="more"><a href="#">See all</a></div>
             </div>
@@ -451,18 +418,15 @@
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/activity/img_advisor_2.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga </strong></a>likes a photo.</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga</strong></a>likes a photo.</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="profile"><strong>Andrew Steer </strong></a>commented on his own post.</span>
-                </div>
+                    </div></span><span class="form-control"><a href="profile.html"><strong>Andrew Steer</strong></a>commented on his own post.</span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/activity/img_advisor_2.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga </strong></a>shared a post.</span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga</strong></a>shared a post.</span></div>
               </div>
             </div>
             <div class="list_search_groups messaging">
@@ -473,21 +437,18 @@
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/users/user_3.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="#" class="online">Darren Crone</a><small>online</small></span>
-                </div>
+                    </div></span><span class="form-control"><a class="online" href="#">Darren Crone</a><small>online</small></span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/users/user_2.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="#" class="offline">Rodan Luzuriaga</a><small>2hours ago</small></span>
-                </div>
+                    </div></span><span class="form-control"><a class="offline" href="#">Rodan Luzuriaga</a><small>2hours ago</small></span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/users/user_1.jpg" alt=""></div>
-                    </div></span><span class="form-control"><a href="profile" class="online">Andrew Steer</a><small>online</small></span>
-                </div>
+                    </div></span><span class="form-control"><a class="online" href="profile.html">Andrew Steer</a><small>online</small></span></div>
               </div>
               <div class="search">
-                <input type="text" class="form-control"><a href="#" class="new"><i class="fa fa-pencil-square-o"></i></a>
+                <input class="form-control" type="text"><a class="new" href="#"><i class="fa fa-pencil-square-o"></i></a>
               </div>
             </div>
             <div class="list_groups events">
@@ -498,24 +459,20 @@
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/likes/likes_1.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>brokenwood wine tasting</strong></a><br>401-407 mcdonalds rd pokolbin nsw<br><small>Saturday October 10th 2pm</small></span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>brokenwood wine tasting</strong></a><br>401-407 mcdonalds rd pokolbin nsw<br><small>Saturday October 10th 2pm</small></span></div>
                 <div class="input-group"><span class="input-group-addon">
                     <div class="thumb">
                       <div class="img"><img src="assets/images/likes/likes_2.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>margan wines wedding  </strong></a><br>1238 milbrodale rd broke nsw <br><small>Saturday October 24th 4pm</small></span>
-                </div>
+                    </div></span><span class="form-control"><a href="#"><strong>margan wines wedding</strong></a><br>1238 milbrodale rd broke nsw<br><small>Saturday October 24th 4pm</small></span></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <footer>
       <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
-          <p><img src="assets/images/logo_black.png" alt=""></p></small>
-      </div>
+          <p><img src="assets/images/logo_black.png" alt=""></p></small></div>
     </footer>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -527,7 +484,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
-        
+      
       });
     </script>
   </body>

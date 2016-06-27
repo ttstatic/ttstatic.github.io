@@ -16,42 +16,39 @@
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
     <style></style>
-    
   </head>
   <body>
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <!--a.navbar-brand(href='#') Drink Circle--><a href="index" class="navbar-brand"><img src="assets/images/logo_white.png" alt=""></a>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png" alt=""></a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left minisite">
-              <li><a href="drinksdirect" data-flag="drinksdirect" class="dd"><span>drinksdirect </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
-              <li><a href="thecircle" data-flag="thecircle" class="tc"><span>the circle </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
-              <li><a href="drinkadvisor2" data-flag="drinkadvisor" class="da"><span>drinkadvisor </span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
+              <li><a class="dd" href="drinksdirect.html" data-flag="drinksdirect"><span>drinksdirect</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
+              <li><a class="tc" href="thecircle.html" data-flag="thecircle"><span>the circle</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
+              <li><a class="da" href="drinkadvisor2.html" data-flag="drinkadvisor"><span>drinkadvisor</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-in">
-              <li><a href="profile" class="info"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
-              </li>
-              <li><a href="#" class="notification"><i class="fa fa-globe"></i>
-                  <div class="counter">2</div></a>
-              </li>
+              <li><a class="info" href="profile.html"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
+              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+                  <div class="counter">2</div></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-out">
-              <li><a href="#">1 <i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#">1<i class="fa fa-shopping-cart"></i></a></li>
               <li><a href="#">join</a></li>
               <li class="hidden-xs">
                 <p class="navbar-text">|</p>
               </li>
-              <li><a href="profile">sign in</a></li>
+              <li><a href="profile.html">sign in</a></li>
             </ul>
           </div>
           <!-- /.nav-collapse-->
@@ -62,24 +59,23 @@
       <div class="gradient"></div>
       <h1 class="jumbo">Welcome to a new world of drinking<br><small>rate, review and compare</small></h1>
       <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
-        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i>
-        </div>
+        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i></div>
       </div>
     </div>
     <section class="profile da">
-      <h2 class="advisor">Welcome to drinkadvisor <i class="fa fa-question-circle"></i></h2>
+      <h2 class="advisor">Welcome to drinkadvisor<i class="fa fa-question-circle"></i></h2>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <form>
               <div class="form-group">
                 <div class="icon_search">
-                  <input type="text" placeholder="What drink would you like to rate or review?" class="form-control input-lg"><i class="fa fa-search"></i>
+                  <input class="form-control input-lg" type="text" placeholder="What drink would you like to rate or review?"><i class="fa fa-search"></i>
                 </div>
               </div>
               <div class="form-group">
                 <div class="icon_search">
-                  <input type="text" placeholder="What drink would you like to get a rating or review on?" class="form-control input-lg"><i class="fa fa-search"></i>
+                  <input class="form-control input-lg" type="text" placeholder="What drink would you like to get a rating or review on?"><i class="fa fa-search"></i>
                 </div>
               </div>
             </form>
@@ -97,26 +93,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">93</div>
-                  </div><img src="assets/images/products/p1.jpg" alt="" class="img-prod">
+                  </div><img class="img-prod" src="assets/images/products/p1.jpg" alt="">
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Corona Extra</a><br><small>Imported Beer</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$49.99</h5>
-                        <p>per cases</p><a href="#" class="button v1">1 case</a>
+                        <p>per cases</p><a class="button v1" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$44.99</h5>
-                        <p>per cases</p><a href="#" class="button v2">5 cases</a>
+                        <p>per cases</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$39.99</h5>
-                        <p>per cases</p><a href="#" class="button v3">20 cases</a>
+                        <p>per cases</p><a class="button v3" href="#">20 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">624 ratings</span>|<span class="reviews">121 reviews</span>|<span class="reviews">102 live circles</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -129,26 +125,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">94</div>
-                  </div><a href="productdetails"><img src="assets/images/products/p2.jpg" alt="" class="img-prod"></a>
+                  </div><a href="productdetails.html"><img class="img-prod" src="assets/images/products/p2.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
-                    <div class="name"><a href="productdetails">Brokenwood</a><br><small>Graveyard Vineyard</small></div>
+                    <div class="name"><a href="productdetails.html">Brokenwood</a><br><small>Graveyard Vineyard</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$25.99</h5>
-                        <p>per bottle</p><a href="#" class="button v1">1 case</a>
+                        <p>per bottle</p><a class="button v1" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$21.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">5 cases</a>
+                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$19.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">10 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">334 ratings</span>|<span class="reviews">88 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -161,26 +157,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">91</div>
-                  </div><a href="#"><img src="assets/images/products/p3.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p3.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Chivas Regal</a><br><small>12 Year Old Scotch Whisky 700mL</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$34.99</h5>
-                        <p>per bottle</p><a href="#" class="button v1">1 bottle</a>
+                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$33.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">1 case</a>
+                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$32.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">3 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">3 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">160 ratings</span>|<span class="reviews">30 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -193,26 +189,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">89</div>
-                  </div><a href="#"><img src="assets/images/products/p4.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p4.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Sieur d'Arques</a><br><small>Grande Cuvée 1531 de Aimery</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$16.20</h5>
-                        <p>per bottle</p><a href="#" class="button v1">12 pack</a>
+                        <p>per bottle</p><a class="button v1" href="#">12 pack</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$13.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">5 cases</a>
+                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$11.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">10 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">62 ratings</span>|<span class="reviews">12 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -225,26 +221,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">95</div>
-                  </div><a href="#"><img src="assets/images/products/p5.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p5.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Absolut</a><br><small>Vodka</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$49.90</h5>
-                        <p>per bottle</p><a href="#" class="button v1">1 bottle</a>
+                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$44.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">1 case</a>
+                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$43.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">3 case</a>
+                        <p>per bottle</p><a class="button v3" href="#">3 case</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">200 ratings</span>|<span class="reviews">88 reviews</span>|<span class="reviews">5 live circles</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -257,26 +253,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">90</div>
-                  </div><a href="#"><img src="assets/images/products/p6.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p6.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Kim Crawford</a><br><small>Sauvignon Blanc</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$14.90 </h5>
-                        <p>per bottle</p><a href="#" class="button v1">12 pack</a>
+                        <h5 class="prodPrice">$14.90</h5>
+                        <p>per bottle</p><a class="button v1" href="#">12 pack</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$13.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">5 cases</a>
+                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$12.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">10 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">156 ratings</span>|<span class="reviews">59 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -289,26 +285,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">95</div>
-                  </div><a href="#"><img src="assets/images/products/p7.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p7.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Heineken</a><br><small>Lager Stubbies</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$42.95</h5>
-                        <p>per bottle</p><a href="#" class="button v1">1 case</a>
+                        <p>per bottle</p><a class="button v1" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$39.99</h5>
-                        <p>per bottle</p><a href="#" class="button v2">5 cases</a>
+                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$36.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">20 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">20 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">520 ratings</span>|<span class="reviews">132 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -321,26 +317,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">97</div>
-                  </div><a href="#"><img src="assets/images/products/p8.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p8.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Sticks</a><br><small>Pinot Noir</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$16.20</h5>
-                        <p>per bottle</p><a href="#" class="button v1">6 pack</a>
+                        <p>per bottle</p><a class="button v1" href="#">6 pack</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$15.50</h5>
-                        <p>per bottle</p><a href="#" class="button v2">5 cases</a>
+                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$14.99</h5>
-                        <p>per bottle</p><a href="#" class="button v3">10 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">69 ratings</span>|<span class="reviews">13 reviews</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -353,26 +349,26 @@
                 <div class="thumb">
                   <div class="ctr">
                     <div class="count">92</div>
-                  </div><a href="#"><img src="assets/images/products/p9.jpg" alt="" class="img-prod"></a>
+                  </div><a href="#"><img class="img-prod" src="assets/images/products/p9.jpg" alt=""></a>
                   <!-- Edit-->
                   <div class="details">
                     <div class="name"><a href="#">Tempus Two</a><br><small>Botrytis Semillon 250mL</small></div>
                     <div class="prices row">
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$14.25</h5>
-                        <p>per bottle</p><a href="#" class="button v1">1 bottle</a>
+                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$13.50</h5>
-                        <p>per bottle</p><a href="#" class="button v2">1 case</a>
+                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
                       </div>
                       <div class="col-xs-4 col-sm-4 col-md-4">
                         <h5 class="prodPrice">$12.50</h5>
-                        <p>per bottle</p><a href="#" class="button v3">3 cases</a>
+                        <p>per bottle</p><a class="button v3" href="#">3 cases</a>
                       </div>
                     </div>
                     <p class="stats"><span class="ratings">19 ratings</span>|<span class="reviews">4 reviews</span>|<span class="reviews">1 live circle</span></p>
-                    <div class="rate"><a href="#" class="button v6 inline">rate | write a review</a></div>
+                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
                 <!-- End-->
@@ -384,8 +380,7 @@
     </section>
     <footer>
       <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
-          <p><img src="assets/images/logo_black.png" alt=""></p></small>
-      </div>
+          <p><img src="assets/images/logo_black.png" alt=""></p></small></div>
     </footer>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -397,7 +392,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
-        
+      
       });
     </script>
   </body>
