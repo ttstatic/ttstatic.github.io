@@ -15,23 +15,23 @@
     <link href="assets/vendor/owl.carousel.2/assets/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
   </head>
   <body data-spy="scroll" data-target="#menuNavbar" data-offset="95">
     <div class="action_download"><a href="javascript:void(0)"><i class="fa fa-graduation-cap"></i></a>
       <div class="doc"><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Student Group</a><a href="//drive.google.com/file/d/0B7OO8dV2HOlsV1V0RE9RWDYzSUU/view?usp=sharing" target="_blank">Happi Campus Ambassador</a></div>
-      <div id="warped"><span class="w0">H</span><span class="w1">a</span><span class="w2">p</span><span class="w3">p</span><span class="w4">i</span><span class="w5"> </span><span class="w6">C</span><span class="w7">o</span><span class="w8">l</span><span class="w9">l</span><span class="w10">e</span><span class="w11">g</span><span class="w12">e</span><span class="w13"> </span><span class="w14">J</span><span class="w15">o</span><span class="w16">b</span><span class="w17">s</span></div>
+      <div id="warped"><span class="w0">H</span><span class="w1">a</span><span class="w2">p</span><span class="w3">p</span><span class="w4">i</span><span class="w5"></span><span class="w6">C</span><span class="w7">o</span><span class="w8">l</span><span class="w9">l</span><span class="w10">e</span><span class="w11">g</span><span class="w12">e</span><span class="w13"></span><span class="w14">J</span><span class="w15">o</span><span class="w16">b</span><span class="w17">s</span></div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#menuNavbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index" class="navbar-brand"><img src="assets/images/logo.png"></a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
         </div>
-        <div id="menuNavbar" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse" id="menuNavbar">
           <ul class="nav navbar-nav">
             <li><a href="#sectionAbout">About Us</a></li>
             <li><a href="#sectionPartners">Partners</a></li>
@@ -39,28 +39,36 @@
             <li><a href="#" data-url="page_press.html">Press</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-url="//happi.sg/en/#loginPopup">Login</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#formSignup">Sign up</a></li>
-            <!--
+            <li><a href="#formLogin" data-toggle="modal">Login</a></li>
+            <!-- ----------
+            li
+              a(href="#formLogin", data-toggle="modal") Login
+            //-li
+            li
+              a(href="#", data-toggle="modal", data-target="#formSignup") Sign up
+            //-li
             li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                | Login &nbsp;
-                i.fa.fa-user
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Login
               //-a
               ul.dropdown-menu
                 li.login
                   form.form-signin
-                    //- label.sr-only(for='inputEmail') Email address
-                    //- input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
-                    //- label.sr-only(for='inputPassword') Password
-                    //- input#inputPassword.form-control(type='password', placeholder='Password', required='')
-                    //- .checkbox
-                    //-   label
-                    //-     input(type='checkbox', value='remember-me')
-                    //-     |  Remember me
+                    label.sr-only(for='inputEmail') Email address
+                    input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                    label.sr-only(for='inputPassword') Password
+                    input#inputPassword.form-control(type='password', placeholder='Password', required='')
                     a.btn.btn-success(href='//happi.sg/en/#loginPopup') Login
                     |&nbsp;
                     button.btn.btn-success(type='button', data-toggle="modal", data-target="#formSignup") Sign up
+                    .checkbox
+                      label
+                        input(type='checkbox', value='remember-me')
+                        |  Remember me
+                      //- label
+                    //- checkbox
+                    p
+                    p.text-muted - or -
+                    .fb-login-button(data-max-rows='1', data-size='large', data-show-faces='false', data-auto-logout-link='false')
                 //-li
               //-ul
             //-li
@@ -86,15 +94,185 @@
             <li><a href="#">FAQ</a></li>
           </ul>
           <ul class="social col-md-4 col-sm-4">
-            <li><a href="//www.facebook.com/happisg" target="_blank" class="fa fa-facebook fa-2x"></a></li>
-            <li><a href="//www.instagram.com/happi.sg/" target="_blank" class="fa fa-instagram fa-2x"></a></li>
-            <li><a href="//twitter.com/happi_sg" target="_blank" class="fa fa-twitter fa-2x"></a></li>
-            <li><a href="//www.linkedin.com/company/happi-pte-ltd" target="_blank" class="fa fa-linkedin fa-2x"></a></li>
-            <li><a href="mailto:hello@happi.sg" target="_self" class="fa fa-envelope-o fa-2x"></a></li>
+            <li><a class="fa fa-facebook fa-2x" href="//www.facebook.com/happisg" target="_blank"></a></li>
+            <li><a class="fa fa-instagram fa-2x" href="//www.instagram.com/happi.sg/" target="_blank"></a></li>
+            <li><a class="fa fa-twitter fa-2x" href="//twitter.com/happi_sg" target="_blank"></a></li>
+            <li><a class="fa fa-linkedin fa-2x" href="//www.linkedin.com/company/happi-pte-ltd" target="_blank"></a></li>
+            <li><a class="fa fa-envelope-o fa-2x" href="mailto:hello@happi.sg" target="_self"></a></li>
           </ul>
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="formSignup" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Mobile Number</label>
+                <input class="form-control" type="phone">
+              </div>
+              <div class="form-group">
+                <label>First Name</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label>Phone Operating System</label>
+                <select class="form-control">
+                  <option value="ios">IOS</option>
+                  <option value="android">Android</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-dob" for="">Date of Birth</label>
+                <div class="form-inline">
+                  <select class="form-control">
+                    <option value="">Day</option>
+                    <option value="01">01</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="">Month</option>
+                    <option value="01">Jan.</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="">Year</option>
+                    <option value="1906">1906</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Nationality</label>
+                <select class="form-control">
+                  <option value="1">Singapore</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <select class="form-control">
+                  <option value="7">Singapore</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Promo Code</label>
+                <input class="form-control" type="text">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" type="button">Sign up</button>
+            <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+        <!-- /.modal-content-->
+      </div>
+      <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+    <div class="modal fade" id="mobileVideo" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Watch</h4>
+          </div>
+          <iframe src="//player.vimeo.com/video/164960427?byline=0&amp;portrait=0&amp;badge=0&amp;autoplay=0" width="100%" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+        <!-- /.modal-content-->
+      </div>
+      <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+    <div class="modal fade" id="formContact" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input class="form-control" type="phone">
+            </div>
+            <div class="form-group">
+              <label>First Name</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" type="button">Submit</button>
+            <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+        <!-- /.modal-content-->
+      </div>
+      <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+    <div class="modal fade" id="formLogin" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Login into your account</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group form-icon">
+              <input class="form-control" type="email" placeholder="Email..."><i class="fa fa-user"></i>
+            </div>
+            <div class="form-group form-icon">
+              <input class="form-control" type="password" placeholder="Password..."><i class="fa fa-lock"></i>
+            </div><a class="btn btn-success btn-block">Login</a><a class="btn btn-primary btn-block">Signup</a>
+            <p></p>
+            <p class="text-center"><span class="text-muted">&#8212; or &#8212;</span></p><a class="btn btn-primary btn-block"><i class="fa fa-facebook-official fa-2x valign-m"></i><span class="valign-m">&nbsp;&nbsp;Connect with Facebook</span></a>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <big><a href="#">Forgot password?</a></big>
+            </div>
+          </div>
+        </div>
+        <!-- /.modal-content-->
+      </div>
+      <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <link href="assets/vendor/owl.carousel.2/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">

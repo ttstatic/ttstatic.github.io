@@ -19,6 +19,18 @@ var Main = (function () {
 			Main.attachments();
 
 			// Main.mobilePlayVideo();
+
+
+			$(window).scroll(function() {
+			  if($(window).scrollTop() + $(window).height() > $(document).height() - $('footer').outerHeight(true)) {
+		    	$('.action_download').css('bottom', function() {
+						return 70 + $('footer').height();
+					});
+			  } else {
+					$('.action_download').removeAttr('style');
+				}
+			});
+
 		},
 
 		scroll : function (obj) {
