@@ -40,39 +40,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#formLogin" data-toggle="modal">Login</a></li>
-            <!-- ----------
-            li
-              a(href="#formLogin", data-toggle="modal") Login
-            //-li
-            li
-              a(href="#", data-toggle="modal", data-target="#formSignup") Sign up
-            //-li
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Login
-              //-a
-              ul.dropdown-menu
-                li.login
-                  form.form-signin
-                    label.sr-only(for='inputEmail') Email address
-                    input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
-                    label.sr-only(for='inputPassword') Password
-                    input#inputPassword.form-control(type='password', placeholder='Password', required='')
-                    a.btn.btn-success(href='//happi.sg/en/#loginPopup') Login
-                    |&nbsp;
-                    button.btn.btn-success(type='button', data-toggle="modal", data-target="#formSignup") Sign up
-                    .checkbox
-                      label
-                        input(type='checkbox', value='remember-me')
-                        |  Remember me
-                      //- label
-                    //- checkbox
-                    p
-                    p.text-muted - or -
-                    .fb-login-button(data-max-rows='1', data-size='large', data-show-faces='false', data-auto-logout-link='false')
-                //-li
-              //-ul
-            //-li
-            -->
+            <li><a href="#" data-toggle="modal" data-target="#formSignup">Sign up</a></li>
           </ul>
         </div>
       </div>
@@ -253,7 +221,7 @@
             </div>
             <div class="form-group form-icon">
               <input class="form-control" type="password" placeholder="Password..."><i class="fa fa-lock"></i>
-            </div><a class="btn btn-success btn-block">Login</a><a class="btn btn-primary btn-block" id="btnSignup" href="#formSignup" data-toggle="modal" data-dismiss="modal">Signup</a>
+            </div><a class="btn btn-success btn-block">Login</a>
             <p></p>
             <p class="text-center"><span class="text-muted">&#8212; or &#8212;</span></p><a class="btn btn-primary btn-block"><i class="fa fa-facebook-official fa-2x valign-m"></i><span class="valign-m">&nbsp;&nbsp;Connect with Facebook</span></a>
             <div class="checkbox">
@@ -285,10 +253,5 @@
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
     <!-- External Script goes here...-->
-    <script>
-      //- $("#btnSignup").on("hide.bs.modal", function() {
-      //-   $('#formLogin').modal('hide');
-      //- });
-    </script>
   </body>
 </html>
