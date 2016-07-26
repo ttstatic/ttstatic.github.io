@@ -21,14 +21,7 @@
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <style>
-      .logged-in {
-        display: block !important;
-      }
-      .logged-out {
-        display: none;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header>
@@ -42,7 +35,7 @@
             <ul class="nav navbar-nav navbar-left minisite">
               <li><a class="dd" href="drinksdirect.html" data-flag="drinksdirect"><span>drinksdirect</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
               <li><a class="tc" href="thecircle.html" data-flag="thecircle"><span>the circle</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
-              <li><a class="da" href="drinkadvisor2.html" data-flag="drinkadvisor"><span>drinkadvisor</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
+              <li><a class="da" href="drinkadvisor.html" data-flag="drinkadvisor"><span>drinkadvisor</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-in">
               <li><a class="info" href="profile.html"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a></li>
@@ -65,9 +58,12 @@
     <div class="banner advisor">
       <div class="gradient"></div>
       <h1 class="jumbo">Welcome to a new world of drinking<br><small>rate, review and compare</small></h1>
+      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
+        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i></div>
+      </div>
     </div>
-    <section class="profile da"><img class="img-circle photo" src="assets/images/img_advisor_1.jpg" alt="">
-      <h2 class="advisor">Welcome back Andrew! <i class="fa fa-question-circle"></i></h2>
+    <section class="profile da">
+      <h2 class="advisor">Welcome to drinkadvisor<i class="fa fa-question-circle"></i></h2>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -96,286 +92,322 @@
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">93</div>
+                    <div class="count">93<span>points</span></div>
                   </div><img class="img-prod" src="assets/images/products/p1.jpg" alt="">
                   <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>624&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>121&nbsp;</big><small>reviews</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>102&nbsp;</big><small>live circles</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Corona Extra</a><br><small>Imported Beer</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$49.99</h5>
-                        <p>per cases</p><a class="button v1" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$44.99</h5>
-                        <p>per cases</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$39.99</h5>
-                        <p>per cases</p><a class="button v3" href="#">20 cases</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$39.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$49.99<small>&nbsp;per case</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$44.99<small>&nbsp;per cases</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">20<br>cases</span><span class="price">$39.99<small>&nbsp;per cases</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">624 ratings</span>|<span class="reviews">121 reviews</span>|<span class="reviews">102 live circles</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">94</div>
+                  <div class="ctr silver">
+                    <div class="count">94<span>points</span></div>
                   </div><a href="productdetails.html"><img class="img-prod" src="assets/images/products/p2.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
-                    <div class="name"><a href="productdetails.html">Brokenwood</a><br><small>Graveyard Vineyard</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$25.99</h5>
-                        <p>per bottle</p><a class="button v1" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$21.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$19.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>334&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>88&nbsp;</big><small>reviews</small></a></div>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">334 ratings</span>|<span class="reviews">88 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
+                    <div class="name"><a href="#">Brokenwood</a><br><small>Graveyard Vineyard</small></div>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$19.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$29.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$19.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">91</div>
+                  <div class="ctr bronze">
+                    <div class="count">91<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p3.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>160&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>30&nbsp;</big><small>reviews</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Chivas Regal</a><br><small>12 Year Old Scotch Whisky 700mL</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$34.99</h5>
-                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$33.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$32.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">3 cases</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$32.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$33.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">3<br>cases</span><span class="price">$32.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">160 ratings</span>|<span class="reviews">30 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">89</div>
+                    <div class="count">89<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p4.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>160&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>30&nbsp;</big><small>reviews</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Sieur d'Arques</a><br><small>Grande Cuvée 1531 de Aimery</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$16.20</h5>
-                        <p>per bottle</p><a class="button v1" href="#">12 pack</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$13.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$11.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$11.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$11.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">62 ratings</span>|<span class="reviews">12 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">95</div>
+                    <div class="count">95<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p5.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>200&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>88&nbsp;</big><small>reviews</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>5&nbsp;</big><small>reviews</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Absolut</a><br><small>Vodka</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$49.90</h5>
-                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$44.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$43.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">3 case</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$43.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$49.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$44.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">3<br>case</span><span class="price">$43.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">200 ratings</span>|<span class="reviews">88 reviews</span>|<span class="reviews">5 live circles</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">90</div>
+                    <div class="count">90<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p6.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>156&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>59&nbsp;</big><small>reviews</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Kim Crawford</a><br><small>Sauvignon Blanc</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$14.90</h5>
-                        <p>per bottle</p><a class="button v1" href="#">12 pack</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$13.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$12.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$12.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$14.90<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">156 ratings</span>|<span class="reviews">59 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">95</div>
+                    <div class="count">95<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p7.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>520&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>132&nbsp;</big><small>reviews</small></a></div>
+                      </div>
+                    </div>
                     <div class="name"><a href="#">Heineken</a><br><small>Lager Stubbies</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$42.95</h5>
-                        <p>per bottle</p><a class="button v1" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$39.99</h5>
-                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$36.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">20 cases</a>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$36.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$42.95<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$39.99<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">20<br>cases</span><span class="price">$36.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">520 ratings</span>|<span class="reviews">132 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">97</div>
+                    <div class="count">97<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p8.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
-                    <div class="name"><a href="#">Sticks</a><br><small>Pinot Noir</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$16.20</h5>
-                        <p>per bottle</p><a class="button v1" href="#">6 pack</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$15.50</h5>
-                        <p>per bottle</p><a class="button v2" href="#">5 cases</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$14.99</h5>
-                        <p>per bottle</p><a class="button v3" href="#">10 cases</a>
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>69&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6"><a href="#">
+                            <big>13&nbsp;</big><small>reviews</small></a></div>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">69 ratings</span>|<span class="reviews">13 reviews</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
+                    <div class="name"><a href="#">Sticks</a><br><small>Pinot Noir</small></div>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$14.99</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$15.50<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$14.99<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
-            <!-- Product End-->
-            <!-- 1 Product-->
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
-                    <div class="count">92</div>
+                    <div class="count">92<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p9.jpg" alt=""></a>
-                  <!-- Edit-->
                   <div class="details">
-                    <div class="name"><a href="#">Tempus Two</a><br><small>Botrytis Semillon 250mL</small></div>
-                    <div class="prices row">
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$14.25</h5>
-                        <p>per bottle</p><a class="button v1" href="#">1 bottle</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$13.50</h5>
-                        <p>per bottle</p><a class="button v2" href="#">1 case</a>
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-4">
-                        <h5 class="prodPrice">$12.50</h5>
-                        <p>per bottle</p><a class="button v3" href="#">3 cases</a>
+                    <p></p>
+                    <div class="stats">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>19&nbsp;</big><small>ratings</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>4&nbsp;</big><small>reviews</small></a></div>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
+                            <big>1&nbsp;</big><small>live circle</small></a></div>
                       </div>
                     </div>
-                    <p class="stats"><span class="ratings">19 ratings</span>|<span class="reviews">4 reviews</span>|<span class="reviews">1 live circle</span></p>
-                    <div class="rate"><a class="button v6 inline" href="#">rate | write a review</a></div>
+                    <div class="name"><a href="#">Tempus Two</a><br><small>Botrytis Semillon 250mL</small></div>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="popover_price" href="#" data-container="body" data-toggle="popover" data-placement="bottom"><small>from&nbsp;</small>
+                              <big>$12.50</big></a><a href="#">rate | write a review</a>
+                            <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>bottle</span><span class="price">$14.25<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>case</span><span class="price">$13.50<small>&nbsp;per bottle</small></span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.50<small>&nbsp;per bottle</small></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- End-->
               </div>
             </div>
           </div>
@@ -408,9 +440,18 @@
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
     <!-- External Script goes here...-->
+    <script></script>
+    <!-- External Script goes here...-->
     <script>
-      $(document).ready(function(){
-      
+      $(function () {
+        $('.popover_price[data-toggle="popover"]').popover({
+          html: true,
+          content : function() {
+            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
+          }
+        }).click(function(e) {
+          e.preventDefault();
+        });
       });
     </script>
   </body>
