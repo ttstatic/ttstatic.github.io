@@ -57,7 +57,7 @@
     </header>
     <section class="productdetails">
       <div class="container">
-        <p class="bread"><a href="#">drinksdirect</a>&nbsp;/&nbsp;<a href="#">Brokenwood</a>&nbsp;/&nbsp;<a href="#"><strong>Graveyard Graveyard Vineyard Shiraz - 6 pack</strong></a></p>
+        <p class="bread"><a href="#">drinksdirect</a>&nbsp;/&nbsp;<a href="#">Brokenwood</a>&nbsp;/&nbsp;<a href="#"><strong>Graveyard Vineyard Shiraz - 6 pack</strong></a></p>
         <div class="row">
           <div class="col-md-5 text-center">
             <div class="stage infos">
@@ -76,7 +76,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="inventory">
-                    <h1>Brokenwood<br><small>Graveyard Graveyard Vineyard  - 6 pack</small><br>
+                    <h1>Brokenwood<br><small>Graveyard Vineyard Shiraz  - 6 pack</small><br>
                       <p></p>
                       <div class="row">
                         <div class="col-md-4"><small>RRP $29.99&nbsp;<span class="pb">/ bottle</span></small></div>
@@ -114,14 +114,7 @@
                 </div>
               </div>
               <hr>
-              <div class="row">
-                <div class="col-md-8 text-right">
-                  <p class="lead">4 friends circle buys active</p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <p class="lead" style="font-weight: 500"><small class="text-danger"><i class="fa fa-clock-o"></i>&nbsp;3d 2hrs left</small></p>
-                </div>
-              </div>
+              <p class="lead text-center">4 friends circle buys active</p>
               <div class="row">
                 <div class="col-md-4 col-sm-4 text-center">
                   <div class="card_rounded"><strong>Adrian's Circle</strong><br>10 case circle<br>7 sold /&nbsp;<strong>3 available</strong>
@@ -134,6 +127,7 @@
                     <big class="lead"><strong>$19.99</strong></big><br>
                     <p></p>
                     <p><a class="button inline v7" href="#">request to join</a></p>
+                    <p><i class="fa fa-clock-o"></i>&nbsp;1d 8hrs left</p>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-4 text-center">
@@ -147,6 +141,7 @@
                     <big class="lead"><strong>$19.99</strong></big><br>
                     <p></p>
                     <p><a class="button inline v7" href="#">request to join</a></p>
+                    <p><i class="fa fa-clock-o"></i>&nbsp;3d 2hrs left</p>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-4 text-center">
@@ -160,6 +155,7 @@
                     <big class="lead"><strong>$21.99</strong></big><br>
                     <p></p>
                     <p><a class="button inline v7" href="#">request to join</a></p>
+                    <p><i class="fa fa-clock-o"></i>&nbsp;2d 6hrs left</p>
                   </div>
                 </div>
               </div><br>
@@ -172,21 +168,21 @@
                 <p class="comment"><strong>Brokenwood Graveyard Vineyard Shiraz&nbsp;</strong>is a ripe and generous shiraz with lifted cherry and mint aromas nicely balanced with sweet chocolate notes on the nose and a soft rich palate with savoury cedary flavours and fine grained tannins on the finish.</p>
                 <div class="row">
                   <div class="col-xs-4 col-md-4">
-                    <p><strong class="green">variety</strong><br>Shiraz</p>
+                    <p><strong class="blue">variety</strong><br>Shiraz</p>
                   </div>
                   <div class="col-xs-4 col-md-4">
-                    <p><strong class="green">region</strong><br>Hunter Valley</p>
+                    <p><strong class="blue">region</strong><br>Hunter Valley</p>
                   </div>
                   <div class="col-xs-4 col-md-4">
-                    <p><strong class="green">alcohol</strong><br>14.5%</p>
+                    <p><strong class="blue">alcohol</strong><br>14.5%</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xs-4 col-md-4">
-                    <p><strong class="green">vintage</strong><br>2010</p>
+                    <p><strong class="blue">vintage</strong><br>2010</p>
                   </div>
                   <div class="col-xs-4 col-md-4">
-                    <p class="share"><strong class="green">share<br><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></strong></p>
+                    <p class="share"><strong class="blue">share<br><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></strong></p>
                   </div>
                 </div>
                 <div class="expand text-center"><a href="#" data-toggle="collapse">more&nbsp;<i class="fa fa-caret-down"></i></a></div>
@@ -194,7 +190,7 @@
               <div class="reviews">
                 <div class="row">
                   <div class="col-md-7">
-                    <p class="lead"> Customer Reviews &amp; Ratings</p><a class="popover_rating" href="#" data-container="body" data-toggle="popover" data-placement="bottom">242 Ratings - Silver (between 100 and 250 ratings)<span class="ratings">
+                    <p class="lead"> Customer Reviews &amp; Ratings</p><a class="popover_rating" href="#" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Summary">242 Ratings - Silver (between 100 and 250 ratings)<span class="ratings">
                         <table>
                           <tr>
                             <td width="100"><small>95 - 100</small></td>
@@ -420,7 +416,16 @@
           html: true,
           content : function() {
             return '<span class="ratings">' + $(this).parent().find("span.ratings").html() + '</span>';
-          }
+          },
+          title: function(){
+        		return jQuery(this).data('title') + '<span class="close">&times;</span>';
+        	}
+        }).on('shown.bs.popover', function(e){
+          console.log(this.id)
+        	var popover = jQuery(this);
+        	jQuery(this).find('.close').on('click', function(e){
+        		popover.popover('hide');
+        	});
         }).click(function(e){
           e.preventDefault();
         });
