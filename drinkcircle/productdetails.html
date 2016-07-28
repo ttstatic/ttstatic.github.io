@@ -191,7 +191,7 @@
               <div class="reviews">
                 <div class="row">
                   <div class="col-md-7">
-                    <p class="lead"> Customer Reviews &amp; Ratings</p><a class="popover_rating" href="#" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Summary">242 Ratings - Silver (between 100 and 250 ratings)<span class="ratings">
+                    <p class="lead">Customer Reviews &amp; Ratings</p><a class="popover_rating" href="#" data-toggle="popover" data-placement="bottom" data-title="Summary">242 Ratings - Silver (between 100 and 250 ratings)<span class="ratings">
                         <table>
                           <tr>
                             <td width="100"><small>95 - 100</small></td>
@@ -233,7 +233,7 @@
                               </div>
                             </td>
                           </tr>
-                        </table></span><br></a>88 Reviews
+                        </table></span></a>88 Reviews
                   </div>
                   <div class="col-md-5">
                     <div class="btn-review-wrap"><a class="button inline v7" href="#">Write a review</a><a class="button inline v7" href="#">Rate product</a></div>
@@ -390,7 +390,7 @@
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
-    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
@@ -421,25 +421,11 @@
           title: function(){
         		return jQuery(this).data('title') + '<span class="close">&times;</span>';
         	}
-        }).on('shown.bs.popover', function(e){
-          console.log(this.id)
+        }).on('shown.bs.popover', function(e) {
         	var popover = jQuery(this);
-        	jQuery(this).find('.close').on('click', function(e){
+        	$(this).parent().find('.popover span.close').on('click', function(e) {
         		popover.popover('hide');
         	});
-        }).click(function(e){
-          e.preventDefault();
-        });
-      });
-    </script>
-    <!-- External Script goes here...-->
-    <script>
-      $(function () {
-        $('.popover_price[data-toggle="popover"]').popover({
-          html: true,
-          content : function() {
-            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
-          }
         }).click(function(e) {
           e.preventDefault();
         });

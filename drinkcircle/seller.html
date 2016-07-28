@@ -374,24 +374,11 @@
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
-    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
       
-      });
-    </script>
-    <!-- External Script goes here...-->
-    <script>
-      $(function () {
-        $('.popover_price[data-toggle="popover"]').popover({
-          html: true,
-          content : function() {
-            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
-          }
-        }).click(function(e) {
-          e.preventDefault();
-        });
       });
     </script>
   </body>
