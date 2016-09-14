@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>drinkcircle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Balthazar" rel="stylesheet" type="text/css">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+      .logged-in {
+        display: block !important;
+      }
+      .logged-out {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png" alt=""></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-left minisite">
+              <li><a class="dd" href="drinksdirect.html" data-flag="drinksdirect"><span>drinksdirect&nbsp;</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-circle-right fa-2x"></i></span></a></li>
+              <li><a class="tc" href="thecircle.html" data-flag="thecircle"><span>circles&nbsp;</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-circle-o fa-2x"></i></span></a></li>
+              <li><a class="da" href="drinkadvisor.html" data-flag="drinkadvisor"><span>drinkadvisor&nbsp;</span><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-question-circle fa-2x"></i></span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-in">
+              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="myprofile.html">Profile</a></li>
+                  <li><a href="#">Multibuy</a></li>
+                  <li><a href="#">Circles</a></li>
+                  <li><a href="#">My Orders</a></li>
+                  <li class="divider" role="separator"></li>
+                  <li><a href="#">Sign out</a></li>
+                </ul>
+              </li>
+              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+                  <div class="counter">2</div></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-out">
+              <li><a href="#">1<i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#">join</a></li>
+              <li class="hidden-xs">
+                <p class="navbar-text">|</p>
+              </li>
+              <li><a href="profile.html">sign in</a></li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse-->
+        </div>
+      </nav>
+    </header>
+    <section class="userprofile myprofile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9"><br>
+            <h3 class="myprofile-title">My Profile</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card myprofile-menu">
+              <ul role="tablist">
+                <li class="active" role="presentation"><a href="#tab-personal-details" role="tab" data-toggle="tab">Personal Details</a></li>
+                <li role="presentation"><a href="#tab-billing-shipping" role="tab" data-toggle="tab">Billing &amp; Shipping</a></li>
+                <li role="presentation"><a href="#tab-work" role="tab" data-toggle="tab">Work</a></li>
+                <li role="presentation"><a href="#tab-education" role="tab" data-toggle="tab">Education</a></li>
+                <li role="presentation"><a href="#tab-login-details" role="tab" data-toggle="tab">Login Details</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab-personal-details" role="tabpanel">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="pd-fname">First Name</label>
+                        <input class="form-control" id="pd-fname" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="pd-lname">Last Name</label>
+                        <input class="form-control" id="pd-lname" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="pd-bday">Date of Birth</label>
+                        <input class="form-control" id="pd-bday" type="date" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Interests</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="pd-indetails">Details</label>
+                        <input class="form-control" id="pd-indetails" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="pd-tags">Tags</label>
+                        <input class="form-control" id="pd-tags" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="actions-wrap"><a class="btn btn-success" href="#">Save</a></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-billing-shipping" role="tabpanel">
+                <div class="card">
+                  <div class="myprofile-addresses">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <address><span class="name">John Jones</span><br><span class="phone">423 568</span><br><span class="address1">19 Beaudesert Rd., Brisbane,</span><br><span class="address2">QLD 4757 Australia</span>
+                          <div class="actions"><a href="#">Edit</a>&nbsp;<i>(Default: Billing, Current Location)</i></div><a class="delete-address" href="#"><i class="fa fa-trash"></i></a>
+                        </address>
+                      </div>
+                      <div class="col-md-6">
+                        <address><span class="name">John Jones</span><br><span class="phone">423 568</span><br><span class="address1">19 Beaudesert Rd., Brisbane,</span><br><span class="address2">QLD 4757 Australia</span>
+                          <div class="actions"><a href="#">Edit</a></div><a class="delete-address" href="#"><i class="fa fa-trash"></i></a>
+                        </address>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-new-address"><a class="btn btn-warning" href="#myprofile-add-new-address" data-toggle="collapse">Add a new address&nbsp;<i class="fa fa-plus"></i></a></div>
+                  <div class="collapse card" id="myprofile-add-new-address">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-fname">First Name</label>
+                          <input class="form-control" id="bsd-fname" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-lname">Last Name</label>
+                          <input class="form-control" id="bsd-lname" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-phone">Telephone</label>
+                          <input class="form-control" id="bsd-phone" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-street">Street Address</label>
+                          <input class="form-control" id="bsd-street" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-street-2">Street Address 2</label>
+                          <input class="form-control" id="bsd-street-2" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-suburb">Suburb</label>
+                          <input class="form-control" id="bsd-suburb" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-state">State</label>
+                          <input class="form-control" id="bsd-state" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-postcode">Postcode</label>
+                          <input class="form-control" id="bsd-postcode" type="number" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-country">Country</label>
+                          <select class="form-control" id="bsd-country">
+                            <option>Australia</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="bsd-default-">Set as Default:</label>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">Shipping Address
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">Billing Address
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">Current Location
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">Hometown
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="actions-wrap"><a class="btn btn-success" href="#">Save</a>&nbsp;<a class="btn btn-default" href="#">Cancel</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-work" role="tabpanel">
+                <div class="card">
+                  <div class="myprofile-work">
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="http://placehold.it/50" alt="Company Logo"></a></div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Twist Resources Inc.</h4><small>Front-End Developer / Designer &middot; February 2015 to present &middot; Clark, Pampanga, Philippines</small><br><small class="text-muted">» Create and maintain responsive layout using Bootstrap and Purecss<br>» Assist developers to resolve front end issues.<br>» Support in using ToolTwist Designer Development Platform</small>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="http://placehold.it/50" alt="Company Logo"></a></div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Z getcare Systems</h4><small>Web Designer &middot; May 4, 2009 to November 21, 2012 &middot; Angeles City</small><br><small class="text-muted">» Converted PDF image mock-ups into HTML pages<br>» Maintained Web Applications layout and resolved browser compatibility issues<br>» Integrate mock-ups on the application<br>» Apply skinning using different style sheets on a single code base application</small>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="add-new-work"><a class="btn btn-warning" href="#myprofile-add-new-work" data-toggle="collapse">Add a new work&nbsp;<i class="fa fa-plus"></i></a></div>
+                  <div class="collapse card" id="myprofile-add-new-work">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="pwork-company">Company</label>
+                          <input class="form-control" id="pwork-company" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="pwork-position">Position</label>
+                          <input class="form-control" id="pwork-position" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="pwork-city">Location</label>
+                          <input class="form-control" id="pwork-city" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="pwork-description">Description</label>
+                          <textarea class="form-control" id="pwork-description" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="pwork-default-">Time Period:</label>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">I currently work here
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="pwork-date-from">From</label>
+                          <input class="form-control" id="pwork-date-from" type="date" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="pwork-date-to">to</label>
+                          <input class="form-control" id="pwork-date-to" type="date" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="actions-wrap"><a class="btn btn-success" href="#">Save</a>&nbsp;<a class="btn btn-default" href="#">Cancel</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-education" role="tabpanel">
+                <div class="card">
+                  <div class="myprofile-education">
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="http://placehold.it/50" alt="Company Logo"></a></div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Holy Angel University</h4><small>2003 to Aug 2006 &middot; ...</small>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="http://placehold.it/50" alt="Company Logo"></a></div>
+                      <div class="media-body">
+                        <h4 class="media-heading">ACNTS</h4><small>Class of 2003 &middot; Angeles City</small>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="add-new-education"><a class="btn btn-warning" href="#myprofile-add-new-education" data-toggle="collapse">Add a new education&nbsp;<i class="fa fa-plus"></i></a></div>
+                  <div class="collapse card" id="myprofile-add-new-education">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="peduc-school">School</label>
+                          <input class="form-control" id="peduc-school" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="peduc-date-from">From</label>
+                          <input class="form-control" id="peduc-date-from" type="date" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="peduc-date-to">To</label>
+                          <input class="form-control" id="peduc-date-to" type="date" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="peduc-description">Description</label>
+                          <textarea class="form-control" id="peduc-description" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="actions-wrap"><a class="btn btn-success" href="#">Save</a>&nbsp;<a class="btn btn-default" href="#">Cancel</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-login-details" role="tabpanel">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="ld-email">Email</label>
+                        <input class="form-control" id="ld-email" type="email" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="ld-cemail">Confirm Email</label>
+                        <input class="form-control" id="ld-cemail" type="email" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="ld-password">Password</label>
+                        <input class="form-control" id="ld-password" type="password" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="ld-cpassword">Confirm Password</label>
+                        <input class="form-control" id="ld-cpassword" type="password" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="actions-wrap"><a class="btn btn-success" href="#">Save</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
+          <p><img src="assets/images/logo_black.png" alt=""></p></small></div>
+    </footer>
+    <div class="modal fade" id="buymode" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Buy Options</h4>
+          </div>
+          <div class="modal-body"><a class="btn btn-success btn-block" href="#">Buy Now</a>
+            <p></p>
+            <p class="text-center"><small>or</small></p><a class="btn btn-info btn-block" href="#"><i class="fa fa-group"></i>&nbsp;&nbsp;Join a Group</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- External Script goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(function () {
+        $('.popover_price[data-toggle="popover"]').popover({
+          html: true,
+          content : function() {
+            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
+          },
+          title: function(){
+            return jQuery(this).data('title') + '<span class="close">&times;</span>';
+          }
+        }).on('shown.bs.popover', function(e) {
+          var popover = jQuery(this);
+          $(this).parent().find('.popover span.close').on('click', function(e) {
+            popover.popover('hide');
+          });
+        }).click(function(e) {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
