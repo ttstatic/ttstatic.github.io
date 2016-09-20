@@ -21,25 +21,41 @@
 <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <div class="search-bar">
       <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo-bc.png"></a>
+        <div class="form-search">
+          <input class="form-control" type="text" placeholder="Search"><a href=""><i class="fa fa-search"></i></a>
         </div>
-        <div class="navbar-collapse collapse" id="navbar">
+      </div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="navbar-header">
+        <div class="container">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo-bc.png"></a><a class="navbar-brand" href="#"><img src="assets/images/logo-80th.png"></a>
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
+            <li class="navbar-text">FORUM</li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-text">Martin Conway</li>
-            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Manage Account</a></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </li>
-            <li class="navbar-text"><i class="fa fa-bell"></i><span class="badge">17</span></li>
-          </ul>
+        </div>
+      </div>
+      <div class="steadybird">
+        <div class="container">
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Calendar</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="navbar-text">Martin Conway</li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Manage Account</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+              <li class="navbar-text"><i class="fa fa-bell"></i><span class="badge">17</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -102,7 +118,7 @@
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="active" role="presentation"><a href="#tabPost" aria-controls="tabPost" role="tab" data-toggle="tab">Post</a></li>
                   <li role="presentation"><a href="#tabEmail" aria-controls="tabEmail" role="tab" data-toggle="tab">Email</a></li>
-                  <li role="presentation"><a href="#tabUpload" aria-controls="tabUpload" role="tab" data-toggle="tab">Upload File</a></li>
+                  <li role="presentation"><a href="#tabUpload" aria-controls="tabUpload" role="tab" data-toggle="tab">File Upload</a></li>
                   <li role="presentation"><a href="#tabEvents" aria-controls="tabEvents" role="tab" data-toggle="tab">Events</a></li>
                 </ul>
                 <div class="tab-content">
@@ -152,8 +168,9 @@
                   </div>
                   <div class="tab-pane" id="tabUpload" role="tabpanel">
                     <div class="form-group">
+                      <label>Topic</label>
                       <select class="form-control" disabled>
-                        <option>LBTST Forum Class 1 - Group</option>
+                        <option>Topic</option>
                       </select>
                     </div>
                     <div class="drop-area"><i class="fa fa-cloud-upload fa-3x"></i><br><span>Drop files here to upload...</span></div>
@@ -161,13 +178,15 @@
                   </div>
                   <div class="tab-pane" id="tabEvents" role="tabpanel">
                     <div class="form-group">
+                      <label>Topic</label>
                       <select class="form-control" disabled>
-                        <option>LBTST Forum Class 1 - Group</option>
+                        <option>Topic</option>
                       </select>
                     </div>
                     <div class="form-group">
                       <textarea class="form-control" placeholder="Event..." rows="5"></textarea>
                     </div>
+                    <hr>
                     <div class="checkbox">
                       <label>
                         <input type="checkbox">Milestone
@@ -175,9 +194,11 @@
                     </div>
                     <div class="row">
                       <div class="form-group col-md-3">
+                        <label>Start</label>
                         <input class="form-control" type="date" placeholder="start">
                       </div>
                       <div class="form-group col-md-3">
+                        <label>End</label>
                         <input class="form-control" type="date" placeholder="end">
                       </div>
                     </div>
@@ -194,12 +215,16 @@
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                 </div>
-              </div>
+              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><a href="">Edit</a>
-                &nbsp;
-                &middot;
-                &nbsp;<a href="">Delete</a><a class="pull-right" href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Delete</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Report Abusive</a></span>
+                <div class="clearfix"></div></span>
               <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
             </div>
           </div>
@@ -210,12 +235,16 @@
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                 </div>
-              </div>
+              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><a href="">Edit</a>
-                &nbsp;
-                &middot;
-                &nbsp;<a href="">Delete</a><a class="pull-right" href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Delete</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Report Abusive</a></span>
+                <div class="clearfix"></div></span>
               <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
             </div>
           </div>
@@ -226,17 +255,21 @@
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                 </div>
-              </div>
+              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><a href="">Edit</a>
-                &nbsp;
-                &middot;
-                &nbsp;<a href="">Delete</a><a class="pull-right" href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Delete</a>
+                  &nbsp;
+                  &middot;
+                  &nbsp;<a href="">Report Abusive</a></span>
+                <div class="clearfix"></div></span>
               <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
             </div>
           </div>
         </div>
-      </div>
+      </div><a class="backtotop" href="#" alt="back to top" title="back to top"><i class="fa fa-chevron-circle-up"></i></a>
     </div>
     <footer>
       <div class="container">© 2015 British Council<br>The United Kingdom's international organisation for cultural relations and educational opportunities.<br>A registered charity: 209131 (England and Wales) SC037733 (Scotland).</div>
@@ -250,7 +283,21 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-      
+        $(window).on('scroll resize', function() {
+          var st = $(this).scrollTop();
+          var navOffsetTop = $('.steadybird').offset().top;
+          //- console.log(st + ':' + navOffsetTop)
+          if ($(this).width() >= 767) {
+            if (st >= navOffsetTop) {
+              $('.steadybird').addClass('fixed');
+              $('body').css('margin-top', $('.navbar-header').height());
+            }
+            if (st < $('.navbar-header').height()) {
+              $('.steadybird').removeClass('fixed');
+              $('body').css('margin-top', '');
+            }
+          }
+        });
       });
     </script>
   </body>
