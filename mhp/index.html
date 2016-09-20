@@ -76,99 +76,312 @@
                   </div>
                 </div>
               </div>
-              <table class="mdl-data-table view view-all">
-                <thead>
-                  <tr>
-                    <th class="mdl-data-table__cell--non-numeric">Name</th>
-                    <th class="mdl-data-table__cell--non-numeric">Duration</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th><strong>Total Duration :</strong></th>
-                    <th class="mdl-data-table__cell--non-numeric"><strong class="total">41760</strong><small>&nbsp;mins</small></th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Herrera, Weyden</td>
-                    <td class="mdl-data-table__cell--non-numeric">15840<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
-                    <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Rapoport, Dmitry</td>
-                    <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">David, Amy</td>
-                    <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Faktorovich, Boris</td>
-                    <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Gilbukh, Edik S</td>
-                    <td class="mdl-data-table__cell--non-numeric">5760<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
-                    <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Karaev, Isaak</td>
-                    <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Lamphere, Judson</td>
-                    <td class="mdl-data-table__cell--non-numeric">8640<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">Merson, Alexander</td>
-                    <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="mdl-data-table view view-patient">
-                <thead>
-                  <tr>
-                    <th class="mdl-data-table__cell--non-numeric" width="20%">From</th>
-                    <th class="mdl-data-table__cell--non-numeric">To</th>
-                    <th class="mdl-data-table__cell--non-numeric">Duration</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th colspan="2"><strong>Total Duration :</strong></th>
-                    <th class="mdl-data-table__cell--non-numeric"><strong class="total">15840</strong><small>&nbsp;mins</small></th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">11/9/2001<br><small>@12:30pm</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">13/9/2001<br><small>@12:30pm</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">3/2/2003<br><small>@4:10pm</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">8/2/2003<br><small>@4:10pm</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">12/5/2003<br><small>@9:20am</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">13/5/2003<br><small>@9:20am</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
-                  </tr>
-                  <tr>
-                    <td class="mdl-data-table__cell--non-numeric">5/9/2016<br><small>@7:10am</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">8/9/2016<br><small>@7:10am</small></td>
-                    <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar"><a class="mdl-button mdl-js-button mdl-button--icon nav" href=""><i class="material-icons">keyboard_arrow_left</i></a>
+                  <div class="mdl-layout-spacer"></div><a class="mdl-tabs__tab is-active" href="#tab-day">Day</a><a class="mdl-tabs__tab" href="#tab-week">Week</a><a class="mdl-tabs__tab" href="#tab-month">Month</a><a class="mdl-tabs__tab" href="#tab-year">Year</a>
+                  <div class="mdl-layout-spacer"></div><a class="mdl-button mdl-js-button mdl-button--icon nav" href=""><i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+                <div class="mdl-tabs__panel is-active" id="tab-day">
+                  <table class="mdl-data-table view view-all">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">41760</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Herrera, Weyden</td>
+                        <td class="mdl-data-table__cell--non-numeric">15840<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mdl-data-table view view-patient">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric" width="20%">From</th>
+                        <th class="mdl-data-table__cell--non-numeric">To</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2"><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">15840</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">11/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">3/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">12/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">5/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mdl-tabs__panel" id="tab-week">
+                  <table class="mdl-data-table view view-all">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">41760</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Herrera, Weyden</td>
+                        <td class="mdl-data-table__cell--non-numeric">15840<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Rapoport, Dmitry</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mdl-data-table view view-patient">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric" width="20%">From</th>
+                        <th class="mdl-data-table__cell--non-numeric">To</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2"><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">15840</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">11/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">3/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">12/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">5/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mdl-tabs__panel" id="tab-month">
+                  <table class="mdl-data-table view view-all">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">41760</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Herrera, Weyden</td>
+                        <td class="mdl-data-table__cell--non-numeric">15840<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Rapoport, Dmitry</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">David, Amy</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Faktorovich, Boris</td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mdl-data-table view view-patient">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric" width="20%">From</th>
+                        <th class="mdl-data-table__cell--non-numeric">To</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2"><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">15840</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">11/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">3/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">12/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">5/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mdl-tabs__panel" id="tab-year">
+                  <table class="mdl-data-table view view-all">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">41760</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Herrera, Weyden</td>
+                        <td class="mdl-data-table__cell--non-numeric">15840<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Rapoport, Dmitry</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">David, Amy</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Faktorovich, Boris</td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Gilbukh, Edik S</td>
+                        <td class="mdl-data-table__cell--non-numeric">5760<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Howard, Gary A</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Karaev, Isaak</td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Lamphere, Judson</td>
+                        <td class="mdl-data-table__cell--non-numeric">8640<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Merson, Alexander</td>
+                        <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="mdl-data-table view view-patient">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric" width="20%">From</th>
+                        <th class="mdl-data-table__cell--non-numeric">To</th>
+                        <th class="mdl-data-table__cell--non-numeric">Duration</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2"><strong>Total Duration :</strong></th>
+                        <th class="mdl-data-table__cell--non-numeric"><strong class="total">15840</strong><small>&nbsp;mins</small></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">11/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/9/2001<br><small>@12:30pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">2880<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">3/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/2/2003<br><small>@4:10pm</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">7200<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">12/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">13/5/2003<br><small>@9:20am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">1440<small>&nbsp;mins</small></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">5/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">8/9/2016<br><small>@7:10am</small></td>
+                        <td class="mdl-data-table__cell--non-numeric">4320<small>&nbsp;mins</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
               <div class="table-footer-controls"><span class="rows-per-page"><span>10</span>
                   <button class="mdl-button mdl-js-button mdl-button--icon" id="rows-per-page"><i class="material-icons">arrow_drop_down</i></button>
                   <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="rows-per-page">
