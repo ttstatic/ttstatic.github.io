@@ -321,14 +321,36 @@
       
         //- focus composer
         $('.raised').on('focus keydown', 'input, textarea', function(e) {
-          $('.post-overlay').show();
+          var modal;
+          $('.post-overlay').css('display', function() {
+      
+            modal = true;
+            raise(modal);
+      
+            $('.post-overlay').click(function() {
+              $(this).hide();
+              modal = false;
+              raise(modal);
+            });
+            return 'block';
+          });
           if (e.keyCode == 27) {
             $('.post-overlay').hide();
+            modal = false;
+            raise(modal);
+            $(this).blur();
           }
         });
-        $('.post-overlay').click(function() {
-          $(this).hide();
-        });
+      
+        function raise(obj) {
+          if (obj) {
+            $('nav.navbar').css('z-index', '1');
+            $('.raised').css('z-index', '1003');
+          } else {
+            $('nav.navbar').css('z-index', '');
+            $('.raised').css('z-index', '');
+          }
+        }
       
       });
     </script>
