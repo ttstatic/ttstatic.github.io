@@ -21,6 +21,7 @@
 <![endif]-->
   </head>
   <body>
+    <div class="post-overlay"></div>
     <div class="search-bar">
       <div class="container">
         <div class="form-search">
@@ -63,7 +64,7 @@
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
           <nav class="left">
-            <h4>Discussions<a href=""><i class="fa fa-plus"></i></a></h4>
+            <h4>Discussions<a href="" data-toggle="tooltip" data-placement="auto" title="Add New Discussion"><i class="fa fa-plus"></i></a></h4>
             <div class="search-dis">
               <input type="text" placeholder="Search...">
             </div>
@@ -112,7 +113,7 @@
             </div>
             <h2 class="title">Group</h2>
           </div>
-          <div class="card">
+          <div class="card raised">
             <div class="card-padding">
               <div class="composer">
                 <ul class="nav nav-tabs" role="tablist">
@@ -126,7 +127,7 @@
                     <div class="form-group">
                       <textarea class="form-control" placeholder="Write something..." rows="5"></textarea>
                     </div>
-                    <div class="buttons"><span class="icons"><a class="pull-left" href=""><i class="fa fa-paperclip"></i></a></span><a class="btn btn-default btn-sm" href="">Post</a></div>
+                    <div class="buttons"><span class="icons"><a class="pull-left" href="" data-toggle="tooltip" data-placement="auto" title="Attach File"><i class="fa fa-paperclip"></i></a></span><a class="btn btn-default btn-sm" href="">Post</a></div>
                   </div>
                   <div class="tab-pane" id="tabEmail" role="tabpanel"><br>
                     <div class="table-responsive">
@@ -211,61 +212,76 @@
           <div class="card">
             <div class="card-padding">
               <div class="media">
-                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/40" alt="..."></a></div>
+                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/35" alt="..."></a></div>
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                  <div class="replies">
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/25" alt="..."></a></div>
+                      <div class="media-body"><strong class="media-heading">Rodan Luzuriaga</strong><br><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">1</small></span></span><small class="text-muted">44mins</small>
+                        <div class="post-content">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                      </div>
+                    </div>
+                    <div class="reply">
+                      <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
+                    </div>
+                  </div>
                 </div>
-              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
+              </div><a class="bookmark" href="" data-toggle="tooltip" data-placement="auto" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Delete</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span></span><span class="links"><a href=""><i class="fa fa-pencil"></i>Edit</a><a href=""><i class="fa fa-trash-o"></i>Delete</a><a href=""><i class="fa fa-exclamation-triangle"></i>Report Abusive</a></span>
                 <div class="clearfix"></div></span>
-              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
+              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
             </div>
           </div>
           <div class="card">
             <div class="card-padding">
               <div class="media">
-                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/40" alt="..."></a></div>
+                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/35" alt="..."></a></div>
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                  <div class="replies">
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/25" alt="..."></a></div>
+                      <div class="media-body"><strong class="media-heading">Rodan Luzuriaga</strong><br><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">1</small></span></span><small class="text-muted">44mins</small>
+                        <div class="post-content">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                      </div>
+                    </div>
+                    <div class="reply">
+                      <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
+                    </div>
+                  </div>
                 </div>
-              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
+              </div><a class="bookmark" href="" data-toggle="tooltip" data-placement="auto" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Delete</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span></span><span class="links"><a href=""><i class="fa fa-pencil"></i>Edit</a><a href=""><i class="fa fa-trash-o"></i>Delete</a><a href=""><i class="fa fa-exclamation-triangle"></i>Report Abusive</a></span>
                 <div class="clearfix"></div></span>
-              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
+              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
             </div>
           </div>
           <div class="card">
             <div class="card-padding">
               <div class="media">
-                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/40" alt="..."></a></div>
+                <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/35" alt="..."></a></div>
                 <div class="media-body"><strong class="media-heading">Jassim Ali Jassim</strong><br><small>12 September at 09:17 AM</small>
                   <div class="post-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                  <div class="replies">
+                    <div class="media">
+                      <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/25" alt="..."></a></div>
+                      <div class="media-body"><strong class="media-heading">Rodan Luzuriaga</strong><br><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">1</small></span></span><small class="text-muted">44mins</small>
+                        <div class="post-content">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                      </div>
+                    </div>
+                    <div class="reply">
+                      <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
+                    </div>
+                  </div>
                 </div>
-              </div><a class="bookmark" href="" alt="bookmark this post" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
+              </div><a class="bookmark" href="" data-toggle="tooltip" data-placement="auto" title="bookmark this post"><i class="fa fa-bookmark"></i></a>
             </div>
-            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span><span class="dislikes"><a href=""><i class="fa fa-thumbs-down fa-flip-horizontal"></i></a><small class="count">0</small></span></span><span class="pull-right"><a href="">Edit</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Delete</a>
-                  &nbsp;
-                  &middot;
-                  &nbsp;<a href="">Report Abusive</a></span>
+            <div class="reply"><span class="controls"><span class="votes"><span class="likes"><a href=""><i class="fa fa-thumbs-up"></i></a><small class="count">12</small></span></span><span class="links"><a href=""><i class="fa fa-pencil"></i>Edit</a><a href=""><i class="fa fa-trash-o"></i>Delete</a><a href=""><i class="fa fa-exclamation-triangle"></i>Report Abusive</a></span>
                 <div class="clearfix"></div></span>
-              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-camera"></i></span>
+              <input type="text" placeholder="Write a reply..."><span class="actions"><i class="fa fa-paperclip" data-toggle="tooltip" data-placement="auto" title="Attach File"></i></span>
             </div>
           </div>
         </div>
@@ -283,6 +299,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
+      
         $(window).on('scroll resize', function() {
           var st = $(this).scrollTop();
           var navOffsetTop = $('.steadybird').offset().top;
@@ -298,6 +315,21 @@
             }
           }
         });
+      
+        //- init Tooltip
+        $("[data-toggle='tooltip']").tooltip();
+      
+        //- focus composer
+        $('.raised').on('focus keydown', 'input, textarea', function(e) {
+          $('.post-overlay').show();
+          if (e.keyCode == 27) {
+            $('.post-overlay').hide();
+          }
+        });
+        $('.post-overlay').click(function() {
+          $(this).hide();
+        });
+      
       });
     </script>
   </body>
