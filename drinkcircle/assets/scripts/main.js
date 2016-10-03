@@ -23,6 +23,14 @@ var Main = (function () {
 				}
 			})
 
+			$(window).on('scroll', function() {
+				if($(this).scrollTop() > 50) {
+					$('.nav-category').slideUp('fast');
+				} else {
+					$('.nav-category').slideDown('fast');
+				}
+			});
+
 		},
 
 		//--------
