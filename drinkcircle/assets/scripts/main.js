@@ -23,11 +23,13 @@ var Main = (function () {
 				}
 			})
 
-			$(window).on('scroll', function() {
-				if($(this).scrollTop() > 50) {
-					$('.nav-category').slideUp('fast');
-				} else {
-					$('.nav-category').slideDown('fast');
+			$(window).on('scroll resize', function() {
+				if ($(this).width() > 767) {
+					if($(this).scrollTop() > 50) {
+						$('.nav-category').slideUp('fast');
+					} else {
+						$('.nav-category').slideDown('fast');
+					}
 				}
 			});
 
