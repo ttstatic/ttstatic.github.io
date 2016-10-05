@@ -44,7 +44,7 @@
             <ul class="nav navbar-nav navbar-left">
               <li>
                 <div class="form-group all-search"><i class="fa fa-search"></i>
-                  <input class="form-control" type="text" placeholder="Search...">
+                  <input class="form-control" type="text" placeholder="Search drinks, drinkmakers, ratings, circlebuys, people and more...">
                 </div>
               </li>
             </ul>
@@ -79,26 +79,6 @@
                     <li><a href="">Sub Menu</a></li>
                   </ul>
                 </li>
-                <li><a href="">Profile</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Rate</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Compare</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Post</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
                 <li><a href="">Red</a>
                   <ul>
                     <li><a href="">Sub Menu</a></li>
@@ -125,6 +105,36 @@
                   </ul>
                 </li>
                 <li><a href="">Cider</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Circlebuys</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Preferences</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Rate</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Compare</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Post</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Profile</a>
                   <ul>
                     <li><a href="">Sub Menu</a></li>
                   </ul>
@@ -229,9 +239,49 @@
           </div>
           <div class="col-md-6">
             <div class="composer">
-              <div class="head"><a href="#"><i class="fa fa-pencil"></i>Status</a><a href="#"><i class="fa fa-picture-o"></i>Photo/Video</a><a href="#"><i class="fa fa-calendar-o"></i>Event</a></div>
-              <div class="content">
-                <textarea class="form-control" rows="2"></textarea>
+              <div class="head"><a href="#composer-tab-status" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i>Status</a><a href="#composer-tab-photo-video" role="tab" data-toggle="tab"><i class="fa fa-picture-o"></i>Photo/Video</a><a href="#composer-tab-events" role="tab" data-toggle="tab"><i class="fa fa-calendar-o"></i>Events</a></div>
+              <div class="content tab-content">
+                <div class="tab-pane active" id="composer-tab-status" role="tabpanel">
+                  <textarea class="form-control" rows="2"></textarea>
+                </div>
+                <div class="tab-pane" id="composer-tab-photo-video" role="tabpanel">
+                  <div class="drop-photo"><i class="fa fa-picture-o"></i><br><span>Drag Photos/Videos Here</span></div>
+                </div>
+                <div class="tab-pane" id="composer-tab-events" role="tabpanel">
+                  <div class="drop-photo"><i class="fa fa-picture-o"></i><br><span>Drag Event Photo Here</span></div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-event-name">Event Name</label>
+                        <input class="form-control" id="composer-event-name" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-location">Location</label>
+                        <input class="form-control" id="composer-location" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                      <div class="form-group">
+                        <label for="composer-event-date-from">From</label>
+                        <input class="form-control" id="composer-event-date-from" type="date" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                      <div class="form-group">
+                        <label for="composer-event-date-to">to</label>
+                        <input class="form-control" id="composer-event-date-to" type="date" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-description">Description</label>
+                        <textarea class="form-control" id="composer-description" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="controls"><a href="#"><i class="fa fa-camera"></i></a><a href="#"><i class="fa fa-user-plus"></i></a><a href="#"><i class="fa fa-smile-o"></i></a><a href="#"><i class="fa fa-map-marker"></i></a><a href="#"><i class="fa fa-clock-o"></i></a><a class="post" href="#"><i class="fa fa-send-o"></i>Post</a></div>
             </div>
