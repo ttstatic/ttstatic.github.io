@@ -123,27 +123,341 @@
         </div>
       </nav>
     </header>
-    <div class="banner advisor">
+    <div class="banner home">
       <div class="gradient"></div>
-      <h1 class="jumbo">Welcome to a new world of drinking<br><small>rate, review and compare</small></h1>
-      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
-        <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i></div>
+      <div class="owl-carousel">
+        <div class="item"><img src="assets/images/banner/banner_slide_1.jpg"></div>
+        <div class="item"><img src="assets/images/banner/banner_slide_2.jpg"></div>
+        <div class="item"><img src="assets/images/banner/banner_slide_3.jpg"></div>
+        <div class="item"><img src="assets/images/banner/banner_slide_4.jpg"></div>
       </div>
+      <h1 class="jumbo">The fun marketplace connecting drinklovers and drinkmakers<br><small>Discover. Share. Save. Enjoy</small></h1>
+      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a></div>
     </div>
-    <section class="profile da">
-      <h2 class="advisor">Welcome to drinkadvisor<i class="fa fa-question-circle"></i></h2>
+    <section class="profile dd">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <form>
               <div class="form-group">
-                <div class="icon_search">
-                  <input class="form-control input-lg" type="text" placeholder="What drink would you like to rate or review?"><i class="fa fa-search"></i>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="icon_search">
-                  <input class="form-control input-lg" type="text" placeholder="What drink would you like to get a rating or review on?"><i class="fa fa-search"></i>
+                <div class="icon_search dc-filters">
+                  <input class="form-control input-lg" type="text" placeholder="Search drinks..."><a href="searchresult.html"><i class="fa fa-search"></i></a><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
+                  <div class="dc-filters-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
+                    <div class="filters-wrap">
+                      <div class="row">
+                        <div class="col-md-4"><strong>Category</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Red Wine
+                            </li>
+                            <li>
+                              <input type="checkbox">White Wine
+                            </li>
+                            <li>
+                              <input type="checkbox">Beer
+                            </li>
+                            <li>
+                              <input type="checkbox">Cider
+                            </li>
+                            <li>
+                              <input type="checkbox">Spirits
+                            </li>
+                            <li>
+                              <input type="checkbox">Bubbles
+                            </li>
+                            <li>
+                              <input type="checkbox">Organic
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Varietal</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Shiraz
+                            </li>
+                            <li>
+                              <input type="checkbox">Chardonnay
+                            </li>
+                            <li>
+                              <input type="checkbox">Cabernet
+                            </li>
+                            <li>
+                              <input type="checkbox">Suvignon
+                            </li>
+                            <li>
+                              <input type="checkbox">Pinot Gris
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Vintage</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Non Vintage
+                            </li>
+                            <li>
+                              <input type="checkbox">2016
+                            </li>
+                            <li>
+                              <input type="checkbox">2015
+                            </li>
+                            <li>
+                              <input type="checkbox">Etc.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4"><strong>Pack Size</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Single Bottle
+                            </li>
+                            <li>
+                              <input type="checkbox">6 pack
+                            </li>
+                            <li>
+                              <input type="checkbox">12 pack
+                            </li>
+                            <li>
+                              <input type="checkbox">24 pack
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Country</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Australia
+                            </li>
+                            <li>
+                              <input type="checkbox">France
+                            </li>
+                            <li>
+                              <input type="checkbox">Spain
+                            </li>
+                            <li>
+                              <input type="checkbox">Italy
+                            </li>
+                            <li>
+                              <input type="checkbox">New Zealand
+                            </li>
+                            <li>
+                              <input type="checkbox">Argentina
+                            </li>
+                            <li>
+                              <input type="checkbox">United States
+                            </li>
+                            <li>
+                              <input type="checkbox">Chile
+                            </li>
+                            <li>
+                              <input type="checkbox">South Africa
+                            </li>
+                            <li>
+                              <input type="checkbox">Greece
+                            </li>
+                            <li>
+                              <input type="checkbox">Uruguay
+                            </li>
+                            <li>
+                              <input type="checkbox">Portugal
+                            </li>
+                            <li>
+                              <input type="checkbox">Romania
+                            </li>
+                            <li>
+                              <input type="checkbox">Austria
+                            </li>
+                            <li>
+                              <input type="checkbox">Macedonia
+                            </li>
+                            <li>
+                              <input type="checkbox">Hungary
+                            </li>
+                            <li>
+                              <input type="checkbox">Brazil
+                            </li>
+                            <li>
+                              <input type="checkbox">China
+                            </li>
+                            <li>
+                              <input type="checkbox">Germany
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Region</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Adelaide Hills
+                            </li>
+                            <li>
+                              <input type="checkbox">Adelaide Plains
+                            </li>
+                            <li>
+                              <input type="checkbox">Alphine Valleys
+                            </li>
+                            <li>
+                              <input type="checkbox">Barossa Valley
+                            </li>
+                            <li>
+                              <input type="checkbox">Beechworth
+                            </li>
+                            <li>
+                              <input type="checkbox">Bendigo
+                            </li>
+                            <li>
+                              <input type="checkbox">Blackwood Valley
+                            </li>
+                            <li>
+                              <input type="checkbox">Canberra District
+                            </li>
+                            <li>
+                              <input type="checkbox">Clare Valley
+                            </li>
+                            <li>
+                              <input type="checkbox">Coonawarra
+                            </li>
+                            <li>
+                              <input type="checkbox">Cowra
+                            </li>
+                            <li>
+                              <input type="checkbox">Currency Creek
+                            </li>
+                            <li>
+                              <input type="checkbox">Eden Valley Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Geelong Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Geographe Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Gippsland Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Glenrowan
+                            </li>
+                            <li>
+                              <input type="checkbox">Goulburn Valley
+                            </li>
+                            <li>
+                              <input type="checkbox">Grampians Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Granite Belt Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Great Southern Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Gundagai
+                            </li>
+                            <li>
+                              <input type="checkbox">Hastings River
+                            </li>
+                            <li>
+                              <input type="checkbox">Heathcote Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Henty
+                            </li>
+                            <li>
+                              <input type="checkbox">Hilltops Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Hunter Valley Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Kangaroo Island
+                            </li>
+                            <li>
+                              <input type="checkbox">King Valley Wineries
+                            </li>
+                            <li>
+                              <input type="checkbox">Langhorne Creek Wineries
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4"><strong>Price</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Under $10
+                            </li>
+                            <li>
+                              <input type="checkbox">$10 - $20
+                            </li>
+                            <li>
+                              <input type="checkbox">$20 - $30
+                            </li>
+                            <li>
+                              <input type="checkbox">$30 - $40
+                            </li>
+                            <li>
+                              <input type="checkbox">$40 - $50
+                            </li>
+                            <li>
+                              <input type="checkbox">$50 - $60
+                            </li>
+                            <li>
+                              <input type="checkbox">$60 - $80
+                            </li>
+                            <li>
+                              <input type="checkbox">$80 - $100
+                            </li>
+                            <li>
+                              <input type="checkbox">$100 - $150
+                            </li>
+                            <li>
+                              <input type="checkbox">$150 - $200
+                            </li>
+                            <li>
+                              <input type="checkbox">Over $200
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Ratings</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Over 95
+                            </li>
+                            <li>
+                              <input type="checkbox">90 - 94
+                            </li>
+                            <li>
+                              <input type="checkbox">85 - 89
+                            </li>
+                            <li>
+                              <input type="checkbox">80 - 84
+                            </li>
+                            <li>
+                              <input type="checkbox">75 - 79
+                            </li>
+                            <li>
+                              <input type="checkbox">Less than 74
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4"><strong>Awards</strong>
+                          <ul>
+                            <li>
+                              <input type="checkbox">Trophy
+                            </li>
+                            <li>
+                              <input type="checkbox">Gold
+                            </li>
+                            <li>
+                              <input type="checkbox">Silver
+                            </li>
+                            <li>
+                              <input type="checkbox">Bronze
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>
@@ -151,7 +465,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="drinks">
       <div class="container">
         <div class="product-wrap">
           <div class="row">
@@ -168,7 +482,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>14&nbsp;</big><small>circle buys</small></a></div>
+                            <big>14&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>624&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -179,8 +493,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$39.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$39.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$49.99<small>&nbsp;per case</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$44.99<small>&nbsp;per cases</small></span></a></li>
@@ -197,7 +511,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr silver">
+                  <div class="ctr">
                     <div class="count">94<span>points</span></div>
                   </div><a href="productdetails.html"><img class="img-prod" src="assets/images/products/p2.jpg" alt=""></a>
                   <div class="details">
@@ -205,7 +519,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>84&nbsp;</big><small>circle buys</small></a></div>
+                            <big>84&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>242&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -216,8 +530,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$19.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$19.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$29.99<small>&nbsp;per bottle</small></span></a></li>
@@ -234,7 +548,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr bronze">
+                  <div class="ctr">
                     <div class="count">91<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p3.jpg" alt=""></a>
                   <div class="details">
@@ -242,7 +556,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>53&nbsp;</big><small>circle buys</small></a></div>
+                            <big>53&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>160&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -253,8 +567,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$32.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$32.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$33.99<small>&nbsp;per bottle</small></span></a></li>
@@ -271,7 +585,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr silver">
+                  <div class="ctr">
                     <div class="count">89<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p4.jpg" alt=""></a>
                   <div class="details">
@@ -279,7 +593,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>43&nbsp;</big><small>circle buys</small></a></div>
+                            <big>43&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>160&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -290,8 +604,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$11.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$11.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
@@ -316,7 +630,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>20&nbsp;</big><small>circle buys</small></a></div>
+                            <big>20&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>88&nbsp;</big><small>reviews</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -327,8 +641,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$43.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$43.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$49.99<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$44.99<small>&nbsp;per bottle</small></span></a></li>
@@ -345,7 +659,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr bronze">
+                  <div class="ctr">
                     <div class="count">90<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p6.jpg" alt=""></a>
                   <div class="details">
@@ -353,7 +667,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>76&nbsp;</big><small>circle buys</small></a></div>
+                            <big>76&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>156&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -364,8 +678,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$12.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$12.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$14.90<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
@@ -390,7 +704,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>20&nbsp;</big><small>circle buys</small></a></div>
+                            <big>20&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>520&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -401,8 +715,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$36.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$36.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$42.95<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$39.99<small>&nbsp;per bottle</small></span></a></li>
@@ -419,7 +733,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr silver">
+                  <div class="ctr">
                     <div class="count">97<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p8.jpg" alt=""></a>
                   <div class="details">
@@ -427,7 +741,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>21&nbsp;</big><small>circle buys</small></a></div>
+                            <big>21&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>69&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -438,8 +752,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$14.99</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$14.99</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$15.50<small>&nbsp;per bottle</small></span></a></li>
@@ -456,7 +770,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
-                  <div class="ctr bronze">
+                  <div class="ctr">
                     <div class="count">92<span>points</span></div>
                   </div><a href="#"><img class="img-prod" src="assets/images/products/p9.jpg" alt=""></a>
                   <div class="details">
@@ -464,7 +778,7 @@
                     <div class="stats">
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>98&nbsp;</big><small>circle buys</small></a></div>
+                            <big>98&nbsp;</big><small>circlebuys</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
                             <big>19&nbsp;</big><small>ratings</small></a></div>
                         <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
@@ -475,8 +789,8 @@
                     <div class="pricing">
                       <div class="buy drop">
                         <ul>
-                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys"><small>from&nbsp;</small>
-                              <big>$12.50</big></a><br><a href="#">rate | write a review</a>
+                          <li><a class="popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">
+                              <big>$12.50</big></a><br>
                             <ul>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>bottle</span><span class="price">$14.25<small>&nbsp;per bottle</small></span></a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>case</span><span class="price">$13.50<small>&nbsp;per bottle</small></span></a></li>
@@ -650,6 +964,29 @@
           });
         }).click(function(e) {
           e.preventDefault();
+        });
+      });
+      
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 6000,
+          autoplayHoverPause: true,
+          animateOut: 'fadeOut',
+          autoplaySpeed: 1000,
+          mouseDrag: false,
+          responsive:{
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }
         });
       });
     </script>
