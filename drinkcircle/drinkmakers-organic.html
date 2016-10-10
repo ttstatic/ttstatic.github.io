@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>drinkcircle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Balthazar" rel="stylesheet" type="text/css">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_black.png" alt=""></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li>
+                <div class="form-group all-search"><i class="fa fa-search"></i>
+                  <input class="form-control" type="text" placeholder="Search drinks, drinkmakers, ratings, circlebuys, people and more...">
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-in">
+              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="myprofile.html">Profile</a></li>
+                  <li><a href="#">Multibuy</a></li>
+                  <li><a href="#">Circles</a></li>
+                  <li><a href="#">My Orders</a></li>
+                  <li class="divider" role="separator"></li>
+                  <li><a href="#">Sign out</a></li>
+                </ul>
+              </li>
+              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+                  <div class="counter">2</div></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-out">
+              <li class="nav-with-icon"><a href="profile.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>sign in</a></li>
+              <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="div">
+              <ul class="nav navbar-nav navbar-left nav-category">
+                <li><a href="drinks.html">Drinks</a>
+                  <ul>
+                    <li><a href="">Sub Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="drinkmakers.html">Drinkmakers</a></li>
+                <li><a href="drinks-red.html">Red</a></li>
+                <li><a href="drinks-white.html">White</a></li>
+                <li><a href="drinks-beer.html">Beer</a></li>
+                <li><a href="drinks-spirits.html">Spirits</a></li>
+                <li><a href="drinks-bubbles.html">Bubbles</a></li>
+                <li><a href="drinks-cider.html">Cider</a></li>
+                <li><a href="circlebuys.html">Circlebuys</a></li>
+                <li><a href="#interests" data-toggle="modal">Interests</a></li>
+                <li><a href="ratings.html">Ratings</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="profile.html">Post</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dc-filters-dropdown">
+              <div class="filters-wrap"><strong data-toggle="collapse" data-target="#collapse-category">Category</strong>
+                <div class="collpase in" id="collapse-category">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Red Wine
+                    </li>
+                    <li>
+                      <input type="checkbox">White Wine
+                    </li>
+                    <li>
+                      <input type="checkbox">Beer
+                    </li>
+                    <li>
+                      <input type="checkbox">Cider
+                    </li>
+                    <li>
+                      <input type="checkbox">Spirits
+                    </li>
+                    <li>
+                      <input type="checkbox">Bubbles
+                    </li>
+                    <li>
+                      <input type="checkbox">Organic
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-varietal">Varietal</strong>
+                <div class="collpase in" id="collapse-varietal">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Shiraz
+                    </li>
+                    <li>
+                      <input type="checkbox">Chardonnay
+                    </li>
+                    <li>
+                      <input type="checkbox">Cabernet
+                    </li>
+                    <li>
+                      <input type="checkbox">Suvignon
+                    </li>
+                    <li>
+                      <input type="checkbox">Pinot Gris
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-vintage">Vintage</strong>
+                <div class="collpase in" id="collapse-vintage">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Non Vintage
+                    </li>
+                    <li>
+                      <input type="checkbox">2016
+                    </li>
+                    <li>
+                      <input type="checkbox">2015
+                    </li>
+                    <li>
+                      <input type="checkbox">Etc.
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-pack-size">Pack Size</strong>
+                <div class="collpase in" id="collapse-pack-size">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Single Bottle
+                    </li>
+                    <li>
+                      <input type="checkbox">6 pack
+                    </li>
+                    <li>
+                      <input type="checkbox">12 pack
+                    </li>
+                    <li>
+                      <input type="checkbox">24 pack
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-country">Country</strong>
+                <div class="collpase in" id="collapse-country">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Australia
+                    </li>
+                    <li>
+                      <input type="checkbox">France
+                    </li>
+                    <li>
+                      <input type="checkbox">Spain
+                    </li>
+                    <li>
+                      <input type="checkbox">Italy
+                    </li>
+                    <li>
+                      <input type="checkbox">New Zealand
+                    </li>
+                    <li>
+                      <input type="checkbox">Argentina
+                    </li>
+                    <li>
+                      <input type="checkbox">United States
+                    </li>
+                    <li>
+                      <input type="checkbox">Chile
+                    </li>
+                    <li>
+                      <input type="checkbox">South Africa
+                    </li>
+                    <li>
+                      <input type="checkbox">Greece
+                    </li>
+                    <li>
+                      <input type="checkbox">Uruguay
+                    </li>
+                    <li>
+                      <input type="checkbox">Portugal
+                    </li>
+                    <li>
+                      <input type="checkbox">Romania
+                    </li>
+                    <li>
+                      <input type="checkbox">Austria
+                    </li>
+                    <li>
+                      <input type="checkbox">Macedonia
+                    </li>
+                    <li>
+                      <input type="checkbox">Hungary
+                    </li>
+                    <li>
+                      <input type="checkbox">Brazil
+                    </li>
+                    <li>
+                      <input type="checkbox">China
+                    </li>
+                    <li>
+                      <input type="checkbox">Germany
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-region">Region</strong>
+                <div class="collpase in" id="collapse-region">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Adelaide Hills
+                    </li>
+                    <li>
+                      <input type="checkbox">Adelaide Plains
+                    </li>
+                    <li>
+                      <input type="checkbox">Alphine Valleys
+                    </li>
+                    <li>
+                      <input type="checkbox">Barossa Valley
+                    </li>
+                    <li>
+                      <input type="checkbox">Beechworth
+                    </li>
+                    <li>
+                      <input type="checkbox">Bendigo
+                    </li>
+                    <li>
+                      <input type="checkbox">Blackwood Valley
+                    </li>
+                    <li>
+                      <input type="checkbox">Canberra District
+                    </li>
+                    <li>
+                      <input type="checkbox">Clare Valley
+                    </li>
+                    <li>
+                      <input type="checkbox">Coonawarra
+                    </li>
+                    <li>
+                      <input type="checkbox">Cowra
+                    </li>
+                    <li>
+                      <input type="checkbox">Currency Creek
+                    </li>
+                    <li>
+                      <input type="checkbox">Eden Valley Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Geelong Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Geographe Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Gippsland Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Glenrowan
+                    </li>
+                    <li>
+                      <input type="checkbox">Goulburn Valley
+                    </li>
+                    <li>
+                      <input type="checkbox">Grampians Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Granite Belt Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Great Southern Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Gundagai
+                    </li>
+                    <li>
+                      <input type="checkbox">Hastings River
+                    </li>
+                    <li>
+                      <input type="checkbox">Heathcote Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Henty
+                    </li>
+                    <li>
+                      <input type="checkbox">Hilltops Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Hunter Valley Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Kangaroo Island
+                    </li>
+                    <li>
+                      <input type="checkbox">King Valley Wineries
+                    </li>
+                    <li>
+                      <input type="checkbox">Langhorne Creek Wineries
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-price">Price</strong>
+                <div class="collpase in" id="collapse-price">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Under $10
+                    </li>
+                    <li>
+                      <input type="checkbox">$10 - $20
+                    </li>
+                    <li>
+                      <input type="checkbox">$20 - $30
+                    </li>
+                    <li>
+                      <input type="checkbox">$30 - $40
+                    </li>
+                    <li>
+                      <input type="checkbox">$40 - $50
+                    </li>
+                    <li>
+                      <input type="checkbox">$50 - $60
+                    </li>
+                    <li>
+                      <input type="checkbox">$60 - $80
+                    </li>
+                    <li>
+                      <input type="checkbox">$80 - $100
+                    </li>
+                    <li>
+                      <input type="checkbox">$100 - $150
+                    </li>
+                    <li>
+                      <input type="checkbox">$150 - $200
+                    </li>
+                    <li>
+                      <input type="checkbox">Over $200
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-ratings">Ratings</strong>
+                <div class="collpase in" id="collapse-ratings">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Over 95
+                    </li>
+                    <li>
+                      <input type="checkbox">90 - 94
+                    </li>
+                    <li>
+                      <input type="checkbox">85 - 89
+                    </li>
+                    <li>
+                      <input type="checkbox">80 - 84
+                    </li>
+                    <li>
+                      <input type="checkbox">75 - 79
+                    </li>
+                    <li>
+                      <input type="checkbox">Less than 74
+                    </li>
+                  </ul>
+                </div><strong data-toggle="collapse" data-target="#collapse-awards">Awards</strong>
+                <div class="collpase in" id="collapse-awards">
+                  <ul>
+                    <li>
+                      <input type="checkbox">Trophy
+                    </li>
+                    <li>
+                      <input type="checkbox">Gold
+                    </li>
+                    <li>
+                      <input type="checkbox">Silver
+                    </li>
+                    <li>
+                      <input type="checkbox">Bronze
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 card">
+            <p><small><a href="">All Drinkmakers</a></small></p>
+            <h2>1,588 Wine, Beer, Cider &amp; Spirit makers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <div class="maker-filters">
+              <input class="text-1" type="text" placeholder="...">
+              <input class="text-2" type="text" placeholder="...">
+              <select class="select-1">
+                <option>Anywhere</option>
+              </select><a href="">Search</a>
+            </div>
+            <hr>
+            <div>
+              <select class="form-control">
+                <option>Best Match</option>
+              </select>
+            </div>
+            <div class="maker-list">
+              <div class="row">
+                <div class="col-md-5"><img class="maker" src="assets/images/makers/rosnay/preview.jpg">
+                  <p class="visible-xs visible-sm"></p>
+                </div>
+                <div class="col-md-7">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="picture"><img class="placeholder sm" src="http://placehold.it/150" alt="placeholder"><img class="source" src="assets/images/makers/rosnay/logo.jpg"></div>
+                    </div>
+                    <div class="media-body">
+                      <div class="media-right"><a class="btn btn-success btn-xs" href="seller.html">Go to Profile</a>&nbsp;<a class="btn btn-success btn-xs" href="shop.html">Go to Shop</a></div>
+                      <h4 class="media-heading">Rosnay Organic</h4>
+                      <div class="rating-status md"><span class="left">5</span>
+                        <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="right sm"><a href="">8 reviews</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="address"><strong>510 Rivers Road Canowindra, New South Wales</strong></p>
+                  <p class="summary">Rosnay was established by the Statham family at Canowindra, NSW, in 1996, and since 2000 the farm has been a source of many fine organic wines and olive products. Richard and Florence Statham began the project in 1995, and when they found the property in 1996 they named it Rosnay, after Florence's grandfather, Alberic Dulong de Rosnay, who had a vineyard in the French Beaujolais...&nbsp;<a href="seller.html">read more</a></p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <nav class="text-center" aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"><small><a href="#">about</a>&nbsp;&middot;&nbsp;<a href="#">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#">terms of use</a>&nbsp;&middot;&nbsp;<a href="#">contact</a>&nbsp;&middot;&nbsp;<a href="#">blog</a>
+          <p><img src="assets/images/logo_black.png" alt=""></p></small></div>
+    </footer>
+    <div class="modal fade" id="buymode" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Buy Options</h4>
+          </div>
+          <div class="modal-body"><a class="btn btn-success btn-block" href="#">Buy Now</a>
+            <p></p>
+            <p class="text-center"><small>or</small></p><a class="btn btn-info btn-block" href="#"><i class="fa fa-group"></i>&nbsp;&nbsp;Join a Group</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="interests" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Tell us what you like<br><small>Follow topics to see more of what you're interested in</small></h4>
+          </div>
+          <table class="filter">
+            <tr>
+              <td><a href="">All Topics</a></td>
+              <td>
+                <div class="following">Following | 0</div>
+              </td>
+              <td>
+                <div class="topic-search">
+                  <input type="text" placeholder="Search topics you are interested in"><i class="fa fa-search text-muted"></i>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in9.jpg">
+                  <div class="label">Red</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in8.jpg">
+                  <div class="label">White</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in3.jpg">
+                  <div class="label">Beer</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in1.jpg">
+                  <div class="label">Spirits</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in17.jpg">
+                  <div class="label">Bubbles</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in13.jpg">
+                  <div class="label">Cider</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in5.jpg">
+                  <div class="label">Travel</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in10.jpg">
+                  <div class="label">Cooking</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in11.jpg">
+                  <div class="label">Music</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in14.jpg">
+                  <div class="label">Movies</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in16.jpg">
+                  <div class="label">Sport</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in12.jpg">
+                  <div class="label">Outdoors</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in6.jpg">
+                  <div class="label">Fashion</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in7.jpg">
+                  <div class="label">Art</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in2.jpg">
+                  <div class="label">Dining Out</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in4.jpg">
+                  <div class="label">Reading</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- External Script goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(function () {
+        $('.popover_price[data-toggle="popover"]').popover({
+          html: true,
+          content : function() {
+            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
+          },
+          title: function(){
+            return jQuery(this).data('title') + '<span class="close">&times;</span>';
+          }
+        }).on('shown.bs.popover', function(e) {
+          var popover = jQuery(this);
+          $(this).parent().find('.popover span.close').on('click', function(e) {
+            popover.popover('hide');
+          });
+        }).click(function(e) {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
