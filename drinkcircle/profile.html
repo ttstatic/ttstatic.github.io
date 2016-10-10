@@ -75,50 +75,18 @@
                     <li><a href="">Sub Menu</a></li>
                   </ul>
                 </li>
-                <li><a href="drinkmakers.html">Drinkmakers</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-red.html">Red</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-white.html">White</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-beer.html">Beer</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-spirits.html">Spirits</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-bubbles.html">Bubbles</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="drinks-cider.html">Cider</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
+                <li><a href="drinkmakers.html">Drinkmakers</a></li>
+                <li><a href="drinks-red.html">Red</a></li>
+                <li><a href="drinks-white.html">White</a></li>
+                <li><a href="drinks-beer.html">Beer</a></li>
+                <li><a href="drinks-spirits.html">Spirits</a></li>
+                <li><a href="drinks-bubbles.html">Bubbles</a></li>
+                <li><a href="drinks-cider.html">Cider</a></li>
                 <li><a href="circlebuys.html">Circlebuys</a></li>
                 <li><a href="#interests" data-toggle="modal">Interests</a></li>
                 <li><a href="ratings.html">Ratings</a></li>
                 <li><a href="compare.html">Compare</a></li>
-                <li><a href="">Post</a>
-                  <ul>
-                    <li><a href="">Sub Menu</a></li>
-                  </ul>
-                </li>
+                <li><a href="profile.html">Post</a></li>
                 <li><a href="profile.html">Profile</a></li>
               </ul>
             </div>
@@ -141,13 +109,13 @@
           <div class="row">
             <div class="col-sm-9 col-md-9 col-sm-offset-3 col-md-offset-3">
               <div class="userprofilemenu">
-                <nav class="menu">
+                <nav class="menu"><a class="btn btn-success btn-sm btn-add-friend" href="#"><i class="fa fa-user-plus"></i>Add friend</a>
                   <ul>
                     <li><a class="active" href="#">Timeline</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Friends</a></li>
                     <li><a href="#">Circlebuys</a></li>
-                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Circles</a></li>
                     <li><a href="#">Reviews</a></li>
                   </ul>
                 </nav>
@@ -161,9 +129,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <div class="intro"><a class="btn btn-success btn-sm btn-add-friend" href="#"><i class="fa fa-user-plus"></i>Add friend</a>
+            <div class="intro"><a class="btn btn-success btn-sm btn-add-interests" href="#interests" data-toggle="modal"><i class="fa fa-plus"></i>Add Interests</a>
               <h4>Interests</h4>
-              <p><a href="#">Craft Beers</a><br><a href="#">Shiraz</a><br><a href="#">Chardonnay</a><br><a href="#">Cooking Italian food</a><br><a href="#">Golf</a><br><a href="#">Surfing</a></p>
+              <p><a href="#">Red Wine</a><br><a href="#">Beer</a><br><a href="#">White Wine</a><br><a href="#">Travel</a><br><a href="#">Sport</a><br><a href="#">Music</a><br><a href="#">Movies</a><br><a href="#">Reading</a></p>
               <hr>
               <div class="info">
                 <p><i class="fa fa-briefcase"></i><span>Works at&nbsp;</span><span class="text-muted">drinkcircle</span></p>
@@ -197,10 +165,6 @@
                     </div></span><span class="form-control"><a href="#"><strong>Bayview Golf club</strong></a><br>Chivas Regal<br>1 case buy<br><strong>4 bottles left</strong><a class="share" href="#"><i class="fa fa-share"></i>&nbsp;share</a></span></div>
               </div>
               <div class="more"><a href="#">See all</a></div>
-            </div><br class="clearfix">
-            <div class="card"><small class="pull-right"><a href="#">refine search</a></small>
-              <p class="clearfix"></p>
-              <input class="form-control" type="text" placeholder="Search circlebuys...">
             </div>
             <div class="grid_groups friends">
               <h4><a href="#">Friends</a><small>(<a href="#">120</a>)</small></h4>
@@ -250,7 +214,7 @@
             </div>
             <div class="list_groups groups">
               <div class="head">
-                <h4><a href="#">Groups</a><small>(<a href="#">23</a>)</small></h4>
+                <h4><a href="#">Circles</a><small>(<a href="#">23</a>)</small></h4>
               </div>
               <div class="content">
                 <div class="input-group"><span class="input-group-addon">
@@ -441,21 +405,24 @@
           <div class="col-md-3">
             <div class="list_groups toppicks">
               <div class="head">
-                <h4><a href="#">My TOP 10 picks</a></h4>
+                <h4 class="text-center"><a href="#">My TOP 10</a></h4>
               </div>
               <div class="content">
                 <div class="input-group"><span class="input-group-addon">
+                    <h4>1.&nbsp;</h4></span><span class="input-group-addon">
                     <div class="thumb">
-                      <div class="img"><img src="assets/images/products/bottle7.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>1. Chivas Regal</strong></a><br>12 Year Old Scotch Whisky 700ml</span></div>
+                      <div class="img square"><img src="assets/images/products/p3.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Chivas Regal</strong></a><br>12 Year Old Scotch Whisky 700ml</span></div>
                 <div class="input-group"><span class="input-group-addon">
+                    <h4>2.&nbsp;</h4></span><span class="input-group-addon">
                     <div class="thumb">
-                      <div class="img"><img src="assets/images/products/bottle8.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="#"><strong>2. Corona Extra</strong></a><br>Imported Beer</span></div>
+                      <div class="img square"><img src="assets/images/products/p1.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Corona Extra</strong></a><br>Imported Beer</span></div>
                 <div class="input-group"><span class="input-group-addon">
+                    <h4>3.&nbsp;</h4></span><span class="input-group-addon">
                     <div class="thumb">
-                      <div class="img"><img src="assets/images/products/bottle1.png" alt=""></div>
-                    </div></span><span class="form-control"><a href="productdetails.html"><strong>3. Brokenwood</strong></a><br>Graveyard Vineyard Shiraz</span></div>
+                      <div class="img square"><img src="assets/images/products/p2.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="productdetails.html"><strong>Brokenwood</strong></a><br>Graveyard Vineyard Shiraz</span></div>
               </div>
               <div class="more"><a href="#">See all</a></div>
             </div>
