@@ -53,9 +53,9 @@
                   <li><a href="#">Sign out</a></li>
                 </ul>
               </li>
-              <li><a class="notification" href="#"><i class="fa fa-globe"></i>
+              <li><a class="notification" href="#"><i class="fa fa-bell"></i>
                   <div class="counter">2</div></a></li>
-              <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+              <li><a class="cart-icon" href=""><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right logged-out">
               <li class="nav-with-icon"><a href="profile.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>sign in</a></li>
@@ -899,6 +899,63 @@
               <p class="text-center"><a class="pull-left" href="">Want to login instead?</a><a class="pull-right" href="">Forgot your password?</a>
                 <div class="clearfix"></div>
               </p></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_edit_toppicks" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Manage Top 10</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Preview</th>
+                  <th>Name</th>
+                  <th>Points</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1.</th>
+                  <th><img class="preview" src="assets/images/products/p14.jpg" alt=""></th>
+                  <th><a href="#"><strong>Young Henrys</strong></a><br><small>Natural Lager</small></th>
+                  <th>
+                    <div class="points"><span>96</span><small>points</small></div>
+                  </th>
+                  <th><a href="#"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+                <tr>
+                  <th>2.</th>
+                  <th><img class="preview" src="assets/images/products/p1.jpg" alt=""></th>
+                  <th><a href="#"><strong>Corona Extra</strong></a><br><small>Imported Beer</small></th>
+                  <th>
+                    <div class="points"><span>93</span><small>points</small></div>
+                  </th>
+                  <th><a href="#"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+                <tr>
+                  <th>3.</th>
+                  <th><img class="preview" src="assets/images/products/p2.jpg" alt=""></th>
+                  <th><a href="productdetails.html"><strong>Brokenwood</strong></a><br><small>Graveyard Vineyard Shiraz</small></th>
+                  <th>
+                    <div class="points"><span>94</span><small>points</small></div>
+                  </th>
+                  <th><a href="#"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <p>Drag and drop to adjust positions.</p><a class="btn btn-success btn-lg" href=""><i class="fa fa-plus"></i>&nbsp;Add a Drink</a>
+            </div>
           </div>
         </div>
       </div>
