@@ -101,10 +101,22 @@
           <div class="col-md-8 col-md-offset-2">
             <form>
               <div class="form-group">
-                <div class="icon_search dc-filters">
-                  <input class="form-control input-lg" type="text" placeholder="Search drinks..."><a href="searchresult.html"><i class="fa fa-search"></i></a><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
-                  <div class="dc-filters-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
-                    <div class="filters-wrap">
+                <div class="input-group dc-filters"><a class="arrow" href="#drop_recent_search" data-toggle="collapse"><i class="fa fa-caret-down"></i></a>
+                  <input class="form-control input-lg" type="text" placeholder="Search drinks..."><span class="input-group-btn">&nbsp;&nbsp;</span><span class="input-group-btn"><a class="btn btn-success btn-lg" href="">Search</a></span><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
+                  <div class="search-dropdown collapse" id="drop_recent_search"><a class="close" href="#drop_recent_search" data-toggle="collapse">&times;</a>
+                    <div class="dropdown-wrap">
+                      <big>Suggestions</big>
+                      <ul>
+                        <li><a href="">Brokenwood - Graveyard Vineyard</a></li>
+                      </ul>
+                      <big>Recent search&nbsp;<small><a href="">clear</a></small></big>
+                      <ul>
+                        <li><a href="">Corona Extra - Imported Beer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="search-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
+                    <div class="dropdown-wrap">
                       <div class="row">
                         <div class="col-md-4"><strong>Category</strong>
                           <ul>
@@ -1197,7 +1209,7 @@
               </td>
               <td>
                 <div class="topic-search">
-                  <input type="text" placeholder="Search interests..."><i class="fa fa-search text-muted"></i>
+                  <input type="text" placeholder="Find other drinklovers with similar interests..."><i class="fa fa-search text-muted"></i>
                 </div>
               </td>
             </tr>
