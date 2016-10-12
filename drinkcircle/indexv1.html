@@ -113,7 +113,7 @@
     <div class="banner home">
       <div class="gradient"></div>
       <h1 class="jumbo">Welcome to a new world of drinking</h1>
-      <div class="action"><a class="btn btn-success btn-lg"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
+      <div class="action"><a class="btn btn-success btn-lg" href="#modal_signup" data-toggle="modal"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a>
         <div class="util"><a href="#">Download our app</a>&nbsp;&nbsp;<i class="fa fa-android"></i>&nbsp;<i class="fa fa-apple"></i></div>
       </div>
     </div>
@@ -511,6 +511,44 @@
           </div>
           <div class="modal-footer">
             <div class="text-center"><a class="btn btn-success btn-lg" href="">Compare 3 drinks</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="modal_signup" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Welcome</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group"><a class="joinfb btn btn-primary btn-block" href=""><span>Join using&nbsp;</span><img src="assets/images/facebook.png"></a></div>
+            <h5 class="text-muted text-center">OR</h5>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Mobile">
+            </div>
+            <div class="form-group"><a class="btn btn-success btn-block" href="">Join using email</a></div>
+            <table>
+              <tr>
+                <td width="25"><small>
+                    <input type="checkbox"></small></td>
+                <td><small>I'm 18 years or over and agree to Drinkcircle's&nbsp;<a href="">terms of use</a>&nbsp;and&nbsp;<a href="">privacy policy</a>.</small></td>
+              </tr>
+            </table>
+            <div class="clearfix"></div><br><small class="links">
+              <p class="text-center"><a class="pull-left" href="">Want to login instead?</a><a class="pull-right" href="">Forgot your password?</a>
+                <div class="clearfix"></div>
+              </p></small>
           </div>
         </div>
       </div>
