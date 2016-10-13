@@ -37,6 +37,13 @@ var Main = (function () {
 				$('.nav-category').slideDown();
 			});
 
+			$("[data-expand]").click(function(e) {
+				e.preventDefault();
+				$("[data-expand-items]").toggle();
+				$(this).find('span.text').toggle();
+				$(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+			});
+
 		},
 
 		//--------
