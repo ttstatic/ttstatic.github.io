@@ -44,6 +44,24 @@ var Main = (function () {
 				$(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 			});
 
+			$('.photos .prev').each(function() {
+				var _this = $(this);
+
+				_this.find('img').each(function() {
+					var w = $(this).width();
+					var h = $(this).height();
+					if (w > h)
+						$(this).height('100%')
+					else
+						$(this).width('100%');
+				});
+
+				var wrapW = _this.parent().width();
+				if(_this.width() < (wrapW/2))
+					// _this.height(wrapW/2);
+					_this.height(_this.width());
+			});
+
 		},
 
 		//--------
