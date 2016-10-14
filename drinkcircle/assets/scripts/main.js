@@ -46,20 +46,22 @@ var Main = (function () {
 
 			$('.photos .prev').each(function() {
 				var _this = $(this);
+				var wrapW = (_this.parent().width()/2);
 
 				_this.find('img').each(function() {
 					var w = $(this).width();
 					var h = $(this).height();
-					if (w > h)
+					if (w > h) {
 						$(this).height('100%')
-					else
+					} else {
 						$(this).width('100%');
-				});
+					}
 
-				var wrapW = _this.parent().width();
-				if(_this.width() < (wrapW/2))
-					// _this.height(wrapW/2);
-					_this.height(_this.width());
+					if ( (_this.width() < wrapW) && (w < h) ) {
+						$(this).height('100%').width('auto');
+					}
+
+				});
 			});
 
 		},
