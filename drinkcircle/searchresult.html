@@ -82,9 +82,12 @@
     </header>
     <section class="drinks results">
       <div class="container">
+        <div class="text-center visible-sm visible-xs">
+          <p><a class="btn btn-success toggleFilter" href="#pageFilter" data-toggle="collapse">Filters&nbsp;<i class="fa fa-caret-down"></i></a></p>
+        </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="search-dropdown">
+            <div class="search-dropdown" id="pageFilter">
               <div class="dropdown-wrap"><strong data-toggle="collapse" data-target="#collapse-category">Category</strong>
                 <div class="collpase in" id="collapse-category">
                   <ul>
