@@ -45,6 +45,7 @@ var Main = (function () {
 			});
 
 			$('.photos .prev').each(function() {
+				"use strict";
 				var _this = $(this);
 				var wrapW = (_this.parent().width()/2);
 
