@@ -65,6 +65,14 @@ var Main = (function () {
 				});
 			});
 
+			$(window).on('resize', function() {
+				if ( $(window).width() > 990 ) {
+					$('#pageFilter').css('display', 'block');
+				} else {
+					$('#pageFilter').removeAttr('style');
+				}
+			});
+
 		},
 
 		//--------
