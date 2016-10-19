@@ -21,17 +21,14 @@
 <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">GE</a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar,#navbarBlock" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo_white.png"></a>
         </div>
         <div class="navbar-collapse collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="avatar"><img src="//orig14.deviantart.net/5654/f/2009/281/4/8/godzilla_neo___rodan_by_kaijusamurai.jpg"></span>Charmaine<i class="material-icons">keyboard_arrow_down</i></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
@@ -43,13 +40,21 @@
               </ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top<span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>
         </div>
-        <!-- /.nav-collapse-->
+      </div>
+      <div class="nav-block navbar-collapse collapse" id="navbarBlock">
+        <div class="container">
+          <div class="row">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href=""><i class="material-icons">dashboard</i>Dashboard</a></li>
+              <li><a href=""><i class="material-icons">assignment</i>Evaluation</a></li>
+              <li><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
+              <li><a href=""><i class="material-icons">timeline</i>Benchmark</a></li>
+              <li><a href=""><i class="material-icons">work</i>Resources</a></li>
+              <li><a href=""><i class="material-icons">help</i>Help</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <h1>Home page</h1>
