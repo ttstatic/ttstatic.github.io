@@ -51,7 +51,7 @@
         <div class="container">
           <div class="row">
             <ul class="nav navbar-nav">
-              <li class="active"><a href=""><i class="material-icons">dashboard</i>Dashboard</a></li>
+              <li class="active"><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
               <li><a href=""><i class="material-icons">assignment</i>Evaluation</a></li>
               <li><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
               <li><a href=""><i class="material-icons">timeline</i>Benchmark</a></li>
@@ -64,6 +64,13 @@
     </nav>
     <div class="container">
       <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
           <div class="card">
             <canvas id="polarChart"></canvas>
@@ -71,11 +78,16 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <canvas id="doughnutChart"></canvas>
+            <canvas id="radarChart"></canvas>
           </div>
         </div>
       </div>
       <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <canvas id="pieChart"></canvas>
+          </div>
+        </div>
         <div class="col-md-4">
           <div class="card">
             <canvas id="barChart"></canvas>
@@ -83,12 +95,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <canvas id="lineChart"></canvas>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <canvas id="radarChart"></canvas>
+            <canvas id="doughnutChart"></canvas>
           </div>
         </div>
       </div>
@@ -110,6 +117,7 @@
         var radarCtx = document.getElementById("radarChart");
         var polarCtx = document.getElementById("polarChart");
         var doughnutCtx = document.getElementById("doughnutChart");
+        var pieCtx = document.getElementById("pieChart");
       
       
         var barChart = new Chart(barCtx, {
@@ -253,6 +261,30 @@
         });
         var doughnutChart = new Chart(doughnutCtx, {
           type: 'doughnut',
+          data: {
+            labels: [
+              "Red",
+              "Blue",
+              "Yellow"
+            ],
+            datasets: [
+            {
+              data: [300, 50, 100],
+              backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+              ],
+              hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+              ]
+            }]
+          }
+        });
+        var pieChart = new Chart(pieCtx, {
+          type: 'pie',
           data: {
             labels: [
               "Red",
