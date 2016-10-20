@@ -6,6 +6,11 @@ var Main = (function () {
 	return {
 		init: function () {
 
+			$('form.search').on('click', '#toggleCollapse', function() {
+				$(this).parent().find('.inputSearch').toggle();
+			}).on('click', '.clear', function() {
+				$(this).parent().find('input').val('').focus();
+			});
 
 
 		},
