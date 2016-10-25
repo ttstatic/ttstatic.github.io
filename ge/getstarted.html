@@ -72,18 +72,21 @@
             <div class="body">
               <nav>
                 <ul>
-                  <li class="_active"><a href="">Chair</a></li>
-                  <li><a href="">Director</a></li>
+                  <li class="active"><a href="#man1-tab1" data-toggle="tab">Chair</a></li>
+                  <li><a href="#man1-tab2" data-toggle="tab">Director</a></li>
                 </ul>
               </nav>
-              <article>
-                <div class="media _video">
-                  <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/150?text=Video" alt="..."></a></div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Video Title</h4>Insert video translation here.
+              <div class="tab-content">
+                <article class="tab-pane active" id="man1-tab1" role="tabpanel">
+                  <div class="media _video">
+                    <div class="media-left"><a href="#"><img class="media-object" src="//placehold.it/150?text=Video" alt="..."></a></div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Video Title</h4>Insert video translation here.
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+                <article class="tab-pane" id="man1-tab2" role="tabpanel">...</article>
+              </div>
             </div>
           </div>
         </div>
@@ -95,22 +98,25 @@
             <div class="body">
               <nav>
                 <ul>
-                  <li><a href="">Chair</a></li>
-                  <li class="_active"><a href="">Director</a></li>
+                  <li><a href="#man2-tab1" data-toggle="tab">Chair</a></li>
+                  <li class="active"><a href="#man2-tab2" data-toggle="tab">Director</a></li>
                 </ul>
               </nav>
-              <article><strong>Chair User Guide</strong>
-                <p>The following documents is a user guide to help you navigate your way through the Governance Evaluation and other tools included in this site. The document includes information on the following:</p>
-                <ul>
-                  <li>Using the Member Log In</li>
-                  <li>Accessing the Terms and Conditions</li>
-                  <li>Using the Governance Evaluation</li>
-                  <li>Convenor Notes: Governance Capability Assessment</li>
-                  <li>Convenor Notes: Action Plan</li>
-                  <li>Using the Governance Manual</li>
-                  <li>Using the Member Log Out</li>
-                </ul><a class="ge-btn _colored _info btn-sm" href=""><i class="material-icons">file_download</i>&nbsp;Download</a>
-              </article>
+              <div class="tab-content">
+                <article class="tab-pane" id="man2-tab1" role="tabpanel">...</article>
+                <article class="tab-pane active" id="man2-tab2" role="tabpanel"><strong>Chair User Guide</strong>
+                  <p>The following documents is a user guide to help you navigate your way through the Governance Evaluation and other tools included in this site. The document includes information on the following:</p>
+                  <ul>
+                    <li>Using the Member Log In</li>
+                    <li>Accessing the Terms and Conditions</li>
+                    <li>Using the Governance Evaluation</li>
+                    <li>Convenor Notes: Governance Capability Assessment</li>
+                    <li>Convenor Notes: Action Plan</li>
+                    <li>Using the Governance Manual</li>
+                    <li>Using the Member Log Out</li>
+                  </ul><a class="ge-btn _colored _info btn-sm" href=""><i class="material-icons">file_download</i>&nbsp;Download</a>
+                </article>
+              </div>
             </div>
           </div>
         </div>
