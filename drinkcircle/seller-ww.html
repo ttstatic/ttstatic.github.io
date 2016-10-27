@@ -22,7 +22,14 @@
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <style></style>
+    <style>
+      .logged-in {
+        display: block !important;
+      }
+      .logged-out {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -80,526 +87,382 @@
         </div>
       </nav>
     </header>
-    <div class="banner home">
+    <div class="banner userprofile seller ww">
       <div class="gradient"></div>
-      <div class="owl-carousel">
-        <div class="item"><img src="assets/images/banner/banner_slide_1.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_2.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_3.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_4.jpg"></div>
+      <div class="container banner-btn-wrap">
+        <div class="btns"><a class="btn btn-default btn-sm editprofile" href="">edit profile</a><a class="btn btn-default btn-sm editprofile" href="">preview public profile</a></div>
       </div>
-      <h1 class="jumbo">The fun marketplace connecting drinklovers and drinkmakers<br><small>Discover. Share. Enjoy</small></h1>
-      <div class="action"><a class="btn btn-success btn-lg" href="#modal_signup" data-toggle="modal"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a></div>
+      <div class="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <div class="photo">
+                <div class="img square"><a href="#"><i class="fa fa-camera"></i></a><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                <div class="name"><span>The West Winds Gin&nbsp;</span><br><small>Craft Spirits</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9 col-md-9 col-sm-offset-3 col-md-offset-3">
+              <div class="userprofilemenu">
+                <nav class="menu">
+                  <ul>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Like</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="seller-about.html">About</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="seller-reviews.html">Reviews</a></li>
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="profile dd">
+    <section class="userprofile">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <form>
-              <div class="form-group">
-                <div class="input-group dc-filters"><a class="arrow" href="#drop_recent_search" data-toggle="collapse"><i class="fa fa-caret-down"></i></a>
-                  <input class="form-control input-lg" type="text" placeholder="Search drinks..."><span class="input-group-btn">&nbsp;&nbsp;</span><span class="input-group-btn"><a class="btn btn-success btn-lg" href="searchresult.html">Search</a></span><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
-                  <div class="search-dropdown collapse" id="drop_recent_search"><a class="close" href="#drop_recent_search" data-toggle="collapse">&times;</a>
-                    <div class="dropdown-wrap">
-                      <big>Suggestions</big>
-                      <ul>
-                        <li><a href="">Brokenwood - Graveyard Vineyard</a></li>
-                      </ul>
-                      <big>Recent search&nbsp;<small><a href="">clear</a></small></big>
-                      <ul>
-                        <li><a href="">Corona Extra - Imported Beer</a></li>
-                      </ul>
-                    </div>
+          <div class="col-md-3"><br>
+            <div class="intro">
+              <h4>Craft Spirits &middot; Margaret River, Western Australia</h4>
+              <div class="rating-status">4.6
+                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+              </div>
+            </div>
+            <div class="search page"><a href="#" target="_blank"><i class="fa fa-search"></i></a>
+              <input class="form-control" type="text" placeholder="search for posts on this page...">
+            </div>
+            <div class="list_groups sellerinfo">
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-users"></i></span><span class="form-control"><a href="#">4,696 people like this</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-map-marker"></i></span><span class="form-control"><a href="#">2,982 people have been here</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-clock-o"></i></span><span class="form-control"><a href="#">Open · 9:30AM - 5:00PM<br>Get additional info</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-plus"></i></span><span class="form-control"><a href="#">Invite friends to like this Page</a></span></div>
+                <div class="form-group text-center linetop">
+                  <button class="btn btn-success" onclick="location.href = 'shop.html'">shop now</button>
+                </div>
+              </div>
+            </div>
+            <div class="intro sibling">
+              <div class="livecircles">
+                <h4 class="text"><a href="#">
+                    <div class="count">124 circlebuys</div></a></h4>
+              </div>
+            </div>
+            <div class="list_groups sellerinfo">
+              <div class="content">
+                <h4><a href="#">About</a></h4>
+                <div class="map"><img src="assets/images/static_map.png" alt=""></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-share"></i></span><span class="form-control"><a href="#">Margaret River, Western Australia</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-phone"></i></span><span class="form-control"><a href="#">0412 THE GIN</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-clock-o"></i></span><span class="form-control"><a href="#">Open<br>Today 9:30AM - 5:00PM</a></span></div>
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-question-circle-o"></i></span><span class="form-control"><a href="#">Ask for The West Winds Gin's price range</a></span></div>
+              </div>
+            </div>
+            <div class="grid_groups friends">
+              <h4><a href="#">Photos</a><small>(<a href="#">213</a>)</small></h4>
+              <div class="content">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/1.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/2.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/3.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/4.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/5.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/6.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/7.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/8.png" alt=""></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 thumb"><img src="assets/images/photos/westwinds/9.png" alt=""></div>
                   </div>
-                  <div class="search-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
-                    <div class="dropdown-wrap">
-                      <div class="row">
-                        <div class="col-md-4"><strong>Category</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Red Wine
-                            </li>
-                            <li>
-                              <input type="checkbox">White Wine
-                            </li>
-                            <li>
-                              <input type="checkbox">Beer
-                            </li>
-                            <li>
-                              <input type="checkbox">Cider
-                            </li>
-                            <li>
-                              <input type="checkbox">Spirits
-                            </li>
-                            <li>
-                              <input type="checkbox">Bubbles
-                            </li>
-                            <li>
-                              <input type="checkbox">Organic
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Varietal</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Shiraz
-                            </li>
-                            <li>
-                              <input type="checkbox">Chardonnay
-                            </li>
-                            <li>
-                              <input type="checkbox">Cabernet
-                            </li>
-                            <li>
-                              <input type="checkbox">Suvignon
-                            </li>
-                            <li>
-                              <input type="checkbox">Pinot Gris
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Vintage</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Non Vintage
-                            </li>
-                            <li>
-                              <input type="checkbox">2016
-                            </li>
-                            <li>
-                              <input type="checkbox">2015
-                            </li>
-                            <li>
-                              <input type="checkbox">Etc.
-                            </li>
-                          </ul>
-                        </div>
+                </div>
+              </div>
+              <div class="more"><a href="#">See all</a></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="composer">
+              <div class="head"><a href="#composer-tab-status" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i>Status</a><a href="#composer-tab-photo-video" role="tab" data-toggle="tab"><i class="fa fa-picture-o"></i>Photo/Video</a><a href="#composer-tab-events" role="tab" data-toggle="tab"><i class="fa fa-calendar-o"></i>Events</a></div>
+              <div class="content tab-content">
+                <div class="tab-pane active" id="composer-tab-status" role="tabpanel">
+                  <textarea class="form-control" rows="2"></textarea>
+                </div>
+                <div class="tab-pane" id="composer-tab-photo-video" role="tabpanel">
+                  <div class="drop-photo"><i class="fa fa-picture-o"></i><br><span>Drag Photos/Videos Here</span></div>
+                </div>
+                <div class="tab-pane" id="composer-tab-events" role="tabpanel">
+                  <div class="drop-photo"><i class="fa fa-picture-o"></i><br><span>Drag Event Photo Here</span></div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-event-name">Event Name</label>
+                        <input class="form-control" id="composer-event-name" type="text" placeholder="">
                       </div>
-                      <div class="row">
-                        <div class="col-md-4"><strong>Pack Size</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Single Bottle
-                            </li>
-                            <li>
-                              <input type="checkbox">6 pack
-                            </li>
-                            <li>
-                              <input type="checkbox">12 pack
-                            </li>
-                            <li>
-                              <input type="checkbox">24 pack
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Country</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Australia
-                            </li>
-                            <li>
-                              <input type="checkbox">France
-                            </li>
-                            <li>
-                              <input type="checkbox">Spain
-                            </li>
-                            <li>
-                              <input type="checkbox">Italy
-                            </li>
-                            <li>
-                              <input type="checkbox">New Zealand
-                            </li>
-                            <li>
-                              <input type="checkbox">Argentina
-                            </li>
-                            <li>
-                              <input type="checkbox">United States
-                            </li>
-                            <li>
-                              <input type="checkbox">Chile
-                            </li>
-                            <li>
-                              <input type="checkbox">South Africa
-                            </li>
-                            <li>
-                              <input type="checkbox">Greece
-                            </li>
-                            <li>
-                              <input type="checkbox">Uruguay
-                            </li>
-                            <li>
-                              <input type="checkbox">Portugal
-                            </li>
-                            <li>
-                              <input type="checkbox">Romania
-                            </li>
-                            <li>
-                              <input type="checkbox">Austria
-                            </li>
-                            <li>
-                              <input type="checkbox">Macedonia
-                            </li>
-                            <li>
-                              <input type="checkbox">Hungary
-                            </li>
-                            <li>
-                              <input type="checkbox">Brazil
-                            </li>
-                            <li>
-                              <input type="checkbox">China
-                            </li>
-                            <li>
-                              <input type="checkbox">Germany
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Region</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Adelaide Hills
-                            </li>
-                            <li>
-                              <input type="checkbox">Adelaide Plains
-                            </li>
-                            <li>
-                              <input type="checkbox">Alphine Valleys
-                            </li>
-                            <li>
-                              <input type="checkbox">Barossa Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Beechworth
-                            </li>
-                            <li>
-                              <input type="checkbox">Bendigo
-                            </li>
-                            <li>
-                              <input type="checkbox">Blackwood Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Canberra District
-                            </li>
-                            <li>
-                              <input type="checkbox">Clare Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Coonawarra
-                            </li>
-                            <li>
-                              <input type="checkbox">Cowra
-                            </li>
-                            <li>
-                              <input type="checkbox">Currency Creek
-                            </li>
-                            <li>
-                              <input type="checkbox">Eden Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Geelong Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Geographe Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Gippsland Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Glenrowan
-                            </li>
-                            <li>
-                              <input type="checkbox">Goulburn Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Grampians Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Granite Belt Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Great Southern Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Gundagai
-                            </li>
-                            <li>
-                              <input type="checkbox">Hastings River
-                            </li>
-                            <li>
-                              <input type="checkbox">Heathcote Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Henty
-                            </li>
-                            <li>
-                              <input type="checkbox">Hilltops Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Hunter Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Kangaroo Island
-                            </li>
-                            <li>
-                              <input type="checkbox">King Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Langhorne Creek Wineries
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-location">Location</label>
+                        <input class="form-control" id="composer-location" type="text" placeholder="">
                       </div>
-                      <div class="row">
-                        <div class="col-md-4"><strong>Price</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Under $10
-                            </li>
-                            <li>
-                              <input type="checkbox">$10 - $20
-                            </li>
-                            <li>
-                              <input type="checkbox">$20 - $30
-                            </li>
-                            <li>
-                              <input type="checkbox">$30 - $40
-                            </li>
-                            <li>
-                              <input type="checkbox">$40 - $50
-                            </li>
-                            <li>
-                              <input type="checkbox">$50 - $60
-                            </li>
-                            <li>
-                              <input type="checkbox">$60 - $80
-                            </li>
-                            <li>
-                              <input type="checkbox">$80 - $100
-                            </li>
-                            <li>
-                              <input type="checkbox">$100 - $150
-                            </li>
-                            <li>
-                              <input type="checkbox">$150 - $200
-                            </li>
-                            <li>
-                              <input type="checkbox">Over $200
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Ratings</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Over 95
-                            </li>
-                            <li>
-                              <input type="checkbox">90 - 94
-                            </li>
-                            <li>
-                              <input type="checkbox">85 - 89
-                            </li>
-                            <li>
-                              <input type="checkbox">80 - 84
-                            </li>
-                            <li>
-                              <input type="checkbox">75 - 79
-                            </li>
-                            <li>
-                              <input type="checkbox">Less than 74
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4"><strong>Awards</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Trophy
-                            </li>
-                            <li>
-                              <input type="checkbox">Gold
-                            </li>
-                            <li>
-                              <input type="checkbox">Silver
-                            </li>
-                            <li>
-                              <input type="checkbox">Bronze
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                      <div class="form-group">
+                        <label for="composer-event-date-from">From</label>
+                        <input class="form-control" id="composer-event-date-from" type="date" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                      <div class="form-group">
+                        <label for="composer-event-date-to">to</label>
+                        <input class="form-control" id="composer-event-date-to" type="date" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="composer-description">Description</label>
+                        <textarea class="form-control" id="composer-description" rows="3"></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pagenav">
-      <div class="container">
-        <nav class="page">
-          <ul>
-            <li><a href="drinks-red.html">Red</a></li>
-            <li><a href="drinks-white.html">White</a></li>
-            <li><a href="drinks-beer.html">Beer</a></li>
-            <li><a href="drinks-spirits.html">Spirits</a></li>
-            <li><a href="drinks-bubbles.html">Bubbles</a></li>
-            <li><a href="drinks-cider.html">Cider</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section class="drinks">
-      <div class="container">
-        <form class="form-inline">
-          <div class="form-group">
-            <label for="exampleInputName2">Sort by</label>
-            <select class="form-control">
-              <option>highest rated</option>
-              <option>most reviews</option>
-              <option>A to Z</option>
-              <option>Z to A</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail2">Show</label>
-            <select class="form-control">
-              <option>15</option>
-              <option>30</option>
-              <option>60</option>
-            </select>
-          </div>
-        </form>
-        <hr>
-        <div class="product-wrap">
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">90<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p6.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>76&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>156&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>59&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Kim Crawford</a><br><small>Sauvignon Blanc</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$12.99</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$14.90<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.99<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+              <div class="controls"><a href="#"><i class="fa fa-camera"></i></a><a href="#"><i class="fa fa-user-plus"></i></a><a href="#"><i class="fa fa-smile-o"></i></a><a href="#"><i class="fa fa-map-marker"></i></a><a href="#"><i class="fa fa-clock-o"></i></a><a class="post" href="#"><i class="fa fa-send-o"></i>Post</a></div>
+            </div>
+            <div class="timeline">
+              <div class="form-icon left">
+                <input class="form-control" type="text" placeholder="Search for a post..."><a class="icon" href=""><i class="fa fa-search"></i></a>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="content">
+                <div class="head">
+                  <div class="user">
+                    <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div><a href="seller-ww.html">The West Winds Gin</a>
+                  </div>
+                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a></div>
+                </div>
+                <div class="inner">
+                  <div class="caption">
+                    <p>The Broadside is one of the most brazen and aggressive tactics in naval history, where warships released a close range barrage of firepower from every gun along one side of the hull. The West Winds Gin "The Broadside" is as bold and brutish as the maneuver, featuring Margaret River sea salt and distinctive sea parsley. It's more than just a&nbsp;<a href="">#gin.&nbsp;</a><a href="">#whichginareyou</a>?</p>
+                  </div>
+                  <div class="post">
+                    <div class="shared"><img src="assets/images/producers/westwinds/post1.jpg" alt=""></div>
+                  </div>
+                </div><br><a href="#"><i class="fa fa-heart"></i>&nbsp;185</a>
+              </div>
+              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a></div>
+              <div class="footer">
+                <div class="comments">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/users/user_3.jpg" alt=""></div>
+                      </div></span><span class="form-control"><strong><a href="#" target="_blank">Darren Crone</a></strong>This is my favourite of the range. Its a shame that it isnt available in all international markets. Wishing...
+                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;October 21 at 11:43am</small></p></span></div>
+                  <div class="indent">
+                    <div class="input-group"><span class="input-group-addon">
+                        <div class="thumb">
+                          <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
+                        </div></span><span class="form-control"><strong><a href="profile.html">Andrew Steer</a></strong> If you could send a couple of bottles to Seattle that would be great thanks
+                        <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;October 18 at 5:01am</small></p></span></div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                      </div></span>
+                    <input class="form-control" type="text" placeholder="Write a comment..."><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">92<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p9.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>98&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>19&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>4&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Tempus Two</a><br><small>Botrytis Semillon 250mL</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$12.50</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>bottle</span><span class="price">$14.25<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>case</span><span class="price">$13.50<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.50<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="timeline">
+              <div class="content">
+                <div class="head">
+                  <div class="user">
+                    <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div><a href="seller-ww.html">The West Winds Gin</a>
+                  </div>
+                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a></div>
+                </div>
+                <div class="inner">
+                  <div class="caption">
+                    <p>The journey ain't over but it's time like this we stop and really appreciate it. Massive props to Luke McCarthy and anyone who has drunk, poured and spilt our little gin, it's been emotional and and an honour to be included alongside these legends.<br><a href="">http://www.executivestyle.com.au/nine-australian-spirits-th…</a></p>
+                  </div>
+                  <div class="post">
+                    <div class="shared"><img src="assets/images/producers/westwinds/post2.png" alt=""></div>
+                  </div>
+                </div><br><a href="#"><i class="fa fa-heart"></i>&nbsp;214</a>
+              </div>
+              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a></div>
+              <div class="footer">
+                <div class="comments">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/users/user_5.jpg" alt=""></div>
+                      </div></span><span class="form-control"><strong><a href="#" target="_blank">Cathy Gadd</a></strong> Love everything in Lark but the Gin to die for ( okay and the vodka and....)
+                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;October 18 at 6:37pm</small></p></span></div>
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/users/user_6.jpg" alt=""></div>
+                      </div></span><span class="form-control"><strong><a href="#" target="_blank">Graeme Brunton</a></strong>looking foward to drinking the bottle that i got which is 58%
+                      <p><a href="#">Like</a>&nbsp;&middot;&nbsp;<a href="#">Reply</a>&middot;<small>&nbsp;October 16 at 3:01pm</small></p></span></div>
+                </div>
+                <div class="comment">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                      </div></span>
+                    <input class="form-control" type="text" placeholder="Write a comment..."><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">97<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p16.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>21&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>69&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>13&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Rosnay Organic</a><br><small>Semillon</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$14.99</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$15.50<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$14.99<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="timeline">
+              <div class="content">
+                <div class="head">
+                  <div class="user">
+                    <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div><a href="seller-ww.html">The West Winds Gin</a>
+                  </div>
+                  <div class="more"><a href="#"><i class="fa fa-chevron-down"></i></a></div>
+                </div>
+                <div class="inner">
+                  <div class="caption">
+                    <p>Always nice when people write nice things about Jez. For a change.<br><a href="">https://www.facebook.com/Huckberry/posts/1250583834952490</a></p>
+                  </div>
+                  <div class="post">
+                    <div class="shared"><img src="assets/images/producers/westwinds/post3.png" alt=""></div>
+                  </div>
+                </div><br><a href="#"><i class="fa fa-heart"></i>&nbsp;87</a>
+              </div>
+              <div class="controls"><a href="#"><i class="fa fa-heart"></i>Like</a><a href="#"><i class="fa fa-comment"></i>Comment</a><a href="#"><i class="fa fa-share"></i>Share</a></div>
+              <div class="footer">
+                <div class="comments"></div>
+                <div class="comment">
+                  <div class="input-group"><span class="input-group-addon">
+                      <div class="thumb">
+                        <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                      </div></span>
+                    <input class="form-control" type="text" placeholder="Write a comment..."><span class="input-group-addon"><a href="#"><i class="fa fa-camera"></i></a></span>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="list_groups reviews">
+              <div class="head">
+                <h4><a href="#">Reviews</a><small>(<a href="#">89</a>)</small></h4>
+              </div>
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/reviewers/rev1.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Belinda May Goman</strong></a><br>5<i class="fa fa-star"></i>
+                    &nbsp;
+                    We visited your cellar door yesterday &amp; enjoy...<a href="#">see more</a><br><small>April 11, 2016</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/reviewers/rev2.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Arne De Boer</strong></a><br>5<i class="fa fa-star"></i>
+                    &nbsp;
+                    What a nice place. Me and my girlfriend had a love...<a href="#">see more</a><br><small>April 11, 2016</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
+                    </div></span><span class="form-control"><strong>Tell people what you think</strong><br><a class="rate" href="#" target="_blank"><i class="fa fa-star-o"><i class="fa fa-star-o"><i class="fa fa-star-o"><i class="fa fa-star-o"><i class="fa fa-star-o"></i></i></i></i></i></a></span></div>
+              </div>
+              <div class="review">
+                <input class="form-control" type="text" placeholder="write a review...">
+              </div>
+              <div class="more"><a href="#">See all</a></div>
+            </div>
+            <div class="list_groups feed">
+              <div class="head">
+                <h4><a href="#">Latest activity</a></h4>
+              </div>
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/activity/img_advisor_2.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga</strong></a>likes your photo.</span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/img_advisor_1.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="profile.html"><strong>Andrew Steer</strong></a>commented on your post.</span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/activity/img_advisor_2.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Rodan Luzuriaga</strong></a>shared your post.</span></div>
+              </div>
+            </div>
+            <div class="list_search_groups messaging">
+              <div class="head">
+                <h4>Live chat</h4>
+              </div>
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/users/user_3.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a class="online" href="#">Darren Crone</a><small>online</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/users/user_2.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a class="offline" href="#">Rodan Luzuriaga</a><small>2hours ago</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/users/user_1.jpg" alt=""></div>
+                    </div></span><span class="form-control"><a class="online" href="profile.html">Andrew Steer</a><small>online</small></span></div>
+              </div>
+              <div class="search">
+                <input class="form-control" type="text"><a class="new" href="#"><i class="fa fa-pencil-square-o"></i></a>
+              </div>
+            </div>
+            <div class="list_groups events">
+              <div class="head">
+                <h4><a href="#">Events</a></h4>
+              </div>
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Juniperlooza</strong></a><br>The West Winds Gin<br><small>11/19 - 11/20 2016<br>5:30 PM</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Meet The Maker Gin Evening</strong></a><br>The West Winds Gin<br><small>08/17/2016<br>6:30 PM</small></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/producers/westwinds/logo.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Stop, Snapper time! at Steamboat Sundays</strong></a><br>The West Winds Gin<br><small>02/14/2016<br>12:00 PM</small></span></div>
+              </div>
+              <div class="more"><a href="#">See all</a></div>
+            </div>
+            <div class="list_groups likedbypage">
+              <div class="head">
+                <h4><a href="#">Liked by this page</a></h4>
+              </div>
+              <div class="content">
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/likes/likes_3.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Hardys</strong></a></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/likes/likes_4.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="profile.html"><strong>Grant Burge Barossa</strong></a></span></div>
+                <div class="input-group"><span class="input-group-addon">
+                    <div class="thumb">
+                      <div class="img"><img src="assets/images/likes/likes_7.png" alt=""></div>
+                    </div></span><span class="form-control"><a href="#"><strong>Ginger Joe</strong></a></span></div>
+              </div>
+              <div class="more"><a href="#">See all</a></div>
             </div>
           </div>
         </div>
-        <hr>
-        <nav class="text-center" aria-label="...">
-          <ul class="pagination pagination-sm">
-            <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-          </ul>
-        </nav>
       </div>
     </section>
     <footer>
@@ -989,46 +852,8 @@
     <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>
-      $(function () {
-        $('.popover_price[data-toggle="popover"]').popover({
-          html: true,
-          content : function() {
-            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
-          },
-          title: function(){
-            return jQuery(this).data('title') + '<span class="close">&times;</span>';
-          }
-        }).on('shown.bs.popover', function(e) {
-          var popover = jQuery(this);
-          $(this).parent().find('.popover span.close').on('click', function(e) {
-            popover.popover('hide');
-          });
-        }).click(function(e) {
-          e.preventDefault();
-        });
-      });
-      
       $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 6000,
-          autoplayHoverPause: true,
-          animateOut: 'fadeOut',
-          autoplaySpeed: 1000,
-          mouseDrag: false,
-          responsive:{
-            0: {
-              items: 1
-            },
-            600: {
-              items: 1
-            },
-            1000: {
-              items: 1
-            }
-          }
-        });
+      
       });
     </script>
   </body>

@@ -82,13 +82,8 @@
     </header>
     <div class="banner home">
       <div class="gradient"></div>
-      <div class="owl-carousel">
-        <div class="item"><img src="assets/images/banner/banner_slide_1.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_2.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_3.jpg"></div>
-        <div class="item"><img src="assets/images/banner/banner_slide_4.jpg"></div>
-      </div>
-      <h1 class="jumbo">The fun marketplace connecting drinklovers and drinkmakers<br><small>Discover. Share. Enjoy</small></h1>
+      <div class="banner-static"><img src="assets/images/banner/banner_slide_2.jpg"></div>
+      <h1 class="jumbo">Join in the fun and save big time<br><small>circlebuying</small></h1>
       <div class="action"><a class="btn btn-success btn-lg" href="#modal_signup" data-toggle="modal"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a></div>
     </div>
     <section class="profile dd">
@@ -98,7 +93,7 @@
             <form>
               <div class="form-group">
                 <div class="input-group dc-filters"><a class="arrow" href="#drop_recent_search" data-toggle="collapse"><i class="fa fa-caret-down"></i></a>
-                  <input class="form-control input-lg" type="text" placeholder="Search drinks..."><span class="input-group-btn">&nbsp;&nbsp;</span><span class="input-group-btn"><a class="btn btn-success btn-lg" href="searchresult.html">Search</a></span><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
+                  <input class="form-control input-lg" type="text" placeholder="Search circlebuys..."><span class="input-group-btn">&nbsp;&nbsp;</span><span class="input-group-btn"><a class="btn btn-success btn-lg" href="searchresult.html">Search</a></span><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
                   <div class="search-dropdown collapse" id="drop_recent_search"><a class="close" href="#drop_recent_search" data-toggle="collapse">&times;</a>
                     <div class="dropdown-wrap">
                       <big>Suggestions</big>
@@ -114,7 +109,7 @@
                   <div class="search-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
                     <div class="dropdown-wrap">
                       <div class="row">
-                        <div class="col-md-4"><strong>Category</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Category</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Red Wine
@@ -139,7 +134,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Varietal</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Varietal</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Shiraz
@@ -158,7 +153,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Vintage</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Vintage</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Non Vintage
@@ -176,7 +171,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-md-4"><strong>Pack Size</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Pack Size</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Single Bottle
@@ -192,7 +187,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Country</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Country</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Australia
@@ -253,7 +248,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Region</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Region</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Adelaide Hills
@@ -349,7 +344,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-md-4"><strong>Price</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Price</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Under $10
@@ -386,7 +381,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Ratings</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Ratings</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Over 95
@@ -408,7 +403,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4"><strong>Awards</strong>
+                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Awards</strong>
                           <ul>
                             <li>
                               <input type="checkbox">Trophy
@@ -454,136 +449,518 @@
           <div class="form-group">
             <label for="exampleInputName2">Sort by</label>
             <select class="form-control">
-              <option>highest rated</option>
-              <option>most reviews</option>
-              <option>A to Z</option>
-              <option>Z to A</option>
+              <option>finish soonest</option>
+              <option>my friends</option>
+              <option>my circles</option>
+              <option>highest no.</option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail2">Show</label>
             <select class="form-control">
-              <option>15</option>
-              <option>30</option>
-              <option>60</option>
+              <option>16</option>
+              <option>32</option>
+              <option>64</option>
             </select>
           </div>
         </form>
         <hr>
-        <div class="product-wrap">
+        <div class="productdetails search">
           <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">90<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p6.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>76&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>156&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>59&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Kim Crawford</a><br><small>Sauvignon Blanc</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$12.99</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$14.90<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.99<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Brokenwood<br><small class="el">Graveyard Vineyard Shiraz 2010</small></span>
+                <hr><span class="green">Adrian's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">7<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">3<br><small>cases</small></p>
                   </div>
                 </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _70p"></div><img src="assets/images/circles/circles_8.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">04:56</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$19.99</p>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">92<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p9.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>98&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>19&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>4&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Tempus Two</a><br><small>Botrytis Semillon 250mL</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$12.50</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>bottle</span><span class="price">$14.25<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>case</span><span class="price">$13.50<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$12.50<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Sticks<br><small class="el">Pinot Noir 2015</small></span>
+                <hr><span class="green">Sharmaine's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">5<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">5<br><small>cases</small></p>
                   </div>
                 </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _50p"></div><img src="assets/images/circles/circles_1.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">16:08</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$14.99</p>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="product">
-                <div class="thumb">
-                  <div class="ctr">
-                    <div class="count">97<span>points</span></div>
-                  </div><a href="#"><img class="img-prod" src="assets/images/products/p16.jpg" alt=""></a>
-                  <div class="details">
-                    <p></p>
-                    <div class="stats">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>21&nbsp;</big><small>circlebuys</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>69&nbsp;</big><small>ratings</small></a></div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#">
-                            <big>13&nbsp;</big><small>reviews</small></a></div>
-                      </div>
-                    </div>
-                    <div class="name"><a href="#">Rosnay Organic</a><br><small>Semillon</small></div>
-                    <div class="pricing">
-                      <div class="buy drop">
-                        <ul>
-                          <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
-                          <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="circlebuys">$14.99</a><br>
-                            <ul>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">6<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$15.50<small>&nbsp;per bottle</small></span></a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$14.99<small>&nbsp;per bottle</small></span></a></li>
-                            </ul>
-                          </li>
-                          <li><a class="thumb-action" href="">View</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Rosnay Organic<br><small class="el">Triple Blend 2015</small></span>
+                <hr><span class="green">Jenny's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">5<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">2<br><small>cases</small></p>
                   </div>
                 </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _40p"></div><img src="assets/images/circles/circles_7.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">32:12</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$19.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Corona Extra<br><small class="el">Imported Beer</small></span>
+                <hr><span class="green">Rodan's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">20<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">16<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">4<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s20"></div><img src="assets/images/users/user_2.jpg" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">02:04</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$39.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Chivas Regal<br><small class="el">12 Year Old Scotch Whisky</small></span>
+                <hr><span class="green">Rodan's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">20<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">16<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">4<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s20"></div><img src="assets/images/users/user_2.jpg" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">02:04</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$32.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Somersby<br><small class="el">Apple Cider</small></span>
+                <hr><span class="green">Jeff's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">2<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">1<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s3"></div><img src="assets/images/circles/circles_3.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">08:20</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$39.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Somersby<br><small class="el">Blackberry Cider</small></span>
+                <hr><span class="green">Joy's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">6<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">2<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">4<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s6"></div><img src="assets/images/friends/friends_6.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">26:21</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$39.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Mo&eacute;t &amp; Chandon<br><small class="el">French Champagne</small></span>
+                <hr><span class="green">Sharmaine's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">5<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">5<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _50p"></div><img src="assets/images/circles/circles_1.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">16:08</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$59.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Absolut<br><small class="el">Vodka</small></span>
+                <hr><span class="green">Jenny's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">5<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">2<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _40p"></div><img src="assets/images/circles/circles_7.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">32:12</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$43.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Kim Crawford<br><small class="el">Sauvignon Blanc</small></span>
+                <hr><span class="green">Adrian's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">7<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _70p"></div><img src="assets/images/circles/circles_8.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">15:56</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$12.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Heineken<br><small class="el">Lager Stubbies</small></span>
+                <hr><span class="green">Jenny's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">1<br><small>case</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">2<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s3"></div><img src="assets/images/friends/friends_5.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">18:41</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$36.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Tempus Two<br><small class="el">Botrytis Semillon</small></span>
+                <hr><span class="green">Greg's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">7<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _70p"></div><img src="assets/images/friends/friends_7.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">10:32</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$12.50</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Rosnay Organic<br><small class="el">Semillon</small></span>
+                <hr><span class="green">Cathy's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">7<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _70p"></div><img src="assets/images/users/user_5.jpg" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">04:56</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$14.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>Young Henrys<br><small class="el">Natural Lager</small></span>
+                <hr><span class="green">Rodan's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">20<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">16<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">4<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s20"></div><img src="assets/images/users/user_2.jpg" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">02:04</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$65.95</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>West Winds Gin<br><small class="el">The Sabre</small></span>
+                <hr><span class="green">Jeff's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">6<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">2<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">4<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _s6"></div><img src="assets/images/circles/circles_3.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">08:20</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$45.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="card_rounded"><span>A by Arras<br><small class="el">Premium Cuvee</small></span>
+                <hr><span class="green">Adrian's circlebuy</span>
+                <hr>
+                <div class="row shortsummary">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>size</p>
+                    <p class="lead">10<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>sold</p>
+                    <p class="lead">7<br><small>cases</small></p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <p>left</p>
+                    <p class="lead">3<br><small>cases</small></p>
+                  </div>
+                </div>
+                <p></p>
+                <div class="avatar">
+                  <div class="img">
+                    <div class="ring _70p"></div><img src="assets/images/circles/circles_8.png" alt="">
+                  </div>
+                  <div class="countdown">
+                    <p class="lead">04:56</p><small class="unit">hrs left</small>
+                  </div>
+                </div><br>
+                <p><a class="button inline v7 joincirclebuy" href="#">join</a></p>
+                <p class="lead cbprice">$21.99</p>
               </div>
             </div>
           </div>
