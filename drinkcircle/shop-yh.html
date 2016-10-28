@@ -22,7 +22,14 @@
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <style></style>
+    <style>
+      .logged-in {
+        display: block !important;
+      }
+      .logged-out {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -80,503 +87,239 @@
         </div>
       </nav>
     </header>
-    <div class="banner home">
+    <div class="banner userprofile seller yh">
       <div class="gradient"></div>
-      <div class="banner-static"><img src="assets/images/banner/banner_slide_2.jpg"></div>
-      <h1 class="jumbo">Join in the fun and save big time<br><small>circlebuying</small></h1>
-      <div class="action"><a class="btn btn-success btn-lg" href="#modal_signup" data-toggle="modal"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Signup with Email</span></a><a class="btn btn-info btn-lg"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp;&nbsp;&nbsp;Continue with Facebook</span></a></div>
+      <div class="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <div class="photo">
+                <div class="img square"><a href="#"><i class="fa fa-camera"></i></a><img src="assets/images/producers/yh/logo.jpg" alt=""></div>
+                <div class="name"><span>Young Henrys&nbsp;</span><sup><a href="#"><i class="fa fa-pencil"></i><span>edit profile</span></a></sup><br><small>Craft Spirits</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9 col-md-9 col-sm-offset-3 col-md-offset-3">
+              <div class="userprofilemenu">
+                <nav class="menu">
+                  <ul>
+                    <li><a class="active" href="shop-ww.html">Shop</a></li>
+                    <li><a href="#">Like</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="seller-about.html">About</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="seller-reviews.html">Reviews</a></li>
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="profile dd">
+    <section class="userprofile drinks results">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <form>
+          <div class="col-md-3"><br>
+            <div class="search form-icon"><a class="icon" href="#" target="_blank"><i class="fa fa-search"></i></a>
+              <input class="form-control" type="text" placeholder="search west winds...">
+            </div>
+            <div class="seller-categories">
+              <h3>Beer &amp; Spirits</h3>
+              <h4><a href="#">Noble Cut Gin</a></h4>
+              <h4><a href="#">Real Ale Tinnies</a></h4>
+              <h4><a href="#">Natural Lager Tinnies</a></h4>
+              <h4><a href="#">Cloudy Cider Tinnies</a></h4>
+              <h4><a href="#">Newtowner Tinnies</a></h4>
+              <hr>
+              <h4><a href="#">Shipping</a></h4>
+              <h4><a href="#">Return Policy</a></h4>
+              <h4><a href="#">Circlebuys</a></h4>
+              <h4><a href="#">Contact Us</a></h4>
+              <h4><a href="seller.html">About Us</a></h4>
+            </div>
+          </div>
+          <div class="col-md-9"><br>
+            <form class="form-inline">
               <div class="form-group">
-                <div class="input-group dc-filters"><a class="arrow" href="#drop_recent_search" data-toggle="collapse"><i class="fa fa-caret-down"></i></a>
-                  <input class="form-control input-lg" type="text" placeholder="Search circlebuys..."><span class="input-group-btn">&nbsp;&nbsp;</span><span class="input-group-btn"><a class="btn btn-success btn-lg" href="searchresult.html">Search</a></span><a class="link-1" href="#refineSearch" data-toggle="collapse">Refine Search</a>
-                  <div class="search-dropdown collapse" id="drop_recent_search"><a class="close" href="#drop_recent_search" data-toggle="collapse">&times;</a>
-                    <div class="dropdown-wrap">
-                      <big>Suggestions</big>
-                      <ul>
-                        <li><a href="">Brokenwood - Graveyard Vineyard</a></li>
-                      </ul>
-                      <big>Recent search&nbsp;<small><a href="">clear</a></small></big>
-                      <ul>
-                        <li><a href="">Corona Extra - Imported Beer</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="search-dropdown collapse" id="refineSearch"><a class="close" href="#refineSearch" data-toggle="collapse">&times;</a>
-                    <div class="dropdown-wrap">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Category</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Red Wine
-                            </li>
-                            <li>
-                              <input type="checkbox">White Wine
-                            </li>
-                            <li>
-                              <input type="checkbox">Beer
-                            </li>
-                            <li>
-                              <input type="checkbox">Cider
-                            </li>
-                            <li>
-                              <input type="checkbox">Spirits
-                            </li>
-                            <li>
-                              <input type="checkbox">Bubbles
-                            </li>
-                            <li>
-                              <input type="checkbox">Organic
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Varietal</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Shiraz
-                            </li>
-                            <li>
-                              <input type="checkbox">Chardonnay
-                            </li>
-                            <li>
-                              <input type="checkbox">Cabernet
-                            </li>
-                            <li>
-                              <input type="checkbox">Suvignon
-                            </li>
-                            <li>
-                              <input type="checkbox">Pinot Gris
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Vintage</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Non Vintage
-                            </li>
-                            <li>
-                              <input type="checkbox">2016
-                            </li>
-                            <li>
-                              <input type="checkbox">2015
-                            </li>
-                            <li>
-                              <input type="checkbox">Etc.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Pack Size</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Single Bottle
-                            </li>
-                            <li>
-                              <input type="checkbox">6 pack
-                            </li>
-                            <li>
-                              <input type="checkbox">12 pack
-                            </li>
-                            <li>
-                              <input type="checkbox">24 pack
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Country</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Australia
-                            </li>
-                            <li>
-                              <input type="checkbox">France
-                            </li>
-                            <li>
-                              <input type="checkbox">Spain
-                            </li>
-                            <li>
-                              <input type="checkbox">Italy
-                            </li>
-                            <li>
-                              <input type="checkbox">New Zealand
-                            </li>
-                            <li>
-                              <input type="checkbox">Argentina
-                            </li>
-                            <li>
-                              <input type="checkbox">United States
-                            </li>
-                            <li>
-                              <input type="checkbox">Chile
-                            </li>
-                            <li>
-                              <input type="checkbox">South Africa
-                            </li>
-                            <li>
-                              <input type="checkbox">Greece
-                            </li>
-                            <li>
-                              <input type="checkbox">Uruguay
-                            </li>
-                            <li>
-                              <input type="checkbox">Portugal
-                            </li>
-                            <li>
-                              <input type="checkbox">Romania
-                            </li>
-                            <li>
-                              <input type="checkbox">Austria
-                            </li>
-                            <li>
-                              <input type="checkbox">Macedonia
-                            </li>
-                            <li>
-                              <input type="checkbox">Hungary
-                            </li>
-                            <li>
-                              <input type="checkbox">Brazil
-                            </li>
-                            <li>
-                              <input type="checkbox">China
-                            </li>
-                            <li>
-                              <input type="checkbox">Germany
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Region</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Adelaide Hills
-                            </li>
-                            <li>
-                              <input type="checkbox">Adelaide Plains
-                            </li>
-                            <li>
-                              <input type="checkbox">Alphine Valleys
-                            </li>
-                            <li>
-                              <input type="checkbox">Barossa Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Beechworth
-                            </li>
-                            <li>
-                              <input type="checkbox">Bendigo
-                            </li>
-                            <li>
-                              <input type="checkbox">Blackwood Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Canberra District
-                            </li>
-                            <li>
-                              <input type="checkbox">Clare Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Coonawarra
-                            </li>
-                            <li>
-                              <input type="checkbox">Cowra
-                            </li>
-                            <li>
-                              <input type="checkbox">Currency Creek
-                            </li>
-                            <li>
-                              <input type="checkbox">Eden Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Geelong Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Geographe Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Gippsland Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Glenrowan
-                            </li>
-                            <li>
-                              <input type="checkbox">Goulburn Valley
-                            </li>
-                            <li>
-                              <input type="checkbox">Grampians Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Granite Belt Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Great Southern Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Gundagai
-                            </li>
-                            <li>
-                              <input type="checkbox">Hastings River
-                            </li>
-                            <li>
-                              <input type="checkbox">Heathcote Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Henty
-                            </li>
-                            <li>
-                              <input type="checkbox">Hilltops Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Hunter Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Kangaroo Island
-                            </li>
-                            <li>
-                              <input type="checkbox">King Valley Wineries
-                            </li>
-                            <li>
-                              <input type="checkbox">Langhorne Creek Wineries
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Price</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Under $10
-                            </li>
-                            <li>
-                              <input type="checkbox">$10 - $20
-                            </li>
-                            <li>
-                              <input type="checkbox">$20 - $30
-                            </li>
-                            <li>
-                              <input type="checkbox">$30 - $40
-                            </li>
-                            <li>
-                              <input type="checkbox">$40 - $50
-                            </li>
-                            <li>
-                              <input type="checkbox">$50 - $60
-                            </li>
-                            <li>
-                              <input type="checkbox">$60 - $80
-                            </li>
-                            <li>
-                              <input type="checkbox">$80 - $100
-                            </li>
-                            <li>
-                              <input type="checkbox">$100 - $150
-                            </li>
-                            <li>
-                              <input type="checkbox">$150 - $200
-                            </li>
-                            <li>
-                              <input type="checkbox">Over $200
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Ratings</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Over 95
-                            </li>
-                            <li>
-                              <input type="checkbox">90 - 94
-                            </li>
-                            <li>
-                              <input type="checkbox">85 - 89
-                            </li>
-                            <li>
-                              <input type="checkbox">80 - 84
-                            </li>
-                            <li>
-                              <input type="checkbox">75 - 79
-                            </li>
-                            <li>
-                              <input type="checkbox">Less than 74
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4"><strong>Awards</strong>
-                          <ul>
-                            <li>
-                              <input type="checkbox">Trophy
-                            </li>
-                            <li>
-                              <input type="checkbox">Gold
-                            </li>
-                            <li>
-                              <input type="checkbox">Silver
-                            </li>
-                            <li>
-                              <input type="checkbox">Bronze
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <label for="exampleInputName2">Sort by</label>
+                <select class="form-control">
+                  <option>Most popular</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Show</label>
+                <select class="form-control">
+                  <option>15</option>
+                  <option>50</option>
+                  <option>100</option>
+                </select>
               </div>
             </form>
+            <hr>
+            <div class="product-wrap">
+              <div class="row">
+                <!-- 1 Product-->
+                <div class="col-sm-6 col-md-4">
+                  <div class="product">
+                    <div class="thumb">
+                      <div class="ctr">
+                        <div class="count">93<span>points</span></div>
+                      </div><img class="img-prod card" src="assets/images/producers/yh/prod1.jpg" alt="">
+                      <!-- Edit-->
+                      <div class="details">
+                        <p></p>
+                        <div class="name"><a href="#">Noble Cut Gin<span class="visible-md visible-lg">&nbsp;</span></a></div>
+                        <div class="pricing">
+                          <div class="buy drop">
+                            <ul>
+                              <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
+                              <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys">$120.00</a>
+                                <ul>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$49.99<small>&nbsp;per case</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$44.99<small>&nbsp;per cases</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">20<br>cases</span><span class="price">$39.99<small>&nbsp;per cases</small></span></a></li>
+                                </ul>
+                              </li>
+                              <li><a class="thumb-action" href="">View</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="product">
+                    <div class="thumb">
+                      <div class="ctr">
+                        <div class="count">91<span>points</span></div>
+                      </div><a href="#"><img class="img-prod card" src="assets/images/producers/yh/prod2.jpg" alt=""></a>
+                      <div class="details">
+                        <p></p>
+                        <div class="name"><a href="#">Real Ale Tinnies<br class="visible-md visible-lg">500ml</a></div>
+                        <div class="pricing">
+                          <div class="buy drop">
+                            <ul>
+                              <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
+                              <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys">$99.00</a>
+                                <ul>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$29.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$19.99<small>&nbsp;per bottle</small></span></a></li>
+                                </ul>
+                              </li>
+                              <li><a class="thumb-action" href="">View</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="product">
+                    <div class="thumb">
+                      <div class="ctr">
+                        <div class="count">92<span>points</span></div>
+                      </div><a href="#"><img class="img-prod card" src="assets/images/producers/yh/prod3.jpg" alt=""></a>
+                      <div class="details">
+                        <p></p>
+                        <div class="name"><a href="#">Natural Lager Tinnies<span class="visible-md visible-lg">&nbsp;</span></a></div>
+                        <div class="pricing">
+                          <div class="buy drop">
+                            <ul>
+                              <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
+                              <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys">$79.99</a>
+                                <ul>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$25.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$33.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">3<br>cases</span><span class="price">$32.99<small>&nbsp;per bottle</small></span></a></li>
+                                </ul>
+                              </li>
+                              <li><a class="thumb-action" href="">View</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="product">
+                    <div class="thumb">
+                      <div class="ctr">
+                        <div class="count">95<span>points</span></div>
+                      </div><a href="#"><img class="img-prod card" src="assets/images/producers/yh/prod4.jpg" alt=""></a>
+                      <div class="details">
+                        <p></p>
+                        <div class="name"><a href="#">Cloudy Cider Tinnies</a></div>
+                        <div class="pricing">
+                          <div class="buy drop">
+                            <ul>
+                              <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
+                              <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys">$99.00</a>
+                                <ul>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">12<br>pack</span><span class="price">$16.20<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">5<br>cases</span><span class="price">$13.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">10<br>cases</span><span class="price">$11.99<small>&nbsp;per bottle</small></span></a></li>
+                                </ul>
+                              </li>
+                              <li><a class="thumb-action" href="">View</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="product">
+                    <div class="thumb">
+                      <div class="ctr">
+                        <div class="count">96<span>points</span></div>
+                      </div><a href="#"><img class="img-prod card" src="assets/images/producers/yh/prod5.jpg" alt=""></a>
+                      <div class="details">
+                        <p></p>
+                        <div class="name"><a href="#">Newtowner Tinnies</a></div>
+                        <div class="pricing">
+                          <div class="buy drop">
+                            <ul>
+                              <li><a class="thumb-action" href="#modal_compare" data-toggle="modal">Compare</a></li>
+                              <li class="drop"><a class="thumb-action popover_price" href="#" data-toggle="popover" data-placement="bottom" data-title="Circle Buys">$59.99</a>
+                                <ul>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>bottle</span><span class="price">$49.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">1<br>case</span><span class="price">$44.99<small>&nbsp;per bottle</small></span></a></li>
+                                  <li><a href="#" data-toggle="modal" data-target="#buymode"><span class="qty">3<br>case</span><span class="price">$43.99<small>&nbsp;per bottle</small></span></a></li>
+                                </ul>
+                              </li>
+                              <li><a class="thumb-action" href="">View</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <nav class="text-center" aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="pagenav">
-      <div class="container">
-        <nav class="page">
-          <ul>
-            <li><a href="circlebuying-red.html">Red</a></li>
-            <li><a href="circlebuying-white.html">White</a></li>
-            <li><a href="circlebuying-beer.html">Beer</a></li>
-            <li><a href="circlebuying-spirits.html">Spirits</a></li>
-            <li><a href="circlebuying-bubbles.html">Bubbles</a></li>
-            <li><a href="circlebuying-cider.html">Cider</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section class="drinks">
-      <div class="container">
-        <form class="form-inline">
-          <div class="form-group">
-            <label for="exampleInputName2">Sort by</label>
-            <select class="form-control">
-              <option>finish soonest</option>
-              <option>my friends</option>
-              <option>my circles</option>
-              <option>highest no.</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail2">Show</label>
-            <select class="form-control">
-              <option>16</option>
-              <option>32</option>
-              <option>64</option>
-            </select>
-          </div>
-        </form>
-        <hr>
-        <div class="productdetails search">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 text-center">
-              <div class="card_rounded"><a href=""><span>Corona Extra<br><small class="el">Imported Beer</small></span></a>
-                <hr><span>Rodan's circlebuy</span>
-                <hr>
-                <div class="row shortsummary">
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="case-size">size</p>
-                    <p class="lead"><span class="green">20</span><br><small>cases</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="cases-sold">sold</p>
-                    <p class="lead"><span class="green">16</span><br><small>cases</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4 cases-left">
-                    <p>left</p>
-                    <p class="lead"><span class="green">4</span><br><small>cases</small></p>
-                  </div>
-                </div>
-                <p></p>
-                <div class="avatar">
-                  <div class="img">
-                    <div class="ring _s20"></div><img src="assets/images/users/user_2.jpg" alt="">
-                  </div>
-                  <div class="countdown">
-                    <p class="lead">02:04</p><small class="unit">remaining</small>
-                    <hr>
-                  </div>
-                </div><br>
-                <p class="lead cbprice">$39.99</p>
-                <p><a class="button inline v7 joincirclebuy" href="#">join</a>&nbsp;<a class="button inline v7 joincirclebuy" href="#">view</a></p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-              <div class="card_rounded"><a href=""><span>Heineken<br><small class="el">Lager Stubbies</small></span></a>
-                <hr><span>Jenny's circlebuy</span>
-                <hr>
-                <div class="row shortsummary">
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="case-size">size</p>
-                    <p class="lead"><span class="green">3</span><br><small>cases</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="cases-sold">sold</p>
-                    <p class="lead"><span class="green">1</span><br><small>case</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4 cases-left">
-                    <p>left</p>
-                    <p class="lead"><span class="green">2</span><br><small>cases</small></p>
-                  </div>
-                </div>
-                <p></p>
-                <div class="avatar">
-                  <div class="img">
-                    <div class="ring _s3"></div><img src="assets/images/friends/friends_5.png" alt="">
-                  </div>
-                  <div class="countdown">
-                    <p class="lead">18:41</p><small class="unit">remaining</small>
-                    <hr>
-                  </div>
-                </div><br>
-                <p class="lead cbprice">$36.99</p>
-                <p><a class="button inline v7 joincirclebuy" href="#">join</a>&nbsp;<a class="button inline v7 joincirclebuy" href="#">view</a></p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-              <div class="card_rounded"><a href=""><span>Young Henrys<br><small class="el">Natural Lager</small></span></a>
-                <hr><span>Rodan's circlebuy</span>
-                <hr>
-                <div class="row shortsummary">
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="case-size">size</p>
-                    <p class="lead"><span class="green">20</span><br><small>cases</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                    <p class="cases-sold">sold</p>
-                    <p class="lead"><span class="green">16</span><br><small>cases</small></p>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-4 cases-left">
-                    <p>left</p>
-                    <p class="lead"><span class="green">4</span><br><small>cases</small></p>
-                  </div>
-                </div>
-                <p></p>
-                <div class="avatar">
-                  <div class="img">
-                    <div class="ring _s20"></div><img src="assets/images/users/user_2.jpg" alt="">
-                  </div>
-                  <div class="countdown">
-                    <p class="lead">02:04</p><small class="unit">remaining</small>
-                    <hr>
-                  </div>
-                </div><br>
-                <p class="lead cbprice">$65.95</p>
-                <p><a class="button inline v7 joincirclebuy" href="#">join</a>&nbsp;<a class="button inline v7 joincirclebuy" href="#">view</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <nav class="text-center" aria-label="...">
-          <ul class="pagination pagination-sm">
-            <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-          </ul>
-        </nav>
       </div>
     </section>
     <footer>
@@ -982,29 +725,6 @@
           });
         }).click(function(e) {
           e.preventDefault();
-        });
-      });
-      
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 6000,
-          autoplayHoverPause: true,
-          animateOut: 'fadeOut',
-          autoplaySpeed: 1000,
-          mouseDrag: false,
-          responsive:{
-            0: {
-              items: 1
-            },
-            600: {
-              items: 1
-            },
-            1000: {
-              items: 1
-            }
-          }
         });
       });
     </script>
