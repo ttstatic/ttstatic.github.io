@@ -54,7 +54,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
             <li><a href="getstarted.html"><i class="material-icons">flag</i>Getting Started</a></li>
-            <li><a href="members.html"><i class="material-icons">assignment</i>Evaluation</a></li>
+            <li><a href="evaluation.html"><i class="material-icons">assignment</i>Evaluation</a></li>
             <li><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
             <li><a href=""><i class="material-icons">timeline</i>Action Plan</a></li>
             <li><a href=""><i class="material-icons">work</i>Resources</a></li>
@@ -64,19 +64,16 @@
       </div>
     </nav>
     <div class="container">
-      <h1 class="title">Assessment Dashboard</h1>
+      <h1 class="title">Select Board Member</h1>
       <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <h6 class="graph-title">Current Status</h6>
-            <canvas id="doughnutChart"></canvas>
-          </div>
+        <div class="col-md-4">
+          <div class="card"><a class="block" href="dashboard.html"><span class="plate"><span class="photo"><img src="//placehold.it/50"></span><span class="info"><strong>Amy David</strong><br><span>Twistresources Member</span></span><span class="icon"><i class="material-icons">keyboard_arrow_right</i></span></span></a></div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <h6 class="graph-title">Overall Director % Completion</h6>
-            <canvas id="barChart"></canvas>
-          </div>
+        <div class="col-md-4">
+          <div class="card"><a class="block" href="dashboard.html"><span class="plate"><span class="photo"><img src="//placehold.it/50"></span><span class="info"><strong>Rodan Luzuriaga</strong><br><span>Twistresources Member</span></span><span class="icon"><i class="material-icons">keyboard_arrow_right</i></span></span></a></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card"><a class="block" href="dashboard.html"><span class="plate"><span class="photo"><img src="//placehold.it/50"></span><span class="info"><strong>Bill Gates</strong><br><span>Microsoft Member</span></span><span class="icon"><i class="material-icons">keyboard_arrow_right</i></span></span></a></div>
         </div>
       </div>
     </div>
@@ -90,62 +87,6 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-      
-        //- Context
-        var barCtx = document.getElementById("barChart");
-        var doughnutCtx = document.getElementById("doughnutChart");
-      
-        var barChart = new Chart(barCtx, {
-          type: 'bar',
-          data: {
-            labels: ["Dir 1", "Dir 2", "Dir 3", "Dir 4", "Dir 5", "Dir 6", "Dir 7"],
-            datasets: [{
-              label: '% completion',
-              data: [73, 48, 20, 29, 36, 0, 54],
-              backgroundColor: [
-                '#559ad4',
-                '#559ad4',
-                '#559ad4',
-                '#559ad4',
-                '#559ad4',
-                '#559ad4',
-                '#559ad4'
-              ]
-            }]
-          },
-          options: {
-            scales: {
-              yAxes: [{
-                ticks: {
-                  beginAtZero:true
-                }
-              }]
-            }
-          }
-        });
-        var doughnutChart = new Chart(doughnutCtx, {
-          type: 'doughnut',
-          data: {
-            labels: [
-              "Red",
-              "Blue",
-              "Yellow"
-            ],
-            datasets: [{
-              data: [300, 50, 100],
-              backgroundColor: [
-                "#33b874",
-                "#da534f",
-                "#f9a12b"
-              ],
-              hoverBackgroundColor: [
-                "#33b874",
-                "#da534f",
-                "#f9a12b"
-              ]
-            }]
-          }
-        });
       
       });
     </script>
