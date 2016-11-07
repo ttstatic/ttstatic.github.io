@@ -81,6 +81,20 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Action Plan Status</h6>
+                <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Action Plan % Completion<a class="actions" href="" data-toggle="tooltip" title="See all" data-placement="left"><i class="material-icons">launch</i></a></h6>
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="tabBoard" role="tabpanel">
           <div class="row">
@@ -94,6 +108,20 @@
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Director Completion</h6>
                 <canvas id="barChart1"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Action Plan Assessment Statu Completion</h6>
+                <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Action Plan Completion</h6>
+                <canvas id="barChart"></canvas>
               </div>
             </div>
           </div>
@@ -222,52 +250,6 @@
       
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="popover"]').popover();
-      
-        Chart.types.Doughnut.extend({
-            name: "DoughnutTextInside",
-            showTooltip: function() {
-                this.chart.ctx.save();
-                Chart.types.Doughnut.prototype.showTooltip.apply(this, arguments);
-                this.chart.ctx.restore();
-            },
-            draw: function() {
-                Chart.types.Doughnut.prototype.draw.apply(this, arguments);
-      
-                var width = this.chart.width,
-                    height = this.chart.height;
-      
-                var fontSize = (height / 114).toFixed(2);
-                this.chart.ctx.font = fontSize + "em Verdana";
-                this.chart.ctx.textBaseline = "middle";
-      
-                var text = "82%",
-                    textX = Math.round((width - this.chart.ctx.measureText(text).width) / 2),
-                    textY = height / 2;
-      
-                this.chart.ctx.fillText(text, textX, textY);
-            }
-        });
-      
-        var data = [{
-            value: 30,
-            color: "#F7464A"
-        }, {
-            value: 50,
-            color: "#E2EAE9"
-        }, {
-            value: 100,
-            color: "#D4CCC5"
-        }, {
-            value: 40,
-            color: "#949FB1"
-        }, {
-            value: 120,
-            color: "#4D5360"
-        }];
-      
-        var DoughnutTextInsideChart = new Chart($('#myChart')[0].getContext('2d')).DoughnutTextInside(data, {
-            responsive: true
-        });
       
       });
     </script>
