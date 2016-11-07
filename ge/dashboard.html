@@ -87,11 +87,13 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title">Overall Director Assessment Status Completion</h6>
+                <canvas id="doughnutChart1"></canvas>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title">Director Completion</h6>
+                <canvas id="barChart1"></canvas>
               </div>
             </div>
           </div>
@@ -112,6 +114,8 @@
         //- Context
         var barCtx = document.getElementById("barChart");
         var doughnutCtx = document.getElementById("doughnutChart");
+        var barCtx1 = document.getElementById("barChart1");
+        var doughnutCtx1 = document.getElementById("doughnutChart1");
       
         var barChart = new Chart(barCtx, {
           type: 'bar',
@@ -142,6 +146,57 @@
           }
         });
         var doughnutChart = new Chart(doughnutCtx, {
+          type: 'doughnut',
+          data: {
+            labels: [
+              "60% Completed",
+              "25% Not Started",
+              "30% In Progress"
+            ],
+            datasets: [{
+              data: [60, 25, 30],
+              backgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ],
+              hoverBackgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ]
+            }]
+          }
+        });
+        var barChart1 = new Chart(barCtx1, {
+          type: 'bar',
+          data: {
+            labels: ["Dir 1", "Dir 2", "Dir 3", "Dir 4", "Dir 5", "Dir 6", "Dir 7"],
+            datasets: [{
+              label: '% completion',
+              data: [73, 48, 20, 29, 36, 0, 54],
+              backgroundColor: [
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4'
+              ]
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero:true
+                }
+              }]
+            }
+          }
+        });
+        var doughnutChart1 = new Chart(doughnutCtx1, {
           type: 'doughnut',
           data: {
             labels: [
