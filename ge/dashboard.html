@@ -85,13 +85,13 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Action Plan Status</h6>
-                <canvas id="doughnutChart"></canvas>
+                <canvas id="doughnutChart1"></canvas>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Action Plan % Completion<a class="actions" href="" data-toggle="tooltip" title="See all" data-placement="left"><i class="material-icons">launch</i></a></h6>
-                <canvas id="barChart"></canvas>
+                <canvas id="barChart1"></canvas>
               </div>
             </div>
           </div>
@@ -101,13 +101,13 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Director Assessment Status Completion</h6>
-                <canvas id="doughnutChart1"></canvas>
+                <canvas id="doughnutChart2"></canvas>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Director Completion</h6>
-                <canvas id="barChart1"></canvas>
+                <canvas id="barChart2"></canvas>
               </div>
             </div>
           </div>
@@ -115,13 +115,13 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Action Plan Assessment Statu Completion</h6>
-                <canvas id="doughnutChart"></canvas>
+                <canvas id="doughnutChart3"></canvas>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Action Plan Completion</h6>
-                <canvas id="barChart"></canvas>
+                <canvas id="barChart3"></canvas>
               </div>
             </div>
           </div>
@@ -144,6 +144,10 @@
         var doughnutCtx = document.getElementById("doughnutChart");
         var barCtx1 = document.getElementById("barChart1");
         var doughnutCtx1 = document.getElementById("doughnutChart1");
+        var barCtx2 = document.getElementById("barChart2");
+        var doughnutCtx2 = document.getElementById("doughnutChart2");
+        var barCtx3 = document.getElementById("barChart3");
+        var doughnutCtx3 = document.getElementById("doughnutChart3");
       
         var barChart = new Chart(barCtx, {
           type: 'bar',
@@ -225,6 +229,108 @@
           }
         });
         var doughnutChart1 = new Chart(doughnutCtx1, {
+          type: 'doughnut',
+          data: {
+            labels: [
+              "60% Completed",
+              "25% Not Started",
+              "30% In Progress"
+            ],
+            datasets: [{
+              data: [60, 25, 30],
+              backgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ],
+              hoverBackgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ]
+            }]
+          }
+        });
+        var barChart2 = new Chart(barCtx2, {
+          type: 'bar',
+          data: {
+            labels: ["Dir 1", "Dir 2", "Dir 3", "Dir 4", "Dir 5", "Dir 6", "Dir 7"],
+            datasets: [{
+              label: '% completion',
+              data: [73, 48, 20, 29, 36, 0, 54],
+              backgroundColor: [
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4'
+              ]
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero:true
+                }
+              }]
+            }
+          }
+        });
+        var doughnutChart2 = new Chart(doughnutCtx2, {
+          type: 'doughnut',
+          data: {
+            labels: [
+              "60% Completed",
+              "25% Not Started",
+              "30% In Progress"
+            ],
+            datasets: [{
+              data: [60, 25, 30],
+              backgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ],
+              hoverBackgroundColor: [
+                "#33b874",
+                "#da534f",
+                "#f9a12b"
+              ]
+            }]
+          }
+        });
+        var barChart3 = new Chart(barCtx3, {
+          type: 'bar',
+          data: {
+            labels: ["Dir 1", "Dir 2", "Dir 3", "Dir 4", "Dir 5", "Dir 6", "Dir 7"],
+            datasets: [{
+              label: '% completion',
+              data: [73, 48, 20, 29, 36, 0, 54],
+              backgroundColor: [
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4',
+                '#559ad4'
+              ]
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero:true
+                }
+              }]
+            }
+          }
+        });
+        var doughnutChart3 = new Chart(doughnutCtx3, {
           type: 'doughnut',
           data: {
             labels: [
