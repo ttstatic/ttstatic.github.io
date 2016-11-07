@@ -24,16 +24,15 @@
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar,#navbarBlock" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png"></a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar,#navbarBlock" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png"><span class="text">Governance Evaluator<br><small>Building Successful Boards</small></span></a>
         </div>
         <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="avatar"><img src="//orig14.deviantart.net/5654/f/2009/281/4/8/godzilla_neo___rodan_by_kaijusamurai.jpg"></span>Charmaine<i class="material-icons">keyboard_arrow_down</i></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+                <li><a href="getting-started.html"><span>Getting Started</span></a></li>
+                <li><a href="#"><span>Help</span></a></li>
                 <li class="divider" role="separator"></li>
-                <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
                 <li><a href="login.html">Log out</a></li>
               </ul>
@@ -51,30 +50,51 @@
       <div class="nav-block navbar-collapse collapse" id="navbarBlock">
         <div class="container">
           <ul class="nav navbar-nav">
-            <li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
-            <li><a href="getstarted.html"><i class="material-icons">flag</i>Getting Started</a></li>
-            <li><a href="evaluation.html"><i class="material-icons">assignment</i>Evaluation</a></li>
-            <li><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
-            <li><a href=""><i class="material-icons">timeline</i>Action Plan</a></li>
-            <li><a href=""><i class="material-icons">work</i>Resources</a></li>
-            <li><a href=""><i class="material-icons">help</i>Help</a></li>
+            <li class="disabled"><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li class="disabled"><a href=""><i class="material-icons">date_range</i>Calendar</a></li>
+            <li class="disabled"><a href="diagnostic.html"><i class="material-icons">assignment</i>Diagnostic</a></li>
+            <li class="disabled"><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
+            <li class="disabled"><a href=""><i class="material-icons">timeline</i>Action Plan</a></li>
+            <li class="disabled"><a href=""><i class="material-icons">work</i>Resources</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-      <h1 class="title">Assessment Dashboard</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <h6 class="graph-title">Current Status</h6>
-            <canvas id="doughnutChart"></canvas>
+      <h1 class="title">Dashboard</h1>
+      <ul class="ge-btn-tabs nav nav-tabs" role="tablist">
+        <li class="active" role="presentation"><a href="#tabIndividual" data-toggle="tab" role="tab">Individual</a></li>
+        <li role="presentation"><a href="#tabBoard" data-toggle="tab" role="tab">Board</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tabIndividual" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title">Assessment Status</h6>
+                <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title">Overall Director % Completion<a class="actions" href="" data-toggle="tooltip" title="See all" data-placement="left"><i class="material-icons">launch</i></a></h6>
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <h6 class="graph-title">Overall Director % Completion</h6>
-            <canvas id="barChart"></canvas>
+        <div class="tab-pane" id="tabBoard" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title">Overall Director Assessment Status Completion</h6>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h6 class="graph-title">Director Completion</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,12 +146,12 @@
           type: 'doughnut',
           data: {
             labels: [
-              "Red",
-              "Blue",
-              "Yellow"
+              "60% Completed",
+              "25% Not Started",
+              "30% In Progress"
             ],
             datasets: [{
-              data: [300, 50, 100],
+              data: [60, 25, 30],
               backgroundColor: [
                 "#33b874",
                 "#da534f",
@@ -145,6 +165,8 @@
             }]
           }
         });
+      
+        $('[data-toggle="tooltip"]').tooltip();
       
       });
     </script>
