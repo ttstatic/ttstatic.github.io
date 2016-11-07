@@ -53,7 +53,7 @@
             <li><a href=""><i class="material-icons">date_range</i>Calendar</a></li>
             <li><a href="diagnostic.html"><i class="material-icons">assignment</i>Diagnostic</a></li>
             <li><a href=""><i class="material-icons">insert_chart</i>Result</a></li>
-            <li><a href=""><i class="material-icons">timeline</i>Action Plan</a></li>
+            <li><a href="action-plan.html"><i class="material-icons">timeline</i>Action Plan</a></li>
             <li><a href=""><i class="material-icons">work</i>Resources</a></li>
           </ul>
         </div>
@@ -62,7 +62,7 @@
     <div class="container">
       <h1 class="title">Diagnostic</h1>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _done">
             <div class="status">100%</div>
             <div class="title"><strong>Module 1:&nbsp;</strong><span>Strategic Direction</span></div>
@@ -136,7 +136,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _in-progress">
             <div class="status">70%</div>
             <div class="title"><strong>Module 2:&nbsp;</strong><span>Risk &amp; Compliance</span></div>
@@ -155,7 +155,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _done">
             <div class="status">100%</div>
             <div class="title"><strong>Module 3:&nbsp;</strong><span>Finance</span></div>
@@ -175,7 +175,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _none">
             <div class="status">0%</div>
             <div class="title"><strong>Module 4:&nbsp;</strong><span>Service Quality</span></div>
@@ -193,7 +193,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _none">
             <div class="status">0%</div>
             <div class="title"><strong>Module 5:&nbsp;</strong><span>Strategic Direction</span></div>
@@ -211,7 +211,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _none">
             <div class="status">0%</div>
             <div class="title"><strong>Module 6:&nbsp;</strong><span>Board Composition</span></div>
@@ -229,7 +229,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _none">
             <div class="status">0%</div>
             <div class="title"><strong>Module 7:&nbsp;</strong><span>Board Processes</span></div>
@@ -247,7 +247,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _in-progress">
             <div class="status">50%</div>
             <div class="title"><strong>Module 8:&nbsp;</strong><span>Stakeholder Engagement</span></div>
@@ -266,7 +266,7 @@
         </div>
       </div>
       <div class="card _compact">
-        <div class="module">
+        <div class="accordion">
           <div class="summary _done">
             <div class="status">100%</div>
             <div class="title"><strong>Module 9:&nbsp;</strong><span>Continuous Review and Development</span></div>
@@ -303,7 +303,7 @@
           }
         });
       
-        $('body').on('click', '.module', function() {
+        $('body').on('click', '.accordion', function() {
           if ( !$('.overlay').length ) {
             $(this).addClass('_focused');
             $('body').prepend('<div class="overlay"></div>');
@@ -314,7 +314,7 @@
       
         function clearOverlay() {
           $('.overlay').remove();
-          $('.module').removeClass('_focused');
+          $('.accordion').removeClass('_focused');
         }
       
       });
