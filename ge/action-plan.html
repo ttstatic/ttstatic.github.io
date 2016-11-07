@@ -266,7 +266,7 @@
                         <thead>
                           <tr>
                             <td class="text-uppercase" colspan="5"><span class="table-title">Action Items</span>
-                              <div class="pull-right"><a class="ge-btn _colored _filled _success" href="">+ Add Action Plan</a></div>
+                              <div class="pull-right"><a class="ge-btn _colored _filled _success _compact" href="">+ Add Action Plan</a></div>
                             </td>
                           </tr>
                         </thead>
@@ -283,33 +283,65 @@
                             <td>Amy</td>
                             <td>10 / 27 / 2016</td>
                             <td><strong class="text-uppercase text-success">Completed</strong></td>
-                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href=""><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
+                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
                           </tr>
                           <tr>
                             <td>2</td>
                             <td>Charmaine</td>
                             <td>10 / 27 / 2016</td>
                             <td><strong class="text-uppercase text-warning">Commencing</strong></td>
-                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href=""><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
+                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
                           </tr>
                           <tr>
                             <td>3</td>
                             <td>Bill</td>
                             <td>10 / 27 / 2016</td>
                             <td><strong class="text-uppercase text-danger">Not Commencing</strong></td>
-                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href=""><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
+                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
                           </tr>
                           <tr>
                             <td>4</td>
                             <td>Rodan</td>
                             <td>10 / 27 / 2016</td>
                             <td><strong class="text-uppercase text-danger">Not Commencing</strong></td>
-                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href=""><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
+                            <td><a class="ge-btn _colored _filled _info text-uppercase _compact" href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i>&nbsp;Edit</a></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card _compact">
+            <div class="accordion">
+              <div class="summary _in-progress collapsed" href="#ap-8" data-toggle="collapse">
+                <div class="status code"></div>
+                <div class="title"><strong>Module 8:&nbsp;</strong><span>Stakeholder Engagement</span></div>
+                <div class="actions">
+                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                  <div class="visible-xs visible-sm">
+                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content collapse" id="ap-8">
+                <div class="body">
+                  <div class="paginate">
+                    <ul class="list-unstyled">
+                      <li class="_active"><a href="">1</a></li>
+                      <li><a href="">2</a></li>
+                      <li><a href="">3</a></li>
+                      <li><a href="">4</a></li>
+                      <li><a href="">5</a></li>
+                    </ul>
+                  </div>
+                  <div class="paginate-content">...</div>
                 </div>
               </div>
             </div>
@@ -414,37 +446,68 @@
               </div>
             </div>
           </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _in-progress collapsed" href="#ap-8" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 8:&nbsp;</strong><span>Stakeholder Engagement</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Remove</a></li>
-                      </ul>
-                    </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalEditActionPlan" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Action Plan Edit</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Date</div>
+                </label>
+                <div class="col-sm-6">
+                  <input class="form-control" id="inputDate" type="date" placeholder="Oct / 02 / 2016">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Responsible</div>
+                </label>
+                <div class="col-sm-6">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>Type</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
                   </div>
                 </div>
               </div>
-              <div class="content collapse" id="ap-8">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Status</div>
+                </label>
+                <div class="col-sm-6">
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _danger">Not Commenced</span></span><br>
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _warning">Commenced</span></span><br>
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _success">Completed</span></span>
                 </div>
               </div>
+            </form>
+            <div class="form-group">
+              <label>Action Required</label>
+              <textarea class="form-control" rows="5" placeholder=""></textarea>
             </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center"><a class="ge-btn _colored _filled _success" type="button">Update Changes</a></div>
           </div>
         </div>
       </div>
