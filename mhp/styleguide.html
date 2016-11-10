@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>mHealth Pharma</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <!-- Bower Components-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="//code.getmdl.io/1.2.1/material.deep_purple-blue.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/getmdl-select/getmdl-select.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/print.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout--small-screen-only">
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div><span class="mdl-layout-title"><img src="assets/images/logo.png"></span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer"><span class="mdl-layout-title mdl-layout--large-screen-only"><a href="welcome.html"><img src="assets/images/logo.png"></a></span>
+        <div class="login-info"><span>Hello<strong class="name">Doctor Kwak!</strong>
+            <div class="user-more-options">
+              <button class="mdl-button mdl-js-button mdl-button--icon" id="user-more-options"><i class="material-icons">arrow_drop_down</i></button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-more-options">
+                <li class="mdl-menu__item"><a href="index.html">Logout</a></li>
+              </ul>
+            </div></span></div>
+        <nav class="mdl-navigation">
+          <div class="mdl-layout-title">
+            <div class="mdl-textfield mdl-js-textfield mhp-drawer--search-patient">
+              <input class="mdl-textfield__input" id="patientSearch" type="text">
+              <label class="mdl-textfield__label" for="patientSearch">Search patient</label>
+            </div>
+          </div><span class="mdl-badge" data-badge="5"><a class="mdl-navigation__link" href="">Patients Monitored</a></span><span class="mdl-badge" data-badge="10"><a class="mdl-navigation__link" href="">Patients Required Attention</a></span><span class="mdl-badge" data-badge="6"><a class="mdl-navigation__link" href="">Patients Under Control</a></span><span class="mdl-badge" data-badge="2"><a class="mdl-navigation__link" href="">Patients You Haven't Looked at in 20+ Days</a></span>
+          <hr><a class="mdl-navigation__link" href="welcome.html">Home</a><a class="mdl-navigation__link" href="">BP Measurements</a><a class="mdl-navigation__link" href="">Patient Review Logs</a>
+          <hr><a class="mdl-navigation__link" href="profile.html">Sample Profile Page</a>
+          <hr><a class="mdl-navigation__link" href="styleguide.html">Style Guide</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        <footer><small>mHealthPharma Inc.<br>© 2016. All rights reserved.</small></footer>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <section class="ribbon"></section>
+          <section class="content">
+            <h1>Form Title<br><small>Form Action (Add / Edit)</small></h1>
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="frame">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--6-col">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="mdl-cell mdl-cell--6-col">
+                    <p><strong>To patient :&nbsp;</strong>Juan Dela Cruz</p>
+                    <p><strong>From physician :&nbsp;</strong>John Cena</p>
+                    <form action="#">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" id="select-patient-parent">
+                        <input class="mdl-textfield__input" id="select-patient" type="text" value="" readonly="" tabindex="-1" data-val="0">
+                        <label for="select-patient"><i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i></label>
+                        <label class="mdl-textfield__label" for="select-patient">Patients</label>
+                        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="select-patient">
+                          <li class="mdl-menu__item" data-val="0">All</li>
+                          <li class="mdl-menu__item" data-val="1">Selection 1</li>
+                          <li class="mdl-menu__item" data-val="2">Selection 2</li>
+                        </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" id="formDate" type="text" data-toggle="datepicker" data-language="en" data-timepicker="true">
+                        <label class="mdl-textfield__label" for="start-date">Date</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <textarea class="mdl-textfield__input" id="formTextarea" rows="3"></textarea>
+                        <label class="mdl-textfield__label" for="formTextarea">Textarea</label>
+                      </div><br>
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Button</button>
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Button</button>
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Button</button><br>
+                      <button class="mdl-button mdl-js-button">Button</button>
+                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Button</button>
+                      <button class="mdl-button mdl-js-button" disabled="">Button</button><br>
+                      <button class="mdl-button mdl-js-button mdl-button--primary">Button</button>
+                      <button class="mdl-button mdl-js-button mdl-button--accent">Button</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="table-controls">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col-tablet mdl-cell--6-col-desktop">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" id="select-patient-parent">
+                        <input class="mdl-textfield__input" id="select-patient" type="text" value="" readonly="" tabindex="-1" data-val="0">
+                        <label for="select-patient"><i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i></label>
+                        <label class="mdl-textfield__label" for="select-patient">Patients</label>
+                        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="select-patient">
+                          <li class="mdl-menu__item" data-val="0">All</li>
+                          <li class="mdl-menu__item" data-val="1">Herrera, Weyden</li>
+                          <li class="mdl-menu__item" data-val="2">Howard, Gary A</li>
+                          <li class="mdl-menu__item" data-val="3">Rapoport, Dmitry</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-desktop">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" id="start-date" type="text" data-toggle="datepicker" data-language="en" data-timepicker="true">
+                        <label class="mdl-textfield__label" for="start-date">Start date</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-desktop">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" id="end-date" type="text" data-toggle="datepicker" data-language="en" data-timepicker="true">
+                        <label class="mdl-textfield__label" for="end-date">End date</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table class="mdl-data-table">
+                  <thead>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">Column 1</th>
+                      <th class="mdl-data-table__cell--non-numeric">Column 2</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">Column 1</th>
+                      <th class="mdl-data-table__cell--non-numeric">Column 2</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">data 1</td>
+                      <td class="mdl-data-table__cell--non-numeric">data 2</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">data 3</td>
+                      <td class="mdl-data-table__cell--non-numeric">data 4</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="table-footer-controls"><span class="rows-per-page"><span>10</span>
+                    <button class="mdl-button mdl-js-button mdl-button--icon" id="rows-per-page"><i class="material-icons">arrow_drop_down</i></button>
+                    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="rows-per-page">
+                      <li class="mdl-menu__item">10</li>
+                      <li class="mdl-menu__item">25</li>
+                      <li class="mdl-menu__item">50</li>
+                      <li class="mdl-menu__item">100</li>
+                    </ul></span><span class="showing">1-10 of 10</span><span class="paginate"><a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" href=""><i class="material-icons">keyboard_arrow_left</i></a><a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" href=""><i class="material-icons">keyboard_arrow_right</i></a></span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="bower_components/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <script src="bower_components/chart.js/dist//Chart.bundle.min.js"></script>
+    <script src="//code.getmdl.io/1.2.1/material.min.js" type="text/javascript"></script>
+    <script src="bower_components/getmdl-select/getmdl-select.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <script>
+      $(document).ready(function() {
+      
+        $("[data-toggle='datepicker']").datepicker();
+        $('body').on('blur', '[data-toggle="datepicker"]', function() {
+          if (this.value != '') {
+            $(this).parent().addClass('is-dirty');
+          }
+        });
+      
+      });
+    </script>
+  </body>
+</html>
