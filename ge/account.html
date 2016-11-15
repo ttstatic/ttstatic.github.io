@@ -92,24 +92,96 @@
       </div>
     </nav>
     <div class="container">
-      <h1 class="title">Help</h1>
+      <h1 class="title">Account Details</h1>
       <div class="ge-manual card">
         <nav>
           <ul>
-            <li><a href="#iv-1" data-toggle="collapse">General Questions</a></li>
+            <li><a href="account.html"><i class="material-icons">person</i><span>&nbsp;Accound Details</span></a></li>
+            <li><a href="passwords.html"><i class="material-icons">lock_open</i><span>&nbsp;Passwords</span></a></li>
           </ul><a class="btn-collapse" href="#"><i class="material-icons bukas">keyboard_arrow_right</i><i class="material-icons sara">keyboard_arrow_left</i></a>
         </nav>
-        <article>
-          <p>The Governance Evaluation is split into 9 modules. All 9 modules can be completed at once taking 20-30 minutes or individual modules can be completed separately dependent on your time availability.</p>
-          <p><strong>STATUS</strong></p>
-          <p>Tells you where you are up to in completing the governance evaluation modules.</p>
-          <p><strong>NOT STARTED</strong></p>
-          <p>Click on start now to commence the module.</p>
-          <p><strong>RESUME</strong></p>
-          <p>Click on resume if you are returning to the module.</p>
-          <p><strong>COMPLETED/DATE</strong></p>
-          <p>When you have completed the module Completed and a date will be displayed.</p>
-          <p>If you wish to change your answers you can click on RESTART to redo the module questions</p>
+        <article class="form-account-details"><a class="pull-right text-info" href=""><i class="material-icons">mode_edit</i><span>
+              <big>&nbsp;Edit</big></span></a>
+          <h4>Account Details Settings</h4><br>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adTitle">Title</label>
+              <div class="col-sm-9">
+                <div class="select" id="adTitle">
+                  <select class="form-control">
+                    <option>Ms</option>
+                  </select><i class="material-icons">keyboard_arrow_down</i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adName">Name</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adName" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adEmail">Email</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adEmail" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adRole">Role</label>
+              <div class="col-sm-9">
+                <div class="select" id="adRole">
+                  <select class="form-control">
+                    <option>Board Member</option>
+                  </select><i class="material-icons">keyboard_arrow_down</i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adLandline">Landline</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adLandline" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adMobile">Mobile</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adMobile" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adBday">Birthday</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adBday" type="date" placeholder="mm/dd/yyyy">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adGender">Gender</label>
+              <div class="col-sm-9">
+                <div class="select" id="adGender">
+                  <select class="form-control">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select><i class="material-icons">keyboard_arrow_down</i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adCommenced">Yes commenced on this board</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adCommenced" type="date" placeholder="mmm/dd/yyyy">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="adGeExperience">Governance Experience</label>
+              <div class="col-sm-9">
+                <input class="form-control" id="adGeExperience" type="text" placeholder="">
+              </div>
+            </div>
+          </form><br>
+          <div class="text-right">
+            <button class="ge-btn _lnk" type="submit">Cancel</button>
+            <button class="ge-btn _colored _filled _success" type="submit">Update Changes</button>
+          </div>
         </article>
       </div>
     </div>
