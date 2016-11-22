@@ -19,6 +19,13 @@ var Main = (function () {
 				$(this).parent().find('input').val('').focus();
 			});
 
+			$("[data-toggle='submenu-collapse']").click(function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$(this).toggleClass('collapsed')
+				$(this).parent().find('.collapse').toggle();
+			});
+
 		},
 
 		//--------
