@@ -29,11 +29,22 @@ var Main = (function () {
 			$("[data-toggle]").on('click', function(e) {
 				e.preventDefault();
 				var type = $(this).data('toggle');
-				var target = $(this).data('target')
-
-
+				var target = $(this).data('target');
 				$(target).removeClass('_list _grid').addClass('_'+type);
-				// $(this).parents('').find('[data-display]').addClass('test');
+			});
+
+			// init window resize
+			Main.windowResize();
+
+		},
+
+		windowResize: function() {
+
+			$(window).resize(function() {
+
+				// set Individual Status view to grid if window size is < 767px
+				$('.module-status').removeClass('_list').addClass('_grid');
+
 			});
 
 		},
