@@ -26,6 +26,16 @@ var Main = (function () {
 				$(this).parent().find('.collapse').toggle();
 			});
 
+			$("[data-toggle]").on('click', function(e) {
+				e.preventDefault();
+				var type = $(this).data('toggle');
+				var target = $(this).data('target')
+
+
+				$(target).removeClass('_list _grid').addClass('_'+type);
+				// $(this).parents('').find('[data-display]').addClass('test');
+			});
+
 		},
 
 		//--------
