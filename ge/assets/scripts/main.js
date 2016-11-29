@@ -26,12 +26,12 @@ var Main = (function () {
 				$(this).parent().find('.collapse').toggle();
 			});
 
-			$("[data-toggle]").on('click', function(e) {
-				e.preventDefault();
-				var type = $(this).data('toggle');
-				var target = $(this).data('target');
-				$(target).removeClass('_list _grid').addClass('_'+type);
-			});
+			// $("[data-toggle]").on('click', function(e) {
+			// 	e.preventDefault();
+			// 	var type = $(this).data('toggle');
+			// 	var target = $(this).data('target');
+			// 	$(target).removeClass('_list _grid').addClass('_'+type);
+			// });
 
 			// init window resize
 			Main.windowResize();
@@ -40,10 +40,14 @@ var Main = (function () {
 
 		windowResize: function() {
 
-			$(window).resize(function() {
+			$(window).on('resize load', function() {
 
 				// set Individual Status view to grid if window size is < 767px
-				$('.module-status').removeClass('_list').addClass('_grid');
+				// $('.module-status').removeClass('_list').addClass('_grid');
+				if ($(window).width() < 767)
+					$('.module-status').addClass('_grid').removeClass('_list');
+				else
+					$('.module-status').addClass('_list').removeClass('_grid');
 
 			});
 

@@ -121,8 +121,7 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Assessment Status</h6>
-                <canvas id="doughnutChart"></canvas>
-                <div class="donut-label"><strong>25</strong><br><span>days left</span></div>
+                <canvas id="doughnutChart" data-type="doughnut" data-text="25,days left"></canvas>
               </div>
             </div>
             <div class="col-md-6">
@@ -136,8 +135,7 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Action Plan Status</h6>
-                <canvas id="doughnutChart1"></canvas>
-                <div class="donut-label"><strong>25</strong><br><span>action plans</span></div>
+                <canvas id="doughnutChart1" data-type="doughnut" data-text="25,action plans"></canvas>
               </div>
             </div>
             <div class="col-md-6">
@@ -153,8 +151,7 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Director Assessment Status Completion</h6>
-                <canvas id="doughnutChart2"></canvas>
-                <div class="donut-label"><strong>25</strong><br><span>days left</span></div>
+                <canvas id="doughnutChart2" data-type="doughnut" data-text="25,days left"></canvas>
               </div>
             </div>
             <div class="col-md-6">
@@ -168,8 +165,7 @@
             <div class="col-md-6">
               <div class="card">
                 <h6 class="graph-title"><i class="material-icons" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="auto" data-trigger="hover">info</i>&nbsp;Overall Action Plan Assessment Status Completion</h6>
-                <canvas id="doughnutChart3"></canvas>
-                <div class="donut-label"><strong>25</strong><br><span>action plans</span></div>
+                <canvas id="doughnutChart3" data-type="doughnut" data-text="25,action plans"></canvas>
               </div>
             </div>
             <div class="col-md-6">
@@ -411,6 +407,23 @@
       
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="popover"]').popover();
+      
+        $('canvas').each(function() {
+          var type = $(this).data('type');
+          var txt = $(this).data('text');
+          if (type == 'doughnut') {
+            var c = this;
+            var ctx = c.getContext('2d');
+            //- var newChart = new Chart(ctx);
+            var fontSize = (c.height / 114).toFixed(2);
+      
+            ctx.font = fontSize + 'px Georgia';
+            ctx.textBaseline = 'middle';
+      
+            ctx.fillText(txt, c.width/2, c.height/2);
+          }
+      
+        });
       
       });
     </script>
