@@ -19,18 +19,23 @@ var Main = (function () {
 
 			// FAT MENU
 			$('.navbar-nav').on('mouseover', '> li', function() {
-				var li = $(this);
-				li.parent().find('li').removeClass('on');
-				li.parent().find('li').next('.drop').hide();
-				li.addClass('on').next('.drop').show();
-				if ( li.hasClass('on') ) {
-					li.next('.drop').show();
+				var _this = $(this);
+
+				_this.parent().find('li').removeClass('on');
+				_this.addClass('on');
+
+				// check if the hovered menu is active
+				if ( _this.hasClass('on') ) {
+					// if yes, show the element '.drop' next to it
+					_this.parent().find('.drop').slideUp('fast');
+					_this.next('.drop').slideDown('fast');
 				} else {
-					li.next('.drop').hide();
+					_this.next('.drop').slideUp('fast');
 				}
-				li.next('.drop').mouseout(function() {
-					$(this).hide();
-				});
+
+			}).on('mouseleave', '.drop', function() {
+				// hides the fat menu ones the mouse left the div area
+				$(this).slideUp('fast');
 			});
 
 		},
