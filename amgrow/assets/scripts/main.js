@@ -10,11 +10,11 @@ var Main = (function () {
 			$('#allSearch').click(function(e) {
 				e.preventDefault();
 				var target = $(this).data('target');
-				$(target).fadeIn().find('input').focus();
+				$(target).fadeIn('fast').find('input').focus();
 			});
 			$('.closeModal').click(function(e) {
 				e.preventDefault();
-				$(this).parent().fadeOut();
+				$(this).parent().fadeOut('fast');
 			});
 
 			// FAT MENU
