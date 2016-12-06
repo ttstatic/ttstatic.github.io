@@ -23,6 +23,18 @@
 <![endif]-->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1184236881618443";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk')
+      );
+      
+    </script>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -102,35 +114,49 @@
     </section>
     <section>
       <div class="container">
-        <div class="amgrow-ads">
-          <div class="cols">
-            <div class="events">
-              <div class="title"><i class="fa fa-calendar-o"></i>Events</div>
-              <div class="body">
-                <div class="inner">
-                  <div class="name">In the Garden</div>
-                  <div class="date">December</div>
-                </div>
-              </div>
+        <h3 class="section-heading">Activity Feed</h3>
+        <div class="tile-wrap">
+          <div class="tile _fb">
+            <div class="fb-page" data-href="https://www.facebook.com/amgrow.garden/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+              <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/amgrow.garden/"><a href="https://www.facebook.com/amgrow.garden/">Amgrow Home Garden</a></blockquote>
             </div>
           </div>
-          <div class="cols">
-            <div class="tips">
-              <div class="title"><i class="fa fa-info-circle"></i>Hint and Tips</div>
-              <div class="body">
-                <div class="inner">
-                  <div class="name">Keep Your Garden Happy</div><a href="">Read more about this topic</a>
+          <div class="tile"><br class="visible-sm visible-xs">
+            <div class="amgrow-ads">
+              <div class="cols">
+                <div class="events">
+                  <div class="title"><i class="fa fa-calendar-o"></i>Events</div>
+                  <div class="body">
+                    <div class="inner">
+                      <div class="name">In the Garden</div>
+                      <div class="date">December</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="cols">
-            <div class="video">
-              <div class="title"><i class="fa fa-video-camera"></i>Video</div>
-              <div class="body">
-                <div class="inner">
-                  <div class="name">Victor Trap</div><a class="icon" href="#modalVideo" data-toggle="modal"><i class="fa fa-play fa-3x"></i></a>
-                  <p>If you have a rodent problem, now's the time to check out some rodent control options from VICTOR.</p>
+              <div class="cols">
+                <div class="tips">
+                  <div class="title"><i class="fa fa-info-circle"></i>Hint and Tips</div>
+                  <div class="body">
+                    <div class="inner">
+                      <div class="name">Keep Your Garden Happy</div><a href="">Read more about this topic</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cols">
+                <div class="video">
+                  <div class="title"><i class="fa fa-video-camera"></i>Video</div>
+                  <div class="body">
+                    <div class="inner">
+                      <div class="name">Victor Trap</div><a class="icon" href="#modalVideo" data-toggle="modal"><span class="fa-stack fa-lg fa-3x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-play fa-stack-1x fa-inverse"></i></span></a>
+                      <p>If you have a rodent problem, now's the time to check out some rodent control options from VICTOR.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. </p>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
