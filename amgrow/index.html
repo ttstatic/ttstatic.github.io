@@ -11,6 +11,8 @@
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.theme.green.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -60,9 +62,47 @@
       </div>
     </nav>
     <div class="banner"><img src="assets/images/banner.jpg"></div>
-    <div class="container">
-      <h2>It works!</h2>
-    </div>
+    <section class="_featured">
+      <div class="container">
+        <h3 class="section-heading">Featured Products</h3>
+        <div class="owl-carousel">
+          <div class="pd-item"><img src="assets/images/featured/1.png">
+            <div class="dsc">All-natural source of trace elements, natural growth stimulants and minerals<br><a href="">read more</a></div>
+            <div class="name"><a href="">Amgrow Seaweed</a></div>
+          </div>
+          <div class="pd-item"><img src="assets/images/featured/2.png">
+            <div class="dsc">Atotally natural liquid fertiliser prepared from ocean fish, Tasmanian seaweed and fulvic acid<br><a href="">read more</a></div>
+            <div class="name"><a href="">Organix Harvest</a></div>
+          </div>
+          <div class="pd-item"><img src="assets/images/featured/3.png">
+            <div class="dsc">Scatter around a little Eradicate Snail &amp; Slug Bait, which is pet safe, to prevent snails &amp; slugs from feeding on your plants<br><a href="">read more</a></div>
+            <div class="name"><a href="">Amgrow Eradicate Snail &amp; Slug Bait</a></div>
+          </div>
+          <div class="pd-item"><img src="assets/images/featured/4.png">
+            <div class="dsc">Nows an ideal time to insulate the soil surface, conserve water and protect the soil and plant roots from temperature extremes<br><a href="">read more</a></div>
+            <div class="name"><a href="">Organix Sugarcane Mulch</a></div>
+          </div>
+          <div class="pd-item"><img src="assets/images/featured/5.png">
+            <div class="dsc">A premium organic garden fertiliser providing slow release of essential nutrients<br><a href="">read more</a></div>
+            <div class="name"><a href="">Organix Xtra</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h3 class="section-heading">Locate an Amgrow stockist today!</h3>
+        <div class="locate-stockist">
+          <div class="input-group input-group-lg">
+            <input class="form-control" type="text" placeholder="Enter your suburb or postcode"><span class="input-group-btn">
+              <button class="btn btn-danger" type="button"><i class="fa fa-map-marker"></i></button></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container"></div>
+    </section>
     <footer>
       <div class="container">
         <p class="lead">Subscribe to our newsletter</p>
@@ -74,6 +114,7 @@
         </div>
         <p>Connect with us</p>
         <div class="social"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a></div>
+        <div class="links"><a href="">FAQ</a><a href="">About Us</a><a href="">Comment With Us</a></div>
         <div class="copyright">&copy; Amgrow 2016, a division of Amgrow Pty Ltd</div>
       </div>
     </footer>
@@ -83,6 +124,7 @@
     </div>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
@@ -90,7 +132,28 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-      
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          autoplay: true,
+          margin: 15,
+          dots: false,
+          nav: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            600: {
+              items: 3,
+              nav: false
+            },
+            1000: {
+              items:5,
+              nav: false
+            }
+          }
+        })
       });
     </script>
   </body>
