@@ -46,6 +46,20 @@ var Main = (function () {
 				$(target).attr('data-view', view);
 			});
 
+			$('.qty-form').on('click', 'a', function(e) {
+				e.preventDefault();
+				var action = this.className;
+				$(this).parent().find(':text').val(function() {
+					var val = parseInt(this.value);
+					var x;
+					action == 'plus' ? x = val += 1 : x = val -= 1;
+					if (this.value > 0)
+						return x
+					else
+						return 0;
+				});
+			});
+
 		},
 
 		//--------

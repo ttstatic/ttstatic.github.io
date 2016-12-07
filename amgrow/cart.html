@@ -40,7 +40,7 @@
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
           <div class="header-right">
-            <div class="shopping-cart"><a class="on" href="" data-count="13"><i class="fa fa-shopping-bag"></i></a></div>
+            <div class="shopping-cart"><a class="on" href="cart.html" data-count="13"><i class="fa fa-shopping-bag"></i></a></div>
             <div class="all-search"><a id="allSearch" href="" data-target="#modalAllSearch"><i class="fa fa-search"></i></a></div>
           </div>
         </div>
@@ -75,6 +75,93 @@
     <section class="_bordered">
       <div class="container">
         <h3 class="section-heading">My Cart</h3>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="cart-items heading">
+              <div class="cols item"><strong>Item</strong></div>
+              <div class="cols qty"><strong>Quantity</strong></div>
+              <div class="cols price"><strong>Price</strong></div>
+            </div>
+            <div class="cart-items item">
+              <div class="cols item"><img src="assets/images/catalog/3.jpg"><br class="visible-xs"><span class="name">Amgrow Blood and Bone</span></div>
+              <div class="cols qty"><br class="visible-xs">
+                <div class="qty-form"><a class="minus" href=""><i class="fa fa-minus"></i></a>
+                  <input type="text" value="1"><a class="plus" href=""><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="cols price">$15.95</div>
+            </div>
+            <div class="cart-items item">
+              <div class="cols item"><img src="assets/images/catalog/10.jpg"><br class="visible-xs"><span class="name">Ecosmart Native Fertiliser</span></div>
+              <div class="cols qty"><br class="visible-xs">
+                <div class="qty-form"><a class="minus" href=""><i class="fa fa-minus"></i></a>
+                  <input type="text" value="1"><a class="plus" href=""><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="cols price">$9.95</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="order-summary">
+              <div class="heading"><strong>Order Summary</strong></div>
+              <table>
+                <tr>
+                  <td class="text-muted">Subtotal:</td>
+                  <td>$25.90</td>
+                </tr>
+                <tr>
+                  <td class="text-muted">Total due:</td>
+                  <td>
+                    <big><strong>$25.90</strong></big>
+                  </td>
+                </tr>
+              </table><br><a class="btn btn-success btn-block btn-lg" href="">Secure Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="_bordered _grayed">
+      <div class="container">
+        <h3 class="section-heading">Best Selling Products</h3>
+        <div class="row catalog grid" id="productCatalog" data-view="grid">
+          <div class="col-md-3 col-sm-4">
+            <div class="product">
+              <div class="img"><img src="assets/images/catalog/5.jpg"></div>
+              <div class="details">
+                <div class="name"><a href="product.html">Citrus &amp; Fruit Plant Food</a></div>
+                <div class="price">$6.95</div><a class="btn-add" href="">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="product">
+              <div class="img"><img src="assets/images/catalog/6.jpg"></div>
+              <div class="details">
+                <div class="name"><a href="product.html">Ecosmart Buffalo Lawn Fertiliser</a></div>
+                <div class="price">$15.95</div><a class="btn-add" href="">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="product">
+              <div class="img"><img src="assets/images/catalog/7.jpg"></div>
+              <div class="details">
+                <div class="name"><a href="product.html">Ecosmart Citrus &amp; Fruit Fertiliser</a></div>
+                <div class="price">$5.95</div><a class="btn-add" href="">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="product">
+              <div class="img"><img src="assets/images/catalog/8.jpg"></div>
+              <div class="details">
+                <div class="name"><a href="product.html">Ecosmart Fruit &amp; Flower Fertiliser</a></div>
+                <div class="price">$15.95</div><a class="btn-add" href="">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -106,7 +193,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-        
+      
       });
     </script>
   </body>
