@@ -12,7 +12,7 @@
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/owl.carousel/dist/assets/owl.theme.green.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -83,7 +83,7 @@
     <section class="_featured">
       <div class="container">
         <h3 class="section-heading">Featured Products</h3>
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-theme">
           <div class="pd-item"><img src="assets/images/featured/1.png">
             <div class="dsc">All-natural source of trace elements, natural growth stimulants and minerals<br><a href="">read more</a></div>
             <div class="name"><a href="">Amgrow Seaweed</a></div>
@@ -217,20 +217,18 @@
           autoplay: true,
           margin: 15,
           dots: false,
-          nav: false,
+          nav: true,
+          navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
           responsiveClass: true,
           responsive: {
             0: {
-              items: 2,
-              nav: false
+              items: 2
             },
             600: {
-              items: 3,
-              nav: false
+              items: 3
             },
             1000: {
-              items:4,
-              nav: false
+              items:4
             }
           }
         });
