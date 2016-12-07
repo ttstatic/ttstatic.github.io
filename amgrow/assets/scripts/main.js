@@ -38,6 +38,14 @@ var Main = (function () {
 				$(this).slideUp('fast');
 			});
 
+			// CATALOG VIEWS
+			$('[data-toggle="view"]').on('click', function(e) {
+				e.preventDefault();
+				var view = $(this).data('view');
+				var target = $(this).data('target');
+				$(target).attr('data-view', view);
+			});
+
 		},
 
 		//--------
