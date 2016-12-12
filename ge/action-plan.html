@@ -87,7 +87,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
             <li class="disabled"><a href=""><i class="material-icons">date_range</i>Calendar</a></li>
-            <li class="disabled"><a href=""><i class="material-icons">assignment</i>Evaluation Process</a></li>
+            <li><a href="evaluation.html"><i class="material-icons">assignment</i>Evaluation Process</a></li>
             <li><a href="questionnaire.html"><i class="material-icons">assignment</i>Questionnaire</a></li>
             <li><a href="result.html"><i class="material-icons">insert_chart</i>Result</a></li>
             <li><a href="action-plan.html"><i class="material-icons">timeline</i>Action Plan</a></li>
@@ -98,499 +98,579 @@
     </nav>
     <div class="container">
       <h1 class="title">Action Plan</h1>
-      <hr>
-      <form class="form-inline">
-        <div class="form-group">
-          <div class="select">
-            <select class="form-control">
-              <option>Type</option>
-            </select><i class="material-icons">keyboard_arrow_down</i>
+      <div class="pull-right"><a class="ge-btn _colored _info _compact" href="" target="_blank"><i class="material-icons">picture_as_pdf</i>&nbsp;View as PDF</a></div>
+      <ul class="ge-btn-tabs nav nav-tabs" role="tablist">
+        <li class="active" role="presentation"><a href="#tabBoard" data-toggle="tab" role="tab">Board</a></li>
+        <li role="presentation"><a href="#tabIndividual" data-toggle="tab" role="tab">Individual</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tabBoard" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-center">Board Results</h4>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 20%"></div>
+                    <div class="_maturing" style="width: 0"></div>
+                    <div class="_developing" style="width: 30%"></div>
+                    <div class="_starting" style="width: 0"></div>
+                    <div class="_early" style="width: 50%"></div>
+                    <div class="_unsure" style="width: 0"></div>
+                  </div>
+                  <div class="summary _done collapsed" href="#ap-1" data-toggle="collapse">
+                    <div class="title"><strong>Module 1:&nbsp;</strong><span>Strategic Direction</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-1">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 70%"></div>
+                    <div class="_maturing" style="width: 0"></div>
+                    <div class="_developing" style="width: 10%"></div>
+                    <div class="_starting" style="width: 0"></div>
+                    <div class="_early" style="width: 20%"></div>
+                    <div class="_unsure" style="width: 0"></div>
+                  </div>
+                  <div class="summary _in-progress collapsed" href="#ap-2" data-toggle="collapse">
+                    <div class="title"><strong>Module 2:&nbsp;</strong><span>Risk &amp; Compliance</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-2">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 0"></div>
+                    <div class="_maturing" style="width: 40%"></div>
+                    <div class="_developing" style="width: 0"></div>
+                    <div class="_starting" style="width: 50%"></div>
+                    <div class="_early" style="width: 0"></div>
+                    <div class="_unsure" style="width: 10%"></div>
+                  </div>
+                  <div class="summary _done collapsed" href="#ap-3" data-toggle="collapse">
+                    <div class="title"><strong>Module 3:&nbsp;</strong><span>Finance</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-3">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 20%"></div>
+                    <div class="_maturing" style="width: 0"></div>
+                    <div class="_developing" style="width: 30%"></div>
+                    <div class="_starting" style="width: 0"></div>
+                    <div class="_early" style="width: 50%"></div>
+                    <div class="_unsure" style="width: 0"></div>
+                  </div>
+                  <div class="summary _none collapsed" href="#ap-4" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 4:&nbsp;</strong><span>Service Quality</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-4">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 10%"></div>
+                    <div class="_maturing" style="width: 15%"></div>
+                    <div class="_developing" style="width: 30%"></div>
+                    <div class="_starting" style="width: 25%"></div>
+                    <div class="_early" style="width: 10%"></div>
+                    <div class="_unsure" style="width: 10%"></div>
+                  </div>
+                  <div class="summary _none" href="#ap-5" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 5:&nbsp;</strong><span>Governance Relation</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collpase in" id="ap-5">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active _mature"><a href="">1</a></li>
+                          <li class="_maturing"><a href="">2</a></li>
+                          <li class="_developing"><a href="">3</a></li>
+                          <li class="_starting"><a href="">4</a></li>
+                          <li class="_early"><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">
+                        <p>Service Quality Reporting</p>
+                        <p><strong>Questions</strong></p>
+                        <p>Does the board understand and respect the difference between their governance roles and that of management?</p><br>
+                        <p><strong>Recommendation</strong></p>
+                        <p>Oversight of the quality of service that are provided by  the organisation is a core responsibility of the board. The board should:</p>
+                        <ul>
+                          <li>receive regular updates about the organisation's key quality indicators.</li>
+                        </ul>
+                        <p>The following sections in the Online Governance and Resources Manual are designed to clarify this role and enhance practice:</p>
+                        <dl>
+                          <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Checklist</a></dt>
+                          <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Policy</a></dt>
+                          <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Reporting Template</a></dt>
+                          <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Fact Sheet</a></dt>
+                        </dl>
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <td class="text-uppercase" colspan="5"><span class="table-title"><i class="material-icons text-danger">fiber_manual_record</i>There are actions set</span>
+                                  <div class="pull-right"><a class="ge-btn _normal _compact" href="#modalAddActionPlan" data-toggle="modal">+ Add Action Plan</a></div>
+                                </td>
+                              </tr>
+                            </thead>
+                          </table>
+                        </div>
+                        <div class="external-links">
+                          <p>Partners Link</p>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>Aon Hewitt</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>Tech Elite</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>TwistResources</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 0"></div>
+                    <div class="_maturing" style="width: 40%"></div>
+                    <div class="_developing" style="width: 0"></div>
+                    <div class="_starting" style="width: 50%"></div>
+                    <div class="_early" style="width: 0"></div>
+                    <div class="_unsure" style="width: 10%"></div>
+                  </div>
+                  <div class="summary _in-progress collapsed" href="#ap-8" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 8:&nbsp;</strong><span>Stakeholder Engagement</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Remove</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-8">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 20%"></div>
+                    <div class="_maturing" style="width: 0"></div>
+                    <div class="_developing" style="width: 30%"></div>
+                    <div class="_starting" style="width: 0"></div>
+                    <div class="_early" style="width: 50%"></div>
+                    <div class="_unsure" style="width: 0"></div>
+                  </div>
+                  <div class="summary _done collapsed" href="#ap-9" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 9:&nbsp;</strong><span>Continuous Review and Development</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Move to Priority</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-9">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="visible-xs visible-sm">
+            <div class="col-md-6">
+              <h4 class="text-center">Action Plan</h4>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 10%"></div>
+                    <div class="_maturing" style="width: 15%"></div>
+                    <div class="_developing" style="width: 30%"></div>
+                    <div class="_starting" style="width: 25%"></div>
+                    <div class="_early" style="width: 10%"></div>
+                    <div class="_unsure" style="width: 10%"></div>
+                  </div>
+                  <div class="summary _none" href="#ap-6" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 6:&nbsp;</strong><span>Board Composition</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Remove</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse in" id="ap-6">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active _mature"><a href="">1</a></li>
+                          <li class="_maturing"><a href="">2</a></li>
+                          <li class="_developing"><a href="">3</a></li>
+                          <li class="_starting"><a href="">4</a></li>
+                          <li class="_early"><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">
+                        <div class="form-group">
+                          <div class="check">
+                            <label>
+                              <input type="checkbox"><span class="fill"></span>
+                            </label>
+                          </div><span class="lbl">Show Questions and Recommendation</span>
+                        </div>
+                        <hr>
+                        <p>
+                          <p>Service Quality Reporting</p>
+                        </p>
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <td class="text-uppercase" colspan="6"><span class="table-title">Action Items</span></td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Status</td>
+                                <td>Title and Action</td>
+                                <td>Reason</td>
+                                <td>Responsible</td>
+                                <td>Date</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><i class="material-icons text-danger">fiber_manual_record</i></td>
+                                <td>Needs to be completed today</td>
+                                <td>Urgent</td>
+                                <td>Aldrin</td>
+                                <td>26/11/2016</td>
+                                <td>
+                                  <div class="dropdown"><a class="btn btn-default dropdown-toggle btn-xs" id="dropdownMenu1" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">more_vert</i></a>
+                                    <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                      <li><a href="#modalEditActionPlan" data-toggle="modal">Edit</a></li>
+                                      <li><a href="#">Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><i class="material-icons text-danger">fiber_manual_record</i></td>
+                                <td>Needs to be completed today</td>
+                                <td>Needs to be updated</td>
+                                <td>Nicklaus</td>
+                                <td>26/11/2016</td>
+                                <td>
+                                  <div class="dropdown"><a class="btn btn-default dropdown-toggle btn-xs" id="dropdownMenu1" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">more_vert</i></a>
+                                    <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                      <li><a href="#modalEditActionPlan" data-toggle="modal">Edit</a></li>
+                                      <li><a href="#">Delete</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="external-links">
+                          <p>Partners Link</p>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>Aon Hewitt</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>Tech Elite</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="media">
+                                <div class="wrap">
+                                  <div class="media-left"><a href="#"><img class="media-object img-circle" src="//placehold.it/50" alt="..." width="30"></a></div>
+                                  <div class="media-body"><strong>TwistResources</strong></div>
+                                  <p class="text"><small>Provider of human capital and management consulting services headquartered in the United States in Lincolnshire, Illinois.</small></p>
+                                </div><a class="ge-btn _colored _filled _info" href="#modalPartner" data-toggle="modal"><span>View More</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card _compact">
+                <div class="accordion">
+                  <div class="module-progress">
+                    <div class="_mature" style="width: 0"></div>
+                    <div class="_maturing" style="width: 40%"></div>
+                    <div class="_developing" style="width: 0"></div>
+                    <div class="_starting" style="width: 50%"></div>
+                    <div class="_early" style="width: 0"></div>
+                    <div class="_unsure" style="width: 10%"></div>
+                  </div>
+                  <div class="summary _none collapsed" href="#ap-7" data-toggle="collapse">
+                    <div class="status code"></div>
+                    <div class="title"><strong>Module 7:&nbsp;</strong><span>Board Process</span></div>
+                    <div class="actions">
+                      <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
+                      <div class="visible-xs visible-sm">
+                        <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Remove</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content collapse" id="ap-7">
+                    <div class="body">
+                      <div class="paginate">
+                        <ul class="list-unstyled">
+                          <li class="_active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><a href="">4</a></li>
+                          <li><a href="">5</a></li>
+                        </ul>
+                      </div>
+                      <div class="paginate-content">...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="select">
-            <select class="form-control">
-              <option>Status</option>
-            </select><i class="material-icons">keyboard_arrow_down</i>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="select">
-            <select class="form-control">
-              <option>Email as PDF</option>
-            </select><i class="material-icons">keyboard_arrow_down</i>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </form>
-      <hr>
-      <div class="row">
-        <div class="col-md-6">
-          <h4 class="text-center">Individual Results</h4>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _done collapsed" href="#ap-1" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 1:&nbsp;</strong><span>Strategic Direction</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-1">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _in-progress collapsed" href="#ap-2" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 2:&nbsp;</strong><span>Risk &amp; Compliance</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-2">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _done collapsed" href="#ap-3" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 3:&nbsp;</strong><span>Finance</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-3">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _none collapsed" href="#ap-4" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 4:&nbsp;</strong><span>Service Quality</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-4">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _none" href="#ap-5" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 5:&nbsp;</strong><span>Governance Relation</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collpase in" id="ap-5">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">
-                    <div class="form-group text-right">
-                      <div class="check">
-                        <label>
-                          <input type="checkbox" checked><span class="fill"></span>
-                        </label>
-                      </div><span class="lbl">Show Questions and Recommendation</span>
-                    </div>
-                    <hr>
-                    <p><strong class="text-danger">Governance verses Management Roles</strong></p>
-                    <p><strong>Questions</strong></p>
-                    <p>Does the board understand and respect the difference between their governance roles and that of management?</p><br>
-                    <p><strong>Recommendation</strong></p>
-                    <p>Oversight of the quality of service that are provided by  the organisation is a core responsibility of the board. The board should:</p>
-                    <ul>
-                      <li>receive regular updates about the organisation's key quality indicators.</li>
-                    </ul>
-                    <p>The following sections in the Online Governance and Resources Manual are designed to clarify this role and enhance practice:</p>
-                    <dl>
-                      <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Checklist</a></dt>
-                      <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Policy</a></dt>
-                      <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Reporting Template</a></dt>
-                      <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Fact Sheet</a></dt>
-                    </dl>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <td class="text-uppercase" colspan="5"><span class="table-title">Action Items</span>
-                              <div class="pull-right"><a class="ge-btn _normal _compact" href="">+ Add Action Plan</a></div>
-                            </td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Item</td>
-                            <td>Responsible</td>
-                            <td>Date</td>
-                            <td>Status</td>
-                            <td>Action</td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Amy</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Completed</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Charmaine</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Bill</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Not Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Rodan</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Not Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="external-links">
-                      <p>Partners Link</p>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Aon Hewitt</span></a></div>
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Twist Resources</span></a></div>
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Tech Elite</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _in-progress collapsed" href="#ap-8" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 8:&nbsp;</strong><span>Stakeholder Engagement</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Remove</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-8">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _done collapsed" href="#ap-9" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 9:&nbsp;</strong><span>Continuous Review and Development</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Move to Priority</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-9">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="visible-xs visible-sm">
-        <div class="col-md-6">
-          <h4 class="text-center">Action Plans</h4>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _none" href="#ap-6" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 6:&nbsp;</strong><span>Board Composition</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Remove</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse in" id="ap-6">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">
-                    <div class="form-group text-right">
-                      <div class="check">
-                        <label>
-                          <input type="checkbox"><span class="fill"></span>
-                        </label>
-                      </div><span class="lbl">Show Questions and Recommendation</span>
-                    </div>
-                    <hr>
-                    <p><strong class="text-danger">Governance verses Management Roles</strong></p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <td class="text-uppercase" colspan="5"><span class="table-title">Action Items</span>
-                              <div class="pull-right"><a class="ge-btn _normal _compact" href="">+ Add Action Plan</a></div>
-                            </td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Item</td>
-                            <td>Responsible</td>
-                            <td>Date</td>
-                            <td>Status</td>
-                            <td>Action</td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Amy</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Completed</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Charmaine</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Bill</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Not Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Rodan</td>
-                            <td>10/27/2016</td>
-                            <td><strong class="text-uppercase"><span>Not Commencing</span></strong></td>
-                            <td><a href="#modalEditActionPlan" data-toggle="modal"><i class="material-icons">mode_edit</i></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="external-links">
-                      <p>Partners Link</p>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Aon Hewitt</span></a></div>
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Twist Resources</span></a></div>
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-6">
-                        <div class="row"><a class="ge-btn _colored _filled _info" href=""><i class="material-icons">link</i><br><span>Tech Elite</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card _compact">
-            <div class="accordion">
-              <div class="summary _none collapsed" href="#ap-7" data-toggle="collapse">
-                <div class="status code"></div>
-                <div class="title"><strong>Module 7:&nbsp;</strong><span>Board Process</span></div>
-                <div class="actions">
-                  <div class="hidden-xs hidden-sm"><a class="ge-btn _lnk text-uppercase text-muted" href="#"><i class="material-icons sara">keyboard_arrow_up</i><i class="material-icons bukas">keyboard_arrow_down</i></a></div>
-                  <div class="visible-xs visible-sm">
-                    <div class="btn-group"><a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Remove</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content collapse" id="ap-7">
-                <div class="body">
-                  <div class="paginate">
-                    <ul class="list-unstyled">
-                      <li class="_active"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li><a href="">5</a></li>
-                    </ul>
-                  </div>
-                  <div class="paginate-content">...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="tab-pane active" id="tabIndividual" role="tabpanel">...</div>
       </div>
     </div>
-    <div class="modal fade" id="modalEditActionPlan" tabindex="-1" role="dialog">
+    <div class="modal fade" id="modalAddActionPlan" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Action Plan Edit</h4>
+            <h4 class="modal-title">Add Action Item</h4>
           </div>
           <div class="modal-body">
+            <div class="form-group">
+              <div class="check">
+                <label>
+                  <input type="checkbox"><span class="fill"></span>
+                </label>
+              </div><span class="lbl">Show Questions and Recommendation</span>
+            </div>
+            <hr>
+            <p><strong>Recommendation</strong></p>
+            <p>Oversight of the quality of service that are provided by  the organisation is a core responsibility of the board. The board should:</p>
+            <ul>
+              <li>receive regular updates about the organisation's key quality indicators.</li>
+            </ul>
+            <p>The following sections in the Online Governance and Resources Manual are designed to clarify this role and enhance practice:</p>
+            <dl>
+              <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Checklist</a></dt>
+              <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Policy</a></dt>
+              <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Reporting Template</a></dt>
+              <dt><a href=""><i class="material-icons">file_download</i>&nbsp;Service Quality 4. Fact Sheet</a></dt>
+            </dl>
+            <hr>
             <form class="form-horizontal">
               <div class="form-group">
                 <label class="col-sm-3 control-label">
                   <div class="text-left">Date</div>
                 </label>
                 <div class="col-sm-6">
-                  <input class="form-control" id="inputDate" type="date" placeholder="Oct / 02 / 2016">
+                  <input class="form-control" id="inputDate" type="text" placeholder="">
                 </div>
               </div>
               <div class="form-group">
@@ -629,13 +709,114 @@
               </div>
             </form>
             <div class="form-group">
+              <label>Title</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
               <label>Action Required</label>
-              <textarea class="form-control" rows="5" placeholder=""></textarea>
+              <textarea class="form-control" rows="4" placeholder=""></textarea>
+            </div>
+            <div class="form-group">
+              <label>Reason</label>
+              <textarea class="form-control" rows="4" placeholder=""></textarea>
             </div>
           </div>
-          <div class="modal-footer">
-            <div class="text-center"><a class="ge-btn _colored _filled _success" type="button">Update Changes</a></div>
+          <div class="modal-footer"><a class="ge-btn _colored _filled _success" type="button">Update Changes</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalEditActionPlan" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Edit Action Plan</h4>
           </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="check">
+                <label>
+                  <input type="checkbox"><span class="fill"></span>
+                </label>
+              </div><span class="lbl">Show Questions and Recommendation</span>
+            </div>
+            <hr>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Date</div>
+                </label>
+                <div class="col-sm-6">
+                  <input class="form-control" id="inputDate" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Responsible</div>
+                </label>
+                <div class="col-sm-6">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>Type</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">
+                  <div class="text-left">Status</div>
+                </label>
+                <div class="col-sm-6">
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _danger">Not Commenced</span></span><br>
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _warning">Commenced</span></span><br>
+                  <div class="rad">
+                    <label>
+                      <input type="radio" name="sampleRad"><span class="fill"></span>
+                    </label>
+                  </div><span class="lbl"><span class="badge _success">Completed</span></span>
+                </div>
+              </div>
+            </form>
+            <div class="form-group">
+              <label>Title</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Action Required</label>
+              <textarea class="form-control" rows="4" placeholder=""></textarea>
+            </div>
+            <div class="form-group">
+              <label>Reason</label>
+              <textarea class="form-control" rows="4" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="ge-btn _colored _filled _success" type="button">Update Changes</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalPartner" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Partner Site</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal-partner-body"><img class="banner" src="//placehold.it/200x50">
+              <p><strong>About Aon Hewitt</strong></p>
+              <p>Aon is the leading risk and insurance advisor and broker in the world. Tapping into our global network and service strength, Aon Philippines leverages its extensive local experience to help safeguard and advance our clients’ business. Over the years, Aon Philippines has significantly assisted our customers by protecting their assets, people, profitability, integrity of their brand name and ultimately minimising their total cost of risk.</p>
+              <p>Aon’s operation in Philippines comprises Aon Risk Solutions, which provides multifaceted retail brokering and risk management services; Aon Benfield, the reinsurance intermediary and capital advisor of Aon; and Aon Hewitt, which focuses on human resource consulting and outsourcing services.</p>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="ge-btn _colored _filled _info" type="button">Visit Site</a></div>
         </div>
       </div>
     </div>
