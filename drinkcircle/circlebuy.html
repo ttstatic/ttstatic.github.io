@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>drinkcircle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+      .logged-in {
+        display: block !important;
+      }
+      .logged-out {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <!--a.navbar-brand(href='#') Drink Circle--><a class="navbar-brand" href="index.html"><img src="assets/images/logo_green.png" alt=""></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li>
+                <div class="form-group all-search"><i class="fa fa-search"></i>
+                  <input class="form-control" type="text" placeholder="Search drinks, drinkmakers, ratings, circlebuys, people and more..."><a class="save-search color inherit" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-star-o"></i><span class="hidden-xs">save search</span></a>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-in">
+              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="myprofile.html">Profile</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Multibuy</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Circles</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">My Orders</a></li>
+                  <li class="divider" role="separator"></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Sign out</a></li>
+                </ul>
+              </li>
+              <li class="text-center"><a class="notification" href="#"><i class="fa fa-bell"></i>
+                  <div class="counter">2</div></a></li>
+              <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right logged-out">
+              <li class="nav-with-icon"><a href="profile.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>sign in</a></li>
+              <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left nav-category">
+              <li><a href="drinks.html">Drinks</a></li>
+              <li><a href="drinkmakers.html">Drinkmakers</a></li>
+              <li><a href="drinks-red.html">Red</a></li>
+              <li><a href="drinks-white.html">White</a></li>
+              <li><a href="drinks-beer.html">Beer</a></li>
+              <li><a href="drinks-spirits.html">Spirits</a></li>
+              <li><a href="drinks-bubbles.html">Bubbles</a></li>
+              <li><a href="drinks-cider.html">Cider</a></li>
+              <li><a href="circlebuying.html">Circlebuys</a></li>
+              <li><a href="#interests" data-toggle="modal">Interests</a></li>
+              <li><a href="ratings.html">Ratings</a></li>
+              <li><a href="compare.html">Compare</a></li>
+              <li><a href="profile.html">Post</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="banner userprofile">
+      <div class="gradient"></div>
+      <div class="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <div class="photo">
+                <div class="img"><a href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-camera"></i></a><img src="assets/images/img_advisor_1.jpg" alt=""></div>
+                <div class="name"><span>Andrew's circlebuy&nbsp;</span><br><small>Brokenwood - Graveyard Vineyard Shiraz - bottle</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="userprofile drinks results">
+      <div class="container"><br>
+        <div class="card circlebuy">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+              <div class="circlebuy-product-photo"><img src="http://www.brokenwood.com.au/assets/images/products/pictures/GraveyardVineyardShiraz11.jpg"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="circlebuys-info">
+                <h4>10 bottles circlebuy</h4><a href="">Brokenwood - Graveyard Vineyard Shiraz</a>
+                <p>7 bottles sold / 3 bottles left</p>
+                <p><small><i class="fa fa-clock"></i>&nbsp;2hrs left - $19.94 per bottle</small></p>
+                <p>Status:&nbsp;<strong>Active</strong></p><a class="btn btn-success" href="">request to join</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                  <div class="circlebuys">
+                    <h4>Circlebuy Owner</h4>
+                    <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Andrew Steer</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                  <h4>Members</h4>
+                </div>
+              </div>
+              <div class="row circlebuy-members">
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="user-photo"><img src="//placehold.it/50" width="30"></div><a href="">Alvin Manalo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"><small><a href="#modal_coming_soon" data-toggle="modal">about</a>&nbsp;&middot;&nbsp;<a href="#modal_coming_soon" data-toggle="modal">privacy policy</a>&nbsp;&middot;&nbsp;<a href="#modal_coming_soon" data-toggle="modal">terms of use</a>&nbsp;&middot;&nbsp;<a href="#modal_coming_soon" data-toggle="modal">contact</a>&nbsp;&middot;&nbsp;<a href="#modal_coming_soon" data-toggle="modal">blog</a>
+          <p><img src="assets/images/logo_green.png" alt=""></p></small></div>
+    </footer>
+    <div class="modal fade" id="buymode" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Buy Options</h4>
+          </div>
+          <div class="modal-body"><a class="btn btn-success btn-block" href="#">Buy Now</a>
+            <p></p>
+            <p class="text-center"><small>or</small></p><a class="btn btn-info btn-block" href="#"><i class="fa fa-group"></i>&nbsp;&nbsp;Join a Group</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="interests" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Tell us what you like<br><small>Select your interest from the list below</small></h4>
+          </div>
+          <table class="filter">
+            <tr>
+              <td><a href="#modal_coming_soon" data-toggle="modal">Select all interests</a></td>
+              <td>
+                <div class="following">Liking | 0</div>
+              </td>
+              <td><a href="#modal_coming_soon" data-toggle="modal">Find other drinklovers with similar interests</a></td>
+            </tr>
+          </table>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in9.jpg">
+                  <div class="label">Red</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in8.jpg">
+                  <div class="label">White</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in3.jpg">
+                  <div class="label">Beer</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in1.jpg">
+                  <div class="label">Spirits</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in17.jpg">
+                  <div class="label">Bubbles</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in13.jpg">
+                  <div class="label">Cider</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in5.jpg">
+                  <div class="label">Travel</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in10.jpg">
+                  <div class="label">Cooking</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in11.jpg">
+                  <div class="label">Music</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in14.jpg">
+                  <div class="label">Movies</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in16.jpg">
+                  <div class="label">Sport</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in12.jpg">
+                  <div class="label">Outdoors</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in6.jpg">
+                  <div class="label">Fashion</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in7.jpg">
+                  <div class="label">Art</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in2.jpg">
+                  <div class="label">Dining Out</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="interest-thumb"><img src="assets/images/interests/in4.jpg">
+                  <div class="label">Reading</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="article_sex" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center"></h4>
+          </div>
+          <div class="modal-body"><img class="img-responsive center-block" src="assets/images/tmp/post_1_thumb.png"><br>
+            <article>
+              <p>In a study published in the Journal of Sexual Medicine, Italian researchers claim that sex drives are higher in women who prefer red wine as opposed to those who prefer other alcoholic beverages.</p>
+              <p>University of Florence doctors surveyed 800 women, all between the ages of 18 and 50, and separated them into three groups based on their drinking habits: red wine drinkers, those who prefer other alcoholic drinks and those who abstain entirely.</p>
+              <p>The women were then asked to complete a questionnaire assessing their interest in sex. Called the Female Sexual Function Index, the survey included 19 questions that resulted in a score between 2 and 36 (with the higher scores indicating a higher sex drive).</p>
+              <p>On average, women who drank one or two glasses of red wine a day scored 27.3 points, compared to 25.9 for non-red wine imbibers and 24.4 for those who abstain.</p>
+              <p>The results indicate a possible relationship between regular red wine consumption and libido. However, the real question is, do women with naturally higher sex drives tend to drink red wine or does red wine truly have an effect on one's sexual appetite? Even the researchers themselves say the findings need to be interpreted with "caution."</p>
+              <p>But the lack of conclusive evidence isn't enough reason to dismiss red wine just yet. Many other studies have shown that a small glass each day benefits the heart. So if your sex drive improves in the process, that's just icing on the cake, right?</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="article_cooking" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center"></h4>
+          </div>
+          <div class="modal-body"><img class="img-responsive center-block" src="assets/images/tmp/post_2_thumb.png"><br>
+            <article>
+              <p>There are many benefits from cooking with wine such as:</p>
+              <ol>
+                <li>It allows you to add moisture without adding fat.</li>
+                <li>It adds extra flavour to your meal.</li>
+                <li>If the bottle is opened for cooking, it should be tasted by the cook!</li>
+              </ol>
+              <p>Here are a few tips to help you get the best results when cooking with wine:</p>
+              <ol>
+                <li><strong>Make sure you can no longer smell the alcohol before taking it off the heat.</strong><br>Right when you pour the wine in, you will be able to smell the alcohol coming off the pan. Wait until that initial smell dissipates before taking your sauce off the heat or adding your next ingredient.</li>
+                <li><strong>Only use wine that you would actually drink.</strong><br>If you use wine that you don't like the taste of in a cooking, chances are you won't love the taste of the dish either. Make sure to use wine that you would actually drink when cooking with it.</li>
+                <li><strong>Choose a wine that would generally pair well with your meal.</strong><br>For example, spicy foods match well with more aromatic white wines that have some sweetness, so you would want to add the same type of wine when cooking with those types of foods.</li>
+                <li><strong>Don't be fooled by so-called 'cooking wines'.</strong><br>Most cooking wines are of low quality and because you would not want to drink them, you should not cook with them. Also, salt has been added to cooking wines to prevent the wine from going bad when it is exposed to the air, so there is a good chance it may make your dish too salty.</li>
+              </ol>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="article_beers" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center"></h4>
+          </div>
+          <div class="modal-body"><img class="img-responsive center-block" src="assets/images/tmp/post_3_thumb.png"><br>
+            <article>
+              <p>If you love your craft beer then check out this list to see if your favourites made the cut. This list is a good guide to try out a few new brews as well if you haven’t done so already.</p>
+              <ol>
+                <li>'Pacific Ale' Australian-style Pale Ale - Stone &amp; Wood, NSW</li>
+                <li>'Hop Hog' American-style IPA - Feral, WA</li>
+                <li>'IIPA' Double American-style IPA - Pirate Life, SA</li>
+                <li>'Pale Ale' American-style Pale Ale - Pirate Life, SA</li>
+                <li>'Pale Ale' American-style Pale Ale - Little Creatures, WA</li>
+                <li>'150 Lashes' Australian-style Pale Ale - James Squire, NSW</li>
+                <li>'Pale Ale' American-style Pale Ale - 4 Pines, NSW</li>
+                <li>'Kolsch' - 4 Pines, NSW</li>
+                <li>'Former Tenant' American-style IPA - Modus Operandi, NSW</li>
+                <li>'Karma Citra' Black IPA - Feral, WA</li>
+              </ol>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="article_wine" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center"></h4>
+          </div>
+          <div class="modal-body"><img class="img-responsive center-block" src="assets/images/tmp/post_4_thumb.png"><br>
+            <article>
+              <p>Women who drink wine are actually less likely to gain weight than those who are teetotal, according to a new report.</p>
+              <p>Researchers found that regular moderate female drinkers were less likely to become obese after a 13 year study of more than 19,000 women.</p>
+              <p>The finding seems to contradict received dietary wisdom which has it that alcohol consumption leads to weight gain.</p>
+              <p>The body may use calories from alcohol in a different way from other foods which affects weight gain, doctors said.</p>
+              <p>It is thought that alcohol is broken down by the liver using a different metabolic pathway to create heat, rather than fat.</p>
+              <p>Lu Wang, from Brigham and Women's hospital in Boston questioned 19,220 American women with healthy body weight about their drinking habits.</p>
+              <p>About 38 per cent were non-alcohol drinkers. Over 13 years this was the group that gained the most weight.</p>
+              <p>The more women drank the less weight they gained. Those who drank red wine gained the least weight with greater weight gain associated with beer and spirits.</p>
+              <p>The report, published in the Archives of Internal Medicine, said there was no clear connection between alcohol consumption and weight gain.</p>
+              <p>However, Catherine Collins, a spokesman for the British Dietetic Association, said women should not look on wine as a weight loss aid.</p>
+              <p>She said: "If these women have a healthy diet and lifestyle and are having one or two units of alcohol a night then that has less calories than someone who instead has a chocolate bar to unwind. It's a question of "what's your poison?"</p>
+              <p>"Of course if women were drinking more than two units a day they would put on weight. What this survey shows is that moderation is key to a healthy lifestyle. People who drink wine may be more likely to snack on sugary and more calorific treats."</p>
+              <p>The benefits of drinking red wine have already been documented.</p>
+              <p>A study by Barts, the London School of Medicine and the Queen Mary University in London highlighted a mechanism in red wine that appeared to interfere with a body chemical responsible for clogging up the arteries.</p>
+              <p>Research by the Institute of Preventive Medicine in Copenhagen showed that a daily glass of red wine increased good cholesterol by up to 16 per cent, and reduced the clotting compound fibrinogen by up to 15 per cent.</p>
+              <p>Meanwhile, white wine has also been shown to have some beneficial effects, with a 2008 study by the University of Buffalo suggesting that while both red and white wine can bolster lung function, white wine seems to have a more positive effect.</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_compare" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Compare Drinks<br><small> Select a maximum of 3 drinks to compare.</small></h4>
+          </div>
+          <div class="modal-body">
+            <div class="row compare-summary">
+              <div class="col-md-4">
+                <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Brokenwood</strong>
+                  <p>Graveyard Vineyard</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Sticks</strong>
+                  <p>Pinot Noir</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Rosnay Organic</strong>
+                  <p>Triple Blend</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center"><a class="btn btn-success btn-lg" href="#modal_coming_soon" data-toggle="modal">Compare 3 drinks</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_article modal fade" id="modal_signup" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Welcome</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group"><a class="joinfb btn btn-primary btn-block" href="#modal_coming_soon" data-toggle="modal"><span>Join using&nbsp;</span><img src="assets/images/facebook.png"></a></div>
+            <h5 class="text-muted text-center">OR</h5>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Mobile">
+            </div>
+            <div class="form-group"><a class="btn btn-success btn-block" href="#modal_coming_soon" data-toggle="modal">Join using email</a></div>
+            <table>
+              <tr>
+                <td width="25"><small>
+                    <input type="checkbox"></small></td>
+                <td><small>I'm 18 years or over and agree to Drinkcircle's&nbsp;<a href="#modal_coming_soon" data-toggle="modal">terms of use</a>&nbsp;and&nbsp;<a href="#modal_coming_soon" data-toggle="modal">privacy policy</a>.</small></td>
+              </tr>
+            </table>
+            <div class="clearfix"></div><br><small class="links">
+              <p class="text-center"><a class="pull-left" href="#modal_coming_soon" data-toggle="modal">Want to login instead?</a><a class="pull-right" href="#modal_coming_soon" data-toggle="modal">Forgot your password?</a>
+                <div class="clearfix"></div>
+              </p></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_edit_toppicks" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Manage Top 10</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Preview</th>
+                  <th>Name</th>
+                  <th>Points</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1.</th>
+                  <th><img class="preview" src="assets/images/products/p14.jpg" alt=""></th>
+                  <th><a href="#modal_coming_soon" data-toggle="modal"><strong>Young Henrys</strong></a><br><small>Natural Lager</small></th>
+                  <th>
+                    <div class="points"><span>96</span><small>points</small></div>
+                  </th>
+                  <th><a href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+                <tr>
+                  <th>2.</th>
+                  <th><img class="preview" src="assets/images/products/p1.jpg" alt=""></th>
+                  <th><a href="#modal_coming_soon" data-toggle="modal"><strong>Corona Extra</strong></a><br><small>Imported Beer</small></th>
+                  <th>
+                    <div class="points"><span>93</span><small>points</small></div>
+                  </th>
+                  <th><a href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+                <tr>
+                  <th>3.</th>
+                  <th><img class="preview" src="assets/images/products/p2.jpg" alt=""></th>
+                  <th><a href="productdetails2.html"><strong>Brokenwood</strong></a><br><small>Graveyard Vineyard Shiraz</small></th>
+                  <th>
+                    <div class="points"><span>94</span><small>points</small></div>
+                  </th>
+                  <th><a href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-trash-o"></i></a></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <p>Drag and drop to adjust positions.</p><a class="btn btn-success btn-lg" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp;Add a Drink</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_coming_soon" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Page under construction</h4>
+          </div>
+          <div class="modal-body">
+            <p>Coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- External Script goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(function () {
+        $('.popover_price[data-toggle="popover"]').popover({
+          html: true,
+          content : function() {
+            return '<ul class="cost">' + $(this).parent().find("ul").html() + '</ul>';
+          },
+          title: function(){
+            return jQuery(this).data('title') + '<span class="close">&times;</span>';
+          }
+        }).on('shown.bs.popover', function(e) {
+          var popover = jQuery(this);
+          $(this).parent().find('.popover span.close').on('click', function(e) {
+            popover.popover('hide');
+          });
+        }).click(function(e) {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
