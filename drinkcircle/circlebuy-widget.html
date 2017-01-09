@@ -1,0 +1,49 @@
+
+<!-- Required sharedOrder, as returned by philChristmas/getSharedOrders-->
+<!-- See productdetails2.pug for an example.-->
+<div class="card_rounded"><a href="#modal_preview_detail_brokenwood" data-toggle="modal">
+    <big><span>{{sharedOrder.productVariant.manufacturer}}<br><small class="el">{{sharedOrder.productVariant.name}}</small></span></big></a>
+  <hr><span>
+    <big>{{sharedOrder.sharedOrder.ownerLabel}}&nbsp;<strong>
+        <big>{{sharedOrder.sharedOrder.quantity}} pack&nbsp;</big></strong>circlebuy</big></span>
+  <div class="shortsummary">
+    <div class="sold">
+      <p class="cases-sold">sold</p>
+      <p class="lead"><span class="green">7</span><br><small>zzz</small></p>
+    </div>
+    <div class="left">
+      <p>left</p>
+      <p class="lead"><span class="green">3</span><br><small>zzz</small></p>
+    </div>
+  </div>
+  <p></p>
+  <div class="avatar">
+    <div class="img">
+      <div class="ring _70p"></div><img src="assets/images/circles/circles_8.png" alt="">
+    </div>
+    <div class="countdown"><br>
+      <p>
+        <big><i class="fa fa-clock-o"></i>&nbsp;
+          <!-- This countdown timer gets updated by javascript--><span class="countdownTimer" expiresAt="{{sharedOrder.sharedOrder.expiresAt}}"></span>
+        </big>
+      </p>
+    </div>
+  </div><br>
+  <status>is {{sharedOrder.sharedOrder.status}}</status><br>
+  <p><a class="button inline v8 joincirclebuy thin-line" href="circlebuy-start.html?circleBuy={{sharedOrder.sharedOrder.sharedOrderId}}">view</a>&nbsp;<a class="button inline v7 joincirclebuy thin-line" href="circlebuy-start.html?circleBuy={{sharedOrder.sharedOrder.sharedOrderId}}">join</a>&nbsp;<a class="button inline v8 joincirclebuy thin-line" href="">watch</a></p>
+  <div class="circlebuy-table">
+    <div class="prod-details deals">
+      <div class="label-qty cols"><strong>Qty</strong><br></div>
+      <div class="label-bottle cols"><strong>Bottle</strong><br></div>
+      <div class="label-pack cols"><strong>{{sharedOrder.productVariant.componentsQty}} Pack</strong><br></div>
+      <div class="label-savings cols"><span><strong class="green">Save</strong></span><br></div>
+    </div>
+    <div class="prod-details deals tr">
+      <div class="label-qty cols"><span>{{sharedOrder.sharedOrder.quantity}}</span></div>
+      <div class="label-bottle cols"><span>{{sharedOrder.d_unitPrice}}</span></div>
+      <div class="label-pack cols"><span>{{sharedOrder.d_packPrice}}</span></div>
+      <div class="label-savings cols"><strong class="middle">
+          <big class="lead">{{sharedOrder.d_packSave}}</big></strong></div>
+    </div>
+  </div>
+</div>

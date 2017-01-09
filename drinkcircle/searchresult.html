@@ -15,6 +15,7 @@
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/authservice/authservice.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +23,16 @@
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <!---->
+    <!--	Prevent flashing of unstyled content (seeing the template before Angular.js runs).-->
+    <!--	See http://stackoverflow.com/questions/16074673/angularjs-strategy-to-prevent-flash-of-unstyled-content-for-a-class-->
+    <!---->
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+      }
+      
+    </style>
     <style></style>
   </head>
   <body>
@@ -40,41 +51,120 @@
                 </div>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right logged-in">
-              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
+            <!-- Menu if logged in.-->
+            <ul class="nav navbar-nav navbar-right authservice-logged-in" style="display:none">
+              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="authservice-current-user-avatar" style="display:none" src="" alt="">&nbsp;Hi
+                  <div class="authservice-current-user-firstname inline"></div>&nbsp;!</a>
                 <ul class="dropdown-menu">
-                  <li><a href="index.html">Home</a></li>
                   <li><a href="myprofile.html">Profile</a></li>
-                  <li><a href="#modal_coming_soon" data-toggle="modal">Multibuy</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Circlebuy</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">Circles</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">My Orders</a></li>
                   <li class="divider" role="separator"></li>
-                  <li><a href="#modal_coming_soon" data-toggle="modal">Sign out</a></li>
+                  <li><a id="authservice-logout-button" data-toggle="modal">Sign out</a></li>
                 </ul>
               </li>
               <li class="text-center"><a class="notification" href="#"><i class="fa fa-bell"></i>
                   <div class="counter">2</div></a></li>
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right logged-out">
-              <li class="nav-with-icon"><a href="profile.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>sign in</a></li>
+            <!-- Menu if not logged in-->
+            <ul class="nav navbar-nav navbar-right authservice-logged-out" style="display:none">
+              <li class="dropdown"><a class="dropdown-toggle info" id="authservice-user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>
+                  <!--img(src="assets/images/img_advisor_1.jpg", alt="")-->&nbsp;sign in</a>
+                <ul class="dropdown-menu">
+                  <li><a href="myprofile.html">Profile</a></li>
+                  <!-- LOGIN-->
+                  <li>
+                    <!--a(id="authservice-login-button" href="#") Sign in-->
+                    <div id="authservice-login-div">
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-login-username" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="password" id="authservice-login-password" placeholder="Password">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-login-submit" Zonclick="return false;">sign in</button>
+                      </form>
+                      <div class="alert alert-danger" id="authservice-login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign aria-hidden"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                  </li>
+                  <!-- FORGOT PASSWORD-->
+                  <li class="authservice-loggedin-section"><a id="authservice-forgot-button" href="#">Forgot password</a>
+                    <div id="authservice-forgot-div" style="display:none">
+                      <p>
+                        Forgot your password? No problem. Enter your email address below and we'll
+                        well send you an email with details on how to reset your password.
+                      </p>
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-forgot-username" placeholder="Email">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-forgot-submit">Send the email</button>
+                        <button class="btn btn-default" type="submit" id="authservice-forgot-cancel">cancel</button>
+                      </form>
+                      <div class="alert alert-danger" id="login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                    <div id="authservice-forgot-done" style="display:none">
+                      <p>
+                        We have sent an email to <div id="authservice-forgot-email2"></div> with
+                        instructions to reset your password.
+                      </p>
+                      <button class="btn btn-default" type="submit" id="authservice-register-ok">ok</button>
+                    </div>
+                  </li>
+                  <!-- REGISTER-->
+                  <li class="authservice-loggedin-section"><a id="authservice-register-button" href="#">Register</a>
+                    <div id="authservice-register-div" style="display:none">
+                      <form>
+                        <p>
+                          Hi!
+                          Enter your email address and a password and we'll
+                          be happy to sign you up.
+                        </p>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-register-username" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="password" id="authservice-register-password" placeholder="Password">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-register-submit">register</button>
+                        <button class="btn btn-default" type="submit" id="authservice-register-cancel">cancel</button>
+                      </form>
+                      <div class="alert alert-danger" id="login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                    <div id="authservice-register-done" style="display:none">
+                      <p>
+                        Congratulations, you now have a user account.
+                        We have sent you an email to verify you email address.
+                      </p>
+                      <p>
+                        Please take a moment to check your email and complete
+                        the registration process.
+                      </p>
+                      <button class="btn btn-default" type="submit" id="authservice-register-ok">ok</button>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Shopping cart-->
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
+            <!-- Navbar - DRINKS, RED, WHITE, etc-->
             <ul class="nav navbar-nav navbar-left nav-category">
               <li><a href="drinks.html">Drinks</a></li>
+              <li><a class="navbar-drinktype" href="drinks-red.html">Red</a></li>
+              <li><a class="navbar-drinktype" href="drinks-white.html">White</a></li>
+              <li><a class="navbar-drinktype" href="drinks-beer.html?category=660">Beer</a></li>
+              <li><a class="navbar-drinktype" href="drinks-spirits.html">Spirits</a></li>
+              <li><a class="navbar-drinktype" href="drinks-bubbles.html">Bubbles</a></li>
+              <li><a class="navbar-drinktype" href="drinks-cider.html">Cider</a></li>
               <li><a href="drinkmakers.html">Drinkmakers</a></li>
-              <li><a href="drinks-red.html">Red</a></li>
-              <li><a href="drinks-white.html">White</a></li>
-              <li><a href="drinks-beer.html">Beer</a></li>
-              <li><a href="drinks-spirits.html">Spirits</a></li>
-              <li><a href="drinks-bubbles.html">Bubbles</a></li>
-              <li><a href="drinks-cider.html">Cider</a></li>
               <li><a href="circlebuying.html">Circlebuys</a></li>
-              <li><a href="#interests" data-toggle="modal">Interests</a></li>
               <li><a href="ratings.html">Ratings</a></li>
               <li><a href="compare.html">Compare</a></li>
-              <li><a href="profile.html">Post</a></li>
-              <li><a href="profile.html">Profile</a></li>
+              <li><a href="profile.html">Wall</a></li>
             </ul>
           </div>
         </div>
@@ -1409,9 +1499,15 @@
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
     <script src="bower_components/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="/bower_components/accounting/accounting.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/bower_components/moment/min/moment.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <script src="assets/vendor/teaservice/teaservice.js" type="text/javascript"></script>
+    <script src="assets/vendor/authservice/authservice.js" type="text/javascript"></script>
     <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>

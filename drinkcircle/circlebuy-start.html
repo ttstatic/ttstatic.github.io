@@ -15,6 +15,7 @@
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/authservice/authservice.css" rel="stylesheet" type="text/css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +23,16 @@
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <!---->
+    <!--	Prevent flashing of unstyled content (seeing the template before Angular.js runs).-->
+    <!--	See http://stackoverflow.com/questions/16074673/angularjs-strategy-to-prevent-flash-of-unstyled-content-for-a-class-->
+    <!---->
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+      }
+      
+    </style>
     <style>
       .logged-in {
         display: block !important;
@@ -47,61 +58,162 @@
                 </div>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right logged-in">
-              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_advisor_1.jpg" alt="">&nbsp;Hi Andrew!</a>
+            <!-- Menu if logged in.-->
+            <ul class="nav navbar-nav navbar-right authservice-logged-in" style="display:none">
+              <li class="dropdown"><a class="dropdown-toggle info" href="profile.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="authservice-current-user-avatar" style="display:none" src="" alt="">&nbsp;Hi
+                  <div class="authservice-current-user-firstname inline"></div>&nbsp;!</a>
                 <ul class="dropdown-menu">
-                  <li><a href="index.html">Home</a></li>
                   <li><a href="myprofile.html">Profile</a></li>
-                  <li><a href="#modal_coming_soon" data-toggle="modal">Multibuy</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Circlebuy</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">Circles</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">My Orders</a></li>
                   <li class="divider" role="separator"></li>
-                  <li><a href="#modal_coming_soon" data-toggle="modal">Sign out</a></li>
+                  <li><a id="authservice-logout-button" data-toggle="modal">Sign out</a></li>
                 </ul>
               </li>
               <li class="text-center"><a class="notification" href="#"><i class="fa fa-bell"></i>
                   <div class="counter">2</div></a></li>
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right logged-out">
-              <li class="nav-with-icon"><a href="profile.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>sign in</a></li>
+            <!-- Menu if not logged in-->
+            <ul class="nav navbar-nav navbar-right authservice-logged-out" style="display:none">
+              <li class="dropdown"><a class="dropdown-toggle info" id="authservice-user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>
+                  <!--img(src="assets/images/img_advisor_1.jpg", alt="")-->&nbsp;sign in</a>
+                <ul class="dropdown-menu">
+                  <li><a href="myprofile.html">Profile</a></li>
+                  <!-- LOGIN-->
+                  <li>
+                    <!--a(id="authservice-login-button" href="#") Sign in-->
+                    <div id="authservice-login-div">
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-login-username" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="password" id="authservice-login-password" placeholder="Password">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-login-submit" Zonclick="return false;">sign in</button>
+                      </form>
+                      <div class="alert alert-danger" id="authservice-login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign aria-hidden"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                  </li>
+                  <!-- FORGOT PASSWORD-->
+                  <li class="authservice-loggedin-section"><a id="authservice-forgot-button" href="#">Forgot password</a>
+                    <div id="authservice-forgot-div" style="display:none">
+                      <p>
+                        Forgot your password? No problem. Enter your email address below and we'll
+                        well send you an email with details on how to reset your password.
+                      </p>
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-forgot-username" placeholder="Email">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-forgot-submit">Send the email</button>
+                        <button class="btn btn-default" type="submit" id="authservice-forgot-cancel">cancel</button>
+                      </form>
+                      <div class="alert alert-danger" id="login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                    <div id="authservice-forgot-done" style="display:none">
+                      <p>
+                        We have sent an email to <div id="authservice-forgot-email2"></div> with
+                        instructions to reset your password.
+                      </p>
+                      <button class="btn btn-default" type="submit" id="authservice-register-ok">ok</button>
+                    </div>
+                  </li>
+                  <!-- REGISTER-->
+                  <li class="authservice-loggedin-section"><a id="authservice-register-button" href="#">Register</a>
+                    <div id="authservice-register-div" style="display:none">
+                      <form>
+                        <p>
+                          Hi!
+                          Enter your email address and a password and we'll
+                          be happy to sign you up.
+                        </p>
+                        <div class="form-group">
+                          <input class="form-control" type="email" id="authservice-register-username" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="password" id="authservice-register-password" placeholder="Password">
+                        </div>
+                        <button class="btn btn-default" type="submit" id="authservice-register-submit">register</button>
+                        <button class="btn btn-default" type="submit" id="authservice-register-cancel">cancel</button>
+                      </form>
+                      <div class="alert alert-danger" id="login-errmsg" role="alert" style="display:none"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>Invalid email / password</div>
+                    </div>
+                    <div id="authservice-register-done" style="display:none">
+                      <p>
+                        Congratulations, you now have a user account.
+                        We have sent you an email to verify you email address.
+                      </p>
+                      <p>
+                        Please take a moment to check your email and complete
+                        the registration process.
+                      </p>
+                      <button class="btn btn-default" type="submit" id="authservice-register-ok">ok</button>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Shopping cart-->
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
+            <!-- Navbar - DRINKS, RED, WHITE, etc-->
             <ul class="nav navbar-nav navbar-left nav-category">
               <li><a href="drinks.html">Drinks</a></li>
+              <li><a class="navbar-drinktype" href="drinks-red.html">Red</a></li>
+              <li><a class="navbar-drinktype" href="drinks-white.html">White</a></li>
+              <li><a class="navbar-drinktype" href="drinks-beer.html?category=660">Beer</a></li>
+              <li><a class="navbar-drinktype" href="drinks-spirits.html">Spirits</a></li>
+              <li><a class="navbar-drinktype" href="drinks-bubbles.html">Bubbles</a></li>
+              <li><a class="navbar-drinktype" href="drinks-cider.html">Cider</a></li>
               <li><a href="drinkmakers.html">Drinkmakers</a></li>
-              <li><a href="drinks-red.html">Red</a></li>
-              <li><a href="drinks-white.html">White</a></li>
-              <li><a href="drinks-beer.html">Beer</a></li>
-              <li><a href="drinks-spirits.html">Spirits</a></li>
-              <li><a href="drinks-bubbles.html">Bubbles</a></li>
-              <li><a href="drinks-cider.html">Cider</a></li>
               <li><a href="circlebuying.html">Circlebuys</a></li>
-              <li><a href="#interests" data-toggle="modal">Interests</a></li>
               <li><a href="ratings.html">Ratings</a></li>
               <li><a href="compare.html">Compare</a></li>
-              <li><a href="profile.html">Post</a></li>
-              <li><a href="profile.html">Profile</a></li>
+              <li><a href="profile.html">Wall</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section class="userprofile request-list simple">
+    <section class="userprofile request-list simple" ng-app="myApp" ng-controller="myCtrl" ng-cloak>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="title">Create a circlebuy for Brokenwood - Graveyard Vineyard Shiraz</h3>
+            <h3 class="title" ng-hide="!creating_a_new_circlebuy">Create a circlebuy for <strong>{{variant.name}}</strong>
+            </h3>
+            <h3 class="title" ng-hide="creating_a_new_circlebuy">Join circlebuy for <strong>{{variant.name}}</strong>
+            </h3>
+          </div>
+        </div>
+        <div class="card" ng-hide="loggedIn" role="alert">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Alert box for login-->
+              <div class="alert alert-danger">
+                <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span>Please Log in to create or join a Circlebuy</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="row">
             <div class="col-md-9">
-              <p>Size&nbsp;
-                <select class="form-control inline">
-                  <option>10 cases</option>
-                </select>
-              </p>
+              <!-- Alert box for order size-->
+              <div class="alert alert-danger" ng-hide="showOrderSizeAlert()" role="alert">
+                <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span>Please select an Order Size</span>
+              </div>
+              <p></p>
+              <div class="form-group has-feedback" id="so_new_orderSize_group" style="width:200px">
+                <label class="control-label" for="so_new_orderSize">Order Size</label>
+                <!-- Display for new Circlebuy-->
+                <select class="form-control form-control" ng-hide="!creating_a_new_circlebuy" ng-model="so_new_orderSize" ng-change="orderSizeChanged()">
+                  <option ng-repeat="pq in pricingQuantityList" value="{{pq.quantity}}" selected="selected">{{pq.quantity}} cases</option>
+                </select><span class="glyphicon form-control-feedback" id="so_new_orderSize_glyphicon"></span>
+                <!-- Display for existing Circlebuy-->
+                <p ng-hide="creating_a_new_circlebuy">{{so_existing_orderSize}} Cases</p>
+              </div>
               <p class="text-warning">* All circlebuys will expire after 3 days from commencement if not completed.</p>
             </div>
             <div class="col-md-3">
@@ -112,27 +224,47 @@
             </div>
           </div>
         </div><br>
+        <!-- "Your Order" section of the page-->
         <h4>Your Order</h4>
         <div class="card">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Alert box-->
+              <div class="alert alert-danger" ng-hide="showYourQuantityAlert()" role="alert">
+                <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span class="sr-only">Error:</span><span id="order-alert-msg">Please select Your Quantity</span>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
                 <label>Item</label>
-                <p class="form-control-static">Brokenwood - Graveyard Vineyard Shiraz</p>
+                <p class="form-control-static">{{variant.name}}</p><br>
+                <div class="card"><small>Pack size: {{variant.componentsQty}}</small>
+                  <div ng-hide="creating_a_new_circlebuy"><small>{{so_alreadyOrdered}} cases already ordered</small><br><small>{{so_existing_orderSize-so_alreadyOrdered}} cases required to complete the order</small></div>
+                </div>
               </div>
+              <div class="form-group" ng-hide="true">
+                <label>Pack Size</label>
+                <p class="form-control-static">{{variant.componentsQty}} bottles</p>
+              </div><br><br>
             </div>
+            <!-- "Your Quantity" section-->
             <div class="col-md-3">
-              <div class="form-group">
+              <div class="form-group has-feedback" id="so_yourQuantity_group">
                 <label>Your quantity</label>
-                <select class="form-control">
-                  <option>3 cases</option>
-                </select>
+                <select class="form-control" ng-model="so_yourQuantity">
+                  <option ng-repeat="i in rangeForYourQuantity() track by $index" value="{{$index+1}}">{{$index+1}} cases</option>
+                </select><span class="glyphicon form-control-feedback" id="so_yourQuantity_glyphicon" style="zpadding-left:10px;zright:auto"></span>
               </div>
-              <div class="form-group">
-                <label>Quantity remaining</label>
-                <p class="form-control-static">7 cases</p>
+              <!-- Alert box-->
+              <div class="alert alert-success" ng-hide=" !enoughToCompeteTheOrder()" role="alert">
+                <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span class="sr-only">Error:</span><span id="order-alert-msg"></span>
+                Wonderful.
+                We'll be able to complete the Circlebuy right now!
               </div>
             </div>
+            <!-- Price calculation section-->
             <div class="col-md-5">
               <div class="table-responsive">
                 <table class="table">
@@ -144,30 +276,51 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>$119.94</td>
-                      <td>$359.82</td>
+                      <td>
+                        <div class="shared-order-calc-field">{{calc_price}}</div>
+                      </td>
+                      <td>
+                        <div class="shared-order-calc-field">{{calc_subtotal}}</div>
+                      </td>
                     </tr>
                     <tr>
                       <td colspan="2"><br></td>
                     </tr>
                     <tr>
                       <td>Subtotal</td>
-                      <td>$359.82</td>
+                      <td>
+                        <div class="shared-order-calc-field">{{calc_subtotal}}</div>
+                      </td>
                     </tr>
                     <tr>
                       <td>Shipping</td>
-                      <td>$10.00</td>
+                      <td>
+                        <div class="shared-order-calc-field">{{calc_shipping}}</div>
+                      </td>
                     </tr>
                     <tr>
                       <td>GST</td>
-                      <td>$36.98</td>
+                      <td>
+                        <div class="shared-order-calc-field">{{calc_gst}}</div>
+                      </td>
                     </tr>
                     <tr>
                       <td colspan="2"><br></td>
                     </tr>
                     <tr>
                       <td><strong>Grand Total (Incl. GST)</strong></td>
-                      <td><strong>$406.802</strong></td>
+                      <td><strong>
+                          <div class="shared-order-calc-field">{{calc_grandTotal}}</div></strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Savings on RRP</strong></td>
+                      <td><strong>
+                          <div class="shared-order-calc-field">{{calc_rrpSaving}}</div></strong></td>
+                    </tr>
+                    <tr class="hide">
+                      <td><strong>Saving on Shipping</strong></td>
+                      <td><strong>
+                          <div class="shared-order-calc-field">{{calc_shippingSaving}}</div></strong></td>
                     </tr>
                   </tbody>
                 </table>
@@ -177,25 +330,35 @@
         </div><br>
         <h4>Your Details</h4>
         <div class="card">
+          <!-- Date of Birth-->
+          <div class="alert alert-danger" ng-hide="haveValidDateOfBirth()" role="alert">
+            <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span>{{dateOfBirthMessage}}</span>
+          </div>
+          <p>
+            <label>Date of Birth *</label>
+          </p>
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <label>Date of Birth *</label>
-                <input class="form-control" type="date">
+                <input class="form-control" type="date" ng-model="so_dateOfBirth">
               </div>
             </div>
           </div>
           <p>Drinkcircle supports prohibiting alcohol and tobacco sales to minors.</p>
           <hr>
+          <!-- Billing Address-->
+          <div class="alert alert-danger" ng-hide="haveBillingAddress()" role="alert">
+            <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span>Please select a billing address</span>
+          </div>
           <p><strong>Billing Details</strong></p>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 so_billing_address_card" ng-click="setBillingAddress(10)" so_address_id="10">
               <div class="alert alert-warning"><a class="text-danger pull-right" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-times-circle"></i></a>
                 <div class="clearfix"></div>
                 <p>John Jones<br>423 5678<br>19 Beaudesert Rd. Brisbane,<br>QLD 4757</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 so_billing_address_card" ng-click="setBillingAddress(11)" so_address_id="11">
               <div class="alert alert-warning"><a class="text-danger pull-right" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-times-circle"></i></a>
                 <div class="clearfix"></div>
                 <p>John Jones<br>423 5678<br>32 Darwin St. North Brisbane,<br>QLD 4747</p>
@@ -203,10 +366,16 @@
             </div>
           </div><a class="btn btn-success btn-sm" href="#modal_coming_soon" data-toggle="modal">Add a new address</a>
           <hr>
+          <!-- Ship-To address-->
+          <div class="alert alert-danger" ng-hide="haveShiptoAddress()" role="alert">
+            <!-- span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")--><span>Please select a Ship To address</span>
+          </div>
+          <p>
+            <label>Ship to</label>
+          </p>
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
-                <label>Ship to</label>
                 <select class="form-control">
                   <option>Other</option>
                 </select>
@@ -214,14 +383,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 so_shipto_address_card" ng-click="setShiptoAddress(12)" so_address_id="12">
               <div class="alert alert-warning"><a class="text-danger pull-right" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-times-circle"></i></a>
                 <div class="clearfix"></div>
                 <p>John Jones<br>423 5678<br>19 Beaudesert Rd. Brisbane,<br>QLD 4757</p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="alert alert-warning"><a class="text-danger pull-right" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-times-circle"></i></a>
+            <div class="col-md-3 so_shipto_address_card" ng-click="setShiptoAddress(13)" so_address_id="13">
+              <div class="alert alert-warning"><a class="text-success pull-right" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-times-circle"></i></a>
                 <div class="clearfix"></div>
                 <p>John Jones<br>423 5678<br>32 Darwin St. North Brisbane,<br>QLD 4747</p>
               </div>
@@ -245,7 +414,9 @@
             </div>
           </div>
         </div><br>
-        <div class="text-right"><a class="btn btn-success btn-lg" href="circlebuy-invites.html">Next</a></div>
+        <div class="text-right">
+          <button class="btn btn-success btn-lg" id="so_next_button" ng-click="nextButtonClicked()" ng-disabled="!haveRequiredInformation()" href="#">Next</button>
+        </div><a id="so_link_to_next_page" nZg-hide="true" href="circlebuy-invites.html">next {{haveRequiredInformation()}}</a>
       </div>
     </section>
     <footer>
@@ -642,15 +813,551 @@
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
     <script src="bower_components/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="/bower_components/accounting/accounting.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/bower_components/moment/min/moment.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <script src="assets/vendor/teaservice/teaservice.js" type="text/javascript"></script>
+    <script src="assets/vendor/authservice/authservice.js" type="text/javascript"></script>
     <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>
       $(function () {
       
       });
+      
+      
+      /************************************************************
+       *
+       *    Angular code.
+       */
+      var app = angular.module('myApp', ['ngSanitize']);
+      
+      teaservice.init(app);
+      
+      // Add the controller for this page
+      app.controller('myCtrl', function($scope, teaService, $timeout) {
+      
+        // Pre-create variables, so we don't get undefined
+        // errors when angular tries to draw the page before
+        // our TEA functions have returned with data.
+        $scope.sharedOrder = { };
+        $scope.creating_a_new_circlebuy = true;
+        $scope.so_new_orderSize = 0;
+        $scope.so_existing_orderSize = 0;
+        $scope.so_alreadyOrdered = 0;
+      
+          // This code gets the "product" parameter from the
+          // URL so we can use it as productVariantId.
+          var productVariantId = NaN;
+          var sharedOrderId = NaN;
+          window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) {
+            key = key.toLowerCase();
+            if (key === 'product') {
+              productVariantId = parseInt(value);
+            } else if (key === 'circlebuy') {
+              sharedOrderId = parseInt(value);
+            }
+          });
+      
+          // During development only
+          var DEFAULT_PRODUCT_VARIANT_ID = 6180;
+          if (isNaN(productVariantId)) {
+            productVariantId = DEFAULT_PRODUCT_VARIANT_ID;
+          }
+          console.log('ZZZ productVariantId=' + productVariantId);
+          console.log('ZZZ sharedOrderId=' + sharedOrderId);
+      
+          /*
+           *  If a circleBuy has been specified, we'll look up
+           *  the shared_order first, and use it to find the
+           *  productVariantId.
+           *
+           *  Otherwise, we'll work towards creating a new
+           *  shared_order based upon the specified product.
+           */
+      
+           if ( !isNaN(sharedOrderId)) {
+      
+      
+      
+             /*
+              *   VIEW AN EXISTING CIRCLEBUY.
+              *
+              *   Look up the sharedOrder.
+              */
+              $scope.creating_a_new_circlebuy = false;
+              console.log('looking up shared_order ', sharedOrderId)
+             teaService.getSharedOrdersAndSetAngularVariables({
+               sharedOrderId: sharedOrderId
+             }, $scope, teaService, function(sharedOrders){
+               console.log('sharedOrders=', sharedOrders)
+               productVariantId = sharedOrders[0].productVariant.productVariantId;
+               //alert('prodvar is ' + productVariantId)
+      
+               // Now select the productVariant details
+               teaService.getProduct({
+                 productVariantId: productVariantId,
+                 needPricing: true
+               }).then(function(products){
+      
+               /*teaService.getProductAndSetAngularVariables({
+                 productVariantId: productVariantId,
+                 needPricing: true
+               }, $scope, teaService, function gotProduct(product) {*/
+      
+                 // Back from getting the product details.
+                 //ZZZZ Handle any error (indicated by product=null)
+                 $scope.variant = products[0].variants[0]; // 1:1 in Drinkcircle
+                 $scope.pricingQuantityList = products[0].variants[0].pricing[0].pricingQuantity;
+                 $scope.sharedOrder.so_alreadyOrdered = 2;
+                 //$scope.so_yourQuantity = '1';
+                 $scope.junkChooks = 'MEOW';
+                 console.log('so=', sharedOrders)
+      
+                 // Prevent the order size being changed
+                 $scope.so_existing_orderSize = sharedOrders[0].sharedOrder.quantity;
+                 $scope.finalOrderSize = sharedOrders[0].sharedOrder.quantity;
+                 $scope.haveValidOrderSize = true;
+                 $scope.so_alreadyOrdered = 2;///ZZZ Calculate this
+               });
+      
+             });
+          } else {
+      
+      
+            /*
+             *    CREATE A NEW CIRCLEBUY
+             *
+             *    Look up the specified product variant.
+             */
+            $scope.creating_a_new_circlebuy = true;
+            teaService.getProduct({
+              productVariantId: productVariantId,
+              needPricing: true
+            }).then(function(products){
+      
+            /*teaService.getProductAndSetAngularVariables({
+              productVariantId: productVariantId,
+              needPricing: true
+            }, $scope, teaService, function gotProduct(product) {*/
+      
+              // Back from getting the product details.
+              //ZZZZ Handle any error (indicated by product=null)
+              $scope.variant = products[0].variants[0]; // 1:1 in Drinkcircle
+              $scope.pricingQuantityList = products[0].variants[0].pricing[0].pricingQuantity;
+              $scope.so_alreadyOrdered = 0;
+            });
+          }
+      
+          /*
+           *  Set the Initial prices
+           */
+          $scope.calc_price = "$---.--";
+          $scope.calc_subtotal = "$---.--";
+          $scope.calc_shipping = "$---.--";
+          $scope.calc_gst = "$---.--";
+          $scope.calc_grandTotal = "$---.--";
+          $scope.calc_rrpSaving = "$---.--";
+          $scope.calc_shippingSaving = "$---.--";
+      
+      
+          // Remember when we have valid values
+          $scope.haveValidOrderSize = false;
+          $scope.haveValidYourQty = false;
+          $scope.haveValidDob = false;
+          $scope.haveValidBillingAddress = false;
+          $scope.haveValidShippingAddress = false;
+      
+          /*
+           *  Look after the Order Size
+           */
+          $scope.showOrderSizeAlert = function() {
+            return $scope.haveValidOrderSize;
+          }
+      
+          $scope.orderSizeChanged = function() {
+            var qty = $scope.so_new_orderSize;
+            if (qty) {
+              $('#so_new_orderSize_group').addClass('has-success').removeClass('has-error');
+              $('#so_new_orderSize_glyphicon').addClass('glyphicon-ok').removeClass('glyphicon-remove');
+              qty = parseInt(qty)
+              $scope.haveValidOrderSize = true;
+              $scope.finalOrderSize = qty;
+      
+              // Calculate the prices
+              $scope.calculatePrices();
+              return true;
+            } else {
+              $('#so_new_orderSize_group').addClass('has-error').removeClass('has-success');
+              $('#so_new_orderSize_glyphicon').addClass('glyphicon-remove').removeClass('glyphicon-ok');
+              $("#order-alert-div").addClass('alert-danger').removeClass('alert-success');
+              $scope.haveValidOrderSize = false;
+              return false;
+            }
+          }
+      
+          /*
+           *  Return an array with the same number of elements as
+           *  the maximum number in Your Quantity. This is a trick
+           *  used with Angular to allow ng-repeat to iterate over
+           *  a range of numbers.
+           */
+          $scope.rangeForYourQuantity = function() {
+            if ($scope.creating_a_new_circlebuy) {
+              var num = parseInt($scope.so_new_orderSize);
+              return new Array(num);
+            } else {
+              var num = $scope.so_existing_orderSize - $scope.so_alreadyOrdered;
+              return new Array(num);
+            }
+          }
+      
+          /*
+           *  Work out what instructions to give to the user.
+           *  At the same time, display red/green indicators.
+           */
+          $scope.showYourQuantityAlert = function() {
+      
+            // We won't ask for Your-Quantity until we have an Order Size
+            if ( !$scope.haveValidOrderSize) {
+              return true;
+            }
+      
+            // Check the "Your Order" quantity.
+            var yourQty = $scope.so_yourQuantity;
+            if (yourQty) {
+              $('#so_yourQuantity_group').addClass('has-success').removeClass('has-error');
+              $('#so_yourQuantity_glyphicon').addClass('glyphicon-ok').removeClass('glyphicon-remove');
+              yourQty = parseInt(yourQty)
+              $scope.finalYourQuantity = yourQty;
+              $scope.haveValidYourQty = true;
+      
+              // Calculate the prices
+              $scope.calculatePrices();
+            } else {
+              $('#so_yourQuantity_group').addClass('has-error').removeClass('has-success');
+              $('#so_yourQuantity_glyphicon').addClass('glyphicon-remove').removeClass('glyphicon-ok');
+              $("#order-alert-div").addClass('alert-danger').removeClass('alert-success');
+              $scope.haveValidYourQty = false;
+            }
+      
+            // Return
+            return $scope.haveValidYourQty;
+          } //showYourQuantityAlert
+      
+      
+      
+          /*
+           *  See if this order will complete the circleBuy.
+           */
+          $scope.enoughToCompeteTheOrder = function() {
+            if ($scope.haveValidOrderSize && $scope.haveValidYourQty && (authservice.getCurrentUser()!=null)) {
+              var totalOrdered = $scope.so_alreadyOrdered + $scope.finalYourQuantity;
+              return (totalOrdered >= $scope.finalOrderSize);
+            }
+            return false;
+          }
+      
+      
+      
+          /*
+           *  Calculate the price of the order.
+           *  Note that this is not the final calculation, which
+           *  actually occurs on the server. Nevertheless it should
+           *  add up to the same amount.
+           */
+          $scope.calculatePrices = function() {
+      
+            if ( !$scope.haveValidOrderSize) return;
+            if ( !$scope.haveValidYourQty) return;
+      
+            // Collect what we need.
+            var orderSize = $scope.finalOrderSize;
+            var yourQty = $scope.finalYourQuantity;
+            var rrp = $scope.variant.manufacturerPrice;
+            var packSize = $scope.variant.componentsQty;
+            //console.log('-------- CALCULATE ---------')
+            //console.log('orderSize=' + orderSize);
+      
+      
+            // Find the price for this Order Size
+            var priceList = $scope.variant.pricing[0].pricingQuantity;
+            /*console.log('priceList=', priceList);*/
+            var found = false;
+            for (var i = 0; i < priceList.length; i++) {
+              var p = priceList[i];
+              if (p.quantity == orderSize) {
+                var price = p.price;
+                var pricingQuantityId = p.pricingQuantityId;
+                found = true;
+                break;
+              }
+            }
+            if ( !found) {
+              alert('Internal Error 387663');
+            }
+      
+      
+            // Call the server to update the shipping charge.
+            var shipping = 10.00;
+            var GST_RATE = 0.1000;
+      
+      
+      
+            var pricePack = price * packSize;
+            var priceSubTotal = price * packSize * yourQty;
+            var subTotalWithShipping = priceSubTotal + shipping;
+            var gst = subTotalWithShipping * GST_RATE;
+            var grandTotal = subTotalWithShipping + gst;
+            //console.log('');
+            //console.log('price=' + accounting.formatMoney(price));
+            //console.log('pricePack=' + accounting.formatMoney(pricePack));
+            //console.log('priceSubTotal=' + accounting.formatMoney(priceSubTotal));
+            //console.log('subTotalWithShipping=' + accounting.formatMoney(subTotalWithShipping));
+            //console.log('gst=' + accounting.formatMoney(gst));
+            //console.log('grandTotal=' + accounting.formatMoney(grandTotal));
+      
+            // Do the same calculation for RRP (Recommended Retail Price)
+            var rrpPack = rrp * packSize;
+            var rrpSubtotal = rrp * packSize * yourQty;
+            var rrpSubtotalWithShipping = rrpSubtotal + shipping;
+            var rrpGst = rrpSubtotalWithShipping * GST_RATE;
+            var rrpGrandTotal = rrpSubtotalWithShipping + rrpGst;
+            //console.log('');
+            //console.log('rrp=' + accounting.formatMoney(rrp));
+            //console.log('rrpPack=' + accounting.formatMoney(rrpPack));
+            //console.log('rrpSubtotal=' + accounting.formatMoney(rrpSubtotal));
+            //console.log('rrpSubtotalWithShipping=' + accounting.formatMoney(rrpSubtotalWithShipping));
+            //console.log('rrpGst=' + accounting.formatMoney(rrpGst));
+            //console.log('rrpGrandTotal=' + accounting.formatMoney(rrpGrandTotal));
+      
+      
+            // Work out the savings
+            var savingPack = rrpPack - pricePack;
+            var savingTotal = rrpGrandTotal - grandTotal;
+            //console.log('');
+            //console.log('savingPack=' + accounting.formatMoney(savingPack));
+            //console.log('savingTotal=' + accounting.formatMoney(savingTotal));
+      
+            //console.log('');
+            //console.log('pricingQuantityId=' + pricingQuantityId);
+            $scope.finalPricingQuantityId = pricingQuantityId;
+      
+            // Set the final values.
+            $scope.calc_price = accounting.formatMoney(price);
+            $scope.calc_subtotal = accounting.formatMoney(priceSubTotal);
+            $scope.calc_shipping = accounting.formatMoney(shipping);
+            $scope.calc_gst = accounting.formatMoney(gst);
+            $scope.calc_grandTotal = accounting.formatMoney(grandTotal);
+            $scope.calc_rrpSaving = accounting.formatMoney(savingTotal);
+            $scope.calc_shippingSaving = accounting.formatMoney(rrp);
+      
+            if ($scope.haveValidOrderSize && $scope.haveValidYourQty) {
+              var totalOrdered = $scope.so_alreadyOrdered + $scope.finalYourQuantity;
+              return (totalOrdered >= $scope.finalOrderSize);
+            }
+            return false;
+          }
+      
+      
+          /*
+           *  Date of Birth handling.
+           */
+          $scope.dateOfBirthMessage = 'Please enter your date of birth';
+          $scope.haveValidDateOfBirth = function() {
+            if ($scope.so_dateOfBirth) {
+      
+              var dob = moment($scope.so_dateOfBirth);
+              var turns18 = dob.add(18, 'years');
+              var now = moment();
+              var threeYearsAgo = moment().subtract(3, 'years');
+              var tenYearsAgo = moment().subtract(10, 'years');
+              var dob = moment($scope.so_dateOfBirth);
+      
+              if (now.isBefore(dob)) {
+                $scope.dateOfBirthMessage = 'You haven\'t been born yet!';
+                return false;
+              }
+              else if (dob.isAfter(threeYearsAgo)) {
+                $scope.dateOfBirthMessage = 'You should learn to walk before you drink!';
+                return false;
+              }
+              else if (dob.isAfter(tenYearsAgo)) {
+                $scope.dateOfBirthMessage = 'Go climb a tree or something!';
+                return false;
+              }
+              else if (now.isBefore(turns18)) {
+                $scope.dateOfBirthMessage = 'Sorry, you are too young to buy alcohol.';
+                return false;
+              }
+      
+              // Is over 18 years old
+              $scope.haveValidDob = true;
+              return true;
+            }
+      
+            // dob not entered yet
+            return false;
+          }
+      
+      
+          /*
+           *  Billing Address handling.
+           */
+           $scope.haveBillingAddress = function() {
+             return ($scope.billingAddressId) ? true : false;
+           }
+          $scope.billingAddressId = null;
+          $scope.setBillingAddress = function(addressId) {
+            $scope.billingAddressId = addressId;
+            $scope.haveValidBillingAddress = true;
+            $('.so_billing_address_card').removeClass('so_chosen_address');
+            $('.so_billing_address_card .alert').addClass('alert-warning').removeClass('alert-success');
+            $('.so_billing_address_card[so_address_id='+addressId+']').addClass('so_chosen_address');
+            $('.so_billing_address_card[so_address_id='+addressId+'] .alert').removeClass('alert-warning').addClass('alert-success');
+          }
+      
+      
+          /*
+           *  Ship-To address handling.
+           */
+          $scope.shiptoAddressId = null;
+          $scope.setShiptoAddress = function(addressId) {
+            $scope.shiptoAddressId = addressId;
+            $scope.haveValidShippingAddress = true;
+            $('.so_shipto_address_card').removeClass('so_chosen_address');
+            $('.so_shipto_address_card .alert').addClass('alert-warning').removeClass('alert-success');
+            $('.so_shipto_address_card[so_address_id='+addressId+']').addClass('so_chosen_address');
+            $('.so_shipto_address_card[so_address_id='+addressId+'] .alert').removeClass('alert-warning').addClass('alert-success');
+          }
+          $scope.haveShiptoAddress = function() {
+            return ($scope.shiptoAddressId) ? true : false;
+          }
+      
+      
+      
+          /*
+           *  Next button handling.
+           */
+          $scope.haveRequiredInformation = function() {
+            $scope.haveAllTheRequiredInformation = (
+              $scope.haveValidOrderSize
+              && $scope.haveValidYourQty
+              && $scope.haveValidDob
+              && $scope.haveValidBillingAddress
+              && $scope.haveValidShippingAddress
+            );
+            return $scope.haveAllTheRequiredInformation;
+          }
+      
+          // Actual handling of the next button
+          $scope.nextButtonClicked = function() {
+      
+            // In case the Next button somehow becomes enabled.
+            if ( !$scope.haveAllTheRequiredInformation) {
+              return false;
+            }
+      
+            // Get details of the current user.
+            var user = authservice.getCurrentUser();
+            var customerId = user.ttuat;
+            var name = user.firstname;
+            var capitalized = name.replace(/\w\S*/g, function(txt){
+              // Handles multi-word names
+              return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+            var ownerLabel = capitalized + "'s";
+      
+            console.log('customerId=' + customerId);
+            console.log('ownerLabel=' + ownerLabel);
+      
+            if ($scope.creating_a_new_circlebuy) {
+              /*
+               *  Create a circlebuy, then the customer order.
+               */
+               teaService.newSharedOrder({
+                 "customerId": customerId,
+                 "pricingQuantityId": $scope.finalPricingQuantityId,
+                 "quantity": $scope.finalOrderSize,
+                 "ownerLabel": ownerLabel
+                 //"expiresAt": "1970-00-00T00:00:00.000Z"
+               }, $scope, teaService).then(function(data){
+                 if (data) {
+                   newSharedOrderId = data.sharedOrderId;
+                   alert('New CircleBuy number is ' + newSharedOrderId);
+      
+                   // Jump to the next page.
+                 //    $('#so_link_to_next_page')[0].click();
+                  var newUrl = 'circlebuy-invites.html?circlebuy=' + newSharedOrderId;
+                  console.log('Will jump to: ' + newUrl)
+                  window.location.href = newUrl;
+                   /*return false;
+                   return true;*/
+                 } else {
+                   // Could not create the new order.
+                   // An error message will have already been logged.
+                   alert('An error occurred creating the circlebuy. Please try again later.');
+                 }
+                 return false;
+               });
+      
+            } else {
+              console.log('ok 0b');
+      
+              /*
+               *  Add a customer order to the existing circlebuy.
+               */
+              alert('not creating order yet!');
+            }
+            return false;
+      
+          } // nextButtonClicked()
+      
+      
+          /*
+           *  Convenience function used with ng-repeat to iterate X times
+           */
+          $scope.range = function(x) {
+            if (x) {
+              var num = parseInt(x)
+              if (num < 0) num = 0;
+              return new Array(num);
+            }
+            return [ ]; // num is undefined
+          }
+      
+      
+          /*
+           *  Set up the login part at the top of the page.
+           */
+          authservice.init({
+            host: 'localhost',
+            port: 9090,
+            tenant: 'nodeclient',
+            pretend: true,
+            onLoggedIn: function() {
+      
+              // Use $timeout, which does the same as $apply, but gives
+              // this controller definition function time to complete.
+              // Otherwise we get an 'inprog' error from Angular.
+              $timeout(function(){
+                $scope.loggedIn = true;
+              }, 100);
+            },
+            onLoggedOut: function() {
+              $timeout(function(){
+                $scope.loggedIn = false;
+              }, 100);
+            }
+          });
+          console.log('Current user:', authservice.getCurrentUser());
+      
+      });
+      
     </script>
   </body>
 </html>
