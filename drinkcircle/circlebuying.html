@@ -565,15 +565,12 @@
         </div>
       </div>
     </section>
-    <section class="drinks" ng-app="myApp" ng-controller="myCtrl" ng-cloak>
+    <section class="drinks" ng-app="myApp" ng-controller="myCtrl">
       <div class="container">
         <div class="productdetails search">
           <div class="row">
             <!-- Render the circlebuys using widgets-->
             <!--div(ng-repeat="sharedOrder in sharedOrders").col-md-6.col-sm-6.text-center.super-customized-->
-            <div class="col-md-3 col-sm-6 text-center" ng-repeat="sharedOrder in sharedOrders">
-              <circlebuy-widget></circlebuy-widget>
-            </div>
             <!-- Example widgets - Render using data in data/circlebuy.pug-->
             <div class="col-md-3 col-sm-6 text-center">
               <div class="card_rounded"><a href="#modal_preview_detail_brokenwood" data-toggle="modal">
