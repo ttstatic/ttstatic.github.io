@@ -279,13 +279,8 @@
                     </div>
                     <p></p>
                     <div class="avatar">
-                      <div class="img">
-                        <div class="ring _70p"></div><img src="assets/images/circles/circles_8.png" alt="">
-                      </div>
-                      <div class="countdown"><br>
-                        <p>
-                          <big><i class="fa fa-clock-o"></i><span>&nbsp;04:56.12</span></big>
-                        </p>
+                      <div class="guage"><img src="assets/images/circles/circles_8.png" alt="">
+                        <div class="circlebuyGuage" data-size="10" data-sold="7" data-left="3" value="7"></div>
                       </div>
                     </div><br>
                     <p><a class="button inline v7 joincirclebuy thin-line" href="circlebuy-start.html">join</a>&nbsp;<a class="button inline v8 joincirclebuy thin-line" href="">watch</a></p>
@@ -955,6 +950,8 @@
     <script src="/bower_components/moment/min/moment.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js" type="text/javascript"></script>
+    <script src="//cdn3.devexpress.com/jslib/13.2.9/js/dx.chartjs.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <script src="assets/vendor/teaservice/teaservice.js" type="text/javascript"></script>
     <script src="assets/vendor/authservice/authservice.js" type="text/javascript"></script>
@@ -979,6 +976,52 @@
         //-     $('section.productdetails, .product-detail-wrap, .productdetails .stage').height("");
         //-   }
         //- });
+      
+        $(".circlebuyGuage").dxCircularGauge({
+          geometry: {
+            "endAngle": 300,
+            "startAngle": 240
+          },
+          rangeContainer: {
+            backgroundColor: '#fff',
+            offset: -35,
+            ranges: [
+              {
+                startValue: 0, endValue: 7, color: '#4abd55'
+              }
+            ],
+            width: 17
+          },
+          redrawOnResize: true,
+          size: {
+            width: '100%',
+            height: '190'
+          },
+          scale: {
+            startValue: 0,
+            endValue: 10,
+            majorTick: { tickInterval: 1 },
+            label: {
+              format: 'number',
+              font: {
+                color: '#000'
+              }
+            }
+          },
+          title: {
+            text: '04:56.12',
+            position: 'bottom-center',
+            font: {
+              color: '#868686',
+              size: '18px'
+            }
+          },
+          value: 0,
+          valueIndicator: {
+            type: 'rangeBar'
+          }
+        });
+      
       });
       
       $(function () {
