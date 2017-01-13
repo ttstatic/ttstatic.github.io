@@ -57,7 +57,7 @@
                   <div class="authservice-current-user-firstname inline"></div>&nbsp;!</a>
                 <ul class="dropdown-menu">
                   <li><a href="myprofile.html">Profile</a></li>
-                  <li><a href="#modal_coming_soon" data-toggle="modal">Circlebuy</a></li>
+                  <li><a href="circlebuy-requests.html">Circlebuy</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">Circles</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">My Orders</a></li>
                   <li class="divider" role="separator"></li>
@@ -69,7 +69,7 @@
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
             <!-- Menu if not logged in-->
-            <ul class="nav navbar-nav navbar-right authservice-logged-out" style="display:none">
+            <ul class="nav navbar-nav navbar-right authservice-logged-out">
               <li class="dropdown"><a class="dropdown-toggle info" id="authservice-user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>
                   <!--img(src="assets/images/img_advisor_1.jpg", alt="")-->&nbsp;sign in</a>
                 <ul class="dropdown-menu">
@@ -154,8 +154,8 @@
             <!-- Navbar - DRINKS, RED, WHITE, etc-->
             <ul class="nav navbar-nav navbar-left nav-category">
               <li><a href="drinks.html?category=600">Drinks</a></li>
-              <li><a class="navbar-drinktype" href="drinks.html?category=620">Red</a></li>
-              <li><a class="navbar-drinktype" href="drinks.html?category=610">White</a></li>
+              <li><a class="navbar-drinktype" href="drinks-red.html?category=620">Red</a></li>
+              <li><a class="navbar-drinktype" href="drinks-white.html?category=610">White</a></li>
               <li><a class="navbar-drinktype" href="drinks-beer.html?category=660">Beer</a></li>
               <li><a class="navbar-drinktype" href="drinks-spirits.html">Spirits</a></li>
               <li><a class="navbar-drinktype" href="drinks-bubbles.html">Bubbles</a></li>
@@ -538,24 +538,29 @@
         </nav>
       </div>
     </section>
-    <section class="drinks compare" ng-app="myApp" ng-controller="myCtrl" ng-cloak>
+    <section class="drinks compare">
       <div class="container">
         <div class="product-wrap">
           <h4>Compare Drinks</h4>
           <p>Select a maximum of 3 drinks to compare.</p>
           <div class="row compare-summary">
-            <div class="col-md-4" ng-repeat="variant in variants">
+            <div class="col-md-4 hide" ng-repeat="variant in variants">
               <div class="alert alert-success"><a class="close" ng-click="removeFromCompare(variant)" href="#" data-toggle="modal">&times;</a><strong>{{variant.manufacturer}}</strong>
                 <p>{{variant.name}}</p>
               </div>
             </div>
+            <div class="col-md-4">
+              <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Brokenwood</strong>
+                <p>Graveyard Vineyard</p>
+              </div>
+            </div>
             <!-- Dummy data-->
-            <div class="col-md-4 hide">
+            <div class="col-md-4">
               <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Giant Steps</strong>
                 <p>Pinot Noir</p>
               </div>
             </div>
-            <div class="col-md-4 hide">
+            <div class="col-md-4">
               <div class="alert alert-success"><a class="close" href="#modal_coming_soon" data-toggle="modal">&times;</a><strong>Rosnay Organic</strong>
                 <p>Triple Blend</p>
               </div>
@@ -563,7 +568,7 @@
           </div><a class="btn btn-success btn-small" href="#modal_coming_soon" data-toggle="modal">Compare up to 3 drinks</a>
           <hr>
           <div class="row">
-            <div class="col-sm-6 col-md-4" ng-repeat="variant in variants">
+            <div class="col-sm-6 col-md-4 hide" ng-repeat="variant in variants">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
@@ -595,8 +600,88 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="product">
+                <div class="thumb">
+                  <div class="ctr">
+                    <div class="count">91<span>points</span></div>
+                  </div><a href="productdetails2.html"><img class="img-prod" src="//www.brokenwood.com.au/assets/images/products/pictures/GraveyardVineyardShiraz11.jpg" alt=""></a>
+                  <div class="details">
+                    <p></p>
+                    <div class="name"><a href="#modal_coming_soon" data-toggle="modal">Brokenwood</a><br><small>Graveyard Vineyard</small></div>
+                    <table class="table">
+                      <tr>
+                        <th>Rating</th>
+                        <td>94 points</td>
+                      </tr>
+                      <tr>
+                        <th>Variety</th>
+                        <td>Shiraz</td>
+                      </tr>
+                      <tr>
+                        <th>Region</th>
+                        <td>Hunter Valley</td>
+                      </tr>
+                      <tr>
+                        <th>Alcohol</th>
+                        <td>14.5%</td>
+                      </tr>
+                      <tr>
+                        <th>Vintage</th>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <th>Shipping</th>
+                        <td>Free</td>
+                      </tr>
+                      <tr>
+                        <th>Returns</th>
+                        <td>60 days</td>
+                      </tr>
+                      <tr>
+                        <th>Circlebuys</th>
+                        <td>84</td>
+                      </tr>
+                      <tr>
+                        <th>No. Ratings</th>
+                        <td>242</td>
+                      </tr>
+                      <tr>
+                        <th>No. Reviews</th>
+                        <td>88</td>
+                      </tr>
+                      <tr>
+                        <th>Case Size</th>
+                        <td>12 bottles</td>
+                      </tr>
+                      <tr>
+                        <th>Standard Drinks</th>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <th>Food Matching</th>
+                        <td>Osso Bucco, Lamb</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td></td>
+                      </tr>
+                    </table>
+                    <div class="pricing">
+                      <div class="buy drop">
+                        <ul>
+                          <li><a class="thumb-action" href="productdetails2.html">Buy</a></li>
+                          <li class="price">$19.99</li>
+                          <li><a class="thumb-action" href="productdetails2.html">View</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Dummy data-->
-            <div class="col-sm-6 col-md-4 hide">
+            <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
@@ -676,7 +761,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 hide">
+            <div class="col-sm-6 col-md-4">
               <div class="product">
                 <div class="thumb">
                   <div class="ctr">
