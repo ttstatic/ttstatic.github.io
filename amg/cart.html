@@ -182,7 +182,7 @@
           <hr>
           <div class="clearfix"></div>
           <div class="pull-left text-muted"><sup>*</sup>&nbsp;You can add discount code at checkout<br><br></div>
-          <div class="pull-right"><a class="btn btn-info btn-lg" href="">Save for Later</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-lg" href="">Secure Checkout</a></div>
+          <div class="pull-right"><a class="btn btn-info btn-lg" href="">Save for Later</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-lg" href="#modalSignIn" data-toggle="modal">Checkout</a></div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -203,6 +203,30 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <h4>Choose one of the<br>actions below</h4><a class="btn btn-success btn-block" href="#modalSignInAccount" data-toggle="modal" data-dismiss="modal">Login to Account</a><a class="btn btn-warning btn-block" href="">Continue as Guest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalSignInAccount" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <h4>Login to your Account</h4>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Password">
+            </div><a class="btn btn-success btn-block" href="">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="row">
