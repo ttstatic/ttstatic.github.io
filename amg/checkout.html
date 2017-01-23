@@ -106,84 +106,109 @@
     </section>
     <section class="_bordered">
       <div class="container">
-        <h3 class="block-heading">3 Items on your Cart</h3>
-        <div class="cart-items item"><a class="remove" href=""><i class="fa fa-remove"></i></a>
-          <div class="cols item">
-            <div class="image"><img src="assets/images/catalog/3.jpg"></div><br class="visible-xs"><span class="name">Amgrow Blood and Bone</span>
-          </div>
-          <div class="cols size"><br class="visible-xs">
-            <form class="form-inline">
-              <div class="form-group">
-                <label>Size</label>
-                <select class="form-control">
-                  <option>20L</option>
-                </select>
+        <div class="breadcrumb"><a href="">Shopping Cart</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href=""><strong class="text-success">Checkout</strong></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">Confirmation</a></div>
+        <h3 class="block-heading">Checkout</h3>
+        <div class="row">
+          <div class="col-md-7">
+            <h4>Shipping Details</h4>
+            <hr>
+            <address><strong>Account Details:</strong>
+              <div class="name">John Smith</div>
+              <div class="email">john.smith@email.com</div>
+            </address>
+            <address>
+              <div class="checkbox pull-right">
+                <label>
+                  <input type="checkbox"><strong>Ship to a different address</strong>
+                </label>
               </div>
-            </form>
-          </div>
-          <div class="cols qty">
-            <form class="form-inline">
+              <div class="clearfix visible-sm visible-xs"></div><strong>Ship to this address:</strong>
+              <div class="name">Unit 1, 20-30 Stubbs St,<br>Silverwater, NSW 2128<br>Australia</div>
+              <div class="email">john.smith@email.com</div>
+            </address>
+            <h4>Payment Details</h4>
+            <hr>
+            <div class="payment-details">
               <div class="form-group">
-                <label>Qty</label>
-                <select class="form-control">
-                  <option>1</option>
-                </select>
+                <label>Name on card</label>
+                <input class="form-control" type="text">
               </div>
-            </form>
-          </div>
-          <div class="cols price">$15.95</div>
-        </div>
-        <div class="cart-items item"><a class="remove" href=""><i class="fa fa-remove"></i></a>
-          <div class="cols item">
-            <div class="image"><img src="assets/images/catalog/10.jpg"></div><br class="visible-xs"><span class="name">Ecosmart Native Fertiliser</span>
-          </div>
-          <div class="cols size"><br class="visible-xs">
-            <form class="form-inline">
               <div class="form-group">
-                <label>Size</label>
-                <select class="form-control">
-                  <option>20L</option>
-                </select>
+                <label>Card Number</label>
+                <input class="form-control" type="text">
               </div>
-            </form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Valid until (mm/yyyy)</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>CVC Code</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+              </div><a class="btn btn-success btn-block btn-lg" href="">Purchase items</a>
+            </div>
           </div>
-          <div class="cols qty">
-            <form class="form-inline">
-              <div class="form-group">
-                <label>Qty</label>
-                <select class="form-control">
-                  <option>1</option>
-                </select>
+          <div class="col-md-5">
+            <h4>Your Order</h4>
+            <div class="card order-details">
+              <div class="media">
+                <div class="media-left"><a href="#"><img class="media-object" src="https://unsplash.it/g/70?blur" alt="..." width="40"></a></div>
+                <div class="media-body">
+                  <big>
+                    <div class="price pull-right">$0.00</div><strong>Name of Product</strong>
+                    <p>Size: 500g  Qty: 1</p>
+                  </big>
+                </div>
               </div>
-            </form>
+              <div class="media">
+                <div class="media-left"><a href="#"><img class="media-object" src="https://unsplash.it/g/70?blur" alt="..." width="40"></a></div>
+                <div class="media-body">
+                  <big>
+                    <div class="price pull-right">$0.00</div><strong>Name of Product</strong>
+                    <p>Size: 500g  Qty: 1</p>
+                  </big>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left"><a href="#"><img class="media-object" src="https://unsplash.it/g/70?blur" alt="..." width="40"></a></div>
+                <div class="media-body">
+                  <big>
+                    <div class="price pull-right">$0.00</div><strong>Name of Product</strong>
+                    <p>Size: 500g  Qty: 1</p>
+                  </big>
+                </div>
+              </div>
+              <hr>
+              <div class="order-summary">
+                <table>
+                  <tr>
+                    <td class="text-muted">Subtotal</td>
+                    <td width="140">$25.90</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted">Shipping Fee</td>
+                    <td width="140">$00.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><a class="btn btn-warning btn-block" href=""><i class="fa fa-tag"></i>&nbsp; Add Discount Code</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <big><strong class="text-uppercase">Total</strong></big>
+                    </td>
+                    <td>
+                      <big><strong>$25.90</strong></big>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
-          <div class="cols price">$9.95</div>
-        </div>
-        <div class="order-summary">
-          <div class="heading"><strong>Order Summary</strong></div>
-          <table>
-            <tr>
-              <td class="text-muted">Subtotal</td>
-              <td width="140">$25.90</td>
-            </tr>
-            <tr>
-              <td class="text-muted">Discount&nbsp;<sup>*</sup></td>
-              <td width="140">$00.00</td>
-            </tr>
-            <tr>
-              <td>
-                <big><strong class="text-uppercase">Total</strong></big>
-              </td>
-              <td>
-                <big><strong>$25.90</strong></big>
-              </td>
-            </tr>
-          </table>
-          <hr>
-          <div class="clearfix"></div>
-          <div class="pull-left text-muted"><sup>*</sup>&nbsp;You can add discount code at checkout<br><br></div>
-          <div class="pull-right"><a class="btn btn-info btn-lg" href="">Save for Later</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-lg" href="#modalSignIn" data-toggle="modal">Checkout</a></div>
-          <div class="clearfix"></div>
         </div>
       </div>
     </section>
@@ -222,7 +247,7 @@
             </div>
             <div class="form-group">
               <input class="form-control" type="password" placeholder="Password">
-            </div><a class="btn btn-success btn-block" href="checkout.html">Login</a>
+            </div><a class="btn btn-success btn-block" href="">Login</a>
           </div>
         </div>
       </div>
