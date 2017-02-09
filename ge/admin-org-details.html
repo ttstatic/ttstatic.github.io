@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Governance Evaluator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <link href="assets/vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar,#navbarBlock" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png"><span class="text">Governance Evaluator<br><small>Building Successful Boards</small></span></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-text">Welcome back, David!</li>
+            <li><a href="#"><i class="material-icons">person</i>My Account</a></li>
+            <li><a href="#"><i class="material-icons">directions_run</i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-block navbar-collapse collapse" id="navbarBlock">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="admin-org.html">Organisations</a></li>
+            <li><a href="">Diagnostics</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Calendar</a></li>
+            <li><a href="">Setup</a></li>
+            <li><a href="">Client Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="_admin">
+            <ul>
+              <li class="title"><a href="">Details</a>
+                <ul>
+                  <li class="active"><a href="admin-org-details.html">Organisation Details</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Members</a>
+                <ul>
+                  <li><a href="admin-org-members.html">Member List</a></li>
+                  <li><a href="">Add Member</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Subscriptions</a>
+                <ul>
+                  <li><a href="">Subscription Details</a></li>
+                  <li><a href="">Subscription History</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div class="card org-form">
+            <h4>TwistResources Inc.</h4>
+            <hr>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="org-avatar">
+                  <div class="img"><img src="https://unsplash.it/70/?random"></div><a class="upload-org-avatar" href="">+ Upload Logo</a>
+                </div>
+              </div><br class="visible-sm">
+              <div class="col-md-7">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label" for="">
+                      <div class="text-left">Brand Name</div>
+                    </label>
+                    <div class="col-sm-8">
+                      <input class="form-control" type="text" value="TwistResources Inc.">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label" for="">
+                      <div class="text-left">Date of Registration</div>
+                    </label>
+                    <div class="col-sm-8">
+                      <div class="form-control-static"><strong>02/01/2017</strong></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label" for="">
+                      <div class="text-left">Subscription Status</div>
+                    </label>
+                    <div class="col-sm-8">
+                      <div class="form-control-static"><i class="material-icons _active">fiber_manual_record</i>&nbsp;<strong>Active</strong></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr>
+            <form class="form-horizontal _bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Address</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" placeholder="" value="Level 6, 136 Exhibition">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Suburb</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>South Melbourne</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div><br class="visible-sm">
+                    <div class="col-md-6">
+                      <label class="col-sm-4 control-label" for="">
+                        <div class="text-left">State</div>
+                      </label>
+                      <div class="col-sm-8">
+                        <div class="select">
+                          <select class="form-control">
+                            <option>Victoria</option>
+                          </select><i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Country</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Australia</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div><br class="visible-sm">
+                    <div class="col-md-6">
+                      <label class="col-sm-4 control-label" for="">
+                        <div class="text-left">Postcode</div>
+                      </label>
+                      <div class="col-sm-8">
+                        <input class="form-control" type="text" value="30001">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Contact Number</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="0923148576">
+                </div>
+              </div>
+            </form><br><br>
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Update Changes</a></div>
+          </div>
+        </div>
+      </div><br>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/fullcalendar/js/moment.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/fullcalendar/js/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(document).ready(function() {
+      
+        $('.btn-collapse').on('click', function() {
+          $(this).parent().toggleClass('expanded');
+        });
+      
+      });
+    </script>
+  </body>
+</html>
