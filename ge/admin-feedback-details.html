@@ -53,50 +53,72 @@
       <div class="card org-form">
         <h4>Client Details</h4>
         <hr>
-        <div class="table-responsive">
-          <table class="table no-border">
-            <tbody>
-              <tr>
-                <td width="200">Name</td>
-                <td><strong>Amy David</strong></td>
-              </tr>
-              <tr>
-                <td>Email</td>
-                <td><strong>amydavid@tooltwist.com</strong></td>
-              </tr>
-              <tr>
-                <td>Organisation</td>
-                <td><strong>TwistResources</strong></td>
-              </tr>
-              <tr>
-                <td>Submitted date</td>
-                <td><strong>07 Feb 2017</strong></td>
-              </tr>
-              <tr>
-                <td>Reason</td>
-                <td><strong>none</strong></td>
-              </tr>
-              <tr>
-                <td>Status</td>
-                <td>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>Open</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
-                      </div>
-                    </div>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Name</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="form-control-static"><strong>Amy David</strong></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Email</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="form-control-static"><strong>amydavid@tooltwist.com</strong></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Organisation</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="form-control-static"><strong>TwistResources</strong></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Submitted date</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="form-control-static"><strong>07 Feb 2017</strong></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Reason</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="form-control-static"><strong>none</strong></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Status</div>
+            </label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>Open</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Description</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">
+              <div class="text-left">Description</div>
+            </label>
+            <div class="col-sm-7">
+              <div class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+          </div>
+        </form>
         <hr>
         <table class="table no-border">
           <tbody>
@@ -107,22 +129,24 @@
           </tbody>
         </table>
         <hr>
-        <div class="table-responsive">
-          <table class="table no-border">
-            <tbody id="row-details">
-              <tr>
-                <td width="70">Date</td>
-                <td width="200">
-                  <input class="form-control _inline" type="date">
-                </td>
-                <td class="text-right" width="100">Details</td>
-                <td>
-                  <textarea class="form-control" row="5"></textarea>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div><br><br>
+        <form class="form-horizontal" id="row-details">
+          <div class="rows">
+            <div class="form-group">
+              <label class="col-sm-1 control-label">
+                <div class="text-left">Date</div>
+              </label>
+              <div class="col-sm-3">
+                <input class="form-control _inline" type="date">
+              </div>
+              <label class="col-md-1 col-sm-2 control-label">
+                <div class="text-right">Details</div>
+              </label>
+              <div class="col-md-7 col-sm-6">
+                <textarea class="form-control" row="5"></textarea>
+              </div>
+            </div>
+          </div>
+        </form><br><br>
         <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Update Changes</a></div>
       </div><br>
     </div>
@@ -146,8 +170,8 @@
       
       });
       function addMoreDetails() {
-        $('#row-details tr:first-child').clone().appendTo('#row-details');
-        $('#row-details tr:last-child').find('input, textarea').val('');
+        $('#row-details .rows:first-child').clone().appendTo('#row-details');
+        $('#row-details .rows:last-child').find('input, textarea').val('');
       }
     </script>
   </body>
