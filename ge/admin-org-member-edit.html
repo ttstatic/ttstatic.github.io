@@ -44,7 +44,7 @@
             <li><a href="">Reports</a></li>
             <li><a href="">Calendar</a></li>
             <li><a href="">Setup</a></li>
-            <li><a href="">Client Feedback</a></li>
+            <li><a href="admin-feedback.html">Client Feedback</a></li>
           </ul>
         </div>
       </div>
@@ -67,8 +67,8 @@
               </li>
               <li class="title"><a href="">Subscriptions</a>
                 <ul>
-                  <li><a href="">Subscription Details</a></li>
-                  <li><a href="">Subscription History</a></li>
+                  <li><a href="admin-org-subscription.html">Subscription Details</a></li>
+                  <li><a href="admin-org-subscription-history.html">Subscription History</a></li>
                 </ul>
               </li>
             </ul>
@@ -81,33 +81,61 @@
             <form class="form-horizontal _bordered">
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Address</div>
+                  <div class="text-left">Title</div>
                 </label>
                 <div class="col-sm-7">
-                  <input class="form-control" type="text" placeholder="" value="Level 6, 136 Exhibition">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Miss</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Suburb</div>
+                  <div class="text-left">First Name</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Last Name</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Email</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="email" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Date of Birth</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>South Melbourne</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
-                      </div>
+                      <input class="form-control" type="text" value="">
                     </div><br class="visible-sm">
                     <div class="col-md-6">
                       <label class="col-sm-4 control-label" for="">
-                        <div class="text-left">State</div>
+                        <div class="text-left">Gender</div>
                       </label>
                       <div class="col-sm-8">
                         <div class="select">
                           <select class="form-control">
-                            <option>Victoria</option>
+                            <option>&nbsp;</option>
                           </select><i class="material-icons">keyboard_arrow_down</i>
                         </div>
                       </div>
@@ -117,23 +145,19 @@
               </div>
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Country</div>
+                  <div class="text-left">Years on the Board</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>Australia</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
-                      </div>
+                    <div class="col-md-4">
+                      <input class="form-control" type="text" value="">
                     </div><br class="visible-sm">
-                    <div class="col-md-6">
-                      <label class="col-sm-4 control-label" for="">
-                        <div class="text-left">Postcode</div>
+                    <div class="col-md-8">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Governance Experience</div>
                       </label>
-                      <div class="col-sm-8">
-                        <input class="form-control" type="text" value="30001">
+                      <div class="col-sm-5">
+                        <input class="form-control" type="text" value="">
                       </div>
                     </div>
                   </div>
@@ -141,10 +165,80 @@
               </div>
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Contact Number</div>
+                  <div class="text-left">Phone Number</div>
                 </label>
                 <div class="col-sm-7">
-                  <input class="form-control" type="text" value="0923148576">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Phone Number 2</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Password</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="password" value="password">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Role</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Director</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Status</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Active</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Welcome Email</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6"><a class="ge-btn _colored _filled _success" href="">Send Email</a></div>
+                  </div>
                 </div>
               </div>
             </form><br><br>

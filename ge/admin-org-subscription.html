@@ -49,6 +49,64 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="_admin">
+            <ul>
+              <li class="title"><a href="">Details</a>
+                <ul>
+                  <li><a href="admin-org-details.html">Organisation Details</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Members</a>
+                <ul>
+                  <li><a href="admin-org-members.html">Member List</a></li>
+                  <li><a href="">Add Member</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Subscriptions</a>
+                <ul>
+                  <li class="active"><a href="admin-org-subscription.html">Subscription Details</a></li>
+                  <li><a href="admin-org-subscription-history.html">Subscription History</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div class="card org-form">
+            <h4>Subscription Details</h4><br>
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td width="200">Subscription Name</td>
+                    <td><strong>1 Year Member</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Description</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                  </tr>
+                  <tr>
+                    <td>Cost</td>
+                    <td><strong>$</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Rollover Period (Days)</td>
+                    <td><strong>365</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Included in Benchmarking</td>
+                    <td class="text-success"><strong>Yes</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div><br>
+    </div>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
@@ -59,5 +117,15 @@
     <script src="assets/vendor/fullcalendar/js/fullcalendar.min.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(document).ready(function() {
+      
+        $('.btn-collapse').on('click', function() {
+          $(this).parent().toggleClass('expanded');
+        });
+      
+      });
+    </script>
   </body>
 </html>
