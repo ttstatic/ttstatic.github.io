@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Governance Evaluator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <link href="assets/vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar,#navbarBlock" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo_white.png"><span class="text">Governance Evaluator<br><small>Building Successful Boards</small></span></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-text">Welcome back, David!</li>
+            <li><a href="#"><i class="material-icons">person</i>My Account</a></li>
+            <li><a href="#"><i class="material-icons">directions_run</i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-block navbar-collapse collapse" id="navbarBlock">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="admin-org.html">Organisations</a></li>
+            <li><a href="">Diagnostics</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Calendar</a></li>
+            <li><a href="admin-setup.html">Setup</a></li>
+            <li><a href="admin-feedback.html">Client Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="_admin">
+            <ul>
+              <li class="title"><a href="">Details</a>
+                <ul>
+                  <li><a href="admin-setup.html">Process Setup</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Email Templates</a>
+                <ul>
+                  <li><a href="admin-setup-email.html">Email Template List</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Dashboard</a>
+                <ul>
+                  <li><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Terms and Conditions</a>
+                <ul>
+                  <li class="active"><a href="admin-setup-terms.html">Manage Content</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Language Substitution</a>
+                <ul>
+                  <li><a href="admin-setup-language.html">Maintenance</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div class="card admin-form">
+            <h4>Terms and Conditions</h4>
+            <hr>
+            <p><a class="ge-lnk pull-right text-muted" href=""><i class="material-icons">mode_edit</i></a>
+              <div class="text-muted"><strong>Edit Content</strong></div>
+            </p>
+            <div class="clearfix"></div>
+            <hr>
+            <div class="text-editor">
+              <p class="lead">ckeditor goes here...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div><br><br>
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-setup.html">Save</a></div>
+          </div>
+        </div>
+      </div><br>
+    </div>
+    <div class="modal fade" id="addTerm" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Edit Term</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Default</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Health</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Finance</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Community</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Education</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Council</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-setup.html">Save</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/fullcalendar/js/moment.min.js" type="text/javascript"></script>
+    <script src="assets/vendor/fullcalendar/js/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(document).ready(function() {
+      
+        $('.btn-collapse').on('click', function() {
+          $(this).parent().toggleClass('expanded');
+        });
+      
+      });
+    </script>
+  </body>
+</html>

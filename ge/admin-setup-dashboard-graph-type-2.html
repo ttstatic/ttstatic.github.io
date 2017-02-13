@@ -56,19 +56,27 @@
             <ul>
               <li class="title"><a href="">Details</a>
                 <ul>
-                  <li><a href="admin-org-details.html">Organisation Details</a></li>
+                  <li><a href="admin-setup.html">Process Setup</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Members</a>
+              <li class="title"><a href="">Email Templates</a>
                 <ul>
-                  <li class="active"><a href="admin-org-members.html">Member List</a></li>
-                  <li><a href="">Add Member</a></li>
+                  <li><a href="admin-setup-email.html">Email Template List</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Subscriptions</a>
+              <li class="title"><a href="">Dashboard</a>
                 <ul>
-                  <li><a href="admin-org-subscription.html">Subscription Details</a></li>
-                  <li><a href="admin-org-subscription-history.html">Subscription History</a></li>
+                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Terms and Conditions</a>
+                <ul>
+                  <li><a href="admin-setup-terms.html">Manage Content</a></li>
+                </ul>
+              </li>
+              <li class="title"><a href="">Language Substitution</a>
+                <ul>
+                  <li><a href="admin-setup-language.html">Maintenance</a></li>
                 </ul>
               </li>
             </ul>
@@ -76,173 +84,239 @@
         </div>
         <div class="col-md-9">
           <div class="card admin-form">
-            <h4>Edit Member</h4>
+            <h4>Update Widget</h4>
             <hr>
             <form class="form-horizontal _bordered">
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Title</div>
+                  <div class="text-left">Sector</div>
                 </label>
                 <div class="col-sm-7">
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>Miss</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
-                      </div>
-                    </div>
+                  <div class="form-control-static">Community</div>
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Layout</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>News Item Layout</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">First Name</div>
+                  <div class="text-left">Tag Line</div>
                 </label>
                 <div class="col-sm-7">
                   <input class="form-control" type="text" value="">
                 </div>
               </div>
-              <div class="form-group">
+              <hr>
+              <p class="text-muted">(Top Left Box)</p>
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Last Name</div>
-                </label>
-                <div class="col-sm-7">
-                  <input class="form-control" type="text" value="">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Email</div>
-                </label>
-                <div class="col-sm-7">
-                  <input class="form-control" type="email" value="">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Date of Birth</div>
+                  <div class="text-left">Figure</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <input class="form-control" type="text" value="">
                     </div><br class="visible-sm">
-                    <div class="col-md-6">
-                      <label class="col-sm-4 control-label" for="">
-                        <div class="text-left">Gender</div>
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
                       </label>
-                      <div class="col-sm-8">
-                        <div class="select">
-                          <select class="form-control">
-                            <option>&nbsp;</option>
-                          </select><i class="material-icons">keyboard_arrow_down</i>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Years on the Board</div>
+                  <div class="text-left">Description</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                       <input class="form-control" type="text" value="">
                     </div><br class="visible-sm">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                       <label class="col-sm-7 control-label" for="">
-                        <div class="text-left">Governance Experience</div>
+                        <div class="text-left">Text Colour</div>
                       </label>
                       <div class="col-sm-5">
-                        <input class="form-control" type="text" value="">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #1A96E6"></span></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <hr>
+              <p class="text-muted">(Top Right Box)</p>
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Phone Number</div>
+                  <div class="text-left">Figure</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Phone Number 2</div>
+                  <div class="text-left">Description</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <input class="form-control" type="text" value="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Password</div>
-                </label>
-                <div class="col-sm-7">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <input class="form-control" type="password" value="password">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Role</div>
-                </label>
-                <div class="col-sm-7">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>Director</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Text Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #1A96E6"></span></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <hr>
+              <p class="text-muted">(Bottom Left Box)</p>
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Status</div>
+                  <div class="text-left">Figure</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6">
-                      <div class="select">
-                        <select class="form-control">
-                          <option>Active</option>
-                        </select><i class="material-icons">keyboard_arrow_down</i>
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Welcome Email</div>
+                  <div class="text-left">Description</div>
                 </label>
                 <div class="col-sm-7">
                   <div class="row">
-                    <div class="col-md-6"><a class="ge-btn _colored _filled _success" href="">Send Email</a></div>
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Text Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #1A96E6"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="text-muted">(Bottom Right Box)</p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Figure</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Description</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Text Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #1A96E6"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </form><br><br>
-            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Update Changes</a></div>
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Save</a></div>
           </div>
         </div>
       </div><br>
