@@ -54,19 +54,15 @@
         <div class="col-md-3">
           <nav class="_admin">
             <ul>
-              <li class="title"><a href="">Dashboard</a>
+              <li class="title"><a href="">Details</a>
                 <ul>
-                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                  <li class="active"><a href="admin-diagnostics-list.html">Diagnostic List</a></li>
+                  <li><a href="admin-diagnostics-setup.html">Process Setup</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Terms and Conditions</a>
+              <li class="title"><a href="">Email Templates</a>
                 <ul>
-                  <li><a href="admin-setup-terms.html">Manage Content</a></li>
-                </ul>
-              </li>
-              <li class="title"><a href="">Language Substitution</a>
-                <ul>
-                  <li><a href="admin-setup-language.html">Maintenance</a></li>
+                  <li><a href="admin-diagnostics-email.html">Email Template List</a></li>
                 </ul>
               </li>
             </ul>
@@ -74,24 +70,29 @@
         </div>
         <div class="col-md-9">
           <div class="card admin-form">
-            <h4>Dashboard</h4>
+            <div class="pull-right"><a class="ge-btn _colored _filled _success" href="">+ Add Question</a></div>
+            <h4>Health</h4>
             <hr>
-            <p>Community</p>
-            <hr>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 1<a class="edit" href="admin-setup-dashboard-graph-type-1.html"><i class="material-icons">mode_edit</i></a></p>
+            <big class="text-muted">Formulation</big>
+            <div class="module module-list">
+              <div class="module-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
+                <div class="module-col name"><strong>Question 1</strong><br>Template:&nbsp;<strong>Default</strong></div>
+                <div class="module-col details">Last saved:&nbsp;<strong>01 February 2017</strong><br>Saved by:&nbsp;<strong>David Raymond</strong></div>
+                <div class="module-col actions"><a href="admin-diagnostics-question-static.html"><i class="material-icons">insert_drive_file</i></a><a href=""><i class="material-icons">delete</i></a>
+                  <label class="switch rounded">
+                    <input type="checkbox" checked=""><span></span>
+                  </label>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 2<a class="edit" href="admin-setup-dashboard-graph-type-2.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 3<a class="edit" href="admin-setup-dashboard-graph-type-3.html"><i class="material-icons">mode_edit</i></a></p>
+            </div>
+            <div class="module module-list">
+              <div class="module-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
+                <div class="module-col name"><strong>Question 2</strong><br>Template:&nbsp;<strong>Default</strong></div>
+                <div class="module-col details">Last saved:&nbsp;<strong>01 February 2017</strong><br>Saved by:&nbsp;<strong>David Raymond</strong></div>
+                <div class="module-col actions"><a href="admin-diagnostics-question-static.html"><i class="material-icons">insert_drive_file</i></a><a href=""><i class="material-icons">delete</i></a>
+                  <label class="switch rounded">
+                    <input type="checkbox" checked=""><span></span>
+                  </label>
                 </div>
               </div>
             </div>

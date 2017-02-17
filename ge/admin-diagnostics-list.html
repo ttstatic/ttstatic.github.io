@@ -54,19 +54,15 @@
         <div class="col-md-3">
           <nav class="_admin">
             <ul>
-              <li class="title"><a href="">Dashboard</a>
+              <li class="title"><a href="">Details</a>
                 <ul>
-                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                  <li class="active"><a href="admin-diagnostics-list.html">Diagnostic List</a></li>
+                  <li><a href="admin-diagnostics-setup.html">Process Setup</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Terms and Conditions</a>
+              <li class="title"><a href="">Email Templates</a>
                 <ul>
-                  <li><a href="admin-setup-terms.html">Manage Content</a></li>
-                </ul>
-              </li>
-              <li class="title"><a href="">Language Substitution</a>
-                <ul>
-                  <li><a href="admin-setup-language.html">Maintenance</a></li>
+                  <li><a href="admin-diagnostics-email.html">Email Template List</a></li>
                 </ul>
               </li>
             </ul>
@@ -74,26 +70,27 @@
         </div>
         <div class="col-md-9">
           <div class="card admin-form">
-            <h4>Dashboard</h4>
-            <hr>
-            <p>Community</p>
-            <hr>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 1<a class="edit" href="admin-setup-dashboard-graph-type-1.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 2<a class="edit" href="admin-setup-dashboard-graph-type-2.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 3<a class="edit" href="admin-setup-dashboard-graph-type-3.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
+            <div class="pull-right"><a class="ge-btn _colored _filled _success" href="">+ Add Diagnostic</a></div>
+            <h4>Diagnostic List</h4><br>
+            <div class="table-responsive form-table">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Questionaire</td>
+                    <td class="text-muted"><span>Last saved:</span><br><span>Last saved by:</span></td>
+                    <td><strong>07 January 2017</strong><br><strong>David Raymond</strong></td>
+                    <td class="text-right"><a href="admin-diagnostics-templates.html"><i class="material-icons">insert_drive_file</i></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div contenteditable="true">New Setup</div>
+                    </td>
+                    <td class="text-muted" width="110"><span>Last saved:</span><br><span>Last saved by:</span></td>
+                    <td><strong>07 January 2017</strong><br><strong>David Raymond</strong></td>
+                    <td class="text-right"><a href="admin-diagnostics-templates.html"><i class="material-icons">insert_drive_file</i></a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

@@ -54,19 +54,15 @@
         <div class="col-md-3">
           <nav class="_admin">
             <ul>
-              <li class="title"><a href="">Dashboard</a>
+              <li class="title"><a href="">Details</a>
                 <ul>
-                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                  <li class="active"><a href="admin-diagnostics-list.html">Diagnostic List</a></li>
+                  <li><a href="admin-diagnostics-setup.html">Process Setup</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Terms and Conditions</a>
+              <li class="title"><a href="">Email Templates</a>
                 <ul>
-                  <li><a href="admin-setup-terms.html">Manage Content</a></li>
-                </ul>
-              </li>
-              <li class="title"><a href="">Language Substitution</a>
-                <ul>
-                  <li><a href="admin-setup-language.html">Maintenance</a></li>
+                  <li><a href="admin-diagnostics-email.html">Email Template List</a></li>
                 </ul>
               </li>
             </ul>
@@ -92,12 +88,12 @@
                 <div class="col-sm-7">
                   <div class="select">
                     <select class="form-control">
-                      <option>News Item Layout</option>
+                      <option>Doughnut Type Layout</option>
                     </select><i class="material-icons">keyboard_arrow_down</i>
                   </div>
                 </div>
               </div>
-              <div class="form-group _no-border">
+              <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
                   <div class="text-left">Tag Line</div>
                 </label>
@@ -107,10 +103,56 @@
               </div>
               <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Title</div>
+                  <div class="text-left">Background Colour</div>
                 </label>
                 <div class="col-sm-7">
-                  <input class="form-control" type="email" value="">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="form-control-static">
+                        <div class="check _color-picker">
+                          <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                        </div>
+                      </div>
+                    </div><br class="visible-sm">
+                    <div class="col-md-10">
+                      <label class="col-sm-4 control-label" for="">
+                        <div class="text-left">Text Colour</div>
+                      </label>
+                      <div class="col-sm-8">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="text-muted">(Option 1)</p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Percentage</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group _no-border">
@@ -118,43 +160,103 @@
                   <div class="text-left">Description</div>
                 </label>
                 <div class="col-sm-7">
-                  <textarea class="form-control" row="5"></textarea>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="text-muted">(Option 2)</p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Percentage</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group _no-border">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Link</div>
+                  <div class="text-left">Description</div>
                 </label>
                 <div class="col-sm-7">
-                  <input class="form-control" type="email" value="">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="text-muted">(Option 3)</p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Percentage</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-7">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Background Colour</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <div class="form-control-static">
+                          <div class="check _color-picker">
+                            <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Description</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Background Color</div>
+                  <div class="text-left">Featured Data</div>
                 </label>
                 <div class="col-sm-7">
-                  <div class="form-control-static">
-                    <div class="check _color-picker">
-                      <label><span class="fill" style="background-color: #FF8A00"></span></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group _no-border">
-                <label class="col-sm-3 control-label" for="">
-                  <div class="text-left">Text Color</div>
-                </label>
-                <div class="col-sm-7">
-                  <div class="form-control-static">
-                    <div class="check _color-picker">
-                      <label><span class="fill" style="background-color: #D32F2E"></span></label>
-                    </div>
+                  <div class="select">
+                    <select class="form-control">
+                      <option>Option 1</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
                   </div>
                 </div>
               </div>
             </form><br><br>
-            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Save</a></div>
+            <div class="text-right"><a class="ge-btn _lnk" href="admin-diagnostics-question-edit.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-diagnostics-question-edit.html">Save</a></div>
           </div>
         </div>
       </div><br>

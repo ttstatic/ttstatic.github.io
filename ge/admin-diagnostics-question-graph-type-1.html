@@ -54,19 +54,15 @@
         <div class="col-md-3">
           <nav class="_admin">
             <ul>
-              <li class="title"><a href="">Dashboard</a>
+              <li class="title"><a href="">Details</a>
                 <ul>
-                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                  <li class="active"><a href="admin-diagnostics-list.html">Diagnostic List</a></li>
+                  <li><a href="admin-diagnostics-setup.html">Process Setup</a></li>
                 </ul>
               </li>
-              <li class="title"><a href="">Terms and Conditions</a>
+              <li class="title"><a href="">Email Templates</a>
                 <ul>
-                  <li><a href="admin-setup-terms.html">Manage Content</a></li>
-                </ul>
-              </li>
-              <li class="title"><a href="">Language Substitution</a>
-                <ul>
-                  <li><a href="admin-setup-language.html">Maintenance</a></li>
+                  <li><a href="admin-diagnostics-email.html">Email Template List</a></li>
                 </ul>
               </li>
             </ul>
@@ -74,27 +70,87 @@
         </div>
         <div class="col-md-9">
           <div class="card admin-form">
-            <h4>Dashboard</h4>
+            <h4>Update Widget</h4>
             <hr>
-            <p>Community</p>
-            <hr>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 1<a class="edit" href="admin-setup-dashboard-graph-type-1.html"><i class="material-icons">mode_edit</i></a></p>
+            <form class="form-horizontal _bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Sector</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="form-control-static">Community</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 2<a class="edit" href="admin-setup-dashboard-graph-type-2.html"><i class="material-icons">mode_edit</i></a></p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Layout</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>News Item Layout</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 3<a class="edit" href="admin-setup-dashboard-graph-type-3.html"><i class="material-icons">mode_edit</i></a></p>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Tag Line</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
                 </div>
               </div>
-            </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Title</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="email" value="">
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Description</div>
+                </label>
+                <div class="col-sm-7">
+                  <textarea class="form-control" row="5"></textarea>
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Link</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="email" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Background Color</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="form-control-static">
+                    <div class="check _color-picker">
+                      <label><span class="fill" style="background-color: #FF8A00"></span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group _no-border">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Text Color</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="form-control-static">
+                    <div class="check _color-picker">
+                      <label><span class="fill" style="background-color: #D32F2E"></span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form><br><br>
+            <div class="text-right"><a class="ge-btn _lnk" href="admin-diagnostics-question-edit.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-diagnostics-question-edit.html">Save</a></div>
           </div>
         </div>
       </div><br>
