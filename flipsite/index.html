@@ -85,21 +85,27 @@
           <h4 class="_heading-topic"><strong>Radio Controlled Cars</strong></h4>
           <div class="alert alert-info">
             <div class="form-group">
-              <select class="form-control">
+              <select class="form-control" id="topicSelect">
                 <option selected="selected">- Select a Topic -</option>
                 <option>Brushed vs Brushless Motors</option>
                 <option>Glow Engines</option>
                 <option>Quadcopters</option>
               </select>
             </div>
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Name/Alias">
+            <div class="form-group text-center">
+              <big>OR</big>
+            </div>
+            <div class="form-group text-center">
+              <input class="form-control" id="newTopic" type="text" placeholder="Enter a new Topic">
             </div>
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Email">
+              <input class="form-control" type="text" placeholder="Name/Alias" required>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Email" required>
             </div>
             <div class="text-center">
-              <big><a href="#signIn" data-toggle="modal">Login to your account</a><strong>&nbsp;or</strong></big>&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-sm" href="">Continue as Guest</a>
+              <big><a href="#signIn" data-toggle="modal">Login to your account</a><strong>&nbsp;or</strong></big>&nbsp;&nbsp;<a class="btn btn-info btn-sm" href="">Continue as Guest</a>
             </div>
           </div><br>
           <div class="card composer">
@@ -211,6 +217,14 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
+      
+        $('#topicSelect').change(function() {
+          if ( $(this).prop('selectedIndex') >= 1 ) {
+            $('#newTopic').attr('disabled', 'disabled');
+          } else {
+            $('#newTopic').removeAttr('disabled');
+          }
+        });
       
       });
     </script>
