@@ -46,7 +46,7 @@
               <nav class="card">
                 <ul>
                   <li><a class="active" href="">Radio Controlled Cars<br><small><span>by&nbsp;</span><strong>Gramziu&nbsp;</strong><i>24 Feb 2015</i></small></a></li>
-                  <li><a href="">Brushless vs Brushless Motors<br><small><span>by&nbsp;</span><strong>Ramziu&nbsp;</strong><i>24 Feb 2015</i></small></a></li>
+                  <li><a href="">Brushed vs Brushless Motors<br><small><span>by&nbsp;</span><strong>Ramziu&nbsp;</strong><i>24 Feb 2015</i></small></a></li>
                   <li><a href="">Glow Engines<br><small><span>by&nbsp;</span><strong>Tamziu&nbsp;</strong><i>24 Feb 2015</i></small></a></li>
                 </ul>
               </nav>
@@ -83,6 +83,25 @@
         </div>
         <div class="col-md-7">
           <h4 class="_heading-topic"><strong>Radio Controlled Cars</strong></h4>
+          <div class="alert alert-info">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected="selected">- Select a Topic -</option>
+                <option>Brushed vs Brushless Motors</option>
+                <option>Glow Engines</option>
+                <option>Quadcopters</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Name/Alias">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Email">
+            </div>
+            <div class="text-center">
+              <big><a href="#signIn" data-toggle="modal">Login to your account</a><strong>&nbsp;or</strong></big>&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-sm" href="">Continue as Guest</a>
+            </div>
+          </div><br>
           <div class="card composer">
             <div class="post-tabs">
               <ul>
@@ -144,18 +163,38 @@
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Email">
+              <input class="form-control" type="email" placeholder="Email">
             </div>
             <div class="form-group _passowrd">
-              <input class="form-control" type="text" placeholder="Password"><a href=""><i class="fa fa-eye-slash"></i></a>
+              <input class="form-control" type="password" placeholder="Password"><a href=""><i class="fa fa-eye-slash"></i></a>
             </div>
             <div class="form-group"><a class="btn btn-success btn-block" href="">Signup</a>
               <p></p>
-              <div class="text-center"><a href="">Account have an account?</a></div>
+              <div class="text-center"><a href="#signIn" data-dismiss="modal" data-toggle="modal">Account have an account?</a></div>
             </div>
             <p class="lead text-center">or</p>
-            <div class="form-group"><a class="btn btn-primary btn-block" href=""><i class="fa fa-facebook"></i>&nbsp;Facebook</a></div>
-            <div class="form-group"><a class="btn btn-info btn-block" href=""><i class="fa fa-twitter"></i>&nbsp;Twitter</a></div>
+            <div class="form-group"><a class="btn btn-primary btn-block" href=""><i class="fa fa-facebook"></i>&nbsp;facebook</a></div>
+            <div class="form-group"><a class="btn btn-info btn-block" href=""><i class="fa fa-twitter"></i>&nbsp;twitter</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Signin</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Email">
+            </div>
+            <div class="form-group _passowrd">
+              <input class="form-control" type="password" placeholder="Password"><a href=""><i class="fa fa-eye-slash"></i></a>
+            </div>
+            <div class="form-group"><a class="btn btn-success btn-block" href="">Signin</a></div>
+            <div class="text-center"><a href="#signIn" data-dismiss="modal" data-toggle="modal">Forgot your password?</a></div>
           </div>
         </div>
       </div>
