@@ -56,7 +56,7 @@
             <ul>
               <li class="title"><a href="">Support Manuals</a>
                 <ul>
-                  <li class="active"><a href="admin-res-man-supp.html">Default Support Manual</a></li>
+                  <li><a href="admin-res-man-supp.html">Default Support Manual</a></li>
                   <li><a href="admin-res-man-gov.html">Sector Governance Manual</a></li>
                   <li><a href="admin-res-man-res.html">Sector Resources Manual</a></li>
                 </ul>
@@ -75,7 +75,7 @@
               </li>
               <li class="title"><a href="">Webinars.tv</a>
                 <ul>
-                  <li><a href="admin-res-web-web.html">Webinars List</a></li>
+                  <li class="active"><a href="admin-res-web-web.html">Webinars List</a></li>
                 </ul>
               </li>
             </ul>
@@ -83,34 +83,103 @@
         </div>
         <div class="col-md-9">
           <div class="card admin-form">
-            <div class="pull-right"><a class="ge-btn _colored _filled _success" href="admin-res-man-supp-add.html">+ Add Topic</a></div>
-            <h4>Default Support Manual</h4>
+            <h4>Webinars.TV</h4>
             <hr>
-            <div class="module module-list">
-              <div class="module-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
-                <div class="module-col name">Strategic Direction</div>
-                <div class="module-col actions"><a href="admin-res-man-supp-add-sub.html"><i class="material-icons">add</i></a><a href="admin-res-man-supp-add.html"><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></div>
-                <div class="module-col arrow"><a href="#templateList_1" data-toggle="collapse"><i class="material-icons close">keyboard_arrow_up</i><i class="material-icons open">keyboard_arrow_down</i></a></div>
-              </div>
-              <div class="template-list collpase in" id="templateList_1">
-                <div class="template-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
-                  <div class="module-col name">1.1 Strategic Dolor</div>
-                  <div class="module-col actions"><a href="admin-res-man-supp-add-sub.html"><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></div>
-                </div>
-                <div class="template-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
-                  <div class="module-col name">1.1 Strategic Lorem Ipsum</div>
-                  <div class="module-col actions"><a href="admin-res-man-supp-add-sub.html"><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></div>
+            <form class="form-horizontal _bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Sector</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="form-control-static"><strong>Community</strong></div>
                 </div>
               </div>
-            </div>
-            <div class="module module-list">
-              <div class="module-accordion"><a class="module-col drag" href=""><i class="material-icons">drag_handle</i></a>
-                <div class="module-col name">Risk and Compliance</div>
-                <div class="module-col actions"><a href="admin-res-man-supp-add-sub.html"><i class="material-icons">add</i></a><a href="admin-res-man-supp-add.html"><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></div>
-                <div class="module-col arrow"><a class="collapsed" href="" data-toggle="collapse"><i class="material-icons close">keyboard_arrow_up</i><i class="material-icons open">keyboard_arrow_down</i></a></div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Webinar Topic</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="form-control-static"><strong>Topic Name</strong></div>
+                </div>
               </div>
-            </div><br>
-            <div class="text-right"><a class="ge-btn _lnk" href="">Back</a></div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Title</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="Community">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Date</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="date" value="02/02/2017">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Facilitator</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Portal</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Panel Details</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Panel Organisation</div>
+                </label>
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Status</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="select">
+                    <select class="form-control">
+                      <option>Active</option>
+                    </select><i class="material-icons">keyboard_arrow_down</i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Webinar Video</div>
+                </label>
+                <div class="col-sm-9">
+                  <div class="form-control-static"><a class="ge-btn _colored _info _filled _compact" href="">Choose File</a>&nbsp;<span class="text-muted"><em>&nbsp;No chosen Video file</em></span></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Related Files</div>
+                </label>
+                <div class="col-sm-9">
+                  <div class="form-control-static"><a class="ge-btn _colored _info _filled _compact" href="">Choose File</a>&nbsp;<span class="text-muted"><em>&nbsp;No chosen PDF or Powerpoint file</em></span></div>
+                </div>
+              </div>
+            </form><br><br>
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="">Update Changes</a></div>
           </div>
         </div>
       </div><br>
