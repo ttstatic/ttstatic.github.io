@@ -56,7 +56,7 @@
             <ul>
               <li class="title"><a href="">Dashboard</a>
                 <ul>
-                  <li class="active"><a href="admin-setup-dashboard.html">View Widgets</a></li>
+                  <li><a href="admin-setup-dashboard.html">View Widgets</a></li>
                 </ul>
               </li>
               <li class="title"><a href="">Terms and Conditions</a>
@@ -71,7 +71,7 @@
               </li>
               <li class="title"><a href="">Admin User Maintenance</a>
                 <ul>
-                  <li><a href="admin-setup-user-list.html">Admin User List</a></li>
+                  <li class="active"><a href="admin-setup-user-list.html">Admin User List</a></li>
                 </ul>
               </li>
               <li class="title"><a href="">Sector Management</a>
@@ -83,31 +83,99 @@
           </nav>
         </div>
         <div class="col-md-9">
-          <div class="card admin-form">
-            <h4>Dashboard</h4>
+          <div class="card admin-form"><a class="ge-btn _colored _filled _success pull-right" href="#addTerm" data-toggle="modal">+ Add Term</a>
+            <h4>Admin User List</h4>
             <hr>
-            <p>Community</p>
-            <hr>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 1<a class="edit" href="admin-setup-dashboard-graph-type-1.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 2<a class="edit" href="admin-setup-dashboard-graph-type-2.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="graphs">...insert graphs here<br>
-                  <p class="name">Widget Position 3<a class="edit" href="admin-setup-dashboard-graph-type-3.html"><i class="material-icons">mode_edit</i></a></p>
-                </div>
-              </div>
+            <div class="table-responsive form-table">
+              <table class="table">
+                <thead>
+                  <tr class="text-muted">
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Logins</th>
+                    <th>Artifacts</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Marco Chua</td>
+                    <td>Chair</td>
+                    <td>180</td>
+                    <td><a class="nomargin text-info" href="">Results</a>&nbsp;|&nbsp;<a class="nomargin text-info" href="">Action Plan</a></td>
+                    <td class="text-right"><a href=""><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div><br>
+    </div>
+    <div class="modal fade" id="addTerm" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Edit Term</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Default</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Health</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Finance</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Community</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Education</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">
+                  <div class="text-left">Council</div>
+                </label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-setup.html">Save</a></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
