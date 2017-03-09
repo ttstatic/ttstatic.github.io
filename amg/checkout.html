@@ -132,8 +132,8 @@
                     </tr>
                     <tfoot>
                       <tr>
-                        <td class="text-right" colspan="4">Subtotal<br>Shipping Cost</td>
-                        <td>$ 9.50<br>$ 6.95</td>
+                        <td class="text-right" colspan="4">Subtotal<br>Discount<br>GST<br>Shipping Cost</td>
+                        <td>$ 9.50<br>$ 0.00<br>$ 0.00<br>$ 6.95</td>
                       </tr>
                       <tr>
                         <td class="text-right" colspan="5">Based on this location:&nbsp;<strong>Australia</strong><br><em>* Indicate your address below to see the cost for your location.</em></td>
@@ -242,20 +242,18 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Existing Addresses</label>
-                          <select class="form-control">
-                            <option>--Choose Address--</option>
-                          </select>
-                        </div>
-                      </div>
                     </div>
                     <div class="text-success"><sup><i class="fa fa-asterisk"></i>&nbsp;</sup>Shipment notifications will be sent to the email address indicated above.</div>
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" onclick="$(&quot;#shipTo&quot;).toggle()">Ship to a different address
                       </label>
+                    </div>
+                    <div class="form-group">
+                      <label>Existing Addresses</label>
+                      <select class="form-control">
+                        <option>--Choose Address--</option>
+                      </select>
                     </div>
                     <div class="alert alert-warning" id="shipTo" style="display: none">
                       <div class="row">
