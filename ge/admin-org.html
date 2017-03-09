@@ -13,6 +13,7 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
     <link href="assets/vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,131 +51,500 @@
       </div>
     </nav>
     <div class="container">
-      <div class="org-filter">
-        <div class="form-inline">
-          <div class="form-group">
-            <label>Sector</label>
-            <div class="select _inline">
-              <select class="form-control">
-                <option>All</option>
-              </select><i class="material-icons">keyboard_arrow_down</i>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Status</label>
-            <div class="select _inline">
-              <select class="form-control">
-                <option>All</option>
-              </select><i class="material-icons">keyboard_arrow_down</i>
-            </div>
-          </div>
-          <div class="form-group form-icon">
-            <input class="form-control" type="text" placeholder="Enter Organisation Name"><i class="material-icons">search</i>
-          </div>
-        </div>
-      </div>
-      <nav class="text-right" aria-label="Page navigation">
-        <ul class="pagination org-pagination">
-          <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="material-icons">keyboard_arrow_left</i></span></a></li>
-          <li><a href="#">1</a></li>
-          <li class="active"><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="material-icons">keyboard_arrow_right</i></span></a></li>
-        </ul>
-      </nav>
-      <div class="org-list" data-index="0">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="1">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="2">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="3">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="4">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="5">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="6">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="7">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="8">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <div class="org-list" data-index="9">
-        <div class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></div>
-        <div class="org-col status">
-          <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
-        </div>
-        <div class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></div>
-        <div class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></div>
-      </div>
-      <nav class="text-right" aria-label="Page navigation">
-        <ul class="pagination org-pagination">
-          <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="material-icons">keyboard_arrow_left</i></span></a></li>
-          <li><a href="#">1</a></li>
-          <li class="active"><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="material-icons">keyboard_arrow_right</i></span></a></li>
-        </ul>
-      </nav><br>
+      <!-- data table-->
+      <table class="org-list dt-responsive nowrap" id="orgList">
+        <thead class="hide">
+          <tr>
+            <th>dummy only - para umandar lang mga dre.</th>
+            <th>dummy only - para umandar lang mga dre.</th>
+            <th>dummy only - para umandar lang mga dre.</th>
+            <th>dummy only - para umandar lang mga dre.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-index="0">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="1">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="2">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="3">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="4">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="5">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="6">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="7">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="8">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="9">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="10">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="11">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="12">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="13">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="14">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="15">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="16">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="17">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="18">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="19">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="20">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="21">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="22">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="23">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="24">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="25">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="26">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="27">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="28">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="29">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="30">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="31">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="32">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="33">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="34">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="35">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="36">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="37">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="38">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="39">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="40">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="41">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="42">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="43">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="44">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="45">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="46">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="47">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="48">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="49">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="50">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="51">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="52">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="53">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="54">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="55">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="56">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="57">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="58">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="active"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Active</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+          <tr data-index="59">
+            <td class="org-col company"><span class="avatar"><img src="https://unsplash.it/70/?random"></span><strong>Company Name</strong></td>
+            <td class="org-col status">
+              <div class="expired"><i class="material-icons">fiber_manual_record</i><strong>&nbsp;Expired</strong></div>
+            </td>
+            <td class="org-col info"><span class="text-muted">Modified by:&nbsp;</span><strong>David Raymond</strong><br><span class="text-muted">Modified date:&nbsp;</span><strong>07 January 2017</strong></td>
+            <td class="org-col control"><a href="admin-org-details.html"><i class="material-icons">mode_edit</i></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- original markup--><br><br>
     </div>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -184,6 +554,7 @@
     <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js" type="text/javascript"></script>
     <script src="assets/vendor/fullcalendar/js/moment.min.js" type="text/javascript"></script>
     <script src="assets/vendor/fullcalendar/js/fullcalendar.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
     <!-- External Script goes here...-->
@@ -193,6 +564,16 @@
         $('.btn-collapse').on('click', function() {
           $(this).parent().toggleClass('expanded');
         });
+      
+        $('#orgList').DataTable({
+          oLanguage: {
+            sSearch: '',
+            sSearchPlaceholder: "Enter Organisation Name"
+          },
+          responsive: true
+        });
+      
+      
       
       });
     </script>
