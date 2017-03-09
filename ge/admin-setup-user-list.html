@@ -84,7 +84,7 @@
           </nav>
         </div>
         <div class="col-md-9">
-          <div class="card admin-form"><a class="ge-btn _colored _filled _success pull-right" href="#addTerm" data-toggle="modal">+ Add Term</a>
+          <div class="card admin-form"><a class="ge-btn _colored _filled _success pull-right" href="#addUser" data-toggle="modal">+ Add User</a>
             <h4>Admin User List</h4>
             <hr>
             <div class="table-responsive form-table">
@@ -104,7 +104,7 @@
                     <td>Chair</td>
                     <td>180</td>
                     <td><a class="nomargin text-info" href="">Results</a>&nbsp;|&nbsp;<a class="nomargin text-info" href="">Action Plan</a></td>
-                    <td class="text-right"><a href=""><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></td>
+                    <td class="text-right"><a href="#addUser" data-toggle="modal"><i class="material-icons">mode_edit</i></a><a href=""><i class="material-icons">delete</i></a></td>
                   </tr>
                 </tbody>
               </table>
@@ -113,67 +113,181 @@
         </div>
       </div><br>
     </div>
-    <div class="modal fade" id="addTerm" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Edit Term</h4>
+            <h4 class="modal-title">Add User</h4>
           </div>
           <div class="modal-body">
-            <form class="form-horizontal">
+            <form class="form-horizontal _bordered">
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Default</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Title</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Miss</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Health</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">First Name</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Finance</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Last Name</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <input class="form-control" type="text" value="">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Community</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Email</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <input class="form-control" type="email" value="">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Education</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Date of Birth</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-6">
+                      <label class="col-sm-4 control-label" for="">
+                        <div class="text-left">Gender</div>
+                      </label>
+                      <div class="col-sm-8">
+                        <div class="select">
+                          <select class="form-control">
+                            <option>&nbsp;</option>
+                          </select><i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">
-                  <div class="text-left">Council</div>
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Years on the Board</div>
                 </label>
-                <div class="col-sm-10">
-                  <input class="form-control" type="text">
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input class="form-control" type="text" value="">
+                    </div><br class="visible-sm">
+                    <div class="col-md-8">
+                      <label class="col-sm-7 control-label" for="">
+                        <div class="text-left">Governance Experience</div>
+                      </label>
+                      <div class="col-sm-5">
+                        <input class="form-control" type="text" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Phone Number</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Phone Number 2</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Password</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="form-control" type="password" value="password">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Role</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Director</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Status</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="select">
+                        <select class="form-control">
+                          <option>Active</option>
+                        </select><i class="material-icons">keyboard_arrow_down</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="">
+                  <div class="text-left">Welcome Email</div>
+                </label>
+                <div class="col-sm-7">
+                  <div class="row">
+                    <div class="col-md-6"><a class="ge-btn _colored _filled _success" href="">Send Email</a></div>
+                  </div>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <div class="text-right"><a class="ge-btn _lnk" href="evaluation.html">Cancel</a><a class="ge-btn _colored _filled _success" href="admin-setup.html">Save</a></div>
+            <div class="text-right"><a class="ge-btn _lnk" href="">Cancel</a><a class="ge-btn _colored _filled _success" href="">Save</a></div>
           </div>
         </div>
       </div>
