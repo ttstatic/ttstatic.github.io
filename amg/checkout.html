@@ -109,50 +109,344 @@
         <div class="breadcrumb"><a href="">Shopping Cart</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href=""><strong class="text-success">Checkout</strong></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">Confirmation</a></div>
         <h3 class="block-heading">Checkout</h3>
         <div class="row">
-          <div class="col-md-7">
-            <h4>Shipping Details</h4>
-            <hr>
-            <address><strong>Account Details:</strong>
-              <div class="name">John Smith</div>
-              <div class="email">john.smith@email.com</div>
-            </address>
-            <address>
-              <div class="checkbox pull-right">
-                <label>
-                  <input type="checkbox"><strong>Ship to a different address</strong>
-                </label>
-              </div>
-              <div class="clearfix visible-sm visible-xs"></div><strong>Ship to this address:</strong>
-              <div class="name">Unit 1, 20-30 Stubbs St,<br>Silverwater, NSW 2128<br>Australia</div>
-            </address><br>
-            <h4>Payment Details</h4>
-            <hr>
-            <div class="payment-details">
-              <div class="form-group">
-                <label>Name on card</label>
-                <input class="form-control" type="text">
-              </div>
-              <div class="form-group">
-                <label>Card Number</label>
-                <input class="form-control" type="text">
-              </div>
+          <div class="col-md-8">
+            <div class="checkout-forms">
+              <h4>Review Your Order</h4>
+              <div class="card">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td><img width="48px" src="https://unsplash.it/70?random"></td>
+                      <td><strong>Product Name - Variant</strong></td>
+                      <td>1</td>
+                      <td>$ 6.95</td>
+                      <td>$ 6.95</td>
+                    </tr>
+                    <tfoot>
+                      <tr>
+                        <td class="text-right" colspan="4">Subtotal<br>Shipping Cost</td>
+                        <td>$ 9.50<br>$ 6.95</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right" colspan="5">Based on this location:&nbsp;<strong>Australia</strong><br><em>* Indicate your address below to see the cost for your location.</em></td>
+                      </tr>
+                      <tr>
+                        <td class="text-right" colspan="4">
+                          <big>Total Due</big>
+                        </td>
+                        <td>
+                          <big class="text-danger">$ 16.45</big>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div><br>
+              <h4>Enter Coupon Code</h4>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Valid until (mm/yyyy)</label>
-                    <input class="form-control" type="text">
+                  <div class="input-group">
+                    <input class="form-control" type="text"><span class="input-group-btn">
+                      <button class="btn btn-info" type="button">Apply</button></span><span class="input-group-btn">
+                      <button class="btn btn-link" type="button">&times;</button></span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>CVC Code</label>
-                    <input class="form-control" type="text">
+              </div><br>
+              <h4>Checkout Options</h4>
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="active" role="presentation"><a href="#checkoutTabLogin" aria-controls="home" role="tab" data-toggle="tab">Login</a></li>
+                <li role="presentation"><a href="#checkoutTabRegister" aria-controls="profile" role="tab" data-toggle="tab">Register</a></li>
+              </ul>
+              <div class="card">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="checkoutTabLogin" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Email Address</label>
+                          <input class="form-control" type="email">
+                        </div>
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input class="form-control" type="password">
+                        </div><a href="">Forgot your password?</a>
+                        <button class="btn btn-success pull-right">Login</button>
+                      </div>
+                    </div>
+                    <hr>
+                    <h5>Checkout as Guest</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>First Name</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Last Name</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Primary Phone</label>
+                          <input class="form-control" type="phone">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Email Address</label>
+                          <input class="form-control" type="email">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Street Address</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Suburb</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>State / Province</label>
+                          <select class="form-control">
+                            <option>--Choose State--</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Postal Code</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Country</label>
+                          <select class="form-control">
+                            <option>--Choose State--</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Existing Addresses</label>
+                          <select class="form-control">
+                            <option>--Choose Address--</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-success"><sup><i class="fa fa-asterisk"></i>&nbsp;</sup>Shipment notifications will be sent to the email address indicated above.</div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" onclick="$(&quot;#shipTo&quot;).toggle()">Ship to a different address
+                      </label>
+                    </div>
+                    <div class="alert alert-warning" id="shipTo" style="display: none">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>First Name</label>
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Last Name</label>
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Primary Phone</label>
+                            <input class="form-control" type="phone">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Email Address</label>
+                            <input class="form-control" type="email">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Street Address</label>
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Suburb</label>
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>State / Province</label>
+                            <select class="form-control">
+                              <option>--Choose State--</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Postal Code</label>
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Country</label>
+                            <select class="form-control">
+                              <option>--Choose State--</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Existing Addresses</label>
+                            <select class="form-control">
+                              <option>--Choose Address--</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div><br>
+                    <h5>Leave us a Note</h5>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5"></textarea>
+                    </div><br>
+                    <h5>Payment Details</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="checkbox">
+                          <label>
+                            <input type="radio" name="paymentMethod" checked>&nbsp;<img src="assets/images/paypal.png" width="100">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="checkbox">
+                          <label>
+                            <input type="radio" name="paymentMethod">&nbsp;<img src="assets/images/eway.png" width="100">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <p class="lead text-right"><strong>Total due:&nbsp;</strong>
+                      <big class="text-danger">$ 16.45</big>
+                    </p>
+                    <div class="checkbox text-right">
+                      <label>
+                        <input type="checkbox">Subscribe to our newsletter to receive Amgrow news, discounts &amp; specials.
+                      </label>
+                    </div>
+                    <div class="text-right"><a class="btn btn-success btn-lg" href="">Proceed to Checkout</a></div>
+                  </div>
+                  <div class="tab-pane" id="checkoutTabRegister" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input class="form-control" type="password">
+                        </div>
+                        <div class="form-group">
+                          <label>Confirm Password</label>
+                          <input class="form-control" type="password">
+                        </div><sup><i class="fa fa-asterisk"></i>&nbsp;</sup>The email address that will be inputted below will be used as your username the next time you log in.
+                      </div>
+                    </div>
+                    <hr>
+                    <h5>Your details</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>First Name</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Last Name</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Primary Phone</label>
+                          <input class="form-control" type="phone">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Email Address</label>
+                          <input class="form-control" type="email">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Street Address</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Suburb</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>State / Province</label>
+                          <select class="form-control">
+                            <option>--Choose State--</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Postal Code</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label><sup class="text-danger"><i class="fa fa-asterisk"></i>&nbsp;</sup>Country</label>
+                          <select class="form-control">
+                            <option>--Choose State--</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-success"><sup><i class="fa fa-asterisk"></i>&nbsp;</sup>Shipment notifications will be sent to the email address indicated above.</div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Ship to a different address
+                      </label>
+                    </div>
+                    <div class="text-right"><a class="btn btn-success" href="">Register</a></div>
                   </div>
                 </div>
-              </div><a class="btn btn-success btn-block btn-lg" href="">Purchase items</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <h4>Your Order</h4>
             <div class="card order-details">
               <div class="media">
