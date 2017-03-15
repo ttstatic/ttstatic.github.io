@@ -187,7 +187,8 @@
               <div class="stats">
                 <div class="rate-counter">
                   <div class="ring">
-                    <div class="count">94<span>points</span></div>
+                    <div class="count">94</div>
+                    <div class="arc-text">drinkers points</div>
                   </div>
                 </div>
               </div><img ng-src="{{variant0_image}}" alt="">
@@ -881,12 +882,16 @@
     <script src="//ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js" type="text/javascript"></script>
     <script src="//cdn3.devexpress.com/jslib/13.2.9/js/dx.chartjs.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <script src="assets/scripts/CircleType/js/plugins.js" type="text/javascript"></script>
+    <script src="assets/scripts/CircleType/js/circletype.min.js" type="text/javascript"></script>
     <script src="assets/vendor/teaservice/teaservice.js" type="text/javascript"></script>
     <script src="assets/vendor/authservice/authservice.js" type="text/javascript"></script>
     <!-- External Script goes here...-->
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function(){
+        
+        $('.rate-counter .ring .arc-text').circleType({radius: 48, dir:-1});
       
         //- $(window).on("load resize", function() {
         //-   if ( $(this).width() > 991 ) {

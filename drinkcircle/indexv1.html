@@ -83,7 +83,7 @@
                   <div class="authservice-current-user-firstname inline"></div>&nbsp;!</a>
                 <ul class="dropdown-menu">
                   <li><a href="myprofile.html">Profile</a></li>
-                  <li><a href="circlebuy-requests.html">Circlebuy</a></li>
+                  <li><a href="#modal_coming_soon" data-toggle="modal">Circlebuy</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">Circles</a></li>
                   <li><a href="#modal_coming_soon" data-toggle="modal">My Orders</a></li>
                   <li class="divider" role="separator"></li>
@@ -95,7 +95,7 @@
               <li><a class="cart-icon" href="#modal_coming_soon" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
             <!-- Menu if not logged in-->
-            <ul class="nav navbar-nav navbar-right authservice-logged-out">
+            <ul class="nav navbar-nav navbar-right authservice-logged-out" style="display:none">
               <li class="dropdown"><a class="dropdown-toggle info" id="authservice-user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>
                   <!--img(src="assets/images/img_advisor_1.jpg", alt="")-->&nbsp;sign in</a>
                 <ul class="dropdown-menu">
@@ -180,8 +180,8 @@
             <!-- Navbar - DRINKS, RED, WHITE, etc-->
             <ul class="nav navbar-nav navbar-left nav-category">
               <li><a href="drinks.html?category=600">Drinks</a></li>
-              <li><a class="navbar-drinktype" href="drinks-red.html?category=620">Red</a></li>
-              <li><a class="navbar-drinktype" href="drinks-white.html?category=610">White</a></li>
+              <li><a class="navbar-drinktype" href="drinks.html?category=620">Red</a></li>
+              <li><a class="navbar-drinktype" href="drinks.html?category=610">White</a></li>
               <li><a class="navbar-drinktype" href="drinks-beer.html?category=660">Beer</a></li>
               <li><a class="navbar-drinktype" href="drinks-spirits.html">Spirits</a></li>
               <li><a class="navbar-drinktype" href="drinks-bubbles.html">Bubbles</a></li>
@@ -718,6 +718,8 @@
     <script src="//ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js" type="text/javascript"></script>
     <script src="//cdn3.devexpress.com/jslib/13.2.9/js/dx.chartjs.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <script src="assets/scripts/CircleType/js/plugins.js" type="text/javascript"></script>
+    <script src="assets/scripts/CircleType/js/circletype.min.js" type="text/javascript"></script>
     <script src="assets/vendor/teaservice/teaservice.js" type="text/javascript"></script>
     <script src="assets/vendor/authservice/authservice.js" type="text/javascript"></script>
     <!-- External Script goes here...-->
