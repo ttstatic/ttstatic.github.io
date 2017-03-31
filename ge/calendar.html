@@ -102,9 +102,9 @@
         <div class="pull-right"><i class="material-icons">help_outline</i></div>
       </h1>
       <hr>
-      <section>
+      <section class="calendar">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 left">
             <h4>Filter Events</h4>
             <nav class="cal-filter-events">
               <ul>
@@ -116,35 +116,11 @@
               </ul>
             </nav>
           </div>
-          <div class="col-md-9">
-            <hr class="visible-sm visible-xs">
-            <div class="cal-add-event">
-              <div class="col-md-3 col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" id="startDate" type="data" name="startDate" placeholder="Start Date">
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" id="endDate" type="data" name="endDate" placeholder="End Date">
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" name="title" placeholder="Title">
-                </div>
-              </div>
-              <div class="col-md-3 text-right">
-                <div class="form-group">
-                  <input id="color" type="color" name="color">
-                  <button class="ge-btn _colored _success _filled" id="addEvent" type="button">Add Event</button>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-9 right">
             <div id="geCalendar"></div><br>
           </div>
         </div>
-      </section>
+      </section><br>
     </div>
     <div class="modal fade" id="searchResult" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
