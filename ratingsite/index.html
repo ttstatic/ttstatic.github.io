@@ -23,14 +23,45 @@
     <header>
       <nav>
         <div class="menu"><a class="burger-bar" href=""><i class="top"></i><i class="mid"></i><i class="bot"></i></a></div>
-        <div class="logo"><img src="assets/images/logo.png"></div>
+        <div class="logo"><a href="index.html"><img src="assets/images/logo.png"></a></div>
         <div class="languages"></div>
       </nav>
       <div class="search"><span class="input" contenteditable="true" onfocus="this.innerHTML = &quot;&quot;" onblur="this.innerHTML = &quot;Search for Insurer&quot;">Search for Insurer</span></div>
     </header>
-    <section></section>
+    <section>
+      <div class="banner-home">
+        <div class="container">
+          <div class="tagline">
+            <h1><span class="highlight">Life insurance</span><br class="visible-xs"><span class="hidden-xs">&nbsp;</span>reviews&nbsp;<br class="hidden-xs">you can&nbsp;<br class="visible-xs">count on.</h1>
+            <p class="lead hidden-xs">Welcome to Jinjerjade, the insurance review site&nbsp;<br class="visible-sm">that empowers&nbsp;<strong>you.&nbsp;</strong><a href="">Here's how.</a></p>
+          </div>
+          <div class="support">
+            <div class="flower"><img src="assets/images/img-flower.png"></div>
+            <div class="personnel">
+              <div class="bubble">"Hi! We're&nbsp;<strong>Jin&nbsp;</strong>&amp;&nbsp;<br><strong>Jade.&nbsp;</strong><a href="">Let us know if you need anything!</a>"</div><img src="assets/images/img-help.png">
+            </div>
+            <div class="rocket"><img src="assets/images/img-rocket.png"></div>
+          </div>
+          <div class="call-to-action"><a class="browse" href=""><img src="assets/images/icon-reviews.png">Browse Reviews</a><a class="write" href=""><img src="assets/images/icon-write-review.png">Write a Review</a></div>
+        </div>
+      </div>
+    </section>
     <footer>
-      <h5> </h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-xs-4">
+            <div class="logo"><img src="assets/images/icon-footer.png"></div>
+          </div>
+          <div class="col-md-8 col-xs-8">
+            <nav><a href="">Write a Review</a><a href="">Browse Reviews</a><a href="">FAQ</a><a href="">How it Works</a><a href="">Self-Help Tools</a><a href="">About JinJerJade</a><a href="">For Insurers</a></nav>
+          </div>
+          <div class="col-md-2 hidden-xs">
+            <div class="social"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div><br>
+        <hr>
+        <p class="links"><a href="">Terms of Service</a><a href="">Privacy Policy</a><a href="">&copy;Galileo Platforms</a></p>
+      </div>
     </footer>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -41,7 +72,14 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-      
+        
+        $('.search').on('keydown', 'span.input', function(e) {
+          if ( e.keyCode == 13 ) {
+            e.preventDefault();
+            //- Add form action here.
+          }
+        });
+        
       });
     </script>
   </body>
