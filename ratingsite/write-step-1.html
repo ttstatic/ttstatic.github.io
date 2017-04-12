@@ -29,20 +29,44 @@
       <div class="search"><span class="input" contenteditable="true" onfocus="this.innerHTML = &quot;&quot;" onblur="this.innerHTML = &quot;Search for Insurer&quot;">Search for Insurer</span></div>
     </header>
     <section>
-      <div class="banner-home">
-        <div class="container">
-          <div class="tagline">
-            <h1><span class="highlight">Life insurance</span><br class="visible-xs"><span class="hidden-xs">&nbsp;</span>reviews&nbsp;<br class="hidden-xs">you can&nbsp;<br class="visible-xs">count on.</h1>
-            <p class="lead hidden-xs">Welcome to Jinjerjade, the insurance review site&nbsp;<br class="visible-sm">that empowers&nbsp;<strong>you.&nbsp;</strong><a href="">Here's how.</a></p>
-          </div>
-          <div class="support">
-            <div class="flower"><img src="assets/images/img-flower.png"></div>
-            <div class="personnel">
-              <div class="bubble">"Hi! We're&nbsp;<strong>Jin&nbsp;</strong>&amp;&nbsp;<br><strong>Jade.&nbsp;</strong><a href="">Let us know if you need anything!</a>"</div><img src="assets/images/img-help.png">
+      <div class="container">
+        <article>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="steps"><a class="part active" href="" data-label="Info" data-step="1"><a class="bullets active" href="" data-label="Insurer"></a><a class="bullets" href="" data-label="Product"></a><a class="bullets" href="" data-label="Means of Purchase"></a><a class="bullets" href="" data-label="Purchase Date"></a></a><a class="part" href="" data-label="My Review" data-step="2"></a><a class="part" href="" data-label="Publish" data-step="3"></a></div>
             </div>
-            <div class="rocket"><img src="assets/images/img-rocket.png"></div>
+            <div class="col-md-4">
+              <div class="answers">
+                <p>Lets start with your Insurance Company...</p>
+                <div class="search"><span contenteditable="true" onfocus="this.innerHTML = &quot;&quot;" onblur="this.innerHTML = &quot;Search&quot;">Search</span></div>
+                <div class="choices">
+                  <div class="bar">AIA</div>
+                  <div class="bar">AXA</div>
+                  <div class="bar">Manulife</div>
+                  <div class="bar">Met Life</div>
+                  <div class="bar">Prudential</div>
+                  <div class="bar">Met Life</div>
+                  <div class="bar">Prudential</div>
+                  <div class="bar">Prudential</div>
+                  <div class="bar">Met Life</div>
+                  <div class="bar">Prudential</div>
+                </div>
+              </div><br>
+              <div class="text-center">
+                <big class="link"><a href="">I don't see my insurer?</a></big>
+              </div>
+            </div>
           </div>
-          <div class="call-to-action"><a class="browse" href=""><img src="assets/images/icon-reviews.png">Browse Reviews</a><a class="write" href="write-step-1.html"><img src="assets/images/icon-write-review.png">Write a Review</a></div>
+        </article>
+        <div class="footer-help">
+          <div class="col rocket hidden-xs">
+            <div class="image"><img src="assets/images/img-rocket.png"></div>
+          </div>
+          <div class="col support">
+            <div class="image">
+              <div class="bubble"><a href="">How can I help?</a></div><img src="assets/images/img-boy.png">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -73,7 +97,7 @@
     <script>
       $(document).ready(function() {
         
-        $('.search').on('keydown', 'span.input', function(e) {
+        $('.answers .search').on('keydown', 'span', function(e) {
           if ( e.keyCode == 13 ) {
             e.preventDefault();
             //- Add form action here.
