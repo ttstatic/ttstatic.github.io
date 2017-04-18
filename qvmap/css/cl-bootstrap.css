@@ -10500,6 +10500,7 @@ html[xmlns] .flexslider .slides {
     float: left;
     font-size: 14px;
     padding-top: 2px;
+    position: absolute;
   }
   .map-results .brief h2 a {
     color: #555555;
@@ -10776,6 +10777,7 @@ html[xmlns] .flexslider .slides {
  transition: right .4s ease-in-out;
  -webkit-transition: right .4s ease-in-out;
  -moz-transition: right .4s ease-in-out;
+ margin-top: 0;
 }
 @media (max-width: 991px) {
  .map-results .right-module {
@@ -10784,9 +10786,11 @@ html[xmlns] .flexslider .slides {
    border: none;
    padding: 0;
    /*margin-top: 60px;*/
-   margin-top: 72px;
+   margin-top: 3px !important;
    /*z-index: 6;*/
    z-index: 5;
+   position: relative;
+   height: auto;
  }
 }
 .map-results .right-container {
