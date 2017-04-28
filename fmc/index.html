@@ -26,162 +26,217 @@
           <div class="col-md-6">
             <h3 class="section-title">Checkout</h3>
             <div class="radio-tablet">
-              <label for="radioGuest">
-                <input id="radioGuest" type="radio" name="checkoutType">Continue as guest
+              <label class="checked" for="radioGuest" data-target="#tabGuest" data-toggle="tab">
+                <input id="radioGuest" type="radio" name="checkoutType" checked>Continue as guest
               </label>
-              <label for="radioLogin">
+              <label for="radioLogin" data-target="#tabLogin" data-toggle="tab">
                 <input id="radioLogin" type="radio" name="checkoutType">Login or create account
               </label>
             </div>
             <div class="clearfix"><br></div>
-            <h4>1. Contact and address details</h4><br>
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Email:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required error" data-validation-text="Please enter a valid email address">
-                    <input class="form-control" type="text" placeholder="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">First name:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter first name">
-                    <input class="form-control" type="text" placeholder="" value="John">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Last name:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required error" data-validation-text="Enter last name">
-                    <input class="form-control" type="text" placeholder="" value="">
-                  </div>
-                </div>
-              </div>
-            </form><br class="clearfix">
-            <h4>2. Shipping address</h4><br>
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Phone:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter phone">
-                    <input class="form-control inline fluid" type="text" placeholder="" value="0800 664 324">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Company:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate" data-validation-text="Enter company">
-                    <input class="form-control" type="text" placeholder="(Optional)" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Address line 1:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter address">
-                    <input class="form-control" type="text" placeholder="" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Address line 2:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate" data-validation-text="">
-                    <input class="form-control" type="text" placeholder="(Optional)" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Suburb:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter suburb">
-                    <input class="form-control inline fluid" type="text" placeholder="" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Postcode:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter postcode">
-                    <input class="form-control inline" type="text" placeholder="" value="3045">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">State:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate required" data-validation-text="Enter state">
-                    <select class="form-control inline fluid">
-                      <option disabled selected>Choose state</option>
-                      <option>NSW</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Country:</label>
-                <div class="col-sm-9">
-                  <div class="form-validate" data-validation-text="Enter postcode">
-                    <input class="form-control inline" type="text" placeholder="" value="Australia">
-                  </div>
-                </div>
-              </div>
-            </form><br class="clearfix">
-            <h4>3. Payment Method</h4>
-            <div class="radio-tablet">
-              <label for="radioCc">
-                <input id="radioCc" type="radio" name="checkoutType">Credit Card
-              </label>
-              <label for="radioPaypal">
-                <input id="radioPaypal" type="radio" name="checkoutType">PayPal
-              </label>
-            </div>
-            <div class="clearfix"><br></div>
-            <div class="credit-card">
-              <div class="block-space hidden-xs"></div>
-              <div class="form-group">
-                <div class="label">Card number:</div>
-                <div class="card-number visa">
-                  <input class="form-control" type="text" value="0009 8887 8786 0897">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tabGuest" role="tabpanel">
+                <h4>1. Contact and address details</h4><br>
+                <form class="form-horizontal">
                   <div class="form-group">
-                    <div class="label">Expiration date:</div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6">
-                        <select class="form-control">
-                          <option>MM</option>
-                        </select>
-                      </div><br class="visible-xs">
-                      <div class="col-md-6 col-sm-6">
-                        <select class="form-control">
-                          <option>YY</option>
+                    <label class="col-sm-3 control-label">Email:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required error" data-validation-text="Please enter a valid email address">
+                        <input class="form-control" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">First name:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter first name">
+                        <input class="form-control" type="text" placeholder="" value="John">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Last name:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required error" data-validation-text="Enter last name">
+                        <input class="form-control" type="text" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                </form><br class="clearfix">
+                <h4>2. Shipping address</h4><br>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Phone:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter phone">
+                        <input class="form-control inline fluid" type="text" placeholder="" value="0800 664 324">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Company:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Enter company">
+                        <input class="form-control" type="text" placeholder="(Optional)" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Address line 1:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter address">
+                        <input class="form-control" type="text" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Address line 2:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="">
+                        <input class="form-control" type="text" placeholder="(Optional)" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Suburb:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter suburb">
+                        <input class="form-control inline fluid" type="text" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Postcode:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter postcode">
+                        <input class="form-control inline" type="text" placeholder="" value="3045">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">State:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate required" data-validation-text="Enter state">
+                        <select class="form-control inline fluid">
+                          <option disabled selected>Choose state</option>
+                          <option>NSW</option>
                         </select>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
                   <div class="form-group">
-                    <div class="label">Security code:&nbsp;<i class="fa fa-question-circle"></i></div>
-                    <input class="card-number form-control inline" type="text" placeholder="CVV" value="">
+                    <label class="col-sm-3 control-label">Country:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Enter postcode">
+                        <input class="form-control inline" type="text" placeholder="" value="Australia">
+                      </div>
+                    </div>
                   </div>
+                </form><br class="clearfix">
+                <h4>3. Payment Method</h4>
+                <div class="radio-tablet">
+                  <label for="radioCc">
+                    <input id="radioCc" type="radio" name="checkoutType">Credit Card
+                  </label>
+                  <label for="radioPaypal">
+                    <input id="radioPaypal" type="radio" name="checkoutType">PayPal
+                  </label>
+                </div>
+                <div class="clearfix"><br></div>
+                <div class="credit-card">
+                  <div class="block-space hidden-xs"></div>
+                  <div class="form-group">
+                    <div class="label">Card number:</div>
+                    <div class="card-number visa">
+                      <input class="form-control" type="text" value="0009 8887 8786 0897">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <div class="label">Expiration date:</div>
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <select class="form-control">
+                              <option>MM</option>
+                            </select>
+                          </div><br class="visible-xs">
+                          <div class="col-md-6 col-sm-6">
+                            <select class="form-control">
+                              <option>YY</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <div class="label">Security code:&nbsp;<i class="fa fa-question-circle"></i></div>
+                        <input class="card-number form-control inline" type="text" placeholder="CVV" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div><br>
+                <div class="text-agree"><span class="text-muted">By placing your order, you agree to&nbsp;</span><a href="">Text &amp; Condition</a></div><br>
+                <div class="center"><a class="fmc-btn danger lg" href="">Pay with Credit Card</a></div>
+                <div class="clearfix"><br></div>
+                <div class="secure-shopping">
+                  <p class="text-muted">Secure shopping</p><span class="icon fa-stack fa-lg"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-lock fa-stack-1x"></i></span>
+                  <input class="form-control flat" type="text">
+                  <input class="form-control flat" type="text">
                 </div>
               </div>
-            </div><br>
-            <div class="text-agree"><span class="text-muted">By placing your order, you agree to&nbsp;</span><a href="">Text &amp; Condition</a></div><br>
-            <div class="center"><a class="fmc-btn danger lg" href="">Pay with Credit Card</a></div>
-            <div class="clearfix"><br></div>
-            <div class="secure-shopping">
-              <p class="text-muted">Secure shopping</p><span class="icon fa-stack fa-lg"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-lock fa-stack-1x"></i></span>
-              <input class="form-control flat" type="text">
-              <input class="form-control flat" type="text">
+              <div class="tab-pane fade" id="tabLogin" role="tabpanel">
+                <h4>Log in</h4><br>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Email:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Please enter a valid email address">
+                        <input class="form-control" type="text" placeholder="" value="sample@company.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Password:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Incorrect password">
+                        <input class="form-control" type="password" placeholder="" value="password">
+                      </div><br><a class="fmc-btn primary" href="">Log in</a>
+                      <div class="clearfix"><br></div><a class="fmc-btn-link" href="">Forgot your password?</a>
+                    </div>
+                  </div>
+                  <div class="separator" data-text="or"></div>
+                </form>
+                <h4>Create account</h4><br>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Email:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Please enter a valid email address">
+                        <input class="form-control" type="text" placeholder="" value="sample@company.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Password:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Enter password">
+                        <input class="form-control" type="password" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Confirm:</label>
+                    <div class="col-sm-9">
+                      <div class="form-validate" data-validation-text="Password does not match">
+                        <input class="form-control" type="password" placeholder="" value="">
+                      </div><br>By creating account, you agree to&nbsp;<a class="fmc-btn-link" href="">Terms &amp; Conditions</a>
+                      <div class="clearfix"><br></div><a class="fmc-btn disabled" href="">Create an account</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div><br>
           </div>
           <div class="col-md-6">
@@ -261,7 +316,7 @@
                 <input class="form-control flat" type="text">
                 <input class="form-control flat" type="text">
               </div>
-            </center>
+            </center><br>
           </div>
         </div>
       </div>
@@ -276,11 +331,12 @@
     <script>
       $(document).ready(function() {
         
-        $('.radio-tablet').on('click', 'input', function() {
-          if ( $(this).is(':checked') ) {
-            $(this).parents('.radio-tablet:eq(0)').find('label').removeClass('checked');
-            $(this).parent().addClass('checked');
-          }
+        $('.radio-tablet').on('click', 'label', function() {
+          $(this).on('shown.bs.tab', function(e) {
+            $(this).parent().find('label').removeClass('checked');
+            $(this).addClass('checked');
+            $(this).find(':radio').prop('checked', 'checked');
+          });
         });
         
       });
