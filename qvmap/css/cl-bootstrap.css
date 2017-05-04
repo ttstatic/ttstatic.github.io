@@ -10815,6 +10815,9 @@ html[xmlns] .flexslider .slides {
 .right-module.hidePanel {
   right: -440px;
 }
+.right-module.hidePanel.expandPanel {
+  width: 440px;
+}
 .right-module a.collapse-btn {
   left: -35px;
   right: auto;
@@ -10826,4 +10829,41 @@ html[xmlns] .flexslider .slides {
 }
 .right-module.hidePanel a.collapse-btn i::before {
   content: "\f053";
+}
+
+.expand-btn {
+  display: block;
+  left: -70px;
+  transition: left .5s ease-in-out;
+  right: auto;
+  position: absolute;
+  top: 50%;
+
+  -webkit-border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 3px 0px 0px 3px;
+  border-radius: 3px 0px 0px 3px;
+
+  background: #eaeaea;
+  border-top: 1px solid #eaeaea;
+  border-right: 0;
+  border-left: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  width: 40px;
+  height: 60px;
+  padding-top: 20px;
+  color: #858585;
+}
+.right-module.hidePanel .expand-btn {
+  left: -35px;
+}
+.right-module.expandPanel .expand-btn i::before {
+  content: "\f101";
+}
+.right-module.expandPanel, .right-module:not(.expandPanel) {
+  transition: all .3s ease-in-out;
+}
+.right-module.expandPanel {
+  width: calc(100% - 545px);
+  z-index: 6;
 }

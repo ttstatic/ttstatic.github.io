@@ -59,12 +59,12 @@
                 <div id="googleMap"></div>
             </div>
             <div class="row visible-xs visible-sm" id="map-search-div">
-                <div class="map-search-pane col-xs-6">
+                <div class="map-search-pane col-xs-12">
                     <div class="input">
                         <input placeholder="Search..." id="map-search-input" autocomplete="off">
                     </div>
                 </div>
-                <div class="col-xs-3 text-right white-space-nowrap">
+                <div class="col-xs-4 text-right white-space-nowrap">
             			<a href="javascript: void(0);" class="refine-btn toggle-view" id="props-close-btn" style="display: none;">
                     <object type="image/svg+xml" height="18" width="18" data="img/icon-list.svg"></object>
                     <span style="margin-left: 2px;"> list</span>
@@ -74,7 +74,7 @@
                     <span style="margin-left: -4px;"> map</span>
                   </a>
             		</div>
-                <div class="col-xs-3 text-right white-space-nowrap">
+                <div class="col-xs-4 text-right white-space-nowrap">
                     <a href="#" class="refine-btn" id="refine-button">
                       <img src="img/refine-icon.png">
                       &nbsp;refine
@@ -458,6 +458,9 @@
 
             <!-- [RIGHT PANEL START] -->
             <div class="right-module">
+                <a href="#" class="expand-btn hidden-xs hidden-sm" id="expandRightButton">
+                    <i class="fa fa-angle-double-left"></i>
+                </a>
                 <a href="#" class="collapse-btn hidden-xs hidden-sm" id="closeRightButton">
                     <i class="fa fa-chevron-right"></i>
                 </a>

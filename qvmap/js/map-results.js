@@ -365,6 +365,10 @@
 // CUSTOM - Rodan
 $(document).ready(function() {
 	$('.right-module a.collapse-btn').click(function() {
+		$(this).parent().removeClass('expandPanel');
 		$(this).parent().toggleClass('hidePanel');
+	});
+	$('.right-module a.expand-btn').click(function() {
+		$(this).parent().toggleClass('expandPanel');
 	});
 });
