@@ -25,22 +25,19 @@
       <header><a href="pos-select.html"><img src="assets/images/logo.png"></a>
         <div class="header-controls"><a class="btn btn-link" href="">Cancel Transaction</a><a class="btn btn-default" href="">Log Out</a></div>
       </header>
-      <div class="toolbar _display">
-        <div class="search">
-          <input type="text" placeholder="Search"><a class="clear" href=""><i class="fa fa-times-circle"></i></a>
-        </div>
-        <div class="categories">
-          <select>
-            <option>Product Categories</option>
-          </select>
-        </div>
-        <div class="products-view"><a href=""><i class="fa fa-th-large fa-2x"></i></a></div>
-      </div>
-      <div class="toolbar _status">
-        <label>New Customer</label><a href=""><i class="fa fa-plus-circle"></i></a>
-      </div>
       <div class="wrap">
         <aside class="display">
+          <div class="toolbar _display">
+            <div class="search">
+              <input type="text" placeholder="Search"><a class="clear" href=""><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="categories">
+              <select>
+                <option>Product Categories</option>
+              </select>
+            </div>
+            <div class="products-view"><a href=""><i class="fa fa-th-large fa-2x"></i></a></div>
+          </div>
           <div class="product-details">
             <div class="img"><img src="https://unsplash.it/70/50?blur" alt="..." width="200"></div>
             <div class="detail-name">
@@ -105,21 +102,64 @@
         </aside>
         <aside class="actions">
           <div class="payment-method">
-            <h4>Customer Information<br><small>Create an account for the customer for future references and record keeping.</small></h4>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control input-lg" placeholder="First Name">
+            <h4>Customer Information</h4>
+            <div class="customer-info">
+              <div class="row">
+                <div class="col-xs-12"><a class="add-customer" href=""><i class="fa fa-plus-circle fa-2x"></i></a>
+                  <div class="avatar"><img src="https://unsplash.it/70/50?blur" alt="..."></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control input-lg" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control input-lg" placeholder="Last Name">
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control input-lg" placeholder="Last Name">
-                </div>
+              <div class="form-group">
+                <input class="form-control input-lg" placeholder="Email Address">
               </div>
             </div>
-            <div class="form-group">
-              <input class="form-control input-lg" placeholder="Email Address">
+            <div class="customer-info">
+              <div class="row">
+                <div class="col-sm-2 col-md-3">
+                  <div class="avatar"><img src="https://unsplash.it/70/50?blur" alt="..."></div>
+                </div>
+                <div class="col-sm-8 col-md-9"><a class="add-customer" href=""><i class="fa fa-minus-circle fa-2x"></i></a>
+                  <p class="lead">Rodan Luzuriaga</p>
+                  <big>
+                    <div>Customer Code</div>
+                    <div>rodan.luzuriaga@tooltwist.com</div>
+                    <div>Berthaphil Clark Freeport Zone</div>
+                  </big><br>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <big class="text-muted">Store Credit:</big>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <big>Available</big>
+                        </div>
+                        <div class="col-sm-6">
+                          <big>$999.99</big>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <big>Credit Limit</big>
+                        </div>
+                        <div class="col-sm-6">
+                          <big>$999.99</big>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div><br>
             <div class="well">
               <h4>Get Order Options</h4>
@@ -128,9 +168,9 @@
             <h4>Payment Information</h4>
             <div class="btn-options">
               <div class="row">
-                <div class="col-md-4"><a class="btn btn-success btn-block" href="">Cash</a></div>
-                <div class="col-md-4"><a class="btn btn-info btn-block" href="#method-cc" data-toggle="collapse">Credit Card</a></div>
-                <div class="col-md-4"><a class="btn btn-warning btn-block" href="">Store Credit</a></div>
+                <div class="col-sm-4"><a class="btn btn-success btn-block" href="">Cash</a></div>
+                <div class="col-sm-4"><a class="btn btn-info btn-block" href="#method-cc" data-toggle="collapse">Credit Card</a></div>
+                <div class="col-sm-4"><a class="btn btn-warning btn-block" href="">Store Credit</a></div>
               </div>
             </div><br>
             <div class="collapse" id="method-cc">
@@ -151,7 +191,8 @@
                   </div>
                 </div>
               </div>
-            </div><a class="btn btn-primary btn-lg btn-block" href="">Add Discount</a><a class="btn btn-danger btn-lg btn-block" href="">Void / Override</a>
+            </div>
+            <hr><a class="btn btn-primary btn-lg btn-block" href="">Add Discount</a><br><a class="btn btn-danger btn-lg btn-block" href="">Void / Override</a>
           </div>
         </aside>
       </div>
