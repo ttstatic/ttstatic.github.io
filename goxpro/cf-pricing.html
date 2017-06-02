@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>GoXPro</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800)" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <style>
+        .table-plan {
+          width: 100%;
+        }
+        .table-plan td, .table-plan th {
+          text-align: center;
+        }
+        .table-plan td img {
+          width: 25px;
+        }
+        .table-plan td {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        .f-title,
+        .f-plus,
+        .f-elite {
+          color: white;
+          padding: 45px 15px;
+        }
+        .f-title p,
+        .f-plus p,
+        .f-elite p,
+        .f-title h4,
+        .f-plus h4,
+        .f-elite h4 {
+          font-weight: 500;
+        }
+        .f-title p:last-child,
+        .f-plus p:last-child,
+        .f-elite p:last-child {
+          margin-bottom: 0;
+        }
+        .f-title h3,
+        .f-plus h3,
+        .f-elite h3 {
+          margin-top: 0;
+        }
+        .f-title {
+          border-top-left-radius: 0.3em;
+          background: #525252;
+          background: -webkit-linear-gradient(to left,#6a6969,#292929);
+          background: linear-gradient(to right,#6a6969,#292929);
+        }
+        .f-plus {
+          background: #4393d8;
+          background: -webkit-linear-gradient(to left,#4393d8,#2d6db9);
+          background: linear-gradient(to right,#4393d8,#2d6db9);
+        }
+        .f-elite {
+          border-top-right-radius: 0.3em;
+          background: #62bf5d;
+          background: -webkit-linear-gradient(to left,#62bf5d,#379e39);
+          background: linear-gradient(to right,#62bf5d,#379e39);
+        }
+        button._plus,
+        button._elite {
+          font-weight: 600;
+          color: #fff;
+          border: none;
+          margin: 0.8em;
+          padding: 15px 35px;
+        }
+        button._plus {
+          background: linear-gradient(to right,#4393d8,#2d6db9);
+          border-radius: 2em;
+        }
+        button._elite {
+          background: linear-gradient(to right,#62bf5d,#379e39);
+          border-radius: 2em;
+        }
+      </style>
+      <table class="table-plan">
+        <thead>
+          <tr>
+            <!-- - Titles --->
+            <th class="f-title">
+              <h3 class="hf">Features</h3>
+            </th>
+            <th class="f-plus">
+              <h3>goXpro Plus</h3>
+              <h4>From $25/month</h4>
+              <p>From 5 to Unlimited Clients</p>
+            </th>
+            <th class="f-elite">
+              <h3>goXpro Elite</h3>
+              <h4>From $35/month</h4>
+              <p>From 5 to Unlimited Clients</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- - 1 --->
+            <td class="l-left">Unlimited Personal Trainers</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 2 --->
+            <td class="l-left">Unlimited Programs</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 3 --->
+            <td class="l-left">Unlimited Sessions</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 4 --->
+            <td class="l-left">Mobile/Paperless Trainer's App</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 5 --->
+            <td class="l-left">Club MAD - (Management, Administration & Dashboard)</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 6 --->
+            <td class="l-left">MINDBODY Integration</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 7 --->
+            <td class="l-left">Client App Integration - "Pocket Coach" (soon)</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 8 --->
+            <td class="l-left">Questionnaires & Goal Setting</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 9 --->
+            <td class="l-left">1700+ Sequenced Exercises</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 10 --->
+            <td class="l-left">Private Exercise Library</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 11 --->
+            <td class="l-left">Email Programs To Clients</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 12 --->
+            <td class="l-left">Branded With Your Logo</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 13 --->
+            <td class="l-left">Cardio Templates</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 14 --->
+            <td class="l-left"> PT Boxing Drills</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 15 --->
+            <td class="l-left">Calendar & Sessions Tracker</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 16 --->
+            <td class="l-left">Daily Sessions Planned</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 17 --->
+            <td class="l-left">iPad Sessions - All Recorded</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 18 --->
+            <td class="l-left">Do's & Don'ts Library</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 19 --->
+            <td class="l-left">Client Contracts & Invoices</td>
+            <td>
+              <center><img class="check" src="http://i67.tinypic.com/2d0cdwn.jpg"></center>
+            </td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 20 --->
+            <td class="l-left">Postural Analysis</td>
+            <td></td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 21 --->
+            <td class="l-left">Unlimited Advanced Fitness Evaluations</td>
+            <td></td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 22 --->
+            <td class="l-left">Detailed Client Fitness Reports</td>
+            <td></td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - 23 --->
+            <td class="l-left">Fitness Australia Accredited Course (11 CECs)</td>
+            <td></td>
+            <td>
+              <center><img class="check" src="http://i64.tinypic.com/dw5tao.png"></center>
+            </td>
+          </tr>
+          <tr>
+            <!-- - Buttons --->
+            <td>&nbsp;</td>
+            <td>
+              <center>
+                <button class="_plus">Try Free Now</button>
+              </center>
+            </td>
+            <td>
+              <center>
+                <button class="_elite">Contact Us</button>
+              </center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <style>
+        .plan {
+          text-align: center;
+          margin: 20px 0;
+        }
+        .plan header {
+          color: white;
+          background: gray;
+          padding: 25px 15px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        .plan header p.title {
+          
+        }
+        .plan header h3 {
+          margin-top: 0;
+        }
+        .plan header h2 small {
+          color: white;
+        }
+        .plan header p:last-child {
+          margin-bottom: 0;
+        }
+        .plan .features {
+          border: 1px solid #ddd;
+          border-top: 0;
+        }
+        .plan .features p {
+          border-top: 1px solid #eee;
+          margin: 0;
+          padding: 15px 0;
+          margin: 0 15px;
+        }
+        .plan .features p.off {
+          color: #ddd;
+        }
+        .plan._plus header {
+          background: #4393d8;
+          background: -webkit-linear-gradient(to left,#4393d8,#2d6db9);
+          background: linear-gradient(to right,#4393d8,#2d6db9);
+        }
+        .plan._elite header {
+          background: #62bf5d;
+          background: -webkit-linear-gradient(to left,#62bf5d,#379e39);
+          background: linear-gradient(to right,#62bf5d,#379e39);
+        }
+        button._plus,
+        button._elite {
+          font-weight: 600;
+          color: #fff;
+          border: none;
+          margin: 0.8em;
+          padding: 15px 35px;
+        }
+        button._plus {
+          background: linear-gradient(to right,#4393d8,#2d6db9);
+          border-radius: 2em;
+        }
+        button._elite {
+          background: linear-gradient(to right,#62bf5d,#379e39);
+          border-radius: 2em;
+        }
+      </style>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="plan _plus">
+            <header>
+              <h3>goXpro Plus</h3>
+              <h4>From $25/month</h4>
+              <p>From 5 to Unlimited Clients</p>
+            </header>
+            <div class="features">
+              <p>Unlimited Personal Trainers</p>
+              <p>Unlimited Training Plans</p>
+              <p>Unlimited Sessions</p>
+              <p>Elegant Design</p>
+              <p>Mobile &amp; Paperless Trainer's App</p>
+              <p>MAD - (Management, Administration, Dashboard)</p>
+              <p>MINDBODY Integration</p>
+              <p>Client App Integration - iTrain (soon)</p>
+              <p>Questionnaires &amp; Goal Setting</p>
+              <p>1700+ Sequenced Exercises</p>
+              <p>Private Exercise Library</p>
+              <p>Email Programs To Clients</p>
+              <p>Brand With Your Logo</p>
+              <p>Cardio Templates</p>
+              <p>PT Boxing Drills</p>
+              <p>Calendar &amp; Session Tracker</p>
+              <p>Daily Sessions Planner</p>
+              <p>iPad Sessions - All Recorded</p>
+              <p>Do's &amp; Don'ts Library</p>
+              <p>Client Contracts &amp; Invoices</p>
+              <p class="off">Unlimited Client Evaluations</p>
+              <p class="off">Postural Analysis</p>
+              <p class="off">Detailed Client Fitness Reports</p>
+              <p class="off">Fitness Australia Accredited Course (11 CECs)</p>
+              <p>
+                <button class="_plus">Try free now</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="plan _elite">
+            <header>
+              <h3>goXpro Elite</h3>
+              <h4>From $35/month</h4>
+              <p>From 5 to Unlimited Clients</p>
+            </header>
+            <div class="features">
+              <p>Unlimited Personal Trainers</p>
+              <p>Unlimited Training Plans</p>
+              <p>Unlimited Sessions</p>
+              <p>Elegant Design</p>
+              <p>Mobile &amp; Paperless Trainer's App</p>
+              <p>MAD - (Management, Administration, Dashboard)</p>
+              <p>MINDBODY Integration</p>
+              <p>Client App Integration - iTrain (soon)</p>
+              <p>Questionnaires &amp; Goal Setting</p>
+              <p>1700+ Sequenced Exercises</p>
+              <p>Private Exercise Library</p>
+              <p>Email Programs To Clients</p>
+              <p>Brand With Your Logo</p>
+              <p>Cardio Templates</p>
+              <p>PT Boxing Drills</p>
+              <p>Calendar &amp; Session Tracker</p>
+              <p>Daily Sessions Planner</p>
+              <p>iPad Sessions - All Recorded</p>
+              <p>Do's &amp; Don'ts Library</p>
+              <p>Client Contracts &amp; Invoices</p>
+              <p>Unlimited Client Evaluations</p>
+              <p>Postural Analysis</p>
+              <p>Detailed Client Fitness Reports</p>
+              <p>Fitness Australia Accredited Course (11 CECs)</p>
+              <p>
+                <button class="_elite">Contact Us</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(document).ready(function() {
+      
+      });
+    </script>
+  </body>
+</html>
