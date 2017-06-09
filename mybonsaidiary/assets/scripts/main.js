@@ -20,3 +20,7 @@ var Main = (function () {
 
 // Init after the page has loaded
 jQuery(Main.init);
+
+$(document).ready(function() {
+	$('.loading').fadeOut();
+});
