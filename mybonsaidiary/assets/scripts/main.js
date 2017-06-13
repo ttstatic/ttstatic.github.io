@@ -6,10 +6,17 @@ var Main = (function () {
 	return {
 		init: function () {
 
-			$(window).on('load resize', function() {
-				var winH = $(this).height();
-				$('section.hero').height(winH);
-			});
+			if ( $(window).width() > 767 ) {
+				$(window).on('load resize', function() {
+					var winH = $(this).height();
+					$('section.hero').height(winH);
+				});
+			} else {
+				$(window).on('load', function() {
+					var winH = $(this).height();
+					$('section.hero').height(winH);
+				});
+			}
 
 		},
 
@@ -21,6 +28,6 @@ var Main = (function () {
 // Init after the page has loaded
 jQuery(Main.init);
 
-$(document).ready(function() {
-	$('.loading').fadeOut();
-});
+// $(document).ready(function() {
+// 	$('.loading').fadeOut();
+// });
