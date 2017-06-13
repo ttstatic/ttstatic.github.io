@@ -18,6 +18,15 @@ var Main = (function () {
 				});
 			}
 
+			$('#togglePassword + i').click('click', function() {
+				$(this).toggleClass('hide-pwd');
+				if ( $(this).hasClass('hide-pwd') ) {
+					$(this).prev().attr('type', 'text');
+				} else {
+					$(this).prev().attr('type', 'password');
+				}
+			});
+
 		},
 
 		//--------
