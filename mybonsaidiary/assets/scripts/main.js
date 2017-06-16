@@ -6,23 +6,30 @@ var Main = (function () {
 	return {
 		init: function () {
 
-			if ( $(window).width() > 767 ) {
-				$(window).on('load resize', function() {
-					var winH = $(this).height();
-					var headerH = $('header').outerHeight();
-					var footerH = $('footer').outerHeight();
+			var _win = $(window)
+			var winH = _win.height();
+			var headerH = $('header').outerHeight();
+			var footerH = $('footer').outerHeight();
+
+			if ( _win.width() > 767 ) {
+				_win.on('load resize', function() {
 					$('section.hero').height(winH);
 					$('section.login').height( winH - (headerH + footerH) );
 				});
 			} else {
-				$(window).on('load', function() {
-					var winH = $(this).height();
-					var headerH = $('header').outerHeight();
-					var footerH = $('footer').outerHeight();
+				_win.on('load', function() {
 					$('section.hero').height(winH);
 					$('section.login').height( winH - (headerH + footerH) );
 				});
 			}
+
+			_win.on('load resize', function() {
+				if ( $(this).width() > 767 ) {
+					$('aside').removeClass('collapse');
+				} else {
+					$('aside').addClass('collapse');
+				}
+			});
 
 			$('#togglePassword + i').click('click', function() {
 				$(this).toggleClass('hide-pwd');
