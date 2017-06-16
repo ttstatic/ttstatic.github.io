@@ -9,12 +9,18 @@ var Main = (function () {
 			if ( $(window).width() > 767 ) {
 				$(window).on('load resize', function() {
 					var winH = $(this).height();
+					var headerH = $('header').outerHeight();
+					var footerH = $('footer').outerHeight();
 					$('section.hero').height(winH);
+					$('section.login').height( winH - (headerH + footerH) );
 				});
 			} else {
 				$(window).on('load', function() {
 					var winH = $(this).height();
+					var headerH = $('header').outerHeight();
+					var footerH = $('footer').outerHeight();
 					$('section.hero').height(winH);
+					$('section.login').height( winH - (headerH + footerH) );
 				});
 			}
 
