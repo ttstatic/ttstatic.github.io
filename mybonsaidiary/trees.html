@@ -11,6 +11,7 @@
     <!-- Bower Components-->
     <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/nouislider/distribute/nouislider.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Bubblegum+Sans" rel="stylesheet">
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -121,6 +122,8 @@
                   </div>
                 </div>
               </article>
+              <div id="slider-toggle"></div>
+              <div class="text-center text-muted">(view width)</div>
             </div>
           </div>
         </div>
@@ -142,13 +145,32 @@
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bower_components/nouislider/distribute/nouislider.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js" type="text/javascript"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
     <script src="assets/scripts/main.js" type="text/javascript"></script>
     <!-- page scripts goes here...-->
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
+        var toggleSlider = document.getElementById('slider-toggle');
+        noUiSlider.create(toggleSlider, {
+        	start: 1,
+        	range: {
+        		'min': [0, 1, 2],
+        		'max': 2
+        	},
+        	format: wNumb({
+        		decimals: 0
+        	})
+        })
       
+        toggleSlider.noUiSlider.on('update', function( values, handle ) {
+        	$('.collection').toggleClass(function() {
+            return 'col-view-' + values[handle];
+          });
+          console.log('4-col');
+        });
       });
     </script>
   </body>
