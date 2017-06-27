@@ -62,8 +62,12 @@
             <div class="page-content" ng-controller="TreesController">
               <article>
                 <div class="collection">
-                  <h3 class="text-center">My Trees</h3>
-                  <input class="form-control" type="text" placeholder="Search">
+                  <h3 class="relative">My Trees<a class="btn btn-success btn-add-bonsai" href="">+ Add Bonsai</a></h3>
+                  <input class="form-control" type="text" placeholder="Search"><br>
+                  <div class="view-slider hidden-xs">
+                    <rzslider id="viewSlider" rz-slider-model="viewSlider.value" rz-slider-options="viewSlider.options"></rzslider>
+                    <div class="text-muted">(view width)</div>
+                  </div><br>
                   <div class="row">
                     <div class="col-xs-6 col-sm-{{myVal}}" data-index="0">
                       <div class="collection-thumb"><a href="">
@@ -122,10 +126,6 @@
                   </div>
                 </div>
               </article>
-              <div class="view-slider hidden-xs">
-                <rzslider id="viewSlider" rz-slider-model="viewSlider.value" rz-slider-options="viewSlider.options"></rzslider>
-                <div class="text-muted">(view width)</div>
-              </div>
             </div>
           </div>
         </div>
