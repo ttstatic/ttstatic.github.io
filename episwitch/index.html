@@ -38,8 +38,13 @@
       </div>
     </nav>
     <section class="hero" style="background: white url(&quot;assets/images/dna-1.jpg&quot;) no-repeat center center;">
-      <div class="search">
-        <input class="form-control" type="text" placeholder="Search by SNP ID, Gene Name, or Genomic Region...">
+      <div class="container">
+        <div class="search">
+          <p class="lead">The only technology that offers high resolution annotations for regulatory 3D genome architecture.</p>
+          <div class="form-group form-icon">
+            <input class="form-control" type="text" placeholder="Search by SNP ID, Gene Name, or Genomic Region..."><a href="" data-toggle="tooltip" data-placement="left" title="Upload a text file"><i class="fa fa-upload fa-2x"></i></a>
+          </div>
+        </div>
       </div>
     </section>
     <section>
@@ -63,7 +68,7 @@
     <!-- External Script goes here...-->
     <script>
       $(document).ready(function() {
-      
+        $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
   </body>
