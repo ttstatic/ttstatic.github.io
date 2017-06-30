@@ -7,28 +7,22 @@ var Main = (function () {
 		init: function () {
 
 			var _win = $(window)
-			var winH = _win.height();
-			var headerH = $('header').outerHeight();
-			var footerH = $('footer').outerHeight();
-
-			if ( _win.width() > 767 ) {
-				_win.on('load resize', function() {
-					$('section.hero').height(winH);
-					$('section.login').height( winH - (headerH + footerH) );
-				});
-			} else {
-				_win.on('load', function() {
-					$('section.hero').height(winH);
-					$('section.login').height( winH - (headerH + footerH) );
-				});
-			}
 
 			_win.on('load resize', function() {
-				if ( $(this).width() > 767 ) {
-					$('aside').removeClass('collapse');
+				console.log($(window.top).height());
+				if ( _win.width() > 767 ) {
+					$('section.hero').height( $(window.top).height() );
 				} else {
-					$('aside').addClass('collapse');
+					$('section.hero').height('auto');
 				}
+			});
+
+			$('.goto-results a').on("click", function(e) {
+				e.preventDefault();
+				var body = $("html, body");
+				var selector = $(this).attr("href");
+				var objOffset = $(selector).offset().top;
+				body.stop().animate({scrollTop: objOffset}, '300', 'swing');
 			});
 
 		},
