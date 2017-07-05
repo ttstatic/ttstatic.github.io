@@ -156,6 +156,27 @@
         </div>
       </div>
     </header>
+    <section class="cozy inverse">
+      <div class="container">
+        <h3>Select Regions</h3><br>
+        <div class="row flex bottom">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Our subscription offers nationwide access, with unlimited access in your chosen state. Please select a state for RPP Real Estate Agents - Essential.</label>
+              <select class="form-control">
+                <option>&nbsp;</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Enter Area for Agency Benchmark Report</label>
+              <input class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="fat checkout">
       <div class="container">
         <h3>Checkout</h3>
@@ -273,10 +294,54 @@
                 </div>
               </div>
             </div>
+            <hr>
+            <h4>Payment Options</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="radio">
+                    <label data-required-label="*">
+                      <input type="radio" name="radPayment" value="" onclick="payDirect(this, &quot;payDirectForm&quot;)">&nbsp;Credit Card<small>(1.5% surcharge)</small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="radio">
+                    <label data-required-label="*">
+                      <input type="radio" name="radPayment" value="1" onclick="payDirect(this, &quot;payDirectForm&quot;)">&nbsp;Direct Debit Payment
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="payDirectForm" style="display: none;">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Account Name</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Account Number</label>
+                    <input class="form-control" type="number">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>BSB Number</label>
+                    <input class="form-control" type="number">
+                  </div>
+                </div>
+              </div>
+              <p><small><i>I provide my Authority for RP Data Pty Ltd to debit funds through the Bulk Electronic Clearing System from my account identified above as instructed by me or authorised to be debited in accordance with the Direct Debit Request Services Agreement and the terms of my Contract.</i></small></p>
+            </div>
           </div>
           <div class="col-md-5">
-            <h4>&nbsp;</h4>
-            <label>&nbsp;</label>
+            <h4>Order Summary</h4>
             <div class="card">
               <div class="table-responsive">
                 <table class="table checkout">
@@ -295,6 +360,11 @@
                         <li><i class="fa fa-check green"></i>Marketing Direct</li>
                         <li><i class="fa fa-check green"></i>Agency Benchmark Report</li>
                       </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <hr>
                     </td>
                   </tr>
                   <tr>
@@ -358,26 +428,6 @@
         </div>
       </div>
     </section>
-    <section class="package inverse">
-      <div class="container">
-        <h3>Select Regions</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <p>Our subscription offers nationwide access, with unlimited access in your chosen state. Please select a state for RPP Real Estate Agents - Essential.</p>
-            <div class="form-group">
-              <select class="form-control">
-                <option>&nbsp;</option>
-              </select>
-            </div>
-            <p>Enter Area for Agency Benchmark Report</p>
-            <div class="form-group">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-      </div>
-    </section>
     <section class="fat">
       <div class="container">
         <div class="row">
@@ -397,7 +447,17 @@
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
+        
+        
       });
+      function payDirect(obj, id) {
+        if (obj.value) {
+          console.log('test')
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
     </script>
   </body>
 </html>
