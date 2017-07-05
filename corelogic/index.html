@@ -23,14 +23,144 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo"><img src="assets/images/logo.jpg"></div>
+        <div class="logo"><a href="index.html"><img src="assets/images/logo.jpg"></a></div>
+        <div class="shopping-cart"><a href="#cartBox" data-items="0" data-toggle="collapse"><i class="fa fa-shopping-bag"></i></a>
+          <div class="cart-box collapse" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse">&times;</a>
+            <h3 class="visible-sm visible-xs">Your Cart</h3>
+            <table>
+              <tr class="rpp">
+                <td class="lbl">RPP</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="package">
+                    <tr>
+                      <td class="lbl">Essential</td>
+                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">3 Users, Single State</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><i class="fa fa-check green"></i>Marketing Direct</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><i class="fa fa-check green"></i>Agency Benchmark Report</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="led">
+                <td class="lbl">Cityscope/LED</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="cled">
+                    <tr>
+                      <td class="lbl">Sydney</td>
+                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Cityscope + LED - 2 Users</td>
+                    </tr>
+                  </table><br>
+                  <div class="text-center"><a class="btn btn-info btn-sm" href="#cledBox" data-toggle="collapse">Add</a></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="total">
+                <td class="lbl">Product Total</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr class="total">
+                <td class="lbl">Bundle Discount</td>
+                <td class="price">- $0.00</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="sub-total">
+                <td class="lbl">Sub-total</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr class="sub-total">
+                <td class="lbl">GST</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="grand-total">
+                <td class="lbl">Total</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+            </table><a class="btn btn-success btn-block btn-lg" href="checkout.html">Join Now</a>
+            <clearfix class="visible-sm visible-xs"><br></clearfix>
+            <div class="cled-box collapse fade" id="cledBox">
+              <h4>Cityscope &amp; Lease Expiry Diary(LED)</h4>
+              <p><strong>Pricing shown per month, ex GST, billed monthly</strong></p>
+              <p><small><a href="">Cityscope</a>&nbsp;and&nbsp;<a href="">Lease Expiry Diary</a>&nbsp;are essential tools for commercial property professionals, providing comprehensive building, tenant, sales, ownership and lease information for CBD markets across Australia and New Zealand.</small></p>
+              <hr>
+              <div class="form-group">
+                <label>Select Area</label>
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Select Users</label>
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">&nbsp;Cityscope
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">&nbsp;LED
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="text-center"><a class="btn btn-warning" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
+              <p> <small><i>* Choose 3 or more areas and save 10% Select area for pricing. Choose both Cityscope and LED for a given area and save 30% on LED.</i></small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <section class="fat">
       <div class="container">
         <div class="text-center">
           <h3>RP Data Professional</h3>
-          <p class="lead">Select your industry to see available packages.</p>
+          <p class="lead">Select your industry below to see available packages.</p>
           <p>If you’re an existing customer,&nbsp;<a href="">Click here</a>&nbsp;For Government or Enterprise packages&nbsp;<a href="">Click here</a>&nbsp;or if you need instructions&nbsp;<a href="">Click here</a>.</p>
         </div>
       </div>
@@ -38,10 +168,10 @@
     <section class="package">
       <div class="tab-package">
         <ul class="btn-group" role="group" aria-label="...">
-          <li class="btn btn-default btn-lg active" type="button"><a href="#tab-p1" data-toggle="tab">Package 1</a></li>
-          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p2" data-toggle="tab">Package 2</a></li>
-          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p3" data-toggle="tab">Package 3</a></li>
-          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p4" data-toggle="tab">Package 4</a></li>
+          <li class="btn btn-default btn-lg active" type="button"><a href="#tab-p1" data-toggle="tab">Option 1</a></li>
+          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p2" data-toggle="tab">Option 2</a></li>
+          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p3" data-toggle="tab">Option 3</a></li>
+          <li class="btn btn-default btn-lg" type="button"><a href="#tab-p4" data-toggle="tab">Option 4</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="tab-p1" role="tabpanel">
@@ -53,26 +183,26 @@
               <div class="pricing-table">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="package"><a class="customize" href="" data-toggle="tooltip" data-placement="left" title="Customize package"><i class="fa fa-cog"></i></a>
+                    <div class="package">
                       <div class="title">Starter</div>
                       <div class="price">$175
                         <div class="per">per month</div>
                       </div>
                       <div class="users max">1 users</div>
                       <div class="ga max">Single State</div>
-                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features (28)</a></div>
+                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(28)</strong></a></div>
                       <div class="features">
                         <div class="group">
-                          <div class="name"><span>Extra Features<a href=""><i class="fa fa-pencil"></i></a></span></div>
-                          <div class="item">Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item">Agency Benchmark Report &middot; $20</div>
+                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
+                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
                           <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item">Mortgage Market Report</div>
-                          <div class="item">Media Maximiser &middot; $20</div>
-                          <div class="item">Blockbrief Premier &middot; $69</div>
-                          <div class="item">Blockbrief Premier Pro &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
+                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
                         </div>
-                      </div><a class="select" href="">Select</a>
+                      </div><a class="select" href="checkout.html">Select</a>
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -83,42 +213,42 @@
                       </div>
                       <div class="users">3 users</div>
                       <div class="ga">Single State</div>
-                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features (28)</a></div>
+                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(28)</strong></a></div>
                       <div class="features">
                         <div class="group">
-                          <div class="name"><span>Extra Features<a href=""><i class="fa fa-pencil"></i></a></span></div>
-                          <div class="item">Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item">Agency Benchmark Report &middot; $20</div>
+                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
+                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
                           <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item">Mortgage Market Report</div>
-                          <div class="item">Media Maximiser &middot; $20</div>
-                          <div class="item">Blockbrief Premier &middot; $69</div>
-                          <div class="item">Blockbrief Premier Pro &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
+                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
                         </div>
-                      </div><a class="select solid" href="">Select</a>
+                      </div><a class="select solid" href="checkout.html">Select</a>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="package"><a class="customize" href="" data-toggle="tooltip" data-placement="left" title="Customize package"><i class="fa fa-cog"></i></a>
+                    <div class="package">
                       <div class="title">Trial</div>
                       <div class="price">Free
                         <div class="per">per month</div>
                       </div>
                       <div class="users max">1 users</div>
                       <div class="ga max">Single State</div>
-                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features (23)</a></div>
+                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(23)</strong></a></div>
                       <div class="features">
                         <div class="group">
-                          <div class="name"><span>Extra Features<a href=""><i class="fa fa-pencil"></i></a></span></div>
-                          <div class="item">Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item">Agency Benchmark Report &middot; $20</div>
+                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
+                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
                           <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item">Mortgage Market Report</div>
-                          <div class="item">Media Maximiser &middot; $20</div>
-                          <div class="item">Blockbrief Premier &middot; $69</div>
-                          <div class="item">Blockbrief Premier Pro &middot; $130</div>
+                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
+                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
+                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
                         </div>
-                      </div><a class="select" href="">Select</a>
+                      </div><a class="select" href="checkout.html">Select</a>
                     </div>
                   </div>
                 </div>
@@ -144,7 +274,8 @@
           </div>
           <div class="col-md-4">
             <p class="lead">Government and Enterprise Plans</p>
-            <p>We have a dedicated account management team who look after our Government and Enterprise customers. If you are part of a Government organisation or have an Enterprise agreement or account with CoreLogic, please get in touch with our&nbsp;<a href="">Customer Care team via email</a>&nbsp;or call 1300 734 318 and they’ll direct you to the right team.</p>
+            <p>We have a dedicated account management team who look after our Government and Enterprise customers.</p>
+            <p>If you are part of a Government organisation or have an Enterprise agreement or account with CoreLogic, please get in touch with our&nbsp;<a href="">Customer Care team via email</a>&nbsp;or call 1300 734 318 and they’ll direct you to the right team.</p>
           </div>
           <div class="col-md-4">
             <p class="lead">I am an existing customer</p>

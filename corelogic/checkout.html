@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Skeleton for Pug and Sass</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bower Components-->
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo.jpg"></a></div>
+        <div class="shopping-cart"><a href="#cartBox" data-items="0" data-toggle="collapse"><i class="fa fa-shopping-bag"></i></a>
+          <div class="cart-box collapse" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse">&times;</a>
+            <h3 class="visible-sm visible-xs">Your Cart</h3>
+            <table>
+              <tr class="rpp">
+                <td class="lbl">RPP</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="package">
+                    <tr>
+                      <td class="lbl">Essential</td>
+                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">3 Users, Single State</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><i class="fa fa-check green"></i>Marketing Direct</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><i class="fa fa-check green"></i>Agency Benchmark Report</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="led">
+                <td class="lbl">Cityscope/LED</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="cled">
+                    <tr>
+                      <td class="lbl">Sydney</td>
+                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Cityscope + LED - 2 Users</td>
+                    </tr>
+                  </table><br>
+                  <div class="text-center"><a class="btn btn-info btn-sm" href="#cledBox" data-toggle="collapse">Add</a></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="total">
+                <td class="lbl">Product Total</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr class="total">
+                <td class="lbl">Bundle Discount</td>
+                <td class="price">- $0.00</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="sub-total">
+                <td class="lbl">Sub-total</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr class="sub-total">
+                <td class="lbl">GST</td>
+                <td class="price">$0.00</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr class="grand-total">
+                <td class="lbl">Total</td>
+                <td class="price">$0.00/m</td>
+              </tr>
+            </table><a class="btn btn-success btn-block btn-lg" href="checkout.html">Join Now</a>
+            <clearfix class="visible-sm visible-xs"><br></clearfix>
+            <div class="cled-box collapse fade" id="cledBox">
+              <h4>Cityscope &amp; Lease Expiry Diary(LED)</h4>
+              <p><strong>Pricing shown per month, ex GST, billed monthly</strong></p>
+              <p><small><a href="">Cityscope</a>&nbsp;and&nbsp;<a href="">Lease Expiry Diary</a>&nbsp;are essential tools for commercial property professionals, providing comprehensive building, tenant, sales, ownership and lease information for CBD markets across Australia and New Zealand.</small></p>
+              <hr>
+              <div class="form-group">
+                <label>Select Area</label>
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Select Users</label>
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">&nbsp;Cityscope
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">&nbsp;LED
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="text-center"><a class="btn btn-warning" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
+              <p> <small><i>* Choose 3 or more areas and save 10% Select area for pricing. Choose both Cityscope and LED for a given area and save 30% on LED.</i></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="fat checkout">
+      <div class="container">
+        <h3>Checkout</h3>
+        <div class="row">
+          <div class="col-md-7">
+            <h4>Personal Details</h4>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label data-required-label="*">Full Name</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Position / Role</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Mobile Number</label>
+                  <input class="form-control" type="number">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Email</label>
+                  <input class="form-control" type="email">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Confirm Email</label>
+                  <input class="form-control" type="email">
+                </div>
+              </div>
+            </div>
+            <h4>Business / Office Details</h4>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label data-required-label="*">ABN / ACN</label>
+                  <div class="input-group">
+                    <input class="form-control" type="text"><span class="input-group-btn">
+                      <button class="btn btn-warning" type="button">Validate</button></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Legal Entity Name</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Business / Trade Name</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Business Address</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Suburb</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">State</label>
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Postcode</label>
+                  <input class="form-control" type="number">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Office Phone Number</label>
+                  <input class="form-control" type="phone">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label data-required-label="*">Office Email</label>
+                  <input class="form-control" type="email">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Choose Franchise Group</label>
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label data-required-label="*">
+                      <input type="checkbox">&nbsp;I am authorized to enter into this Contract on behalf of this business
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h4>&nbsp;</h4>
+            <label>&nbsp;</label>
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table checkout">
+                  <tr>
+                    <th class="lead">RPP</th>
+                    <th class="lead text-right" width="15%">$0.00/m</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <p class="blue">
+                        <big>Essential</big>
+                      </p>
+                      <p class="text-muted">3 Users, Single State</p>
+                      <ul>
+                        <li><i class="fa fa-check green"></i>Free Growth Coach</li>
+                        <li><i class="fa fa-check green"></i>Marketing Direct</li>
+                        <li><i class="fa fa-check green"></i>Agency Benchmark Report</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="lead">Cityscope/LED</th>
+                    <th class="lead text-right">$0.00/m</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <p class="blue">
+                        <big>Sydney</big>
+                      </p>
+                      <p class="text-muted">Cityscope + LED - 2 Users</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-group">
+                <label data-required-label="*">Promo Code</label>
+                <div class="input-group">
+                  <input class="form-control" type="text"><span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Apply</button></span>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="table noborder">
+                  <tr>
+                    <td class="text-right">Product Total : </td>
+                    <td class="text-right" width="15%">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right">Bundle Discount : </td>
+                    <td class="text-right">- $0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right">Sub-total : </td>
+                    <td class="text-right">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right">GST : </td>
+                    <td class="text-right">- $0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right">
+                      <h4 class="nomargin inline">Total : </h4>
+                    </td>
+                    <td class="text-right">
+                      <h3 class="nomargin inline">$0.00</h3>
+                    </td>
+                  </tr>
+                </table>
+              </div><a class="btn btn-success btn-lg btn-block" href="">Place Order</a>
+              <hr>
+              <div class="text-right text-muted">
+                <p><i>Minimum contract Period 12 months. Termination outside Minimum Contract Period requires 90 days notice</i></p>
+                <p>
+                  <I>This is a binding Contract comprised of the commercial terms outlined on this webpage together with the full terms &amp; conditions</I>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="package inverse">
+      <div class="container">
+        <h3>Select Regions</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Our subscription offers nationwide access, with unlimited access in your chosen state. Please select a state for RPP Real Estate Agents - Essential.</p>
+            <div class="form-group">
+              <select class="form-control">
+                <option>&nbsp;</option>
+              </select>
+            </div>
+            <p>Enter Area for Agency Benchmark Report</p>
+            <div class="form-group">
+              <input class="form-control" type="text">
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+    <section class="fat">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Bower Components-->
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
+    <script src="assets/scripts/main.js" type="text/javascript"></script>
+    <!-- page scripts goes here...-->
+    <!-- External Script goes here...-->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
