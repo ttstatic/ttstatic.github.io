@@ -25,8 +25,11 @@ var Main = (function () {
 
 			$('#cledBox').on('show.bs.collapse', function () {
 			  $(this).parent().addClass('backdrop');
+				// var backdropHeight = $(this).parent()[0].scrollHeight;
+				// $('<style id="appended">#cartBox.backdrop::before { height:' + backdropHeight + 'px' + '}</style>').appendTo('head');
 			}).on('hide.bs.collapse', function() {
 				$(this).parent().removeClass('backdrop');
+				// $('style#appended').remove();
 			});
 
 		},

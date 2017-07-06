@@ -187,7 +187,7 @@
               <div class="pricing-table">
                 <div class="row">
                   <div class="col-md-4 col-sm-push-0 col-md-push-4">
-                    <div class="package popular" data-label="Popular"><a class="customize" href="" data-toggle="tooltip" data-placement="left" title="Customize this package"><i class="fa fa-cog"></i></a>
+                    <div class="package popular" data-label="Popular"><a class="customize" href="#modalPackage" data-toggle="modal" data-placement="left" title="Customize this package"><i class="fa fa-cog"></i></a>
                       <div class="title">Essential</div>
                       <div class="price">$260
                         <div class="per">per month</div>
@@ -436,6 +436,85 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="modalFeatures" tabindex="-1" role="dialog" aria-labelledby="modalFeaturesLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Included Features</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal-features">
+              <p>Data</p>
+              <div class="feature">VG Access</div>
+              <div class="feature">Ownership Details</div>
+              <div class="feature">Property Details</div>
+              <div class="feature">Property History</div>
+              <div class="feature">On the Market Data</div>
+              <div class="feature">Sales History Data</div>
+              <div class="feature x">Finance Tab</div>
+              <div class="feature">Name Search</div>
+              <div class="feature">Phone Contacts</div>
+              <p>Mobility</p>
+              <div class="feature">RP Data Pro (iPhone / iPad)</div>
+              <div class="feature">Mobile Lister</div>
+              <p>Reports</p>
+              <div class="feature">Sales CMA</div>
+              <div class="feature">Rental CMA</div>
+              <div class="feature">Sales AVM's</div>
+              <div class="feature">Rental AVM's</div>
+              <div class="feature">Property Reports</div>
+              <div class="feature">Suburb Statistics Report</div>
+              <div class="feature">Property Report</div>
+              <div class="feature">Order Titles</div>
+              <div class="feature">Branded Reports</div>
+              <p>Modules</p>
+              <div class="feature">Export CSV</div>
+              <div class="feature">rp.connect</div>
+              <div class="feature">Property Monitor</div>
+              <div class="feature">Prospector</div>
+              <div class="feature">Mapping and Data Overlays</div>
+              <div class="feature">Territory Builder</div>
+              <div class="feature">Property Services</div>
+              <div class="feature">Real Estate Forms Integration</div>
+              <div class="feature">rp.inside</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalPackage" tabindex="-1" role="dialog" aria-labelledby="modalPackageLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Package Details</h4>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center">$0.00/m</h2>
+            <div class="form-group">
+              <label>Users</label>
+              <div class="control-select">
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Geographic Access</label>
+              <div class="control-select">
+                <select class="form-control">
+                  <option>&nbsp;</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="text-left">Pricing shown per month, ex GST, billed monthly for 12 months.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bower Components-->
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
