@@ -23,6 +23,12 @@ var Main = (function () {
 				}
 			});
 
+			$('#cledBox').on('show.bs.collapse', function () {
+			  $(this).parent().addClass('backdrop');
+			}).on('hide.bs.collapse', function() {
+				$(this).parent().removeClass('backdrop');
+			});
+
 		},
 
 		//--------
