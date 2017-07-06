@@ -25,7 +25,7 @@
       <div class="container">
         <div class="logo"><a href="index.html"><img src="assets/images/logo.jpg"></a></div>
         <div class="shopping-cart"><a href="#cartBox" data-items="0" data-toggle="collapse"><i class="fa fa-shopping-bag"></i></a>
-          <div class="cart-box collapse" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse">&times;</a>
+          <div class="cart-box collapse fade" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse"><i class="fa fa-times-circle"></i></a>
             <h3 class="visible-sm visible-xs">Your Cart</h3>
             <table>
               <tr class="rpp">
@@ -37,7 +37,7 @@
                   <table class="package">
                     <tr>
                       <td class="lbl">Essential</td>
-                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                      <td class="text-right"><a class="remove" href="">&times;</a></td>
                     </tr>
                     <tr>
                       <td colspan="2">3 Users, Single State</td>
@@ -65,13 +65,13 @@
                   <table class="cled">
                     <tr>
                       <td class="lbl">Sydney</td>
-                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                      <td class="text-right"><a class="remove" href="">&times;</a></td>
                     </tr>
                     <tr>
                       <td colspan="2">Cityscope + LED - 2 Users</td>
                     </tr>
                   </table><br>
-                  <div class="text-center"><a class="btn btn-info btn-sm" href="#cledBox" data-toggle="collapse">Add</a></div>
+                  <div class="text-center"><a class="btn btn-default btn-sm btn-block" href="#cledBox" data-toggle="collapse">Add</a></div>
                 </td>
               </tr>
               <tr>
@@ -118,22 +118,26 @@
               <hr>
               <div class="form-group">
                 <label>Select Area</label>
-                <select class="form-control">
-                  <option>&nbsp;</option>
-                </select>
+                <div class="control-select">
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
               </div>
               <div class="form-group">
                 <label>Select Users</label>
-                <select class="form-control">
-                  <option>&nbsp;</option>
-                </select>
+                <div class="control-select">
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">&nbsp;Cityscope
+                        <input type="checkbox"><span class="tickbox"></span>&nbsp;Cityscope
                       </label>
                     </div>
                   </div>
@@ -142,14 +146,14 @@
                   <div class="form-group">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">&nbsp;LED
+                        <input type="checkbox"><span class="tickbox"></span>&nbsp;LED
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
               <hr>
-              <div class="text-center"><a class="btn btn-warning" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
+              <div class="text-center"><a class="btn btn-warning btn-block" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
               <p> <small><i>* Choose 3 or more areas and save 10% Select area for pricing. Choose both Cityscope and LED for a given area and save 30% on LED.</i></small></p>
             </div>
           </div>

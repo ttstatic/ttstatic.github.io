@@ -6,8 +6,21 @@ var Main = (function () {
 	return {
 		init: function () {
 
-			$(window).scroll(function() {
-				
+			var onMobile;
+			$(window).on('load resize', function() {
+				if ( $(this).width() < 768 ) {
+					onMobile = true;
+				} else {
+					onMobile = false;
+					$('body').css('overflow', '');
+				}
+				if ( onMobile ) {
+					$('#cartBox').on('show.bs.collapse', function () {
+						$('body').css('overflow', 'hidden');
+					}).on('hide.bs.collapse', function () {
+						$('body').css('overflow', '');
+					});
+				}
 			});
 
 		},

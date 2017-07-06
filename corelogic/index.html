@@ -25,7 +25,7 @@
       <div class="container">
         <div class="logo"><a href="index.html"><img src="assets/images/logo.jpg"></a></div>
         <div class="shopping-cart"><a href="#cartBox" data-items="0" data-toggle="collapse"><i class="fa fa-shopping-bag"></i></a>
-          <div class="cart-box collapse" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse">&times;</a>
+          <div class="cart-box collapse fade" id="cartBox"><a class="hide-cart" href="#cartBox" data-toggle="collapse"><i class="fa fa-times-circle"></i></a>
             <h3 class="visible-sm visible-xs">Your Cart</h3>
             <table>
               <tr class="rpp">
@@ -37,7 +37,7 @@
                   <table class="package">
                     <tr>
                       <td class="lbl">Essential</td>
-                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                      <td class="text-right"><a class="remove" href="">&times;</a></td>
                     </tr>
                     <tr>
                       <td colspan="2">3 Users, Single State</td>
@@ -65,13 +65,13 @@
                   <table class="cled">
                     <tr>
                       <td class="lbl">Sydney</td>
-                      <td class="text-right"><a class="remove" href=""><i class="fa fa-trash-o red"></i></a></td>
+                      <td class="text-right"><a class="remove" href="">&times;</a></td>
                     </tr>
                     <tr>
                       <td colspan="2">Cityscope + LED - 2 Users</td>
                     </tr>
                   </table><br>
-                  <div class="text-center"><a class="btn btn-info btn-sm" href="#cledBox" data-toggle="collapse">Add</a></div>
+                  <div class="text-center"><a class="btn btn-default btn-sm btn-block" href="#cledBox" data-toggle="collapse">Add</a></div>
                 </td>
               </tr>
               <tr>
@@ -118,22 +118,26 @@
               <hr>
               <div class="form-group">
                 <label>Select Area</label>
-                <select class="form-control">
-                  <option>&nbsp;</option>
-                </select>
+                <div class="control-select">
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
               </div>
               <div class="form-group">
                 <label>Select Users</label>
-                <select class="form-control">
-                  <option>&nbsp;</option>
-                </select>
+                <div class="control-select">
+                  <select class="form-control">
+                    <option>&nbsp;</option>
+                  </select>
+                </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">&nbsp;Cityscope
+                        <input type="checkbox"><span class="tickbox"></span>&nbsp;Cityscope
                       </label>
                     </div>
                   </div>
@@ -142,14 +146,14 @@
                   <div class="form-group">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">&nbsp;LED
+                        <input type="checkbox"><span class="tickbox"></span>&nbsp;LED
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
               <hr>
-              <div class="text-center"><a class="btn btn-warning" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
+              <div class="text-center"><a class="btn btn-warning btn-block" href="#cledBox" data-toggle="collapse">Add to Cart</a></div><br>
               <p> <small><i>* Choose 3 or more areas and save 10% Select area for pricing. Choose both Cityscope and LED for a given area and save 30% on LED.</i></small></p>
             </div>
           </div>
@@ -182,7 +186,72 @@
               </div>
               <div class="pricing-table">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-push-0 col-md-push-4">
+                    <div class="package popular" data-label="Popular"><a class="customize" href="" data-toggle="tooltip" data-placement="left" title="Customize this package"><i class="fa fa-cog"></i></a>
+                      <div class="title">Essential</div>
+                      <div class="price">$260
+                        <div class="per">per month</div>
+                      </div>
+                      <div class="users">3 users</div>
+                      <div class="ga">Single State</div>
+                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(28)</strong></a></div>
+                      <div class="features">
+                        <div class="group">
+                          <div class="name">Add Extra Features</div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" checked><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Marketing Direct (single state price)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Agency Benchmark Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" checked><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Chinese Language Reports &middot
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" checked disabled><span class="tickbox"></span>&nbsp;Mortgage Market Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Media Maximiser
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$69&nbsp;&middot;</span>&nbsp;Blockbrief Premier &middot;
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Blockbrief Premier Pro
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div><a class="select solid" href="#cartBox" data-toggle="collapse">Select</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-pull-0 col-md-pull-4">
                     <div class="package">
                       <div class="title">Starter</div>
                       <div class="price">$175
@@ -193,39 +262,58 @@
                       <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(28)</strong></a></div>
                       <div class="features">
                         <div class="group">
-                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
-                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
-                          <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
-                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
+                          <div class="name">Add Extra Features</div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Marketing Direct (single state price)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Agency Benchmark Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Chinese Language Reports
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" checked disabled><span class="tickbox"></span>&nbsp;Mortgage Market Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Media Maximiser
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$69&nbsp;&middot;</span>&nbsp;Blockbrief Premier
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Blockbrief Premier Pro
+                              </label>
+                            </div>
+                          </div>
                         </div>
                       </div><a class="select" href="#cartBox" data-toggle="collapse">Select</a>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="package popular" data-label="Popular"><a class="customize" href="" data-toggle="tooltip" data-placement="left" title="Customize package"><i class="fa fa-cog"></i></a>
-                      <div class="title">Essential</div>
-                      <div class="price">$260
-                        <div class="per">per month</div>
-                      </div>
-                      <div class="users">3 users</div>
-                      <div class="ga">Single State</div>
-                      <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(28)</strong></a></div>
-                      <div class="features">
-                        <div class="group">
-                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
-                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
-                          <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
-                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
-                        </div>
-                      </div><a class="select solid" href="#cartBox" data-toggle="collapse">Select</a>
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -239,14 +327,56 @@
                       <div class="included"><a class="btn btn-default btn-xs" href="">View all Features<strong>&nbsp;(23)</strong></a></div>
                       <div class="features">
                         <div class="group">
-                          <div class="name"><span>Extra Features<a href="" data-toggle="tooltip" data-placement="left" title="Add Feature"><i class="fa fa-plus"></i></a></span></div>
-                          <div class="item"><i class="fa fa-check green"></i>Marketing Direct (single state price) &middot; $130</div>
-                          <div class="item"><i class="fa fa-check green"></i>Agency Benchmark Report &middot; $20</div>
-                          <div class="item x">Chinese Language Reports &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Mortgage Market Report</div>
-                          <div class="item"><i class="fa fa-check green"></i>Media Maximiser &middot; $20</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier &middot; $69</div>
-                          <div class="item"><i class="fa fa-check green"></i>Blockbrief Premier Pro &middot; $130</div>
+                          <div class="name">Add Extra Features</div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Marketing Direct (single state price)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Agency Benchmark Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Chinese Language Reports
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" checked disabled><span class="tickbox"></span>&nbsp;Mortgage Market Report
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$20&nbsp;&middot;</span>&nbsp;Media Maximiser
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$69&nbsp;&middot;</span>&nbsp;Blockbrief Premier
+                              </label>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"><span class="tickbox"></span><span class="cost">&nbsp;$130&nbsp;&middot;</span>&nbsp;Blockbrief Premier Pro
+                              </label>
+                            </div>
+                          </div>
                         </div>
                       </div><a class="select" href="#cartBox" data-toggle="collapse">Select</a>
                     </div>
