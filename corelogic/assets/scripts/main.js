@@ -42,6 +42,12 @@ var Main = (function () {
 				}
 			});
 
+			$('#selectIndustry').change(function() {
+				var tabId = this.value;
+
+				$('a[href="'+tabId+'"]').trigger('click');
+			});
+
 		},
 
 		//--------
