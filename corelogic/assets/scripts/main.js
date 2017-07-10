@@ -44,8 +44,11 @@ var Main = (function () {
 
 			$('#selectIndustry').change(function() {
 				var tabId = this.value;
-
 				$('a[href="'+tabId+'"]').trigger('click');
+			});
+
+			$('.tab-package ul.btn-group a').click(function() {
+				$('#selectIndustry').val( $(this).attr('href') );
 			});
 
 		},
