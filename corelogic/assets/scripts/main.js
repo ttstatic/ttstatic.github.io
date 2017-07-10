@@ -32,6 +32,16 @@ var Main = (function () {
 				// $('style#appended').remove();
 			});
 
+			$('#cartBox').on('shown.bs.collapse', function () {
+				if ( $(this).is(':visible') && $('#cledBox').is(':hidden') ) {
+					$('body').prepend('<div class="cartoverlay"></div>');
+				}
+			}).on('hide.bs.collapse', function() {
+				if ( $(this).is(':visible') && $('#cledBox').is(':hidden') ) {
+					$('.cartoverlay').remove();
+				}
+			});
+
 		},
 
 		//--------

@@ -188,166 +188,171 @@
         <h3>Checkout</h3>
         <div class="row">
           <div class="col-md-7">
-            <h4>Personal Details</h4>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label data-required-label="*">Full Name</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Position / Role</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Mobile Number</label>
-                  <input class="form-control" type="number">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Email</label>
-                  <input class="form-control" type="email">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Confirm Email</label>
-                  <input class="form-control" type="email">
-                </div>
-              </div>
-            </div>
-            <h4>Business / Office Details</h4>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label data-required-label="*">ABN / ACN</label>
-                  <div class="input-group">
-                    <input class="form-control" type="text"><span class="input-group-btn">
-                      <button class="btn btn-warning" type="button">Validate</button></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Legal Entity Name</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Business / Trade Name</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Business Address</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Suburb</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">State</label>
-                  <div class="control-select">
-                    <select class="form-control">
-                      <option>&nbsp;</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Postcode</label>
-                  <input class="form-control" type="number">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Office Phone Number</label>
-                  <input class="form-control" type="phone">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label data-required-label="*">Office Email</label>
-                  <input class="form-control" type="email">
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label>Choose Franchise Group</label>
-                  <select class="form-control">
-                    <option>&nbsp;</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <div class="checkbox">
-                    <label data-required-label="*">
-                      <input type="checkbox"><span class="tickbox"></span>&nbsp;I am authorized to enter into this Contract on behalf of this business
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <h4>Payment Options</h4>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <div class="radio">
-                    <label data-required-label="*">
-                      <input type="radio" name="radPayment" value="" onclick="payDirect(this, &quot;payDirectForm&quot;)">
-                      <div class="optionbox"></div>&nbsp;Credit Card<small>(1.5% surcharge)</small>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <div class="radio">
-                    <label data-required-label="*">
-                      <input type="radio" name="radPayment" value="1" onclick="payDirect(this, &quot;payDirectForm&quot;)">
-                      <div class="optionbox"></div>&nbsp;Direct Debit Payment
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card" id="payDirectForm" style="display: none;">
+            <div class="checkout-step">
+              <h4>Personal Details</h4>
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label>Account Name</label>
+                    <label data-required-label="*">Full Name</label>
                     <input class="form-control" type="text">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label>Account Number</label>
+                    <label data-required-label="*">Position / Role</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Mobile Number</label>
                     <input class="form-control" type="number">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label>BSB Number</label>
-                    <input class="form-control" type="number">
+                    <label data-required-label="*">Email</label>
+                    <input class="form-control" type="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Confirm Email</label>
+                    <input class="form-control" type="email">
                   </div>
                 </div>
               </div>
-              <p><small><i>I provide my Authority for RP Data Pty Ltd to debit funds through the Bulk Electronic Clearing System from my account identified above as instructed by me or authorised to be debited in accordance with the Direct Debit Request Services Agreement and the terms of my Contract.</i></small></p>
+            </div>
+            <div class="checkout-step">
+              <h4>Business / Office Details</h4>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label data-required-label="*">ABN / ACN</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text"><span class="input-group-btn">
+                        <button class="btn btn-warning" type="button">Validate</button></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Legal Entity Name</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Business / Trade Name</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Business Address</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Suburb</label>
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">State</label>
+                    <div class="control-select">
+                      <select class="form-control">
+                        <option>&nbsp;</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Postcode</label>
+                    <input class="form-control" type="number">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Office Phone Number</label>
+                    <input class="form-control" type="phone">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label data-required-label="*">Office Email</label>
+                    <input class="form-control" type="email">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Choose Franchise Group</label>
+                    <select class="form-control">
+                      <option>&nbsp;</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label data-required-label="*">
+                        <input type="checkbox"><span class="tickbox"></span>&nbsp;I am authorized to enter into this Contract on behalf of this business
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-step">
+              <h4>Payment Options</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="radio">
+                      <label data-required-label="*">
+                        <input type="radio" name="radPayment" value="" onclick="payDirect(this, &quot;payDirectForm&quot;)">
+                        <div class="optionbox"></div>&nbsp;Credit Card<small>(1.5% surcharge)</small>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="radio">
+                      <label data-required-label="*">
+                        <input type="radio" name="radPayment" value="1" onclick="payDirect(this, &quot;payDirectForm&quot;)">
+                        <div class="optionbox"></div>&nbsp;Direct Debit Payment
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="payDirectForm" style="display: none;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Account Name</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Account Number</label>
+                      <input class="form-control" type="number">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>BSB Number</label>
+                      <input class="form-control" type="number">
+                    </div>
+                  </div>
+                </div>
+                <p><small><i>I provide my Authority for RP Data Pty Ltd to debit funds through the Bulk Electronic Clearing System from my account identified above as instructed by me or authorised to be debited in accordance with the Direct Debit Request Services Agreement and the terms of my Contract.</i></small></p>
+              </div>
             </div>
           </div>
           <div class="col-md-5">
