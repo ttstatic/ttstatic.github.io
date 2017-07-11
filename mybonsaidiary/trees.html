@@ -1,187 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Title block allowing child pages to override-->
-    <title>My Bonsai Diary</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <!-- Bower Components-->
-    <link href="assets/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/angularjs-slider/dist/rzslider.min.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Bubblegum+Sans" rel="stylesheet">
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-  </head>
-  <body class="undefined login">
-    <header>
-      <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
-          </div>
-          <div class="navbar-collapse collapse" id="navbar">
-            <form class="navbar-form navbar-right"><a class="btn btn-default logged-out" href="login.html">Sign in</a><a class="btn btn-default logged-in" href="login.html">Sign out</a></form>
-            <ul class="nav navbar-nav navbar-right logged-in">
-              <li class="active"><a href="">My Account</a></li>
-              <li><a href="">Buy / Swap / Sell</a></li>
-              <li><a href="">Forum</a></li>
-              <li><a href="">Help</a></li>
-            </ul>
-          </div>
+
+<div ng-cloak scroll>
+  <section class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="toggle-aside visible-xs row"><a class="collapsed" href="#aside" data-toggle="collapse"><i class="fa fa-chevron-down"></i></a></div>
+          <aside id="aside">
+            <nav>
+              <ul>
+                <li><a href="/home" translate="HOME"> </a></li>
+                <li><a href="/trees" translate="MY_TREES"> </a></li>
+                <li><a href="/calendar" translate="MY_BONSAI_CALENDAR"></a></li>
+                <li><a href="/profile" translate="MY_PUBLIC_PROFILE"></a></li>
+                <li><a href="/gallery" translate="MY_GALLERY"></a></li>
+                <li><a href="/notifications" data-badge="NEW" translate="MY_NOTIFICATIONS"></a></li>
+              </ul>
+            </nav>
+          </aside>
         </div>
-      </nav>
-    </header>
-    <section class="page" ng-app="bonsaiApp">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="toggle-aside visible-xs row"><a class="collapsed" href="#aside" data-toggle="collapse"><i class="fa fa-chevron-down"></i></a></div>
-            <aside id="aside">
-              <nav>
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a class="active" href="trees.html">My Trees</a></li>
-                  <li><a href="calendar.html">My Bonsai Calendar</a></li>
-                  <li><a href="profile.html">My Public Profile</a></li>
-                  <li><a href="gallery.html">My Gallery</a></li>
-                  <li><a href="notifications.html" data-badge="NEW">My Notifications</a></li>
-                </ul>
-              </nav>
-            </aside>
-          </div>
-          <div class="col-sm-9">
-            <div class="page-content" ng-controller="TreesController">
-              <article>
-                <div class="collection">
-                  <h3 class="relative">My Trees<a class="btn btn-success btn-add-bonsai" href="">+ Add Bonsai</a></h3>
-                  <input class="form-control" type="text" placeholder="Search"><br>
-                  <div class="view-slider hidden-xs">
-                    <rzslider id="viewSlider" rz-slider-model="viewSlider.value" rz-slider-options="viewSlider.options"></rzslider>
-                    <div class="text-muted">(view width)</div>
-                  </div><br>
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="0">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/1.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
+        <div class="col-sm-9">
+          <div class="page-content">
+            <article>
+              <div class="collection">
+                <h3 class="text-center">My Trees  </h3>
+                <input class="form-control" type="text" placeholder="Search by species or age e.g. Juniper, Cascade, 1996 etc." ng-keyup="treesCtrl.loadTreeList()" ng-model="treesCtrl.findTrees">
+                <div class="col-sm-8">
+                  <p class="countresult" ng-show="filtered_result.length &gt; 0 &amp;&amp; treesCtrl.findTrees != &quot;&quot;"> <strong> ({{filtered_result.length}}) </strong> item(s) found for <strong> {{treesCtrl.findTrees}} </strong></p>
+                  <p class="countresult" ng-show="filtered_result.length === 0">No matching results found.</p>
+                  <p class="countresult" ng-show="treesCtrl.findTrees == &quot;&quot;">You have currently <strong> {{myTrees[0].numOfRecords}} </strong> tree(s) in your diary</p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="col-sm-2 sortmargin">
+                      <label>Sort by:</label>
                     </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="1">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/2.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="2">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/3.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="3">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/4.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="4">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/5.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="5">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/6.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="6">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/7.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="7">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/8.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-{{myVal}}" data-index="8">
-                      <div class="collection-thumb"><a href="">
-                          <div class="thumb"><img src="assets/images/collection/9.jpg" alt=""></div>
-                          <div class="name">Bonsai Name</div>
-                          <div class="age">10 years</div></a></div>
+                    <div class="col-sm-3 sortmargin"><a class="nounlinelink" href="" ng-class="{'sortcolor' : treesCtrl.sortSpecies}" ng-click="treesCtrl.sortBy('species')">Species<i>&nbsp;</i><i class="fa" ng-class="{'fa-long-arrow-up': treesCtrl.isSpecies, 'fa-long-arrow-down': !treesCtrl.isSpecies}"></i><i>&nbsp;</i><i class="fa" ng-class="{'fa-long-arrow-up': treesCtrl.isSpecies, 'fa-long-arrow-down': !treesCtrl.isSpecies}"></i></a></div>
+                    <div class="col-sm-3 sortmargin"><a class="nounlinelink" href="" ng-class="{'sortcolor' : treesCtrl.sortYear}" ng-click="treesCtrl.sortBy('year')">Age<i>&nbsp;</i><i class="fa" ng-class="{'fa-long-arrow-up': treesCtrl.isYear, 'fa-long-arrow-down': !treesCtrl.isYear}"></i><i>&nbsp;</i><i class="fa" ng-class="{'fa-long-arrow-up': treesCtrl.isYear, 'fa-long-arrow-down': !treesCtrl.isYear}"></i></a></div>
+                    <div class="col-sm-4 btn-add-bonsai"><a class="btn btn-success" href="" ng-click="treesCtrl.addEditTreeInfo(tree.id, false)">+ Add Bonsai</a></div>
+                  </div>
+                </div>
+                <div class="row" id="addEdit">
+                  <h5 class="messageaddedit text-center">{{treesCtrl.messageAddEdit}}                                </h5>
+                </div>
+                <hr>
+                <div class="row flex flex-wrap">
+                  <div class="treedetails col-xs-12 col-sm-4" ng-repeat="tree in myTrees | orderBy : treesCtrl.propertyName:treesCtrl.reverse as filtered_result">
+                    <div class="collection-thumb flex flex-column grow-1">
+                      <div class="thumb"><a href="/timeline"><img ng-src="{{tree.imageUrl}}" alt="{{tree.type}}"></a></div>
+                      <div class="flex center flex-column">
+                        <div class="name">{{tree.species}}</div>
+                        <div class="name">{{tree.style}}</div>
+                        <div class="age" ng-show="{{tree.year &gt; 0}}">{{(treesCtrl.currentDate | date : "yyyy") - tree.year}} years</div>
+                        <div class="age" ng-show="{{!tree.year &gt; 0}}">No age specified.</div><a class="btn btn-success btn-sm edit fa fa-pencil" ng-click="treesCtrl.addEditTreeInfo(tree.id, true)" data-id="{{tree.id}}"></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <ul class="links">
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-          <li><a href="sitemap.html">Site Map</a></li>
-          <li><a href="advertise.html">Advertise With Us</a></li>
-        </ul>
-        <div class="social"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
-      </div>
-    </footer>
-    <!-- Bower Components-->
-    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="bower_components/angularjs-slider/dist/rzslider.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js" type="text/javascript"></script>
-    <script src="assets/scripts/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
-    <script src="assets/scripts/main.js" type="text/javascript"></script>
-    <!-- page scripts goes here...-->
-    <!-- External Script goes here...-->
-    <script>
-      var myApp = angular.module('bonsaiApp', ['rzModule']);
-      
-      myApp.controller('TreesController', function($scope) {
-        $scope.myVal = 4;
-        $scope.viewSlider = {
-          value: 3,
-          options: {
-            floor: 2,
-            ceil: 4,
-            showTicks: true,
-            showTicksValues: true,
-            onChange: function(sliderId, modelValue) {
-              if (modelValue == 2) {
-                $scope.myVal = 6;
-              }
-              if (modelValue == 3) {
-                $scope.myVal = 4;
-              }
-              if (modelValue == 4) {
-                $scope.myVal = 3;
-              }
-            }
-          }
-        };
-      });
-    </script>
-  </body>
-</html>
+    </div>
+  </section>
+</div>

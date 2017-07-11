@@ -1,0 +1,101 @@
+
+<div ng-cloak>
+  <section class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="toggle-aside visible-xs row"><a class="collapsed" href="#aside" data-toggle="collapse"><i class="fa fa-chevron-down"></i></a></div>
+          <aside id="aside">
+            <nav>
+              <ul>
+                <li><a href="/home" translate="HOME"> </a></li>
+                <li><a href="/trees" translate="MY_TREES"> </a></li>
+                <li><a href="/calendar" translate="MY_BONSAI_CALENDAR"></a></li>
+                <li><a href="/profile" translate="MY_PUBLIC_PROFILE"></a></li>
+                <li><a href="/gallery" translate="MY_GALLERY"></a></li>
+                <li><a href="/notifications" data-badge="NEW" translate="MY_NOTIFICATIONS"></a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+        <div class="col-sm-9">
+          <div class="page-content">
+            <article>
+              <div class="collection">
+                <h3 class="text-center">{{addtreeCtrl.addEditTitle}}</h3>
+                <hr>
+                <div class="row">
+                  <div class="col-md-4 col-md-offset-1 text-center">
+                    <div class="thumb"><img ngf-thumbnail="addtreeCtrl.file || addtreeCtrl.imageUrlLink" alt="{{addtreeCtrl.style}}"></div>
+                    <input ng-show="addtreeCtrl.isNew" type="file" ngf-select ng-model="addtreeCtrl.file" name="file" ngf-pattern="'image/*'" accept="image/*" ngf-max-size="2MB">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="col-sm-11 addtreemargin">
+                        <label class="required">Species</label>
+                      </div>
+                      <div class="col-sm-1 infoicon"><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="(e.g. Juniper)">                                         </i></div>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.species">
+                      <div class="mandatory text-center"><span ng-show="addtreeCtrl.isRequired" id="idSpecies">Species is required.</span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-11 addtreemargin">
+                        <label>Age (year)</label>
+                      </div>
+                      <div class="col-sm-1 infoicon"><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="(e.g. 1998)"> </i></div>
+                      <input class="form-control" type="number" ng-model="addtreeCtrl.year" ng-blur="addtreeCtrl.checkRequiredField()">
+                      <div class="mandatory text-center"><span ng-show="addtreeCtrl.isYearRequired">Year must be greater than 1900.</span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-11 addtreemargin">
+                        <label>Style</label>
+                      </div>
+                      <div class="col-sm-1 infoicon"><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="(e.g. Formal upright)"> </i></div>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.style">
+                    </div>
+                    <div class="form-group">
+                      <label>Years in training</label>
+                      <input class="form-control" min="0" type="number" ng-model="addtreeCtrl.yearsInTraining">
+                    </div>
+                    <div class="form-group">
+                      <label>Acquired Date</label>
+                      <input class="form-control" max="{{addtreeCtrl.currentDate | date : &quot;yyyy-MM-dd&quot;}}" type="date" ng-model="addtreeCtrl.dateAquired">
+                    </div>
+                    <div class="form-group">
+                      <label>Acquired from</label>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.acquiredFrom">
+                    </div>
+                    <div class="form-group">
+                      <label>Origin</label>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.origin">
+                    </div>
+                    <div class="form-group">
+                      <label>Price Paid</label>
+                      <input class="form-control" type="number" ng-model="addtreeCtrl.pricePaid">
+                    </div>
+                    <div class="form-group">
+                      <label>Pot Type</label>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.potType">
+                    </div>
+                    <div class="form-group">
+                      <label>Pot Price</label>
+                      <input class="form-control" type="text" ng-model="addtreeCtrl.potPrice">
+                    </div>
+                    <div class="form-group">
+                      <label>Comments</label>
+                      <textarea class="form-control" rows="4" maxlength="500" ng-model="addtreeCtrl.comments"></textarea>
+                    </div>
+                    <div class="form-group text-right"><a class="btn btn-default" href="/trees">Cancel</a><a class="btn btn-success" href="" ng-click="addtreeCtrl.saveUpdate()">Save</a></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="text-center mandatory">* Mandatory fields.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
