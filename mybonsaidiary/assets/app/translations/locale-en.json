@@ -1,0 +1,20 @@
+{
+        "HOME"                              : "Home",
+        "MY_TREES"                          : "My Trees",
+        "MY_BONSAI_CALENDAR"                : "My Bonsai Calendar",
+        "MY_PUBLIC_PROFILE"                 : "My Public Profile",
+        "MY_GALLERY"                        : "My Gallery",
+        "MY_NOTIFICATIONS"                  : "My Notifications",
+
+        "CONTACT"                           : "Contact",
+        "ABOUT_US"                          : "About Us",
+        "PRIVACY"                           : "Privacy",
+        "TERMS_OF_USE"                      : "Terms of Use",
+        "SITE_MAP"                          : "Site Map",
+        "ADVERTISE_WITH_US"                 : "Advertise With Us",
+
+        "MY_ACCOUNT"                        : "My Account",
+        "BUY_SWAP_SELL"                     : "Buy / Swap / Sell",
+        "FORUM"                             : "Forum",
+        "HELP"                              : "Help"
+}
