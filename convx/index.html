@@ -52,7 +52,7 @@
             <p>E illum consequat. Aute relinqueret nescius summis laboris an in summis despicationes. Ab anim summis aut mentitum ubi hic probant relinqueret iis cernantur de esse laboris ex quis probant ne fore quae. Ubi multos sint qui singulis.Aut si eram ingeniis.</p><br class="visible-md visible-lg">
             <div class="row">
               <div class="col-xs-6"><a class="btn btn-lg btn-default btn-block" href="#section-bookademo">Book a demo</a></div>
-              <div class="col-xs-6"><a class="btn btn-lg btn-primary btn-block" href="">Sign up</a></div>
+              <div class="col-xs-6"><a class="btn btn-lg btn-primary btn-block" data-target="#modalSignup" data-toggle="modal">Sign up</a></div>
             </div>
           </div>
         </div>
@@ -247,5 +247,17 @@
     <script src="assets/scripts/main.js"></script>
     <script src="assets/app/controllers/HomeController.js"></script>
     <!-- endinject-->
+    <script>
+      var obj = $(".navbar-default .navbar-nav > li:not(.dropdown) > a");
+      var body = $("html, body");
+      $(obj).on("click", function(e) {
+        e.preventDefault();
+        var selector = $(this).attr("href");
+        try {
+          var objOffset = $(selector).offset().top;
+        } catch(e){}
+        body.stop().animate({scrollTop: selector == '#' ? 0 : objOffset}, '200', 'swing');
+      });
+    </script>
   </body>
 </html>
