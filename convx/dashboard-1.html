@@ -21,17 +21,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endinject-->
     <style>
-      header .navbar-default {
-        background-color: #010c19;
-      }
-      footer, header {
-        display: none;
-      }
       body {
-        background-color: #3f51b5;
-      }
-      section.page {
-        padding-top: 20px;
+        background: #eee;
       }
     </style><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,49 +32,58 @@
 <![endif]-->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target="#convx-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/logo-cvx.png">ConvX</a>
+    <aside class="admin"><a class="aside-logo" href="index.html"><img src="assets/images/logo-cvx.png">ConvX</a>
+      <div class="user-menu"><span class="hi"><img src="//via.placeholder.com/40"><span>Hi&nbsp;</span>Admin!
+          <div class="pull-right"><a class="drpdown" href="#userDropdown" data-toggle="collapse"><i class="fa fa-angle-down"></i></a></div>
+          <div class="clearfix"></div>
+          <div class="collapse" id="userDropdown">
+            <nav>
+              <ul>
+                <li><a href="admin-settings-uac.html">Account Settings</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="collapse navbar-collapse" id="convx-nav"><a class="btn btn-success navbar-btn navbar-right" href="signin.html">Sign in</a>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#section-aboutus">About Us</a></li>
-              <li><a href="#section-contactus">Contact Us</a></li>
-              <li><a href="#section-howitworks">How It Works</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4"><a href="index.html"><img class="logo-md" src="assets/images/logo-cvx.png"></a><br>
-            <div class="card">
-              <h2 class="lead">Sign in</h2>
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="password" placeholder="Password">
-              </div>
-              <div class="clearfix"></div>
-              <p class="pull-right"><a href="forgotpassword.html">Forgot password?</a></p><a class="btn btn-success" href="index.html">Sign in</a>&nbsp;<a class="btn btn-primary" href="signup-1.html">Sign up</a>
+          <div class="clearfix"></div></span></div>
+      <nav>
+        <ul>
+          <li><a href="dashboard-1.html">Dashboard</a></li>
+          <li><a href="job-orders.html">Job Orders</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="accounts.html">Accounts</a></li>
+        </ul>
+      </nav><br>
+      <div class="input-group">
+        <input class="form-control" placeholder="Search..."><span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+      </div>
+    </aside>
+    <section class="admin">
+      <div class="wrapper">
+        <h3>Dashboard</h3>
+        <div class="summary-row"><a class="dashboard-summary" href="">
+            <div class="col">
+              <div class="box"><span class="number">65</span></div><span class="lbl">Open Job Orders</span>
             </div>
-          </div>
-        </div>
+            <div class="col">
+              <div class="box"><span class="number">1</span></div><span class="lbl">Preliminary</span>
+            </div>
+            <div class="col">
+              <div class="box"><span class="number">20</span></div><span class="lbl">Contract</span>
+            </div>
+            <div class="col">
+              <div class="box"><span class="number">12</span></div><span class="lbl">Inspection</span>
+            </div>
+            <div class="col">
+              <div class="box"><span class="number">7</span></div><span class="lbl">Settlement</span>
+            </div>
+            <div class="col">
+              <div class="box"><span class="number">18</span></div><span class="lbl">Title Transfer</span>
+            </div>
+            <div class="col">
+              <div class="box"><span class="number">7</span></div><span class="lbl">Completion</span>
+            </div></a></div>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <p><a href=""><i class="fa fa-linkedin-square fa-2x"></i></a></p>
-        <p><a href="privacypolicy.html">Privacy Policy</a>&nbsp;&middot;&nbsp;<a href="termsandconditions.html">Terms &amp; Conditions</a></p><small>
-          <p>Copyright &copy; ConvX</p>
-          <p><span class="version">v0.01</span></p></small>
-      </div>
-    </footer>
     <div class="modal fade" id="modalResetpassword" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
