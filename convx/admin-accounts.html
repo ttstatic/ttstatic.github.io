@@ -59,61 +59,93 @@
     </aside>
     <section class="admin">
       <div class="wrapper">
-        <h3>Settings</h3>
+        <h3>Accounts</h3>
         <div class="admin-panel">
           <div class="row">
             <div class="col-md-3 nav-lvl-1">
-              <nav>
-                <ul>
-                  <li><a class="active" href="admin-settings-uac.html">User Access Control</a></li>
-                  <li><a href="admin-settings-pp.html">Passoword Policy</a></li>
-                </ul>
-              </nav>
+              <aside class="order-list">
+                <div class="form-group select">
+                  <select class="form-control">
+                    <option>Sort by</option>
+                  </select>
+                </div>
+                <div class="form-group search">
+                  <input class="form-control" placeholder="Search...">
+                </div>
+                <div class="row">
+                  <div class="col-xs-4"><img class="img-responsive" src="//via.placeholder.com/200"></div>
+                  <div class="col-xs-8">
+                    <p class="name"><a href="">Last name, First name</a></p>
+                    <p>email@email.com</p>
+                    <div class="text-muted">Buyer</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4"><img class="img-responsive" src="//via.placeholder.com/200"></div>
+                  <div class="col-xs-8">
+                    <p class="name"><a href="">Last name, First name</a></p>
+                    <p>email@email.com</p>
+                    <div class="text-muted">Buyer</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4"><img class="img-responsive" src="//via.placeholder.com/200"></div>
+                  <div class="col-xs-8">
+                    <p class="name"><a href="">Last name, First name</a></p>
+                    <p>email@email.com</p>
+                    <div class="text-muted">Buyer</div>
+                  </div>
+                </div>
+              </aside>
             </div>
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-4 nav-lvl-2">
-                  <nav>
-                    <ul>
-                      <li><a class="active" href="">System Admin</a></li>
-                      <li><a href="">Admin</a></li>
-                      <li><a href="">Gigger</a></li>
-                      <li><a href="">Conveyancer</a></li>
-                      <li><a href="">Seller</a></li>
-                      <li><a href="">Buyer</a></li>
-                      <li><a href="">Developer</a></li>
-                    </ul>
-                  </nav>
+            <div class="col-md-9 nav-lvl-2 full">
+              <!-- Nav tabs-->
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#tabPersonalInformation" role="tab" data-toggle="tab">Personal Information</a></li>
+                <li><a href="#tabProperties" role="tab" data-toggle="tab">Properties</a></li>
+                <li><a href="#tabOthers" role="tab" data-toggle="tab">Others</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabPersonalInformation" role="tabpanel">
+                  <div class="row">
+                    <div class="col-md-3"><img class="img-responsive" src="//via.placeholder.com/200"></div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <h4>Rodan Luzuriaga</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="text-muted">Address</label>
+                            <div class="form-control-static">City, State PostCode</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="text-muted">UAC / Role</label>
+                            <div class="form-control-static">-</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card">Other Details goes here...</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card">Other Details goes here...</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <label class="switch rounded pull-right">
-                        <input type="checkbox"><span></span>
-                      </label>Job Orders
-                    </li>
-                    <li class="list-group-item">
-                      <label class="switch rounded pull-right">
-                        <input type="checkbox" checked><span></span>
-                      </label>Process
-                    </li>
-                    <li class="list-group-item">
-                      <label class="switch rounded pull-right">
-                        <input type="checkbox"><span></span>
-                      </label>Accounts
-                    </li>
-                    <li class="list-group-item">
-                      <label class="switch rounded pull-right">
-                        <input type="checkbox" checked><span></span>
-                      </label>User Access Control
-                    </li>
-                    <li class="list-group-item">
-                      <label class="switch rounded pull-right">
-                        <input type="checkbox" checked><span></span>
-                      </label>Password Policy
-                    </li>
-                  </ul>
-                </div>
+                <div class="tab-pane" id="tabProperties" role="tabpanel"> </div>
+                <div class="tab-pane" id="tabOthers" role="tabpanel"> </div>
               </div>
             </div>
           </div>
