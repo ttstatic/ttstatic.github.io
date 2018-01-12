@@ -66,7 +66,18 @@
         <div class="admin-panel">
           <div class="row">
             <div class="col-md-3 nav-lvl-1">
-              <nav>
+              <h5 class="visible-sm visible-xs">Status</h5>
+              <div class="form-group select menu visible-sm visible-xs">
+                <select class="form-control">
+                  <option>Preliminary</option>
+                  <option>Contract</option>
+                  <option selected>Inspection</option>
+                  <option>Settlement</option>
+                  <option>Title Transfer</option>
+                  <option>Completion</option>
+                </select>
+              </div>
+              <nav class="hidden-sm hidden-xs">
                 <ul>
                   <li><a href="">Preliminary</a></li>
                   <li><a href="">Contract</a></li>
@@ -78,7 +89,6 @@
               </nav>
             </div>
             <div class="col-md-9 nav-lvl-2 full">
-              <p class="lead">Inspection</p>
               <div class="card">Other details</div><br>
               <div class="panel panel-default">
                 <div class="panel-heading">
