@@ -47,7 +47,7 @@
       <nav>
         <ul>
           <li><a href="admin-dashboard.html">Dashboard</a></li>
-          <li><a href="admin-joborders.html">Job Orders</a></li>
+          <li><a class="notification" href="admin-joborders.html" data-counter="1">Job Orders</a></li>
           <li><a href="admin-process.html">Process</a></li>
           <li><a href="admin-accounts.html">Accounts</a></li>
         </ul>
@@ -62,14 +62,20 @@
     </div>
     <section class="admin">
       <div class="wrapper">
-        <h3>Job Orders</h3>
+        <h3><a class="btn btn-success pull-right" href="">Create New</a>Job Orders</h3>
         <div class="admin-panel">
           <div class="row">
             <div class="col-md-3 nav-lvl-1">
               <aside class="order-list">
                 <div class="form-group select">
                   <select class="form-control">
-                    <option>Sort by</option>
+                    <option>Open Job Orders</option>
+                    <option selected>Preliminary</option>
+                    <option>Contract</option>
+                    <option>Inspection</option>
+                    <option>Settlement</option>
+                    <option>Title Transfer</option>
+                    <option>Completion</option>
                   </select>
                 </div>
                 <div class="form-group search">
@@ -84,7 +90,7 @@
                   </select>
                 </div>
                 <div class="property-list hidden-sm hidden-xs">
-                  <div class="row">
+                  <div class="row active">
                     <div class="col-xs-4"><img class="img-responsive" src="//via.placeholder.com/200"></div>
                     <div class="col-xs-8">
                       <p class="name"><a href="">47 Ashburnton Avenue South Turramurra, NSW 2074</a></p>
@@ -195,10 +201,10 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="card">Other Details goes here...</div>
+                      <textarea class="form-control" rows="5" placeholder="Other details..."></textarea>
                     </div>
                     <div class="col-md-6">
-                      <div class="card">Other Details goes here...</div>
+                      <textarea class="form-control" rows="5" placeholder="Other details..."></textarea>
                     </div>
                   </div>
                 </div>

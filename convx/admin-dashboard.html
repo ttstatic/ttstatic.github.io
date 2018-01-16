@@ -47,7 +47,7 @@
       <nav>
         <ul>
           <li><a href="admin-dashboard.html">Dashboard</a></li>
-          <li><a href="admin-joborders.html">Job Orders</a></li>
+          <li><a class="notification" href="admin-joborders.html" data-counter="1">Job Orders</a></li>
           <li><a href="admin-process.html">Process</a></li>
           <li><a href="admin-accounts.html">Accounts</a></li>
         </ul>
@@ -63,28 +63,17 @@
     <section class="admin">
       <div class="wrapper">
         <h3>Dashboard</h3>
-        <div class="summary-row"><a class="dashboard-summary" href="">
-            <div class="col done">
-              <div class="box"><span class="number">65</span></div><span class="lbl">Open Job Orders</span>
-            </div>
-            <div class="col active">
-              <div class="box"><span class="number">1</span></div><span class="lbl">Preliminary</span>
-            </div>
-            <div class="col">
-              <div class="box"><span class="number">20</span></div><span class="lbl">Contract</span>
-            </div>
-            <div class="col">
-              <div class="box"><span class="number">12</span></div><span class="lbl">Inspection</span>
-            </div>
-            <div class="col">
-              <div class="box"><span class="number">7</span></div><span class="lbl">Settlement</span>
-            </div>
-            <div class="col">
-              <div class="box"><span class="number">18</span></div><span class="lbl">Title Transfer</span>
-            </div>
-            <div class="col">
-              <div class="box"><span class="number">7</span></div><span class="lbl">Completion</span>
-            </div></a></div>
+        <div class="summary-row">
+          <div class="dashboard-summary">
+            <div class="col"><a class="box" href=""><span class="number">65</span></a><span class="lbl">Open Job Orders</span></div>
+            <div class="col"><a class="box" href="admin-joborders.html"><span class="number">1</span></a><span class="lbl">Preliminary</span></div>
+            <div class="col"><a class="box" href=""><span class="number">20</span></a><span class="lbl">Contract</span></div>
+            <div class="col"><a class="box" href=""><span class="number">12</span></a><span class="lbl">Inspection</span></div>
+            <div class="col"><a class="box" href=""><span class="number">7</span></a><span class="lbl">Settlement</span></div>
+            <div class="col"><a class="box" href=""><span class="number">18</span></a><span class="lbl">Title Transfer</span></div>
+            <div class="col"><a class="box" href=""><span class="number">7</span></a><span class="lbl">Completion</span></div>
+          </div>
+        </div>
       </div>
     </section>
     <div class="modal fade" id="modalResetpassword" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
