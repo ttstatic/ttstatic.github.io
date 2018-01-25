@@ -97,7 +97,7 @@ section table td {
   color: #2196F3;
 }
 .program-category .training-exercise + .training-exercise {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .program-category .exercise-name {
   font-size: 14px;
