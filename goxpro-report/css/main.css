@@ -90,6 +90,7 @@ section table td {
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 16px;
+  color: #2196F3;
 }
 .program-category .training-exercise + .training-exercise {
   margin-top: 15px;
