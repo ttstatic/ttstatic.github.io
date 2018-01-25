@@ -128,10 +128,49 @@ section table td {
 .sessions .date {
   background: gainsboro;
 }
-
-
-
-
+.contraindication h3, .heart-rates h3, .workout-zones h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #F44336;
+  font-size: 16px;
+}
+.contraindication .badges {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+.badge {
+  padding: 3px 5px;
+  background: #eee;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+}
+.heart-rates table {
+  background-color: white;
+  font-size: 12px;
+  padding: 0;
+  border-spacing: 5px;
+  border-collapse: collapse;
+}
+.heart-rates table td {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+}
+.workout-zones table {
+  background-color: white;
+  font-size: 12px;
+  padding: 0;
+  border-spacing: 5px;
+  border-collapse: collapse;
+}
+.workout-zones table td {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+}
+.workout-zones table tr:nth-child(even) {
+  background: #eee;
+}
 
 
 
