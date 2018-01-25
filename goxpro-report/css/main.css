@@ -88,9 +88,18 @@ section table td {
 }
 .program-category h3 {
   margin-bottom: 10px;
+  font-weight: 400;
 }
 .program-category .training-exercise + .training-exercise {
   margin-top: 15px;
+}
+.program-category .exercise-name {
+  font-size: 14px;
+  display: block;
+  color:
+}
+.program-category .stats {
+  font-size: 11px;
 }
 .sessions {
   background-color: white;
@@ -100,7 +109,7 @@ section table td {
   border-collapse: collapse;
 }
 .sessions td {
-  padding: 2px 5px;
+  padding: 0 5px;
   border: 1px solid #ddd;
 }
 .sessions td:not(.name) {
