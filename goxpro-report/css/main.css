@@ -70,8 +70,12 @@ header h1 {
   margin: 0;
 }
 header p {
-  font-size: 12px;
-  color: #607D8B;
+  font-size: 14px;
+}
+header .name {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
 }
 /* TABLES */
 section table {
