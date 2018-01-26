@@ -94,7 +94,6 @@ section table td {
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 16px;
-  color: #2196F3;
 }
 .program-category .training-exercise + .training-exercise {
   margin-top: 10px;
@@ -132,7 +131,7 @@ section table td {
   margin-bottom: 10px;
   font-weight: 400;
   margin-top: 0;
-  color: #F44336;
+  /* color: #F44336; */
   font-size: 16px;
 }
 .contraindication .badges {
@@ -172,7 +171,90 @@ section table td {
   background: #eee;
 }
 
-
+/* TYPE 1 */
+.program-category.type-1 h3 {
+  color: #4982bb; /* [dark] */
+}
+.program-category.type-1 table {
+  background: #d5dce3; /* [light] */
+  border-color: #d5dce3; /* [light] */
+}
+.program-category.type-1 .date {
+  background: #4982bb; /* [dark] */
+  color: white;
+}
+.program-category.type-1 tr.date td {
+  border-color: #4982bb; /* [dark] */
+}
+.program-category.type-1 .sessions td {
+  border-color: #dcdcdc; /* [fixed] */
+}
+.program-category.type-1 .sessions tr:not(.date) td {
+  background: white; /* [fixed] */
+}
+/* TYPE 2 */
+.program-category.type-2 h3 {
+  color: #177b83; /* [dark] */
+}
+.program-category.type-2 table {
+  background: #cae0de; /* [light] */
+  border-color: #cae0de; /* [light] */
+}
+.program-category.type-2 .date {
+  background: #177b83; /* [dark] */
+  color: white;
+}
+.program-category.type-2 tr.date td {
+  border-color: #177b83; /* [dark] */
+}
+.program-category.type-2 .sessions td {
+  border-color: #dcdcdc; /* [fixed] */
+}
+.program-category.type-2 .sessions tr:not(.date) td {
+  background: white; /* [fixed] */
+}
+/* TYPE 3 */
+.program-category.type-3 h3 {
+  color: #9760ae; /* [dark] */
+}
+.program-category.type-3 table {
+  background: #ece0ef; /* [light] */
+  border-color: #ece0ef; /* [light] */
+}
+.program-category.type-3 .date {
+  background: #9760ae; /* [dark] */
+  color: white;
+}
+.program-category.type-3 tr.date td {
+  border-color: #9760ae; /* [dark] */
+}
+.program-category.type-3 .sessions td {
+  border-color: #dcdcdc; /* [fixed] */
+}
+.program-category.type-3 .sessions tr:not(.date) td {
+  background: white; /* [fixed] */
+}
+/* TYPE 4 */
+.program-category.type-4 h3 {
+  color: #c37802; /* [dark] */
+}
+.program-category.type-4 table {
+  background: #f4e7da; /* [light] */
+  border-color: #f4e7da; /* [light] */
+}
+.program-category.type-4 .date {
+  background: #c37802; /* [dark] */
+  color: white;
+}
+.program-category.type-4 tr.date td {
+  border-color: #c37802; /* [dark] */
+}
+.program-category.type-4 .sessions td {
+  border-color: #dcdcdc; /* [fixed] */
+}
+.program-category.type-4 .sessions tr:not(.date) td {
+  background: white; /* [fixed] */
+}
 
 
 
