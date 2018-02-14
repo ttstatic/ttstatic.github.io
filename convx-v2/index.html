@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Skeleton for Pug and Sass</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="910157958848-1j4ipf44t04fvki2v853p9ecmkthviat.apps.googleusercontent.com">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/bootstrap/assets/css/docs.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endinject-->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endinject--><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=951850141523786&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+    </script>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-dark"><a class="navbar-brand" href="index.html">ConvX</a>
+          <div class="mobile-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="wrap rounded-bottom">
+            <ul>
+              <li><a href="">For Conveyancers</a></li>
+              <li><a href="">For Real Estate Agents</a></li>
+              <li><a href="signup.html"><i class="fas fa-lock-open"></i>Sign up / Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="search d-flex justify-content-center align-items-center flex-column">
+      <div id="map"></div>
+      <div class="form">
+        <div class="form-group rounded">
+          <div class="input-search">
+            <input class="form-control form-control-lg" type="text" placeholder="52 Maxwell Street, South Turramurra NSW, Australia..."><i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="search-result rounded-bottom">
+          <div class="media"><img class="mr-3 rounded-circle" src="//via.placeholder.com/150" alt="" width="50">
+            <div class="media-body"><a href="">
+                <h5 class="mt-0">47 Ashburnton Avenue South Turramurra, NSW 2074</h5></a>4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE</div>
+          </div>
+          <div class="media"><img class="mr-3 rounded-circle" src="//via.placeholder.com/150" alt="" width="50">
+            <div class="media-body"><a href="">
+                <h5 class="mt-0">56 Ashton Rosemary, Queensland</h5></a>4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE</div>
+          </div>
+          <div class="media"><img class="mr-3 rounded-circle" src="//via.placeholder.com/150" alt="" width="50">
+            <div class="media-body"><a href="">
+                <h5 class="mt-0">32 Ashburnton NSW 2074</h5></a>4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endinject-->
+    <!-- inject:js-->
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <!-- endinject-->
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA9NpGlo0byYYix_uRbRFUNkNQZDnWNHHI&amp;callback=initMap" async="" defer=""></script>
+    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+    <script>
+      function initMap() {
+          // Styles a map in night mode.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -33.7512037, lng: 151.112054},
+            zoom: 17,
+            styles: [
+              {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+              {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+              {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+              {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{color: '#263c3f'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#6b9a76'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#38414e'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#212a37'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#746855'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#1f2835'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#f3d19c'}]
+              },
+              {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{color: '#2f3948'}]
+              },
+              {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{color: '#17263c'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#515c6d'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{color: '#17263c'}]
+              }
+            ]
+          });
+        }
+    </script>
+  </body>
+</html>
