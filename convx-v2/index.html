@@ -40,7 +40,7 @@
       }(document, 'script', 'facebook-jssdk'));
       
     </script>
-    <header>
+    <header class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-dark"><a class="navbar-brand" href="index.html">ConvX</a>
           <div class="mobile-nav">
@@ -60,12 +60,16 @@
         </div>
       </div>
     </header>
-    <section class="search d-flex justify-content-center align-items-center flex-column">
+    <section class="search">
       <div id="map"></div>
+      <div class="home-caption">
+        <h2>Real Conveyancers. Low Cost.</h2>
+        <p class="lead">No worries, we’ve got it covered!</p><br>
+      </div>
       <div class="form">
         <div class="form-group rounded">
           <div class="input-search">
-            <input class="form-control form-control-lg" type="text" placeholder="52 Maxwell Street, South Turramurra NSW, Australia..."><i class="fas fa-search"></i>
+            <input class="form-control form-control-lg" type="text" placeholder="Enter your property address to get started..."><i class="fas fa-search"></i>
           </div>
         </div>
         <div class="search-result rounded-bottom">
@@ -83,6 +87,17 @@
           </div>
         </div>
       </div>
+      <div class="conveyancer">
+        <div class="media"><img class="align-self-center mr-3" src="//via.placeholder.com/150" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Hi, I’m Rory</h5>
+            <p>I’m a conveyancer.</p>
+            <p>I’m here to help at ConvX. Contact me anytime and I’ll help you settle your property confidently, quickly and cheaply. We’ve got you covered!</p>
+            <p class="mb-0">Let’s get started! <a href="signup.html">Sign up to start</a> or enter your property address above.</p>
+          </div>
+        </div>
+      </div>
+      <div class="powered-by"><small>Powered by</small><br><img src="assets/images/mills-oakley-logo.gif"></div>
     </section>
     <!-- bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
