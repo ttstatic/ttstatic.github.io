@@ -6,7 +6,17 @@ var Main = (function () {
 	return {
 		init: function () {
 
-			
+			$(window).on('load resize', function() {
+				if ($(this).width() <= 991) {
+					slideOut('');
+				}
+			});
+			$('#navToggle').on('click', function() {
+				slideOut('slideIn');
+			});
+			function slideOut(obj) {
+				$('aside.admin, .mobile-bar').toggleClass(obj);
+			}
 
 		},
 
