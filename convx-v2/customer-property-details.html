@@ -48,59 +48,63 @@
     </div>
     <section class="admin">
       <div class="container">
-        <h3>Your Dashboard</h3>
+        <h3>Property Details</h3>
         <div class="card">
-          <div class="card-body"><a class="float-md-right" href="customer-notifications.html">View All</a>
-            <p class="lead">Recent Notifications</p>
-            <div class="table-responsive">
-              <table class="table table-sm">
-                <tbody>
-                  <tr>
-                    <td>Aravind Naidu has Approved Aura 24 on Preliminary stage</td>
-                    <td>Feb 4, 2018 - 8:00:66 AM</td>
-                  </tr>
-                  <tr>
-                    <td>Nick  Stanley has Opened 47 Ashburn on Contract stage</td>
-                    <td>Feb 4, 2018 - 8:00:67 AM</td>
-                  </tr>
-                  <tr>
-                    <td>Contract stage is Past Due</td>
-                    <td>Feb 7, 2018 - 9:15:67 AM</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div><br>
-        <div class="card">
-          <div class="card-body"><a class="float-md-right" href="customer-property-search.html"><i class="fas fa-search-plus fa-2x"></i></a>
-            <p class="lead">Property Summary</p>
+          <div class="card-body">
             <div class="row">
               <div class="col-md-4">
-                <div class="property-preview"><img src="//via.placeholder.com/150x100">
-                  <div class="address">47 Ashburn</div>
-                  <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="timeline">
+                  <div class="timeline-item done">
+                    <p>Open the file<br><small>Opened: Jan 31, 2018, 6:00:36 PM</small><br><small>Closed: Feb 4, 2018, 8:00:66 AM</small></p>
                   </div>
-                  <div class="role">You are the Buyer</div>
+                  <div class="timeline-item active">
+                    <p>Search and Check<br><small>Opened: Feb 4, 2018, 8:00:67 PM</small><br><small>In Progress: Feb 4, 2018, 6:00:36 AM</small></p>
+                  </div>
+                  <div class="timeline-item">
+                    <p>Settlement Readiness<br><small>Pending</small></p>
+                  </div>
+                  <div class="timeline-item">
+                    <p>Settlement<br><small>Pending</small></p>
+                  </div>
+                  <div class="timeline-item">
+                    <p>Completed<br><small>Pending</small></p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="property-preview"><img src="//via.placeholder.com/150x100">
-                  <div class="address">Mercer</div>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="col-md-8">
+                <p class="lead">You are the Seller</p>
+                <div class="row">
+                  <div class="col-md-4 text-center"><img class="property-d-img" src="assets/images/img-map.png" alt="" width="350">
+                    <div class="clearfix d-xs-block d-sm-block d-md-none"><br></div>
                   </div>
-                  <div class="role">You are the Seller</div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="property-preview"><img src="//via.placeholder.com/150x100">
-                  <div class="address">Aura 24</div>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="role">You are the Seller</div>
+                  <div class="col-md-8"><a href="">
+                      <h5 class="mt-0">47 Ashburnton Avenue South Turramurra, NSW 2074</h5></a>4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE</div>
+                </div><br>
+                <div class="table-responsive">
+                  <table class="table table-sm">
+                    <thead>
+                      <tr>
+                        <th>Stage</th>
+                        <th>Assignee</th>
+                        <th>Last Updated Date</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Preliminary</td>
+                        <td>Aravind Naidu</td>
+                        <td>Feb 4 2018 8:00:66</td>
+                        <td>Approved</td>
+                      </tr>
+                      <tr>
+                        <td>Contract</td>
+                        <td>Nick Stanley</td>
+                        <td>Feb 4 2018 8:00:67</td>
+                        <td>Opened</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
