@@ -29,17 +29,6 @@
 <![endif]-->
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=951850141523786&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      
-    </script>
     <header class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg"><a class="navbar-brand" href="index.html"><img src="assets/images/logo-red.png"></a>
@@ -60,7 +49,7 @@
     </header>
     <section class="body">
       <article class="container">
-        <h5 class="page-title">Property Summary</h5>
+        <h5 class="page-title"><strong>Step 1.&nbsp;</strong>Select Property</h5>
         <div class="card">
           <div class="card-body">
             <div class="row">
@@ -92,7 +81,7 @@
         </div>
       </article><br><br>
       <article class="container signup-social">
-        <h5 class="page-title">Sign up</h5>
+        <h5 class="page-title"><strong>Step 2.&nbsp;</strong>Sign up</h5>
         <div class="card">
           <div class="card-body">
             <div class="row">
@@ -135,9 +124,7 @@
                 </div>
               </div>
               <div class="col-md-5 box-social">
-                <p class="lead">Social Media Account</p>
-                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div><br><br><img class="resource-paragraph-image lazy-load lazy-load-src" alt="Sign in with LinkedIn" src="https://content.linkedin.com/content/dam/developer/global/en_US/site/img/signin-button.png" pagespeed_url_hash="1811720327" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><br><br>
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <p class="lead">Sign in with Social Media Account</p><a href=""><img src="assets/images/icon-facebook.png"></a><a href=""><img src="assets/images/icon-linkedin.png"></a><a href=""><img src="assets/images/icon-google-plus.png"></a>
               </div>
             </div>
           </div>
@@ -162,33 +149,6 @@
     <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA9NpGlo0byYYix_uRbRFUNkNQZDnWNHHI&amp;callback=initMap" async="" defer=""></script>
-    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
-    <script src="//platform.linkedin.com/in.js">
-      api_key: "7762qdzr8qe7db"
-      authorize: true
-      onLoad: onLinkedInLoad
-    </script>
-    <script>
-      // Setup an event listener to make an API call once auth is complete
-      function onLinkedInLoad() {
-          IN.Event.on(IN, "auth", getProfileData);
-      }
-      
-      // Handle the successful return from the API call
-      function onSuccess(data) {
-          console.log(data);
-      }
-      
-      // Handle an error response from the API call
-      function onError(error) {
-          console.log(error);
-      }
-      
-      // Use the API call wrapper to request the member's basic profile data
-      function getProfileData() {
-          IN.API.Raw("/people/~").result(onSuccess).error(onError);
-      }
-    </script>
+    <script></script>
   </body>
 </html>
