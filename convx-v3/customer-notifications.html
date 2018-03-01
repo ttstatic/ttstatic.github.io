@@ -48,32 +48,35 @@
     </div>
     <section class="admin">
       <div class="container">
-        <h3>Your Notifications</h3>
-        <div class="card">
+        <h3>Notifications relating to your Property Transactions</h3>
+        <div class="form-group form-inline">
+          <label>Sort by&nbsp;</label>
+          <select class="form-control">
+            <option selected>Most Recent</option>
+            <option>Important</option>
+            <option>Overdue</option>
+            <option>By Transaction</option>
+          </select>
+        </div>
+        <div class="card notification-card">
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-sm">
-                <tbody>
-                  <tr>
-                    <td class="border-top-0">
-                      <p>
-                         Aravind Naidu has Approved Aura 24 on Preliminary stage<br><small>Feb 4, 2018 - 8:00:66 AM</small></p>
-                    </td>
-                    <td class="text-right border-top-0"><a href="customer-property-details.html">View Details</a></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Nick  Stanley has Opened 47 Ashburn on Contract stage<br><small>Feb 4, 2018 - 8:00:67 AM</small></p>
-                    </td>
-                    <td class="text-right"><a href="customer-property-details.html">View Details</a></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Contract stage is Past Due<br><small>Feb 7, 2018 - 9:15:67 AM</small></p>
-                    </td>
-                    <td class="text-right"><a href="customer-property-details.html">View Details</a></td>
-                  </tr>
-                </tbody>
+                <tr class="n-row-approved">
+                  <td class="text-center" width="50"><img src="//via.placeholder.com/150" width="30"></td>
+                  <td>Aravind Naidu has Approved Aura 24 on Preliminary stage</td>
+                  <td>Feb 4, 2018 - 8:00:66 AM</td>
+                </tr>
+                <tr>
+                  <td class="text-center" width="50"><img src="//via.placeholder.com/150" width="30"></td>
+                  <td>Nick  Stanley has Opened 47 Ashburn on Contract stage</td>
+                  <td>Feb 4, 2018 - 8:00:67 AM</td>
+                </tr>
+                <tr class="n-row-due">
+                  <td class="text-center" width="50"><img src="//via.placeholder.com/150" width="30"></td>
+                  <td>Contract stage is Past Due</td>
+                  <td>Feb 7, 2018 - 9:15:67 AM</td>
+                </tr>
               </table>
             </div>
           </div>
