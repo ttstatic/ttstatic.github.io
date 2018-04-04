@@ -1,3 +1,16 @@
+new Vue({
+  el: '#app',
+  data: {
+    isActive: false
+  },
+  methods: {
+    toggleDropdown: function() {
+      this.isActive = !this.isActive
+    }
+  }
+});
+
+// BURGER BAR MENU TOGGLE
 document.addEventListener('DOMContentLoaded', function() {
 
   // Get all "navbar-burger" elements
