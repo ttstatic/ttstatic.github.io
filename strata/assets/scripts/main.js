@@ -1,12 +1,43 @@
 new Vue({
   el: '#app',
-  data: {
-    isActive: false
+  data: function() {
+    return {
+      isActive: false, // for dropdown menu
+      isVisible: false,
+      windowWidth: 0,
+      isMobile: false
+    }
+  },
+  mounted() {
+    this.$nextTick(function() {
+      window.addEventListener('resize', this.getWindowWidth);
+      window.addEventListener('resize', this.toggleMobileMenuOnResize);
+
+      //Init
+      this.getWindowWidth()
+      this.toggleMobileMenuOnResize()
+    })
   },
   methods: {
-    toggleDropdown: function() {
+    toggleDropdown: function() { // for dropdown menu
       this.isActive = !this.isActive
+    },
+    toggleMobileMenu: function() {
+      this.isVisible = !this.isVisible
+    },
+    toggleMobileMenuOnResize: function() {
+      if(this.windowWidth <= 1024) {
+        this.isMobile = true
+      } else {
+        this.isMobile = false
+      }
+    },
+    getWindowWidth(event) {
+      this.windowWidth = document.documentElement.clientWidth;
     }
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth);
   }
 });
 
