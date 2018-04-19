@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html id="admin" lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Welcome to Strata Portal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/bulma/css/bulma.css">
+    <!-- endinject-->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endinject--><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div id="app">
+      <aside class="menu --admin" v-bind:class="[{'visible': isVisible}, {'mobile': isMobile}]">
+        <div class="admin-logo is-hidden-touch"><img src="assets/images/logo-piq.png" alt="PIQ Strata"></div>
+        <div class="menu-wrap">
+          <p class="menu-label">General</p>
+          <ul class="menu-list">
+            <li><a class="is-active" href="dashboard.html">Dashboard</a></li>
+            <li><a>My Properties</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+          <p class="menu-label">Accounts</p>
+          <ul class="menu-list">
+            <li><a>Strata</a>
+              <ul>
+                <li><a>Due Notices</a></li>        
+                <li><a>Receipts</a></li>        
+                <li><a>Meetings</a></li>
+                <li><a>Insurance</a></li>        
+                <li><a>Contacts</a></li>
+              </ul>
+            </li>
+            <li><a>General</a>      
+              <ul>
+                <li><a>Documents</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="top-bar"><a class="mobile-menu is-hidden-desktop" @click="toggleMobileMenu()"><i class="fas fa-bars"></i></a>
+        <div class="admin-logo is-hidden-desktop"><img src="assets/images/logo-piq.png" alt="PIQ Strata"></div>
+        <div class="dropdown is-right is-pulled-right" v-bind:class="{ 'is-active': isActive }">
+          <div class="dropdown-trigger">
+            <button class="button is-rounded is-white" aria-haspopup="false" aria-controls="dropdown-user-menu" @click="toggleDropdown()" @blur="toggleDropdown()"><span class="avatar"><img src="assets/images/favicon.png" alt="PIQ Strata"></span>&nbsp;
+              <p class="is-hidden-touch"><strong>Rodan Luzuriaga</strong></p><span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-user-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item is-hidden-desktop">
+                <p><strong>Rodan Luzuriaga</strong></p>
+              </div>
+              <hr class="dropdown-divider is-hidden-desktop"><a class="dropdown-item" href="#"><i class="fas fa-cog"></i>&nbsp;Account Settings</a><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Log out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-wrap">
+        <div class="container is-fluid">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input is-default is-medium is-rounded" type="text" placeholder="Customer Name, Email, Login Name, Account ID...">
+            </div>
+            <div class="control"><a class="button is-danger is-medium is-rounded"><i class="fas fa-search"></i></a></div>
+          </div><br>
+          <h2 class="title has-text-centered is-size-4"><i class="fas fa-map-marker-alt"></i>&nbsp;1 - 12 Queen Street Arncliffe NSW 2205</h2>
+          <div class="columns key-details">
+            <div class="column is-4 is-half-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="far fa-building"></i></div>
+                <div class="card-title">Strata</div>
+                <label>2 - Lot (Owner): 11306 1/1 BAY CUSTODIANS NO. 2 P/L</label>
+              </div>
+            </div>
+            <div class="column is-4 is-half-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="far fa-address-card"></i></div>
+                <div class="card-title">Address</div>
+                <label>12 QUEEN STREET, ARNCLIFFE, NSW 2205</label>
+              </div>
+            </div>
+            <div class="column is-4 is-6-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="fas fa-tag"></i></div>
+                <div class="card-title">Plan Number</div>
+                <label>11306</label>
+              </div>
+            </div>
+            <div class="column is-2 is-6-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="fas fa-angle-double-right fa-xs"></i><i class="fas fa-users"></i></div>
+                <div class="card-title">Next AGM</div>
+                <label>04/10/2018</label>
+              </div>
+            </div>
+            <div class="column is-2 is-6-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="fas fa-users"></i><i class="fas fa-angle-double-left fa-xs"></i></div>
+                <div class="card-title">Last AGM</div>
+                <label>04/10/2017</label>
+              </div>
+            </div>
+            <div class="column is-6-mobile">
+              <div class="wrap">
+                <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                <div class="card-title">Total Liabilities</div>
+                <label>0.00</label>
+              </div>
+            </div>
+            <div class="column is-success">
+              <div class="wrap">
+                <div class="icon"><i class="fas fa-user-circle"></i></div>
+                <div class="card-title">Managed by	</div>
+                <label>John Touma - DS</label>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="card is-size-7 --membership-details">
+                <header class="card-header">
+                  <p class="card-header-title">Membership Details</p>
+                </header>
+                <div class="columns is-gapless">
+                  <div class="column">
+                    <div class="wrap left">
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Liability Units</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>0.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Entitlement Units</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>1,000.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Accessory Units</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>0.0</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Lot Number</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>0</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Fees Outstanding</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Other Outstanding</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="wrap right">
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Fees</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Paid To</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>N/A</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Credit Amount</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Interest Accrued</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch is-hidden-mobile">
+                        <div class="column is-half-touch">
+                          <label>&nbsp;</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>&nbsp;</strong></div>
+                      </div>
+                      <div class="columns is-flex-touch">
+                        <div class="column is-half-touch">
+                          <label>Total Outstanding</label>
+                        </div>
+                        <div class="column is-half-touch"><strong>$0.00</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-5">
+              <div class="card is-size-7">
+                <header class="card-header">
+                  <p class="card-header-title">Due Notices</p>
+                </header>
+                <div class="card-content">
+                  <p class="subtitle is-size-7">Nothing to display</p>
+                </div>
+              </div><br>
+              <div class="card is-size-7">
+                <header class="card-header">
+                  <p class="card-header-title">Reciepts</p>
+                </header>
+                <div class="card-content">
+                  <p class="subtitle is-size-7">Nothing to display</p>
+                </div>
+              </div><br>
+              <div class="card is-size-7">
+                <header class="card-header">
+                  <p class="card-header-title">Meetings</p>
+                </header>
+                <div class="card-content">
+                  <p class="subtitle is-size-7">Nothing to display</p>
+                </div>
+              </div><br>
+              <div class="card is-size-7">
+                <header class="card-header">
+                  <p class="card-header-title">Documents</p>
+                </header>
+                <div class="card-content">
+                  <p class="subtitle is-size-7">Nothing to display</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endinject-->
+    <!-- inject:js-->
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <!-- endinject-->
+    <script></script>
+    <script></script>
+  </body>
+</html>
