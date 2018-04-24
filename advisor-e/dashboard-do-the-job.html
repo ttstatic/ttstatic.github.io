@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html id="admin" lang="en">
+  <head>
+    <!-- Title block allowing child pages to override-->
+    <title>Welcome to Strata Portal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script defer src="//use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/bulma/css/bulma.css">
+    <!-- endinject-->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endinject--><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div id="app">
+      <aside class="menu --admin" v-bind:class="[{'visible': isVisible}, {'mobile': isMobile}]">
+        <div class="admin-logo is-hidden-touch"><img src="assets/images/logo.png" alt="Advisor-E"></div>
+        <div class="menu-wrap">
+          <p class="menu-label">Do The Job</p>
+          <ul class="menu-list">
+            <li><a class="is-active">Client Drag Folders</a></li>
+          </ul>
+        </div>
+      </aside>
+      <nav class="navbar is-white is-fixed-top top-bar">
+        <div class="navbar-brand is-hidden-desktop">
+          <div class="navbar-burger burger mobile-menu is-hidden-desktop" @click="toggleMobileMenu()"><span></span><span></span><span></span></div><a class="navbar-item" href=""><img src="assets/images/logo.png" alt="Advisor-E"></a>
+          <div class="navbar-burger burger menu-drop" data-target="navbarExampleTransparentExample"><i class="fa fa-angle-down"></i></div>
+        </div>
+        <div class="navbar-menu" id="navbarExampleTransparentExample">
+          <div class="navbar-start"><a class="navbar-item" href="dashboard-get-organised.html">Get Organised</a><a class="navbar-item" href="dashboard-get-the-job.html">Get The Job</a><a class="navbar-item" href="dashboard-do-the-job.html">Do The Job</a></div>
+          <div class="navbar-end"><a class="navbar-item" href="">Help</a>
+            <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link" href=""><i class="fas fa-user-circle"></i>&nbsp;My Account</a>
+              <div class="navbar-dropdown is-boxed is-right"><a class="navbar-item" href="index.html">Log Out</a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="admin-wrap">
+        <div class="container is-fluid">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input is-default is-medium" type="text" placeholder="Search...">
+            </div>
+            <div class="control"><a class="button is-primary is-medium"><i class="fas fa-search"></i></a></div>
+          </div><br>
+        </div>
+      </div>
+    </div>
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endinject-->
+    <!-- inject:js-->
+    <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <!-- endinject-->
+    <script></script>
+    <script></script>
+  </body>
+</html>

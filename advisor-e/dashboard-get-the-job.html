@@ -29,56 +29,39 @@
       <aside class="menu --admin" v-bind:class="[{'visible': isVisible}, {'mobile': isMobile}]">
         <div class="admin-logo is-hidden-touch"><img src="assets/images/logo.png" alt="Advisor-E"></div>
         <div class="menu-wrap">
-          <p class="menu-label">General</p>
+          <p class="menu-label">Get The Job</p>
           <ul class="menu-list">
-            <li><a class="is-active" href="dashboard.html">Dashboard</a></li>
-            <li><a>My Properties</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-          <p class="menu-label">Accounts</p>
-          <ul class="menu-list">
-            <li><a>Strata</a>
+            <li><a class="is-active">Learning</a></li>
+            <li><a>Doing</a></li>
+            <li><a>Tracking</a>
               <ul>
-                <li><a>Due Notices</a></li>        
-                <li><a>Receipts</a></li>        
-                <li><a>Meetings</a></li>
-                <li><a>Insurance</a></li>        
-                <li><a>Contacts</a></li>
-              </ul>
-            </li>
-            <li><a>General</a>      
-              <ul>
-                <li><a>Documents</a></li>
+                <li><a>Seminar Planning</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </aside>
-      <div class="top-bar"><a class="mobile-menu is-hidden-desktop" @click="toggleMobileMenu()"><i class="fas fa-bars"></i></a>
-        <div class="admin-logo is-hidden-desktop"><img src="assets/images/logo-piq.png" alt="PIQ Strata"></div>
-        <div class="dropdown is-right is-pulled-right" v-bind:class="{ 'is-active': isActive }">
-          <div class="dropdown-trigger">
-            <button class="button is-rounded is-white" aria-haspopup="false" aria-controls="dropdown-user-menu" @click="toggleDropdown()" @blur="toggleDropdown()"><span class="avatar"><img src="assets/images/favicon.png" alt="PIQ Strata"></span>&nbsp;
-              <p class="is-hidden-touch"><strong>Rodan Luzuriaga</strong></p><span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-user-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item is-hidden-desktop">
-                <p><strong>Rodan Luzuriaga</strong></p>
-              </div>
-              <hr class="dropdown-divider is-hidden-desktop"><a class="dropdown-item" href="#"><i class="fas fa-cog"></i>&nbsp;Account Settings</a><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i>&nbsp;Log out</a>
+      <nav class="navbar is-white is-fixed-top top-bar">
+        <div class="navbar-brand is-hidden-desktop">
+          <div class="navbar-burger burger mobile-menu is-hidden-desktop" @click="toggleMobileMenu()"><span></span><span></span><span></span></div><a class="navbar-item" href=""><img src="assets/images/logo.png" alt="Advisor-E"></a>
+          <div class="navbar-burger burger menu-drop" data-target="navbarExampleTransparentExample"><i class="fa fa-angle-down"></i></div>
+        </div>
+        <div class="navbar-menu" id="navbarExampleTransparentExample">
+          <div class="navbar-start"><a class="navbar-item" href="dashboard-get-organised.html">Get Organised</a><a class="navbar-item" href="dashboard-get-the-job.html">Get The Job</a><a class="navbar-item" href="dashboard-do-the-job.html">Do The Job</a></div>
+          <div class="navbar-end"><a class="navbar-item" href="">Help</a>
+            <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link" href=""><i class="fas fa-user-circle"></i>&nbsp;My Account</a>
+              <div class="navbar-dropdown is-boxed is-right"><a class="navbar-item" href="index.html">Log Out</a></div>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
       <div class="admin-wrap">
         <div class="container is-fluid">
           <div class="field has-addons">
             <div class="control is-expanded">
-              <input class="input is-default is-medium is-rounded" type="text" placeholder="Customer Name, Email, Login Name, Account ID...">
+              <input class="input is-default is-medium" type="text" placeholder="Search...">
             </div>
-            <div class="control"><a class="button is-danger is-medium is-rounded"><i class="fas fa-search"></i></a></div>
+            <div class="control"><a class="button is-primary is-medium"><i class="fas fa-search"></i></a></div>
           </div><br>
         </div>
       </div>
