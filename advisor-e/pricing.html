@@ -53,7 +53,7 @@
                 <div class="heading">
                   <h1 class="title">Lite Fundamentals</h1>
                 </div>
-                <div class="cost">$500 / mo.</div>
+                <div class="cost">$500 / mth</div>
                 <div class="content">
                   <div class="features is-size-5">
                     <p>9 Growth Stages</p>
@@ -61,8 +61,9 @@
                     <p>7 Growth Tactics</p>
                   </div>
                 </div>
+                <div class="learn"><a class="button is-text has-text-grey" @click="dialogPricing($event)" data-title="Lite Fundamentals" data-content="Learn the fundamentals of using conceptual hierarchies to guide consultancy work and the basics of selling on a campaign basis. (Very basic understanding of systems theory) Designed to build the confidence of accountants wishing to move into advisory work.  Simple concepts, quick wins, low cost."><strong>What You Learn</strong></a></div>
                 <div class="btn"><a class="button is-light is-medium" href="">Select</a></div>
-                <div class="note">Aimed at securing client engagements in the $500 - $750/mo. range</div>
+                <div class="note">Aimed at securing client engagements in the<br>$500 - $750/mth range</div>
               </div>
             </div>
             <div class="column is-6-tablet is-12-mobile is-3-desktop">
@@ -70,7 +71,7 @@
                 <div class="heading">
                   <h1 class="title">Expert Fundamentals</h1>
                 </div>
-                <div class="cost">$750 / mo.</div>
+                <div class="cost">$750 / mth</div>
                 <div class="content">
                   <div class="features is-size-5">
                     <p>9 Growth Stages</p>
@@ -78,8 +79,9 @@
                     <p>7 Growth Tactics</p>
                   </div>
                 </div>
+                <div class="learn"><a class="button is-text has-text-grey" @click="dialogPricing($event)" data-title="Expert Fundamentals" data-content="Widen the depth of consultancy content based on the existing &quot;Lite&quot; framework and extend the lifecycle of current consultancy engagements; cementing you as their &quot;Strategic Advisor&quot;. Content includes four planning templates that provide a detailed exploration of your client&amp;#39;s Business Targets, Strategic Orientation, Organisation Culture &amp;amp; Efficiencies and lastly, their Sales &amp;amp; Marketing procedures."><strong>What You Learn</strong></a></div>
                 <div class="btn"><a class="button is-light is-medium" href="">Select</a></div>
-                <div class="note">Aimed at increasing client engagements in the $1,000 - $1,500/mo. range</div>
+                <div class="note">Aimed at increasing client engagements in the<br>$1,000 - $1,500/mth range</div>
               </div>
             </div>
             <div class="column is-6-tablet is-12-mobile is-3-desktop">
@@ -87,14 +89,15 @@
                 <div class="heading">
                   <h1 class="title">Advanced Growth Fundamentals</h1>
                 </div>
-                <div class="cost">$1,000 / mo.</div>
+                <div class="cost">$1,000 / mth</div>
                 <div class="content">
                   <div class="features is-size-5">
                     <p>9 Growth Aspects Material</p>
                   </div>
                 </div>
+                <div class="learn"><a class="button is-text has-text-grey" @click="dialogPricing($event)" data-title="Advanced Growth Fundamentals" data-content="You&amp;#39;ll learn the remaining Framework elements &amp;amp; develop an understanding of the &amp;#39;complete firm&amp;#39; delivery as opposed to individual consultancy provider. Designed for accountants that aren’t content to deal with smaller clients and who understand that &amp;#39;skills create demand&amp;#39; on an individual and team basis. This is about shifting from a &amp;#39;Leveraged Compliance&amp;#39; practice to a &amp;#39;Leveraged Advisory&amp;#39; practice. Internal learnings include how to successfully Cold Approach a target profile, Scope &amp;amp; Present a Total Needs Based Service Offer. Client content includes material relating to Governance, Employee Motivation, Owner Succession, Leadership Styles and more. Designed for accountants intent on growing their fee base."><strong>What You Learn</strong></a></div>
                 <div class="btn"><a class="button is-light is-medium" href="">Select</a></div>
-                <div class="note">Aimed at increasing client engagements in the $2,000 + mo. range</div>
+                <div class="note">Aimed at increasing client engagements in the<br>$2,000 + mth range</div>
               </div>
             </div>
             <div class="column is-6-tablet is-12-mobile is-3-desktop">
@@ -102,12 +105,13 @@
                 <div class="heading">
                   <h1 class="title">5 Domains Mastery</h1>
                 </div>
-                <div class="cost">$500 / mo.<span class="is-size-5">&nbsp;/ person</span></div>
+                <div class="cost">$500 / mth<span class="is-size-5">&nbsp;/ person</span></div>
                 <div class="content">
                   <div class="features is-size-5">
                     <p>5 Domains Formula Framework</p>
                   </div>
                 </div>
+                <div class="learn"><a class="button is-text has-text-grey" @click="dialogPricing($event)" data-title="5 Domains Mastery" data-content="Based on the 5 Domains Formula Framework, this programme coaches the most advanced techniques to enable Directors to lead their practice in the areas of Creativity &amp;amp; Strategic Thinking, Strategic Relationships, Sales, Marketing, Public Speaking &amp;amp; Team Empowerment."><strong>What You Learn</strong></a></div>
                 <div class="btn"><a class="button is-light is-medium" href="">Select</a></div>
                 <div class="note">Restricted Attendance</div>
               </div>
@@ -131,10 +135,13 @@
     <!-- bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endinject-->
+    <!-- Buefy JavaScript-->
+    <script src="//unpkg.com/buefy"></script>
     <!-- inject:js-->
+    <script src="assets/scripts/app.js"></script>
     <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
-    <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
+    <script>Vue.use(Buefy.default)</script>
     <script></script>
   </body>
 </html>
