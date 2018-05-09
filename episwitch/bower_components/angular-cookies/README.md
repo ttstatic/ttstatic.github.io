@@ -29,7 +29,7 @@ bower install angular-cookies
 Add a `<script>` to your `index.html`:
 
 ```html
-<script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
 ```
 
 Then add `ngCookies` as a dependency for your app:

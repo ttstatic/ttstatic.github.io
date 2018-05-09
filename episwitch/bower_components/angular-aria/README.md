@@ -28,7 +28,7 @@ bower install angular-aria
 Add a `<script>` to your `index.html`:
 
 ```html
-<script src="/bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
 ```
 
 Then add `ngAria` as a dependency for your app:

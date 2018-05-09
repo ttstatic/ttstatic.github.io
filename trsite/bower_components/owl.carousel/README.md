@@ -38,7 +38,7 @@ Put the required stylesheet at the [top](https://developer.yahoo.com/performance
 ```
 
 ```html
-<link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
 ```
 
 **NOTE:** If you want to use the default navigation styles, you will also need to include `owl.theme.default.css`.
@@ -52,8 +52,8 @@ Put the script at the [bottom](https://developer.yahoo.com/performance/rules.htm
 ```
 
 ```html
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 ```
 
 ### Usage

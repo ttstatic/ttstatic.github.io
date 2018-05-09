@@ -79,7 +79,7 @@ bower update
 Now that you have installed the AngularJS libraries, simply include the scripts and 
 stylesheet in your main HTML file, in the order shown in the example below. Note that npm 
 will install the files under `/node_modules/angular-material/` and bower will install them 
-under `/bower_components/angular-material/`.
+under `bower_components/angular-material/`.
 
 ### npm
 
@@ -120,7 +120,7 @@ under `/bower_components/angular-material/`.
 <html>
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
 </head>
 	<body ng-app="YourApp">
 
@@ -128,10 +128,10 @@ under `/bower_components/angular-material/`.
 
 	</div>
 
-	<script src="/bower_components/angular/angular.js"></script>
-	<script src="/bower_components/angular-aria/angular-aria.js"></script>
-	<script src="/bower_components/angular-animate/angular-animate.js"></script>
-	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-material/angular-material.js"></script>
 	<script>
 
 		// Include app dependency on ngMaterial

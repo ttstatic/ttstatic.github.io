@@ -40,10 +40,10 @@ in header, add css theme and required js.
 ```html
 <link rel="stylesheet" href="../dist/styles/jquery.carousel-3d.default.css" />
 
-<script src="../bower_components/jquery/jquery.js"></script>
-<script src="../bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
-<script src="../bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
-<script src="../bower_components/modernizr/modernizr.js"></script>
+<script src="..bower_components/jquery/jquery.js"></script>
+<script src="..bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
+<script src="..bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
+<script src="..bower_components/modernizr/modernizr.js"></script>
 <script src="../dist/jquery.carousel-3d.js" ></script>
 ```
 
