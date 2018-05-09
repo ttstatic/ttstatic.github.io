@@ -1,3 +1,11 @@
+$(document).ready(function() {
+  $('.dropdown button').click(function() {
+    $(this).parents('.dropdown:eq(0)').toggleClass('is-active');
+  }).blur(function() {
+    $(this).parents('.dropdown:eq(0)').removeClass('is-active');
+  });
+});
+
 new Vue({
   el: '#app',
   data: function() {
@@ -19,7 +27,7 @@ new Vue({
     })
   },
   methods: {
-    toggleDropdown: function() { // for dropdown menu
+    toggleDropdown: function(e) { // for dropdown menu
       this.isActive = !this.isActive
     },
     toggleMobileMenu: function() {

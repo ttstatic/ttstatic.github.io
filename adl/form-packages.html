@@ -68,9 +68,9 @@
               <input class="input is-default is-medium" type="text" placeholder="Please select a search category...">
             </div>
             <div class="control">
-              <div class="dropdown is-right" v-bind:class="[{'is-active': isActive}]">
+              <div class="dropdown is-right">
                 <div class="dropdown-trigger">
-                  <button class="button is-medium is-success" aria-haspopup="true" aria-controls="dropdown-menu" @focus="toggleDropdown()" @blur="toggleDropdown()"><i class="fas fa-search"></i><span>&nbsp;Search</span><span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span></button>
+                  <button class="button is-medium is-success" aria-haspopup="true" aria-controls="dropdown-menu"><i class="fas fa-search"></i><span>&nbsp;Search</span><span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span></button>
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
                   <div class="dropdown-content"><a class="dropdown-item" href="#">Form Packages</a><a class="dropdown-item">Completed Forms</a></div>
@@ -78,6 +78,18 @@
               </div>
             </div>
           </div><br>
+          <div class="field is-grouped is-grouped-left">
+            <div class="control">
+              <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span>Select State</span>      <span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span></button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content"><a class="dropdown-item" href="#">All States</a><a class="dropdown-item is-active">New South Wales</a><a class="dropdown-item" href="#">Queensland</a><a class="dropdown-item" href="#">South Australia</a><a class="dropdown-item" href="#">Tasmania</a><a class="dropdown-item" href="#">Victoria</a><a class="dropdown-item" href="#">Western Australia</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <table class="table is-hoverable card is-fullwidth">
             <thead>
               <tr>
