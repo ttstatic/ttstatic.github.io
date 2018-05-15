@@ -78,94 +78,55 @@
               </div>
             </div>
           </div><br>
-          <h4 class="title is-4">Advanced Search</h4>
-          <div class="box">
+          <section class="section">
+            <nav class="level">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Projects Published</p>      
+                  <p class="title">4</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Total Folder</p>      
+                  <p class="title">1</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Workflows Executed</p>      
+                  <p class="title">116</p>
+                </div>
+              </div>
+            </nav>
+          </section>
+          <section>
             <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <div class="control">
-                    <label class="label">Form Name</label>
-                    <input class="input" type="text" placeholder="" value="">
+              <div class="column is-half">
+                <div class="card">
+                  <div class="card-content">
+                    <canvas id="douChart"></canvas>
                   </div>
                 </div>
               </div>
-              <div class="column">
-                <div class="field">
-                  <div class="control">
-                    <label class="label">User</label>
-                    <input class="input" type="text" placeholder="" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="field">
-                  <div class="control">
-                    <label class="label">Form Content</label>
-                    <input class="input" type="text" placeholder="" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="column is-2">
-                <div class="field is-grouped is-grouped-centered">
-                  <div class="control">
-                    <label class="label">&nbsp;</label><a class="button is-info" href=""><i class="fas fa-filter"></i>&nbsp;Refine Search</a>
+              <div class="column is-half">
+                <div class="card">
+                  <div class="card-content">
+                    <canvas id="bar1Chart"></canvas>
                   </div>
                 </div>
               </div>
             </div>
-          </div><br>
-          <table class="table is-hoverable card is-fullwidth">
-            <thead>
-              <tr>
-                <th>Form Name</th>
-                <th>User</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Absent / Telephone Bidder Authority</td>
-                <td>Arv Naidu</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Agent's Authority To Exchange Contracts</td>
-                <td>Rodan Luzuriaga</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Annexure - Relevant and Material Facts Disclosure</td>
-                <td>Dexter De Jesus</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Auction &amp; Exclusive Agency Agreement for the Sale of Goods</td>
-                <td>Phil Callender</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Authority To Sign On Seller's Behalf (at an Auction)</td>
-                <td>Jeremi Serrano</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Bidder's Record </td>
-                <td>Shanley Evangelista</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-          <nav class="pagination is-centered" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>  <a class="pagination-next">Next page</a>  
-            <ul class="pagination-list">
-              <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
-              <li><span class="pagination-ellipsis">…</span></li>
-              <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
-              <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
-              <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
-              <li><span class="pagination-ellipsis">…</span></li>
-              <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
-            </ul>
-          </nav>
+            <div class="columns">
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <canvas id="bar2Chart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -176,7 +137,78 @@
     <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
-    <script></script>
+    <script>
+      var ctxDou = "douChart";
+      dataDou = {
+        datasets: [{
+          data: [10, 50, 30]
+        }],
+        // These labels appear in the legend and in the tooltips when hovering different arcs
+        labels: [
+          'Data 1',
+          'Data 2',
+          'Data 3'
+        ]
+      };
+      var myDoughnutChart = new Chart(ctxDou, {
+        type: 'doughnut',
+        data: dataDou
+      });
+      
+      var ctxBar1 = "bar1Chart";
+      dataBar1 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+          },
+          {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+          }
+        ]
+      };
+      var myBarChart1 = new Chart(ctxBar1, {
+        type: 'bar',
+        data: dataBar1
+      });
+      
+      var ctxBar2 = "bar2Chart";
+      dataBar2 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+          },
+          {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+          }
+        ]
+      };
+      var myBarChart2 = new Chart(ctxBar2, {
+        type: 'horizontalBar',
+        data: dataBar2
+      });
+    </script>
     <script></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
     <script defer src="//use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
     <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <style></style>
     <!-- bower:css-->
     <link rel="stylesheet" href="bower_components/bulma/css/bulma.css">
     <!-- endinject-->
@@ -26,109 +27,59 @@
   </head>
   <body>
     <div id="app">
-      <aside class="menu --admin" v-bind:class="[{'visible': isVisible}, {'mobile': isMobile}]">
-        <div class="admin-logo is-hidden-touch"><img src="assets/images/logo.png" alt="Digital Reign"></div>
-        <div class="menu-wrap">
-          <p class="menu-label">Menu</p>
-          <ul class="menu-list">
-            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i>&nbsp;Dashboard</a></li>
-            <li><a href="form-packages.html"><i class="fas fa-cube"></i>&nbsp;Form Packages</a></li>
-            <li><a href="templates.html"><i class="fab fa-wpforms"></i>&nbsp;Templates</a></li>
-            <li><a href="completed-forms.html"><i class="fas fa-check"></i>&nbsp;Completed Forms</a></li>
-            <li><a><i class="fas fa-tasks"></i>&nbsp;Forms in Progress</a></li>
-            <li><a><i class="fas fa-users-cog"></i>&nbsp;User Management</a></li>
-            <li><a><i class="fas fa-user-plus"></i>&nbsp;Company Registration</a></li>
-            <li><a><i class="fas fa-chart-bar"></i>&nbsp;Reports</a></li>
-            <li><a><i class="fas fa-bell"></i>&nbsp;Notifications</a></li>
-            <li><a><i class="fas fa-comment"></i>&nbsp;Messages</a></li>
-            <li><a><i class="fas fa-question"></i>&nbsp;Help</a></li>
-          </ul>
-        </div>
-      </aside>
-      <nav class="navbar is-dark is-fixed-top top-bar">
-        <div class="navbar-brand is-hidden-desktop">
-          <div class="navbar-burger burger mobile-menu is-hidden-desktop" @click="toggleMobileMenu()"><span></span><span></span><span></span></div><a class="navbar-item" href=""><img src="assets/images/logo.png" alt="Digital Reign"></a>
-          <div class="navbar-burger burger menu-drop" data-target="navbarExampleTransparentExample"><i class="fa fa-angle-down"></i></div>
-        </div>
-        <div class="navbar-menu" id="navbarExampleTransparentExample">
-          <div class="navbar-start"></div>
-          <div class="navbar-end">
-            <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link" href=""><i class="fas fa-user-circle"></i>&nbsp;Rodan Luzuriaga</a>
-              <div class="navbar-dropdown is-boxed is-right"><a class="navbar-item" href="">Profile</a><a class="navbar-item" href="">Feedback / Contact Us</a>
-                <hr class="navbar-divider"><a class="navbar-item" href="login.html">Log Out</a>
+      <section class="hero is-fullheight is-dark">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-7">
+                <div class="blurb">
+                  <div class="blurb-heading">
+                    <div class="content">
+                      <h1 class="title is-1">Forms Made Simple</h1><br>
+                      <h4 class="subtitle is-4">Professional real estate forms, designed to save you time and money</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card login-as">
+                  <div class="card-content">
+                    <div class="content">
+                      <h3 class="title is-3 has-text-black">Login as</h3>
+                      <div class="field">
+                        <div class="control">
+                          <div class="select is-medium">
+                            <select>
+                              <option>Company / Admin</option>
+                              <option>Manager</option>
+                              <option>Agent</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div><br>
+                      <div class="field">
+                        <div class="control has-icons-left">
+                          <input class="input is-medium" type="text" placeholder="Username" value=""><span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="control has-icons-left">
+                          <input class="input is-medium" type="password" placeholder="Password" value=""><span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+                        </div>
+                      </div><br>
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-success is-medium is-rounded">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="admin-wrap">
-        <div class="container is-fluid">
-          <div class="field has-addons">
-            <div class="control is-expanded">
-              <input class="input is-default is-medium" type="text" placeholder="Please select a search category...">
-            </div>
-            <div class="control">
-              <div class="dropdown is-right">
-                <div class="dropdown-trigger">
-                  <button class="button is-medium is-success" aria-haspopup="true" aria-controls="dropdown-menu"><i class="fas fa-search"></i><span>&nbsp;Search</span><span class="icon is-small"><i class="fas fa-angle-down" aria-hidden="true"></i></span></button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                  <div class="dropdown-content"><a class="dropdown-item" href="#">Form Packages</a><a class="dropdown-item">Completed Forms</a></div>
-                </div>
-              </div>
-            </div>
-          </div><br>
-          <section class="section">
-            <nav class="level">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Projects Published</p>      
-                  <p class="title">4</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Total Folder</p>      
-                  <p class="title">1</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Workflows Executed</p>      
-                  <p class="title">116</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <section>
-            <div class="columns">
-              <div class="column is-half">
-                <div class="card">
-                  <div class="card-content">
-                    <canvas id="douChart"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-half">
-                <div class="card">
-                  <div class="card-content">
-                    <canvas id="bar1Chart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <div class="card">
-                  <div class="card-content">
-                    <canvas id="bar2Chart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+      </section>
     </div>
     <!-- bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -137,78 +88,6 @@
     <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
-    <script>
-      var ctxDou = "douChart";
-      dataDou = {
-        datasets: [{
-          data: [10, 50, 30]
-        }],
-        // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: [
-          'Data 1',
-          'Data 2',
-          'Data 3'
-        ]
-      };
-      var myDoughnutChart = new Chart(ctxDou, {
-        type: 'doughnut',
-        data: dataDou
-      });
-      
-      var ctxBar1 = "bar1Chart";
-      dataBar1 = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [
-          {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-          },
-          {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
-            highlightFill: "rgba(151,187,205,0.75)",
-            highlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
-          }
-        ]
-      };
-      var myBarChart1 = new Chart(ctxBar1, {
-        type: 'bar',
-        data: dataBar1
-      });
-      
-      var ctxBar2 = "bar2Chart";
-      dataBar2 = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [
-          {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-          },
-          {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
-            highlightFill: "rgba(151,187,205,0.75)",
-            highlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
-          }
-        ]
-      };
-      var myBarChart2 = new Chart(ctxBar2, {
-        type: 'horizontalBar',
-        data: dataBar2
-      });
-    </script>
     <script></script>
   </body>
 </html>
