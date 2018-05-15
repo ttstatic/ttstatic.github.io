@@ -8,8 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.css"></script>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- bower:css-->
     <link rel="stylesheet" href="bower_components/bulma/css/bulma.css">
     <link rel="stylesheet" href="bower_components/bulma-carousel/dist/bulma-carousel.min.css">
@@ -117,7 +117,7 @@
                       </div>
                     </div>
                   </div>
-                </div><a class="navbar-item">Fixtures &amp; Results</a><a class="navbar-item">Leagues &amp; Cups</a><a class="navbar-item">T&amp;F Results</a><a class="navbar-item">T&amp;F Rankings</a>
+                </div>
               </div>
               <div class="navbar-end"><a class="navbar-item tooltip" data-tooltip="Gallery"><i class="fas fa-image"></i></a><a class="navbar-item tooltip" data-tooltip="Trending"><i class="fas fa-fire has-text-danger"></i></a><a class="navbar-item tooltip" data-tooltip="Calendar"><i class="fas fa-calendar-alt"></i></a>
                 <div class="navbar-item search">
@@ -152,29 +152,18 @@
       //- hero-body
       -->
       <!-- ===-->
-      <!-- ====
-      .hero-foot
-        nav.tabs.is-boxed.is-fullwidth.is-medium
-          .container
-            ul
-              li.is-active
-                a.has-text-white Fixtures &amp; Results
-              //- li
-              li
-                a.has-text-white Leagues &amp; Cups
-              //- li
-              li
-                a.has-text-white T&amp;F Results
-              //- li
-              li
-                a.has-text-white T&amp;F Rankings
-              //- li
-            //- ul
-          //- container
-        //- nav
-      //- hero-foot
-      -->
-      <!-- ===-->
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth is-medium">
+          <div class="container">
+            <ul>
+              <li class="is-active"><a class="has-text-white">Fixtures &amp; Results</a></li>
+              <li><a class="has-text-white">Leagues &amp; Cups</a></li>
+              <li><a class="has-text-white">T&amp;F Results</a></li>
+              <li><a class="has-text-white">T&amp;F Rankings</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </section>
     <section class="section">
       <div class="container">
