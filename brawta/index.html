@@ -73,11 +73,11 @@
       </div>
       <div class="hero-head">
         <nav class="navbar is-dark is-fixed-top">
-          <div class="container">
+          <div class="container is-fluid">
             <div class="navbar-brand"><a class="navbar-item"><img src="assets/images/logo-black.png" alt="Logo"></a><span class="navbar-burger burger" data-target="navbarMenuHeroA"><span></span><span></span><span></span></span></div>
             <div class="navbar-menu" id="navbarMenuHeroA">
               <div class="navbar-start">
-                <div class="navbar-item has-dropdown is-hoverable fat-menu"><a class="navbar-link" href="/documentation/overview/start/">Sports</a>
+                <div class="navbar-item has-dropdown is-hoverable fat-menu"><a class="navbar-link" href="/documentation/overview/start/"><strong>Sports</strong></a>
                   <div class="navbar-dropdown is-boxed">
                     <div class="card-content">
                       <div class="columns">
@@ -117,16 +117,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div><a class="navbar-item">Fixtures &amp; Results</a><a class="navbar-item">Leagues &amp; Cups</a><a class="navbar-item">T&amp;F Results</a><a class="navbar-item">T&amp;F Rankings</a>
               </div>
-              <div class="navbar-end"><a class="navbar-item"><i class="fas fa-image"></i></a><a class="navbar-item"><i class="fas fa-fire"></i></a><a class="navbar-item"><i class="fas fa-calendar-alt"></i></a>
-                <div class="navbar-item">
-                  <div class="field has-addons">
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Search...">
-                    </div>
-                    <div class="control"><a class="button is-white"><i class="fas fa-search"></i></a></div>
-                  </div>
+              <div class="navbar-end"><a class="navbar-item tooltip" data-tooltip="Gallery"><i class="fas fa-image"></i></a><a class="navbar-item tooltip" data-tooltip="Trending"><i class="fas fa-fire has-text-danger"></i></a><a class="navbar-item tooltip" data-tooltip="Calendar"><i class="fas fa-calendar-alt"></i></a>
+                <div class="navbar-item search">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Search...">
+                  </div><i class="fas fa-search"></i>
                 </div><span class="navbar-item"><a class="button is-info is-compact" href="register.html"><span>Register</span></a></span><span class="navbar-item"><a class="button is-primary is-compact" href="signin.html"><span>Sign in</span></a></span>
                 <div class="navbar-item has-dropdown is-hoverable is-transparent-dropdown"><a class="navbar-link no-arrow" href="/documentation/overview/start/"><i class="fas fa-user-circle"></i>&nbsp;Usha</a>
                   <div class="navbar-dropdown is-boxed is-right"><a class="navbar-item" href="">myBrawta</a><a class="navbar-item" href="">Favorites</a><a class="navbar-item" href="">Last Viewed</a><a class="navbar-item" href="">Profile</a><a class="navbar-item" href="">Sign out</a></div>
@@ -136,7 +133,7 @@
           </div>
         </nav>
       </div>
-      <!--
+      <!-- ===
       .hero-body.has-text-centered
         .columns.is-mobile.is-centered
           .column.is-half.is-narrow
@@ -154,19 +151,30 @@
         //- columns
       //- hero-body
       -->
-      <!---->
-      <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth is-medium">
-          <div class="container">
-            <ul>
-              <li class="is-active"><a class="has-text-white">Fixtures &amp; Results</a></li>
-              <li><a class="has-text-white">Leagues &amp; Cups</a></li>
-              <li><a class="has-text-white">T&amp;F Results</a></li>
-              <li><a class="has-text-white">T&amp;F Rankings</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <!-- ===-->
+      <!-- ====
+      .hero-foot
+        nav.tabs.is-boxed.is-fullwidth.is-medium
+          .container
+            ul
+              li.is-active
+                a.has-text-white Fixtures &amp; Results
+              //- li
+              li
+                a.has-text-white Leagues &amp; Cups
+              //- li
+              li
+                a.has-text-white T&amp;F Results
+              //- li
+              li
+                a.has-text-white T&amp;F Rankings
+              //- li
+            //- ul
+          //- container
+        //- nav
+      //- hero-foot
+      -->
+      <!-- ===-->
     </section>
     <section class="section">
       <div class="container">
