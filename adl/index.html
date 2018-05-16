@@ -49,10 +49,10 @@
                       <div class="field">
                         <div class="control has-icons-left">
                           <div class="select is-medium is-100p">
-                            <select>
-                              <option>Company / Admin</option>
-                              <option>Manager</option>
-                              <option>Agent</option>
+                            <select class="user-type">
+                              <option value="admin">Company / Admin</option>
+                              <option value="manager">Manager</option>
+                              <option value="agent">Agent</option>
                             </select><span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                           </div>
                         </div>
@@ -68,7 +68,7 @@
                         </div>
                       </div><br>
                       <div class="field is-grouped">
-                        <div class="control"><a class="button is-success is-medium" href="dashboard.html">Login</a></div>
+                        <div class="control"><a class="button is-success is-medium login-button" href="admin-dashboard.html">Login</a></div>
                       </div>
                     </div>
                   </div>
@@ -86,6 +86,12 @@
     <script src="assets/scripts/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
-    <script></script>
+    <script>
+      $(document).ready(function() {
+        $(".user-type").on("change", function() {
+          $(".login-button").attr("href", this.value + "-dashboard.html");
+        });
+      });
+    </script>
   </body>
 </html>

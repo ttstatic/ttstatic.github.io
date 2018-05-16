@@ -1,11 +1,4 @@
-$(document).ready(function() {
-  $('.dropdown button').click(function() {
-    $(this).parents('.dropdown:eq(0)').toggleClass('is-active');
-  }).blur(function() {
-    $(this).parents('.dropdown:eq(0)').removeClass('is-active');
-  });
-});
-
+// =============================================================================[ VUE ]
 new Vue({
   el: '#app',
   data: function() {
@@ -49,7 +42,7 @@ new Vue({
   }
 });
 
-// BURGER BAR MENU TOGGLE
+// =============================================================================[ BURGER BAR MENU TOGGLE ]
 document.addEventListener('DOMContentLoaded', function() {
 
   // Get all "navbar-burger" elements
@@ -74,4 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+});
+
+// =============================================================================[ DROPDOWN TOGGLE ]
+$(document).ready(function() {
+  $('.dropdown button').click(function() {
+    $(this).parents('.dropdown:eq(0)').toggleClass('is-active');
+  }).blur(function() {
+    $(this).parents('.dropdown:eq(0)').removeClass('is-active');
+  });
 });
