@@ -101,7 +101,7 @@
                           <td>EntryNotice</td>
                           <td>waitingapproval</td>
                           <td>Manager1</td>
-                          <td class="has-text-right"><a href=""><i class="fas fa-check-circle"></i></a></td>
+                          <td class="has-text-right"><a class="has-tooltip" href="" title="Approval"><i class="fas fa-check"></i></a></td>
                         </tr>
                         <tr>
                           <td>100 Borburn St Sydney</td>
@@ -109,7 +109,7 @@
                           <td>Tenancy Application</td>
                           <td>waiting completion</td>
                           <td>Tenant</td>
-                          <td class="has-text-right"><a href=""><i class="fas fa-envelope"></i></a></td>
+                          <td class="has-text-right"><a class="has-tooltip" href="" title="Message"><i class="fas fa-envelope"></i></a></td>
                         </tr>
                       </tbody>
                     </table>
@@ -130,9 +130,10 @@
                           <label class="label">Agent</label>
                           <div class="control">
                             <div class="select is-100p">
-                              <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
+                              <select onchange="fetchData(agentStatsChart, this)">
+                                <option>Select Agent</option>
+                                <option>Jeffrey Dela Cruz</option>
+                                <option>Laurence Hernandez</option>
                               </select>
                             </div>
                           </div>
@@ -273,13 +274,28 @@
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
     <script>
-      new Chart(document.getElementById("graphAgentStats"), {
+      function randomData(obj) {
+        var myData = [];
+        for(x = 1; x<=obj.length; x++) {
+          myData.push( Math.floor((Math.random() * 100) + 1) );
+        }
+        return myData;
+      }
+      function fetchData(chart, option) {
+        var arrObj = randomData(chart.data.datasets[0].data);
+        chart.data.datasets[0].data = arrObj;
+        if (!option.selectedIndex == 0) {
+          chart.update();
+        }
+      }
+      
+      var agentStatsChart = new Chart(document.getElementById("graphAgentStats"), {
         "type": "pie",
         "data": {
           "labels": ["In Creation", "In Workflow", "Completed"],
           "datasets": [{
             "data": [300, 50, 100],
-            "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+            "backgroundColor": ["#3F4B75", "#727CA0", "#757782"]
           }]
         }
       });

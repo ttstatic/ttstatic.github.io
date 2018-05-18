@@ -80,9 +80,10 @@
                           <label class="label">Agent</label>
                           <div class="control">
                             <div class="select is-100p">
-                              <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
+                              <select onchange="fetchData(agentStatsChart, this)">
+                                <option>Select Agent</option>
+                                <option>Rodan Luzuriaga</option>
+                                <option>Aravind Naidu</option>
                               </select>
                             </div>
                           </div>
@@ -107,7 +108,7 @@
                         </div>
                       </div>
                     </div>
-                    <canvas id="graphAgentStats"></canvas>
+                    <canvas id="graphAgentStats" height="80"></canvas>
                   </div>
                 </div>
               </div>
@@ -123,9 +124,10 @@
                           <label class="label">Agent</label>
                           <div class="control">
                             <div class="select is-100p">
-                              <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
+                              <select onchange="fetchData(formUsageChart, this)">
+                                <option>Select Agent</option>
+                                <option>Ronald Basco</option>
+                                <option>Billy Bulasco</option>
                               </select>
                             </div>
                           </div>
@@ -150,7 +152,7 @@
                         </div>
                       </div>
                     </div>
-                    <canvas id="graphFormUsage"></canvas>
+                    <canvas id="graphFormUsage" height="80"></canvas>
                   </div>
                 </div>
               </div>
@@ -234,17 +236,33 @@
     <script src="assets/scripts/main.js"></script>
     <!-- endinject-->
     <script>
-      new Chart(document.getElementById("graphAgentStats"), {
+      function randomData(obj) {
+        var myData = [];
+        for(x = 1; x<=obj.length; x++) {
+          myData.push( Math.floor((Math.random() * 100) + 1) );
+        }
+        return myData;
+      }
+      function fetchData(chart, option) {
+        var arrObj = randomData(chart.data.datasets[0].data);
+      	chart.data.datasets[0].data = arrObj;
+        if (!option.selectedIndex == 0) {
+          chart.update();
+        }
+      }
+      
+      var agentStatsChart = new Chart(document.getElementById("graphAgentStats"), {
         "type": "pie",
         "data": {
           "labels": ["In Creation", "In Workflow", "Completed"],
           "datasets": [{
             "data": [300, 50, 100],
-            "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+            "backgroundColor": ["#3F4B75", "#727CA0", "#757782"]
           }]
         }
       });
-      new Chart(document.getElementById("graphFormUsage"), {
+      
+      var formUsageChart = new Chart(document.getElementById("graphFormUsage"), {
         "type": "bar",
         "data": {
           "labels": ["January", "February", "March", "April", "May", "June", "July"],
@@ -252,9 +270,8 @@
             "label": "Form Totals",
             "data": [65, 59, 80, 81, 56, 55, 40],
             "fill": false,
-            "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-            "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-            "borderWidth": 1
+            "backgroundColor": ["#9FA4B7", "#727CA0", "#757782", "#3F4B75", "#C3CAE5", "#7A93EF", "#313F72"],
+            "borderWidth": 0
           }]
         },
         "options": {
