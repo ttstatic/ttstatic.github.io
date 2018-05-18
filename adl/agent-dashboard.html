@@ -111,16 +111,250 @@
                       </table>
                     </div>
                     <div class="tab-content" id="tabInWorkflow">
-                      <h1>In Workflow</h1>
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Package</th>
+                            <th>Form</th>
+                            <th>Version</th>
+                            <th>Status</th>
+                            <th>Owner</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12 Tishler St Wright</td>
+                            <td>NSW Property Sales </td>
+                            <td>Entry Notice </td>
+                            <td>1.1</td>
+                            <td>1<sup>st</sup> Approval</td>
+                            <td>Manager 1</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Message"><i class="fas fa-envelope"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>100 Borburn St Sydney</td>
+                            <td>NSW Property Mgt</td>
+                            <td>Tenancy Application</td>
+                            <td>1.3</td>
+                            <td>Approval</td>
+                            <td>Manager 2</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Message"><i class="fas fa-envelope"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <div class="tab-content" id="tabCompleted">
-                      <h1>Completed</h1>
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Package</th>
+                            <th>Form</th>
+                            <th>Version</th>
+                            <th>Completed Date</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12 Tishler St Wright</td>
+                            <td>NSW Property Sales </td>
+                            <td>Entry Notice </td>
+                            <td>1.1</td>
+                            <td>12/05/2018</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="View"><i class="fas fa-file-pdf"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>100 Borburn St Sydney</td>
+                            <td>NSW Property Mgt</td>
+                            <td>Tenancy Application</td>
+                            <td>1.3</td>
+                            <td>11/05/2018</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="View"><i class="fas fa-file-pdf"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <div class="tab-content" id="tabMyProperties">
-                      <h1>My Properties</h1>
+                      <div class="columns">
+                        <div class="column is-4">
+                          <div class="field">
+                            <label class="label">Property Search</label>
+                            <div class="control has-icons-right">
+                              <input class="input is-medium" type="text" placeholder="Property Address" value=""><span class="icon is-small is-right"><i class="fas fa-search"></i></span>
+                            </div>
+                          </div>
+                          <div class="message message-body is-info">
+                            <p class="is-size-4">Property Details</p><br>
+                            <table>
+                              <tr>
+                                <th>Address</th>
+                                <td>12, Tishler Street Wright ACT 2600</td>
+                              </tr>
+                              <tr>
+                                <th>Property Type</th>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><br></th>
+                              </tr>
+                              <tr>
+                                <th>Owner</th>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <td>Tel</td>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <td>Email</td>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><br></th>
+                              </tr>
+                              <tr>
+                                <th>Tenant (if applicable)</th>
+                                <td> </td>
+                              </tr>
+                              <tr>
+                                <td>Tel</td>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <td>Email</td>
+                                <td>--</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div class="has-text-centered"><a class="button is-medium is-success" href=""><i class="fas fa-file-alt"></i>&nbsp;View Forms</a></div>
+                        </div>
+                        <div class="column">
+                          <div id="myPropertyForms">
+                            <p class="is-size-4">My Property Forms</p>
+                            <p>&nbsp;</p>
+                            <div class="message message-body is-grey">
+                              <div class="columns">
+                                <div class="column">
+                                  <div class="columns">
+                                    <div class="column"><strong>Address</strong></div>
+                                    <div class="column">
+                                      <p>12, Tishler Street Wright ACT 2600</p>
+                                    </div>
+                                  </div>
+                                  <div class="columns">
+                                    <div class="column"><strong>Property Type</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="column">
+                                  <div class="columns">
+                                    <div class="column"><strong>Owner</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                  <div class="columns">
+                                    <div class="column"><strong>Tel</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                  <div class="columns">
+                                    <div class="column"><strong>Email</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="column">
+                                  <div class="columns">
+                                    <div class="column"><strong>Tenant (if applicable)</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                  <div class="columns">
+                                    <div class="column"><strong>Tel</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                  <div class="columns">
+                                    <div class="column"><strong>Email</strong></div>
+                                    <div class="column">
+                                      <p>--</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <table class="table is-striped is-fullwidth">
+                              <thead>
+                                <tr>
+                                  <th>Package</th>
+                                  <th>Form</th>
+                                  <th>Version</th>
+                                  <th>Completed Date</th>
+                                  <th>Agent</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>NSW Property Sales </td>
+                                  <td>Entry Notice </td>
+                                  <td>1.1</td>
+                                  <td>12/05/2018</td>
+                                  <td>Agent 1</td>
+                                  <td class="has-text-right"><a class="has-tooltip" href="" title="View"><i class="fas fa-file-pdf"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>NSW Property Mgt</td>
+                                  <td>Tenancy Application</td>
+                                  <td>1.3</td>
+                                  <td>11/05/2018</td>
+                                  <td>Agent 1</td>
+                                  <td class="has-text-right"><a class="has-tooltip" href="" title="View"><i class="fas fa-file-pdf"></i></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="tab-content" id="tabUpcoming">
-                      <h1>Upcoming</h1>
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Activity</th>
+                            <th>Due Date</th>
+                            <th>Form</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12 Tishler St Wright</td>
+                            <td>Inspection</td>
+                            <td>25/05/2018</td>
+                            <td>Routine Inspection</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Create"><i class="fas fa-edit"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>100 Borburn St Sydney</td>
+                            <td>Tenancy Renewal</td>
+                            <td>30/05/2018</td>
+                            <td>Tenancy Application</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Create"><i class="fas fa-edit"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
