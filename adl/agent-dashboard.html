@@ -74,40 +74,54 @@
                   <div class="card-content">
                     <div class="tabs">
                       <ul>
-                        <li class="is-active"><a>In Creation</a></li>
-                        <li><a>In Workflow</a></li>
-                        <li><a>Completed</a></li>
-                        <li><a>My Properties</a></li>
-                        <li><a>Upcoming</a></li>
+                        <li class="is-active"><a data-target="tabInCreation">In Creation</a></li>
+                        <li><a data-target="tabInWorkflow">In Workflow</a></li>
+                        <li><a data-target="tabCompleted">Completed</a></li>
+                        <li><a data-target="tabMyProperties">My Properties</a></li>
+                        <li><a data-target="tabUpcoming">Upcoming</a></li>
                       </ul>
                     </div>
-                    <table class="table is-striped is-fullwidth">
-                      <thead>
-                        <tr>
-                          <th>Property</th>
-                          <th>Package</th>
-                          <th>Form</th>
-                          <th>Version</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>12TishlerStWright</td>
-                          <td>NSWPropertySales</td>
-                          <td>EntryNotice</td>
-                          <td>1.1</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td>100 Borburn St Sydney</td>
-                          <td>NSW Property Mgt</td>
-                          <td>Tenancy Application</td>
-                          <td>1.3</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="tab-content is-active" id="tabInCreation">
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Package</th>
+                            <th>Form</th>
+                            <th>Version</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12TishlerStWright</td>
+                            <td>NSWPropertySales</td>
+                            <td>EntryNotice</td>
+                            <td>1.1</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>100 Borburn St Sydney</td>
+                            <td>NSW Property Mgt</td>
+                            <td>Tenancy Application</td>
+                            <td>1.3</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-content" id="tabInWorkflow">
+                      <h1>In Workflow</h1>
+                    </div>
+                    <div class="tab-content" id="tabCompleted">
+                      <h1>Completed</h1>
+                    </div>
+                    <div class="tab-content" id="tabMyProperties">
+                      <h1>My Properties</h1>
+                    </div>
+                    <div class="tab-content" id="tabUpcoming">
+                      <h1>Upcoming</h1>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -121,31 +135,36 @@
                   <div class="card-content">
                     <div class="tabs">
                       <ul>
-                        <li class="is-active"><a>Forms</a></li>
-                        <li><a>Templates</a></li>
+                        <li class="is-active"><a data-target="tabForms">Forms</a></li>
+                        <li><a data-target="tabTemplates">Templates</a></li>
                       </ul>
                     </div>
-                    <table class="table is-striped is-fullwidth">
-                      <thead>
-                        <tr>
-                          <th>Package</th>
-                          <th>Form Name</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>NSW Property Sales</td>
-                          <td>Buyers Agency Agreement</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td>NSW Property Sales</td>
-                          <td>Sales Insp. Report</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="tab-content is-active" id="tabForms">
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Package</th>
+                            <th>Form Name</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>NSW Property Sales</td>
+                            <td>Buyers Agency Agreement</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>NSW Property Sales</td>
+                            <td>Sales Insp. Report</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Edit"><i class="fas fa-pencil-alt"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-content" id="tabTemplates">
+                      <h1>Templates</h1>
+                    </div>
                   </div>
                 </div>
               </div>

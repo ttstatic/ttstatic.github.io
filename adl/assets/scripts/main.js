@@ -69,11 +69,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// =============================================================================[ DROPDOWN TOGGLE ]
 $(document).ready(function() {
+
+  // =============================================================================[ DROPDOWN TOGGLE ]
   $('.dropdown button').click(function() {
     $(this).parents('.dropdown:eq(0)').toggleClass('is-active');
   }).blur(function() {
     $(this).parents('.dropdown:eq(0)').removeClass('is-active');
   });
+
+  // =============================================================================[ TABS ]
+  $(".tabs").on("click", "li", function() {
+
+    // Set Active Tab
+    $(this).parent().find(".is-active").removeClass("is-active");
+    $(this).addClass("is-active");
+
+    // Find closest Tab Content
+    var closestTabContent = $(this).parents(".tabs").parent().find(".tab-content");
+    closestTabContent.removeClass("is-active");
+    var target = $(this).find("a").attr("data-target");
+    closestTabContent.addClass(function() {
+      if(this.id == target) {
+        $(this).addClass("is-active");
+      }
+    });
+
+  });
+
 });

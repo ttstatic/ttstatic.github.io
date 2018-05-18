@@ -77,42 +77,53 @@
                   <div class="card-content">
                     <div class="tabs">
                       <ul>
-                        <li class="is-active"><a>In Workflow</a></li>
-                        <li><a>My Agents</a></li>
-                        <li><a>My Properties</a></li>
-                        <li><a>Upcoming</a></li>
+                        <li class="is-active"><a data-target="tabInWorkflow">In Workflow</a></li>
+                        <li><a data-target="tabMyAgents">My Agents</a></li>
+                        <li><a data-target="tabMyProperties">My Properties</a></li>
+                        <li><a data-target="tabUpcoming">Upcoming</a></li>
                       </ul>
                     </div>
-                    <table class="table is-striped is-fullwidth">
-                      <thead>
-                        <tr>
-                          <th>Property</th>
-                          <th>Package</th>
-                          <th>Form</th>
-                          <th>Status</th>
-                          <th>Owner</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>12TishlerStWright</td>
-                          <td>NSWPropertySales</td>
-                          <td>EntryNotice</td>
-                          <td>waitingapproval</td>
-                          <td>Manager1</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Approval"><i class="fas fa-check"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td>100 Borburn St Sydney</td>
-                          <td>NSW Property Mgt</td>
-                          <td>Tenancy Application</td>
-                          <td>waiting completion</td>
-                          <td>Tenant</td>
-                          <td class="has-text-right"><a class="has-tooltip" href="" title="Message"><i class="fas fa-envelope"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="tab-content is-active" id="tabInWorkflow">
+                      <table class="table is-striped is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Package</th>
+                            <th>Form</th>
+                            <th>Status</th>
+                            <th>Owner</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12TishlerStWright</td>
+                            <td>NSWPropertySales</td>
+                            <td>EntryNotice</td>
+                            <td>waitingapproval</td>
+                            <td>Manager1</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Approval"><i class="fas fa-check"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>100 Borburn St Sydney</td>
+                            <td>NSW Property Mgt</td>
+                            <td>Tenancy Application</td>
+                            <td>waiting completion</td>
+                            <td>Tenant</td>
+                            <td class="has-text-right"><a class="has-tooltip" href="" title="Message"><i class="fas fa-envelope"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-content" id="tabMyAgents">
+                      <h1>My Agents</h1>
+                    </div>
+                    <div class="tab-content" id="tabMyProperties">
+                      <h1>My Properties</h1>
+                    </div>
+                    <div class="tab-content" id="tabUpcoming">
+                      <h1>Upcoming</h1>
+                    </div>
                   </div>
                 </div>
               </div>
